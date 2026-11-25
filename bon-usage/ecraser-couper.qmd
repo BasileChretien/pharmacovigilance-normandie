@@ -26,7 +26,18 @@ sources:
 
 <!-- NOTE DE RÉDACTION (à retirer avant publication) : le 25/11/2026, la page de l'OMéDIT affiche « Mise à jour octobre 2026 » et annonce une nouvelle colonne CMR, mais le fichier téléchargeable s'appelle liste-medicaments-ecrasables_01122025.xlsx (1er décembre 2025). La commande éditoriale parlait d'une mise à jour de novembre 2025. Le relecteur vérifie la date à afficher. La liste n'est pas recopiée ici, conformément à la consigne : on renvoie vers la page de l'OMéDIT. -->
 
-::: {.panel-tabset}
+::: {.deux-versions}
+
+::: {.encadre-pratique}
+### Vous êtes soignant ?
+
+Pour les personnes qui avalent mal (troubles de la déglutition, risque de fausse route) ou qui ont une sonde :
+
+- La liste de référence est la [liste des médicaments écrasables et gélules ouvrables de l'OMéDIT Normandie et de la SFPC](https://www.omedit-normandie.fr/boite-a-outils/bon-usage/liste-des-medicaments-ecrasables/liste-des-medicaments-ecrasables,3184,3511.html), mise à jour en octobre 2026 selon sa page.
+- Ne jamais écraser sans avis : formes à libération prolongée (LP), gastro-résistantes, sublinguales ou orodispersibles, et les médicaments dangereux pour l'aidant.
+- Les règles détaillées sont plus bas, dans la partie [Pour les soignants](#pour-les-soignants).
+- Une [fiche à imprimer pour la salle de soins](ecraser-fiche.qmd) résume ces règles.
+:::
 
 ## Pour les patients et les aidants
 

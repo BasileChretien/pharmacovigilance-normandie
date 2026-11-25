@@ -76,6 +76,8 @@ Dans la rubrique 4, chaque groupe d'effets porte un mot de fréquence, suivi d'u
 | Très rare | « pouvant affecter jusqu'à une personne sur 10 000 » |
 | Fréquence indéterminée | « la fréquence ne peut être estimée à partir des seules données disponibles » |
 
+« Jusqu'à 1 personne sur 10 » est la limite haute : un effet « fréquent » touche de 1 à 10 personnes sur 100. Voir [Que veulent dire « fréquent » et « rare » ?](frequences.qmd).
+
 « Jusqu'à 1 personne sur 10 » veut dire « au plus 1 personne sur 10 ». Selon la règle européenne, un effet « fréquent » touche entre 1 et 10 personnes sur 100. Pour comprendre ces mots en détail, lisez la page [Que veulent dire « fréquent » et « rare » ?](frequences.qmd).
 
 ### Un effet cité dans la notice va-t-il m'arriver ?

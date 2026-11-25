@@ -6,15 +6,15 @@ listing:
   - id: liste-classes
     contents: "classes/*.qmd"
     type: grid
-    sort: "title"
+    sort: "classe"
     fields: [title, description]
-    grid-columns: 3
+    grid-columns: 2
   - id: liste-maux
     contents: "maux-courants/*.qmd"
     type: grid
     sort: "title"
     fields: [title, description]
-    grid-columns: 3
+    grid-columns: 2
   - id: liste-situations
     contents: "situations/*.qmd"
     type: grid

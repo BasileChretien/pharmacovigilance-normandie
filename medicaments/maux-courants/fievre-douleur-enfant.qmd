@@ -28,7 +28,7 @@ sources:
     consulte_le: 2026-11-25
 ---
 
-::: {.panel-tabset}
+::: {.deux-versions}
 
 ## Pour les patients
 
@@ -46,6 +46,15 @@ sources:
 - Donnez d'abord du paracétamol, à une dose calculée selon le poids de l'enfant.
 - Pendant une infection (angine, otite, varicelle), évitez l'ibuprofène et les autres anti-inflammatoires sans avis médical.
 - Jamais de codéine avant 12 ans. Pas d'aspirine contre la fièvre d'un enfant.
+:::
+
+::: {.encadre-pratique}
+### Ce soir, que faire ?
+
+- **Paracétamol** (Doliprane, Dafalgan, Efferalgan) : avec le sirop pour enfant, la pipette doseuse est graduée en kilos. Remplissez-la jusqu'au poids de votre enfant, par exemple « 16 kg ».
+- Attendez au moins 6 heures entre deux prises, et pas plus de 4 prises en 24 heures.
+- **Ibuprofène** (Advil, Nurofen) : ne le donnez pas en plus du paracétamol sans avis médical, et évitez-le pendant une infection comme la varicelle.
+- Un doute la nuit ? Appelez le 15, ou demandez conseil au pharmacien de garde.
 :::
 
 ### Faut-il toujours faire baisser la fièvre ?

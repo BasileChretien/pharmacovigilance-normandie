@@ -1,0 +1,51 @@
+---
+title: "Vous pensez avoir un effet indésirable ?"
+description: "Un médicament semble vous rendre malade : les bons réflexes, qui appeler et comment le signaler."
+public: [patients]
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "ANSM, Déclarer un effet indésirable : comment déclarer si vous êtes patient ou usager"
+    url: "https://ansm.sante.fr/documents/reference/declarer-un-effet-indesirable/comment-declarer-si-vous-etes-patient-ou-usager"
+    consulte_le: 2026-11-25
+  - titre: "Portail de signalement des événements sanitaires indésirables"
+    url: "https://signalement.social-sante.gouv.fr"
+    consulte_le: 2026-11-25
+---
+
+::: {.texte-patient}
+
+::: {.quand-consulter}
+- Vous avez du mal à respirer, votre visage ou votre gorge gonfle : appelez le 15 (SAMU) ou le 112.
+- Vous faites un malaise, ou des cloques apparaissent sur la peau : appelez le 15.
+- Vous pensez avoir pris trop de médicament : appelez le centre antipoison d'Angers au 02 41 48 21 21.
+:::
+
+::: {.a-retenir}
+- Si un signe est grave, appelez le 15.
+- Sinon, appelez votre médecin ou votre pharmacien le jour même.
+- Déclarez l'effet, même si vous n'êtes pas sûr du lien avec le médicament.
+:::
+
+### Que faire, dans l'ordre ?
+
+1. **Le signe est-il grave ?** Si oui, appelez le 15. Ne prenez pas la voiture seul.
+2. **Appelez votre médecin ou votre pharmacien.** Dites quel médicament vous prenez, depuis quand, et ce que vous ressentez.
+3. **Ne modifiez pas votre traitement sans avis**, sauf si la notice ou votre médecin vous a dit de l'arrêter dans ce cas.
+4. **Notez ce qui se passe** : le nom du médicament, les dates, ce que vous ressentez. Gardez la boîte.
+5. **Déclarez l'effet** sur le [portail de signalement](declarer.qmd). Votre médecin ou votre pharmacien peut aussi le faire.
+
+### Quelques exemples
+
+- Mal à un tendon, surtout au talon, sous un antibiotique comme la ciprofloxacine (Ciflox) : voir [les fluoroquinolones](medicaments/classes/fluoroquinolones.qmd).
+- Saignement inhabituel sous anticoagulant (Eliquis, Xarelto, Previscan…) : voir [les anticoagulants oraux](medicaments/classes/anticoagulants-oraux.qmd).
+- Douleurs musculaires sous un médicament contre le cholestérol : voir [les statines](medicaments/classes/statines.qmd).
+- Un effet est écrit dans la notice et vous voulez savoir s'il est fréquent : voir [Que veulent dire « fréquent » et « rare » ?](comprendre/frequences.qmd).
+
+### À qui d'autre s'adresser ?
+
+Pour une intoxication, une addiction, une transfusion ou un dispositif médical, voir [Qui contacter](normandie/qui-contacter.qmd).
+
+:::

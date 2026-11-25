@@ -4,6 +4,7 @@ project:
   resources:
     - assets/js/
     - assets/img/
+    - assets/fonts/
   render:
     - "*.qmd"
     - "!_templates/"
@@ -21,13 +22,15 @@ website:
     location: navbar
     type: overlay
   announcement:
-    content: "**Prototype non officiel.** Les contenus sont des brouillons en cours de relecture par des pharmacologues : ne les utilisez pas pour une décision de soin."
+    content: "**Prototype non officiel** : brouillons en cours de relecture, à ne pas utiliser pour une décision de soin."
     type: warning
     dismissable: false
     position: below-navbar
   navbar:
     title: "Pharmacovigilance Normandie"
-    collapse-below: xl
+    logo: assets/img/logo-mark.svg
+    logo-alt: "Accueil Pharmacovigilance Normandie"
+    collapse-below: xxl
     left:
       - text: "Médicaments"
         href: medicaments/index.qmd
@@ -42,6 +45,8 @@ website:
       - text: "En Normandie"
         href: normandie/index.qmd
     right:
+      - text: "English"
+        href: normandie/en/index.qmd
       - text: "Les CRPV"
         href: crpv/index.qmd
       - text: "Déclarer"
@@ -60,6 +65,8 @@ website:
         href: a-propos/mentions-legales.qmd
       - text: "Accessibilité"
         href: a-propos/accessibilite.qmd
+      - text: "English"
+        href: normandie/en/index.qmd
   back-to-top-navigation: true
   page-navigation: false
 
@@ -68,6 +75,8 @@ format:
     theme:
       - default
       - assets/theme.scss
+    css: assets/fonts/fonts.css
+    title-block-banner: true
     toc: true
     toc-title: "Sur cette page"
     toc-location: right
@@ -79,5 +88,8 @@ format:
     include-in-header:
       - text: |
           <meta name="robots" content="noindex, nofollow">
+    include-before-body:
+      - text: |
+          <a class="lien-evitement" href="#quarto-document-content">Aller au contenu</a>
     filters:
       - assets/filters/page-meta.lua

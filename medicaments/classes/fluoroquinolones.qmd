@@ -28,7 +28,7 @@ sources:
     consulte_le: 2026-11-25
 ---
 
-::: {.panel-tabset}
+::: {.deux-versions}
 
 ## Pour les patients
 
@@ -42,7 +42,7 @@ sources:
 
 ### À quoi sert ce traitement ?
 
-Les fluoroquinolones sont des antibiotiques. Ce sont la ciprofloxacine (Ciflox), la lévofloxacine (Tavanic), l'ofloxacine, la moxifloxacine et la norfloxacine. Elles traitent des infections graves, quand les autres antibiotiques ne conviennent pas.
+Les fluoroquinolones sont des antibiotiques. Ce sont la ciprofloxacine (Ciflox), la lévofloxacine (Tavanic), l'ofloxacine (Oflocet), la moxifloxacine (Izilox) et la norfloxacine. Elles traitent des infections graves, quand les autres antibiotiques ne conviennent pas.
 
 Depuis 2019, elles ne doivent plus être prescrites :
 

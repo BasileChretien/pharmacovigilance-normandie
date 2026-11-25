@@ -19,7 +19,7 @@ Le site vise la conformité au RGAA 4.1.2. **Aucun audit n'a encore été réali
 ## Ce qui est déjà en place
 
 - Des contrôles automatiques à chaque modification : contrastes des couleurs, textes alternatifs, structure des titres, validité du code.
-- Des polices du système, une taille de texte de 17 pixels, des lignes courtes.
+- Des polices libres hébergées sur le site, sans service extérieur : Atkinson Hyperlegible, conçue pour les personnes malvoyantes, pour le texte ; une taille de texte de 18 pixels ; des lignes courtes.
 - Un focus visible au clavier sur tous les liens et boutons.
 - Des figures accompagnées d'un texte qui dit la même chose.
 

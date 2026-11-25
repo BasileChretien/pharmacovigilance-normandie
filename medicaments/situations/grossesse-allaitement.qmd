@@ -30,7 +30,7 @@ sources:
     consulte_le: 2026-11-25
 ---
 
-::: {.panel-tabset}
+::: {.deux-versions}
 
 ## Pour les patients
 
@@ -40,6 +40,14 @@ sources:
 - Enceinte ou allaitante, ne prenez aucun médicament sans conseil d'un professionnel de santé.
 - Les anti-inflammatoires, comme l'ibuprofène ou l'aspirine, sont interdits à partir du 6e mois.
 - N'arrêtez pas seule un traitement en cours : parlez-en vite à votre médecin.
+:::
+
+::: {.encadre-pratique}
+### Mal de tête ou fièvre ?
+
+- Le paracétamol (Doliprane, Dafalgan, Efferalgan) peut être utilisé, à la dose la plus faible et le moins longtemps possible.
+- Évitez l'ibuprofène (Advil, Nurofen) et l'aspirine sans avis médical.
+- Un doute sur un médicament ? Demandez à votre pharmacien, votre médecin ou votre sage-femme.
 :::
 
 ::: {.quand-consulter}

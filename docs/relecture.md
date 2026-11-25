@@ -52,3 +52,22 @@ marques `[à compléter : source]` et ses `<!-- FIGURE À FAIRE -->`.
 | bon-usage/quand-prendre | IPP : « le matin » (Mopral) ou « avant un repas » (Inipomp) ; raisons non sourcées pour quatre médicaments |
 | bon-usage/ecraser-couper | Liste OMéDIT : page « mise à jour octobre 2026 », fichier daté du 01/12/2025 ; mesures pour les médicaments CMR |
 | bon-usage/cytochromes | Base : carte des cytochromes des HUG de mars 2020, lue par script ; vérifier chaque ligne ; statut de commercialisation en France vérifié de mémoire |
+
+## Ajouts après le panel d'utilisateurs (25/11/2026)
+
+| Page | À vérifier |
+|---|---|
+| maux-courants/fievre-douleur-enfant | Encadré « Ce soir » : pipette du sirop graduée en kilos, 6 h entre deux prises, 4 prises par 24 h (RCP Doliprane 2,4 %) |
+| classes/anticoagulants-oraux | Règle d'oubli de l'apixaban (RCP Eliquis) ; noms de marque des AVK et des AOD ; règle des autres AOD à compléter |
+| maux-courants/migraine | Encadré grossesse : AINS interdits dès le début du 6e mois, déconseillés avant ; paracétamol possible |
+| situations/grossesse-allaitement | Encadré « Mal de tête ou fièvre ? » |
+| classes/ains, classes/fluoroquinolones | Noms de marque ajoutés |
+| declarer | Obligation de déclarer pour les professionnels (art. R. 5121-161 du CSP) ; conduite en EHPAD |
+| que-faire-effet-indesirable | Page nouvelle : signes d'urgence, étapes, exemples |
+| normandie/en | Numéro 3237 des pharmacies de garde ; réponse des CRPV en anglais |
+| vigiking/inscription | Adresses provisoires pour recevoir Vigiking, à confirmer par les CRPV |
+| crpv/acces | Horaires des deux centres |
+| bon-usage/ecraser-fiche | Fiche imprimable : chaque règle reprend la page « Écraser ou couper » ; mesures de protection pour les médicaments CMR à préciser |
+| bon-usage/cytochromes | Index par médicament généré automatiquement depuis le tableau : il hérite des points à vérifier du tableau |
+| crpv/enseignement | Modalités de candidature proposées, à valider par chaque centre |
+| bon-usage/interactions-ville | Page nouvelle, 16 associations : niveaux relevés sur le Thésaurus du 15/09/2023 (pages 26, 102 et 228 lues en texte seulement) ; « triple whammy » reconstitué à partir de trois couples ; clopidogrel + oméprazole d'après le RCP de Plavix |

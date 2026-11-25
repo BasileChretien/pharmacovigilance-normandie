@@ -31,7 +31,7 @@ sources:
     consulte_le: 2026-11-25
 ---
 
-::: {.panel-tabset}
+::: {.deux-versions}
 
 ## Pour les patients
 
@@ -46,6 +46,8 @@ sources:
 ### À quoi sert ce traitement ?
 
 Les AINS (anti-inflammatoires non stéroïdiens) calment la douleur et la fièvre. Ils réduisent aussi l'inflammation (gonflement, rougeur, chaleur). Les plus connus sont l'ibuprofène, le kétoprofène, le naproxène, le diclofénac et le célécoxib.
+
+Noms de marque courants : Advil, Nurofen, Spedifen, Antarène (ibuprofène) ; Profénid, Bi-Profénid (kétoprofène) ; Apranax (naproxène) ; Voltarène (diclofénac) ; Celebrex (célécoxib).
 
 Certains sont vendus sans ordonnance. Depuis janvier 2020, ils sont rangés derrière le comptoir, pour que le pharmacien vous conseille.
 

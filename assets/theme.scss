@@ -3,59 +3,94 @@
 // Design tokens. Every text/background pair used on the site is listed in
 // tools/checks/contrast_pairs.yml and checked against WCAG AA by
 // tools/checks/check_contrast.py. Change a colour here, and the check runs on it.
-$pv-ink: #1f2328;            // body text
-$pv-ink-quiet: #4a5058;      // secondary text
+//
+// Direction: cool clinical white, with the cyan-to-green of the CRPV logo used as
+// a signal colour, sparingly. The signature is the "signal" figure of the home page:
+// dots (reports) that connect into a signal.
+$pv-ink: #10283a;            // body text
+$pv-ink-quiet: #46586a;      // secondary text
 $pv-paper: #ffffff;          // page background
-$pv-blue: #1b4f8a;           // primary: links, buttons, headings accents
-$pv-blue-dark: #123a66;      // primary hover
-$pv-blue-tint: #e7f1fb;      // primary tint (cards, active tabs)
-$pv-green: #1e6b3c;          // "À retenir"
-$pv-green-tint: #e5f4e4;
-$pv-red: #7a1a1a;            // "Quand consulter"
-$pv-red-tint: #fbebeb;
-$pv-amber: #6b4a00;          // draft banner text
-$pv-amber-tint: #f9eeda;
-$pv-rule: #d0d4d9;           // borders
+$pv-mist: #eef6fa;           // bands: title banner, hero, footer
+$pv-mist-deep: #dcebf3;      // borders and hover on mist
+$pv-signal: #0a5c9e;         // links, primary buttons
+$pv-signal-dark: #073f6e;    // hover
+$pv-cyan: #19a6e3;           // decorative only (logo colour), never text
+$pv-green: #2bcf8c;          // decorative only (logo colour), never text
+$pv-green-ink: #0b6b45;      // "À retenir"
+$pv-green-tint: #e6f7ef;
+$pv-alert: #b3261e;          // "Quand consulter", urgency
+$pv-alert-tint: #fdeceb;
+$pv-amber: #7a4f00;          // draft and prototype notices
+$pv-amber-tint: #fdf1d8;
+$pv-rule: #d5e2ea;           // borders
 
 $body-color: $pv-ink;
 $body-bg: $pv-paper;
-$primary: $pv-blue;
-$link-color: $pv-blue;
-$link-hover-color: $pv-blue-dark;
+$primary: $pv-signal;
+$link-color: $pv-signal;
+$link-hover-color: $pv-signal-dark;
 $navbar-bg: $pv-paper;
 $navbar-fg: $pv-ink;
-$navbar-hl: $pv-blue;
-$footer-bg: #f4f5f7;
+$navbar-hl: $pv-signal;
+$footer-bg: $pv-mist;
 $footer-fg: $pv-ink;
 
-// System fonts only: no font is loaded from a third-party server.
-$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-$font-size-root: 17px;
+// Self-hosted open fonts (assets/fonts/fonts.css, SIL OFL): no third-party server.
+// Body: Atkinson Hyperlegible, designed for readers with low vision.
+// Headings: Bricolage Grotesque, used with restraint.
+// Figures and phone numbers: Atkinson Hyperlegible Mono (0/O and 1/l/I are distinct).
+$font-family-sans-serif: "Atkinson Hyperlegible Next Variable", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+$headings-font-family: "Bricolage Grotesque Variable", "Atkinson Hyperlegible Next Variable", system-ui, sans-serif;
+$font-family-monospace: "Atkinson Hyperlegible Mono Variable", ui-monospace, "Cascadia Mono", Consolas, monospace;
+$font-size-root: 18px;
 $line-height-base: 1.6;
-$headings-font-weight: 650;
-$border-radius: 0.5rem;
+$headings-font-weight: 700;
+$headings-line-height: 1.15;
+$border-radius: 0.75rem;
+$border-radius-lg: 1.25rem;
 
 /*-- scss:rules --*/
 
+// ---------- Base ----------------------------------------------------------
+
 body {
   font-size: 1rem;
+  font-variant-numeric: tabular-nums;
 }
 
 main.content {
   max-width: 46rem; // about 70 characters a line
 }
 
-h1.title {
-  font-size: 2rem;
+h1, h2, .h1, .h2 {
+  font-family: $headings-font-family;
+  letter-spacing: -0.02em;
+  font-variation-settings: "opsz" 48;
 }
 
 h2 {
-  margin-top: 2.25rem;
+  font-size: 1.65rem;
+  margin-top: 2.5rem;
   border-bottom: none;
 }
 
+h3 {
+  font-family: $font-family-sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 1.75rem;
+}
+
 a {
-  text-underline-offset: 0.15em;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+code, kbd, .mono {
+  font-family: $font-family-monospace;
 }
 
 // Visible keyboard focus everywhere (RGAA 10.7).
@@ -63,66 +98,325 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 select:focus-visible,
+summary:focus-visible,
 [tabindex]:focus-visible {
-  outline: 3px solid $pv-blue;
-  outline-offset: 2px;
+  outline: 3px solid $pv-signal;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+// ---------- Navigation ----------------------------------------------------
+
+// A thin strip of the logo gradient: the one place the gradient appears in the chrome.
+#quarto-header {
+  border-top: 4px solid transparent;
+  border-image: linear-gradient(90deg, $pv-cyan, $pv-green) 1;
+}
+
+.navbar {
+  border-bottom: 1px solid $pv-rule;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.navbar-brand-container {
+  flex-shrink: 0;
+}
+
+.navbar-brand .navbar-title {
+  font-family: $headings-font-family;
+  font-weight: 750;
+  letter-spacing: -0.01em;
+  color: $pv-ink;
+}
+
+@media (max-width: 575.98px) {
+  .navbar-brand .navbar-title {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    font-size: 1rem;
+    line-height: 1.1;
+  }
+  .navbar-brand-container { max-width: 58vw; }
+  .navbar > .container-fluid { flex-wrap: nowrap; }
+  .quarto-announcement { font-size: 0.8rem; padding: 0.3rem 0.75rem; }
+}
+
+.navbar-logo {
+  width: 34px;
+  height: 34px;
+  max-height: none;
 }
 
 .navbar .nav-link {
   white-space: nowrap;
+  font-weight: 600;
+  color: $pv-ink !important;
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem !important;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  background: $pv-mist;
+  color: $pv-signal-dark !important;
 }
 
-// Navbar: "Déclarer" and "Poser une question" are buttons.
+// "Déclarer" and "Poser une question" are buttons.
 .navbar .nav-link[href$="declarer.html"],
 .navbar .nav-link[href$="poser-une-question.html"] {
-  border: 2px solid $pv-blue;
-  border-radius: $border-radius;
-  padding: 0.3rem 0.75rem !important;
-  margin-left: 0.5rem;
-  color: $pv-blue !important;
-  font-weight: 600;
+  border: 2px solid $pv-signal;
+  margin-left: 0.4rem;
+  color: $pv-signal !important;
 }
 .navbar .nav-link[href$="declarer.html"] {
-  background: $pv-blue;
+  background: $pv-signal;
   color: $pv-paper !important;
 }
+.navbar .nav-link[href$="declarer.html"]:hover {
+  background: $pv-signal-dark;
+  border-color: $pv-signal-dark;
+}
 
-// Boxes produced by the page-meta filter.
-.encadre {
-  border-left: 6px solid $pv-rule;
-  border-radius: $border-radius;
-  padding: 0.9rem 1.1rem 0.4rem;
-  margin: 1.5rem 0;
+// Prototype notice under the navbar: present, but quiet.
+.quarto-announcement {
+  background: $pv-amber-tint !important;
+  color: $pv-amber !important;
+  border: none !important;
+  font-size: 0.85rem;
+  padding: 0.4rem 1rem;
 }
-.encadre-titre {
-  font-weight: 700;
-  margin-bottom: 0.4rem;
-}
-.a-retenir {
-  background: $pv-green-tint;
-  border-left-color: $pv-green;
-}
-.a-retenir .encadre-titre { color: $pv-green; }
-.quand-consulter {
-  background: $pv-red-tint;
-  border-left-color: $pv-red;
-}
-.quand-consulter .encadre-titre { color: $pv-red; }
+.quarto-announcement a { color: $pv-amber; }
 
+// ---------- Title banner of content pages ----------------------------------
+
+.quarto-title-banner {
+  background: $pv-mist !important;
+  color: $pv-ink !important;
+  border-bottom: 1px solid $pv-rule;
+  padding: 2.75rem 0 2.25rem;
+  margin-bottom: 2rem;
+}
+.quarto-title-banner .title {
+  font-size: clamp(2rem, 1.5rem + 2vw, 2.9rem);
+  font-weight: 750;
+  color: $pv-ink;
+}
+.quarto-title-banner .description,
+.quarto-title-banner .subtitle {
+  font-size: 1.15rem;
+  color: $pv-ink-quiet;
+  max-width: 40rem;
+}
+.quarto-title-meta-heading, .quarto-title-meta-contents {
+  font-family: $font-family-monospace;
+  font-size: 0.85rem;
+}
+
+// Draft status: a compact pill, not a wall.
 .statut-brouillon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   background: $pv-amber-tint;
   color: $pv-amber;
-  border-left: 6px solid $pv-amber;
-  border-radius: $border-radius;
-  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  padding: 0.3rem 0.9rem;
   margin-bottom: 1.5rem;
-  font-weight: 600;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.statut-brouillon p { margin: 0; }
+.statut-brouillon::before {
+  content: "";
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: $pv-amber;
+  flex: none;
 }
 
-.sources-relecture {
-  margin-top: 3rem;
-  padding-top: 1rem;
+// ---------- Patient / professional tabs ----------------------------------
+
+.panel-tabset > .nav-tabs {
+  display: inline-flex;
+  gap: 0.25rem;
+  padding: 0.3rem;
+  background: $pv-mist;
+  border: 1px solid $pv-rule;
+  border-radius: 999px;
+  margin-bottom: 1.5rem;
+}
+.panel-tabset > .nav-tabs .nav-link {
+  border: none !important;
+  border-radius: 999px;
+  color: $pv-ink-quiet;
+  font-weight: 700;
+  padding: 0.45rem 1.2rem;
+}
+.panel-tabset > .nav-tabs .nav-link.active {
+  background: $pv-paper;
+  color: $pv-signal-dark;
+  box-shadow: 0 1px 3px rgba(16, 40, 58, 0.12);
+}
+.panel-tabset > .tab-content {
+  border: none;
+  padding: 0;
+}
+
+// ---------- Two versions on one page (built by the page-meta filter) -------
+
+.versions {
+  display: inline-block;
+  padding: 0.55rem 1.1rem;
+  margin-bottom: 1.75rem;
+  background: $pv-mist;
+  border: 1px solid $pv-rule;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.versions a { font-weight: 700; }
+
+.partie > h2:first-child {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0;
+  padding: 0.7rem 1.1rem;
+  border-radius: $border-radius;
+  background: $pv-mist;
+  font-size: 1.35rem;
+}
+.partie-pros {
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 3px solid $pv-rule;
+}
+.partie-pros > h2:first-child::after {
+  content: "professionnels de santé";
+  margin-left: auto;
+  font-family: $font-family-monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: $pv-ink-quiet;
+}
+
+// Skip link (RGAA 12.7): hidden until it receives keyboard focus.
+.lien-evitement {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 2000;
+  padding: 0.6rem 1rem;
+  background: $pv-signal;
+  color: $pv-paper !important;
+  border-radius: $border-radius;
+  font-weight: 700;
+}
+.lien-evitement:focus {
+  top: 0.75rem;
+}
+
+// Wide tables (cytochromes): scroll inside their own box on small screens.
+@media (max-width: 767.98px) {
+  main table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
+
+// ---------- Boxes built by the page-meta filter ---------------------------
+
+$icon-check: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='m8 12.5 2.8 2.8L16.5 9.5'/%3E%3C/svg%3E");
+$icon-alert: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10.3 4.1 2.6 17.5A2 2 0 0 0 4.3 20.5h15.4a2 2 0 0 0 1.7-3L13.7 4.1a2 2 0 0 0-3.4 0Z'/%3E%3Cpath d='M12 9.5v4.5'/%3E%3Cpath d='M12 17.2h.01'/%3E%3C/svg%3E");
+
+.encadre {
+  border-radius: $border-radius-lg;
+  padding: 1.1rem 1.35rem 0.5rem;
+  margin: 1.75rem 0;
+  border: 1px solid transparent;
+}
+.encadre-titre {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.encadre-titre::before {
+  content: "";
+  width: 1.35rem;
+  height: 1.35rem;
+  flex: none;
+  background: currentColor;
+  -webkit-mask: var(--icone) center / contain no-repeat;
+  mask: var(--icone) center / contain no-repeat;
+}
+.encadre ul { padding-left: 1.1rem; }
+.encadre li { margin-bottom: 0.35rem; }
+
+.a-retenir {
+  background: $pv-green-tint;
+  border-color: rgba(11, 107, 69, 0.18);
+  --icone: #{$icon-check};
+}
+.a-retenir .encadre-titre { color: $pv-green-ink; }
+
+.quand-consulter {
+  background: $pv-alert-tint;
+  border-color: rgba(179, 38, 30, 0.22);
+  --icone: #{$icon-alert};
+}
+.quand-consulter .encadre-titre { color: $pv-alert; }
+
+// Practical box: "Ce soir, que faire ?", "Vous êtes enceinte ?"…
+.encadre-pratique {
+  background: $pv-mist;
+  border: 1px solid $pv-rule;
+  border-radius: $border-radius-lg;
+  padding: 1rem 1.35rem 0.4rem;
+  margin: 1.75rem 0;
+}
+.encadre-pratique > h3:first-child {
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+
+// ---------- Tables ---------------------------------------------------------
+
+main table, .table {
+  font-size: 0.95rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid $pv-rule;
+  border-radius: $border-radius;
+  overflow: hidden;
+}
+main table thead th, .table thead th {
+  background: $pv-mist;
+  color: $pv-ink;
+  font-weight: 700;
+  border-bottom: 1px solid $pv-rule !important;
+  vertical-align: bottom;
+}
+main table td, main table th {
+  padding: 0.65rem 0.85rem !important;
   border-top: 1px solid $pv-rule;
+}
+main table tbody tr:first-child td { border-top: none; }
+
+// ---------- Sources and review block --------------------------------------
+
+.sources-relecture {
+  margin-top: 3.5rem;
+  padding: 1.25rem 1.5rem 0.75rem;
+  background: $pv-mist;
+  border-radius: $border-radius-lg;
   font-size: 0.92rem;
   color: $pv-ink-quiet;
 }
@@ -130,25 +424,45 @@ select:focus-visible,
   font-size: 1.1rem;
   margin-top: 0;
 }
+.sources-relecture a { word-break: break-word; }
 
-// Cards for section landing pages and team members.
+// ---------- Cards: section landing pages, listings, team -----------------
+
 .cartes {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   gap: 1rem;
   margin: 1.5rem 0;
 }
-.carte {
-  border: 1px solid $pv-rule;
-  border-radius: $border-radius;
-  padding: 1rem 1.1rem;
+.carte,
+.quarto-grid-item {
+  border: 1px solid $pv-rule !important;
+  border-radius: $border-radius-lg !important;
+  padding: 1.15rem 1.25rem;
   background: $pv-paper;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
 }
-.carte h3 {
-  font-size: 1.1rem;
+.carte:hover,
+.quarto-grid-item:hover {
+  transform: translateY(-2px);
+  border-color: $pv-signal !important;
+  box-shadow: 0 8px 24px -12px rgba(10, 92, 158, 0.35);
+}
+.carte h3, .quarto-grid-item .card-title {
+  font-family: $headings-font-family;
+  font-size: 1.15rem;
   margin-top: 0;
 }
+.carte h3 a, .quarto-grid-item .card-title a {
+  color: $pv-ink;
+  text-decoration: none;
+}
+.carte h3 a::after {
+  content: " →";
+  color: $pv-signal;
+}
 .carte p:last-child { margin-bottom: 0; }
+.quarto-grid-item .card-text { color: $pv-ink-quiet; }
 
 .membre {
   display: grid;
@@ -161,15 +475,69 @@ select:focus-visible,
   height: 96px;
   border-radius: 50%;
   object-fit: cover;
-  background: $pv-blue-tint;
+  background: $pv-mist;
 }
 
-// Partner logos (footer) and logos at the top of the team pages.
-// Logos taken from the CHU websites: to be approved by the communication departments before release.
+// Listings (news, Vigiking).
+.quarto-listing-default .quarto-post {
+  border-bottom: 1px solid $pv-rule;
+  padding-bottom: 1.25rem;
+}
+.quarto-post .listing-date, .listing-date {
+  font-family: $font-family-monospace;
+  font-size: 0.85rem;
+  color: $pv-ink-quiet;
+}
+.quarto-post .listing-title {
+  font-family: $headings-font-family;
+}
+
+// Category badges: Quarto fades them to 60 %, which breaks the contrast.
+.quarto-category,
+.quarto-category a,
+.listing-categories .listing-category {
+  color: $pv-ink-quiet !important;
+  opacity: 1 !important;
+  font-size: 0.85rem;
+  border-color: $pv-rule !important;
+}
+
+// ---------- Buttons --------------------------------------------------------
+
+.btn {
+  border-radius: 999px;
+  font-weight: 700;
+  padding: 0.7rem 1.4rem;
+}
+.btn-primary {
+  background: $pv-signal;
+  border-color: $pv-signal;
+}
+.btn-primary:hover {
+  background: $pv-signal-dark;
+  border-color: $pv-signal-dark;
+}
+.btn-outline-primary {
+  border-width: 2px;
+  color: $pv-signal;
+  background: $pv-paper;
+}
+
+// ---------- Footer ---------------------------------------------------------
+
+.nav-footer {
+  border-top: 1px solid $pv-rule;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
 .logo-partenaire {
-  height: 44px;
+  height: 46px;
   width: auto;
-  margin: 0.25rem 0.6rem;
+  margin: 0.25rem 0.35rem;
+  padding: 0.4rem 0.6rem;
+  background: $pv-paper;
+  border-radius: $border-radius;
   vertical-align: middle;
 }
 .logo-page {
@@ -178,34 +546,311 @@ select:focus-visible,
   margin-bottom: 1rem;
 }
 
-// Category badges of the news listings: Quarto's default grey fails WCAG AA (4.2:1).
-.quarto-category,
-.quarto-category a,
-.listing-categories .listing-category {
-  color: $pv-ink-quiet !important;
-  opacity: 1 !important; // Quarto fades the badge to 60 %, which breaks the contrast
+// ---------- Home page ------------------------------------------------------
+
+// The home page uses the full width and its own title (the hero h1).
+main.content:has(.accueil) {
+  max-width: none;
+}
+body:has(.accueil) #title-block-header {
+  display: none;
+}
+body {
+  overflow-x: clip; // full-bleed bands use 100vw
+}
+
+.accueil {
+  margin-top: -1rem;
+}
+
+.hero {
+  background: $pv-mist;
+  border-bottom: 1px solid $pv-rule;
+  padding: 3.5rem 0 3rem;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+.hero-grille {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: center;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.hero-surtitre {
+  font-family: $font-family-monospace;
   font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: $pv-ink-quiet;
+  margin-bottom: 0.75rem;
+}
+.hero h1 {
+  font-size: clamp(2.4rem, 1.6rem + 3.4vw, 4rem);
+  font-weight: 780;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  font-variation-settings: "opsz" 96;
+  margin: 0 0 1rem;
+}
+.hero-chapo {
+  font-size: 1.2rem;
+  color: $pv-ink-quiet;
+  max-width: 34rem;
+}
+.hero-recherche {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 34rem;
+  margin: 1.5rem 0 1.25rem;
+  padding: 0.95rem 1.2rem;
+  background: $pv-paper;
+  border: 2px solid $pv-rule;
+  border-radius: 999px;
+  color: $pv-ink-quiet;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 0 6px 20px -14px rgba(16, 40, 58, 0.45);
+}
+.hero-recherche:hover { border-color: $pv-signal; }
+.hero-recherche svg { flex: none; color: $pv-signal; }
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.hero-figure { margin: 0; }
+.hero-figure svg { width: 100%; height: auto; display: block; }
+.hero-legende {
+  font-size: 0.92rem;
+  color: $pv-ink-quiet;
+  max-width: 26rem;
+  margin: 0.5rem auto 0;
+  text-align: center;
 }
 
-// Tables: readable on phones.
-.table-responsive, table {
-  font-size: 0.95rem;
+// The signature: reports (dots) that connect into a signal.
+.signal-lien {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: signal-trace 0.9s ease-out forwards;
+  animation-delay: var(--d, 0s);
+}
+.signal-anneau {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: signal-pouls 1.6s ease-out 1.4s 2 both;
+}
+@keyframes signal-trace { to { stroke-dashoffset: 0; } }
+@keyframes signal-pouls {
+  0% { transform: scale(0.6); opacity: 0.6; }
+  100% { transform: scale(1.6); opacity: 0; }
 }
 
-// Interactive frequency grids (comprendre/frequences).
+.section-accueil {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 0;
+}
+.section-accueil > h2 {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+.urgence {
+  display: grid;
+  grid-template-columns: auto repeat(2, minmax(0, 1fr)) auto;
+  gap: 1.5rem;
+  align-items: center;
+  max-width: 72rem;
+  margin: 2rem auto 0;
+  padding: 1.1rem 1.5rem;
+  background: $pv-alert-tint;
+  border: 1px solid rgba(179, 38, 30, 0.22);
+  border-radius: $border-radius-lg;
+}
+.urgence-titre {
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $pv-alert;
+}
+.urgence-numero {
+  display: block;
+  font-family: $font-family-monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $pv-ink;
+  text-decoration: none;
+  line-height: 1.2;
+}
+// Phone numbers are not external sites: no external-link icon.
+a[href^="tel:"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+.urgence-libelle {
+  font-size: 0.9rem;
+  color: $pv-ink-quiet;
+}
+
+.publics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.public {
+  border-radius: $border-radius-lg;
+  padding: 1.4rem 1.4rem 1rem;
+  background: $pv-mist;
+}
+.public h3 {
+  font-family: $headings-font-family;
+  font-size: 1.3rem;
+  margin: 0.6rem 0 0.75rem;
+}
+.public ul { list-style: none; padding: 0; margin: 0; }
+.public li { padding: 0.4rem 0; border-top: 1px solid $pv-mist-deep; }
+.public li:first-child { border-top: none; }
+.public li a { font-weight: 600; }
+.icone {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.8rem;
+  background: $pv-paper;
+  color: $pv-signal;
+}
+.icone svg { width: 1.4rem; height: 1.4rem; }
+
+.rubriques {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.rubrique {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  border: 1px solid $pv-rule;
+  border-radius: $border-radius-lg;
+  padding: 1.15rem 1.25rem;
+  color: $pv-ink;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.rubrique:hover {
+  transform: translateY(-2px);
+  border-color: $pv-signal;
+  box-shadow: 0 8px 24px -12px rgba(10, 92, 158, 0.35);
+  color: $pv-ink;
+}
+.rubrique .icone { background: $pv-mist; flex: none; }
+.rubrique strong {
+  display: block;
+  font-family: $headings-font-family;
+  font-size: 1.15rem;
+}
+.rubrique span { color: $pv-ink-quiet; font-size: 0.95rem; }
+
+.raccourcis {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  list-style: none;
+  padding: 0;
+}
+.raccourcis a {
+  display: inline-block;
+  padding: 0.55rem 1rem;
+  border: 1px solid $pv-rule;
+  border-radius: 999px;
+  background: $pv-paper;
+  color: $pv-ink;
+  text-decoration: none;
+  font-weight: 600;
+}
+.raccourcis a:hover {
+  border-color: $pv-signal;
+  color: $pv-signal-dark;
+  background: $pv-mist;
+}
+
+.accueil-actualites {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 1rem;
+}
+
+@media (max-width: 991.98px) {
+  .hero { padding: 2rem 0 1.75rem; }
+  .hero-grille { grid-template-columns: 1fr; }
+  // On phones and tablets the figure would push the emergency numbers below the fold.
+  .hero-figure { display: none; }
+  .urgence { margin-top: 1.25rem; }
+  .urgence { grid-template-columns: 1fr; gap: 0.75rem; }
+  .publics, .rubriques { grid-template-columns: 1fr; }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .rubriques { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+// ---------- Interactive frequency grids (comprendre/frequences) -----------
+
 .frequences-outil {
   border: 1px solid $pv-rule;
-  border-radius: $border-radius;
-  padding: 1rem;
+  border-radius: $border-radius-lg;
+  padding: 1.25rem;
   margin: 1.5rem 0;
+  background: $pv-paper;
 }
 .frequences-outil fieldset { border: 0; padding: 0; margin: 0 0 0.75rem; }
-.frequences-outil legend { font-size: 1rem; font-weight: 600; }
+.frequences-outil legend { font-size: 1rem; font-weight: 700; }
 .frequences-outil label { margin-right: 1rem; }
 .frequences-grille { line-height: 0; }
 .frequences-grille svg { max-width: 100%; height: auto; }
-.frequences-resume { font-weight: 600; margin-top: 0.75rem; }
+.frequences-resume { font-weight: 700; margin-top: 0.75rem; }
+
+// ---------- Motion ---------------------------------------------------------
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+  .signal-lien { stroke-dashoffset: 0; }
+  .signal-anneau { opacity: 0; }
+}
+
+.frequences-legende {
+  font-size: 0.9rem;
+  color: $pv-ink-quiet;
+  margin: 0.5rem 0 0;
+}
+
+// ---------- Print ------------------------------------------------------------
+// Any page prints cleanly (the EHPAD nurse of the panel wanted to post procedures).
+
+.mention-impression {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: $pv-ink-quiet;
+}
+
+@media print {
+  #quarto-header, .quarto-announcement, .nav-footer, #quarto-margin-sidebar,
+  .lien-evitement, .imprimer, .versions, #quarto-back-to-top, .quarto-title-banner .quarto-title-meta {
+    display: none !important;
+  }
+  body { font-size: 11.5pt; }
+  main.content { max-width: none; }
+  .quarto-title-banner { background: none !important; border: none; padding: 0 0 0.5rem; margin: 0; }
+  .quarto-title-banner .title { font-size: 20pt; }
+  .encadre, .encadre-pratique, .sources-relecture { break-inside: avoid; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.8em; word-break: break-all; }
+  .hero-figure, .rubriques, .publics { display: none !important; }
 }

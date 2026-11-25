@@ -7,31 +7,34 @@ relu_par: null
 relu_le: null
 prochaine_relecture: null
 sources:
-  - titre: "ANSM, liste des centres régionaux de pharmacovigilance"
+  - titre: "ANSM, liste des centres régionaux de pharmacovigilance (mise à jour du 14/09/2026)"
     url: "https://ansm.sante.fr/page/liste-des-centres-regionaux-de-pharmacovigilance"
+    consulte_le: 2026-11-25
+  - titre: "CHU de Caen Normandie, pharmacologie et centre régional de pharmacovigilance"
+    url: "http://www.chu-caen.fr/pharmacologie.html"
     consulte_le: 2026-11-25
 ---
 
-Les coordonnées ci-dessous viennent d'annuaires publics. Elles sont à vérifier auprès de chaque centre avant publication.
+Pour une urgence vitale, appelez le 15 ou le 112. Pour une intoxication, le centre antipoison d'Angers : 02 41 48 21 21.
 
 ## CRPV de Caen
 
 Calvados (14), Manche (50), Orne (61)
 
-- **Adresse** : CHU de Caen Normandie, site Côte de Nacre, niveau 3, avenue de la Côte de Nacre, 14033 Caen cedex 9 [à vérifier]
-- **Téléphone** : 02 31 06 46 72 [à vérifier]
-- **Courriel** : pharmacovigilance@chu-caen.fr [à vérifier]
-- **Horaires** : [à compléter]
-- **Page actuelle sur le site du CHU** : [chu-caen.fr/pharmacologie](http://www.chu-caen.fr/pharmacologie.html)
+- **Téléphone** : [02 31 06 46 72](tel:+33231064672)
+- **Courriel** : [pharmacovigilance@chu-caen.fr](mailto:pharmacovigilance@chu-caen.fr)
+- **Adresse** : CHU de Caen Normandie, niveau 3, avenue de la Côte de Nacre, CS 30001, 14033 Caen cedex 9
+- **Horaires** : [à compléter par le centre]
 
 ## CRPV de Rouen
 
 Eure (27), Seine-Maritime (76)
 
-- **Adresse** : CHU de Rouen, hôpital Charles-Nicolle, Institut de biologie clinique [adresse complète à vérifier]
-- **Téléphone** : [à compléter]
-- **Courriel** : pharmacovigilance@chu-rouen.fr [à vérifier]
-- **Horaires** : [à compléter]
-- **Page actuelle sur le site du CHU** : [chu-rouen.fr/service/pharmacovigilance](https://www.chu-rouen.fr/service/pharmacovigilance/)
+- **Téléphone** : [02 32 88 90 79](tel:+33232889079)
+- **Courriel** : [pharmacovigilance@chu-rouen.fr](mailto:pharmacovigilance@chu-rouen.fr)
+- **Adresse** : CHU de Rouen, hôpital Charles-Nicolle, 76031 Rouen cedex
+- **Horaires** : [à compléter par le centre]
+
+Les numéros et courriels de Caen figurent à la fois sur le site du CHU de Caen et sur la liste de l'ANSM. Ceux de Rouen viennent de la liste de l'ANSM.
 
 <!-- FIGURE À FAIRE : plan d'accès de chaque centre (image libre de droits ou plan du CHU avec autorisation) -->

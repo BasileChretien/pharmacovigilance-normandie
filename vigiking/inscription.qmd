@@ -8,6 +8,11 @@ relu_le: null
 prochaine_relecture: null
 ---
 
+**En attendant le formulaire**, demandez à recevoir Vigiking par courriel au centre de votre département [à confirmer avec les CRPV] :
+
+- Calvados, Manche, Orne : [pharmacovigilance@chu-caen.fr](mailto:pharmacovigilance@chu-caen.fr)
+- Eure, Seine-Maritime : [pharmacovigilance@chu-rouen.fr](mailto:pharmacovigilance@chu-rouen.fr)
+
 Le formulaire d'inscription sera ajouté quand l'outil d'envoi aura été choisi et validé par les délégués à la protection des données des CHU.
 
 Ce qui est prévu :

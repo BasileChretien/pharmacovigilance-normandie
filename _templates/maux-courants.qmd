@@ -13,7 +13,7 @@ sources:
     consulte_le: AAAA-MM-JJ
 ---
 
-::: {.panel-tabset}
+::: {.deux-versions}
 
 ## Pour les patients
 

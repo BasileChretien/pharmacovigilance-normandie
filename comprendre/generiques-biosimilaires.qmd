@@ -30,7 +30,7 @@ sources:
     consulte_le: 2026-11-25
 ---
 
-::: {.panel-tabset}
+::: {.deux-versions}
 
 ## Pour les patients
 

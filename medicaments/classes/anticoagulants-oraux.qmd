@@ -28,7 +28,7 @@ sources:
     consulte_le: 2026-11-25
 ---
 
-::: {.panel-tabset}
+::: {.deux-versions}
 
 ## Pour les patients
 
@@ -46,8 +46,10 @@ Un anticoagulant évite qu'un caillot bouche une veine ou une artère. Il est pr
 
 Il existe deux familles :
 
-- les AVK (antivitamines K) : warfarine, fluindione, acénocoumarol. Leur dose s'ajuste selon une prise de sang, l'INR (test qui mesure le temps de coagulation) ;
-- les AOD (anticoagulants oraux directs) : apixaban, rivaroxaban, dabigatran, édoxaban. Leur dose est fixe, sans INR.
+- les AVK (antivitamines K) : warfarine (Coumadine), fluindione (Previscan), acénocoumarol (Sintrom, Minisintrom). Leur dose s'ajuste selon une prise de sang, l'INR (test qui mesure le temps de coagulation) ;
+- les AOD (anticoagulants oraux directs) : apixaban (Eliquis), rivaroxaban (Xarelto), dabigatran (Pradaxa), édoxaban (Lixiana). Leur dose est fixe, sans INR.
+
+Le nom écrit en gros sur votre boîte est souvent le nom de marque, entre parenthèses ci-dessus. Les génériques portent le nom de la molécule.
 
 <!-- FIGURE À FAIRE : schéma simple de la coagulation montrant où agissent les AVK (vitamine K, foie) et les AOD (facteur Xa, thrombine), avec un caillot qui se forme moins vite. -->
 
@@ -63,7 +65,8 @@ Il existe deux familles :
 ### Que faire en cas d'oubli ?
 
 - AVK : prenez la dose oubliée dans les 8 heures. Après, sautez-la et notez l'oubli dans votre carnet.
-- AOD : la règle dépend du médicament. Lisez la notice ou demandez à votre pharmacien.
+- Apixaban (Eliquis) : prenez la dose oubliée dès que vous y pensez, puis reprenez vos deux prises par jour comme d'habitude.
+- Autres AOD : la règle dépend du médicament. Lisez la notice ou demandez à votre pharmacien. [à compléter : règle de chaque AOD d'après son RCP]
 - Ne prenez jamais deux doses pour rattraper un oubli.
 
 ### Quels effets indésirables ?

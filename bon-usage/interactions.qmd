@@ -23,7 +23,7 @@ sources:
 
 <!-- NOTE DE RÉDACTION (à retirer avant publication) : chaque association a été vérifiée le 25/11/2026 dans le PDF du Thésaurus de septembre 2023 (niveau et texte recopiés dans l'onglet professionnel). L'ANSM indique que cette version est la dernière et qu'elle restera en ligne sans mise à jour jusqu'au 15 juin 2027 ; les RCP et notices sont les seuls documents de référence opposables. Le relecteur vérifie qu'aucun RCP récent ne modifie un niveau, et décide quelle référence citer après juin 2027. -->
 
-::: {.panel-tabset}
+::: {.deux-versions}
 
 ## Pour les patients
 

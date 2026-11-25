@@ -54,4 +54,19 @@ Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre ph
 
 :::
 
+## Vous êtes un professionnel de santé ou un soignant
+
+::: {.texte-pro}
+
+- Les médecins, chirurgiens-dentistes, sages-femmes et pharmaciens doivent déclarer tout effet indésirable suspecté d'être dû à un médicament [à vérifier : article R. 5121-161 du code de la santé publique]. Les autres professionnels de santé peuvent le faire.
+- Déclarez sur le portail, ou appelez le CRPV de votre département pour un cas grave, inattendu ou complexe : il peut vous aider à documenter le cas.
+- En EHPAD ou en établissement : prévenez le médecin traitant ou le médecin coordonnateur et le pharmacien référent, notez l'effet et les médicaments dans le dossier du résident, puis déclarez.
+
+| Départements | Centre | Téléphone | Courriel |
+|---|---|---|---|
+| Calvados (14), Manche (50), Orne (61) | CRPV de Caen | 02 31 06 46 72 | pharmacovigilance@chu-caen.fr |
+| Eure (27), Seine-Maritime (76) | CRPV de Rouen | 02 32 88 90 79 | pharmacovigilance@chu-rouen.fr |
+
+:::
+
 Pour comprendre à quoi servent les déclarations, lisez [Pourquoi déclarer un effet indésirable ?](comprendre/pourquoi-declarer.qmd)

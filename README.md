@@ -42,6 +42,14 @@ npm install && npm run check:html               # validité du HTML rendu
 - L'accessibilité des pages rendues se vérifie aussi avec axe-core (voir
   `.github/workflows/ci.yml`). Les outils automatiques ne remplacent pas un audit RGAA.
 
+## Design
+
+Blanc clinique et bleu-vert du logo du CRPV, utilisé avec parcimonie. Polices libres
+(licence SIL OFL) hébergées dans `assets/fonts/` : Atkinson Hyperlegible Next pour le texte,
+Bricolage Grotesque pour les titres, Atkinson Hyperlegible Mono pour les numéros et les
+chiffres. La figure « signal » de l'accueil est produite par
+`uv run python tools/design/make_signal.py`.
+
 ## Organisation
 
 | Dossier | Contenu |

@@ -32,7 +32,59 @@ local function meta_str(meta, key)
   return s
 end
 
+-- Patient and professional versions: shown as two labelled sections, one after the
+-- other, with a "go to version" link at the top, instead of tabs. The user panel
+-- (docs/panel/synthese.md) showed that tabs hid the professional text, kept it out
+-- of the search index, broke the heading order and could not be printed.
+local function version_class(text)
+  if text:lower():find("patient") then
+    return "partie-patients"
+  end
+  return "partie-pros"
+end
+
+local function sections_from_tabset(el)
+  local groups = {}
+  local current = nil
+  local preamble = pandoc.Blocks({})
+  for _, block in ipairs(el.content) do
+    if block.t == "Header" and block.level == 2 then
+      current = { header = block, blocks = pandoc.Blocks({ block }) }
+      table.insert(groups, current)
+    elseif current then
+      current.blocks:insert(block)
+    else
+      preamble:insert(block)
+    end
+  end
+  if #groups == 0 then
+    return nil
+  end
+  local out = pandoc.Blocks({})
+  out:extend(preamble)
+  if #groups > 1 then
+    local links = pandoc.Inlines("Aller à la version : ")
+    for i, group in ipairs(groups) do
+      if i > 1 then
+        links:extend(pandoc.Inlines(" · "))
+      end
+      links:insert(pandoc.Link(stringify(group.header.content), "#" .. group.header.identifier))
+    end
+    out:insert(pandoc.Div(
+      { pandoc.Plain(links) },
+      pandoc.Attr("", { "versions" }, { { "role", "navigation" }, { "aria-label", "Versions de la page" } })
+    ))
+  end
+  for _, group in ipairs(groups) do
+    out:insert(pandoc.Div(group.blocks, pandoc.Attr("", { "partie", version_class(stringify(group.header.content)) })))
+  end
+  return out
+end
+
 function Div(el)
+  if el.classes:includes("deux-versions") then
+    return sections_from_tabset(el)
+  end
   for cls, titre_defaut in pairs(TITRES) do
     if el.classes:includes(cls) then
       -- A box may carry its own title: ::: {.quand-consulter titre="En cas d'urgence"}

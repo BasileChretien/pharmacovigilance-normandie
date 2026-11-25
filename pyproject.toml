@@ -13,4 +13,4 @@ package = false
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-pythonpath = ["tools/checks"]
+pythonpath = ["tools/checks", "tools/build"]

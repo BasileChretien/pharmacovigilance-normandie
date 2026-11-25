@@ -48,4 +48,6 @@ Chaque carte est publiée avec l'accord écrit du membre, qui peut le retirer à
 
 :::
 
+Étudiant ? Voir [Enseignement et stages](enseignement.qmd).
+
 Chaque lien SigmaCV ouvre le CV en ligne du membre, qui se met à jour seul à partir d'ORCID et des bases de données ouvertes.

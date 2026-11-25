@@ -74,6 +74,12 @@ Chaque ligne est **à revérifier sur le Thésaurus de l'ANSM et le RCP** avant 
 | **CYP3A4/5** | Midazolam, triazolam, alprazolam, simvastatine, atorvastatine, ciclosporine, tacrolimus, sirolimus, évérolimus, colchicine, ticagrélor, amlodipine, félodipine, nifédipine, quétiapine, fentanyl, oxycodone, sildénafil, tadalafil ; apixaban et rivaroxaban (mineure) | Puissants : clarithromycine, érythromycine, itraconazole, kétoconazole, posaconazole, voriconazole, fluconazole, ritonavir, cobicistat, diltiazem, vérapamil, pamplemousse. Modérés : ciprofloxacine, dronédarone, doxycycline | Puissants : rifampicine, carbamazépine, phénytoïne, phénobarbital, primidone, millepertuis, enzalutamide, éfavirenz, bosentan. Modérés : rifabutine, névirapine, étravirine, modafinil, dexaméthasone | Simvastatine, ticagrélor + inhibiteurs puissants du CYP3A4 : contre-indication. Colchicine + macrolides (sauf spiramycine) : contre-indication. Apixaban, rivaroxaban + inhibiteurs puissants : association déconseillée. Immunosuppresseurs + clarithromycine, itraconazole ou kétoconazole : association déconseillée. Estroprogestatifs + inducteurs enzymatiques : association déconseillée ; + millepertuis : contre-indication. *À revérifier sur le Thésaurus de l'ANSM et le RCP.* |
 | **P-glycoprotéine (P-gp)** | Digoxine, dabigatran, édoxaban, apixaban, rivaroxaban, fexofénadine, colchicine, ticagrélor, ciclosporine, tacrolimus, lopéramide, céliprolol | Puissants : amiodarone, ciclosporine, clarithromycine, érythromycine, itraconazole, kétoconazole, vérapamil, quinidine, propafénone, ritonavir, cobicistat. Modérés : dronédarone, diltiazem, posaconazole | Puissants : rifampicine, millepertuis, carbamazépine, rifabutine. Modérés : phénobarbital, phénytoïne, primidone | Dabigatran + ciclosporine, dronédarone, itraconazole ou kétoconazole : contre-indication. Dabigatran + amiodarone ou vérapamil : précaution d'emploi (adaptation de dose). Dabigatran + inducteurs enzymatiques puissants : association déconseillée. Digoxine + dronédarone : association déconseillée ; + amiodarone, vérapamil, propafénone ou quinidine : précaution d'emploi. *À revérifier sur le Thésaurus de l'ANSM et le RCP.* |
 
+## Index par médicament
+
+Le même tableau, rangé par médicament : cherchez une molécule pour voir ses rôles. Cet index est produit automatiquement à partir du tableau ci-dessus.
+
+{{< include ../_includes/cyp-index.md >}}
+
 ## Désaccords entre les HUG et la FDA
 
 Les deux sources ne classent pas toujours une molécule de la même façon. Les différences relevées le 25 novembre 2026 :

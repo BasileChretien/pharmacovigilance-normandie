@@ -50,7 +50,7 @@ sources:
 
 <!-- NOTE DE RÉDACTION (à retirer avant publication) : chaque ligne du tableau a été vérifiée sur le RCP ou la notice d'UNE spécialité représentative, citée dans la colonne Source. Les génériques et les autres dosages peuvent avoir une consigne différente : le relecteur vérifie que la spécialité citée reste représentative. Dates de mise à jour des RCP lues le 25/11/2026 : Levothyrox 04/03/2024 ; acide alendronique Cristers 01/10/2026 ; Mopral 25/08/2026 ; Inipomp 02/09/2025 ; Glucophage 10/02/2026 ; Cortancyl 30/01/2026 ; Esidrex 14/01/2022 ; Lasilix 27/10/2026 ; Zocor 25/06/2026 ; Tahor 27/01/2025 ; Tardyferon 12/09/2024 ; Advil 400 mg 13/02/2025. -->
 
-::: {.panel-tabset}
+::: {.deux-versions}
 
 ## Pour les patients
 
