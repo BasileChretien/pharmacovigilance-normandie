@@ -1,0 +1,35 @@
+---
+title: "Politique éditoriale"
+description: "Comment les contenus du site sont rédigés, vérifiés, relus et corrigés, y compris l'usage de l'intelligence artificielle."
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+---
+
+## Qui écrit et qui relit ?
+
+Les contenus sont rédigés par les équipes des CRPV de Caen et de Rouen, sous la responsabilité d'un rédacteur en chef. Chaque page est relue par un pharmacologue nommé, dont le nom et la date de relecture figurent en bas de page. Les pages sur les maladies courantes sont aussi relues par un médecin généraliste ou un pharmacien d'officine, et par un infectiologue pour les infections. Les fiches pour les patients sont testées auprès de patients avant publication.
+
+## Usage de l'intelligence artificielle
+
+Des outils d'intelligence artificielle aident à repérer l'actualité et à rédiger des brouillons. Ils ne publient jamais rien. Chaque texte est vérifié par des contrôles automatiques (chiffres cités mot pour mot depuis leur source, règles de rédaction, accessibilité), puis relu et validé par un pharmacologue qui en porte la responsabilité éditoriale.
+
+## Sources
+
+Chaque page cite ses sources : documents officiels (résumé des caractéristiques du produit, notice, ANSM, HAS, Agence européenne des médicaments), recommandations de sociétés savantes, articles publiés. La date de consultation de chaque source est indiquée.
+
+## Mises à jour et corrections
+
+Chaque page a une date de prochaine relecture. Elle est relue plus tôt si une de ses sources change. Une erreur est corrigée avec un erratum daté et visible.
+
+## Ce que le site ne fait pas
+
+- Il ne donne pas de conseil individuel.
+- Il ne commente pas un signal ou une enquête en cours d'évaluation.
+- Il ne publie aucune information tirée des dossiers des centres, couverts par le secret médical.
+
+## Liens d'intérêts
+
+Les auteurs et les relecteurs déclarent leurs liens d'intérêts. Voir [Liens d'intérêts](../crpv/liens-interets.qmd).

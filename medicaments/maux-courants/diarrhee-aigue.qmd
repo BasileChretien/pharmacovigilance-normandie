@@ -1,0 +1,165 @@
+---
+title: "Diarrhée aiguë : quels médicaments ?"
+description: "La réhydratation d'abord, la place limitée des médicaments contre la diarrhée selon l'âge, et les rares cas où un antibiotique est utile."
+public: [patients, professionnels]
+recommandation_de_reference: "Groupe francophone d'hépatologie-gastroentérologie et nutrition pédiatriques (GFHGNP), Recommandations d'experts « Diarrhée aiguë du nourrisson et de l'enfant », 2024"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "GFHGNP. Jung C, Bellaiche M et le conseil d'administration du GFHGNP. Diarrhée aiguë du nourrisson et de l'enfant, recommandations d'experts, 2024"
+    url: "https://www.gfhgnp.org/wp-content/uploads/kdocuments/Fiche-recommandations-DiarrhéesV3.pdf"
+    consulte_le: 2026-11-25
+  - titre: "Santé.fr (ministère de la Santé), Antibio'Malin. Gastro-entérite : définition, diagnostic, traitement, prévention, 29/07/2025"
+    url: "https://www.sante.fr/antibiomalin-pour-savoir-comment-bien-utiliser-les-antibiotiques/gastro-enterite-definition-diagnostic-traitement-prevention"
+    consulte_le: 2026-11-25
+  - titre: "ANSM. Médicaments à base d'argile dans le traitement symptomatique de la diarrhée aiguë chez l'enfant, 25/03/2019, mis à jour le 15/04/2021"
+    url: "https://ansm.sante.fr/informations-de-securite/medicaments-a-base-dargile-dans-le-traitement-symptomatique-de-la-diarrhee-aigue-chez-lenfant"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments. IMODIUM 2 mg, gélule (lopéramide), RCP mis à jour le 02/09/2026"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/61651634/extrait"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Répertoire des spécialités. LOPERAMIDE RPG 2 mg, gélule, RCP mis à jour le 01/12/2016"
+    url: "https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0288170.htm"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Répertoire des spécialités. TIORFAN 10 mg NOURRISSONS (racécadotril), RCP mis à jour le 26/11/2021"
+    url: "https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0381322.htm"
+    consulte_le: 2026-11-25
+  - titre: "Antibioclic, outil d'aide à la prescription antibiotique (diarrhée aiguë infectieuse)"
+    url: "https://antibioclic.com/"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.quand-consulter}
+- Signes de déshydratation (manque d'eau dans le corps) : grande fatigue, confusion, langue sèche, peu d'urine. Appelez le 15 (SAMU, service d'aide médicale urgente).
+- Enfant de 2 ans ou moins : consultez le jour même si la diarrhée dure plus de 2 jours. Faites de même en cas de sang dans les selles, de forte fièvre ou de refus de boire.
+- Vomissements verts ou sans arrêt : consultez en urgence.
+- Adulte de plus de 75 ans, malade chronique ou aux défenses affaiblies : consultez le jour même.
+- Pour tous : diarrhée de plus de 2 jours, sang dans les selles ou retour d'un pays tropical. Consultez.
+:::
+
+::: {.a-retenir}
+- Le plus important est de boire. Chez l'enfant, donnez un soluté de réhydratation orale.
+- Les médicaments contre la diarrhée ne remplacent pas la réhydratation.
+- Les antibiotiques sont rarement utiles : la plupart des diarrhées sont dues à un virus.
+:::
+
+### Pourquoi la réhydratation passe-t-elle avant tout ?
+
+La diarrhée fait perdre de l'eau et des sels minéraux. Le danger principal est la déshydratation. Les jeunes enfants, surtout avant 6 mois, et les personnes âgées y sont plus sensibles.
+
+La plupart des diarrhées aiguës guérissent seules en quelques jours. Les vomissements durent souvent moins de 24 heures. La diarrhée dure environ 3 à 4 jours.
+
+### Comment utiliser un soluté de réhydratation orale ?
+
+Le soluté de réhydratation orale est une poudre à mélanger à de l'eau. Il apporte l'eau, le sucre et les sels dans les bonnes proportions. Il est vendu en pharmacie sans ordonnance.
+
+- Diluez un sachet dans 200 ml d'eau. Le mélange se garde 24 heures au réfrigérateur.
+- Proposez-le à volonté, par petites quantités et souvent.
+- Si l'enfant vomit, commencez par une cuillère à café, puis augmentez peu à peu.
+- Si vous allaitez, continuez l'allaitement et donnez le soluté en plus.
+
+<!-- FIGURE À FAIRE : trois vignettes. 1) Un sachet versé dans un biberon gradué rempli d'eau jusqu'à 200 ml. 2) Une cuillère à café donnée à un enfant qui vomit, avec une flèche « augmenter peu à peu ». 3) Le biberon au réfrigérateur avec la mention « 24 heures au plus ». Texte alternatif : « Préparer un soluté de réhydratation orale : un sachet dans 200 ml d'eau, donné par petites quantités, conservé 24 heures au froid. » -->
+
+Les adultes boivent régulièrement, par petites gorgées. Les sodas et jus de fruits ne remplacent pas le soluté chez l'enfant. [à compléter : source]
+
+### Quels médicaments contre la diarrhée existent ?
+
+- Le racécadotril réduit la quantité d'eau perdue dans les selles. Il se prend toujours avec la réhydratation. Chez l'enfant, son intérêt est limité.
+- Le lopéramide ralentit l'intestin. Il est réservé à l'adulte et au grand enfant.
+- Les argiles, comme la diosmectite, tapissent l'intestin.
+- Certains probiotiques (bactéries ou levures utiles) peuvent raccourcir un peu la diarrhée de l'enfant.
+
+### Comment choisir selon l'âge ?
+
+- Avant 2 ans : ne donnez pas de médicament à base d'argile. Ils peuvent contenir des traces de plomb. Le traitement de référence reste le soluté de réhydratation.
+- Chez l'enfant : évitez le lopéramide. Son âge minimum varie selon les boîtes, de 6 à 8 ans ou plus. Lisez la notice.
+- Chez l'adulte : un médicament contre la diarrhée peut aider à passer un cap. Demandez conseil à votre pharmacien.
+- Femme enceinte ou qui allaite : demandez conseil avant tout médicament.
+
+### Comment bien les utiliser ?
+
+Respectez la dose de la notice. Arrêtez le lopéramide si la diarrhée ne s'améliore pas en 48 heures, et consultez. Arrêtez le racécadotril dès que les selles redeviennent normales.
+
+Contre la fièvre, préférez le paracétamol. Évitez l'ibuprofène et les autres anti-inflammatoires : ils sont dangereux pour les reins en cas de déshydratation.
+
+### Quand faut-il un antibiotique ?
+
+Rarement. La plupart des diarrhées sont dues à un virus, et les antibiotiques n'agissent pas sur les virus. Le médecin décide selon les signes et parfois un examen des selles. Certaines infections dues à des bactéries ou à des parasites ont besoin d'un traitement.
+
+### Quels effets surveiller ?
+
+- Lopéramide : une dose trop forte peut troubler le rythme du cœur. Ne dépassez jamais la dose de la notice.
+- Racécadotril : arrêtez-le en cas d'éruption sur la peau ou de gonflement du visage ou de la gorge. En cas de gêne pour respirer, appelez le 15.
+
+### Ce qu'il vaut mieux éviter
+
+- Le lopéramide en cas de fièvre forte ou de sang dans les selles.
+- Les médicaments contre les vomissements sans avis d'un professionnel de santé, surtout chez l'enfant.
+- Les médicaments d'un adulte donnés à un enfant.
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Signes d'alerte
+
+Critères d'hospitalisation chez l'enfant (GFHGNP 2024) : choc, déshydratation sévère (perte de poids d'au moins 10 %), signes neurologiques (troubles de conscience, léthargie, convulsions), vomissements incoercibles ou bilieux, échec de la réhydratation orale, surveillance à domicile impossible. Évaluer la déshydratation par le score de Guarino (0 : absente ; 1-4 : légère ; 5-8 : modérée à sévère). Après vaccination contre le rotavirus, notamment dans les 7 premiers jours, penser à l'invagination intestinale aiguë.
+
+Chez l'adulte (Antibio'Malin), consultation le jour même si âge supérieur à 75 ans, maladie chronique, immunodépression, impossibilité de boire, fièvre élevée, asthénie marquée ou perte de poids rapide ; consultation si diarrhée de plus de 2 jours, fièvre supérieure à 38,5 °C, glaires ou sang, retour de zone tropicale.
+
+### Stratégie thérapeutique
+
+Enfant (GFHGNP 2024) :
+
+- SRO à volonté (1 sachet dans 200 ml d'eau, conservation 24 heures au réfrigérateur ; remboursé jusqu'à 5 ans). Sonde nasogastrique en cas de déshydratation sévère (environ 40 à 50 ml/kg de SRO sur 3 à 6 heures ou sur 24 heures). Voie veineuse en cas de choc, de troubles de conscience, de vomissements persistants ou d'échec.
+- Alimentation : poursuite de l'allaitement ; réalimentation précoce (dans les 4 heures) avec le lait habituel ; lait sans lactose seulement si diarrhée de plus de 7 jours ou hospitalisation.
+- Adjuvants : probiotiques possibles (*Lactobacillus rhamnosus* GG, *Saccharomyces boulardii* CNCM I-745 : faible niveau de preuve ; *L. reuteri* DSM 17938 : très faible niveau de preuve). Racécadotril : niveau de preuve jugé limité (Cochrane 2019), non recommandé en routine.
+- À éviter : smectites avant 2 ans, lopéramide, AINS en cas de déshydratation, antiseptiques intestinaux. Pas d'antiémétique en ambulatoire ; ondansétron hors AMM réservé aux urgences et à l'hôpital (contre-indiqué en cas d'allongement connu du QT).
+- Antibiotiques : rarement indiqués ; indispensables dans la shigellose, la salmonellose majeure et la giardiase.
+
+Adulte : réhydratation orale ; traitement symptomatique éventuel. Antibiotiques réservés aux diarrhées bactériennes ou parasitaires selon la clinique et/ou la coproculture (Antibio'Malin cite l'azithromycine). Indications, molécules et durées : se reporter à [Antibioclic](https://antibioclic.com/), rubrique « Diarrhée aiguë infectieuse ». [à compléter : recommandation française de référence pour l'adulte et critères précis d'antibiothérapie]
+
+### Mécanismes d'action
+
+- SRO : absorption couplée glucose-sodium, préservée au cours de la plupart des diarrhées infectieuses.
+- Racécadotril : inhibiteur de l'enképhalinase, antisécrétoire intestinal sans effet sur la motricité.
+- Lopéramide : agoniste des récepteurs opioïdes µ intestinaux, ralentit le transit.
+- Diosmectite : argile adsorbante.
+
+[à compléter : source RCP rubrique 5.1 pour chaque mécanisme]
+
+### Précautions et effets indésirables
+
+- Lopéramide (RCP Imodium 2 mg, 2026) : réservé à l'adulte et à l'enfant de plus de 8 ans ; posologie initiale 2 gélules (adulte) ou 1 gélule (enfant), maximum 8 gélules par 24 heures chez l'adulte et 6 chez l'enfant. Contre-indications : enfant de moins de 8 ans, dysenterie aiguë avec sang dans les selles et fièvre élevée, poussée aiguë de rectocolite hémorragique ; colite pseudomembraneuse post-antibiotique (RCP Lopéramide RPG). L'âge minimum diffère selon les spécialités (6 ans pour Lopéramide RPG 2 mg). Effets cardiaques avec allongement du QT rapportés en cas de surdosage. Arrêt si absence d'amélioration en 48 heures (RCP Lopéramide RPG). Imodium 2 mg est signalé comme n'étant plus ou bientôt plus disponible.
+- Racécadotril (RCP Tiorfan 10 mg nourrissons) : adjuvant de la réhydratation orale, à partir d'un mois et moins de 13 kg ; 1,5 mg/kg par prise, 3 prises par jour au plus, sans dépasser 7 jours. Pas d'utilisation dans les diarrhées associées aux antibiotiques ; fièvre avec sang ou pus dans les selles : évoquer une diarrhée invasive. Arrêt en cas de réaction cutanée sévère ou d'angio-œdème ; prudence avec les IEC (risque d'angio-œdème).
+- Argiles (ANSM, 2021) : ne plus utiliser avant 2 ans, même brièvement, en raison de traces possibles de plomb. [à compléter : position ANSM chez la femme enceinte ou allaitante, à vérifier dans le RCP actuel de la diosmectite]
+
+### Ce qu'il faut éviter
+
+- Lopéramide chez l'enfant, en cas de fièvre élevée ou de selles sanglantes.
+- Smectites avant 2 ans.
+- Antiémétiques en ambulatoire chez l'enfant.
+- AINS en cas de déshydratation.
+- Antibiothérapie systématique d'une diarrhée aiguë.
+
+### Outils et liens
+
+- [Recommandations GFHGNP 2024](https://www.gfhgnp.org/wp-content/uploads/kdocuments/Fiche-recommandations-DiarrhéesV3.pdf).
+- [Antibioclic](https://antibioclic.com/) : aide à la prescription antibiotique.
+- Effets indésirables : déclaration sur [signalement.social-sante.gouv.fr](https://www.signalement.social-sante.gouv.fr) ou auprès du CRPV de Caen ou de Rouen.
+
+:::
+
+:::

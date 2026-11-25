@@ -1,0 +1,71 @@
+---
+title: "[Maladie ou symptôme] : quels médicaments ?"
+description: "[Une phrase : traitements, comment ils agissent, comment on choisit, précautions.]"
+public: [patients, professionnels]
+recommandation_de_reference: "[Titre et année de la recommandation de référence]"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "[Recommandation de référence : HAS, société savante, ANSM…]"
+    url: "[URL]"
+    consulte_le: AAAA-MM-JJ
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.quand-consulter}
+- [Signe d'alerte 1 : consultez un médecin]
+- [Signe d'urgence : appelez le 15]
+:::
+
+::: {.a-retenir}
+- [Trois messages au plus]
+:::
+
+### Quels médicaments peuvent aider ?
+
+### Comment agissent-ils ?
+
+### Comment choisir ?
+
+[Selon l'âge, la grossesse, les autres maladies. Le pharmacien peut conseiller.]
+
+### Comment bien les utiliser ?
+
+[Dose, durée, moment de prise.]
+
+### Quels effets surveiller ?
+
+### Ce qu'il vaut mieux éviter
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Signes d'alerte
+
+### Stratégie thérapeutique
+
+[Première intention, alternatives, selon le terrain ; d'après la recommandation de référence.]
+
+### Mécanismes d'action
+
+### Précautions et effets indésirables
+
+### Ce qu'il faut éviter
+
+### Outils et liens
+
+:::
+
+:::

@@ -1,0 +1,29 @@
+---
+title: "Medicines safety in Normandy"
+description: "A short page in English: how to report a side effect in France, and who to call in Normandy."
+lang: en
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+---
+
+This page is for visitors and English-speaking residents of Normandy. The rest of the website is in French.
+
+## Emergencies
+
+- **Medical emergency:** call **15** (SAMU) or **112**.
+- **Poisoning:** call the Angers poison centre, which covers Normandy, on **02 41 48 21 21**, 24 hours a day.
+
+## Reporting a side effect
+
+Anyone can report a suspected side effect of a medicine in France, including patients and relatives. Reports are made online on the French portal [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr) (in French). A pharmacist or doctor can help you.
+
+Your report goes to the regional pharmacovigilance centre: Caen for Calvados, Manche and Orne; Rouen for Eure and Seine-Maritime. It is recorded without your name in the national database.
+
+## Questions about your medicines
+
+Ask a pharmacist first: pharmacies are open in every town, and an on-duty pharmacy is available at night and on Sundays. Do not stop or change a treatment without talking to a doctor or a pharmacist.
+
+[Draft: to be reviewed, including the on-duty pharmacy information.]

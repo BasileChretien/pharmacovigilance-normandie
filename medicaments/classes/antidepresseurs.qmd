@@ -1,0 +1,171 @@
+---
+title: "Les antidépresseurs"
+description: "ISRS, IRSN, tricycliques et mirtazapine : délai d'action, symptômes à l'arrêt, syndrome sérotoninergique, manque de sel chez la personne âgée et interactions."
+public: [patients, professionnels]
+classe: "antidépresseurs"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "Base de données publique des médicaments, RCP et notice de ZOLOFT 50 mg, gélule (sertraline, CIS 60683198)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/60683198/extrait"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments, RCP et notice de SEROPLEX 10 mg, comprimé pelliculé sécable (escitalopram, CIS 67219535)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67219535/extrait"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments, RCP et notice d'EFFEXOR L.P. 75 mg, gélule à libération prolongée (venlafaxine, CIS 61403425)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/61403425/extrait"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments, RCP et notice de LAROXYL 25 mg, comprimé pelliculé (amitriptyline, CIS 65892928)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/65892928/extrait"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments, RCP et notice de NORSET 15 mg, comprimé pelliculé (mirtazapine, CIS 65124914)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/65124914/extrait"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
+    url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
+    consulte_le: 2026-11-25
+  - titre: "3114, numéro national de prévention du suicide"
+    url: "https://3114.fr/"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- L'effet n'est pas immédiat : il faut en général 2 à 4 semaines.
+- N'arrêtez jamais d'un coup : la dose se diminue peu à peu, avec votre médecin.
+- Agitation, fièvre, tremblements ou diarrhée après un nouveau médicament : consultez vite.
+:::
+
+### À quoi sert ce traitement ?
+
+Les antidépresseurs traitent la dépression. Certains traitent aussi l'anxiété, les troubles obsessionnels ou certaines douleurs des nerfs.
+
+Il existe plusieurs familles :
+
+- les plus prescrits agissent sur la sérotonine (un messager du cerveau) : sertraline (Zoloft), escitalopram (Seroplex), fluoxétine, paroxétine ;
+- les mixtes : venlafaxine (Effexor), duloxétine ;
+- les tricycliques, plus anciens : amitriptyline (Laroxyl), clomipramine ;
+- la mirtazapine (Norset).
+
+### Comment le prendre ?
+
+Prenez votre comprimé une fois par jour, à heure fixe. La sertraline se prend pendant un repas.
+
+Vous vous sentirez mieux après 2 à 4 semaines en général. Continuez même si vous ne sentez encore rien. Après la guérison, le traitement dure en général encore au moins 6 mois. Cela évite une rechute.
+
+<!-- FIGURE À FAIRE : frise du temps de traitement : semaines 1 à 2 « effets indésirables possibles, pas encore d'effet », semaines 2 à 4 « l'effet commence », puis « au moins 6 mois après la guérison », puis « baisse progressive de la dose avec le médecin ». -->
+
+En cas d'oubli, ne prenez pas de dose double. Prenez la dose suivante à l'heure habituelle.
+
+### Quels effets indésirables ?
+
+Ils sont plus fréquents les premières semaines et diminuent souvent ensuite. Avec la sertraline, plus de 1 personne sur 10 a des nausées, une diarrhée, des vertiges, des maux de tête, une insomnie ou une somnolence.
+
+Les troubles sexuels sont fréquents : baisse du désir, difficulté à éjaculer. Ils durent parfois après l'arrêt. Parlez-en à votre médecin.
+
+Les tricycliques peuvent donner une bouche sèche, une constipation et des vertiges en se levant. La mirtazapine donne souvent envie de dormir et fait prendre du poids.
+
+Les antidépresseurs qui agissent sur la sérotonine peuvent favoriser les saignements. Ce risque augmente avec l'aspirine, les anti-inflammatoires ou les médicaments qui fluidifient le sang.
+
+### Quel risque particulier chez les personnes âgées ?
+
+Ces mêmes antidépresseurs peuvent faire baisser le sel dans le sang (hyponatrémie). Le risque est plus grand chez les personnes âgées et sous diurétique (médicament qui fait uriner). Les signes sont des maux de tête, une confusion, des troubles de la mémoire, une faiblesse et des chutes.
+
+::: {.quand-consulter}
+- Idées de suicide ou envie de vous faire du mal : appelez le 3114 (gratuit, jour et nuit) ou le 15.
+- Agitation, confusion, fièvre, sueurs, tremblements, raideur ou diarrhée : consultez en urgence.
+- Chez une personne âgée : confusion, faiblesse ou chute.
+- Saignement inhabituel du nez, des gencives, ou selles noires.
+- Sous mirtazapine : fièvre, mal de gorge ou aphtes.
+- Douleur de l'œil ou vue trouble.
+:::
+
+Au début du traitement, les idées noires peuvent augmenter. Vos proches peuvent aider à repérer un changement.
+
+### Avec quels médicaments faut-il être prudent ?
+
+Certaines associations provoquent un excès de sérotonine, appelé syndrome sérotoninergique (agitation, fièvre, tremblements, diarrhée). Demandez conseil avant de prendre :
+
+- du tramadol (antidouleur) ;
+- un triptan (contre la migraine) ;
+- du millepertuis, une plante vendue sans ordonnance ;
+- du lithium ou un autre antidépresseur.
+
+Avec l'escitalopram, de nombreux médicaments sont interdits car ils dérèglent le rythme du cœur. Montrez toujours votre ordonnance au pharmacien.
+
+### Grossesse, allaitement, conduite
+
+Si vous envisagez une grossesse, parlez-en à votre médecin sans arrêter seul votre traitement. Le Centre de référence sur les agents tératogènes (CRAT) informe les professionnels sur [lecrat.fr](https://www.lecrat.fr).
+
+Certains antidépresseurs donnent envie de dormir, surtout au début. Soyez prudent au volant.
+
+### Puis-je arrêter mon traitement ?
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+Un arrêt brutal peut donner des vertiges, des fourmillements, une anxiété, des nausées ou des troubles du sommeil. Dans une étude sur la sertraline, 23 personnes sur 100 qui arrêtaient ont eu ces signes. C'était 12 sur 100 chez celles qui continuaient. Ils passent souvent en 2 semaines, parfois en plusieurs mois. Votre médecin baisse donc la dose peu à peu.
+
+<!-- FIGURE À FAIRE : deux grilles de 100 personnages côte à côte, même échelle : « ont arrêté la sertraline » (23 colorés) et « ont continué » (12 colorés), légende « personnes ayant eu des symptômes à l'arrêt ». -->
+
+### Signaler un effet indésirable
+
+Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr).
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Points clés de sécurité
+
+- **Délai d'action** : 2 à 4 semaines ; poursuite au moins 6 mois après la rémission (RCP escitalopram, amitriptyline).
+- **Risque suicidaire** : surveillance étroite jusqu'à l'amélioration, le risque pouvant augmenter en début de rétablissement ; vigilance accrue chez l'enfant et l'adolescent.
+- **Symptômes d'arrêt** : fréquents, surtout après arrêt brutal (sertraline : 23 % à l'arrêt contre 12 % en poursuite). Vertiges, paresthésies, troubles du sommeil, anxiété, nausées, tremblements, céphalées ; en général dans les premiers jours, résolutifs en 2 semaines, parfois 2 à 3 mois ou plus. Décroissance sur au moins 1 à 2 semaines, voire plusieurs semaines ou mois selon le patient.
+- **Syndrome sérotoninergique** : signes digestifs, neuropsychiques, moteurs (myoclonies, hyperréflexie) et végétatifs (hyperthermie, tachycardie) ; arrêt immédiat.
+- **Hyponatrémie** par SIADH (ISRS, IRSN, plus rarement mirtazapine) : sujet âgé, diurétiques, déplétion volémique ; natrémies < 110 mmol/L rapportées.
+- **Saignements** (ISRS, IRSN), y compris hémorragie du post-partum.
+- **QT** : escitalopram contre-indiqué en cas d'allongement du QT congénital ou acquis.
+- **Autres** : dysfonction sexuelle parfois persistante après l'arrêt ; glaucome aigu par fermeture de l'angle ; hausse dose-dépendante de la pression artérielle sous venlafaxine.
+- **Tricycliques** : contre-indiqués après un infarctus récent, en cas de trouble de conduction ou de rythme, d'insuffisance coronarienne. Effets atropiniques (rétention urinaire, glaucome, constipation), hypotension orthostatique du sujet âgé. Toxicité grave en surdosage (élargissement du QRS, arythmies) dès 750 mg chez l'adulte ; enfants très sensibles.
+- **Mirtazapine** : agranulocytose très rare, parfois fatale (surtout après 65 ans) ; arrêter et faire une NFS devant fièvre, angine ou stomatite.
+
+### Surveillance
+
+Idées suicidaires et comportement en début de traitement et à chaque changement de dose. Natrémie devant céphalées, confusion, troubles mnésiques ou chutes chez le sujet âgé. Pression artérielle sous venlafaxine. ECG si facteurs de risque d'allongement du QT. Fréquence d'un ionogramme systématique chez le sujet âgé : [à compléter : source].
+
+### Interactions majeures
+
+- ISRS + IMAO irréversibles : **contre-indication** (2 semaines après l'IMAO ; 1 semaine après l'ISRS, 5 semaines pour la fluoxétine). ISRS + IMAO-A réversibles, linézolide, bleu de méthylène : **association déconseillée**.
+- Citalopram, escitalopram + autres torsadogènes ou substances susceptibles de donner des torsades de pointes : **contre-indication**. Escitalopram + oméprazole ou ésoméprazole : **précaution d'emploi**.
+- ISRS + lithium, millepertuis : **précaution d'emploi**. ISRS + tramadol, triptans, IMAO-B : **à prendre en compte**.
+- ISRS + AINS, antiagrégants, anticoagulants oraux : **à prendre en compte** (hémorragie).
+- ISRS + imipraminiques : **précaution d'emploi** (concentrations et convulsions).
+- ISRS + autres hyponatrémiants (diurétiques, carbamazépine, oxcarbazépine, desmopressine) : **à prendre en compte**.
+- Fluoxétine + tamoxifène, tramadol ou codéine : **association déconseillée** (inhibition du CYP2D6) ; + métoprolol : **précaution d'emploi**.
+- Imipraminiques + antihypertenseurs centraux, sympathomimétiques alpha et bêta IV ou IM : **association déconseillée** ; + adrénaline locale : **précaution d'emploi**.
+
+### Adaptation des doses
+
+- Escitalopram : après 65 ans, 5 mg/j puis 10 mg/j au maximum ; 5 mg/j les 2 premières semaines en cas d'insuffisance hépatique légère à modérée ou de métaboliseur lent du CYP2C19.
+- Sertraline : adaptation prudente chez le sujet âgé (hyponatrémie).
+- Amitriptyline : après 65 ans ou en cas de cardiopathie, 10 à 25 mg/j au départ, prudence au-delà de 100 mg/j.
+
+### Pièges fréquents
+
+À compléter par le CRPV à partir de cas anonymisés.
+
+### Mesures de réduction du risque
+
+Prescrire la plus petite quantité utile de tricycliques chez un patient à risque suicidaire : [à compléter : source]. Informer le patient et l'entourage du délai d'action, des symptômes d'arrêt et des signes du syndrome sérotoninergique.
+
+:::
+
+:::

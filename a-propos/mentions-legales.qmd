@@ -1,0 +1,29 @@
+---
+title: "Mentions légales"
+description: "Éditeur, hébergeur et données personnelles du site."
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+---
+
+**Prototype non officiel.** Les mentions ci-dessous sont à compléter et à valider par les directions de la communication et des affaires juridiques des CHU de Caen et de Rouen.
+
+## Éditeur
+
+[À compléter : établissement éditeur, adresse, directeur de la publication.]
+
+## Hébergement
+
+[À compléter : hébergeur, adresse.]
+
+## Données personnelles
+
+Le site ne collecte aucune donnée de santé. Il ne dépose pas de cookie publicitaire. La mesure d'audience utilise Matomo, configuré pour l'exemption de consentement de la CNIL [à mettre en place]. L'inscription à Vigiking demande seulement une adresse électronique, avec double confirmation et désinscription en un clic [à mettre en place].
+
+Délégués à la protection des données : [à compléter pour chaque CHU].
+
+## Propriété intellectuelle
+
+Les contenus du site sont publiés par les CRPV de Caen et de Rouen. Les sources reprises sont citées sur chaque page.

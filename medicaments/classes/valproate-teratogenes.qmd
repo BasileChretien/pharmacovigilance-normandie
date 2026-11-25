@@ -1,0 +1,164 @@
+---
+title: "Le valproate et les autres médicaments tératogènes"
+description: "Valproate, topiramate et grossesse : les risques pour l'enfant à naître, la contraception, les règles françaises de prescription et de délivrance."
+public: [patients, professionnels]
+classe: "valproate et tératogènes"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "ANSM, dossier thématique « Valproate et grossesse » (mis à jour le 17/12/2025)"
+    url: "https://ansm.sante.fr/dossiers-thematiques/medicaments-et-grossesse/valproate-et-grossesse"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, « Valproate et risques pour l'enfant à naître : les conditions de prescription et de délivrance évoluent pour les adolescents et les hommes susceptibles d'avoir des enfants » (13/12/2024, mis à jour le 06/11/2025)"
+    url: "https://ansm.sante.fr/actualites/valproate-et-risques-pour-lenfant-a-naitre-les-conditions-de-prescription-et-de-delivrance-evoluent-pour-les-adolescents-et-les-hommes-susceptibles-davoir-des-enfants"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Guide valproate et dérivés destiné aux professionnels de santé, version 8, novembre 2025"
+    url: "https://ansm.sante.fr/uploads/2025/12/17/20251217-marr-valproate-guide-pds-2.pdf"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Guide topiramate (Epitomax et génériques) destiné aux professionnels de santé, programme de prévention des grossesses, version 1, novembre 2024"
+    url: "https://ansm.sante.fr/uploads/2024/12/11/20241211-topiramate-guide-professionnels-sante.pdf"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, tableau des médicaments soumis à un programme de prévention des grossesses (2023)"
+    url: "https://ansm.sante.fr/uploads/2023/11/29/20231129-prevoyance-grossesse-2023.pdf"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
+    url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
+    consulte_le: 2026-11-25
+  - titre: "Centre de référence sur les agents tératogènes (CRAT)"
+    url: "https://www.lecrat.fr/"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Le valproate et le topiramate peuvent gravement nuire à un bébé exposé pendant la grossesse.
+- Si vous pouvez être enceinte, vous devez utiliser une contraception efficace pendant tout le traitement.
+- N'arrêtez jamais seule ou seul votre traitement : parlez-en vite à votre médecin spécialiste.
+:::
+
+### À quoi sert ce traitement ?
+
+Certains médicaments sont tératogènes (ils peuvent provoquer des malformations chez le bébé à naître). Cette fiche parle surtout de deux d'entre eux.
+
+Le valproate s'appelle Dépakine, Dépakine Chrono, Micropakine, Dépakote, Dépamide, ou porte son nom en générique. Il traite l'épilepsie (maladie qui provoque des crises) et le trouble bipolaire (maladie de l'humeur).
+
+Le topiramate s'appelle Epitomax, ou porte son nom en générique. Il traite l'épilepsie et prévient la migraine.
+
+D'autres médicaments suivent des règles proches, par exemple l'isotrétinoïne contre l'acné. Lisez la fiche [isotrétinoïne](isotretinoine.qmd).
+
+### Quel est le risque pour le bébé ?
+
+Prenons 100 enfants exposés au valproate pendant la grossesse. Environ 11 naissent avec une malformation grave. Sans ce médicament, 2 à 3 enfants sur 100 en ont une.
+
+Jusqu'à 30 à 40 enfants sur 100 exposés ont des troubles du développement. Par exemple, ils parlent ou marchent plus tard, ou ont des difficultés de mémoire et de langage.
+
+<!-- FIGURE À FAIRE : deux grilles de 100 personnages côte à côte. Grille 1 « sans valproate » : 2 à 3 personnages colorés (malformation). Grille 2 « valproate pendant la grossesse » : 11 personnages colorés (malformation) et, dans une troisième grille, 30 à 40 personnages colorés (troubles du développement). Couleurs lisibles par les personnes daltoniennes. -->
+
+Avec le topiramate, près de 10 bébés sur 100 exposés en début de grossesse ont une malformation grave. Dans le groupe de comparaison, c'est 1 à 3 bébés sur 100. Les bébés exposés naissent aussi plus souvent avec un petit poids.
+
+Chez l'homme, le valproate pris dans les 3 mois avant la conception pourrait augmenter le risque de troubles du développement chez l'enfant. Ce risque reste possible, mais pas certain.
+
+### Comment le prendre ?
+
+Prenez la dose prescrite, aux heures prévues. Si vous oubliez une prise, suivez la notice ou demandez conseil à votre pharmacien.
+
+Si vous pouvez être enceinte, votre spécialiste vous demande une prise de sang pour vérifier l'absence de grossesse avant de commencer.
+
+### Quelles règles chez le médecin et en pharmacie ?
+
+Un spécialiste fait la première ordonnance : neurologue, psychiatre ou pédiatre pour le valproate. Pour le topiramate, c'est un neurologue, un pédiatre ou un médecin de la douleur. Votre médecin traitant peut ensuite renouveler l'ordonnance.
+
+Chaque année, le spécialiste revoit votre traitement avec vous. Vous signez ensemble une attestation annuelle d'information partagée (document qui montre que vous avez reçu l'information). Le pharmacien vous la demande à chaque délivrance. Elle doit dater de moins d'un an.
+
+Vous recevez aussi une brochure et une carte patient. Gardez la carte sur vous. La boîte de valproate porte un dessin d'avertissement (pictogramme) sur la grossesse.
+
+### Quels effets indésirables ?
+
+Cette fiche parle surtout du risque pour la grossesse. Votre notice décrit les autres effets indésirables.
+
+::: {.quand-consulter}
+- Vous pensez être enceinte : contactez vite votre spécialiste, sans arrêter le médicament.
+- Vous avez un projet de grossesse : parlez-en à votre spécialiste avant d'arrêter la contraception.
+- Votre fille traitée a ses premières règles : prévenez son spécialiste.
+- Une crise d'épilepsie ne s'arrête pas : appelez le 15.
+:::
+
+### Avec quels médicaments faut-il être prudent ?
+
+Le topiramate peut rendre la pilule moins efficace. Ajoutez un préservatif si vous prenez une contraception hormonale.
+
+Le valproate interagit avec certains antibiotiques donnés à l'hôpital et avec d'autres médicaments de l'épilepsie. Dites toujours que vous prenez du valproate, même pour un traitement court.
+
+### Grossesse, allaitement, conduite
+
+Pour les femmes, la contraception doit être efficace et sans interruption. Elle continue au moins 1 mois après l'arrêt du valproate et 4 semaines après l'arrêt du topiramate. Le stérilet ou l'implant sont les méthodes conseillées.
+
+Pour les hommes traités par valproate, la contraception du couple continue au moins 3 mois après l'arrêt. Ne donnez pas votre sperme pendant cette période.
+
+Le Centre de référence sur les agents tératogènes (CRAT) informe sur les médicaments pendant la grossesse et l'allaitement : [lecrat.fr](https://www.lecrat.fr/).
+
+### Puis-je arrêter mon traitement ?
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+Un arrêt brutal peut provoquer des crises graves, dangereuses pour vous et pour le bébé. Votre spécialiste organise tout changement, qui prend souvent plusieurs semaines.
+
+### Signaler un effet indésirable
+
+Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr).
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Points clés de sécurité
+
+- **Valproate** (acide valproïque, valproate de sodium, divalproate, valpromide) : après exposition in utero, environ 11 % de malformations congénitales majeures (population générale : environ 2-3 %) et jusqu'à 30-40 % de troubles neurodéveloppementaux précoces chez l'enfant d'âge préscolaire. QI moyen inférieur de 7 à 10 points à celui des enfants exposés à d'autres antiépileptiques ; trouble du spectre autistique environ 3 fois plus fréquent. Petit poids pour l'âge gestationnel chez 11-15 % des exposés. L'acide folique n'a pas montré d'effet préventif sur ces malformations (guide ANSM, novembre 2025).
+- **Exposition paternelle** : étude ANSM-Epi-Phare, HR ajusté de troubles neurodéveloppementaux 1,50 (IC 95 % 1,09-2,07) chez les enfants de pères traités par valproate dans les 3 mois précédant la conception, comparés à la lamotrigine ou au lévétiracétam (risque cumulé 4,0-5,6 % contre 2,3-3,2 %). Lien de causalité non établi.
+- **Topiramate** : jusqu'à 9,5 % de malformations congénitales majeures en monothérapie au premier trimestre (comparateur 1,4-3 %), surtout fentes labio-palatines et hypospadias. Petit poids pour l'âge gestationnel : 18 % contre 5 % (registre nord-américain). Signal de troubles neurodéveloppementaux dans deux études nordiques, non retrouvé dans une étude américaine.
+- Contre-indications : valproate pendant la grossesse (épilepsie : sauf absence d'alternative ; trouble bipolaire : toujours) ; topiramate pendant la grossesse en prophylaxie migraineuse, et en épilepsie sauf absence d'alternative ; chez la femme susceptible de procréer, hors respect du programme de prévention des grossesses.
+
+### Surveillance
+
+- Test de grossesse plasmatique (sensibilité ≥ 25 mUI/mL) avant l'instauration ; pour le valproate, test recommandé tous les mois pendant le traitement.
+- Réévaluation par le spécialiste au moins une fois par an, et dès qu'une grossesse est envisagée. Chez la fille non réglée : informer les parents de consulter dès les premières règles et chercher une alternative avant l'âge de procréer.
+- Contraception : valproate, efficace et sans interruption jusqu'à 1 mois après l'arrêt (DIU ou implant de préférence, ou deux méthodes dont une barrière) ; topiramate, hautement efficace jusqu'à au moins 4 semaines après l'arrêt, avec méthode barrière associée si contraception hormonale. Homme sous valproate : contraception efficace du couple jusqu'à 3 mois après l'arrêt, pas de don de sperme, conservation de sperme à discuter.
+
+### Interactions majeures
+
+Niveaux du Thésaurus de l'ANSM (version du 15 septembre 2023, présentée par l'ANSM comme la dernière) :
+
+- Valproate + carbapénèmes (pénems) : **association déconseillée** (chute rapide de la valproatémie, risque de crises).
+- Valproate + lamotrigine : **association déconseillée** (réactions cutanées graves, hausse de la lamotriginémie).
+- Valproate + topiramate : **précaution d'emploi** (hyperammoniémie, risque d'encéphalopathie).
+- Topiramate + estroprogestatifs contraceptifs : **association déconseillée** pour des doses de topiramate ≥ 200 mg/j ; si nécessaire, méthode mécanique pendant l'association et un cycle après l'arrêt.
+
+### Adaptation des doses
+
+Si une femme enceinte doit exceptionnellement recevoir du valproate pour une épilepsie : monothérapie, dose efficace la plus faible, fractionnée, forme à libération prolongée de préférence. Remplacement du valproate : introduction progressive du relais (jusqu'à 6 semaines pour atteindre la dose efficace), puis retrait du valproate sur 2 à 3 mois en général. Insuffisance rénale et hépatique : [à compléter : source, RCP du produit].
+
+### Pièges fréquents
+
+[À compléter par le CRPV à partir de cas anonymisés.]
+
+### Mesures de réduction du risque
+
+- **Prescription** : initiale par neurologue, psychiatre ou pédiatre (valproate), par neurologue, pédiatre ou médecin compétent « douleur » (topiramate) ; renouvellement par tout médecin dans l'année.
+- **Attestation annuelle d'information partagée** cosignée par le spécialiste et le ou la patiente : elle remplace l'accord de soins depuis le 6 janvier 2025 pour les nouveaux traitements et depuis le 30 juin 2025 pour les traitements en cours (valproate). Elle s'applique aussi aux adolescents et hommes traités par valproate. Feuillet 1 si absence de risque de grossesse, feuillet 2 sinon.
+- **Délivrance** : le pharmacien vérifie l'ordonnance du spécialiste et une attestation datant de moins d'un an, remet la carte patient et s'assure que la brochure a été reçue.
+- Pictogramme « grossesse » sur le conditionnement extérieur du valproate depuis le 1er mars 2017.
+- D'autres substances relèvent d'un programme de prévention des grossesses (tableau ANSM 2023) : acitrétine, alitrétinoïne, [isotrétinoïne](isotretinoine.qmd), lénalidomide, thalidomide, pomalidomide, mycophénolate, sonidégib, entre autres.
+- Avis tératologique : CRAT ([lecrat.fr](https://www.lecrat.fr/)) ; inscription recommandée des grossesses exposées dans un registre.
+
+:::
+
+:::

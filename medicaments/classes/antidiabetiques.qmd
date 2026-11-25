@@ -1,0 +1,178 @@
+---
+title: "Les médicaments du diabète de type 2"
+description: "Metformine, sulfamides, gliptines, gliflozines et analogues du GLP-1 : bien les prendre, reconnaître une hypoglycémie et connaître les risques du sémaglutide utilisé pour maigrir."
+public: [patients, professionnels]
+classe: "antidiabétiques oraux et injectables non insuliniques"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "Base de données publique des médicaments, RCP et notice de GLUCOPHAGE 1000 mg, comprimé pelliculé sécable (CIS 61052830)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/61052830/extrait"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments, RCP et notice de DIAMICRON 60 mg, comprimé sécable à libération modifiée (CIS 68831670)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/68831670/extrait"
+    consulte_le: 2026-11-25
+  - titre: "EMA, Ozempic (sémaglutide), informations sur le produit (RCP et notice)"
+    url: "https://www.ema.europa.eu/fr/documents/product-information/ozempic-epar-product-information_fr.pdf"
+    consulte_le: 2026-11-25
+  - titre: "EMA, Januvia (sitagliptine), informations sur le produit (RCP et notice)"
+    url: "https://www.ema.europa.eu/fr/documents/product-information/januvia-epar-product-information_fr.pdf"
+    consulte_le: 2026-11-25
+  - titre: "EMA, Forxiga (dapagliflozine), informations sur le produit (RCP et notice)"
+    url: "https://www.ema.europa.eu/fr/documents/product-information/forxiga-epar-product-information_fr.pdf"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, « Ozempic (sémaglutide) : un médicament à utiliser uniquement dans le traitement du diabète de type 2 » (01/03/2023, mis à jour le 25/04/2024)"
+    url: "https://ansm.sante.fr/actualites/ozempic-semaglutide-un-medicament-a-utiliser-uniquement-dans-le-traitement-du-diabete-de-type-2"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, « Analogues du GLP-1 : point sur la surveillance des effets indésirables graves et mésusages » (05/07/2024, mis à jour le 07/01/2026)"
+    url: "https://ansm.sante.fr/actualites/analogues-du-glp-1-point-sur-la-surveillance-des-effets-indesirables-graves-et-mesusages"
+    consulte_le: 2026-11-25
+  - titre: "HAS, Stratégie thérapeutique du patient vivant avec un diabète de type 2, fiche de synthèse (mai 2024)"
+    url: "https://has-sante.fr/upload/docs/application/pdf/2024-06/strategie_therapeutique_du_patient_vivant_avec_un_diabete_de_type_2_-_fiche_de_synthese.pdf"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
+    url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Prenez votre traitement régulièrement, même quand vous vous sentez bien.
+- Certains de ces médicaments peuvent faire trop baisser le sucre dans le sang : apprenez à en reconnaître les signes.
+- Le sémaglutide (Ozempic) traite le diabète. Il n'est pas fait pour maigrir.
+:::
+
+### À quoi sert ce traitement ?
+
+Ces médicaments font baisser le sucre dans le sang chez les personnes qui ont un diabète de type 2. Ils s'ajoutent à l'alimentation et à l'activité physique, qui restent la base du traitement.
+
+Il existe plusieurs familles :
+
+- la metformine (par exemple Glucophage) ;
+- les sulfamides, comme le gliclazide (Diamicron) ;
+- les gliptines, comme la sitagliptine (Januvia) ;
+- les gliflozines, comme la dapagliflozine (Forxiga) ;
+- les analogues d'une hormone de l'intestin (GLP-1), en injection, comme le sémaglutide (Ozempic).
+
+Certains protègent aussi le cœur et les reins.
+
+### Comment le prendre ?
+
+Prenez la metformine au cours ou à la fin du repas. Le gliclazide se prend en une fois, au petit-déjeuner. Ne sautez pas ce repas.
+
+Le sémaglutide s'injecte une fois par semaine, le même jour, à l'heure de votre choix. En cas d'oubli, faites l'injection dans les 5 jours. Après 5 jours, attendez le jour habituel.
+
+<!-- FIGURE À FAIRE : frise d'une semaine (lundi à dimanche) avec une seringue le même jour chaque semaine ; une zone colorée « oubli : injection possible jusqu'à 5 jours après » puis une zone « au-delà : attendre le jour habituel ». -->
+
+Pour les comprimés oubliés, ne prenez jamais de dose double. Prenez la dose suivante à l'heure habituelle.
+
+### Quels effets indésirables ?
+
+Avec la metformine, plus de 1 personne sur 10 a des troubles digestifs au début : nausées, diarrhée, maux de ventre. Ils passent souvent seuls.
+
+Avec le sémaglutide, plus de 1 personne sur 10 a des nausées ou une diarrhée. Une inflammation du pancréas (pancréatite) touche jusqu'à 1 personne sur 100.
+
+Avec la dapagliflozine, jusqu'à 1 personne sur 10 a une mycose (champignon) des organes génitaux.
+
+### Que faire en cas d'hypoglycémie ?
+
+Les sulfamides peuvent provoquer une hypoglycémie (baisse du sucre dans le sang). Le risque augmente si l'on ajoute un autre médicament du diabète à un sulfamide ou à l'insuline. Les signes sont : sueurs, tremblements, faim, cœur qui bat vite, confusion. Prenez alors du sucre ou une boisson sucrée. Les édulcorants (sucres de régime) ne marchent pas.
+
+<!-- FIGURE À FAIRE : silhouette entourée des signes de l'hypoglycémie (sueurs, tremblements, faim, palpitations, confusion), avec à côté un morceau de sucre et un verre de boisson sucrée, et un édulcorant barré. -->
+
+::: {.quand-consulter}
+- Malaise avec sueurs ou confusion qui ne passe pas après avoir pris du sucre, ou perte de connaissance : appelez le 15.
+- Douleur forte du ventre qui dure, parfois vers le dos : consultez vite.
+- Sous metformine : essoufflement, crampes, douleurs du ventre et grande fatigue. Arrêtez la metformine et consultez tout de suite.
+- Sous gliflozine : nausées, vomissements, soif intense, respiration rapide, somnolence. Consultez en urgence.
+- Douleur ou gonflement des organes génitaux avec fièvre : consultez en urgence.
+- Baisse soudaine de la vue : consultez rapidement.
+:::
+
+### Avec quels médicaments faut-il être prudent ?
+
+L'alcool augmente le risque d'hypoglycémie avec les sulfamides. Avec la metformine, il augmente un risque rare mais grave d'excès d'acide dans le sang.
+
+Prévenez l'équipe avant un scanner avec produit de contraste ou une opération. La metformine est alors arrêtée pendant au moins 48 heures.
+
+En cas de diarrhée, de vomissements ou de fièvre, appelez votre médecin. Il peut suspendre la metformine pour un temps.
+
+Demandez conseil avant de prendre un anti-inflammatoire comme l'ibuprofène. Avec un sulfamide, évitez le gel buccal au miconazole.
+
+### Grossesse, allaitement, conduite
+
+Parlez de votre projet de grossesse à votre médecin. Le sémaglutide doit être arrêté au moins 2 mois avant. Pendant la grossesse, l'insuline est souvent préférée. Le Centre de référence sur les agents tératogènes (CRAT) informe les professionnels sur [lecrat.fr](https://www.lecrat.fr).
+
+Avec un sulfamide ou de l'insuline, une hypoglycémie peut survenir au volant. Prenez des précautions avant de conduire, par exemple en gardant du sucre à portée de main.
+
+### Et pour maigrir ?
+
+Le sémaglutide (Ozempic) est réservé au diabète de type 2. Sans diabète, il expose à des troubles digestifs, à une pancréatite et à des hypoglycémies. N'utilisez jamais un stylo acheté hors pharmacie : il peut être faux et dangereux. Pour perdre du poids, parlez-en à votre médecin.
+
+### Puis-je arrêter mon traitement ?
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien. Un arrêt fait remonter le sucre dans le sang.
+
+### Signaler un effet indésirable
+
+Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr).
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Points clés de sécurité
+
+- **Metformine** : acidose lactique très rare (< 1/10 000) mais grave, favorisée par une dégradation aiguë de la fonction rénale, l'hypoxie, l'alcool, le jeûne ou une insuffisance hépatique. Contre-indiquée si DFG < 30 mL/min, en cas d'acidose, de déshydratation, d'infection grave, de choc, d'insuffisance cardiaque décompensée ou d'insuffisance hépatocellulaire. Diminution ou carence en vitamine B12 fréquente. Pas d'hypoglycémie en monothérapie.
+- **Sulfamides** (gliclazide, glimépiride, glibenclamide, glipizide) : hypoglycémies parfois sévères et prolongées, avec resucrage sur plusieurs jours. Facteurs favorisants : sujet âgé, dénutrition, repas sautés, insuffisance rénale ou hépatique sévère, alcool, interactions.
+- **Gliptines** : pancréatite aiguë (formes nécrosantes rapportées), pemphigoïde bulleuse.
+- **Gliflozines** : acidocétose diabétique, y compris en dehors d'une hyperglycémie marquée, rare (< 1/1 000) ; arrêt lors d'une hospitalisation pour chirurgie lourde ou affection aiguë grave. Gangrène de Fournier, infections génitales fréquentes, déplétion volémique. Excès d'amputations d'orteil dans des essais au long cours (effet de classe non établi).
+- **Analogues du GLP-1** : effets digestifs très fréquents avec risque de déshydratation et d'insuffisance rénale aiguë ; pancréatite aiguë (peu fréquente) ; complications de rétinopathie chez les patients sous insuline ; neuropathie optique ischémique antérieure non artéritique (très rare) ; pneumopathie d'inhalation lors d'une anesthésie générale ou d'une sédation profonde (vidange gastrique retardée). Acidocétose rapportée après arrêt ou baisse rapide de l'insuline.
+
+### Mésusage des analogues du GLP-1
+
+Ozempic est indiqué uniquement dans le diabète de type 2 insuffisamment contrôlé. L'ANSM rappelle que les analogues du GLP-1 ne doivent pas être utilisés pour une perte de poids à visée esthétique. La CNAM estime à environ 1,5 % la part des patients sous Ozempic en situation de mésusage, chiffre probablement sous-estimé. Des stylos falsifiés étiquetés Ozempic circulent hors du circuit légal (alertes EMA et OMS). À la dispensation : vigilance vis-à-vis des ordonnances falsifiées ou hors AMM, signalement à l'ARS en cas de doute.
+
+### Surveillance
+
+- DFG avant la metformine puis au moins une fois par an, tous les 3 à 6 mois chez le sujet âgé ou si la fonction rénale risque de se dégrader.
+- Vitamine B12 en cas d'anémie ou de neuropathie sous metformine.
+- Autosurveillance glycémique sous sulfamide ou insuline, surtout à l'introduction d'un analogue du GLP-1 (envisager de réduire la dose du sulfamide ou de l'insuline).
+- Suivi ophtalmologique si rétinopathie sous insuline + sémaglutide ; cétonémie chez le patient hospitalisé sous gliflozine.
+
+### Interactions majeures
+
+- Metformine + produits de contraste iodés : **contre-indication** (Thésaurus). Suspendre au moment de l'examen, reprendre au moins 48 heures après, fonction rénale réévaluée et stable (RCP).
+- Metformine + alcool : **association déconseillée**. Metformine + diurétiques de l'anse : **précaution d'emploi**. AINS, IEC, ARA II : surveillance rénale (RCP).
+- Sulfamides + miconazole : **contre-indication**. Sulfamides + alcool : **association déconseillée**. Sulfamides + fluconazole, clarithromycine, bêtabloquants, IEC : **précaution d'emploi**.
+- Fluoroquinolones : dysglycémies, surtout chez le sujet âgé (RCP du gliclazide).
+- Sémaglutide + AVK : baisses d'INR rapportées avec l'acénocoumarol ; INR fréquent à l'initiation (RCP).
+
+### Adaptation des doses
+
+- Metformine, dose maximale par jour selon le DFG : 3 000 mg (60–89 mL/min), 2 000 mg (45–59), 1 000 mg (30–44) ; contre-indiquée en dessous de 30.
+- Sitagliptine : 100 mg/j ; 50 mg/j si DFG 30–44 ; 25 mg/j si DFG < 30 ou dialyse.
+- Gliclazide LM : débuter à 30 mg/j chez le patient à risque d'hypoglycémie.
+- Dapagliflozine : efficacité glycémique réduite si DFG < 45 mL/min.
+- Sémaglutide : pas d'adaptation selon l'âge ou la fonction rénale ; expérience limitée au stade terminal.
+
+### Pièges fréquents
+
+À compléter par le CRPV à partir de cas anonymisés. Situations à risque décrites dans les RCP : déshydratation sous metformine + IEC + diurétique ; hypoglycémie prolongée sous sulfamide chez le sujet âgé dénutri ; acidocétose périopératoire sous gliflozine.
+
+### Mesures de réduction du risque
+
+Prescription d'Ozempic dans la seule indication de l'AMM. Information du patient et de son entourage sur l'hypoglycémie, l'acidose lactique et l'acidocétose. Réévaluation à chaque changement de traitement (HAS, 2024).
+
+:::
+
+:::

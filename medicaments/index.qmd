@@ -1,0 +1,41 @@
+---
+title: "Médicaments"
+description: "Des fiches par classe de médicaments et par maladie courante, chacune en version patient et en version professionnelle."
+toc: false
+listing:
+  - id: liste-classes
+    contents: "classes/*.qmd"
+    type: grid
+    sort: "title"
+    fields: [title, description]
+    grid-columns: 3
+  - id: liste-maux
+    contents: "maux-courants/*.qmd"
+    type: grid
+    sort: "title"
+    fields: [title, description]
+    grid-columns: 3
+  - id: liste-situations
+    contents: "situations/*.qmd"
+    type: grid
+    sort: "title"
+    fields: [title, description]
+    grid-columns: 2
+---
+
+Chaque fiche a deux onglets : **Pour les patients**, en langage courant, et **Pour les professionnels**. Toutes les fiches sont des brouillons en cours de relecture.
+
+## Par classe de médicaments
+
+::: {#liste-classes}
+:::
+
+## Par maladie courante
+
+::: {#liste-maux}
+:::
+
+## Situations particulières
+
+::: {#liste-situations}
+:::

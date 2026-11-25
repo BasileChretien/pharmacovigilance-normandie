@@ -1,0 +1,144 @@
+---
+title: "Écraser ou couper un comprimé ?"
+description: "Pourquoi certains comprimés ne doivent pas être écrasés ni certaines gélules ouvertes, comment faire quand le médecin l'a prescrit, et quelles autres formes demander en cas de difficulté à avaler."
+public: [patients, professionnels]
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "OMéDIT Normandie, en partenariat avec la SFPC : Liste des médicaments écrasables (page de référence)"
+    url: "https://www.omedit-normandie.fr/boite-a-outils/bon-usage/liste-des-medicaments-ecrasables/liste-des-medicaments-ecrasables,3184,3511.html"
+    consulte_le: 2026-11-25
+  - titre: "OMéDIT Normandie – SFPC (groupe Gériatrie) : Liste nationale des médicaments concernant l'écrasement des comprimés et l'ouverture des gélules, fichier Excel, onglet « Lisez-moi »"
+    url: "https://www.omedit-normandie.fr/media-files/49860/liste-medicaments-ecrasables_01122025.xlsx"
+    consulte_le: 2026-11-25
+  - titre: "Hôpitaux universitaires de Genève (HUG), Pharmacie : Comprimés, couper ou écraser ? Sécabilité, possibilité de broyage des comprimés et d'ouverture des capsules (révision du 27/03/2023)"
+    url: "https://hug.ch/pharmacie/recommandations/document/tab_couper_ecraser"
+    consulte_le: 2026-11-25
+  - titre: "RCP MOPRAL 20 mg, gélule gastro-résistante (base de données publique des médicaments)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/64103828/extrait"
+    consulte_le: 2026-11-25
+  - titre: "RCP et notice ACIDE ALENDRONIQUE CRISTERS 70 mg, comprimé (base de données publique des médicaments)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67464926/extrait"
+    consulte_le: 2026-11-25
+---
+
+<!-- NOTE DE RÉDACTION (à retirer avant publication) : le 25/11/2026, la page de l'OMéDIT affiche « Mise à jour octobre 2026 » et annonce une nouvelle colonne CMR, mais le fichier téléchargeable s'appelle liste-medicaments-ecrasables_01122025.xlsx (1er décembre 2025). La commande éditoriale parlait d'une mise à jour de novembre 2025. Le relecteur vérifie la date à afficher. La liste n'est pas recopiée ici, conformément à la consigne : on renvoie vers la page de l'OMéDIT. -->
+
+::: {.panel-tabset}
+
+## Pour les patients et les aidants
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- N'écrasez pas un comprimé et n'ouvrez pas une gélule sans l'accord du médecin ou du pharmacien.
+- Certains médicaments deviennent inefficaces ou dangereux une fois écrasés.
+- Si avaler est difficile, demandez s'il existe une autre forme : sirop, comprimé qui fond dans la bouche.
+:::
+
+<!-- FIGURE À FAIRE : schéma en coupe de trois comprimés. 1) Comprimé à libération prolongée : le médicament sort petit à petit sur plusieurs heures ; écrasé, il sort d'un coup. 2) Comprimé gastro-résistant : une enveloppe le protège de l'acide de l'estomac ; écrasé, l'enveloppe est détruite. 3) Gélule contenant des petits grains enrobés : on peut parfois l'ouvrir, mais les grains ne doivent pas être écrasés. Texte alternatif : « Trois comprimés en coupe montrant ce que l'écrasement détruit ». -->
+
+### Pourquoi ne pas écraser n'importe quel comprimé ?
+
+Les comprimés ne sont pas tous fabriqués de la même façon. Certains sont conçus pour agir d'une manière précise. Les écraser peut détruire ce mécanisme.
+
+### Quelles formes ne faut-il pas écraser ?
+
+- **Les comprimés à libération prolongée.** Ils libèrent le médicament petit à petit, sur plusieurs heures. Leur nom porte souvent la mention LP (libération prolongée) ou « retard ». Écrasés, ils peuvent libérer toute la dose d'un coup.
+- **Les comprimés et grains gastro-résistants.** Une enveloppe les protège de l'acide de l'estomac. Écrasés, cette protection disparaît. Par exemple, les petits grains de certaines gélules contre l'acidité ne doivent pas être mâchés.
+- **Les médicaments irritants.** L'alendronate, un médicament contre la fragilité des os, irrite fortement la bouche et l'œsophage (le tube qui va de la bouche à l'estomac). Il doit être avalé entier.
+
+### Quels autres médicaments posent problème ?
+
+- **Les médicaments au goût très désagréable.** Écrasés, ils peuvent être refusés par la personne.
+- **Les comprimés qui fondent dans la bouche.** Ils sont faits pour fondre seuls : il est inutile de les écraser.
+- **Les médicaments dangereux pour la personne qui les écrase.** C'est le cas de certains médicaments contre le cancer. La poudre peut être respirée ou toucher la peau de l'aidant.
+
+Un médicament qu'il ne faut pas écraser ne doit pas non plus être croqué.
+
+### Peut-on couper un comprimé en deux ?
+
+Pas toujours. La notice dit si le comprimé peut être divisé en doses égales. Une barre sur le comprimé n'est pas une preuve suffisante : vérifiez toujours. Si la notice ne dit rien, demandez à votre pharmacien.
+
+### Le médecin a prescrit de l'écraser : comment faire ?
+
+- Vérifiez que l'ordonnance précise « à écraser » ou « gélule à ouvrir ».
+- Écrasez un seul médicament à la fois. Ne mélangez pas plusieurs médicaments écrasés.
+- Mélangez la poudre avec l'aliment ou la boisson indiqués par le pharmacien. Selon le médicament, ce peut être de l'eau, de la compote ou un yaourt.
+- Donnez le mélange tout de suite si le pharmacien vous l'a demandé. Certains médicaments ne se conservent pas une fois préparés.
+- Nettoyez l'écrase-comprimé entre deux médicaments. [à compléter : source]
+- Pour un médicament contre le cancer, demandez au pharmacien comment vous protéger.
+
+### Quelles solutions si avaler est difficile ?
+
+Parlez-en à votre médecin ou à votre pharmacien. Il existe souvent une autre forme du même médicament :
+
+- un sirop ou une solution à boire ;
+- un comprimé qui fond dans la bouche ;
+- parfois un suppositoire, ou un autre médicament plus facile à prendre.
+
+Seul le médecin peut changer la forme du médicament sur l'ordonnance. Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+### Signaler un effet indésirable
+
+Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr).
+
+:::
+
+## Pour les soignants
+
+::: {.texte-pro}
+
+Cette partie s'adresse aux équipes d'EHPAD, aux infirmiers libéraux et aux services de soins.
+
+### La référence nationale : la liste OMéDIT Normandie – SFPC
+
+La [liste des médicaments écrasables et gélules ouvrables](https://www.omedit-normandie.fr/boite-a-outils/bon-usage/liste-des-medicaments-ecrasables/liste-des-medicaments-ecrasables,3184,3511.html) est tenue par l'OMéDIT Normandie avec le groupe Gériatrie de la Société française de pharmacie clinique (SFPC). Elle est diffusée sous forme de fichier Excel, mis à jour régulièrement : consultez toujours la version en ligne plutôt qu'une copie imprimée.
+
+Ce que dit l'onglet « Lisez-moi » de la liste :
+
+- La liste ne remplace pas les RCP ni le jugement clinique. Elle reprend les données des RCP et les réponses écrites des laboratoires ; à défaut, d'autres sources sont citées (Thériaque, HUG).
+- Elle n'est pas exhaustive. Elle couvre les comprimés (hors lyophilisats et autres formes dispersibles), granulés, gélules et capsules molles.
+- Pour chaque médicament : modalités de préparation (écrasement possible ou non, ouverture possible ou non, délitement), méthode d'administration, véhicules possibles (eau, jus d'orange, lait, compote, yaourt), nécessité d'une prise immédiate après préparation, goût, alternatives galéniques, classement CMR (cancérogène, mutagène ou toxique pour la reproduction) selon la liste européenne officielle, et date de mise à jour de la ligne.
+- Il n'est pas recommandé d'écraser plusieurs principes actifs en même temps.
+- Un médicament à ne pas écraser ni ouvrir ne doit pas non plus être croqué.
+
+### Qui décide ?
+
+L'écrasement d'un comprimé ou l'ouverture d'une gélule relève de la prescription médicale. La liste de l'OMéDIT s'appuie sur l'article R. 5132-3 du code de la santé publique (le prescripteur indique la voie d'administration et le mode d'emploi). Avant de prescrire un écrasement, la liste recommande de :
+
+1. rechercher une alternative thérapeutique ou galénique (forme orodispersible, solution buvable…) et réserver l'écrasement aux médicaments indispensables ;
+2. renseigner le motif (trouble de la déglutition, sonde, trouble du comportement…) pour informer les autres professionnels ;
+3. écrire « à écraser » sur la ligne de prescription, si le logiciel le permet.
+
+Le tableau des HUG rappelle aussi de demander une nouvelle prescription à chaque changement de forme galénique, de molécule, de posologie ou de voie d'administration.
+
+### Pourquoi une forme ne doit pas être écrasée : exemples
+
+| Raison | Exemple | Source |
+|---|---|---|
+| Libération prolongée : perte de l'effet retard, risque de pic de concentration | Nifédipine à libération prolongée : ni couper ni écraser ; alternative proposée : solution buvable avec adaptation de la posologie | Tableau HUG (spécialités suisses) |
+| Forme gastro-résistante : principe actif détruit par l'acidité gastrique, ou muqueuse non protégée | Oméprazole : la gélule peut être ouverte et le contenu avalé, mais les granulés gastro-résistants ne doivent pas être mâchés | RCP Mopral, rubrique 4.2 ; tableau HUG |
+| Principe actif irritant pour les muqueuses | Alendronate 70 mg : très irritant pour les muqueuses buccale et œsophagienne ; avaler entier, à jeun, en position debout | Tableau HUG ; RCP acide alendronique, rubriques 4.2 et 4.4 |
+| Toxicité pour le manipulateur | Évérolimus : écrasable du point de vue galénique, mais protection identique à celle des cytotoxiques (gants, lunettes, masque, surblouse) | Tableau HUG |
+| Goût désagréable | Signalé par un pictogramme dans la liste OMéDIT | Liste OMéDIT, légende |
+| Instabilité (lumière, humidité, oxydation) | [à compléter : exemple et source] | — |
+| Forme sublinguale ou orodispersible : conçue pour une absorption ou une dissolution dans la bouche | Les formes orodispersibles sont exclues de la liste OMéDIT ; pour les formes sublinguales : [à compléter : source] | Liste OMéDIT, « Lisez-moi » |
+
+Pour les médicaments CMR, la colonne dédiée de la liste OMéDIT indique si le principe actif figure dans la liste européenne. Les mesures de protection des soignants et des aidants (lieu de préparation, équipements) sont à préciser : [à compléter : source, par exemple recommandation de l'OMéDIT ou de la SFPC]. Le cas de certaines hormones est à documenter : [à compléter : source].
+
+### Administration par sonde
+
+Le tableau des HUG donne, spécialité par spécialité, des consignes pour l'administration par sonde : dilution, diamètre de sonde, interruption de la nutrition entérale. Exemple : pour l'alendronate administré écrasé par sonde, la nutrition est interrompue au moins 30 minutes avant et 30 minutes après. Ces consignes portent sur des spécialités suisses : vérifiez la correspondance avec la spécialité française.
+
+### Une référence suisse : le tableau des HUG
+
+La pharmacie des Hôpitaux universitaires de Genève publie le tableau [« Comprimés : couper ou écraser ? »](https://hug.ch/pharmacie/recommandations/document/tab_couper_ecraser) (dernière révision lue : 27 mars 2023). Il indique pour chaque spécialité si elle peut être coupée en deux, écrasée ou ouverte, avec des remarques sur les sondes et des alternatives. Deux limites : il ne vaut que pour les noms de marque suisses cités, et la sécabilité y est définie au sens pharmaceutique (un comprimé sans rainure peut être déclaré sécable, et la sécabilité en pratique n'est pas garantie).
+
+<!-- FIGURE À FAIRE : arbre de décision pour le soignant. « Le patient ne peut pas avaler la forme prescrite » → existe-t-il une alternative (solution buvable, orodispersible, autre voie) ? oui → demander la modification de prescription ; non → la liste OMéDIT autorise-t-elle l'écrasement ou l'ouverture ? oui → prescription « à écraser » + modalités de la liste (véhicule, prise immédiate, protection si CMR) ; non → avis du pharmacien et du prescripteur. Texte alternatif : « Arbre de décision avant d'écraser un comprimé ». -->
+
+:::
+
+:::

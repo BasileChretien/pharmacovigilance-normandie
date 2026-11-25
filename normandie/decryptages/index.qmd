@@ -1,0 +1,15 @@
+---
+title: "Décryptages régionaux"
+description: "L'actualité normande liée aux médicaments, expliquée par les CRPV : ce qui s'est passé, les risques, que faire."
+listing:
+  contents: "*.qmd"
+  sort: "date desc"
+  type: default
+  fields: [date, title, description]
+---
+
+Quand un sujet lié aux médicaments fait l'actualité en Normandie, les CRPV publient un décryptage : ce qui s'est passé selon les sources publiques, ce que l'on sait du médicament ou de la substance, les risques, que faire, qui contacter.
+
+**Règles** : uniquement des faits déjà publiés ; jamais d'information tirée des dossiers des centres ; aucun détail qui permettrait d'identifier une personne ; aucun commentaire sur une enquête en cours. Chaque décryptage est relu par un pharmacologue et par la direction de la communication du CHU.
+
+Aucun décryptage publié pour l'instant.

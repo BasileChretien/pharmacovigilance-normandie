@@ -1,0 +1,55 @@
+---
+title: "Les CRPV de Normandie : qui couvre quoi ?"
+description: "Les cinq départements de Normandie et le centre de pharmacovigilance qui couvre chacun."
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "ANSM, liste des centres régionaux de pharmacovigilance"
+    url: "https://ansm.sante.fr/page/liste-des-centres-regionaux-de-pharmacovigilance"
+    consulte_le: 2026-11-25
+---
+
+Deux centres régionaux de pharmacovigilance couvrent la Normandie : celui de Caen pour l'ouest de la région, celui de Rouen pour l'est.
+
+```{=html}
+<figure>
+<svg viewBox="0 0 640 330" role="img" aria-labelledby="carte-titre carte-desc" style="max-width:100%;height:auto">
+  <title id="carte-titre">Schéma des départements de Normandie par centre de pharmacovigilance</title>
+  <desc id="carte-desc">Schéma, sans échelle. Le CRPV de Caen couvre la Manche, le Calvados et l'Orne, à l'ouest. Le CRPV de Rouen couvre la Seine-Maritime et l'Eure, à l'est.</desc>
+  <defs>
+    <pattern id="rayures-rouen" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="#e5f4e4"/><line x1="0" y1="0" x2="0" y2="8" stroke="#1e6b3c" stroke-width="2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+  <g font-family="system-ui, sans-serif" font-size="15" fill="#1f2328">
+    <rect x="20" y="40" width="130" height="250" rx="12" fill="#e7f1fb" stroke="#1b4f8a" stroke-width="2"/>
+    <text x="85" y="160" text-anchor="middle" font-weight="600">Manche</text>
+    <text x="85" y="182" text-anchor="middle">(50)</text>
+    <rect x="160" y="40" width="170" height="120" rx="12" fill="#e7f1fb" stroke="#1b4f8a" stroke-width="2"/>
+    <text x="245" y="95" text-anchor="middle" font-weight="600">Calvados</text>
+    <text x="245" y="117" text-anchor="middle">(14)</text>
+    <rect x="160" y="170" width="200" height="120" rx="12" fill="#e7f1fb" stroke="#1b4f8a" stroke-width="2"/>
+    <text x="260" y="225" text-anchor="middle" font-weight="600">Orne</text>
+    <text x="260" y="247" text-anchor="middle">(61)</text>
+    <rect x="370" y="20" width="250" height="120" rx="12" fill="url(#rayures-rouen)" stroke="#1e6b3c" stroke-width="2"/>
+    <text x="495" y="75" text-anchor="middle" font-weight="600">Seine-Maritime</text>
+    <text x="495" y="97" text-anchor="middle">(76)</text>
+    <rect x="340" y="150" width="200" height="120" rx="12" fill="url(#rayures-rouen)" stroke="#1e6b3c" stroke-width="2"/>
+    <text x="440" y="205" text-anchor="middle" font-weight="600">Eure</text>
+    <text x="440" y="227" text-anchor="middle">(27)</text>
+    <text x="20" y="318" font-size="13">Fond uni bleu : CRPV de Caen. Fond rayé vert : CRPV de Rouen. Schéma sans échelle.</text>
+  </g>
+</svg>
+<figcaption>Schéma sans échelle des départements de Normandie, par centre de pharmacovigilance.</figcaption>
+</figure>
+```
+
+| Départements | Centre | Contacts |
+|---|---|---|
+| Calvados (14), Manche (50), Orne (61) | CRPV de Caen, CHU de Caen Normandie | [Accès et contacts](../crpv/acces.qmd) |
+| Eure (27), Seine-Maritime (76) | CRPV de Rouen, CHU de Rouen | [Accès et contacts](../crpv/acces.qmd) |
+
+<!-- FIGURE À FAIRE : remplacer le schéma par une vraie carte des départements (contours officiels, licence ouverte) -->

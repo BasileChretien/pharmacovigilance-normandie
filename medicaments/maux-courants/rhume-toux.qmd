@@ -1,0 +1,183 @@
+---
+title: "Rhume et toux : quels médicaments ?"
+description: "Ce qui soulage vraiment un rhume, les risques des comprimés contre le nez bouché (pseudoéphédrine), et le bon usage des sirops contre la toux (codéine, dextrométhorphane, mucolytiques)."
+public: [patients, professionnels]
+recommandation_de_reference: "ANSM, En cas de rhume, ne pas utiliser de médicaments à base de pseudoéphédrine (vasoconstricteurs par voie orale), 8 avril 2024"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "ANSM. En cas de rhume, ne pas utiliser de médicaments à base de pseudoéphédrine (vasoconstricteurs par voie orale), 08/04/2024"
+    url: "https://ansm.sante.fr/informations-de-securite/en-cas-de-rhume-ne-pas-utiliser-de-medicaments-a-base-de-pseudoephedrine-vasoconstricteurs-par-voie-orale"
+    consulte_le: 2026-11-25
+  - titre: "ANSM. Rhume : ordonnance obligatoire pour toute dispensation de médicament à base de pseudoéphédrine, 10/12/2024"
+    url: "https://ansm.sante.fr/actualites/rhume-ordonnance-obligatoire-pour-toute-dispensation-de-medicament-a-base-de-pseudoephedrine"
+    consulte_le: 2026-11-25
+  - titre: "ANSM. Vous avez un rhume : que faire ? Document d'information pour les patients, septembre 2020"
+    url: "https://ansm.sante.fr/uploads/2021/09/13/information-pour-les-patients-vous-avez-un-rhume-que-faire-2.pdf"
+    consulte_le: 2026-11-25
+  - titre: "ANSM. Pholcodine : suspension des autorisations de mise sur le marché et retrait de toutes les boîtes de sirop, 08/09/2022, mis à jour le 13/09/2022"
+    url: "https://ansm.sante.fr/informations-de-securite/pholcodine-suspension-des-autorisations-de-mise-sur-le-marche-et-retrait-de-toutes-les-boites-de-sirop-contenant-de-la-pholcodine-en-raison-dun-risque-dallergie-croisee-avec-les-curares"
+    consulte_le: 2026-11-25
+  - titre: "HAS. Prise en charge médicamenteuse de la douleur chez l'enfant : alternatives à la codéine (rappel des mesures ANSM d'avril 2013), 2016"
+    url: "https://has-sante.fr/jcms/c_2010340/fr/prise-en-charge-medicamenteuse-de-la-douleur-chez-l-enfant-alternatives-a-la-codeine"
+    consulte_le: 2026-11-25
+  - titre: "HAS. Choix et durées d'antibiothérapies : Rhinopharyngite aiguë enfant, mise à jour le 13/05/2025"
+    url: "https://has-sante.fr/jcms/c_2722754/fr/"
+    consulte_le: 2026-11-25
+  - titre: "VIDAL. Codéine, dextrométorphane, éthylmorphine et noscapine : prescription médicale obligatoire (arrêté du 12 juillet 2017)"
+    url: "https://www.vidal.fr/actualites/21716-codeine-dextrometorphane-ethylmorphine-et-noscapine-prescription-medicale-obligatoire-liste-des-produits-concernes.html"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Répertoire des spécialités. FLUIMUCIL EXPECTORANT ACETYLCYSTEINE 2 % ENFANTS SANS SUCRE, RCP mis à jour le 20/11/2020"
+    url: "https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0363528.htm"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments. DAFALGAN CODEINE, comprimé pelliculé, RCP mis à jour le 31/07/2026"
+    url: "http://base-donnees-publique.medicaments.gouv.fr/medicament/66003374/extrait"
+    consulte_le: 2026-11-25
+  - titre: "Santé.fr (ministère de la Santé), Antibio'Malin. Rhinopharyngite ou rhume"
+    url: "https://www.sante.fr/antibiomalin-pour-savoir-comment-bien-utiliser-les-antibiotiques/rhinopharyngite-ou-rhume"
+    consulte_le: 2026-11-25
+  - titre: "Santé.fr (ministère de la Santé), Antibio'Malin. Bronchite aiguë, 16/09/2025"
+    url: "https://www.sante.fr/antibiomalin-pour-savoir-comment-bien-utiliser-les-antibiotiques/bronchite-aigue-definition-diagnostic-traitement-prevention"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.quand-consulter}
+- Vous avez du mal à respirer : consultez vite, ou appelez le 15 (SAMU, service d'aide médicale urgente) si la gêne est forte.
+- Sous comprimé contre le nez bouché : mal de tête violent, trouble de la vue, faiblesse d'un côté ou douleur dans la poitrine ? Arrêtez-le et appelez le 15.
+- La fièvre dépasse 38,5 °C pendant plus de 3 jours, ou la toux dure plus de 3 semaines : consultez un médecin.
+- Un bébé de moins de 3 mois tousse : consultez un médecin.
+:::
+
+::: {.a-retenir}
+- Le rhume guérit seul en 7 à 10 jours, sans traitement.
+- Les comprimés contre le nez bouché à base de pseudoéphédrine exposent à des risques rares mais graves. Ne les utilisez pas pour un rhume.
+- Un sirop contre la toux ne convient qu'à une toux sèche et gênante, et jamais avant 2 ans.
+:::
+
+### Qu'est-ce qui soulage vraiment ?
+
+Le rhume est dû à un virus. Les antibiotiques n'ont aucun effet sur lui. Le nez qui coule et la toux peuvent durer 10 à 15 jours. Un mucus jaune ou vert fait partie de l'évolution normale.
+
+Pour être plus à l'aise :
+
+- humidifiez l'intérieur du nez avec du sérum physiologique ou un spray d'eau de mer ;
+- buvez suffisamment ;
+- dormez la tête surélevée ;
+- gardez la pièce fraîche, vers 18 à 20 °C, et aérez souvent ;
+- évitez de fumer et la fumée des autres.
+
+Le paracétamol soulage la fièvre, le mal de gorge et le mal de tête. Chez l'enfant, la dose dépend du poids. Pour une toux sèche, le miel peut adoucir la gorge à partir de 1 an.
+
+<!-- FIGURE À FAIRE : quatre pictogrammes simples côte à côte : lavage du nez au sérum physiologique, verre d'eau, oreiller surélevé, thermomètre de pièce à 18-20 °C. Titre : « Ce qui aide contre le rhume ». Texte alternatif : « Contre le rhume : laver le nez, boire, dormir la tête surélevée, garder la pièce fraîche. » -->
+
+### Pourquoi éviter les comprimés contre le nez bouché ?
+
+Ces comprimés contiennent de la pseudoéphédrine. Ce médicament resserre les vaisseaux sanguins du nez pour le déboucher. Il agit aussi sur les vaisseaux du reste du corps.
+
+Il peut provoquer, rarement, des effets graves :
+
+- un accident vasculaire cérébral (AVC, attaque cérébrale) ;
+- un infarctus du cœur ;
+- une forte hausse de la tension ;
+- des convulsions ;
+- une baisse brutale de la vue.
+
+Ces effets peuvent survenir quelle que soit la dose, et chez des personnes sans problème de santé connu. L'Agence nationale de sécurité du médicament (ANSM) déconseille ces comprimés contre le rhume. Depuis décembre 2024, ils ne sont plus délivrés que sur ordonnance.
+
+### Comment les utiliser si un médecin les prescrit ?
+
+- Ne dépassez pas 5 jours de traitement.
+- Ne les donnez pas avant 15 ans.
+- Ne les prenez pas si vous êtes enceinte ou si vous allaitez.
+- N'ajoutez pas de spray nasal qui débouche le nez.
+- N'ajoutez pas d'autre médicament contenant du paracétamol, de l'ibuprofène ou de la cétirizine.
+
+### Et les sirops contre la toux ?
+
+Il faut distinguer deux toux :
+
+- la toux sèche, qui irrite sans cracher : un sirop antitussif (qui calme la toux) peut aider si elle gêne beaucoup ;
+- la toux grasse, avec des crachats : elle aide à nettoyer les bronches. Un sirop antitussif ne convient pas.
+
+Avant 2 ans, aucun sirop contre la toux, ni médicament pour fluidifier le mucus. Chez la femme enceinte et l'enfant de moins de 6 ans, seulement sur avis médical.
+
+Les sirops à base de codéine ou de dextrométhorphane ne sont délivrés que sur ordonnance depuis 2017. Certains jeunes les détournaient pour se droguer. La codéine est interdite avant 12 ans et pendant l'allaitement. Chez certaines personnes, elle se transforme trop vite en morphine et peut bloquer la respiration.
+
+### Quels effets surveiller ?
+
+Avec la codéine, une somnolence inhabituelle ou une respiration lente doivent faire appeler le 15. [à compléter : source, notice d'un sirop codéiné]
+
+La pholcodine, un ancien médicament contre la toux, a été retirée en 2022. Elle augmente le risque d'allergie grave à certains médicaments utilisés pour l'anesthésie (les curares). Si vous en avez pris, même il y a longtemps, signalez-le avant une opération.
+
+### Ce qu'il vaut mieux éviter
+
+- L'ibuprofène et les autres anti-inflammatoires pendant un rhume : ils peuvent favoriser des complications.
+- Plusieurs médicaments « spécial rhume » en même temps : ils contiennent souvent le même produit.
+- Les antibiotiques : ils ne soignent pas le rhume.
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Signes d'alerte
+
+- Sous pseudoéphédrine : symptômes évocateurs d'AVC, de PRES ou de SVCR (céphalée intense, baisse de la vision, déficit neurologique, convulsions) ou d'infarctus (douleur thoracique) : arrêt immédiat et avis médical urgent (ANSM, 2020 et 2024).
+- Toux : fièvre > 38,5 °C plus de 3 jours, toux de plus de 3 semaines, dyspnée, insuffisance respiratoire ou cardiaque chronique, âge supérieur à 75 ans, nourrisson de moins de 3 mois, enfant de moins de 2 ans avec difficultés alimentaires ou respiratoires (Antibio'Malin, bronchite aiguë).
+
+### Stratégie thérapeutique
+
+- Rhinopharyngite : pas d'antibiotique quel que soit l'âge ; paracétamol en première intention (enfant : 60 mg/kg/j en 4 prises, sans dépasser 80 mg/kg/j, 72 heures au plus) ; pas de bénéfice attendu de l'ibuprofène ; intérêt des corticoïdes systémiques et locaux non démontré (HAS, 2025).
+- Mesures non médicamenteuses en première ligne : lavage nasal au sérum physiologique, hydratation, tête surélevée, atmosphère à 18-20 °C (ANSM).
+- Vasoconstricteurs oraux : l'ANSM recommande de ne pas les utiliser dans le rhume, y compris depuis leur passage sur ordonnance.
+- Toux sèche invalidante : antitussif éventuel ; pas d'antitussif dans la toux productive (Antibio'Malin).
+
+### Mécanismes d'action
+
+- Pseudoéphédrine : sympathomimétique indirect, vasoconstriction de la muqueuse nasale, effets vasoconstricteurs systémiques.
+- Codéine : prodrogue convertie en morphine par le CYP2D6 ; action antitussive centrale.
+- Mucolytiques (acétylcystéine, carbocistéine) : fluidification des sécrétions bronchiques.
+
+### Précautions et effets indésirables
+
+Pseudoéphédrine (ANSM, 08/04/2024 ; 10/12/2024) :
+
+- Risques rares mais graves : infarctus du myocarde, AVC, neuropathie optique ischémique, convulsions, pustulose exanthématique aiguë généralisée (PEAG), colite ischémique, troubles psychiatriques. Syndrome d'encéphalopathie postérieure réversible (PRES) et syndrome de vasoconstriction cérébrale réversible (SVCR), confirmés par l'EMA. Ces effets peuvent survenir sans facteur de risque, quelles que soient la dose et la durée.
+- Liste I depuis le 11 décembre 2024 (Actifed Rhume, Actifed Rhume jour et nuit, Dolirhume, Dolirhumepro, Humex Rhume, Nurofen Rhume, Rhinadvil Rhume, Rhinadvilcaps Rhume).
+- Précautions rappelées par l'ANSM (2020) : 5 jours au plus, pas avant 15 ans, pas pendant la grossesse ni l'allaitement, pas d'association à un autre vasoconstricteur oral ou nasal (oxymétazoline, éphédrine, naphazoline, tuaminoheptane), pas d'association à une autre spécialité contenant du paracétamol, de l'ibuprofène ou de la cétirizine. [à compléter : niveaux du Thésaurus ANSM des interactions pour les sympathomimétiques indirects]
+
+Antitussifs :
+
+- Codéine (mesures ANSM d'avril 2013, RCP) : contre-indiquée avant 12 ans, pendant l'allaitement, chez les métaboliseurs CYP2D6 ultra-rapides connus et, avant 18 ans, après amygdalectomie ou adénoïdectomie.
+- Codéine, dextrométhorphane, éthylmorphine, noscapine : prescription obligatoire depuis l'arrêté du 12 juillet 2017 (sirops codéinés en liste II, dextrométhorphane en liste I), en raison de détournements chez les adolescents et jeunes adultes.
+- Pholcodine : AMM suspendues et lots retirés le 8 septembre 2022, en raison d'une association entre exposition antérieure et anaphylaxie peranesthésique aux curares. Rechercher une exposition, même ancienne, avant une anesthésie. [à compléter : issue de la réévaluation européenne]
+
+Mucolytiques : contre-indiqués avant 2 ans (risque de surencombrement bronchique, capacités de drainage limitées chez le nourrisson ; RCP Fluimucil 2 % enfants).
+
+### Ce qu'il faut éviter
+
+- Vasoconstricteurs oraux dans le rhume, et toute association de vasoconstricteurs.
+- Antitussifs dans la toux productive ; antitussifs, expectorants et mucolytiques avant 2 ans.
+- Codéine avant 12 ans et pendant l'allaitement.
+- AINS et antibiotiques dans la rhinopharyngite non compliquée.
+
+### Outils et liens
+
+- [Document patient ANSM « Vous avez un rhume : que faire ? »](https://ansm.sante.fr/uploads/2021/09/13/information-pour-les-patients-vous-avez-un-rhume-que-faire-2.pdf).
+- [Antibioclic](https://antibioclic.com/), rubrique « Rhinopharyngite ».
+- Effets indésirables : déclaration sur [signalement.social-sante.gouv.fr](https://www.signalement.social-sante.gouv.fr) ou auprès du CRPV de Caen ou de Rouen.
+
+:::
+
+:::

@@ -1,0 +1,157 @@
+---
+title: "Les statines"
+description: "Atorvastatine, rosuvastatine, simvastatine, pravastatine : douleurs musculaires et effet nocebo, signes d'alerte, interactions à connaître."
+public: [patients, professionnels]
+classe: "statines"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "Base de données publique des médicaments, TAHOR 10 mg (atorvastatine) : RCP et notice"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67143532/extrait"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments, CRESTOR 10 mg (rosuvastatine) : RCP"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/68479386/extrait"
+    consulte_le: 2026-11-25
+  - titre: "Wood FA et al. N-of-1 Trial of a Statin, Placebo, or No Treatment to Assess Side Effects. N Engl J Med 2020;383:2182-2184 (notice PubMed)"
+    url: "https://pubmed.ncbi.nlm.nih.gov/33196154/"
+    consulte_le: 2026-11-25
+  - titre: "Howard JP et al. Side Effect Patterns in a Crossover Trial of Statin, Placebo, and No Treatment (SAMSON, rapport complet). J Am Coll Cardiol 2021;78:1210-1222"
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8453640/"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
+    url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Les statines baissent le cholestérol pour protéger le cœur et les artères. Elles se prennent sur le long terme.
+- Les douleurs musculaires graves sont rares. Beaucoup de douleurs viennent de l'attente d'un effet indésirable (effet nocebo).
+- Douleurs musculaires fortes avec fièvre, faiblesse ou urines foncées : consultez vite.
+:::
+
+### À quoi sert ce traitement ?
+
+Les statines (atorvastatine, rosuvastatine, simvastatine, pravastatine…) freinent la fabrication du cholestérol par le foie. Elles aident à prévenir les maladies du cœur et des artères chez les personnes à risque élevé. Elles complètent un régime alimentaire adapté, sans le remplacer.
+
+<!-- FIGURE À FAIRE : schéma du foie qui fabrique moins de cholestérol, et d'une artère moins encombrée par les dépôts de graisse. -->
+
+### Comment le prendre ?
+
+- Prenez un comprimé par jour, de préférence à la même heure.
+- L'atorvastatine se prend à n'importe quel moment de la journée, avec ou sans repas.
+- En cas d'oubli, prenez simplement la dose suivante à l'heure prévue. Ne doublez pas la dose.
+- Évitez de boire de grandes quantités de jus de pamplemousse.
+
+### Quels effets indésirables ?
+
+Avec l'atorvastatine, entre 1 personne sur 100 et 1 personne sur 10 ressent des douleurs musculaires ou articulaires. Les troubles digestifs et les maux de tête ont la même fréquence.
+
+Une atteinte grave des muscles (rhabdomyolyse, destruction des fibres musculaires) est rare. Elle peut abîmer les reins.
+
+Chez les personnes à risque de diabète, une statine peut augmenter le sucre dans le sang. Ce n'est pas une raison pour arrêter : votre médecin surveillera.
+
+### Mes douleurs viennent-elles vraiment de la statine ?
+
+Pas toujours. Une étude anglaise, appelée SAMSON, a suivi 60 personnes qui avaient arrêté leur statine à cause d'effets indésirables. Pendant un an, elles ont pris chaque mois soit la statine, soit un comprimé sans médicament (placebo), soit rien. Personne ne savait quel comprimé contenait la statine.
+
+Les gênes étaient presque aussi fortes avec le placebo qu'avec la statine. Elles étaient deux fois moins fortes les mois sans comprimé. C'est l'effet nocebo : attendre un effet indésirable suffit à le ressentir. Après l'étude, 1 personne sur 2 a repris sa statine.
+
+Ces douleurs ne sont pas imaginaires. Mais elles ne prouvent pas que la statine en est la cause. Parlez-en à votre médecin avant de décider.
+
+<!-- FIGURE À FAIRE : trois barres côte à côte (mois sans comprimé, mois placebo, mois statine) montrant l'intensité moyenne des gênes dans l'étude SAMSON, avec un texte alternatif. -->
+
+::: {.quand-consulter}
+- Douleurs, crampes ou faiblesse musculaire inexpliquées : prévenez votre médecin. Il peut demander une prise de sang.
+- Faiblesse musculaire qui persiste après l'arrêt de la statine : consultez.
+- Douleurs musculaires fortes avec fièvre ou grande fatigue, ou urines foncées : consultez en urgence.
+- Gonflement du visage ou de la gorge, cloques sur la peau : appelez le 15.
+:::
+
+### Avec quels médicaments faut-il être prudent ?
+
+Certains médicaments augmentent la quantité de statine dans le sang. Ils augmentent alors le risque pour les muscles :
+
+- certains antibiotiques (clarithromycine, érythromycine) et antifongiques (itraconazole, kétoconazole) ;
+- l'acide fusidique (un antibiotique) : il faut suspendre la statine pendant ce traitement ;
+- certains traitements du VIH (virus du sida) ou de l'hépatite C ;
+- la ciclosporine (traitement après une greffe) et les fibrates (autres médicaments du cholestérol).
+
+Signalez votre statine à chaque nouvelle prescription.
+
+### Grossesse, allaitement, conduite
+
+- Les statines sont contre-indiquées pendant la grossesse et l'allaitement. Une contraception fiable est nécessaire.
+- Si vous envisagez une grossesse, parlez-en à votre médecin avant.
+- Pour toute question, votre médecin peut consulter le CRAT (Centre de référence sur les agents tératogènes) : [lecrat.fr](https://www.lecrat.fr).
+
+### Puis-je arrêter mon traitement ?
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+### Signaler un effet indésirable
+
+Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr).
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Points clés de sécurité
+
+- Atteinte musculaire : myalgies fréquentes (≥ 1/100, < 1/10) ; myopathie, myosite, rhabdomyolyse rares (RCP Tahor). Très rares myopathies nécrosantes à médiation auto-immune (anticorps anti-HMG-CoA réductase), persistant malgré l'arrêt.
+- Nocebo (essai SAMSON) : 60 patients ayant abandonné une statine pour intolérance, 12 mois en multiples croisements (4 mois atorvastatine 20 mg, 4 mois placebo, 4 mois sans comprimé), 49 ont terminé. Score moyen de symptômes (0-100) : 8,0 sans comprimé, 15,4 sous placebo, 16,3 sous statine (statine vs placebo : p = 0,39). Ratio nocebo : 0,90. Ni l'intensité à l'introduction ni la rapidité du soulagement à l'arrêt ne distinguaient statine et placebo. À 6 mois, 30 patients sur 60 avaient repris une statine. Limite : seuls des patients dont les symptômes apparaissaient dans les 2 semaines ont été inclus ; une seule statine, une seule dose.
+- Diabète : hausse possible de la glycémie chez les patients à risque ; ne justifie pas l'arrêt.
+- Atorvastatine 80 mg : risque d'AVC hémorragique en cas d'antécédent d'AVC hémorragique ou d'infarctus lacunaire (analyse SPARCL).
+
+### Surveillance
+
+- Bilan hépatique avant traitement puis régulièrement (atorvastatine).
+- CPK avant traitement en cas d'insuffisance rénale, d'hypothyroïdie, d'antécédent musculaire personnel ou familial, de toxicité musculaire antérieure, d'alcoolisme ; à discuter après 70 ans. Ne pas débuter si CPK > 5 × LSN.
+- Sous traitement, symptômes musculaires : doser les CPK. Arrêt si CPK > 5 × LSN, ou si les symptômes sont sévères quel que soit le taux ; arrêt si CPK > 10 × LSN ou rhabdomyolyse.
+
+### Interactions majeures
+
+Niveaux du Thésaurus de l'ANSM (version du 15 septembre 2023, non mise à jour depuis ; le RCP fait référence).
+
+| Association | Niveau |
+|---|---|
+| Statines + acide fusidique | Contre-indication |
+| Statines + fibrates | Au minimum déconseillée ; CI gemfibrozil + simvastatine, et rosuvastatine 40 mg |
+| Statines + daptomycine | Association déconseillée |
+| Statines + AVK | Précaution d'emploi (INR) |
+| Simvastatine + inhibiteurs puissants du CYP3A4, ciclosporine, danazol | Contre-indication |
+| Simvastatine + jus de pamplemousse, carbamazépine, dronédarone, millepertuis | Association déconseillée |
+| Simvastatine + amiodarone, amlodipine, diltiazem | Précaution d'emploi |
+| Atorvastatine + itraconazole, kétoconazole, posaconazole, glécaprévir/pibrentasvir | Contre-indication |
+| Atorvastatine + inhibiteurs de protéase boostés par ritonavir | Association déconseillée |
+| Atorvastatine + clarithromycine, érythromycine, diltiazem, ciclosporine, fluconazole | Précaution d'emploi |
+| Rosuvastatine + ciclosporine | Contre-indication |
+
+### Adaptation des doses
+
+- Atorvastatine : 10 mg/j au départ, paliers d'au moins 4 semaines, 80 mg/j au maximum.
+- Rosuvastatine : contre-indiquée si ClCr < 30 mL/min ; 40 mg contre-indiqué si ClCr < 60 mL/min, hypothyroïdie, antécédent musculaire, alcool, association à un fibrate, ou patient d'origine asiatique (dose initiale de 5 mg recommandée chez ces derniers).
+- Contre-indications communes : affection hépatique évolutive, grossesse, allaitement, femme en âge de procréer sans contraception fiable.
+
+### Pièges fréquents
+
+[À compléter par le CRPV à partir de cas anonymisés.]
+
+### Mesures de réduction du risque
+
+- Avant d'attribuer un symptôme musculaire à la statine : examen clinique, CPK, recherche d'une interaction ou d'une hypothyroïdie. En l'absence d'élévation significative des CPK et après disparition des symptômes, une reprise à faible dose ou avec une autre statine peut être envisagée sous surveillance (RCP Tahor).
+- Informer le patient de l'effet nocebo sans nier ses symptômes, et l'inciter à en parler avant tout arrêt.
+
+:::
+
+:::

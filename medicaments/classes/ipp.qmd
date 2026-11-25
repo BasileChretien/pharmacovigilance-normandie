@@ -1,0 +1,161 @@
+---
+title: "Les inhibiteurs de la pompe à protons (IPP)"
+description: "Oméprazole, ésoméprazole, pantoprazole et apparentés : quand ils sont utiles, pourquoi un traitement au long cours est rarement justifié et comment les arrêter."
+public: [patients, professionnels]
+classe: "inhibiteurs de la pompe à protons"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "HAS, Fiche « Bon usage des inhibiteurs de la pompe à protons (IPP) », validée par le Collège le 8 septembre 2022"
+    url: "https://www.has-sante.fr/upload/docs/application/pdf/2022-09/fiche_bum_-_bon_usage_des_inhibiteurs_de_la_pompe_a_protons_ipp.pdf"
+    consulte_le: 2026-11-25
+  - titre: "HAS, « Les IPP restent utiles mais doivent être moins et mieux prescrits » (communiqué du 12 novembre 2020)"
+    url: "https://www.has-sante.fr/jcms/p_3213773/fr/les-ipp-restent-utiles-mais-doivent-etre-moins-et-mieux-prescrits"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments, RCP et notice de MOPRAL 20 mg, gélule gastro-résistante (oméprazole, CIS 64103828)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/64103828/extrait"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
+    url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Ces médicaments sont utiles, mais souvent pris plus longtemps que nécessaire.
+- Pour des brûlures d'estomac, le traitement de départ dure 4 semaines au plus.
+- À l'arrêt, les brûlures peuvent revenir un temps : ce n'est pas une raison pour reprendre.
+:::
+
+### À quoi sert ce traitement ?
+
+Les inhibiteurs de la pompe à protons (IPP) diminuent l'acidité de l'estomac. Ce sont l'oméprazole (Mopral), l'ésoméprazole (Inexium), le lansoprazole, le pantoprazole et le rabéprazole.
+
+Ils soignent le reflux (remontées acides de l'estomac) et les ulcères (plaies de l'estomac ou de l'intestin). Ils protègent aussi l'estomac pendant un traitement anti-inflammatoire, si vous avez un risque particulier :
+
+- vous avez 65 ans ou plus ;
+- vous avez déjà eu un ulcère ;
+- vous prenez aussi de la cortisone, de l'aspirine ou un autre antiagrégant (qui empêche les plaquettes de former un caillot) ;
+- vous prenez un anticoagulant (médicament qui rend le sang plus fluide).
+
+En 2019, environ 1 Français sur 4 a pris un de ces médicaments. Selon la Haute Autorité de santé, plus de la moitié de ces traitements n'étaient pas justifiés.
+
+<!-- FIGURE À FAIRE : grille de 4 personnages dont 1 coloré (« 1 Français sur 4 traité en 2019 ») ; à côté, une barre coupée en deux « justifié / pas justifié », la partie « pas justifié » un peu plus grande. -->
+
+### Quand ne sont-ils pas utiles ?
+
+Sans reflux prouvé, ils n'ont pas montré d'intérêt contre une toux qui dure, l'asthme, des troubles de la gorge ou une douleur de poitrine. Chez le bébé, la plupart des régurgitations (petits rejets de lait) sont normales et ne se traitent pas ainsi.
+
+Pris avec un anti-inflammatoire, ils s'arrêtent en même temps que lui.
+
+### Comment le prendre ?
+
+Prenez la gélule d'oméprazole le matin. Avalez-la entière avec un demi-verre d'eau, sans la croquer.
+
+En cas d'oubli, prenez-la dès que vous y pensez. Si la prise suivante est proche, sautez la dose oubliée. Ne prenez pas de dose double.
+
+### Quels effets indésirables ?
+
+Jusqu'à 1 personne sur 10 a des maux de tête, des douleurs de ventre, une constipation, une diarrhée, des gaz ou des nausées.
+
+Pris pendant des mois ou des années, ils peuvent :
+
+- faire baisser le magnésium dans le sang, surtout après un an : fatigue, crampes, troubles du rythme du cœur ;
+- réduire l'absorption de la vitamine B12 ;
+- augmenter un peu le risque de fracture de la hanche, du poignet ou des vertèbres, surtout chez les personnes âgées ;
+- favoriser certaines infections de l'intestin.
+
+::: {.quand-consulter}
+- Perte de poids importante sans raison, vomissements répétés, difficulté à avaler : consultez rapidement. Le médicament peut cacher une maladie grave.
+- Vomissement de sang ou selles noires : appelez le 15.
+- Diarrhée importante qui dure.
+- Plaques sur la peau exposée au soleil, avec douleurs des articulations.
+- Crampes, grande fatigue ou palpitations après des mois de traitement.
+:::
+
+### Avec quels médicaments faut-il être prudent ?
+
+Signalez votre traitement si vous prenez l'un de ces médicaments :
+
+- clopidogrel (pour le cœur) ou digoxine ;
+- méthotrexate ;
+- lévothyroxine (pour la thyroïde) ;
+- traitement contre le virus de l'immunodéficience humaine (VIH).
+ Le millepertuis, une plante, peut rendre l'IPP moins efficace.
+
+Certains IPP sont vendus sans ordonnance. Si les brûlures durent ou reviennent souvent, parlez-en à votre médecin.
+
+### Grossesse, allaitement, conduite
+
+L'oméprazole peut être utilisé pendant la grossesse et l'allaitement. Le Centre de référence sur les agents tératogènes (CRAT) informe les professionnels sur [lecrat.fr](https://www.lecrat.fr).
+
+Si vous avez des vertiges ou une vue trouble, ne conduisez pas.
+
+### Puis-je arrêter mon traitement ?
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+Si vous prenez un IPP depuis plus de 4 semaines pour un reflux, demandez à votre médecin s'il est encore utile. Souvent, il peut être arrêté. Les brûlures peuvent revenir juste après l'arrêt : c'est un effet rebond. Si elles reviennent de temps en temps, d'autres solutions existent : antiacides, alginates (gels qui protègent l'œsophage), IPP seulement les jours de gêne. Les conseils sur l'alimentation restent utiles.
+
+<!-- FIGURE À FAIRE : arbre de décision simplifié pour le patient : « IPP depuis plus de 4 semaines ? » puis « encore des brûlures ? » ; « non » mène à « arrêt, avec un effet rebond possible » ; « oui » mène à « avis du médecin : examen, plus petite dose efficace ». -->
+
+### Signaler un effet indésirable
+
+Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr).
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Points clés de sécurité
+
+En 2019, plus de 16 millions de personnes ont été traitées par IPP en France, et plus de la moitié des usages ne serait pas justifiée (HAS 2022). En prévention des lésions dues aux AINS, les IPP sont prescrits inutilement dans 80 % des cas, chez des patients sans facteur de risque.
+
+**Indications et durées (HAS)** :
+
+- RGO sans œsophagite : 4 semaines au maximum, uniquement en cas de pyrosis, de brûlures post-prandiales ou de régurgitations acides ; demi-dose (ésoméprazole, lansoprazole, pantoprazole, rabéprazole) ou pleine dose (oméprazole).
+- Prévention de l'ulcère sous AINS seulement si 65 ans ou plus, antécédent d'ulcère (rechercher et traiter *H. pylori*), association à un antiagrégant, un corticoïde ou un anticoagulant. Arrêter l'IPP avec l'AINS. Pas d'IPP sous antiagrégant ou anticoagulant seul chez le patient à faible risque.
+- Pas d'indication : pyrosis fonctionnel, manifestations extradigestives isolées (pas de test thérapeutique sans RGO documenté). Nourrisson : seulement après 1 mois, RGO persistant et gênant, compliqué ou sur terrain particulier, si possible après avis spécialisé.
+
+**Risques du traitement prolongé (RCP de l'oméprazole)** : hypomagnésémie sévère après au moins 3 mois, le plus souvent un an (avec hypocalcémie, hypokaliémie possibles) ; carence en vitamine B12 ; fractures (hausse de 10 à 40 % dans des études observationnelles, surtout à forte dose et au-delà d'un an) ; infections digestives (*Salmonella*, *Campylobacter*, *C. difficile* à l'hôpital) ; néphrite tubulo-interstitielle aiguë ; lupus cutané subaigu ; masquage d'un cancer gastrique devant des signes d'alarme. Interférence avec la chromogranine A : arrêter l'IPP au moins 5 jours avant le dosage.
+
+### Déprescription dans le RGO de l'adulte (HAS)
+
+IPP depuis plus de 4 semaines au renouvellement : rechercher l'indication (endoscopie, ulcère hémorragique, AINS au long cours). RGO non compliqué sans symptômes : arrêter et prévenir d'un effet rebond possible, qui ne justifie pas une nouvelle prescription. Symptômes occasionnels : antiacides, anti-H2, alginates ou IPP à la demande, avec les mesures hygiéno-diététiques. Symptômes persistants : investiguer avant de poursuivre au-delà de 3 mois et chercher la dose minimale efficace. Poursuite justifiée, avec réévaluation : œsophagite de grade C ou D de Los Angeles, endobrachyœsophage, RGO invalidant mal contrôlé par un traitement intermittent.
+
+### Surveillance
+
+Magnésémie avant et pendant un traitement prolongé, ou en cas d'association à la digoxine ou à un diurétique. Vitamine B12 en cas de réserves faibles. Réévaluation de chaque renouvellement : efficacité, effets indésirables, interactions.
+
+### Interactions majeures
+
+- IPP + rilpivirine : **contre-indication**. Oméprazole + nelfinavir : contre-indiqué (RCP).
+- IPP + atazanavir, posaconazole (suspension buvable), méthotrexate > 20 mg/semaine : **association déconseillée**.
+- IPP + hormones thyroïdiennes : **précaution d'emploi**. Oméprazole + digoxine, tacrolimus : **précaution d'emploi**. Oméprazole ou ésoméprazole + escitalopram : **précaution d'emploi** (torsades de pointes).
+- IPP + itraconazole, kétoconazole, inhibiteurs de tyrosine kinase à absorption pH-dépendante, mycophénolate, millepertuis, vitamine B12 : **à prendre en compte**.
+- Oméprazole + clopidogrel : association à éviter par précaution selon le RCP (baisse de 46 % de l'exposition au métabolite actif) ; interaction absente du Thésaurus.
+
+### Adaptation des doses
+
+Oméprazole : pas d'adaptation chez le sujet âgé ni en cas d'insuffisance rénale ; 10 à 20 mg/j peuvent suffire en cas d'insuffisance hépatique.
+
+### Pièges fréquents
+
+À compléter par le CRPV à partir de cas anonymisés.
+
+### Mesures de réduction du risque
+
+Réévaluer chaque renouvellement, en coordination entre prescripteur et pharmacien. Le conseil à la dispensation et l'adhésion du patient conditionnent le succès de l'arrêt (HAS 2022).
+
+:::
+
+:::

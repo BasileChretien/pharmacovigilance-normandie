@@ -1,0 +1,118 @@
+---
+title: "Rhinite allergique (rhume des foins) : quels médicaments ?"
+description: "Antihistaminiques, corticoïdes par voie nasale et décongestionnants dans la rhinite allergique : comment choisir, quels effets surveiller, quels médicaments éviter."
+public: [patients, professionnels]
+recommandation_de_reference: "SFORL, Prise en charge diagnostique et thérapeutique des rhinites allergiques par l'ORL, recommandation pour la pratique clinique, 2020"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "SFORL, Recommandation pour la pratique clinique : prise en charge diagnostique et thérapeutique des rhinites allergiques par l'ORL, 2020 (PDF)"
+    url: "https://www.sforl.org/wp-content/uploads/2020/07/Recommandation-SFORL-Prise-en-charge-diagnostique-et-thérapeutique-des-Rhinites-Allergiques-par-lORL-2020.pdf"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Rhume : ordonnance obligatoire pour toute dispensation de médicament à base de pseudoéphédrine, 10 décembre 2024"
+    url: "https://ansm.sante.fr/actualites/rhume-ordonnance-obligatoire-pour-toute-dispensation-de-medicament-a-base-de-pseudoephedrine"
+    consulte_le: 2026-11-25
+  - titre: "Afssaps (ANSM), Mise au point – Médicaments et conduite automobile, actualisation mars 2009 (PDF)"
+    url: "https://ansm.sante.fr/uploads/2021/03/11/faff1e402339cd443a9894792f20d31d.pdf"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.quand-consulter}
+- Les symptômes touchent un seul côté du nez.
+- Vous mouchez du pus (écoulement épais jaune ou vert), ou vous avez de la fièvre.
+- Vous toussez, sifflez en respirant ou manquez de souffle : il peut s'agir d'un asthme.
+- Les symptômes gênent votre sommeil, votre travail ou l'école malgré le traitement.
+- Il s'agit d'un enfant de moins de 3 ans, ou vous êtes enceinte.
+- Gonflement du visage, de la langue ou de la gorge, ou gêne pour respirer : appelez le 15.
+:::
+
+::: {.a-retenir}
+- Les antihistaminiques récents et les corticoïdes par voie nasale sont les traitements de base.
+- Certains antihistaminiques font dormir : prudence au volant.
+- Ne prenez pas de comprimé décongestionnant contre le rhume des foins.
+:::
+
+### De quoi parle-t-on ?
+
+La rhinite allergique est une réaction du nez à des allergènes. Un allergène est une substance qui déclenche l'allergie, comme le pollen ou les acariens. Le nez coule, gratte et se bouche. Vous éternuez. Les yeux peuvent aussi piquer et pleurer.
+
+### Quels médicaments peuvent aider ?
+
+- Les **antihistaminiques** en comprimés : ils calment les démangeaisons, les éternuements et le nez qui coule. Ils agissent moins sur le nez bouché.
+- Les **corticoïdes par voie nasale** (sprays) : ils réduisent l'inflammation du nez. Ils sont plus efficaces sur le nez bouché.
+- Les **lavages de nez** à l'eau salée : ils sont conseillés dans toutes les rhinites allergiques.
+
+### Comment choisir ?
+
+Si les symptômes sont légers, un antihistaminique récent suffit souvent. S'ils sont plus forts, ou si le nez est bouché, un spray de corticoïde est préférable. Chez l'enfant, le choix dépend de l'âge : demandez conseil. Votre pharmacien peut vous aider à choisir.
+
+### Comment bien les utiliser ?
+
+Pour un spray nasal, tenez le flacon de la main opposée à la narine : main droite pour la narine gauche. Ce geste limite les saignements de nez. Utilisez le spray régulièrement, comme indiqué sur l'ordonnance ou la notice. Demandez au pharmacien de vous montrer le bon geste.
+
+<!-- FIGURE À FAIRE : schéma du bon geste pour un spray nasal (tête légèrement penchée en avant, main droite pour la narine gauche, embout orienté vers l'extérieur et non vers la cloison). Texte alternatif décrivant le geste. -->
+
+### Quels effets surveiller ?
+
+- Les anciens antihistaminiques font souvent dormir. Les plus récents beaucoup moins, mais parfois quand même.
+- Les sprays de corticoïdes peuvent faire saigner du nez. Un mauvais geste en est souvent la cause.
+
+### Ce qu'il vaut mieux éviter
+
+- Les **décongestionnants** (médicaments qui débouchent le nez en resserrant les vaisseaux) ne sont pas conseillés en premier. En spray, ne les utilisez pas plus de 3 jours : le nez peut se boucher davantage. En comprimés, ceux à la pseudoéphédrine exposent à de rares accidents graves, comme un accident vasculaire cérébral (AVC). Ils ne sont délivrés que sur ordonnance.
+- Les piqûres de corticoïdes « retard » contre l'allergie : elles ont des effets indésirables importants.
+- Conduire si un antihistaminique vous rend somnolent. Regardez le pictogramme sur la boîte.
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Signes d'alerte
+
+Symptomatologie unilatérale ou suppurative : remettre en cause le diagnostic (recommandation 14). Rechercher une polypose nasale associée (recommandation 12). Avis pneumologique en cas d'asthme associé (recommandation 11) ; avis allergologique en cas de polysensibilisation (recommandation 10).
+
+### Stratégie thérapeutique (SFORL 2020)
+
+- **Éviction allergénique** combinée selon les allergies (grade A) ; **lavages de nez** dans toutes les rhinites allergiques (accord professionnel).
+- **Rhinite légère à modérée** : antihistaminique oral en première intention, en privilégiant les molécules de dernière génération (grade A).
+- **Rhinite modérée** : rhinocorticostéroïde en monothérapie en première intention (grade B). Chez l'adulte insuffisamment contrôlé : doubler la dose (grade A), puis association fixe corticoïde et anti-H1 nasal (grade A ; en France, azélastine-fluticasone en seconde intention).
+- **Associations sans intérêt démontré** par rapport au rhinocorticostéroïde seul : avec un anti-H1 oral, un décongestionnant ou un antileucotriène.
+- **Antileucotriènes** : pas en monothérapie de première intention (grade A).
+- **Immunothérapie allergénique** : rhinite modérée ou sévère insuffisamment contrôlée, prescrite par un praticien formé (grade A), première prise sublinguale au cabinet avec adrénaline auto-injectable disponible (grade A).
+- **Enfant** : corticoïde intranasal en première intention à partir de 3 ans dans la rhinite perannuelle, selon l'AMM de la molécule. Entre 1 et 3 ans, l'anti-H1 oral de dernière génération est la seule option (grade C). Éviter corticoïdes systémiques et vasoconstricteurs.
+
+### Mécanismes d'action
+
+Anti-H1 : antagonistes des récepteurs H1 de l'histamine ; efficacité partielle sur l'obstruction. Rhinocorticostéroïdes : anti-inflammatoires locaux, considérés comme équivalents entre eux. Vasoconstricteurs : sympathomimétiques alpha.
+
+### Précautions et effets indésirables
+
+- **Anti-H1 de première génération** : sédation nettement plus marquée, effets anticholinergiques (vision floue, mydriase), vertiges, hypotension orthostatique ; souvent en vente libre, conseil pharmaceutique indispensable avant la conduite (Afssaps 2009). Seconde génération : somnolence peu fréquente mais à signaler à la première prescription.
+- **Rhinocorticostéroïdes** : épistaxis chez 17 à 23 % des patients, souvent liées à la technique (main ipsilatérale) ; pas d'effet significatif sur l'axe corticotrope ; élévation transitoire de la pression intra-oculaire décrite.
+- **Vasoconstricteurs** : rhinite médicamenteuse au-delà de 3 jours ; pas en première intention (grade A). La pseudoéphédrine orale est inscrite sur la liste I et soumise à prescription depuis le 11 décembre 2024 (ANSM). Ses risques : AVC, infarctus du myocarde, PRES (encéphalopathie postérieure réversible) et SVCR (syndrome de vasoconstriction cérébrale réversible), y compris sans facteur de risque et quelle que soit la dose. Les formes nasales sont déjà sur prescription.
+
+### Ce qu'il faut éviter
+
+- Corticothérapie orale en première intention : seulement en cure courte dans les formes sévères (grade A).
+- Corticoïdes injectables retard : à abandonner (diabète, ostéoporose).
+
+### Outils et liens
+
+- Classification ARIA de la fréquence et de la sévérité (recommandation 4 SFORL).
+- Éducation au geste de pulvérisation et vérification de l'observance avant toute modification (recommandation 24, accord professionnel).
+
+:::
+
+:::

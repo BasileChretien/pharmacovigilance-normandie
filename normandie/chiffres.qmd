@@ -1,0 +1,29 @@
+---
+title: "Les chiffres de la région"
+description: "Les déclarations d'effets indésirables reçues chaque année par les CRPV de Caen et de Rouen, et ce qu'elles ont permis."
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+---
+
+Cette page présentera chaque année une infographie de l'activité des deux centres. Elle sera remplie à partir des rapports d'activité des CRPV. Les règles de publication des données issues de la base nationale de pharmacovigilance sont à vérifier avec l'ANSM avant toute mise en ligne.
+
+## Ce que l'infographie montrera
+
+- le nombre de déclarations reçues, par département et par année ;
+- la part des déclarations faites par les patients et par les professionnels ;
+- les classes de médicaments les plus souvent en cause ;
+- la part des cas graves ;
+- l'évolution sur cinq ans.
+
+[Données à compléter à partir des rapports d'activité des CRPV.]
+
+<!-- FIGURE À FAIRE : graphique en barres des déclarations par département et par année, à partir des rapports d'activité -->
+
+## Ce que vos déclarations ont permis
+
+Des exemples concrets, anonymisés, de déclarations normandes qui ont conduit à une mesure : une mise en garde, une modification de la notice, une information des professionnels.
+
+[Exemples à compléter par les CRPV.]

@@ -1,0 +1,122 @@
+---
+title: "Médicaments et conduite"
+description: "Comprendre le pictogramme à trois niveaux imprimé sur les boîtes de médicaments, connaître les médicaments qui font dormir et savoir quand ne pas prendre le volant."
+public: [patients, professionnels]
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "ANSM, Médicaments et conduite (dossier thématique)"
+    url: "https://ansm.sante.fr/dossiers-thematiques/medicaments-et-conduite"
+    consulte_le: 2026-11-25
+  - titre: "Afssaps (ANSM), Mise au point – Médicaments et conduite automobile, actualisation mars 2009 (PDF ; reproduit les trois pictogrammes, page 5)"
+    url: "https://ansm.sante.fr/uploads/2021/03/11/faff1e402339cd443a9894792f20d31d.pdf"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Propositions d'annexes AMM / enregistrements (RCP, notice, étiquetage) – rubrique pictogrammes du conditionnement extérieur (version imprimable)"
+    url: "https://ansm.sante.fr/page/impression/89"
+    consulte_le: 2026-11-25
+  - titre: "HAS, Quelle place pour les benzodiazépines dans l'insomnie ?, fiche de bon usage, juillet 2024 (PDF)"
+    url: "https://www.has-sante.fr/upload/docs/application/pdf/2024-07/bum_bzd_insomnie_11_07_24_vf.pdf"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Regardez la boîte : un triangle avec une voiture signale un risque pour la conduite.
+- Au niveau 3 (rouge), ne conduisez pas.
+- Arrêtez-vous dès que vous vous sentez somnolent, même avec un médicament sans pictogramme.
+:::
+
+### Comment reconnaître un médicament qui gêne la conduite ?
+
+Sur certaines boîtes, vous voyez un triangle avec une voiture. Ce pictogramme (petit dessin d'alerte) existe en trois couleurs. Chaque couleur correspond à un niveau de risque. Le message écrit à côté vous dit quoi faire.
+
+| Niveau | Couleur | Mise en garde | Message |
+|---|---|---|---|
+| Niveau 1 | Jaune | « Soyez prudent » | « Ne pas conduire sans avoir lu la notice » |
+| Niveau 2 | Orange | « Soyez très prudent » | « Ne pas conduire sans l'avis d'un professionnel de santé » |
+| Niveau 3 | Rouge | « Attention, danger : ne pas conduire » | « Pour la reprise de la conduite, demandez l'avis d'un médecin » |
+
+<!-- FIGURE À FAIRE : reproduire les trois pictogrammes officiels (triangle jaune niveau 1, orange niveau 2, rouge niveau 3, avec leur message) à partir des fichiers fournis par l'ANSM, avec un texte alternatif qui lit chaque message. Vérifier les droits de reproduction. Ajouter un motif ou le numéro du niveau pour que la figure reste lisible en niveaux de gris et par les personnes daltoniennes. -->
+
+### Que veut dire chaque niveau ?
+
+- **Niveau 1** : le risque est faible. Il dépend surtout de votre sensibilité. Lisez la notice avant de conduire.
+- **Niveau 2** : le médicament peut, dans certains cas, empêcher de conduire. Demandez l'avis de votre médecin ou de votre pharmacien.
+- **Niveau 3** : le médicament rend la conduite dangereuse. Ne conduisez pas. Votre médecin vous dira quand vous pourrez reprendre le volant.
+
+### Quels médicaments sont concernés ?
+
+Ce sont surtout des médicaments qui agissent sur le cerveau et peuvent faire dormir :
+
+- presque tous les somnifères (niveau 3) ;
+- beaucoup de médicaments contre l'anxiété ;
+- certains antidépresseurs et certains antidouleurs, comme ceux de la famille de la morphine ;
+- les médicaments de l'épilepsie et de la maladie de Parkinson ;
+- certains médicaments contre l'allergie et le mal des transports ;
+- les gouttes qui dilatent la pupille, utilisées chez l'ophtalmologiste (niveau 3).
+
+Les médicaments du diabète peuvent aussi provoquer une hypoglycémie (baisse du sucre dans le sang) au volant.
+
+### Quels signes doivent vous faire arrêter de conduire ?
+
+- Vous avez sommeil ou du mal à vous concentrer.
+- Vous avez du mal à garder votre trajectoire.
+- Votre vue se trouble.
+
+Garez-vous dès que possible. Ne reprenez pas la route tant que ces signes persistent.
+
+### Quelques conseils
+
+- Ne buvez pas d'alcool : il renforce l'effet de nombreux médicaments.
+- Un somnifère peut encore vous endormir le lendemain matin.
+- Ne prenez pas un médicament qui vous a déjà rendu somnolent avant de conduire.
+- N'arrêtez pas un traitement de vous-même pour pouvoir conduire. Certaines maladies non soignées gênent aussi la conduite.
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Le dispositif
+
+La classification en trois niveaux a été élaborée par l'Afssaps à partir de 2003. Le pictogramme gradé est apposé sur le conditionnement extérieur depuis 2008, selon l'ANSM. La mise au point Afssaps de 2009 le date de 2006, avec une apposition progressive depuis 2005 [à compléter : préciser la date réglementaire]. Chaque pictogramme associe une couleur (jaune, orange, rouge), le numéro du niveau en toutes lettres et une mise en garde suivie d'un message. Le niveau de chaque substance figure en annexe de l'arrêté du 8 août 2008 pris pour l'application de l'article R. 5121-139 du Code de la santé publique (Afssaps 2009). La liste a pu évoluer depuis [à compléter : texte en vigueur sur Légifrance].
+
+Définitions de l'ANSM :
+
+- **Niveau 1** : principes actifs qui ne remettent pas en cause la conduite, mais nécessitant que les patients soient informés.
+- **Niveau 2** : principes actifs pouvant remettre en cause l'aptitude à la conduite et nécessitant l'avis d'un professionnel de santé.
+- **Niveau 3** : principes actifs pour lesquels l'aptitude à la conduite est remise en cause pendant leur utilisation.
+
+### Classes à risque (Afssaps 2009, ANSM)
+
+- **Hypnotiques** (benzodiazépines et apparentés) : conduite formellement déconseillée après la prise ; somnolence résiduelle possible le lendemain. Pratiquement tous les somnifères sont classés au niveau 3.
+- **Anxiolytiques** : somnolence et ralentissement psychomoteur, majorés par l'alcool et les autres dépresseurs du système nerveux central. Formes injectables et doses élevées incompatibles avec la conduite.
+- **Antidépresseurs** : somnolence (moindre avec les IRS), troubles du comportement.
+- **Antalgiques opioïdes** : sédation, troubles du comportement, forte variabilité individuelle ; évaluation soigneuse à l'instauration.
+- **Antihistaminiques H1** : première génération nettement sédative, avec effets anticholinergiques ; seconde génération peu sédative mais à signaler. Beaucoup sont en vente libre, ce qui rend le conseil pharmaceutique indispensable.
+- **Autres** : neuroleptiques, anticonvulsivants, antiparkinsoniens, anesthésiques généraux, collyres mydriatiques (niveau 3). Médicaments du diabète (risque d'hypoglycémie surtout sous insuline et sulfamides).
+
+### Conseils à délivrer
+
+À chaque prescription ou délivrance d'un médicament porteur du pictogramme, signaler le risque. Arrêter de conduire en cas de somnolence, de difficultés de concentration ou de trajectoire, ou de troubles visuels. Pas d'alcool. Prise au coucher si possible pour les médicaments sédatifs. Au niveau 3, indiquer au patient le délai avant de reprendre le volant. Ne pas interrompre un traitement pour une pathologie qui expose elle-même à un risque routier (épilepsie, arythmie, dépression). L'Afssaps conseille de noter dans le dossier qu'une information sur la conduite a été donnée.
+
+Pour les hypnotiques, la HAS (2024) recommande d'informer du risque de somnolence et d'allongement du temps de réaction. Elle cite aussi les vertiges, la vision floue ou double et la baisse de vigilance qui peuvent persister le matin suivant la prise.
+
+### Outils et liens
+
+- Rubrique 4.7 du RCP (« Effets sur l'aptitude à conduire des véhicules et à utiliser des machines ») et rubrique « Conduite de véhicules et utilisation de machines » de la notice.
+- Pictogrammes téléchargeables sur le site de l'ANSM.
+
+:::
+
+:::

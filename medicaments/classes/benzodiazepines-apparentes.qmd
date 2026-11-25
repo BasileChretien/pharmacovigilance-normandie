@@ -1,0 +1,156 @@
+---
+title: "Les benzodiazépines et médicaments apparentés"
+description: "Anxiolytiques et somnifères (lorazépam, alprazolam, zolpidem, zopiclone…) : durées limitées, chutes chez les personnes âgées, arrêt progressif."
+public: [patients, professionnels]
+classe: "benzodiazépines et apparentés"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "Base de données publique des médicaments, STILNOX 10 mg (zolpidem) : RCP et notice"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/63179285/extrait"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments, IMOVANE 7,5 mg (zopiclone) : RCP et notice"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/68508795/extrait"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments, TEMESTA 1 mg (lorazépam) : RCP et notice"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67917629/extrait"
+    consulte_le: 2026-11-25
+  - titre: "HAS, Arrêt des benzodiazépines et médicaments apparentés : démarche du médecin traitant en ambulatoire, rapport d'élaboration (juin 2015)"
+    url: "https://www.has-sante.fr/upload/docs/application/pdf/2015-06/fiche_memo_rapport_elaboration_arret_benzodiazepines__2015_06_17.pdf"
+    consulte_le: 2026-11-25
+  - titre: "HAS, Benzodiazépines : programmer l'arrêt dès la prescription (2017, mis à jour 2019)"
+    url: "https://has-sante.fr/jcms/pprd_2974495/fr/benzodiazepines-programmer-l-arret-des-la-prescription"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
+    url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Ces médicaments sont faits pour une courte durée : 4 semaines au plus pour dormir, 12 semaines au plus contre l'anxiété.
+- Chez les personnes âgées, ils augmentent le risque de chute et de troubles de la mémoire.
+- Ne les arrêtez jamais d'un coup : la baisse se fait peu à peu, avec votre médecin.
+:::
+
+### À quoi sert ce traitement ?
+
+Les benzodiazépines ralentissent l'activité du cerveau. Elles calment l'anxiété (lorazépam, alprazolam, bromazépam, oxazépam…) ou aident à dormir. Le zolpidem et la zopiclone sont des somnifères proches, dits « apparentés ».
+
+Au-delà de quelques semaines, leur effet diminue. Les risques, eux, augmentent : somnolence dans la journée, chutes, accidents, troubles de la mémoire et dépendance.
+
+### Comment le prendre ?
+
+- Prenez le somnifère au moment du coucher, en une seule prise. Ne le reprenez pas au cours de la nuit.
+- Gardez 8 heures de sommeil devant vous avant de conduire ou de travailler en hauteur.
+- Pour le zolpidem, la dose habituelle est de 10 milligrammes. Après un certain âge ou si vous êtes fragile, elle est de 5 milligrammes.
+- Pour une insomnie passagère, un voyage par exemple, le traitement dure 2 à 5 jours. Après un événement difficile, il dure 2 à 3 semaines.
+- Le zolpidem est prescrit sur une ordonnance sécurisée, pour 28 jours au plus.
+- En cas d'oubli, prenez la dose suivante à l'heure habituelle, le lendemain. Ne doublez jamais la dose.
+
+<!-- FIGURE À FAIRE : escalier descendant montrant la baisse progressive des doses sur plusieurs semaines, avec un palier où l'on peut rester plus longtemps en cas de gêne. -->
+
+### Quels effets indésirables ?
+
+- Avec le lorazépam, plus de 1 personne sur 10 se sent somnolente ou moins vigilante.
+- Trous de mémoire dans les heures qui suivent la prise.
+- Faiblesse des muscles et troubles de l'équilibre, qui favorisent les chutes chez les personnes âgées.
+- Avec le zolpidem : somnambulisme (agir en dormant, sans s'en souvenir), par exemple conduire, manger ou téléphoner.
+- Dépendance, surtout après plusieurs semaines et à forte dose.
+
+::: {.quand-consulter}
+- Vous avez fait des choses la nuit sans vous en souvenir : arrêtez le somnifère et appelez votre médecin.
+- Vous êtes somnolent le matin, vous êtes tombé, ou vous oubliez des choses : parlez-en à votre médecin.
+- Vous avez des idées noires ou une tristesse qui dure : consultez rapidement.
+- Pendant une baisse des doses : confusion, hallucinations (voir ou entendre ce qui n'existe pas), convulsions. Appelez le 15.
+:::
+
+### Avec quels médicaments faut-il être prudent ?
+
+- L'alcool : il renforce l'effet sédatif. Évitez-le pendant le traitement.
+- Les antidouleurs opioïdes (tramadol, codéine, morphine…) : risque de sommeil profond, d'arrêt de la respiration, de coma.
+- Les autres médicaments qui font dormir : antihistaminiques (anti-allergiques) sédatifs, certains antidépresseurs, autres somnifères.
+- Ne prenez pas deux benzodiazépines en même temps : le risque de dépendance augmente.
+
+### Grossesse, allaitement, conduite
+
+- Le zolpidem est déconseillé pendant toute la grossesse. Prévenez votre médecin si vous envisagez une grossesse.
+- En fin de grossesse, le bébé peut naître endormi, mou, avec des difficultés à téter.
+- Pendant l'allaitement, le zolpidem est déconseillé.
+- Votre médecin peut demander l'avis du CRAT (Centre de référence sur les agents tératogènes) : [lecrat.fr](https://www.lecrat.fr).
+- Le lendemain matin, la somnolence peut gêner la conduite.
+
+### Puis-je arrêter mon traitement ?
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+Un arrêt brutal peut provoquer un sevrage : insomnie, anxiété, maux de tête, douleurs musculaires, irritabilité. L'insomnie peut aussi revenir plus fort pendant quelques jours (effet rebond). Votre médecin vous proposera de baisser la dose par étapes. L'arrêt prend souvent quelques semaines, parfois plusieurs mois. Réduire la dose, même sans arrêter, est déjà un progrès.
+
+### Signaler un effet indésirable
+
+Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr).
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Points clés de sécurité
+
+- Durée : 4 semaines au plus pour les hypnotiques, 12 semaines au plus pour les anxiolytiques, période de réduction comprise. Au-delà de 28 jours, l'efficacité est incertaine et les risques augmentent : somnolence diurne, troubles mnésiques, chutes, accidents, dépendance (HAS 2015).
+- Sujet âgé : sédation et effet myorelaxant favorisent les chutes, aux conséquences souvent graves ; troubles du comportement plus fréquents. Allongement de la demi-vie et accumulation (RCP Stilnox).
+- Zolpidem : comportements complexes du sommeil (somnambulisme, conduite automobile) avec amnésie, dès la première prise ; arrêt immédiat et contre-indication ultérieure. Altération de la vigilance le lendemain : respecter 8 heures de sommeil avant de conduire.
+- Contre-indications du zolpidem : insuffisance respiratoire sévère, syndrome d'apnée du sommeil, insuffisance hépatique sévère, myasthénie, antécédent de comportement complexe du sommeil.
+- Épisode dépressif majeur : ne pas prescrire seul ; délivrer la plus petite quantité possible (risque suicidaire).
+- Grossesse : les études cas-témoins suggèrent une incidence des fentes labio-palatines inférieure à 2/1 000 après exposition, contre 1/1 000 attendu. En fin de grossesse, imprégnation néonatale (hypotonie axiale, troubles de la succion) sur 1 à 3 semaines.
+
+### Surveillance
+
+- Réévaluer à chaque renouvellement. Tout patient qui prend une benzodiazépine chaque jour depuis plus de 30 jours doit se voir proposer un arrêt (HAS 2015).
+- Évaluer la dépendance et l'attachement au traitement (questionnaire ECAB) avant une décision d'arrêt partagée.
+
+### Interactions majeures
+
+Niveaux du Thésaurus de l'ANSM (version du 15 septembre 2023, non mise à jour depuis ; le RCP fait référence).
+
+| Association | Niveau |
+|---|---|
+| Benzodiazépines et apparentés + morphiniques, barbituriques | À prendre en compte (sédation, dépression respiratoire, coma, décès, surtout chez le sujet âgé) |
+| Benzodiazépines + buprénorphine | À prendre en compte (dépression respiratoire en traitement de substitution) |
+| Benzodiazépines + clozapine | À prendre en compte (collapsus, arrêt respiratoire ou cardiaque) |
+| Médicaments sédatifs entre eux | À prendre en compte |
+| Médicaments sédatifs + alcool | Association déconseillée |
+| Zolpidem ou zopiclone + inhibiteurs puissants du CYP3A4 | À prendre en compte |
+| Zolpidem ou zopiclone + rifampicine | Précaution d'emploi |
+
+### Adaptation des doses
+
+- Zolpidem : 10 mg au coucher chez l'adulte ; 5 mg chez le sujet âgé ou fragilisé et en cas d'insuffisance hépatique ; ne jamais dépasser 10 mg/j.
+- Lorazépam : posologie réduite, de moitié par exemple, chez le sujet âgé et en cas d'insuffisance rénale ou hépatique.
+
+### Arrêt du traitement
+
+- Décroissance toujours progressive, le plus souvent sur 4 à 10 semaines ; l'arrêt complet peut prendre de 3 mois à un an (HAS 2015).
+- Signes de sevrage modérés : revenir au palier précédent, puis réduire plus lentement. Signes graves (confusion, hallucinations, convulsions, coma) : hospitalisation.
+- Prise en charge spécialisée en cas de dépendance à l'alcool ou à d'autres substances, de pathologie psychiatrique sévère ou d'échecs antérieurs.
+
+### Pièges fréquents
+
+[À compléter par le CRPV à partir de cas anonymisés.]
+
+### Mesures de réduction du risque
+
+- Zolpidem : liste I, ordonnance sécurisée, prescription en toutes lettres, durée limitée à 28 jours. Zopiclone : durée de prescription limitée à 4 semaines. Lorazépam : prescription limitée à 12 semaines.
+- Annoncer la durée du traitement et les modalités d'arrêt dès la prescription.
+
+:::
+
+:::

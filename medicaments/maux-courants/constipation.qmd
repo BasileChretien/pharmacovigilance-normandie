@@ -1,0 +1,123 @@
+---
+title: "Constipation : quels médicaments ?"
+description: "Les laxatifs selon leur mode d'action, l'ordre dans lequel les utiliser, les risques d'un usage prolongé des laxatifs stimulants et les signes qui doivent faire consulter."
+public: [patients, professionnels]
+recommandation_de_reference: "Société nationale française de colo-proctologie (SNFCP), Recommandations pour la pratique clinique de la prise en charge de la constipation, 2017"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "SNFCP, Recommandations pour la pratique clinique de la prise en charge de la constipation (version longue), 2017"
+    url: "https://www.snfcp.org/wp-content/uploads/2017/12/livre-RCP-consti2017_long.pdf"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Résumé des caractéristiques du produit AGIOLAX, granulés (séné et ispaghul)"
+    url: "https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0405189.htm"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.quand-consulter}
+- Vous voyez du sang dans les selles.
+- Vous maigrissez sans raison, ou vous êtes très fatigué et pâle.
+- La constipation est nouvelle et s'aggrave, ou ne cède pas malgré un laxatif.
+- Vous avez besoin d'un laxatif stimulant plus d'une semaine.
+- Vous êtes enceinte, ou il s'agit d'un enfant : demandez conseil avant tout laxatif.
+- Vous n'émettez plus ni selles ni gaz, avec un ventre gonflé, des vomissements ou une douleur violente : appelez le 15.
+:::
+
+::: {.a-retenir}
+- Commencez par boire assez, manger des fibres et bouger.
+- Si cela ne suffit pas, les laxatifs de lest ou osmotiques viennent en premier.
+- Les laxatifs stimulants se prennent peu de temps, une semaine au plus sans avis.
+:::
+
+### Quels médicaments peuvent aider ?
+
+Les laxatifs sont des médicaments qui aident à aller à la selle. Il en existe plusieurs familles :
+
+- les **laxatifs de lest** : des fibres, comme le psyllium (ou ispaghul) ou le son de blé ;
+- les **laxatifs osmotiques** : le macrogol (ou polyéthylène glycol, PEG) ou le lactulose ;
+- les **laxatifs lubrifiants** : l'huile de paraffine ;
+- les **laxatifs stimulants** : le séné ou le bisacodyl ;
+- les **laxatifs locaux** : les suppositoires et les petits lavements.
+
+### Comment agissent-ils ?
+
+Les fibres retiennent l'eau et augmentent le volume des selles. Les osmotiques attirent l'eau dans l'intestin et ramollissent les selles. Les lubrifiants graissent les selles pour faciliter leur passage. Les stimulants accélèrent les mouvements de l'intestin. Les suppositoires déclenchent l'envie d'aller à la selle.
+
+<!-- FIGURE À FAIRE : frise « par quoi commencer » en quatre marches : 1) eau, fibres, activité ; 2) laxatif de lest ou osmotique ; 3) en cas d'échec, lubrifiant ou stimulant sur une courte durée ; 4) consulter. Couleurs lisibles par les personnes daltoniennes et en niveaux de gris. -->
+
+### Comment choisir ?
+
+Après les conseils de vie, les fibres et les osmotiques sont à essayer en premier. Les stimulants viennent ensuite, si les premiers ne suffisent pas. Les suppositoires conviennent quand les selles restent bloquées au bout de l'intestin. Pendant la grossesse, le macrogol et les fibres peuvent être utilisés. Votre pharmacien peut vous aider à choisir.
+
+### Comment bien les utiliser ?
+
+Prenez les fibres avec un grand verre d'eau. Leur effet se juge après plusieurs semaines. Le macrogol agit en un à deux jours en général [à compléter : source]. Un laxatif stimulant ne doit pas dépasser une semaine sans avis. Certains laxatifs se prennent à distance des autres médicaments : lisez la notice.
+
+### Quels effets surveiller ?
+
+Les fibres et certains osmotiques donnent parfois des gaz et un ventre gonflé, surtout au début. Les stimulants peuvent donner des diarrhées et des douleurs au ventre. Pris longtemps, ils peuvent créer une dépendance : il en faut de plus en plus, et la constipation revient fort à l'arrêt. Ils peuvent aussi faire baisser le potassium dans le sang. Cela est rare.
+
+### Ce qu'il vaut mieux éviter
+
+- Prendre un laxatif stimulant tous les jours sans en parler à un médecin.
+- L'huile de paraffine si vous avalez de travers : elle peut passer dans les poumons.
+- Utiliser un laxatif pour perdre du poids.
+
+Certains médicaments constipent : antidouleurs dérivés de la morphine, fer, calcium, certains antidépresseurs ou antiallergiques. Parlez-en à votre médecin ou à votre pharmacien.
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Signes d'alerte
+
+Coloscopie seulement en cas de signe d'alarme ou de suspicion de cause organique recto-colique à l'examen ; elle n'est pas recommandée en première intention (SNFCP 2017). Signes d'alarme cités : rectorragies, perte de poids, anémie, aggravation de la constipation. Signes d'occlusion : arrêt des matières et des gaz, vomissements, douleurs abdominales aiguës violentes, fièvre, tachycardie. Le bilan biologique (NFS, créatininémie, calcémie, glycémie, TSH, CRP) est réservé aux non-répondeurs, aux suspicions de pathologie organique et aux signes d'alarme.
+
+### Stratégie thérapeutique (SNFCP 2017)
+
+- **Règles hygiéno-diététiques** d'abord, avec **arrêt des médicaments constipants** si possible.
+- **Première intention** : laxatifs osmotiques (niveau de preuve II, grade B) et fibres (grade B). Le PEG est supérieur au lactulose sur la fréquence et la consistance des selles et sur les douleurs abdominales (grade A). Nombre de sujets à traiter de 3 pour un succès (≥ 3 selles par semaine) avec les osmotiques (grade A).
+- **Constipation terminale** : laxatifs locaux (suppositoires, lavements) en première intention, avec réévaluation rapide.
+- **Deuxième intention** : laxatifs stimulants (grade B), ou en recours après plusieurs jours sans selles (grade C) ; laxatifs lubrifiants (grade C). L'association de classes est possible malgré l'absence de données.
+- **Grossesse** : PEG et fibres possibles en première intention.
+
+### Mécanismes d'action
+
+Fibres : polysaccharides qui retiennent l'eau dans la lumière intestinale. Osmotiques (PEG, sels de magnésium, sucres non absorbables) : appel d'eau par effet osmotique ; le PEG n'est pas fermenté par la flore, contrairement au lactulose. Stimulants : action motrice et sécrétoire. Lubrifiants : action mécanique.
+
+### Précautions et effets indésirables
+
+- **Fibres** : contre-indiquées en cas de sténose, de fécalome ou de colite inflammatoire ; ballonnements les premières semaines.
+- **Lubrifiants** : contre-indiqués en cas de troubles de la déglutition ou de la motricité œsogastrique, notamment chez le sujet âgé (pneumopathie lipoïde).
+- **Stimulants** : diarrhée et douleurs à court terme. La SNFCP juge les complications à long terme longtemps surestimées (niveau IV). Le RCP d'un laxatif anthracénique (séné) maintient pourtant une durée maximale d'une semaine. Il mentionne le risque de dépendance et, très rarement, une « maladie des laxatifs » avec hypokaliémie.
+- **Interactions (RCP séné)** : association déconseillée avec les torsadogènes ; précaution avec les digitaliques et les hypokaliémiants (diurétiques, corticoïdes) ; préférer alors un laxatif non stimulant.
+
+### Médicaments constipants (SNFCP 2017)
+
+Opioïdes et autres antalgiques, anticholinergiques, antidépresseurs, antipsychotiques, antiparkinsoniens, anticonvulsivants, antihistaminiques, antispasmodiques, inhibiteurs calciques, diurétiques, résines, AINS, sels d'aluminium, de calcium ou de fer.
+
+### Ce qu'il faut éviter
+
+- Un laxatif stimulant prolongé sans réévaluation.
+- La paraffine chez le patient âgé ayant des troubles de déglutition.
+- Un laxatif anthracénique chez l'enfant de moins de 12 ans (contre-indication du RCP cité).
+
+### Outils et liens
+
+- Recommandations SNFCP 2017, douze situations cliniques détaillées (voir sources).
+
+:::
+
+:::

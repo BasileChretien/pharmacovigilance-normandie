@@ -1,0 +1,18 @@
+---
+title: "Activité des centres"
+description: "Les chiffres annuels d'activité des CRPV de Caen et de Rouen."
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+---
+
+Chaque année, cette page présentera pour chaque centre :
+
+- le nombre de déclarations d'effets indésirables analysées ;
+- le nombre de questions reçues des professionnels et des patients ;
+- les enquêtes et expertises menées pour l'ANSM ;
+- les actions de formation et d'information.
+
+[Chiffres à compléter à partir des rapports d'activité.] Les chiffres régionaux détaillés sont sur la page [Les chiffres de la région](../normandie/chiffres.qmd).

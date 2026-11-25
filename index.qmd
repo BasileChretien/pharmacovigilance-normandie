@@ -1,0 +1,65 @@
+---
+title: "Pharmacovigilance Normandie"
+subtitle: "L'information sur les médicaments des centres régionaux de pharmacovigilance de Caen et de Rouen"
+description: "Les centres régionaux de pharmacovigilance de Caen et de Rouen informent les professionnels de santé et les patients de Normandie sur les médicaments."
+toc: false
+listing:
+  id: dernieres-actualites
+  contents: "actualites/posts/*.qmd"
+  sort: "date desc"
+  type: default
+  max-items: 3
+  fields: [date, title, description]
+---
+
+```{=html}
+<p class="d-flex flex-wrap gap-2">
+  <a class="btn btn-primary btn-lg" href="declarer.html">Déclarer un effet indésirable</a>
+  <a class="btn btn-outline-primary btn-lg" href="poser-une-question.html">Poser une question</a>
+</p>
+```
+
+::: {.quand-consulter titre="En cas d'urgence"}
+- Urgence vitale : appelez le 15 (SAMU) ou le 112.
+- Intoxication : centre antipoison d'Angers, 02 41 48 21 21, à toute heure.
+- [Qui contacter dans les autres situations](normandie/qui-contacter.qmd)
+:::
+
+::: {.cartes}
+
+::: {.carte}
+### [Médicaments](medicaments/index.qmd)
+Des fiches par classe et par maladie courante, pour les patients et les professionnels.
+:::
+
+::: {.carte}
+### [Bon usage](bon-usage/index.qmd)
+Quand prendre ses médicaments, écraser un comprimé, les interactions à connaître.
+:::
+
+::: {.carte}
+### [Comprendre](comprendre/index.qmd)
+Lire une notice, comprendre « fréquent » et « rare », pourquoi déclarer.
+:::
+
+::: {.carte}
+### [Vigiking](vigiking/index.qmd)
+Le bulletin des CRPV de Caen et de Rouen.
+:::
+
+::: {.carte}
+### [Actualités](actualites/index.qmd)
+Le digest de la semaine et les alertes officielles.
+:::
+
+::: {.carte}
+### [En Normandie](normandie/index.qmd)
+Qui contacter, les chiffres de la région, les sujets régionaux.
+:::
+
+:::
+
+## Dernières actualités
+
+::: {#dernieres-actualites}
+:::

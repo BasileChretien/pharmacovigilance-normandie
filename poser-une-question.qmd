@@ -1,0 +1,46 @@
+---
+title: "Poser une question au CRPV"
+description: "Comment joindre les centres de pharmacovigilance de Caen et de Rouen, et ce qu'il faut préparer avant d'appeler."
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+---
+
+Les centres régionaux de pharmacovigilance (CRPV) répondent aux questions sur les médicaments : effets indésirables, interactions, prise d'un médicament dans une situation particulière. Le site ne donne pas de conseil individuel en ligne.
+
+## Vous êtes un professionnel de santé
+
+Appelez ou écrivez au centre de votre département. Les coordonnées sont sur la page [Accès et contacts](crpv/acces.qmd).
+
+| Départements | Centre |
+|---|---|
+| Calvados (14), Manche (50), Orne (61) | CRPV de Caen |
+| Eure (27), Seine-Maritime (76) | CRPV de Rouen |
+
+**À préparer avant d'appeler**, pour une réponse plus rapide :
+
+- les médicaments en cause, leur dose et les dates de début et d'arrêt ;
+- la date de l'effet, sa description et son évolution ;
+- l'âge, le sexe, le poids du patient ;
+- sa fonction rénale et ses autres maladies ;
+- les autres médicaments, y compris l'automédication.
+
+## Vous êtes un patient ou un proche
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Pour une question sur votre traitement, parlez-en d'abord à votre pharmacien ou à votre médecin.
+- Pour signaler un effet indésirable, utilisez le portail de déclaration.
+- En cas d'urgence, appelez le 15 (SAMU) ou le 112.
+:::
+
+Votre pharmacien et votre médecin connaissent votre traitement. Ce sont eux qui peuvent vous répondre le mieux. Si besoin, ils contactent le centre régional de pharmacovigilance (CRPV).
+
+Vous pouvez aussi [déclarer un effet indésirable](declarer.qmd) vous-même.
+
+:::
+
+Pour d'autres situations (intoxication, addiction, transfusion), voir [Qui contacter](normandie/qui-contacter.qmd).

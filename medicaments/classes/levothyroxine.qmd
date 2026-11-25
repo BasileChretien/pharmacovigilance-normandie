@@ -1,0 +1,151 @@
+---
+title: "La lévothyroxine"
+description: "Lévothyroxine : un médicament à dose précise, à prendre le matin à jeun, à surveiller lors d'un changement de spécialité et avec le fer, le calcium et d'autres médicaments."
+public: [patients, professionnels]
+classe: "hormones thyroïdiennes"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "Base de données publique des médicaments, RCP et notice de LEVOTHYROX 25 microgrammes, comprimé sécable (CIS 68588503)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/68588503/extrait"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, « Point d'actualité sur le Levothyrox et les autres médicaments à base de lévothyroxine » (11/10/2017, mis à jour le 01/04/2021)"
+    url: "https://ansm.sante.fr/actualites/point-dactualite-sur-le-levothyrox-et-les-autres-medicaments-a-base-de-levothyroxine"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, dossier « Les médicaments à base de lévothyroxine disponibles en France » (mis à jour le 01/10/2025)"
+    url: "https://ansm.sante.fr/dossiers-thematiques/les-medicaments-a-base-de-levothyroxine-disponibles-en-france-1/les-medicaments-a-base-de-levothyroxine-disponibles-en-france"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
+    url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Prenez votre comprimé chaque matin à jeun, une demi-heure avant le petit-déjeuner.
+- Une petite différence de dose peut compter : faites vos prises de sang de contrôle.
+- Prenez le fer et le calcium au moins 2 heures après la lévothyroxine.
+:::
+
+### À quoi sert ce traitement ?
+
+La lévothyroxine remplace l'hormone que votre thyroïde (glande du cou) ne produit plus assez. On parle d'hypothyroïdie. Elle s'appelle par exemple Levothyrox ou Euthyrox. D'autres marques existent, en comprimés ou en gouttes.
+
+L'hypothyroïdie dure le plus souvent toute la vie. Le traitement se poursuit donc sans limite de durée. La lévothyroxine ne fait pas maigrir : ne la prenez jamais pour perdre du poids.
+
+### Comment le prendre ?
+
+Prenez le comprimé en une fois, le matin à jeun. Avalez-le une demi-heure avant le petit-déjeuner, avec un demi-verre d'eau. Gardez la même habitude chaque jour.
+
+<!-- FIGURE À FAIRE : frise d'une matinée. Réveil → comprimé de lévothyroxine avec un demi-verre d'eau → attente de 30 minutes → petit-déjeuner → fer ou calcium au moins 2 heures après le comprimé. Pictogrammes simples, lisibles en niveaux de gris. -->
+
+Si vous avez oublié plusieurs doses, contactez votre médecin.
+
+### Pourquoi la dose doit-elle être si précise ?
+
+La lévothyroxine a une marge thérapeutique étroite (la bonne dose et une dose trop forte ou trop faible sont proches). Votre médecin ajuste la dose grâce à une prise de sang. Elle mesure l'hormone thyréostimulante (TSH), qui reflète l'action du traitement.
+
+Cette prise de sang a lieu environ 6 à 8 semaines après un changement de dose. Quand tout est stable, une ou deux prises de sang par an suffisent en général.
+
+### Et si on change ma marque de médicament ?
+
+Passer d'une marque à une autre peut modifier votre équilibre. Prévenez votre médecin. Il vous prescrit alors une prise de sang 6 à 8 semaines après le changement. Votre dose peut devoir changer.
+
+### Quels effets indésirables ?
+
+À la bonne dose, ce traitement remplace simplement votre hormone. Une dose trop forte donne des signes d'excès : cœur rapide, tremblements, nervosité, insomnie, sueurs, perte de poids rapide, diarrhée.
+
+Les effets du traitement, bons ou mauvais, peuvent n'apparaître qu'après 15 jours à un mois.
+
+::: {.quand-consulter}
+- Cœur qui bat vite, tremblements, sueurs, insomnie, perte de poids rapide : consultez votre médecin.
+- Gonflement du visage ou de la gorge, difficulté à respirer : appelez le 15.
+- Douleur dans la poitrine : appelez le 15.
+:::
+
+### Avec quels médicaments faut-il être prudent ?
+
+Certains produits diminuent le passage de la lévothyroxine dans le sang. Prenez-les au moins 2 heures après elle :
+
+- le fer et le calcium, y compris dans les compléments alimentaires ;
+- les pansements gastriques et certains médicaments contre l'acidité de l'estomac.
+
+Les médicaments qui diminuent l'acidité de l'estomac, comme l'oméprazole, peuvent aussi réduire son effet. D'autres médicaments en accélèrent l'élimination : certains traitements de l'épilepsie, la rifampicine (antibiotique) ou le millepertuis (plante). Le soja peut aussi réduire son passage dans le sang.
+
+La biotine (vitamine B8), même en complément, peut fausser votre prise de sang. Dites au laboratoire que vous en prenez.
+
+### Grossesse, allaitement, conduite
+
+Ne stoppez pas la lévothyroxine pendant la grossesse : votre équilibre est utile au bébé. Prévenez votre médecin dès que vous êtes enceinte. Il vous surveille de plus près, surtout pendant la première moitié de la grossesse.
+
+Vous pouvez allaiter avec ce traitement.
+
+### Puis-je arrêter mon traitement ?
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+### Signaler un effet indésirable
+
+Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr).
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Points clés de sécurité
+
+- Marge thérapeutique étroite (ANSM) : une surveillance clinique et biologique est indiquée lors du passage d'une spécialité à une autre.
+- Contre-indications : hyperthyroïdie non contrôlée, insuffisance surrénalienne non traitée. Ne pas instaurer en cas de syndrome coronarien aigu ou de myocardite aiguë ; généralement déconseillée en cas de cardiopathie décompensée, coronaropathie ou trouble du rythme non contrôlé.
+- Corriger une insuffisance corticosurrénalienne avant d'instaurer la lévothyroxine (risque d'insuffisance surrénale aiguë).
+- Pas d'indication pour perdre du poids : effets graves possibles à forte dose, notamment avec des sympathomimétiques.
+
+### Surveillance
+
+- TSH environ 6 à 8 semaines après toute modification de dose ; à l'équilibre, 1 à 2 dosages par an. T4 libre en cas de traitement frénateur (cancer thyroïdien), d'hypothyroïdie centrale (la TSH n'est pas interprétable), de suspicion de non-observance, d'amiodarone ou d'hypothyroïdie instable.
+- **Changement de spécialité** : surveillance clinique et biologique pendant la transition, TSH entre 6 et 8 semaines après le changement (sauf grossesse : surveillance adaptée au terme et à la pathologie). L'ANSM met à disposition une fiche de suivi du traitement à remplir par le patient et le médecin.
+- Grossesse : poursuivre le traitement, renforcer la surveillance dès le diagnostic, surtout pendant la première moitié ; bilan thyroïdien de la mère et du nouveau-né.
+- Biotine : interférence avec les immunodosages biotine-streptavidine (résultats faussement bas ou élevés) ; informer le laboratoire.
+- Signes de surdosage (tachycardie, tremblements, troubles du rythme, insomnie, sueurs, amaigrissement, diarrhée) : dosage hormonal, diminution ou interruption quelques jours puis reprise à dose plus faible.
+
+### Interactions majeures
+
+Niveaux du Thésaurus de l'ANSM (version du 15 septembre 2023), entrée « hormones thyroïdiennes » :
+
+- Fer, calcium, résines chélatrices, sucralfate : **précaution d'emploi** ; prendre ces produits à distance de la lévothyroxine (plus de 2 heures si possible). Topiques gastro-intestinaux, antiacides et adsorbants : entrée générique du Thésaurus (association déconseillée ou précaution d'emploi selon la substance associée), prise à plus de 2 heures de tout médicament oral ; le RCP classe cette association en précaution d'emploi.
+- Inhibiteurs de la pompe à protons : **précaution d'emploi** (baisse probable de l'absorption) ; contrôle clinique et biologique, augmentation éventuelle de la dose, vigilance aussi à l'arrêt de l'inhibiteur.
+- Inducteurs enzymatiques puissants, rifampicine, rifabutine, éfavirenz, inhibiteurs de protéases boostés par ritonavir : **précaution d'emploi** (risque d'hypothyroïdie clinique).
+- Millepertuis : **association déconseillée**.
+- Estrogènes non contraceptifs : **précaution d'emploi** (femme ménopausée).
+- Chloroquine, proguanil : **précaution d'emploi**.
+- Selpercatinib : **précaution d'emploi** (baisse de la conversion de T4 en T3, adjonction éventuelle de liothyronine).
+- Orlistat : **à prendre en compte**.
+
+Le RCP mentionne aussi l'imatinib et le sunitinib (à prendre en compte) et le soja (réévaluation de la dose au début ou à l'arrêt d'une supplémentation).
+
+### Adaptation des doses
+
+Adulte : début à 25 ou 50 µg/j, paliers de 12 à 50 µg toutes les 2 à 4 semaines ; dose moyenne de substitution 100 à 150 µg/j (1,7 µg/kg/j ; 2,1 à 2,5 µg/kg/j en traitement frénateur). Sujet âgé, insuffisance coronarienne ou cardiaque, troubles du rythme : doses initiales plus faibles et paliers plus progressifs, avec une TSH visée dans les valeurs normales hautes en cas de cardiopathie. Insuffisance rénale ou hépatique : [à compléter : source].
+
+### Pièges fréquents
+
+[À compléter par le CRPV à partir de cas anonymisés.]
+
+### Mesures de réduction du risque
+
+- Rappeler la prise le matin à jeun, 30 minutes avant le petit-déjeuner, avec un peu d'eau.
+- Tracer toute substitution d'une spécialité par une autre et programmer la TSH de contrôle.
+- Interroger sur l'automédication : fer, calcium, antiacides, millepertuis, biotine, soja.
+- Formes buvables (gouttes) pour les jeunes enfants et les troubles de la déglutition : vérifier la disponibilité sur la liste ANSM à jour.
+
+:::
+
+:::

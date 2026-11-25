@@ -1,0 +1,172 @@
+---
+title: "Fièvre et douleur chez l'enfant : quels médicaments ?"
+description: "Paracétamol dosé selon le poids, place de l'ibuprofène et risques des anti-inflammatoires pendant une infection, interdiction de la codéine avant 12 ans : bien soulager un enfant."
+public: [patients, professionnels]
+recommandation_de_reference: "HAS, Fiche mémo « Prise en charge de la fièvre chez l'enfant », octobre 2016"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "HAS. Fiche mémo : Prise en charge de la fièvre chez l'enfant, octobre 2016"
+    url: "https://has-sante.fr/upload/docs/application/pdf/2016-10/fiche_memo_-_prise_en_charge_de_la_fievre_chez_lenfant.pdf"
+    consulte_le: 2026-11-25
+  - titre: "ANSM. Infections hivernales : il est conseillé d'éviter l'ibuprofène ou le kétoprofène en première intention, 17/12/2025, mis à jour le 18/12/2025"
+    url: "https://ansm.sante.fr/actualites/infections-hivernales-il-est-conseille-deviter-libuprofene-ou-le-ketoprofene-en-premiere-intention"
+    consulte_le: 2026-11-25
+  - titre: "HAS. Prise en charge médicamenteuse de la douleur chez l'enfant : alternatives à la codéine, 2016"
+    url: "https://has-sante.fr/jcms/c_2010340/fr/prise-en-charge-medicamenteuse-de-la-douleur-chez-l-enfant-alternatives-a-la-codeine"
+    consulte_le: 2026-11-25
+  - titre: "HAS. Choix et durées d'antibiothérapies : Angine aiguë de l'enfant (traitement symptomatique), mis à jour le 13/05/2025"
+    url: "https://has-sante.fr/jcms/p_3529229/fr/choix-et-durees-d-antibiotherapies-angine-aigue-de-l-enfant"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments. DOLIPRANE 2,4 POUR CENT, suspension buvable (paracétamol), RCP mis à jour le 05/10/2026"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/66477582/extrait"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments. DAFALGAN CODEINE, comprimé pelliculé, RCP mis à jour le 31/07/2026"
+    url: "http://base-donnees-publique.medicaments.gouv.fr/medicament/66003374/extrait"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.quand-consulter}
+- Votre bébé a moins de 3 mois et il a de la fièvre : consultez un médecin sans attendre.
+- Votre enfant respire mal ou très vite, ou ne réagit plus : appelez le 15 (SAMU, service d'aide médicale urgente).
+- Il est très pâle ou bleuté, gémit, ou a la nuque raide : appelez le 15.
+- Des taches rouges ou violettes apparaissent sur la peau et ne s'effacent pas quand on appuie : appelez le 15.
+- Votre enfant reste mal malgré 24 heures de traitement bien donné, ou son état s'aggrave : consultez un médecin.
+:::
+
+::: {.a-retenir}
+- Donnez d'abord du paracétamol, à une dose calculée selon le poids de l'enfant.
+- Pendant une infection (angine, otite, varicelle), évitez l'ibuprofène et les autres anti-inflammatoires sans avis médical.
+- Jamais de codéine avant 12 ans. Pas d'aspirine contre la fièvre d'un enfant.
+:::
+
+### Faut-il toujours faire baisser la fièvre ?
+
+Non. La fièvre est une réponse normale du corps à une infection. Elle n'est en général pas dangereuse. Le but du médicament est que votre enfant se sente mieux. Il n'est pas d'obtenir une température normale.
+
+Trois gestes simples aident :
+
+- proposez souvent à boire ;
+- ne couvrez pas trop votre enfant ;
+- ne chauffez pas davantage la pièce.
+
+Les bains frais et les linges mouillés soulagent peu et peuvent gêner l'enfant.
+
+### Quels médicaments peuvent aider ?
+
+Le paracétamol est le premier choix contre la fièvre et la douleur. Si l'enfant ne peut pas en prendre, le médecin peut proposer un anti-inflammatoire. L'ibuprofène s'utilise à partir de 3 mois.
+
+### Comment agissent-ils ?
+
+Le paracétamol fait baisser la fièvre et calme la douleur. L'ibuprofène fait de même. Aux doses utilisées chez l'enfant, son effet contre l'inflammation reste faible.
+
+### Comment choisir ?
+
+Donnez un seul médicament pendant les 24 premières heures. N'alternez pas paracétamol et ibuprofène de vous-même. Seul un médecin peut décider de changer de médicament ou d'en associer deux.
+
+### Comment bien donner le paracétamol ?
+
+La dose dépend du poids de l'enfant, pas de son âge. Pesez-le si vous n'êtes pas sûr de son poids.
+
+- La dose habituelle est d'environ 15 mg par kilo, toutes les 6 heures.
+- Par exemple, un enfant de 12 kilos reçoit environ 180 mg par prise.
+- Ne donnez pas plus de 4 prises par jour. Laissez au moins 4 heures entre deux prises.
+- Pour les sirops, la pipette est graduée en kilos. Remplissez-la jusqu'au poids de votre enfant.
+
+Utilisez la pipette fournie dans la boîte du médicament. Ne la mélangez pas avec celle d'un autre flacon.
+
+<!-- FIGURE À FAIRE : dessin d'une pipette doseuse graduée en kilos, avec le piston tiré jusqu'à la graduation « 12 kg ». À côté, une frise de 24 heures montrant 4 prises espacées de 6 heures (par exemple 8 h, 14 h, 20 h, 2 h). Texte alternatif : « Remplir la pipette jusqu'au poids de l'enfant ; 4 prises par jour au plus, espacées de 6 heures. » -->
+
+Vérifiez qu'aucun autre médicament ne contient déjà du paracétamol. Lisez la composition sur la boîte ou demandez au pharmacien.
+
+### Et l'ibuprofène ?
+
+L'ibuprofène se donne aussi selon le poids, avec la pipette graduée de son flacon. Respectez en général 6 heures entre deux prises. Arrêtez-le dès que la douleur a disparu.
+
+### Quels effets surveiller ?
+
+Un surdosage en paracétamol peut abîmer le foie. Respectez les doses et le délai entre les prises.
+
+Les anti-inflammatoires peuvent aggraver une infection due à une bactérie. Ils peuvent aussi masquer ses signes et retarder le bon traitement. Entre 2019 et mi-2023, l'Agence nationale de sécurité du médicament (ANSM) a recensé plus de 200 complications graves en France. Elles concernaient des enfants et des adultes. Ces médicaments peuvent aussi irriter l'estomac et fatiguer les reins, surtout si l'enfant boit peu.
+
+### Pourquoi pas de codéine ni d'aspirine ?
+
+La codéine se transforme en morphine dans le corps. Chez certains enfants, cette transformation est trop forte et peut bloquer la respiration. Des décès sont survenus. La codéine est donc interdite avant 12 ans. Elle l'est aussi avant 18 ans après une opération des amygdales ou des végétations.
+
+L'aspirine n'est pas recommandée contre la fièvre de l'enfant. Elle expose à une maladie très rare mais grave du foie et du cerveau, le syndrome de Reye.
+
+### Ce qu'il vaut mieux éviter
+
+- Les anti-inflammatoires en cas de varicelle, d'angine, d'otite ou de grippe, sauf avis médical.
+- Deux anti-inflammatoires en même temps.
+- Les médicaments donnés à un autre enfant ou à un adulte.
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Signes d'alerte
+
+Signes de gravité selon la HAS (2016), conduisant en général à une orientation vers les urgences : âge de moins de 3 mois, difficulté respiratoire ou polypnée, conscience altérée, absence de réponse aux stimulations, fontanelle bombée, pâleur ou cyanose, cris faibles ou geignements, raideur de nuque. Un purpura doit être recherché systématiquement. Il n'existe pas de traitement préventif des convulsions fébriles.
+
+### Stratégie thérapeutique
+
+- Objectif : le confort de l'enfant, pas la normalisation de la température (HAS 2016).
+- Monothérapie pendant les 24 premières heures : paracétamol, ou AINS en cas de contre-indication au paracétamol (ibuprofène après 3 mois, kétoprofène après 6 mois).
+- Substitution ou association : seulement après réévaluation médicale pour inconfort persistant malgré un traitement bien conduit pendant au moins 24 heures (délai plus court avant 3 mois).
+- Douleur : l'ibuprofène est l'AINS de première intention en pédiatrie. Si le paracétamol ou l'ibuprofène seul est insuffisant, la HAS (2016) préfère l'association à l'alternance.
+
+Posologies (HAS 2016) :
+
+| Molécule | Posologie | Intervalle |
+|---|---|---|
+| Paracétamol | 60 mg/kg/j en 4 ou 6 prises, soit environ 15 mg/kg toutes les 6 h | 4 h au minimum |
+| Ibuprofène | 20 à 30 mg/kg/j en 3 ou 4 prises | 6 h en général |
+| Kétoprofène | 0,5 mg/kg/prise, sans dépasser 2 mg/kg/j, en 3 ou 4 prises | 6 h en général |
+
+Plafond du paracétamol (RCP Doliprane 2,4 %) : 80 mg/kg/j chez l'enfant de moins de 40 kg ; 3 g/j de 41 à 50 kg ; 4 g/j au-delà de 50 kg. Dans l'angine de l'enfant, la HAS limite l'ibuprofène à 24 heures entre 3 et 6 mois et à 72 heures au-delà, et ne le justifie pas pour la seule fièvre.
+
+### Mécanismes d'action
+
+- Paracétamol : antalgique et antipyrétique, sans effet anti-inflammatoire notable aux doses usuelles.
+- AINS : inhibition des cyclo-oxygénases. L'effet anti-inflammatoire reste minime aux doses antipyrétiques et antalgiques (HAS 2016).
+
+### Précautions et effets indésirables
+
+- Paracétamol : hypersensibilité, réactions cutanées graves et cytopénies très rares ; cytolyse hépatique en cas de surdosage. Vérifier l'absence d'autre spécialité contenant du paracétamol.
+- AINS (HAS 2016) : complications infectieuses bactériennes graves des tissus mous (fasciite nécrosante) en cas de varicelle ; prudence en cas d'infection bactérienne ; hémorragies digestives exceptionnelles ; insuffisance rénale aiguë exceptionnelle, à risque accru en cas de déshydratation ; allongement du temps de saignement ; bronchospasme, hyperkaliémie.
+- Signal de pharmacovigilance (ANSM, 2025) : entre le 1^er^ janvier 2019 et le 30 juin 2023, 162 cas graves avec l'ibuprofène et 54 avec le kétoprofène (sepsis, choc septique, méningites, infections cutanées graves, souvent à streptocoque ou pneumocoque), dont 12 décès, y compris chez des enfants et des adultes jeunes en bonne santé. L'ANSM recommande le paracétamol en première intention en contexte infectieux et d'éviter les AINS en cas de varicelle, de grippe ou d'infection ORL sans diagnostic biologique documenté.
+
+Codéine (décision ANSM d'avril 2013 rappelée par la HAS ; RCP Dafalgan Codéine) : contre-indiquée avant 12 ans, chez tous les patients de moins de 18 ans après amygdalectomie et/ou adénoïdectomie, chez les métaboliseurs CYP2D6 ultra-rapides connus et pendant l'allaitement. Mécanisme du risque : conversion variable en morphine selon le polymorphisme du CYP2D6, avec dépression respiratoire chez les métaboliseurs ultra-rapides. Entre 12 et 18 ans, elle n'est utilisée qu'après échec du paracétamol et/ou d'un AINS.
+
+Alternatives à la codéine (HAS 2016) : tramadol envisageable après 3 ans pour une douleur intense (même voie CYP2D6, effets indésirables graves possibles) ; morphine orale de référence pour une douleur intense ou après échec des paliers inférieurs, avec surveillance d'une heure après la première prise.
+
+### Ce qu'il faut éviter
+
+- Aspirine pour la fièvre de l'enfant (syndrome de Reye).
+- AINS en cas de varicelle ou de déshydratation ; deux AINS associés.
+- Alternance systématique d'antipyrétiques.
+- Codéine avant 12 ans ou après amygdalectomie avant 18 ans.
+- Bains et enveloppements frais.
+
+### Outils et liens
+
+- [Fiche mémo HAS 2016](https://has-sante.fr/upload/docs/application/pdf/2016-10/fiche_memo_-_prise_en_charge_de_la_fievre_chez_lenfant.pdf).
+- [ANSM, AINS et infections hivernales (2025)](https://ansm.sante.fr/actualites/infections-hivernales-il-est-conseille-deviter-libuprofene-ou-le-ketoprofene-en-premiere-intention).
+- Effets indésirables : déclaration sur [signalement.social-sante.gouv.fr](https://www.signalement.social-sante.gouv.fr) ou auprès du CRPV de Caen ou de Rouen.
+
+:::
+
+:::

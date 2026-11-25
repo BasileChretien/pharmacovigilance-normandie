@@ -1,0 +1,39 @@
+name: checks
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  push:
+    branches: [main]
+
+jobs:
+  checks:
+    if: github.event_name == 'push' || github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+      - name: Tests of the checks
+        run: uv run pytest -q
+      - name: Writing and front-matter rules
+        run: uv run python tools/checks/check_content.py --quiet
+      - name: Colour contrast
+        run: uv run python tools/checks/check_contrast.py
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+      - name: Render the site
+        run: quarto render
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: HTML validity
+        run: |
+          npm install
+          npm run check:html
+      - name: Accessibility (axe-core)
+        run: |
+          npm install --no-save playwright @axe-core/playwright
+          npx playwright install --with-deps chromium
+          npm run check:a11y

@@ -1,0 +1,130 @@
+---
+title: "Bénéfice et risque"
+description: "Comment le rapport bénéfice/risque d'un médicament est évalué avant son autorisation, puis réévalué tout au long de sa vie grâce à la pharmacovigilance."
+public: [patients, professionnels]
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "ANSM, Autorisation de mise sur le marché pour les médicaments"
+    url: "https://ansm.sante.fr/page/autorisation-de-mise-sur-le-marche-pour-les-medicaments"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Surveiller les médicaments"
+    url: "https://ansm.sante.fr/qui-sommes-nous/nos-missions/assurer-la-securite-des-produits-de-sante/p/surveiller-les-medicaments"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Organiser les vigilances"
+    url: "https://ansm.sante.fr/qui-sommes-nous/nos-missions/assurer-la-securite-des-produits-de-sante/p/organiser-les-vigilances"
+    consulte_le: 2026-11-25
+  - titre: "EMA, Pharmacovigilance: overview"
+    url: "https://www.ema.europa.eu/en/human-regulatory-overview/pharmacovigilance-overview"
+    consulte_le: 2026-11-25
+  - titre: "EMA, Pharmacovigilance Risk Assessment Committee (PRAC)"
+    url: "https://www.ema.europa.eu/en/committees/pharmacovigilance-risk-assessment-committee-prac"
+    consulte_le: 2026-11-25
+  - titre: "EMA, Conditional marketing authorisation"
+    url: "https://www.ema.europa.eu/en/human-regulatory-overview/marketing-authorisation/conditional-marketing-authorisation"
+    consulte_le: 2026-11-25
+  - titre: "EMA, Fluoroquinolone and quinolone antibiotics: PRAC recommends new restrictions on use following review of disabling and potentially long-lasting side effects (5 octobre 2018)"
+    url: "https://www.ema.europa.eu/en/news/fluoroquinolone-and-quinolone-antibiotics-prac-recommends-new-restrictions-use-following-review-disabling-and-potentially-long-lasting-side-effects"
+    consulte_le: 2026-11-25
+  - titre: "EMA, Fluoroquinolone antibiotics: reminder of measures to reduce the risk of long-lasting, disabling and potentially irreversible side effects (12 mai 2023)"
+    url: "https://www.ema.europa.eu/en/news/fluoroquinolone-antibiotics-reminder-measures-reduce-risk-long-lasting-disabling-and-potentially-irreversible-side-effects"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Benfluorex (Mediator) : bilan du suivi de pharmacovigilance"
+    url: "https://ansm.sante.fr/actualites/benfluorex-mediator-bilan-du-suivi-de-pharmacovigilance"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Un médicament est autorisé quand ses bénéfices dépassent ses risques, pour une maladie donnée.
+- Cet équilibre est revu pendant toute la vie du médicament.
+- Vos déclarations d'effets indésirables servent à le revoir.
+:::
+
+### Que veulent dire « bénéfice » et « risque » ?
+
+Le bénéfice, c'est ce que le médicament vous apporte. Il peut guérir, soulager ou éviter une maladie. Le risque, ce sont les effets indésirables possibles. Aucun médicament n'est sans risque. La question est donc : le bénéfice vaut-il le risque ?
+
+<!-- FIGURE À FAIRE : une balance à deux plateaux. Plateau « bénéfices » : guérir, soulager, prévenir. Plateau « risques » : effets indésirables, interactions. Sous la balance, une frise « avant l'autorisation → après la mise sur le marché », avec une loupe sur la seconde partie pour montrer que la pesée continue. -->
+
+### Pourquoi accepte-t-on plus de risques pour certains médicaments ?
+
+Tout dépend de la maladie. Voici deux exemples simples, choisis pour expliquer l'idée.
+
+Un traitement contre un cancer grave peut fatiguer beaucoup ou faire tomber les cheveux. On accepte ces effets, car le traitement peut sauver une vie. Un médicament contre un rhume, lui, soulage une gêne qui passe seule. Pour lui, même un effet grave et rare n'est pas acceptable.
+
+### Qui décide qu'un médicament peut être vendu ?
+
+En France, un médicament a besoin d'une autorisation de mise sur le marché. Elle est donnée par l'Agence nationale de sécurité du médicament et des produits de santé (ANSM). Elle peut aussi venir de la Commission européenne, après l'avis de l'Agence européenne des médicaments. Les experts vérifient trois choses : la qualité, l'efficacité et la sécurité.
+
+### Pourquoi revoir cet équilibre après l'autorisation ?
+
+Avant l'autorisation, le médicament est testé chez un nombre limité de personnes. Ces personnes sont choisies, et suivies pendant un temps limité. Ensuite, des milliers ou des millions de personnes le prennent, parfois pendant des années. On découvre alors parfois des effets rares. C'est le travail de la pharmacovigilance (la surveillance des effets indésirables des médicaments).
+
+### Que peut-il se passer ensuite ?
+
+Selon ce que l'on apprend, plusieurs mesures sont possibles :
+
+- ajouter un effet ou une précaution dans la notice ;
+- réserver le médicament à certaines maladies ou à certaines personnes ;
+- retirer le médicament du marché.
+
+Deux exemples connus :
+
+- **Les fluoroquinolones**, une famille d'antibiotiques. Elles peuvent donner, très rarement, des effets graves et durables sur les tendons, les muscles et les nerfs. En 2018, l'évaluation européenne a conclu qu'il ne fallait plus les utiliser pour des infections peu graves, comme un mal de gorge.
+- **Le benfluorex (Mediator)**. Il a été retiré du marché français le 30 novembre 2009. Des atteintes des valves du cœur avaient été observées chez des personnes traitées.
+
+### Et pour moi ?
+
+Votre médecin fait aussi ce calcul pour vous. Il tient compte de votre maladie, de votre âge et de vos autres traitements. Si un effet vous inquiète, parlez-en avec lui ou avec votre pharmacien. Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Évaluation initiale
+
+L'AMM repose sur l'examen du rapport bénéfice/risque : démonstration de l'efficacité dans les indications revendiquées, effets indésirables prévisibles, qualité chimique, biologique ou microbiologique (ANSM). Quatre procédures coexistent : centralisée, décentralisée, reconnaissance mutuelle et nationale. En procédure centralisée, la décision est prise par la Commission européenne après avis de l'EMA.
+
+L'AMM est délivrée pour 5 ans. Elle est ensuite renouvelée sans limitation de durée, sauf si l'ANSM ou l'EMA impose, pour des raisons de pharmacovigilance, un renouvellement supplémentaire de 5 ans.
+
+L'AMM conditionnelle (médicaments répondant à un besoin non couvert) suppose un rapport bénéfice/risque positif et un bénéfice de la mise à disposition immédiate supérieur au risque lié à des données moins complètes. Elle est valable un an, renouvelable, avec des obligations spécifiques à remplir dans des délais fixés.
+
+### Pourquoi le rapport n'est pas figé
+
+Au moment de l'AMM, le médicament a été étudié chez un nombre relativement restreint de patients sélectionnés, pendant une durée limitée (EMA). En vie réelle, les populations sont plus larges et plus hétérogènes, les durées d'exposition plus longues et les co-prescriptions fréquentes. Les effets rares, différés ou propres à certains sous-groupes apparaissent surtout à ce stade.
+
+### Outils de réévaluation
+
+- **Notifications spontanées** : recueillies par les CRPV, enregistrées dans la BNPV (base nationale de pharmacovigilance), et transmises à EudraVigilance pour les cas graves.
+- **Détection et gestion des signaux** : l'ANSM catégorise chaque signal selon son niveau de risque. Au niveau européen, le PRAC (Pharmacovigilance Risk Assessment Committee) évalue les signaux issus d'EudraVigilance.
+- **Enquêtes de pharmacovigilance** : menées par un CRPV à la demande de l'ANSM.
+- **Rapports périodiques actualisés de sécurité (PSUR) et études de sécurité post-autorisation (PASS)** : évalués par le PRAC [à compléter : source primaire détaillant PSUR, PGR et PASS].
+- **Études de pharmaco-épidémiologie**, notamment sur les données de l'Assurance maladie.
+
+### Qui recommande, qui décide
+
+Le PRAC évalue tous les aspects de la gestion du risque : détection, évaluation, minimisation et communication. Il adresse ses recommandations au CHMP (Committee for Medicinal Products for Human Use, comité des médicaments à usage humain de l'EMA ; médicaments autorisés par procédure centralisée, procédures d'arbitrage) ou au CMDh (groupe de coordination des procédures de reconnaissance mutuelle et décentralisée ; médicaments autorisés au niveau national). La Commission européenne ou les autorités nationales rendent ensuite la décision, selon la procédure [à compléter : source primaire sur la chaîne de décision]. L'ANSM participe aux travaux du PRAC.
+
+### Mesures possibles
+
+- Modification de l'AMM imposée par les autorités, par exemple pour ajouter un nouvel effet indésirable (ANSM).
+- Restriction d'indication. Exemple : fluoroquinolones. Réévaluation européenne (article 31 de la directive 2001/83/CE) ouverte le 9 février 2017 à la demande du BfArM (autorité allemande du médicament), avec audition publique en juin 2018. Le PRAC a recommandé en octobre 2018 de ne plus les utiliser dans les infections non graves ou spontanément résolutives, ni chez les patients ayant déjà eu un effet grave sous quinolone. Mesures applicables en 2019. Une étude portant sur 2016–2021 dans six pays, dont la France, suggère un impact modeste de ces restrictions ; une lettre aux professionnels de santé (DHPC) a suivi en 2023.
+- Suspension ou retrait. Exemple : benfluorex, retiré du marché le 30 novembre 2009 après l'observation de valvulopathies. Le suivi de pharmacovigilance a ensuite confirmé les signaux de valvulopathies et d'hypertension artérielle pulmonaire. Il a aussi identifié la fibrose pleurale comme cause médicamenteuse possible mais rare.
+
+### Bénéfice/risque individuel
+
+Le rapport évalué par les autorités vaut pour une population et une indication. Pour un patient donné, il dépend aussi de la gravité de sa maladie, de ses comorbidités, de ses traitements et des alternatives disponibles. Le CRPV peut être sollicité pour un avis sur un cas.
+
+:::
+
+:::

@@ -1,0 +1,29 @@
+---
+title: "Une étude fait le buzz (format de démonstration)"
+description: "À quoi ressemblera le décryptage d'une étude dont parlent les médias : ce qu'elle montre, ses limites, que dire aux patients."
+date: 2026-11-23
+categories: [décryptage]
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+---
+
+**Page de démonstration** : elle montre la forme d'un décryptage, pas une vraie étude.
+
+## Ce que dit l'étude
+
+[Question, type d'étude, population, résultat principal avec son intervalle de confiance.]
+
+## Ses limites
+
+[Biais possibles, ce que l'étude ne permet pas de conclure.]
+
+## Ce que cela change pour vos patients
+
+[Une à trois phrases. Le plus souvent : rien ne change, et voici pourquoi.]
+
+## Ce qu'il faut dire aux patients
+
+[Message simple, avec un renvoi vers la fiche patient correspondante.]

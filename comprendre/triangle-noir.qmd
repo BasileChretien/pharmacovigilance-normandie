@@ -1,0 +1,119 @@
+---
+title: "Le triangle noir ▼"
+description: "Ce que signifie le triangle noir inversé de la notice et du RCP, ce qu'il ne signifie pas, et pourquoi déclarer les effets indésirables de ces médicaments."
+public: [patients, professionnels]
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "EMA, Medicines under additional monitoring"
+    url: "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/pharmacovigilance-post-authorisation/medicines-under-additional-monitoring"
+    consulte_le: 2026-11-25
+  - titre: "EMA, Que signifie le triangle noir ? (fiche d'information en français)"
+    url: "https://www.ema.europa.eu/fr/documents/other/what-does-black-triangle-mean_fr.pdf"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Médicaments sous surveillance renforcée"
+    url: "https://ansm.sante.fr/documents/reference/medicaments-sous-surveillance-renforcee"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, La surveillance renforcée des médicaments"
+    url: "https://ansm.sante.fr/page/la-surveillance-renforcee-des-medicaments"
+    consulte_le: 2026-11-25
+  - titre: "EMA, modèle QRD de l'information produit, version 10.4, février 2024, version française (mentions standard du RCP et de la notice)"
+    url: "https://www.ema.europa.eu/fr/documents/template-form/qrd-product-information-template-version-104-highlighted_fr.pdf"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Réglementation relative à la pharmacovigilance (liste des textes)"
+    url: "https://ansm.sante.fr/documents/reference/reglementation-relative-a-la-pharmacovigilance"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Le triangle noir ▼ signale un médicament surveillé de plus près, souvent parce qu'il est récent.
+- Il ne veut pas dire que le médicament est dangereux. N'arrêtez pas votre traitement à cause de lui.
+- Si vous pensez avoir un effet indésirable avec ce médicament, signalez-le.
+:::
+
+### Où voit-on ce triangle ?
+
+Le triangle est noir et pointe vers le bas : ▼. Il est imprimé en haut de la notice, près du nom du médicament. Une phrase l'accompagne : « Ce médicament fait l'objet d'une surveillance supplémentaire. » Vous ne le verrez pas sur la boîte.
+
+<!-- FIGURE À FAIRE : haut d'une notice fictive, avec le nom inventé « Médicament X », le triangle noir ▼ à côté du nom et la phrase « Ce médicament fait l'objet d'une surveillance supplémentaire ». Une flèche montre le triangle. Une boîte barrée à côté rappelle que le triangle n'est pas sur l'emballage. -->
+
+### Pourquoi certains médicaments sont-ils surveillés de plus près ?
+
+Tous les médicaments sont surveillés après leur mise sur le marché. Mais pour certains, on dispose de moins d'informations. C'est souvent le cas d'un médicament récent.
+
+Avant d'être autorisé, un médicament est testé dans des essais cliniques (des études chez des volontaires ou des malades). Ces essais portent sur un nombre limité de personnes, pendant un temps limité. Ensuite, beaucoup plus de personnes prennent le médicament. Elles ont parfois d'autres maladies et d'autres traitements. Certains effets rares n'apparaissent qu'à ce moment-là.
+
+Le triangle concerne par exemple :
+
+- les médicaments avec une nouvelle substance active, autorisés dans l'Union européenne depuis 2011 ;
+- les médicaments pour lesquels les autorités demandent d'autres études, par exemple sur un usage de longue durée.
+
+### Combien de temps dure cette surveillance ?
+
+En général cinq ans, ou jusqu'à ce qu'un comité européen d'experts retire le médicament de la liste. Cette liste des médicaments concernés est revue chaque mois.
+
+### Qu'est-ce que le triangle ne veut pas dire ?
+
+Il ne veut pas dire que le médicament est dangereux. Il ne veut pas dire non plus qu'il a un problème de sécurité connu. Il veut dire : on manque encore de recul, on regarde donc de plus près.
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+### Que faire si vous prenez un de ces médicaments ?
+
+Prenez-le comme prévu. Si vous remarquez un effet inhabituel, parlez-en à votre médecin, à votre pharmacien ou à votre infirmier. Vous pouvez aussi le [déclarer vous-même](../declarer.qmd), même si vous n'êtes pas sûr du lien. Pour ces médicaments, chaque déclaration compte encore plus. Elle aide les autorités à vérifier que les bénéfices restent plus importants que les risques.
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Cadre
+
+La surveillance supplémentaire découle de la législation européenne de pharmacovigilance de 2010 (directive 2010/84/UE et règlement (UE) n° 1235/2010 du 15 décembre 2010), entrée en application en juillet 2012. Le triangle noir figure dans les RCP et les notices depuis l'automne 2013. Le symbole a été fixé par un acte d'exécution de la Commission [à compléter : référence du règlement d'exécution fixant le symbole, à vérifier sur EUR-Lex].
+
+### Critères d'inscription
+
+Sont obligatoirement inscrits sur la liste, d'après l'EMA, les médicaments :
+
+- contenant une nouvelle substance active autorisée dans l'UE après le 1er janvier 2011 ;
+- biologiques (vaccins, médicaments dérivés du plasma…) autorisés après le 1er janvier 2011 ;
+- ayant une AMM conditionnelle ou une AMM sous circonstances exceptionnelles ;
+- soumis à des études complémentaires (usage prolongé, effet indésirable rare observé pendant les essais…) ;
+- autorisés avec des obligations spécifiques d'enregistrement des effets indésirables suspectés.
+
+D'autres médicaments peuvent être inscrits sur décision des autorités [à compléter : source primaire sur l'inscription facultative, après avis du PRAC].
+
+Un médicament reste sous surveillance supplémentaire cinq ans, ou jusqu'à ce que le PRAC (Pharmacovigilance Risk Assessment Committee, comité européen d'évaluation des risques en matière de pharmacovigilance) décide de le retirer de la liste. La liste est tenue par l'EMA, revue chaque mois par le PRAC et relayée par l'ANSM.
+
+### Mentions standard
+
+Dans le RCP, en tête : « Ce médicament fait l'objet d'une surveillance supplémentaire qui permettra l'identification rapide de nouvelles informations relatives à la sécurité. Les professionnels de la santé déclarent tout effet indésirable suspecté. »
+
+Dans la notice, la même phrase est suivie de : « Vous pouvez y contribuer en signalant tout effet indésirable que vous observez. »
+
+Le symbole n'apparaît ni sur l'emballage extérieur ni sur l'étiquetage.
+
+### Ce que le statut signifie
+
+Le triangle traduit une incertitude, pas un profil de sécurité défavorable. L'ANSM précise que la liste n'est en aucun cas une liste de médicaments dangereux. Il n'y a donc pas lieu d'interrompre un traitement au seul motif que le médicament est inscrit.
+
+### Conséquences pour la pratique
+
+- Déclarer tout effet indésirable suspecté, y compris non grave ou déjà décrit dans le RCP. Ces déclarations précoces alimentent l'évaluation continue du rapport bénéfice/risque.
+- Vérifier le statut sur la liste de l'EMA plutôt que sur la notice de la boîte. Les changements de notice suivent les décisions avec un décalage, le temps d'écouler les stocks.
+- Pour un médicament biologique, indiquer dans la déclaration le nom de spécialité et le numéro de lot.
+
+Déclaration : [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr/) ou directement auprès du CRPV de votre région (voir [Déclarer](../declarer.qmd)).
+
+:::
+
+:::

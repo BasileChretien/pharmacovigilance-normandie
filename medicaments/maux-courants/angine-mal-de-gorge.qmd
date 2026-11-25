@@ -1,0 +1,164 @@
+---
+title: "Angine et mal de gorge : quels médicaments ?"
+description: "Le test rapide qui dit si un antibiotique est utile, l'amoxicilline quand le test est positif, le paracétamol contre la douleur et les risques des anti-inflammatoires."
+public: [patients, professionnels]
+recommandation_de_reference: "HAS, Choix et durées d'antibiothérapies : Angine aiguë de l'adulte et Angine aiguë de l'enfant (validées en 2021, mises à jour en 2024 et 2025)"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "HAS. Choix et durées d'antibiothérapies : Angine aiguë de l'adulte, mise à jour le 13/05/2025"
+    url: "https://has-sante.fr/jcms/p_3529230/fr/choix-et-durees-d-antibiotherapies-angine-aigue-de-l-adulte"
+    consulte_le: 2026-11-25
+  - titre: "HAS. Choix et durées d'antibiothérapies : Angine aiguë de l'enfant, mise à jour le 13/05/2025"
+    url: "https://has-sante.fr/jcms/p_3529229/fr/choix-et-durees-d-antibiotherapies-angine-aigue-de-l-enfant"
+    consulte_le: 2026-11-25
+  - titre: "Santé.fr (ministère de la Santé), Antibio'Malin. Angine, 13/03/2025"
+    url: "https://sante.fr/antibiomalin-pour-savoir-comment-bien-utiliser-les-antibiotiques/angine"
+    consulte_le: 2026-11-25
+  - titre: "Santé.fr. Angines et cystites : les pharmaciens peuvent délivrer sous certaines conditions des antibiotiques sans ordonnance, 20/06/2024"
+    url: "https://www.sante.fr/angines-et-cystites-les-pharmaciens-peuvent-delivrer-sous-certaines-conditions-des-antibiotiques"
+    consulte_le: 2026-11-25
+  - titre: "ANSM. Infections hivernales : il est conseillé d'éviter l'ibuprofène ou le kétoprofène en première intention, 17/12/2025, mis à jour le 18/12/2025"
+    url: "https://ansm.sante.fr/actualites/infections-hivernales-il-est-conseille-deviter-libuprofene-ou-le-ketoprofene-en-premiere-intention"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments. CLAMOXYL 500 mg, gélule (amoxicilline), RCP mis à jour le 18/09/2026"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67707794/extrait"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments. ZECLAR 250 mg, comprimé pelliculé (clarithromycine), RCP mis à jour le 17/06/2024"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/63671347/extrait"
+    consulte_le: 2026-11-25
+  - titre: "Antibioclic, outil d'aide à la prescription antibiotique (angine)"
+    url: "https://antibioclic.com/"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.quand-consulter}
+- Vous avez du mal à respirer : appelez le 15 (SAMU, service d'aide médicale urgente).
+- Votre cou ou votre visage gonfle : consultez en urgence.
+- La fièvre dure plus de 3 jours ou revient, ou le mal de gorge s'aggrave : consultez un médecin.
+- Une éruption sur la peau ou des douleurs dans les articulations apparaissent : consultez un médecin.
+:::
+
+::: {.a-retenir}
+- La plupart des angines sont dues à un virus. Un antibiotique ne sert alors à rien.
+- Un test rapide dans la gorge dit si un antibiotique est utile. Le médecin, ou le pharmacien dès 10 ans, peut le faire.
+- Contre la douleur, prenez du paracétamol. Évitez l'ibuprofène et les autres anti-inflammatoires.
+:::
+
+### Quels médicaments peuvent aider ?
+
+Une angine est une infection de la gorge et des amygdales. Plus de 8 angines sur 10 sont dues à un virus. Elles guérissent seules. La fièvre dure en général 2 à 3 jours, le mal de gorge jusqu'à une semaine.
+
+Pour vous soulager :
+
+- le paracétamol calme la douleur et fait baisser la fièvre ;
+- des pastilles ou des sprays pour la gorge peuvent apaiser la douleur ;
+- buvez assez et reposez-vous. Les aliments froids, comme une glace, soulagent aussi.
+
+Un antibiotique n'est utile que si l'angine est due à une bactérie, le streptocoque. Le test rapide permet de le savoir.
+
+### Comment fonctionne le test rapide ?
+
+Le test rapide d'orientation diagnostique (TROD) se fait avec un coton-tige frotté au fond de la gorge. Le résultat arrive en quelques minutes.
+
+- Test positif : l'angine est due au streptocoque. Un antibiotique est prescrit.
+- Test négatif : l'angine est due à un virus. Pas d'antibiotique.
+
+Chez l'adulte, le médecin ou le pharmacien pose d'abord quelques questions. Elles portent sur la fièvre, la toux, les ganglions du cou, l'aspect des amygdales et l'âge. Le test n'est fait que si les réponses le justifient. Avant 3 ans, le médecin ne fait ni test ni antibiotique.
+
+En pharmacie, le test est possible dès 10 ans, sans ordonnance. S'il est positif, le pharmacien formé peut vous remettre l'antibiotique.
+
+<!-- FIGURE À FAIRE : schéma en trois étapes. 1) Prélèvement avec un coton-tige au fond de la gorge. 2) Lecture du test en quelques minutes. 3) Deux flèches : « positif → antibiotique » et « négatif → pas d'antibiotique, paracétamol si besoin ». Texte alternatif : « Le test rapide de l'angine : un prélèvement de gorge, un résultat en quelques minutes, un antibiotique seulement si le test est positif. » -->
+
+### Comment agissent les antibiotiques ?
+
+L'antibiotique tue la bactérie ou l'empêche de se multiplier. Il n'a aucun effet sur les virus. Pris sans raison, il expose à des effets indésirables. Il favorise aussi des bactéries résistantes (que les antibiotiques ne tuent plus).
+
+### Comment choisir l'antibiotique ?
+
+L'amoxicilline est l'antibiotique de premier choix. En cas d'allergie aux pénicillines, le médecin choisit un autre antibiotique. Signalez toujours une allergie connue.
+
+### Comment bien le prendre ?
+
+- Prenez l'antibiotique pendant toute la durée prescrite, en général 6 jours pour l'amoxicilline.
+- Respectez le nombre de prises par jour.
+- Un enfant traité reste à la maison au moins 2 jours après le début de l'antibiotique.
+
+### Quels effets surveiller ?
+
+Avec l'amoxicilline, les effets les plus fréquents sont la diarrhée, les nausées et les boutons sur la peau. Ils touchent entre 1 personne sur 100 et 1 personne sur 10.
+
+Arrêtez le traitement et contactez un médecin en cas d'éruption sur la peau ou de diarrhée importante. Appelez le 15 si votre visage ou votre gorge gonfle, ou si vous avez du mal à respirer.
+
+### Ce qu'il vaut mieux éviter
+
+- L'ibuprofène et les autres anti-inflammatoires : ils peuvent favoriser des complications graves de l'infection.
+- Un antibiotique pris sans test, ou un reste d'antibiotique d'une ancienne boîte.
+- Les corticoïdes (médicaments dérivés de la cortisone) : ils n'ont pas montré d'intérêt dans l'angine.
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Signes d'alerte
+
+Rechercher les signes de complication locorégionale (phlegmon péri-amygdalien, abcès rétropharyngé) et les diagnostics différentiels graves. [à compléter : liste des signes d'alerte selon la fiche mémo HAS « Angine aiguë » ou la SPILF]. Antibio'Malin conseille de consulter en cas de fièvre de plus de 3 jours ou récurrente, d'aggravation, d'éruption, d'arthralgies, de dyspnée ou de tuméfaction du cou ou du visage.
+
+### Stratégie thérapeutique
+
+Adulte (HAS, mise à jour 2025) : score de Mac Isaac (température > 38 °C : 1 ; absence de toux : 1 ; adénopathie cervicale antérieure douloureuse : 1 ; augmentation de volume ou exsudat amygdalien : 1 ; âge 15-44 ans : 0 ; ≥ 45 ans : −1).
+
+- Score < 2, ou score ≥ 2 et TROD négatif : pas d'antibiotique.
+- Score ≥ 2 et TROD positif : amoxicilline 2 g/j en 2 prises pendant 6 jours.
+- Allergie documentée aux pénicillines sans contre-indication aux céphalosporines : céfuroxime axétil 500 mg/j en 2 prises pendant 4 jours, ou cefpodoxime proxétil 200 mg/j en 2 prises pendant 5 jours.
+- Contre-indication aux bêta-lactamines : clarithromycine 500 mg/j en 2 prises pendant 5 jours.
+
+Enfant (HAS, mise à jour 2025) :
+
+- Moins de 3 ans : ni TROD ni antibiotique.
+- 3 ans et plus : TROD ; si négatif, pas d'antibiotique.
+- TROD positif : amoxicilline 50 mg/kg/j en 2 prises (maximum 2 g/j) pendant 6 jours. Allergie aux pénicillines sans contre-indication aux céphalosporines : cefpodoxime proxétil 8 mg/kg/j en 2 prises (maximum 200 mg/j) pendant 5 jours. Contre-indication aux bêta-lactamines : clarithromycine 15 mg/kg/j en 2 prises (maximum 500 mg/j) pendant 5 jours.
+
+L'azithromycine ne figure plus dans ces recommandations depuis la mise à jour de 2024. Dispensation en officine sans ordonnance possible depuis le 19 juin 2024, après TROD positif réalisé par un pharmacien formé, chez les patients de plus de 10 ans.
+
+Traitement symptomatique (HAS, angine de l'enfant) : paracétamol en première intention (60 mg/kg/j en 4 prises, sans dépasser 80 mg/kg/j, 72 heures au plus). AINS en deuxième intention seulement si la douleur persiste malgré le paracétamol à dose maximale ou en cas de contre-indication : ibuprofène dès 3 mois, 20 à 30 mg/kg/j en 3 ou 4 prises, arrêt dès la disparition de la douleur, 24 heures au plus entre 3 et 6 mois et 72 heures au plus au-delà. Pas d'AINS en cas de varicelle, d'infection ORL bactérienne sévère ou compliquée ; la fièvre seule ne les justifie pas. Corticoïdes systémiques et locaux : intérêt non démontré.
+
+### Mécanismes d'action
+
+- Amoxicilline, céphalosporines : bêta-lactamines, inhibition de la synthèse de la paroi bactérienne.
+- Clarithromycine : macrolide, inhibition de la synthèse protéique bactérienne (sous-unité 50S du ribosome).
+
+### Précautions et effets indésirables
+
+- AINS et infections : l'ANSM recense, entre 2019 et mi-2023, 162 cas graves avec l'ibuprofène et 54 avec le kétoprofène, dont 12 décès, souvent après une prise pour une infection ORL. Elle recommande d'éviter les AINS dans les infections ORL sans diagnostic biologique documenté, y compris sous antibiotique.
+- Amoxicilline (RCP Clamoxyl) : contre-indiquée en cas d'hypersensibilité aux pénicillines ou d'antécédent de réaction immédiate sévère à une autre bêta-lactamine ; à éviter en cas de suspicion de mononucléose infectieuse (éruption morbilliforme). Effets fréquents : diarrhée, nausées, éruption cutanée. Interactions : allopurinol (réactions cutanées), méthotrexate (toxicité accrue), AVK (surveillance de l'INR). [à compléter : niveaux du Thésaurus ANSM]
+- Clarithromycine (RCP Zeclar) : inhibiteur puissant du CYP3A4. Associations contre-indiquées notamment avec la colchicine, la simvastatine, les alcaloïdes de l'ergot, le ticagrélor, la dompéridone, la quétiapine, la ranolazine, l'ivabradine ; contre-indiquée en cas d'allongement du QT, d'hypokaliémie ou d'hypomagnésémie. Associations déconseillées notamment avec la ciclosporine, le tacrolimus, l'oxycodone, le rivaroxaban. Vérifier systématiquement les traitements en cours.
+
+### Ce qu'il faut éviter
+
+- Antibiotique sans TROD positif (sauf contexte particulier relevant de la décision médicale).
+- Antibiotique avant 3 ans pour une angine.
+- AINS dans l'angine, en particulier en automédication.
+- Clarithromycine sans revue des interactions.
+
+### Outils et liens
+
+- [Antibioclic](https://antibioclic.com/), rubrique « Angine ».
+- Fiches HAS [adulte](https://has-sante.fr/jcms/p_3529230/fr/choix-et-durees-d-antibiotherapies-angine-aigue-de-l-adulte) et [enfant](https://has-sante.fr/jcms/p_3529229/fr/choix-et-durees-d-antibiotherapies-angine-aigue-de-l-enfant).
+- Effets indésirables : déclaration sur [signalement.social-sante.gouv.fr](https://www.signalement.social-sante.gouv.fr) ou auprès du CRPV de Caen ou de Rouen.
+
+:::
+
+:::

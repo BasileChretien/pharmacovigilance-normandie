@@ -1,0 +1,120 @@
+---
+title: "Médicaments, grossesse et allaitement"
+description: "Pendant la grossesse et l'allaitement, pas d'automédication : quelques messages généraux et où trouver une information fiable sur un médicament précis (CRAT)."
+public: [patients, professionnels]
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "ANSM, Médicaments et grossesse : les bons réflexes"
+    url: "https://ansm.sante.fr/dossiers-thematiques/medicaments-et-grossesse/medicaments-et-grossesse-les-bons-reflexes"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Traitement de la douleur durant la grossesse"
+    url: "https://ansm.sante.fr/dossiers-thematiques/medicaments-et-grossesse/traitement-de-la-douleur-durant-la-grossesse"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Médicaments et allaitement"
+    url: "https://ansm.sante.fr/dossiers-thematiques/medicaments-et-grossesse/medicaments-et-allaitement"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Médicaments et grossesse (dossier thématique)"
+    url: "https://ansm.sante.fr/dossiers-thematiques/medicaments-et-grossesse"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Propositions d'annexes AMM / enregistrements (RCP, notice, étiquetage) – rubrique pictogramme « femmes enceintes » (version imprimable)"
+    url: "https://ansm.sante.fr/page/impression/89"
+    consulte_le: 2026-11-25
+  - titre: "CRAT, Qui sommes-nous ?"
+    url: "https://www.lecrat.fr/qui-sommes-nous/"
+    consulte_le: 2026-11-25
+  - titre: "CRAT, Mises en garde"
+    url: "https://www.lecrat.fr/mises-en-garde/"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Enceinte ou allaitante, ne prenez aucun médicament sans conseil d'un professionnel de santé.
+- Les anti-inflammatoires, comme l'ibuprofène ou l'aspirine, sont interdits à partir du 6e mois.
+- N'arrêtez pas seule un traitement en cours : parlez-en vite à votre médecin.
+:::
+
+::: {.quand-consulter}
+- Vous découvrez une grossesse alors que vous prenez un traitement : prévenez votre médecin rapidement.
+- Vous avez pris un anti-inflammatoire alors que vous êtes enceinte de 6 mois ou plus : contactez un professionnel de santé.
+- Vous avez un projet de grossesse et un traitement au long cours : parlez-en avant.
+:::
+
+### Pourquoi être prudente ?
+
+Certains médicaments peuvent être dangereux pour le bébé à naître. Ils peuvent causer des malformations ou d'autres problèmes. Le risque de malformation est le plus élevé au début de la grossesse. À ce moment, on ne sait pas toujours encore qu'on est enceinte. Même un médicament courant peut être dangereux pour le bébé.
+
+### Quels sont les bons réflexes ?
+
+- Demandez conseil avant de prendre tout médicament. Cela vaut aussi pour les produits sans ordonnance, les vieilles ordonnances, les plantes et les huiles essentielles.
+- Dites que vous êtes enceinte ou que vous allaitez à chaque professionnel de santé : médecin, pharmacien, dentiste, kinésithérapeute, radiologue.
+- Préparez un projet de grossesse avec votre médecin ou votre sage-femme. Pensez aussi aux médicaments pris par votre conjoint ou conjointe.
+- Ne changez pas seule les doses d'un traitement, et ne l'arrêtez pas sans avis.
+
+### Et pour la douleur ou la fièvre ?
+
+Si besoin, le paracétamol peut être utilisé pendant la grossesse. Prenez la dose la plus faible qui soulage, le moins longtemps possible. Ne prenez jamais d'anti-inflammatoire de vous-même. À partir du 6e mois, une seule prise peut mettre en danger votre bébé. Cela vaut aussi pour une crème ou un gel [à compléter : source ANSM].
+
+<!-- FIGURE À FAIRE : frise des 9 mois de grossesse indiquant « anti-inflammatoires : jamais sans avis médical » sur toute la durée et « interdits, même une seule prise » à partir du 6e mois. Couleurs lisibles par les personnes daltoniennes et en niveaux de gris. -->
+
+### Que signifie le pictogramme « femme enceinte » sur une boîte ?
+
+Depuis 2017, un pictogramme représentant une femme enceinte figure sur la boîte de certains médicaments. Il signale un médicament dangereux pendant la grossesse. Si vous voyez ce pictogramme, parlez-en à votre médecin ou à votre pharmacien. N'arrêtez pas le médicament sans avis.
+
+### Et pendant l'allaitement ?
+
+Certains médicaments passent dans le lait. Ils peuvent avoir des effets chez le bébé, surtout avant 1 mois. Par prudence, évitez les médicaments pendant l'allaitement quand c'est possible. Un médicament permis pendant la grossesse ne l'est pas forcément pendant l'allaitement. Demandez toujours conseil.
+
+### Où trouver une information sur un médicament précis ?
+
+Le CRAT (Centre de référence sur les agents tératogènes) publie des fiches sur les médicaments pendant la grossesse et l'allaitement, sur [lecrat.fr](https://www.lecrat.fr). Ce site est écrit pour les professionnels de santé. Lisez-le de préférence avec votre médecin, votre sage-femme ou votre pharmacien. Le centre régional de pharmacovigilance peut aussi vous renseigner.
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Principes
+
+- Pas d'automédication pendant la grossesse : le conseil d'un professionnel de santé doit toujours être recherché avant toute prise. Cela inclut les produits de prescription médicale facultative, les anciennes ordonnances, la phytothérapie et les huiles essentielles (ANSM).
+- Préparer la grossesse avec la patiente traitée au long cours ; revoir aussi l'automédication et les traitements du conjoint.
+- Une grossesse découverte sous traitement ne doit pas conduire à un arrêt ou à une modification de dose par la patiente seule ; le médecin décide de la poursuite, de l'adaptation ou de l'arrêt.
+
+### Douleur et fièvre (ANSM)
+
+- **Paracétamol** : utilisable si nécessaire, à la dose efficace la plus faible et pour la durée la plus courte.
+- **AINS, y compris l'aspirine** : ne pas en prendre de soi-même au premier trimestre ; toute prise, même ponctuelle, est strictement contre-indiquée à partir du 6e mois. La page « bons réflexes » de l'ANSM l'exprime comme « jamais après le 5e mois ». En cas de prise par mégarde à partir du 6e mois, la patiente doit consulter.
+- **Tramadol** : déconseillé au premier trimestre ; des doses élevées en fin de grossesse peuvent induire des troubles respiratoires chez le nouveau-né.
+
+### Pictogramme « femme enceinte »
+
+Le décret du 14 avril 2017 et ses arrêtés d'application, modifiant l'article R. 5121-139 du CSP, imposent un pictogramme sur le conditionnement extérieur des médicaments tératogènes ou fœtotoxiques depuis le 17 octobre 2017 (ANSM). Son apposition relève de la responsabilité des titulaires d'AMM. L'ANSM a engagé une réévaluation du dispositif [à compléter : état actuel de la réforme, source ANSM].
+
+### Allaitement (ANSM)
+
+Par précaution, éviter en général les médicaments pendant l'allaitement. Certains passent dans le lait et peuvent avoir des effets chez le nourrisson, en particulier avant 1 mois (bradycardie, somnolence). L'utilisation pendant la grossesse ne préjuge pas de la compatibilité avec l'allaitement. Peser le bénéfice maternel et le risque pour l'enfant ; l'allaitement peut être adapté (tirage temporaire du lait, allaitement mixte). Certains médicaments sont incompatibles avec l'allaitement (exemple cité par l'ANSM : acébutolol).
+
+### Le CRAT
+
+Le Centre de référence sur les agents tératogènes est implanté à l'AP-HP (hôpital de la Pitié-Salpêtrière). Son service d'information et de conseil est exclusivement réservé aux médecins, pharmaciens et sages-femmes ; son site est en accès libre. Le site est rédigé pour les professionnels de santé. Ses informations peuvent différer de celles des RCP, et il ne couvre plus les expositions professionnelles, accidentelles ou environnementales : il renvoie alors vers un centre antipoison ou un médecin du travail.
+
+### Outils et liens
+
+- [lecrat.fr](https://www.lecrat.fr) : fiches par médicament (grossesse, allaitement, exposition paternelle).
+- Dossier ANSM « Médicaments et grossesse » : fiches valproate, antiépileptiques, isotrétinoïne, topiramate, programmes de prévention des grossesses.
+- Question sur un médicament ou déclaration d'effet indésirable : CRPV de Caen ou de Rouen.
+
+:::
+
+:::

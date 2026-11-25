@@ -1,0 +1,16 @@
+[project]
+name = "pv-normandie-checks"
+version = "0.1.0"
+description = "Automatic writing, structure and contrast checks for the Pharmacovigilance Normandie website."
+requires-python = ">=3.10"
+dependencies = ["pyyaml>=6"]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tools/checks"]

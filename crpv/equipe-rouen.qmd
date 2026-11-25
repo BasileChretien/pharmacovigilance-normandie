@@ -1,0 +1,51 @@
+---
+title: "L'équipe de Rouen"
+description: "Les membres du centre régional de pharmacovigilance de Rouen, leur fonction et leur parcours."
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+---
+
+<img src="../assets/img/logos/chu-rouen.png" alt="Logo du CHU de Rouen Normandie" class="logo-page">
+
+[Logo propre au CRPV de Rouen, s'il existe : à demander à l'équipe.]
+
+Chaque carte est publiée avec l'accord écrit du membre, qui peut le retirer à tout moment. Les coordonnées affichées sont celles du centre, pas celles des personnes.
+
+::: {.cartes}
+
+::: {.carte .membre}
+<img src="../assets/img/avatar.svg" alt="Photo à venir">
+
+::: {}
+### [Prénom Nom]
+**[Fonction : pharmacologue, praticien hospitalier]**
+
+[Courte biographie de 50 à 80 mots, à la troisième personne.]
+
+*Expertise :* [trois à cinq mots-clés]
+
+[Page SigmaCV](https://sigmacv.org) · [ORCID](https://orcid.org)
+:::
+:::
+
+::: {.carte .membre}
+<img src="../assets/img/avatar.svg" alt="Photo à venir">
+
+::: {}
+### [Prénom Nom]
+**[Fonction]**
+
+[Courte biographie de 50 à 80 mots, à la troisième personne.]
+
+*Expertise :* [trois à cinq mots-clés]
+
+[Page SigmaCV](https://sigmacv.org) · [ORCID](https://orcid.org)
+:::
+:::
+
+:::
+
+Chaque lien SigmaCV ouvre le CV en ligne du membre, qui se met à jour seul à partir d'ORCID et des bases de données ouvertes.

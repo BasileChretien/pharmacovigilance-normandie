@@ -1,0 +1,20 @@
+---
+title: "Le fil des alertes officielles"
+description: "Les dernières communications de sécurité de l'ANSM et de l'Agence européenne des médicaments, avec un lien vers chaque source."
+date: 2026-11-25
+categories: [alertes officielles]
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+---
+
+Ce fil sera alimenté automatiquement : titre, date et lien de chaque communication, sans réécriture. En attendant, voici les sources qu'il reprendra.
+
+| Source | Contenu |
+|---|---|
+| [ANSM, actualités](https://ansm.sante.fr/actualites) | Informations de sécurité, lettres aux professionnels de santé |
+| [Agence européenne des médicaments, PRAC](https://www.ema.europa.eu/en/committees/pharmacovigilance-risk-assessment-committee-prac) | Résumés mensuels du comité européen de pharmacovigilance |
+
+[Branchement automatique à faire : script de collecte, voir le README.]

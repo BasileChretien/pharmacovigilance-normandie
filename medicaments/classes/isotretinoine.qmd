@@ -1,0 +1,165 @@
+---
+title: "L'isotrétinoïne par voie orale"
+description: "Isotrétinoïne orale contre l'acné sévère : risque pour l'enfant à naître, programme de prévention des grossesses, effets psychiques et surveillance."
+public: [patients, professionnels]
+classe: "isotrétinoïne orale"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "Base de données publique des médicaments, RCP et notice de CURACNÉ 20 mg, capsule molle (CIS 69164379)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/69164379/extrait"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, dossier thématique « Risques liés à la prise d'isotrétinoïne par voie orale » (mis à jour le 17/07/2025)"
+    url: "https://ansm.sante.fr/dossiers-thematiques/isotretinoine-orale-et-traitement-de-lacne-severe/risques-lies-a-la-prise-disotretinoine-par-voie-orale"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, « Les actions mises en œuvre pour réduire les risques associés à l'isotrétinoïne » (mis à jour le 25/08/2023)"
+    url: "https://ansm.sante.fr/dossiers-thematiques/isotretinoine-orale-et-traitement-de-lacne-severe/les-actions-mises-en-oeuvre-pour-reduire-les-risques-associes-a-lisotretinoine"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, « Traitement contre l'acné : règles de bon usage de l'isotrétinoïne pour limiter les risques » (21/10/2020, mis à jour le 30/03/2021)"
+    url: "https://ansm.sante.fr/actualites/traitement-contre-lacne-regles-de-bon-usage-de-lisotretinoine-pour-limiter-les-risques"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, tableau des médicaments soumis à un programme de prévention des grossesses (2023)"
+    url: "https://ansm.sante.fr/uploads/2023/11/29/20231129-prevoyance-grossesse-2023.pdf"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
+    url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
+    consulte_le: 2026-11-25
+  - titre: "3114, numéro national de prévention du suicide"
+    url: "https://3114.fr/"
+    consulte_le: 2026-11-25
+  - titre: "Centre de référence sur les agents tératogènes (CRAT)"
+    url: "https://www.lecrat.fr/"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Une seule capsule prise pendant la grossesse peut provoquer des malformations graves chez le bébé.
+- Si vous pouvez être enceinte : contraception 1 mois avant, pendant, et 1 mois après le traitement.
+- Si votre humeur change, parlez-en vite à votre médecin.
+:::
+
+### À quoi sert ce traitement ?
+
+L'isotrétinoïne traite l'acné sévère, quand les autres traitements n'ont pas marché. Elle s'appelle par exemple Curacné, Contracné, Acnetrait ou Procuta. Un dermatologue (médecin de la peau) fait toujours la première ordonnance.
+
+Une cure dure en général 4 à 6 mois. La plupart des personnes n'ont besoin que d'une cure.
+
+### Comment le prendre ?
+
+Avalez les capsules pendant un repas, en une ou deux prises par jour. Si vous oubliez une prise, ne doublez pas la suivante. Continuez ensuite comme avant.
+
+Ne donnez jamais ce médicament à une autre personne. À la fin du traitement, rapportez les capsules restantes à la pharmacie. Ne donnez pas votre sang pendant le traitement et pendant 1 mois après.
+
+### Quels effets indésirables ?
+
+Plus de 1 personne sur 10 a la peau, les lèvres ou les yeux secs. Utilisez une crème hydratante et un baume pour les lèvres dès le début. L'acné peut s'aggraver au début, puis s'améliore en 7 à 10 jours en général.
+
+Évitez le soleil fort et utilisez une crème solaire d'indice 15 ou plus. Évitez l'épilation à la cire pendant le traitement et 6 mois après.
+
+### Ce traitement peut-il changer mon humeur ?
+
+Des troubles de l'humeur sont rares : ils touchent moins de 1 personne sur 1 000. Il peut s'agir de tristesse, d'anxiété ou d'agressivité. Des idées de suicide sont très rares : moins de 1 personne sur 10 000. Le lien avec le médicament n'est pas prouvé, mais ces signes demandent toujours un avis rapide. Votre entourage peut vous aider à les repérer.
+
+::: {.quand-consulter}
+- Tristesse qui dure, pleurs, envie de vous isoler, changement d'humeur : parlez-en vite à votre médecin.
+- Idées de suicide : appelez le 3114 (gratuit, jour et nuit) ou le 15.
+- Maux de tête forts avec nausées ou troubles de la vue : consultez rapidement.
+- Bulles sur la peau, peau qui se décolle, diarrhée avec du sang : consultez en urgence.
+- Vous pensez être enceinte : arrêtez le médicament et consultez vite.
+:::
+
+### Avec quels médicaments faut-il être prudent ?
+
+Ne prenez pas en même temps :
+
+- des compléments contenant de la vitamine A ;
+- des antibiotiques de la famille des cyclines (par exemple la doxycycline) ;
+- un autre rétinoïde (médicament de la même famille).
+
+Évitez aussi les crèmes qui font peler la peau. Demandez conseil à votre pharmacien avant tout autre médicament.
+
+### Grossesse, allaitement, conduite
+
+Si vous êtes enceinte, plus de 3 bébés sur 10 exposés ont une malformation. Elle peut toucher le cerveau, le visage ou le cœur. Le médicament peut aussi provoquer une fausse couche.
+
+### Quelles règles si vous pouvez être enceinte ?
+
+Vous suivez un programme de prévention des grossesses :
+
+- vous signez un accord de soins et de contraception, et vous recevez une carte patiente ;
+- votre contraception commence au moins 1 mois avant le traitement et continue 1 mois après ;
+- vous faites un test de grossesse sanguin avant le début, puis chaque mois, puis 1 mois après l'arrêt ;
+- chaque ordonnance couvre 30 jours au plus ;
+- la pharmacie délivre le médicament dans les 7 jours qui suivent l'ordonnance.
+
+<!-- FIGURE À FAIRE : frise du temps en trois blocs. « 1 mois avant » (contraception, test de grossesse), « pendant le traitement » (contraception, test chaque mois, ordonnance de 30 jours), « 1 mois après » (contraception, dernier test). Pictogrammes simples, couleurs lisibles en niveaux de gris. -->
+
+### Allaitement et conduite
+
+N'allaitez pas pendant le traitement. Le Centre de référence sur les agents tératogènes (CRAT) informe sur les médicaments et la grossesse : [lecrat.fr](https://www.lecrat.fr/).
+
+La vision de nuit peut baisser, parfois brutalement. Soyez prudent la nuit au volant.
+
+### Puis-je arrêter mon traitement ?
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+### Signaler un effet indésirable
+
+Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr).
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Points clés de sécurité
+
+- Tératogène majeur : malformations du système nerveux central, dysmorphie faciale, fente palatine, anomalies de l'oreille externe, microphtalmie, cardiopathies conotroncales, anomalies du thymus et des parathyroïdes (RCP, rubrique 4.6). Risque de malformation chez le fœtus exposé estimé à plus de 30 % ; environ 175 grossesses exposées par an en France sans baisse depuis 2010 (ANSM, 2020). Le risque persiste jusqu'à élimination complète, soit 1 mois après l'arrêt.
+- Contre-indications : grossesse, allaitement, femme en âge de procréer hors programme de prévention des grossesses, insuffisance hépatique, hyperlipidémie, hypervitaminose A, allergie à l'arachide ou au soja (excipient), association aux cyclines, à la vitamine A ou à un autre rétinoïde.
+- Psychiatrie : dépression, anxiété, agressivité, troubles de l'humeur (rares) ; idées suicidaires, tentatives, suicides, troubles psychotiques (très rares). L'ANSM indique que le lien n'est pas établi. Évaluer l'état psychique à l'instauration, pendant et après le traitement ; l'ANSM cite l'échelle ADRS comme support. Précaution particulière en cas d'antécédent dépressif ; l'arrêt peut ne pas suffire et justifier un avis spécialisé.
+- Autres : hypertension intracrânienne bénigne (arrêt immédiat), réactions cutanées graves (érythème polymorphe, SJS, NET, PEAG : arrêt définitif), pancréatite si triglycérides > 800 mg/dL (9 mmol/L), poussées de maladies inflammatoires digestives, baisse de la vision nocturne, sacro-iliite.
+
+### Surveillance
+
+- Transaminases et bilan lipidique à jeun avant, à 1 mois, puis tous les 3 mois. Surveillance plus rapprochée de la glycémie et des lipides si diabète, obésité, alcoolisme ou dyslipidémie.
+- Tests de grossesse (sensibilité ≥ 25 mUI/mL) : avant l'instauration, au moins 1 mois après le début de la contraception ; chaque mois, dans les 3 jours précédant la prescription ; 1 mois après l'arrêt. Dates et résultats tracés.
+
+### Interactions majeures
+
+Niveaux du Thésaurus de l'ANSM (version du 15 septembre 2023), entrée « rétinoïdes » :
+
+- + cyclines : **contre-indication** (hypertension intracrânienne).
+- + vitamine A : **contre-indication** (hypervitaminose A).
+- + autres rétinoïdes (acitrétine, alitrétinoïne, trétinoïne) : **contre-indication**.
+
+Le RCP déconseille aussi les kératolytiques et exfoliants locaux (irritation).
+
+### Adaptation des doses
+
+Début à 0,5 mg/kg/j, puis 0,5 à 1 mg/kg/j ; pas de bénéfice notable au-delà d'une dose cumulée de 120 à 150 mg/kg ; cure habituelle de 16 à 24 semaines. Insuffisance rénale sévère : débuter à 10 mg/j puis augmenter progressivement. Insuffisance hépatique : contre-indication. Non recommandé avant 12 ans.
+
+### Pièges fréquents
+
+[À compléter par le CRPV à partir de cas anonymisés.]
+
+### Mesures de réduction du risque
+
+- Prescription initiale réservée aux dermatologues ; renouvellement par tout médecin. Indication limitée à l'acné sévère résistante à un traitement classique bien conduit (antibiotique oral et traitement local).
+- Programme de prévention des grossesses : contraception hautement efficace (DIU, implant) ou deux méthodes complémentaires, de 1 mois avant à 1 mois après le traitement, y compris en cas d'aménorrhée ou sans activité sexuelle ; accord de soins et de contraception signé ; carte patiente présentée à chaque consultation et délivrance ; brochure remise.
+- Prescription limitée à 30 jours chez la femme en âge de procréer ; idéalement test, prescription et délivrance le même jour ; délivrance au plus tard 7 jours après la prescription.
+- Chez l'homme, pas de programme de contraception : l'exposition par le sperme n'est pas jugée suffisante pour un effet tératogène. Rappeler l'interdiction de partager le médicament et de donner son sang pendant le traitement et 1 mois après.
+- En cas de grossesse : arrêt immédiat et orientation vers un médecin spécialisé en tératologie ; CRAT ([lecrat.fr](https://www.lecrat.fr/)). Voir aussi la fiche [valproate et autres tératogènes](valproate-teratogenes.qmd).
+
+:::
+
+:::

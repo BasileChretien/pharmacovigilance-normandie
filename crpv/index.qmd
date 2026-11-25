@@ -1,0 +1,52 @@
+---
+title: "Les CRPV de Caen et de Rouen"
+description: "Les missions des deux centres régionaux de pharmacovigilance de Normandie, leurs équipes et leurs activités."
+toc: false
+---
+
+Les centres régionaux de pharmacovigilance (CRPV) font partie du réseau national de 31 centres coordonné par l'Agence nationale de sécurité du médicament (ANSM) [nombre à vérifier]. En Normandie, deux centres se partagent la région : Caen pour le Calvados, la Manche et l'Orne ; Rouen pour l'Eure et la Seine-Maritime.
+
+## Nos missions
+
+- Recueillir et analyser les déclarations d'effets indésirables des médicaments, et les enregistrer dans la base nationale de pharmacovigilance.
+- Répondre aux questions des professionnels de santé, et orienter les patients.
+- Mener des expertises et des enquêtes pour l'ANSM.
+- Informer les professionnels et le public.
+- Former les étudiants et les professionnels.
+- Faire de la recherche sur la sécurité des médicaments.
+
+::: {.cartes}
+
+::: {.carte}
+### [L'équipe de Caen](equipe-caen.qmd)
+:::
+
+::: {.carte}
+### [L'équipe de Rouen](equipe-rouen.qmd)
+:::
+
+::: {.carte}
+### [Activité](activite.qmd)
+:::
+
+::: {.carte}
+### [Enseignement et stages](enseignement.qmd)
+:::
+
+::: {.carte}
+### [Recherche et publications](recherche.qmd)
+:::
+
+::: {.carte}
+### [Réseau et partenaires](partenaires.qmd)
+:::
+
+::: {.carte}
+### [Accès et contacts](acces.qmd)
+:::
+
+::: {.carte}
+### [Liens d'intérêts](liens-interets.qmd)
+:::
+
+:::

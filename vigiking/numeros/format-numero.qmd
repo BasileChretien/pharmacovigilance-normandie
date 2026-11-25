@@ -1,0 +1,35 @@
+---
+title: "Format d'un numéro (démonstration)"
+description: "À quoi ressemblera un numéro de Vigiking sur le site : articles courts, cas du mois, liens vers les fiches."
+date: 2026-11-25
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+---
+
+**Page de démonstration** : elle montre la forme d'un numéro, pas un vrai numéro.
+
+## Au sommaire
+
+1. **[Titre de l'article 1]** — [deux lignes de résumé]. [Lire l'article](#)
+2. **[Titre de l'article 2]** — [deux lignes de résumé]. [Lire l'article](#)
+3. **[Titre de l'article 3]** — [deux lignes de résumé]. [Lire l'article](#)
+
+## Le cas du mois
+
+[Description courte d'un cas anonymisé.] Quel médicament est en cause selon vous ?
+
+```{=html}
+<details>
+  <summary>Voir la réponse</summary>
+  <p>[Réponse et explication, avec un lien vers la fiche du médicament.]</p>
+</details>
+```
+
+## La question d'un lecteur
+
+[Une question reçue et sa réponse.]
+
+[Télécharger ce numéro en PDF](#) · [S'abonner](../inscription.qmd)

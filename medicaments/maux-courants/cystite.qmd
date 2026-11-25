@@ -1,0 +1,179 @@
+---
+title: "Cystite de la femme : quels médicaments ?"
+description: "Cystite simple de la femme : la bandelette urinaire, la fosfomycine en une prise puis le pivmécillinam, comment les prendre et quand consulter un médecin."
+public: [patients, professionnels]
+recommandation_de_reference: "HAS, Choix et durées d'antibiothérapies : Cystite aiguë simple, à risque de complication ou récidivante, de la femme (2021, mise à jour le 13 mai 2025)"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "HAS. Choix et durées d'antibiothérapies : Cystite aiguë simple, à risque de complication ou récidivante, de la femme, mise en ligne le 27/08/2021, mise à jour le 13/05/2025"
+    url: "https://has-sante.fr/jcms/c_2722827/fr/choix-et-durees-d-antibiotherapies-cystite-aigue-simple-a-risque-de-complication-ou-recidivante-de-la-femme"
+    consulte_le: 2026-11-25
+  - titre: "Santé.fr (ministère de la Santé), Antibio'Malin. Infection urinaire chez la femme, 05/06/2025"
+    url: "https://www.sante.fr/antibiomalin-pour-savoir-comment-bien-utiliser-les-antibiotiques/infection-urinaire-chez-la-femme-definition-diagnostic-traitement-prevention"
+    consulte_le: 2026-11-25
+  - titre: "Santé.fr. Angines et cystites : les pharmaciens peuvent délivrer sous certaines conditions des antibiotiques sans ordonnance, 20/06/2024"
+    url: "https://www.sante.fr/angines-et-cystites-les-pharmaciens-peuvent-delivrer-sous-certaines-conditions-des-antibiotiques"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments. MONURIL 3 g, granulés pour solution buvable en sachet (fosfomycine trométamol), RCP mis à jour le 25/07/2025"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67951706/extrait"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments. SELEXID 200 mg, comprimé pelliculé (pivmécillinam), RCP mis à jour le 27/05/2026"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/60670489/extrait"
+    consulte_le: 2026-11-25
+  - titre: "Antibioclic, outil d'aide à la prescription antibiotique (cystite de la femme et de l'enfant)"
+    url: "https://antibioclic.com/"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.quand-consulter}
+- Fièvre, frissons, douleur dans le bas du dos ou sur un côté, vomissements : l'infection a peut-être atteint le rein. Consultez le jour même.
+- Grande faiblesse, confusion ou peau marbrée : appelez le 15 (SAMU, service d'aide médicale urgente).
+- Vous êtes enceinte : consultez toujours un médecin.
+- Les signes durent ou s'aggravent après 3 jours de traitement, ou reviennent dans les 2 semaines : consultez.
+:::
+
+::: {.a-retenir}
+- Une bandelette urinaire (test sur les urines) permet de confirmer la cystite.
+- Le traitement de premier choix est un antibiotique, la fosfomycine, en une seule prise.
+- Avec de la fièvre ou une douleur dans le dos, ce n'est plus une cystite simple : consultez.
+:::
+
+### Qu'est-ce qu'une cystite simple ?
+
+La cystite est une infection de la vessie. Elle donne des brûlures en urinant et des envies fréquentes et pressantes d'uriner. Un peu de sang dans les urines est possible, sans être forcément grave.
+
+On parle de cystite simple quand il n'y a pas de fièvre ni de situation à risque. Ces situations à risque sont :
+
+- une grossesse ;
+- une anomalie des voies urinaires ;
+- des reins qui fonctionnent très mal ;
+- des défenses immunitaires très affaiblies ;
+- un âge de plus de 75 ans, ou plus de 65 ans avec une santé fragile.
+
+Le diabète, à lui seul, n'en fait pas partie.
+
+### Comment confirmer la cystite ?
+
+La bandelette urinaire est un test rapide. Vous recueillez un peu d'urine et vous y trempez la bandelette. Le résultat arrive en quelques minutes.
+
+- Test positif : il s'agit sans doute d'une cystite. Un antibiotique est en général nécessaire.
+- Test négatif : il faut un avis médical pour chercher une autre cause.
+
+Pour une cystite simple, une analyse d'urine au laboratoire n'est pas nécessaire au départ.
+
+En pharmacie, le test est possible pour les femmes de 16 à 65 ans, sans fièvre. S'il est positif, le pharmacien formé peut remettre l'antibiotique sans ordonnance.
+
+<!-- FIGURE À FAIRE : arbre de décision simple. En haut : « brûlures en urinant, envies fréquentes ». Question 1 : « fièvre, douleur dans le dos, grossesse ? » → oui : « consultez le jour même ». → non : « bandelette urinaire ». Bandelette positive → « antibiotique (fosfomycine en une prise) » ; négative → « avis médical ». Texte alternatif : « Que faire devant une cystite : vérifier l'absence de signes de gravité, faire une bandelette, un antibiotique seulement si elle est positive. » -->
+
+### Quels médicaments sont utilisés ?
+
+- En premier choix : la fosfomycine-trométamol, un sachet de 3 g en une seule prise.
+- En deuxième choix : le pivmécillinam, en comprimés pendant quelques jours.
+
+Les autres antibiotiques ne sont pas indiqués dans la cystite simple. Ces deux antibiotiques agissent contre la bactérie responsable de l'infection.
+
+Contre la douleur, le paracétamol ou le phloroglucinol (médicament contre les spasmes) peuvent aider. Respectez les doses conseillées.
+
+### Comment bien les prendre ?
+
+Fosfomycine :
+
+- dissolvez le sachet dans un verre d'eau et buvez-le tout de suite ;
+- prenez-le à jeun, 2 à 3 heures avant ou après un repas ;
+- de préférence le soir au coucher, après avoir vidé la vessie.
+
+Une seule prise suffit. Les signes s'améliorent en général en 2 à 3 jours.
+
+Pivmécillinam :
+
+- avalez le comprimé au milieu d'un repas, avec un grand verre d'eau, assise ou debout ;
+- ne vous allongez pas dans les 30 minutes qui suivent ;
+- prenez-le pendant toute la durée indiquée sur l'ordonnance.
+
+Buvez environ 1,5 litre d'eau par jour et ne vous retenez pas d'uriner.
+
+### Quels effets surveiller ?
+
+- Fosfomycine : diarrhée, nausées, maux de tête, mal au ventre. Une diarrhée importante ou qui dure doit faire consulter.
+- Pivmécillinam : il peut irriter l'œsophage s'il est mal avalé. Signalez si vous prenez du valproate (traitement de l'épilepsie ou de troubles de l'humeur).
+- Pour les deux : en cas de gonflement du visage ou de gêne pour respirer, appelez le 15.
+
+### Comment éviter une nouvelle cystite ?
+
+- Buvez suffisamment et urinez régulièrement.
+- Urinez après les rapports sexuels.
+- Essuyez-vous d'avant en arrière.
+- Évitez les spermicides.
+- Luttez contre la constipation.
+
+En cas de cystites fréquentes, parlez-en à votre médecin. La canneberge (cranberry) peut être proposée dans certains cas.
+
+### Ce qu'il vaut mieux éviter
+
+- Un reste d'antibiotique d'une ancienne boîte.
+- Un antibiotique sans bandelette positive ni avis médical.
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Signes d'alerte
+
+Fièvre, frissons, douleur lombaire souvent unilatérale ou signes digestifs évoquent une pyélonéphrite : consultation le jour même ; urgences en cas de signes de gravité (asthénie extrême, confusion, marbrures) (Antibio'Malin). Facteurs de risque de complication (HAS) : grossesse, anomalie organique ou fonctionnelle de l'arbre urinaire, insuffisance rénale sévère (DFG < 30 ml/min), immunodépression grave, âge > 75 ans, ou > 65 ans avec au moins 3 critères de fragilité de Fried. Le diabète n'est pas un facteur de risque de complication.
+
+### Stratégie thérapeutique
+
+Cystite aiguë simple (HAS, mise à jour 2025) :
+
+- Diagnostic clinique et bandelette urinaire (leucocytes, nitrites). Pas d'ECBU d'emblée ; ECBU si évolution défavorable après 3 jours ou récidive précoce dans les 2 semaines.
+- 1^re^ intention : fosfomycine-trométamol 3 g en prise unique.
+- 2^e^ intention : pivmécillinam 400 mg 2 fois par jour pendant 3 jours.
+- Les autres antibiotiques ne sont pas indiqués.
+
+Écart entre recommandation et AMM : le RCP de Selexid (mis à jour le 27/05/2026) indique 400 mg 2 fois par jour pendant 5 jours dans la cystite aiguë non compliquée, contre 3 jours dans la fiche HAS. [à compléter : arbitrage du relecteur sur la durée à afficher]
+
+Dispensation en officine sans ordonnance (depuis le 19 juin 2024) : femmes de 16 à 65 ans, cystite simple sans fièvre, bandelette positive, pharmacien formé ; attestation transmise via le DMP ou au médecin traitant.
+
+Cystite à risque de complication (HAS) : ECBU systématique ; traitement différé selon l'antibiogramme de préférence (amoxicilline, puis pivmécillinam, puis nitrofurantoïne, 7 jours) ; si le traitement ne peut être différé : nitrofurantoïne 100 mg 3 fois par jour pendant 7 jours, ou fosfomycine-trométamol 3 g à J1, J3 et J5. Nitrofurantoïne contre-indiquée si DFG < 45 ml/min ou en traitements répétés.
+
+Cystite récidivante (au moins 4 épisodes en 12 mois) : traitement de chaque épisode comme une cystite simple ; mesures préventives ; canneberge (36 mg/j de proanthocyanidines) possible en cas de cystites récidivantes à *E. coli* ; œstrogènes locaux après la ménopause sur avis gynécologique. Antibioprophylaxie si au moins 1 épisode par mois, après ECBU : fosfomycine-trométamol 3 g tous les 7 jours au plus, ou triméthoprime 150 mg/j au coucher (ou en péricoïtal) ; en 2^e^ intention cotrimoxazole 400/80 mg/j. Pas de nitrofurantoïne, de bêta-lactamines ni de fluoroquinolones en prophylaxie.
+
+### Mécanismes d'action
+
+- Fosfomycine : inhibition précoce de la synthèse de la paroi bactérienne (enzyme MurA) ; forte élimination urinaire sous forme active. [à compléter : RCP Monuril, rubriques 5.1 et 5.2]
+- Pivmécillinam : prodrogue du mécillinam, bêta-lactamine (amidinopénicilline) active surtout sur les entérobactéries. [à compléter : RCP Selexid, rubrique 5.1]
+
+### Précautions et effets indésirables
+
+- Fosfomycine-trométamol (RCP Monuril) : à jeun, 2 à 3 heures à distance d'un repas, de préférence au coucher après vidange vésicale ; non recommandée si clairance de la créatinine < 10 ml/min. Seule contre-indication : hypersensibilité. Association avec le métoclopramide à éviter (baisse des concentrations sériques et urinaires de fosfomycine). Effets fréquents : diarrhée, céphalées, vertiges, nausées, dyspepsie, douleurs abdominales, vulvovaginite. Rares mais graves : anaphylaxie, angio-œdème, colite à *Clostridioides difficile*.
+- Pivmécillinam (RCP Selexid) : contre-indiqué en cas d'affection retardant le transit œsophagien et de déficit génétique sévère en carnitine ; ne pas utiliser en cas de porphyrie ; prise au milieu d'un repas avec un grand verre d'eau, en position assise ou debout, sans s'allonger pendant 30 minutes (risque d'ulcération œsophagienne). Association déconseillée avec l'acide valproïque ou le valproate (déficit en carnitine : myopathie, hypoglycémie, cardiomyopathie, encéphalopathie). Prudence en cas de traitements longs ou répétés. Réactions cutanées graves rapportées ; rechercher une allergie aux bêta-lactamines.
+
+### Ce qu'il faut éviter
+
+- ECBU systématique dans la cystite simple.
+- Traitement d'une bactériurie asymptomatique (sauf grossesse et chirurgie urologique programmée).
+- Antibiotiques autres que fosfomycine-trométamol et pivmécillinam dans la cystite simple.
+- Fluoroquinolones et nitrofurantoïne en prophylaxie.
+
+### Outils et liens
+
+- [Antibioclic](https://antibioclic.com/), rubrique « Cystite de la femme et de l'enfant ».
+- [Fiche HAS cystite de la femme](https://has-sante.fr/jcms/c_2722827/fr/choix-et-durees-d-antibiotherapies-cystite-aigue-simple-a-risque-de-complication-ou-recidivante-de-la-femme).
+- Effets indésirables : déclaration sur [signalement.social-sante.gouv.fr](https://www.signalement.social-sante.gouv.fr) ou auprès du CRPV de Caen ou de Rouen.
+
+:::
+
+:::

@@ -1,0 +1,146 @@
+---
+title: "Quand prendre ses médicaments ?"
+description: "À jeun, au cours du repas, le matin, au coucher : ce que veulent dire ces consignes, et le moment de prise de médicaments courants, vérifié sur leur RCP."
+public: [patients, professionnels]
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "RCP et notice LEVOTHYROX 100 microgrammes, comprimé sécable (base de données publique des médicaments)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/68416845/extrait"
+    consulte_le: 2026-11-25
+  - titre: "RCP et notice ACIDE ALENDRONIQUE CRISTERS 70 mg, comprimé (base de données publique des médicaments)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67464926/extrait"
+    consulte_le: 2026-11-25
+  - titre: "RCP MOPRAL 20 mg, gélule gastro-résistante (base de données publique des médicaments)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/64103828/extrait"
+    consulte_le: 2026-11-25
+  - titre: "RCP INIPOMP 20 mg, comprimé gastro-résistant (base de données publique des médicaments)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/65220275/extrait"
+    consulte_le: 2026-11-25
+  - titre: "RCP GLUCOPHAGE 1000 mg, comprimé pelliculé sécable (base de données publique des médicaments)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/61052830/extrait"
+    consulte_le: 2026-11-25
+  - titre: "RCP CORTANCYL 5 mg, comprimé sécable (base de données publique des médicaments)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/60492702/extrait"
+    consulte_le: 2026-11-25
+  - titre: "RCP et notice ESIDREX 25 mg, comprimé sécable (base de données publique des médicaments)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/66153192/extrait"
+    consulte_le: 2026-11-25
+  - titre: "RCP et notice LASILIX 40 mg, comprimé sécable (base de données publique des médicaments)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/65606743/extrait"
+    consulte_le: 2026-11-25
+  - titre: "RCP ZOCOR 20 mg, comprimé pelliculé (base de données publique des médicaments)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67037301/extrait"
+    consulte_le: 2026-11-25
+  - titre: "RCP TAHOR 10 mg, comprimé pelliculé (base de données publique des médicaments)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67143532/extrait"
+    consulte_le: 2026-11-25
+  - titre: "RCP TARDYFERON 80 mg, comprimé pelliculé (base de données publique des médicaments)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/68269288/extrait"
+    consulte_le: 2026-11-25
+  - titre: "RCP et notice ADVIL 400 mg, comprimé enrobé (base de données publique des médicaments)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/63646874/extrait"
+    consulte_le: 2026-11-25
+  - titre: "Mackenzie IS et al. Cardiovascular outcomes in adults with hypertension with evening versus morning dosing of usual antihypertensives in the UK (TIME study). Lancet 2022;400:1417-25. doi:10.1016/S0140-6736(22)01786-X (accès libre, CC BY 4.0)"
+    url: "https://discovery.ucl.ac.uk/10157735/1/1-s2.0-S014067362201786X-main.pdf"
+    consulte_le: 2026-11-25
+---
+
+<!-- NOTE DE RÉDACTION (à retirer avant publication) : chaque ligne du tableau a été vérifiée sur le RCP ou la notice d'UNE spécialité représentative, citée dans la colonne Source. Les génériques et les autres dosages peuvent avoir une consigne différente : le relecteur vérifie que la spécialité citée reste représentative. Dates de mise à jour des RCP lues le 25/11/2026 : Levothyrox 04/03/2024 ; acide alendronique Cristers 01/10/2026 ; Mopral 25/08/2026 ; Inipomp 02/09/2025 ; Glucophage 10/02/2026 ; Cortancyl 30/01/2026 ; Esidrex 14/01/2022 ; Lasilix 27/10/2026 ; Zocor 25/06/2026 ; Tahor 27/01/2025 ; Tardyferon 12/09/2024 ; Advil 400 mg 13/02/2025. -->
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Le moment de prise écrit sur l'ordonnance ou dans la notice a une raison : suivez-le.
+- « À jeun » veut dire l'estomac vide : le plus souvent au lever, avant le petit-déjeuner.
+- Si l'horaire vous gêne, parlez-en à votre médecin ou à votre pharmacien.
+:::
+
+<!-- FIGURE À FAIRE : frise d'une journée (lever, petit-déjeuner, déjeuner, dîner, coucher). Sous chaque moment, un pictogramme des médicaments du tableau ci-dessous qui s'y rattachent (lévothyroxine et alendronate au lever, metformine aux repas, simvastatine le soir…). Texte alternatif : « Frise d'une journée montrant à quel moment prendre plusieurs médicaments courants ». -->
+
+### Pourquoi le moment de prise compte-t-il ?
+
+Le moment de prise peut changer l'effet d'un médicament. Certains passent moins bien dans le sang si vous mangez en même temps. D'autres irritent l'estomac quand il est vide. D'autres encore vous font uriner et gênent le sommeil si vous les prenez le soir.
+
+La consigne dépend donc de chaque médicament. Deux médicaments de la même famille peuvent même avoir des consignes différentes. Lisez toujours la notice de votre médicament.
+
+### Que veulent dire les consignes ?
+
+- **À jeun** : l'estomac est vide. En pratique, au lever, avant de manger ou de boire autre chose que de l'eau.
+- **Avant le repas** : avant de manger. Le délai change selon le médicament : une heure pour le pantoprazole, par exemple.
+- **Au cours du repas** : pendant que vous mangez, ou à la fin du repas.
+- **Le matin** : au lever ou au petit-déjeuner, selon la notice.
+- **Au coucher** : juste avant d'aller dormir.
+
+La notice donne le délai exact à respecter avant ou après le repas. Il se trouve dans la rubrique 3, « Comment prendre ».
+
+### Et si vous oubliez une prise ?
+
+La notice dit quoi faire en cas d'oubli, dans la rubrique 3. En cas de doute, demandez conseil à votre pharmacien. Il vous dira s'il faut prendre la dose oubliée ou attendre la suivante.
+
+### Le moment de prise de quelques médicaments courants
+
+Nous avons vérifié chaque ligne sur la notice ou sur le RCP (résumé des caractéristiques du produit) d'un médicament de référence. Le RCP est le document officiel destiné aux soignants. Un autre médicament de la même famille peut avoir une consigne différente.
+
+| Médicament (exemple vérifié) | Quand le prendre | Pourquoi | Source |
+|---|---|---|---|
+| Lévothyroxine (Levothyrox, hormone de la thyroïde) | Le matin à jeun, une demi-heure avant le petit-déjeuner, avec un peu d'eau. À plus de 2 heures du fer, du calcium et des pansements gastriques. | Le fer, le calcium et les pansements gastriques diminuent son passage dans le sang. Raison de la prise à jeun : [à compléter : source]. | RCP Levothyrox, rubriques 4.2 et 4.5 ; notice, rubrique 3 |
+| Alendronate (contre la fragilité des os) | Au lever, avant tout aliment, boisson ou autre médicament. Avec un grand verre d'eau du robinet. Attendre au moins 30 minutes avant de manger. Ne pas s'allonger pendant ces 30 minutes. Jamais au coucher. | Pris au petit-déjeuner, il ne passe presque pas dans le sang. Rester assis ou debout l'aide à descendre dans l'estomac et protège l'œsophage (le tube qui va de la bouche à l'estomac). | RCP acide alendronique 70 mg, rubriques 4.2, 4.4 et 5.2 |
+| Oméprazole (Mopral, réduit l'acidité de l'estomac) | Le matin. Gélule avalée entière avec un demi-verre d'eau, sans la mâcher. | Les aliments ne changent pas la quantité de médicament qui passe dans le sang. | RCP Mopral, rubriques 4.2 et 5.2 |
+| Pantoprazole (Inipomp, réduit l'acidité de l'estomac) | Une heure avant un repas. Comprimé avalé entier avec un peu d'eau. | Le RCP ne donne pas la raison : [à compléter : source]. | RCP Inipomp, rubriques 4.2 et 5.2 |
+| Metformine (Glucophage, contre le diabète) | Au cours ou à la fin des repas, en 2 ou 3 prises par jour. | Limite les troubles digestifs (nausées, diarrhée), fréquents en début de traitement. | RCP Glucophage, rubriques 4.2 et 4.8 |
+| Prednisone (Cortancyl, corticoïde) | Avec un peu d'eau, au cours d'un repas. En une prise, de préférence le matin. | Le RCP ne donne pas la raison : [à compléter : source]. | RCP Cortancyl, rubrique 4.2 |
+| Hydrochlorothiazide (Esidrex, diurétique) | En une prise : le matin. Pas de dernière prise tard dans la journée. Avec ou sans aliments. | Ce médicament fait uriner : le prendre tôt évite de se réveiller la nuit. | Notice Esidrex, rubrique 3 ; RCP, rubrique 4.2 |
+| Furosémide (Lasilix, diurétique) | Ni le RCP ni la notice ne donnent d'heure de prise. Suivez l'ordonnance. | Les aliments ralentissent son passage dans le sang, sans le diminuer. | RCP Lasilix, rubriques 4.2 et 5.2 ; notice, rubrique 3 |
+| Simvastatine (Zocor, contre le cholestérol) | Le soir, en une prise. Évitez le jus de pamplemousse. | Le RCP ne donne pas la raison de la prise du soir : [à compléter : source]. Le pamplemousse augmente beaucoup sa quantité dans le sang. | RCP Zocor, rubriques 4.2 et 4.5 |
+| Atorvastatine (Tahor, contre le cholestérol) | Une fois par jour, à n'importe quel moment, pendant ou en dehors des repas. | Pas de moment imposé par le RCP. | RCP Tahor, rubrique 4.2 |
+| Fer (Tardyferon, sulfate ferreux) | Avant ou pendant les repas. Comprimé avalé entier avec de l'eau, sans le sucer ni le mâcher. À au moins 2 heures du thé, du café et du vin rouge. | Certains aliments et boissons réduisent son passage dans le sang. Le fer gêne aussi certains antibiotiques et les hormones de la thyroïde. | RCP Tardyferon, rubriques 4.2, 4.5 et 5.2 |
+| Ibuprofène (Advil 400 mg, anti-inflammatoire) | Avalé sans croquer, avec un grand verre d'eau, de préférence au cours d'un repas. | Les anti-inflammatoires peuvent abîmer l'estomac. Ce risque augmente avec la dose. | RCP Advil 400 mg, rubriques 4.2 et 4.4 ; notice, rubrique 3 |
+
+### Faut-il prendre ses médicaments contre la tension le soir ?
+
+Une grande étude britannique a posé cette question. C'est l'étude TIME (en anglais « Treatment in Morning versus Evening », traitement le matin ou le soir). Elle a suivi plus de 21 000 adultes qui avaient une tension artérielle trop élevée.
+
+Un groupe prenait tous ses médicaments contre la tension le matin, l'autre le soir. Le suivi a duré environ 5 ans. Les chercheurs ont compté les hospitalisations pour crise cardiaque ou accident vasculaire cérébral, et les décès d'origine vasculaire.
+
+- Avec la prise du soir : environ 34 personnes sur 1 000 ont eu un de ces événements.
+- Avec la prise du matin : environ 37 personnes sur 1 000.
+
+Cet écart est trop faible pour conclure à une différence entre les deux horaires. Les auteurs concluent que vous pouvez prendre ces médicaments au moment qui vous convient. Choisissez celui qui vous gêne le moins.
+
+### Puis-je changer l'heure de mes médicaments ?
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien. Ils vérifieront que le nouvel horaire convient à chacun de vos médicaments.
+
+### Signaler un effet indésirable
+
+Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr).
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Points clés
+
+- Le moment de prise relève du RCP de la spécialité (rubrique 4.2, et 5.2 pour l'effet des aliments). Au sein d'une même classe, les consignes diffèrent : le RCP de Mopral (oméprazole) recommande une prise le matin sans référence au repas, celui d'Inipomp (pantoprazole) une prise une heure avant un repas ; pour les deux, la rubrique 5.2 indique que les aliments ne modifient pas la biodisponibilité.
+- Le RCP de Zocor écrit que la simvastatine « peut être administrée le soir » : c'est une possibilité, pas une obligation. Le RCP de Tahor autorise la prise à tout moment de la journée.
+- Le RCP de Lasilix ne précise aucun horaire ; la consigne de prise matinale d'un diurétique figure dans la notice d'Esidrex (hydrochlorothiazide), pour éviter les réveils nocturnes.
+- Les intervalles avec les sels de fer, de calcium et les topiques gastro-intestinaux (plus de 2 heures si possible) sont ceux du RCP et du Thésaurus de l'ANSM ; voir [Les interactions à connaître](interactions.qmd).
+
+### Étude TIME (Lancet 2022)
+
+Essai pragmatique, randomisé, ouvert, avec évaluation en aveugle des événements, mené au Royaume-Uni. 21 104 adultes hypertendus traités par au moins un antihypertenseur ont été répartis entre une prise de tous leurs antihypertenseurs le matin (6 h-10 h, n = 10 601) ou le soir (20 h-0 h, n = 10 503). Critère principal : décès vasculaire ou hospitalisation pour infarctus du myocarde ou accident vasculaire cérébral non mortels. Suivi médian : 5,2 ans.
+
+Événements du critère principal : 362 (3,4 %) avec la prise du soir et 390 (3,7 %) avec la prise du matin ; hazard ratio non ajusté 0,95 (IC 95 % 0,83-1,10 ; p = 0,53). Aucun signal de sécurité. Conclusion des auteurs : la prise du soir ne diffère pas de la prise du matin sur les événements cardiovasculaires majeurs ; le patient peut prendre ses antihypertenseurs au moment qui lui convient et limite les effets indésirables.
+
+:::
+
+:::

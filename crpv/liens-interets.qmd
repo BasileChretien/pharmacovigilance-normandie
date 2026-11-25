@@ -1,0 +1,13 @@
+---
+title: "Liens d'intérêts"
+description: "Les déclarations d'intérêts des membres des CRPV de Caen et de Rouen."
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+---
+
+Les membres des centres qui participent à des expertises publiques déposent une déclaration publique d'intérêts sur le site officiel de l'État prévu à cet effet. Cette page renverra vers ces déclarations. [Liens à compléter.]
+
+Les auteurs et les relecteurs des pages du site déclarent aussi leurs liens d'intérêts, selon la [politique éditoriale](../a-propos/politique-editoriale.qmd).

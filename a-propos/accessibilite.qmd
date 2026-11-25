@@ -1,0 +1,30 @@
+---
+title: "Accessibilité"
+description: "État de conformité du site au référentiel général d'amélioration de l'accessibilité (RGAA)."
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "RGAA, référentiel général d'amélioration de l'accessibilité"
+    url: "https://accessibilite.numerique.gouv.fr/"
+    consulte_le: 2026-11-25
+---
+
+## État de conformité
+
+Le site vise la conformité au RGAA 4.1.2. **Aucun audit n'a encore été réalisé** : le site est donc non conforme à ce jour. Un audit sera fait avant la mise en ligne, puis une fois par an.
+
+## Ce qui est déjà en place
+
+- Des contrôles automatiques à chaque modification : contrastes des couleurs, textes alternatifs, structure des titres, validité du code.
+- Des polices du système, une taille de texte de 17 pixels, des lignes courtes.
+- Un focus visible au clavier sur tous les liens et boutons.
+- Des figures accompagnées d'un texte qui dit la même chose.
+
+Les outils automatiques ne détectent qu'une partie des problèmes. L'audit et des tests avec des utilisateurs restent nécessaires.
+
+## Signaler un problème
+
+[Adresse de contact à compléter.] Si vous n'obtenez pas de réponse, vous pouvez saisir le Défenseur des droits.

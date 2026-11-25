@@ -1,0 +1,123 @@
+---
+title: "Les médicaments chez l'enfant"
+description: "Doser selon le poids, choisir une forme adaptée, ne jamais donner un médicament pour adulte, ranger les médicaments hors de portée et savoir qui appeler en cas d'intoxication."
+public: [patients, professionnels]
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "ANSM, Résumé des caractéristiques du produit DOLIPRANE 2,4 POUR CENT, suspension buvable (paracétamol)"
+    url: "https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0405755.htm"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Savez-vous bien utiliser le paracétamol contre la douleur et la fièvre ?, 18 octobre 2021"
+    url: "https://ansm.sante.fr/actualites/savez-vous-bien-utiliser-le-paracetamol-contre-la-douleur-et-la-fievre"
+    consulte_le: 2026-11-25
+  - titre: "HAS, Prise en charge médicamenteuse de la douleur chez l'enfant : alternatives à la codéine, 2016"
+    url: "https://www.has-sante.fr/jcms/c_2010340/fr/prise-en-charge-medicamenteuse-de-la-douleur-chez-l-enfant-alternatives-a-la-codeine"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Décès d'enfants suite à l'ingestion accidentelle de méthadone : rappel des règles de bon usage, 15 décembre 2021"
+    url: "https://ansm.sante.fr/actualites/deces-denfants-suite-a-lingestion-accidentelle-de-methadone-rappel-des-regles-de-bon-usage"
+    consulte_le: 2026-11-25
+  - titre: "Sante.fr, Normandie : numéros utiles en cas d'urgence"
+    url: "https://www.sante.fr/node/1488679"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Résumé des caractéristiques du produit AGIOLAX, granulés (séné et ispaghul)"
+    url: "https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0405189.htm"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments, THIOCOLCHICOSIDE BIOGARAN 4 mg, comprimé (RCP)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67136662/extrait"
+    consulte_le: 2026-11-25
+  - titre: "Ordre national des pharmaciens, Compléments alimentaires contenant de la mélatonine : certaines populations doivent en éviter la consommation selon l'Anses, 19 avril 2018"
+    url: "https://www.ordre.pharmacien.fr/les-communications/focus-sur/les-actualites/complements-alimentaires-contenant-de-la-melatonine-certaines-populations-doivent-en-eviter-la-consommation-selon-l-anses"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Chez l'enfant, la dose dépend du poids : pesez votre enfant et suivez la notice.
+- Ne donnez jamais à un enfant un médicament prévu pour un adulte sans avis.
+- Rangez tous les médicaments en hauteur, hors de vue et de portée.
+:::
+
+::: {.quand-consulter}
+- Votre enfant a moins de 3 mois et il a de la fièvre [à compléter : source].
+- La fièvre dure plus de 3 jours, ou la douleur plus de 5 jours.
+- Votre enfant est très somnolent, difficile à réveiller, ou respire mal : appelez le 15.
+- Votre enfant a avalé un médicament qui n'était pas pour lui ? Appelez le centre antipoison au **02 41 48 21 21**.
+:::
+
+### Pourquoi la dose dépend-elle du poids ?
+
+Un enfant n'est pas un adulte en plus petit. Son corps transforme et élimine les médicaments autrement. La dose se calcule donc selon son poids, et non selon son âge. Pesez votre enfant avant de lui donner un médicament.
+
+Prenons l'exemple du paracétamol en sirop pour enfant. La seringue doseuse est graduée en kilos. Vous la remplissez jusqu'au poids de votre enfant. Vous pouvez redonner une dose 6 heures plus tard si besoin, sans dépasser 4 doses par jour.
+
+<!-- FIGURE À FAIRE : dessin d'une seringue doseuse graduée en kilos, remplie jusqu'au trait correspondant au poids de l'enfant, avec une horloge indiquant « 6 heures entre deux doses » et « 4 doses par jour au plus ». Couleurs lisibles par les personnes daltoniennes. -->
+
+### Quelle forme choisir ?
+
+Les jeunes enfants ont souvent du mal à avaler un comprimé. Il existe des formes adaptées : sirops, suspensions buvables, sachets à diluer, suppositoires. Utilisez toujours la seringue ou la cuillère fournie avec le médicament. Ne l'utilisez jamais pour un autre médicament : les graduations ne sont pas les mêmes.
+
+### Pourquoi ne pas donner un médicament pour adulte ?
+
+Un comprimé pour adulte contient souvent trop de produit pour un enfant. Certains médicaments sont même interdits chez l'enfant. Par exemple, la codéine (un antidouleur) ne doit jamais être donnée avant 12 ans. Certains laxatifs à base de séné sont interdits avant 12 ans. Demandez toujours conseil au pharmacien ou au médecin.
+
+### Comment éviter une intoxication accidentelle ?
+
+Les jeunes enfants portent tout à la bouche. Pour les protéger :
+
+- rangez les médicaments en hauteur, dans une armoire fermée, si possible à clé ;
+- ne sortez pas les comprimés de leur plaquette à l'avance ;
+- ne prenez pas vos médicaments devant vos enfants ;
+- refermez le flacon après chaque utilisation ;
+- pensez aux médicaments des grands-parents et des visiteurs.
+
+### Que faire si votre enfant a avalé un médicament ?
+
+Gardez votre calme. Appelez le centre antipoison d'Angers au 02 41 48 21 21, ouvert à toute heure [à compléter : source pour l'ouverture 24 h/24]. Gardez la boîte à portée de main. Si votre enfant est somnolent, respire mal ou a des convulsions (secousses du corps), appelez le 15 ou le 112.
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Posologie pondérale : l'exemple du paracétamol
+
+RCP de la suspension buvable pédiatrique à 2,4 % (3 à 26 kg) : 60 mg/kg/j répartis en 4 ou 6 prises, soit environ 15 mg/kg toutes les 6 heures, sans dépasser 4 prises par jour. La seringue est graduée par demi-kilogramme et strictement réservée à cette suspension. Maximum journalier (rubrique 4.4) : 80 mg/kg/j sous 40 kg. L'ANSM rappelle pour le grand public de ne pas dépasser 2 g/j sous 40 kg, et que plus de 200 spécialités contiennent du paracétamol. Surdosage : facteurs de risque (jeune enfant, réserves basses en glutathion), dosage plasmatique au moins 4 heures après l'ingestion, N-acétylcystéine le plus tôt possible.
+
+### Antalgiques chez l'enfant (HAS 2016)
+
+- **Paracétamol** : première intention pour les douleurs faibles à modérées.
+- **Ibuprofène** : AINS de première intention en pédiatrie pour la plupart des douleurs aiguës modérées à intenses, 20 à 30 mg/kg/j par voie orale, sur 48 à 72 heures.
+- **Codéine** : ne plus l'utiliser avant 12 ans, ni après amygdalectomie ou adénoïdectomie, ni chez la femme qui allaite ; après 12 ans, seulement après échec du paracétamol et/ou d'un AINS.
+- **Tramadol** : alternative possible à partir de 3 ans dans certaines douleurs intenses (métabolisme CYP2D6, effets graves possibles).
+- **Morphine orale** : référence des douleurs intenses ; dose initiale de 0,1 mg/kg par prise avant 1 an, surveillance d'une heure après la première prise.
+
+### Médicaments « adultes » à ne pas utiliser chez l'enfant (exemples sourcés)
+
+- Codéine avant 12 ans (HAS 2016).
+- Laxatifs anthracéniques (séné) : contre-indiqués avant 12 ans, déconseillés de 12 à 15 ans (RCP cité).
+- Thiocolchicoside : non indiqué avant 16 ans (RCP cité).
+- Compléments alimentaires de mélatonine : déconseillés chez l'enfant et l'adolescent (Anses 2018 ; voir la page Insomnie).
+
+### Prévention des expositions accidentelles
+
+L'ANSM a rapporté des décès d'enfants après ingestion accidentelle de méthadone (décembre 2021). Elle recommande de conserver le médicament hors de portée, en hauteur et si possible sous clé. Elle demande aussi de ne jamais préparer les doses à l'avance et de ne pas le prendre devant les enfants. En cas d'ingestion d'opioïde : appeler le 15, le 18 ou le 112, administrer de la naloxone intranasale si disponible et garder la personne éveillée. Ces règles s'appliquent à tout médicament à risque au domicile.
+
+### Outils et liens
+
+- Centre antipoison d'Angers : 02 41 48 21 21 (numéro listé pour la Normandie par sante.fr).
+- Déclaration d'effet indésirable ou d'erreur médicamenteuse : CRPV de Caen ou de Rouen, ou signalement.social-sante.gouv.fr.
+
+:::
+
+:::

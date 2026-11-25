@@ -1,0 +1,23 @@
+---
+title: "Enseignement et stages"
+description: "Les enseignements de pharmacologie et les stages proposés par les CRPV de Caen et de Rouen."
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+---
+
+## Enseignements
+
+Les équipes enseignent la pharmacologie et la pharmacovigilance aux étudiants en médecine, en pharmacie et en maïeutique des facultés de santé de Caen et de Rouen. [Liste des enseignements et des diplômes à compléter.]
+
+La page [Lire un RCP](../comprendre/lire-un-rcp.qmd) et la page [Que veulent dire « fréquent » et « rare » ?](../comprendre/frequences.qmd) peuvent servir de support de cours.
+
+## Stages
+
+Les centres accueillent des externes et des internes. [Conditions, durée et contacts à compléter.]
+
+## Nous rejoindre
+
+[Postes et stages ouverts, à publier ici.]

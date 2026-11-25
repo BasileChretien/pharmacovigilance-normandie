@@ -1,0 +1,57 @@
+---
+title: "Déclarer un effet indésirable"
+description: "Qui peut déclarer, quoi déclarer, comment, et ce qui se passe ensuite."
+public: [patients, professionnels]
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "Portail de signalement des événements sanitaires indésirables"
+    url: "https://signalement.social-sante.gouv.fr"
+    consulte_le: 2026-11-25
+---
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Tout le monde peut déclarer : patients, proches et professionnels.
+- Déclarez même si vous n'êtes pas sûr que le médicament soit en cause.
+- La déclaration se fait en ligne sur le portail de signalement.
+:::
+
+```{=html}
+<p><a class="btn btn-primary btn-lg" href="https://signalement.social-sante.gouv.fr">Déclarer sur signalement.social-sante.gouv.fr</a></p>
+```
+
+### Qui peut déclarer ?
+
+Vous pouvez déclarer vous-même un effet indésirable, pour vous ou pour un proche. Les professionnels de santé peuvent aussi déclarer. Votre médecin ou votre pharmacien peut vous aider.
+
+### Que faut-il déclarer ?
+
+Un effet qui vous semble lié à un médicament, même si vous avez un doute. Par exemple : une éruption sur la peau, un malaise ou une chute, un effet inattendu. Un effet déjà écrit dans la notice peut aussi être déclaré.
+
+### Comment déclarer ?
+
+Allez sur le portail [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr). Préparez si possible :
+
+- le nom du médicament et sa dose ;
+- les dates de début et d'arrêt du traitement ;
+- la date de l'effet et son évolution ;
+- l'âge et le sexe de la personne ;
+- les autres médicaments pris en même temps.
+
+### Que se passe-t-il ensuite ?
+
+La déclaration arrive au centre régional de pharmacovigilance de votre région. À Caen ou à Rouen, un pharmacologue l'analyse. Il peut vous recontacter pour en savoir plus. Le cas est enregistré, sans votre nom, dans la base nationale. Ces données servent à repérer des risques et à protéger les autres patients.
+
+### En cas d'urgence
+
+En cas de malaise grave ou de gêne pour respirer, appelez le 15 (SAMU) ou le 112. En cas d'intoxication, appelez le centre antipoison d'Angers au 02 41 48 21 21.
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+:::
+
+Pour comprendre à quoi servent les déclarations, lisez [Pourquoi déclarer un effet indésirable ?](comprendre/pourquoi-declarer.qmd)

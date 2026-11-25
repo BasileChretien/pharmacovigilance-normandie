@@ -1,0 +1,37 @@
+---
+title: "Accès et contacts"
+description: "Adresses, téléphones et courriels des CRPV de Caen et de Rouen."
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "ANSM, liste des centres régionaux de pharmacovigilance"
+    url: "https://ansm.sante.fr/page/liste-des-centres-regionaux-de-pharmacovigilance"
+    consulte_le: 2026-11-25
+---
+
+Les coordonnées ci-dessous viennent d'annuaires publics. Elles sont à vérifier auprès de chaque centre avant publication.
+
+## CRPV de Caen
+
+Calvados (14), Manche (50), Orne (61)
+
+- **Adresse** : CHU de Caen Normandie, site Côte de Nacre, niveau 3, avenue de la Côte de Nacre, 14033 Caen cedex 9 [à vérifier]
+- **Téléphone** : 02 31 06 46 72 [à vérifier]
+- **Courriel** : pharmacovigilance@chu-caen.fr [à vérifier]
+- **Horaires** : [à compléter]
+- **Page actuelle sur le site du CHU** : [chu-caen.fr/pharmacologie](http://www.chu-caen.fr/pharmacologie.html)
+
+## CRPV de Rouen
+
+Eure (27), Seine-Maritime (76)
+
+- **Adresse** : CHU de Rouen, hôpital Charles-Nicolle, Institut de biologie clinique [adresse complète à vérifier]
+- **Téléphone** : [à compléter]
+- **Courriel** : pharmacovigilance@chu-rouen.fr [à vérifier]
+- **Horaires** : [à compléter]
+- **Page actuelle sur le site du CHU** : [chu-rouen.fr/service/pharmacovigilance](https://www.chu-rouen.fr/service/pharmacovigilance/)
+
+<!-- FIGURE À FAIRE : plan d'accès de chaque centre (image libre de droits ou plan du CHU avec autorisation) -->

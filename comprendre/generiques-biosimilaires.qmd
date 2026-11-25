@@ -1,0 +1,138 @@
+---
+title: "Génériques et biosimilaires"
+description: "Ce que sont un générique et un biosimilaire, les règles de substitution en pharmacie en France, et quand un changement de marque demande de la vigilance."
+public: [patients, professionnels]
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "Ministère chargé de la santé (sante.fr), Des médicaments sûrs et efficaces : les médicaments génériques (publié le 04/12/2024)"
+    url: "https://www.sante.fr/node/1134041"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Médicaments génériques et substitution"
+    url: "https://ansm.sante.fr/documents/reference/medicaments-generiques-et-substitution"
+    consulte_le: 2026-11-25
+  - titre: "Ordre national des pharmaciens, Droit de substitution générique en officine"
+    url: "https://www.ordre.pharmacien.fr/je-suis/pharmacien/pharmacien/mon-exercice-professionnel/les-fiches-professionnelles/droit-de-substitution-generique-en-officine"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Médicaments biosimilaires"
+    url: "https://ansm.sante.fr/qui-sommes-nous/notre-perimetre/les-medicaments/p/medicaments-biosimilaires"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Avis du 26/11/2024 sur les conditions de mise en œuvre de la substitution au sein des groupes biologiques similaires tériparatide, étanercept et adalimumab"
+    url: "https://ansm.sante.fr/actualites/avis-de-lansm-en-date-du-26-11-2024-les-conditions-de-mise-en-oeuvre-de-la-substitution-au-sein-des-groupes-biologiques-similaires-teriparatide-etanercept-et-adalimumab"
+    consulte_le: 2026-11-25
+  - titre: "Ordre national des pharmaciens, Nouvelle liste des groupes biologiques similaires substituables (06/03/2025)"
+    url: "https://www.ordre.pharmacien.fr/les-communications/focus-sur/les-actualites/nouvelle-liste-des-groupes-biologiques-similaires-substituables"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Médicaments à base de lévothyroxine : les études menées et les analyses en laboratoire"
+    url: "https://ansm.sante.fr/dossiers-thematiques/les-medicaments-a-base-de-levothyroxine-disponibles-en-france-1/les-etudes-menees-et-les-analyses-en-laboratoire"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Un générique contient la même substance active, à la même dose, que le médicament d'origine.
+- Un biosimilaire est très proche d'un médicament biologique, sans en être une copie exacte.
+- Pour certains médicaments, un changement de marque demande plus d'attention : parlez-en à votre pharmacien.
+:::
+
+### Qu'est-ce qu'un générique ?
+
+Un générique contient la même quantité de la même substance active que le médicament d'origine. La substance active est le composant qui agit. Le générique peut avoir une autre taille, une autre forme, une autre couleur ou un autre goût.
+
+Pour être autorisé, un générique doit être bioéquivalent. Cela veut dire qu'il passe dans le sang en même quantité et à la même vitesse que le médicament d'origine. Ces essais sont contrôlés par l'Agence nationale de sécurité du médicament et des produits de santé (ANSM) et ses homologues européens.
+
+<!-- FIGURE À FAIRE : deux boîtes côte à côte, « médicament d'origine » et « générique », d'aspect différent. Au centre, ce qui est identique (substance active, dose). Sur les côtés, ce qui peut changer (forme, couleur, goût, excipients). En dessous, deux courbes de concentration dans le sang superposées pour illustrer la bioéquivalence. -->
+
+### Les autres composants peuvent-ils changer ?
+
+Oui. Un médicament contient aussi des excipients (des composants sans action sur la maladie). Certains sont dits « à effet notoire » : ils peuvent être mal tolérés par des personnes sensibles. Le plus souvent, le générique a les mêmes que le médicament d'origine. Ils sont toujours indiqués sur la boîte et dans la notice. En cas de doute, demandez à votre pharmacien.
+
+### Le pharmacien peut-il changer mon médicament ?
+
+Oui, il peut vous donner un générique à la place du médicament prescrit. Votre médecin peut s'y opposer, mais seulement dans trois cas précis :
+
+- un enfant de moins de 6 ans, quand aucun générique n'a une forme adaptée ;
+- une contre-indication à un excipient présent dans tous les génériques ;
+- certains médicaments à marge thérapeutique étroite, chez une personne bien équilibrée.
+
+Il écrit alors « non substituable » sur l'ordonnance, avec le motif. Vous pouvez aussi refuser le générique. Dans ce cas, vous devez avancer les frais à la pharmacie. [à compléter : base de remboursement en cas de refus, source ameli]
+
+### Qu'est-ce qu'un biosimilaire ?
+
+Un médicament biologique est fabriqué à partir de cellules vivantes. Un biosimilaire est très proche d'un médicament biologique déjà autorisé. Il n'en est pas une copie exacte. Il est produit avec d'autres matières premières et un autre procédé de fabrication. Ce n'est donc pas un générique.
+
+Pour certains biosimilaires, le pharmacien peut désormais changer le médicament prescrit. Il doit alors vous prévenir et prévenir votre médecin. Il vous explique comment conserver et utiliser le nouveau produit. Vous pouvez refuser, comme pour un générique.
+
+### Quand un changement demande-t-il de l'attention ?
+
+Certains médicaments ont une marge thérapeutique étroite. Cela veut dire que la bonne dose est proche d'une dose trop faible ou trop forte. C'est le cas de la lévothyroxine (pour la thyroïde), de certains médicaments contre l'épilepsie et de certains médicaments contre le rejet de greffe.
+
+Pour ces médicaments, un changement de marque peut justifier une surveillance. Votre médecin peut par exemple vous demander une prise de sang quelques semaines après.
+
+Quelques conseils :
+
+- Vérifiez le nom de la substance active sur chaque boîte. Vous éviterez de prendre deux fois le même médicament sous deux noms.
+- Si l'aspect de vos comprimés change, demandez à votre pharmacien pourquoi.
+- Si vous ressentez un changement après un changement de marque, parlez-en à votre médecin ou à votre pharmacien. Vous pouvez aussi le [déclarer](../declarer.qmd).
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+> Le cadre réglementaire de la substitution évolue vite, en particulier pour les biosimilaires. Vérifier les textes en vigueur sur Légifrance avant toute mise en ligne.
+
+### Génériques
+
+Définition légale : [à compléter : article L. 5121-1, 5° du code de la santé publique, sur Légifrance]. Le générique contient la même quantité de la même substance active que la spécialité de référence et doit en démontrer la bioéquivalence (biodisponibilité équivalente), par des essais conduits sur la forme finale. L'ANSM et ses homologues européens inspectent ces essais. Une inspection défavorable peut conduire à invalider les essais, puis à suspendre ou retirer l'AMM. Critères statistiques d'acceptation : [à compléter : EMA, Guideline on the investigation of bioequivalence].
+
+La substitution ne concerne que les spécialités inscrites au répertoire des groupes génériques de l'ANSM.
+
+### Substitution d'un générique (art. L. 5125-23 CSP)
+
+- Au sein d'un même groupe générique du répertoire, sans dépense supplémentaire pour l'Assurance maladie (art. L. 162-16 CSS).
+- Le pharmacien vérifie qu'un excipient à effet notoire ne crée pas de contre-indication pour le patient.
+- Exclusion par le prescripteur : mention expresse et justifiée, pour chaque spécialité, sur l'ordonnance manuscrite ou informatisée (arrêtés du 12 novembre 2019 et du 20 juillet 2022) :
+  - **non substituable (EFG)** : enfant de moins de 6 ans, aucun générique n'ayant de forme galénique adaptée, le princeps le permettant ;
+  - **non substituable (CIF)** : contre-indication formelle et démontrée à un excipient à effet notoire présent dans tous les génériques disponibles, absent du princeps ;
+  - **non substituable (MTE)** : médicament à marge thérapeutique étroite, patient stabilisé, hors phase d'adaptation.
+- Liste MTE (selon l'Ordre des pharmaciens) : lamotrigine, prégabaline, zonisamide, lévétiracétam, topiramate, valproate de sodium, lacosamide, oxcarbazépine, lévothyroxine, buprénorphine, azathioprine, ciclosporine, évérolimus, mycophénolate mofétil, mycophénolate sodique. [à compléter : vérifier la liste en vigueur dans l'arrêté.]
+- Pour ces molécules, le pharmacien peut lui-même écarter la substitution : mention « non substituable (MTE-PH) » et information du prescripteur.
+- Refus du patient sans mention valable : le pharmacien respecte ce refus, le patient perd le bénéfice du tiers payant.
+
+### Biosimilaires
+
+Un biosimilaire est similaire à un médicament biologique de référence autorisé en Europe depuis plus de 8 ans et dont le brevet est tombé dans le domaine public. Matières premières, procédés de fabrication et procédure d'AMM diffèrent de ceux des génériques : les deux ne sont pas comparables (ANSM).
+
+**Interchangeabilité** (initiative du prescripteur, à tout moment du traitement) : informer le patient et recueillir son accord, assurer une surveillance clinique appropriée, assurer la traçabilité.
+
+**Substitution par le pharmacien** (art. L. 5125-23-2 CSP, modifié par l'article 54 de la loi n° 2023-1250 du 26 décembre 2023, LFSS 2024) :
+
+- spécialité du même groupe biologique similaire ;
+- groupe inscrit sur la liste fixée par arrêté, avec ses éventuelles conditions de substitution et d'information ;
+- pas d'exclusion par le prescripteur (mention expresse et justifiée) ;
+- le pharmacien inscrit le nom du médicament délivré sur l'ordonnance, informe le prescripteur et le patient, enregistre nom et numéro de lot, et assure la continuité de la dispensation.
+
+L'ANSM rend un avis par groupe. Exemple (avis du 26/11/2024) : pour l'adalimumab, pas de substitution par un biosimilaire dont le volume d'injection serait supérieur à celui du médicament prescrit. Le patient peut revenir au produit initial si besoin.
+
+Liste des groupes substituables : arrêté du 20 février 2025 (neuf groupes, d'après l'Ordre des pharmaciens), modifié depuis [à compléter : arrêté en vigueur et liste des groupes, sur Légifrance ; des sources professionnelles secondaires signalent des arrêtés d'avril et de septembre 2026]. L'inscription d'un groupe sur la liste de référence de l'ANSM ne vaut pas inscription sur la liste des groupes substituables.
+
+### Changement de spécialité : points de vigilance
+
+- Médicaments à marge thérapeutique étroite : surveillance clinique et, si besoin, biologique après le changement. Pour la lévothyroxine, l'ANSM recommande d'attendre environ six semaines après tout changement de traitement avant le dosage, et de consulter si les symptômes persistent.
+- Risque de confusion entre conditionnements (double prise, arrêt involontaire) : vérifier la DCI (dénomination commune internationale) avec le patient.
+- En pharmacovigilance, préciser le nom de spécialité, le laboratoire et le numéro de lot, en particulier pour les médicaments biologiques.
+
+:::
+
+:::

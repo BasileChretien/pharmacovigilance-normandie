@@ -1,0 +1,23 @@
+---
+title: "Formations et événements"
+description: "Enseignements, interventions auprès des équipes de soins et journées régionales proposés par les CRPV de Caen et de Rouen."
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+---
+
+## Pour les étudiants
+
+Les CRPV participent aux enseignements de pharmacologie des facultés de santé de Caen et de Rouen, et accueillent des stagiaires. Voir [Enseignement et stages](../crpv/enseignement.qmd).
+
+## Pour les équipes de soins
+
+Les centres peuvent intervenir auprès des communautés professionnelles territoriales de santé (CPTS), des EHPAD et des services hospitaliers : effets indésirables à repérer, déclaration, bon usage.
+
+[Modalités de demande à compléter.]
+
+## Agenda
+
+[Les prochaines dates seront publiées ici.]

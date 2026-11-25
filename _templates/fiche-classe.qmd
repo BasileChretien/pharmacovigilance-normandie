@@ -1,0 +1,87 @@
+---
+title: "Les [classe de médicaments]"
+description: "[Une phrase : ce que la fiche apporte au patient et au professionnel.]"
+public: [patients, professionnels]
+classe: "[nom court de la classe]"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "[Source officielle : RCP via la base de données publique des médicaments, ANSM, HAS, EMA…]"
+    url: "[URL]"
+    consulte_le: AAAA-MM-JJ
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- [Message 1, une phrase courte]
+- [Message 2]
+- [Message 3 au plus]
+:::
+
+### À quoi sert ce traitement ?
+
+[Deux ou trois phrases courtes.]
+
+### Comment le prendre ?
+
+[Moment de prise, avec ou sans repas, durée. Que faire en cas d'oubli.]
+
+### Quels effets indésirables ?
+
+[Les fréquents sans gravité, en fréquences naturelles : « environ 1 personne sur 10 ».]
+
+::: {.quand-consulter}
+- [Signe qui doit faire appeler un médecin]
+- [Signe d'urgence : appelez le 15]
+:::
+
+### Avec quels médicaments faut-il être prudent ?
+
+[Médicaments et produits à éviter, automédication comprise.]
+
+### Grossesse, allaitement, conduite
+
+[Messages clés, renvoi vers le CRAT pour la grossesse.]
+
+### Puis-je arrêter mon traitement ?
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+### Signaler un effet indésirable
+
+Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr).
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Points clés de sécurité
+
+### Surveillance
+
+### Interactions majeures
+
+[Avec le niveau du Thésaurus de l'ANSM.]
+
+### Adaptation des doses
+
+[Insuffisance rénale, hépatique, sujet âgé.]
+
+### Pièges fréquents
+
+[À compléter par le CRPV à partir de cas anonymisés.]
+
+### Mesures de réduction du risque
+
+:::
+
+:::

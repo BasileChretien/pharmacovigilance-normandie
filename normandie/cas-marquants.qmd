@@ -1,0 +1,20 @@
+---
+title: "Cas marquants normands"
+description: "Des cas d'effets indésirables anonymisés, choisis par les CRPV pour ce qu'ils apprennent aux professionnels."
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+---
+
+Chaque cas est anonymisé : aucun nom, aucune date précise, aucun lieu ni détail qui permettrait de reconnaître la personne. Il est publié avec l'accord du CRPV qui l'a analysé, souvent après sa parution dans [Vigiking](../vigiking/index.qmd).
+
+## Format d'un cas
+
+1. **Le cas** : âge approximatif, contexte, médicaments, effet, évolution.
+2. **L'analyse** : chronologie, autres causes possibles, données connues sur le médicament.
+3. **Ce qu'il faut retenir** : trois points au plus pour la pratique.
+4. **Références.**
+
+[Les premiers cas seront choisis par les CRPV de Caen et de Rouen.]

@@ -1,0 +1,14 @@
+_site/
+.quarto/
+/.luarc.json
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+*_files/
+.venv/
+
+/.quarto/
+**/*.quarto_ipynb
+.coverage
+.claude/

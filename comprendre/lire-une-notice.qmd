@@ -1,0 +1,99 @@
+---
+title: "Lire une notice"
+description: "Les six rubriques de la notice d'un médicament, ce qu'il faut chercher dans chacune, et comment lire la liste des effets indésirables."
+public: [patients]
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "EMA, modèle QRD de l'information produit (RCP, étiquetage, notice), version 10.4, février 2024, version française"
+    url: "https://www.ema.europa.eu/fr/documents/template-form/qrd-product-information-template-version-104-highlighted_fr.pdf"
+    consulte_le: 2026-11-25
+  - titre: "EMA, QRD product information annotated template, version 10.3 (notice, rubrique 4 : convention de fréquence)"
+    url: "https://www.ema.europa.eu/en/documents/template-form/qrd-product-information-annotated-template-english-version-103_en.pdf"
+    consulte_le: 2026-11-25
+  - titre: "EMA, Eliquis : information produit en français (exemple de libellés de fréquence dans une notice)"
+    url: "https://www.ema.europa.eu/fr/documents/product-information/eliquis-epar-product-information_fr.pdf"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments (ANSM, HAS, UNCAM)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/"
+    consulte_le: 2026-11-25
+---
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- La notice a toujours six rubriques, dans le même ordre.
+- Un effet cité dans la notice peut arriver, mais la plupart des personnes ne l'ont pas.
+- La notice la plus récente se trouve sur la base de données publique des médicaments.
+:::
+
+### Qu'est-ce qu'une notice ?
+
+La notice est le papier plié dans la boîte du médicament. Elle est écrite pour vous, pas pour les professionnels. Son plan suit un modèle européen. Il est le même pour tous les médicaments. Une fois ce plan connu, vous trouvez plus vite ce que vous cherchez.
+
+<!-- FIGURE À FAIRE : schéma d'une notice dépliée, avec l'en-tête puis les six rubriques numérotées. Pour chaque rubrique, une icône simple et 3 à 5 mots (« à quoi il sert », « avant de le prendre », « comment le prendre », « effets indésirables », « conservation », « composition »). Rubriques 2 et 4 mises en avant comme « à lire en priorité ». -->
+
+### Que trouve-t-on en haut de la notice ?
+
+Vous lisez d'abord le nom du médicament et sa substance active (le composant qui agit). Un court rappel suit : lisez la notice, gardez-la, ne donnez pas ce médicament à une autre personne.
+
+Vous verrez parfois un petit triangle noir, pointe en bas (▼). Il signale un médicament surveillé de plus près. Pour en savoir plus, lisez la page [Le triangle noir](triangle-noir.qmd).
+
+### Que dit chaque rubrique ?
+
+**1. Qu'est-ce que ce médicament et dans quels cas est-il utilisé ?**
+Cette rubrique dit à quoi sert le médicament. Vérifiez que cela correspond à ce qu'on vous a expliqué.
+
+**2. Quelles sont les informations à connaître avant de le prendre ?**
+C'est une rubrique à lire en priorité. Elle dit d'abord quand il ne faut jamais prendre le médicament. Elle donne ensuite les précautions à prendre. Elle cite les autres médicaments à signaler à votre médecin ou à votre pharmacien. Elle parle aussi des aliments, de l'alcool, de la grossesse, de l'allaitement et de la conduite.
+
+À la fin, elle nomme certains excipients (des composants sans action sur la maladie). Ils peuvent gêner certaines personnes, par exemple en cas d'allergie.
+
+**3. Comment le prendre ?**
+Vous y trouvez la dose habituelle et la façon de prendre le médicament. La rubrique dit aussi quoi faire si vous en prenez trop ou si vous oubliez une prise. Si votre ordonnance indique une autre dose, suivez l'ordonnance. Votre médecin l'a adaptée à votre situation.
+
+**4. Quels sont les effets indésirables éventuels ?**
+Les effets les plus graves sont en général cités en premier. La notice dit alors quoi faire, par exemple arrêter le médicament ou appeler un médecin tout de suite. Les autres effets suivent, du plus fréquent au moins fréquent.
+
+**5. Comment le conserver ?**
+Elle indique la température, la date de péremption et comment jeter le médicament. Rapportez les médicaments inutilisés à la pharmacie.
+
+**6. Contenu de l'emballage et autres informations**
+Vous y trouvez la liste complète des composants et l'aspect du médicament. Le nom du laboratoire figure aussi dans cette rubrique.
+
+### Comment sont écrites les fréquences ?
+
+Dans la rubrique 4, chaque groupe d'effets porte un mot de fréquence, suivi d'un chiffre. La formule exacte varie un peu d'une notice à l'autre. Voici un exemple tiré d'une notice récente :
+
+| Mot de la notice | Formule de la notice prise en exemple |
+|---|---|
+| Très fréquent | « pouvant affecter plus d'une personne sur 10 » |
+| Fréquent | « pouvant affecter jusqu'à 1 personne sur 10 » |
+| Peu fréquent | « pouvant affecter jusqu'à une personne sur 100 » |
+| Rare | « pouvant affecter jusqu'à une personne sur 1 000 » |
+| Très rare | « pouvant affecter jusqu'à une personne sur 10 000 » |
+| Fréquence indéterminée | « la fréquence ne peut être estimée à partir des seules données disponibles » |
+
+« Jusqu'à 1 personne sur 10 » veut dire « au plus 1 personne sur 10 ». Selon la règle européenne, un effet « fréquent » touche entre 1 et 10 personnes sur 100. Pour comprendre ces mots en détail, lisez la page [Que veulent dire « fréquent » et « rare » ?](frequences.qmd).
+
+### Un effet cité dans la notice va-t-il m'arriver ?
+
+Non, pas forcément. La notice le dit elle-même : ces effets ne surviennent pas chez tout le monde. Prenons un effet « fréquent ». Il touche au plus 1 personne sur 10. Au moins 9 personnes sur 10 ne l'ont donc pas.
+
+La liste est longue parce qu'elle doit être complète. Un effet y figure dès que le lien avec le médicament est possible. Ce n'est pas une preuve que le médicament le provoque.
+
+### Et si mon effet n'est pas dans la notice ?
+
+Il peut quand même venir du médicament. Parlez-en à votre médecin ou à votre pharmacien. Vous pouvez aussi le [déclarer vous-même](../declarer.qmd). La page [Pourquoi déclarer un effet indésirable ?](pourquoi-declarer.qmd) explique à quoi sert votre déclaration.
+
+### Où trouver la notice à jour ?
+
+La notice change quand on apprend du nouveau sur un médicament. Celle de votre boîte peut donc être plus ancienne. La version à jour est sur la [base de données publique des médicaments](https://base-donnees-publique.medicaments.gouv.fr/). Ce site public est géré par l'Agence nationale de sécurité du médicament et des produits de santé (ANSM). Tapez le nom du médicament, puis ouvrez sa notice.
+
+Depuis l'automne 2025, un essai est en cours sur certaines boîtes. Elles portent un QR code (un carré à photographier avec un téléphone). Ce code ouvre directement la notice en ligne.
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+:::

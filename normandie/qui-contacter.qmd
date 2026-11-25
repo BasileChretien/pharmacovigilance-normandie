@@ -1,0 +1,63 @@
+---
+title: "Qui contacter ?"
+description: "Le bon interlocuteur en Normandie selon la situation : urgence, intoxication, effet indésirable, addiction, transfusion."
+public: [patients, professionnels]
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "CHU d'Angers, centre antipoison et de toxicovigilance"
+    url: "https://www.chu-angers.fr/soins-specialites/services/centre-antipoison"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, liste des centres régionaux de pharmacovigilance"
+    url: "https://ansm.sante.fr/page/liste-des-centres-regionaux-de-pharmacovigilance"
+    consulte_le: 2026-11-25
+  - titre: "Portail de signalement des événements sanitaires indésirables"
+    url: "https://signalement.social-sante.gouv.fr"
+    consulte_le: 2026-11-25
+---
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Urgence vitale : appelez le 15 (SAMU) ou le 112.
+- Intoxication : appelez le centre antipoison d'Angers au 02 41 48 21 21, à toute heure.
+- Effet indésirable d'un médicament : parlez-en à votre médecin ou à votre pharmacien, et déclarez-le.
+:::
+
+Du plus urgent au moins urgent :
+
+| Situation | Qui contacter | Comment |
+|---|---|---|
+| Urgence vitale : malaise grave, gêne pour respirer, perte de connaissance | SAMU | 15, ou 112 |
+| Intoxication, ou question sur un produit toxique | Centre antipoison d'Angers, compétent pour la Normandie | 02 41 48 21 21, 24 heures sur 24 |
+| Effet indésirable d'un médicament | Votre médecin ou votre pharmacien ; le CRPV de Caen ou de Rouen selon le département | [Déclarer en ligne](../declarer.qmd) ; [contacts des CRPV](../crpv/acces.qmd) |
+| Abus, dépendance ou usage détourné d'un médicament ou d'une substance | CEIP-A de Caen (centre d'addictovigilance) | Coordonnées [à vérifier] ; déclaration sur signalement.social-sante.gouv.fr |
+| Effet indésirable lié à une transfusion | L'équipe soignante, qui prévient le correspondant d'hémovigilance de l'hôpital. Donneur de sang : l'Établissement français du sang (EFS) | Par l'équipe soignante, ou le site de don |
+| Incident avec un dispositif médical (pompe, prothèse, test…) | L'équipe soignante ; le correspondant de matériovigilance de l'établissement | Déclaration sur signalement.social-sante.gouv.fr |
+| Tabac | Tabac Info Service | 39 89 [à vérifier] |
+| Alcool | Alcool Info Service | 0 980 980 930 [à vérifier] |
+| Drogues | Drogues Info Service | 0 800 23 13 13 [à vérifier] |
+| Jeux d'argent et de hasard | Joueurs Info Service | 09 74 75 13 13 [à vérifier] |
+| Être accompagné pour une addiction près de chez soi | Les centres de soins en addictologie (CSAPA), les consultations jeunes consommateurs, les équipes d'addictologie des hôpitaux | Annuaire normand [à construire avec l'ARS] |
+| Idées suicidaires, détresse | Numéro national de prévention du suicide | 3114, 24 heures sur 24 |
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+| Situation | Interlocuteur |
+|---|---|
+| Infection associée aux soins | Centre d'appui pour la prévention des infections associées aux soins (CPIAS) de Normandie [coordonnées à compléter] |
+| Antibiothérapie | Centre régional en antibiothérapie de Normandie [coordonnées à compléter] |
+| Bon usage du médicament en établissement | OMéDIT Normandie [coordonnées à compléter] |
+| Hémovigilance | Correspondant d'hémovigilance de l'établissement ; coordonnateur régional d'hémovigilance et de sécurité transfusionnelle (ARS Normandie) |
+
+Ces structures font partie du réseau régional de vigilances et d'appui (RREVA), animé par l'ARS Normandie.
+
+:::
+
+Tous les numéros et coordonnées sont revérifiés avant publication, puis une fois par an.

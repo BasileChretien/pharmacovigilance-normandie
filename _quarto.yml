@@ -1,0 +1,83 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - assets/js/
+    - assets/img/
+  render:
+    - "*.qmd"
+    - "!_templates/"
+    - "!docs/"
+    - "!README.md"
+    - "!CLAUDE.md"
+
+lang: fr
+
+website:
+  title: "Pharmacovigilance Normandie"
+  description: "Information sur les médicaments par les centres régionaux de pharmacovigilance de Caen et de Rouen (prototype)."
+  favicon: assets/img/favicon.svg
+  search:
+    location: navbar
+    type: overlay
+  announcement:
+    content: "**Prototype non officiel.** Les contenus sont des brouillons en cours de relecture par des pharmacologues : ne les utilisez pas pour une décision de soin."
+    type: warning
+    dismissable: false
+    position: below-navbar
+  navbar:
+    title: "Pharmacovigilance Normandie"
+    collapse-below: xl
+    left:
+      - text: "Médicaments"
+        href: medicaments/index.qmd
+      - text: "Bon usage"
+        href: bon-usage/index.qmd
+      - text: "Comprendre"
+        href: comprendre/index.qmd
+      - text: "Vigiking"
+        href: vigiking/index.qmd
+      - text: "Actualités"
+        href: actualites/index.qmd
+      - text: "En Normandie"
+        href: normandie/index.qmd
+    right:
+      - text: "Les CRPV"
+        href: crpv/index.qmd
+      - text: "Déclarer"
+        href: declarer.qmd
+      - text: "Poser une question"
+        href: poser-une-question.qmd
+  page-footer:
+    left: |
+      Centres régionaux de pharmacovigilance de Caen et de Rouen. Prototype non officiel.
+    center: |
+      ![Logo du CRPV Normandie Caen](/assets/img/logos/crpv-caen.png){.logo-partenaire} ![Logo du CHU de Caen Normandie](/assets/img/logos/chu-caen-normandie.png){.logo-partenaire} ![Logo du CHU de Rouen Normandie](/assets/img/logos/chu-rouen.png){.logo-partenaire}
+    right:
+      - text: "Politique éditoriale"
+        href: a-propos/politique-editoriale.qmd
+      - text: "Mentions légales"
+        href: a-propos/mentions-legales.qmd
+      - text: "Accessibilité"
+        href: a-propos/accessibilite.qmd
+  back-to-top-navigation: true
+  page-navigation: false
+
+format:
+  html:
+    theme:
+      - default
+      - assets/theme.scss
+    toc: true
+    toc-title: "Sur cette page"
+    toc-location: right
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: false
+    anchor-sections: true
+    code-copy: false
+    include-in-header:
+      - text: |
+          <meta name="robots" content="noindex, nofollow">
+    filters:
+      - assets/filters/page-meta.lua

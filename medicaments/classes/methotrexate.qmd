@@ -1,0 +1,151 @@
+---
+title: "Le méthotrexate à faible dose par voie orale"
+description: "Méthotrexate en comprimés : une prise par semaine, jamais tous les jours ; signes de surdosage, interactions et surveillance."
+public: [patients, professionnels]
+classe: "méthotrexate oral faible dose"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "Base de données publique des médicaments, RCP et notice de NOVATREX 2,5 mg, comprimé (CIS 67853564)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67853564/extrait"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, « Risque de surdosage en méthotrexate par voie orale : un médicament à prendre une fois par semaine, toujours le même jour » (20/07/2022, mis à jour le 13/03/2025)"
+    url: "https://ansm.sante.fr/actualites/medicaments-a-base-de-methotrexate-par-voie-orale-imeth-novatrex-et-generiques-une-carte-patients-et-une-brochure-professionnels-de-sante-pour-eviter-les-surdosages"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
+    url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
+    consulte_le: 2026-11-25
+  - titre: "Centre de référence sur les agents tératogènes (CRAT)"
+    url: "https://www.lecrat.fr/"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Prenez le méthotrexate une seule fois par semaine, toujours le même jour.
+- Une prise chaque jour par erreur peut provoquer un surdosage grave, parfois mortel.
+- Demandez l'avis de votre pharmacien avant tout autre médicament, même sans ordonnance.
+:::
+
+### À quoi sert ce traitement ?
+
+Le méthotrexate en comprimés s'appelle Novatrex, Imeth, ou porte son nom en générique. À faible dose, il traite la polyarthrite rhumatoïde (inflammation chronique des articulations) et certains psoriasis sévères (maladie de la peau). Il sert aussi dans certaines leucémies (cancers du sang).
+
+### Comment le prendre ?
+
+Prenez votre dose une fois par semaine, en une seule fois, le jour choisi avec votre médecin. Votre ordonnance et votre boîte indiquent ce jour en toutes lettres, par exemple « chaque lundi ».
+
+Une carte patient se trouve dans la boîte. Notez-y votre jour et votre dose. Notez aussi chaque prise avec sa date. Avant de prendre une dose, vérifiez la date de la dernière prise.
+
+<!-- FIGURE À FAIRE : calendrier d'une semaine (lundi à dimanche) avec une seule case cochée « méthotrexate » le jour choisi, et une autre case « acide folique » un jour différent. Les cinq ou six autres jours restent vides. Couleurs lisibles par les personnes daltoniennes. -->
+
+Votre médecin peut prescrire de l'acide folique (une vitamine qui réduit certains effets indésirables). Ne le prenez jamais le même jour que le méthotrexate.
+
+Si vous oubliez une prise, ne doublez pas la dose suivante. Appelez votre médecin ou votre pharmacien.
+
+Si un proche vous aide à prendre vos médicaments, montrez-lui cette fiche. Les personnes âgées ou qui ont des troubles de la mémoire risquent plus de se tromper.
+
+### Quels effets indésirables ?
+
+Les effets les plus souvent signalés sont des plaies dans la bouche, des nausées et des maux de ventre. Le médicament peut aussi baisser les globules blancs (cellules qui défendent contre les infections). Les plaies dans la bouche sont souvent le premier signe d'un excès de médicament.
+
+Le méthotrexate peut aussi abîmer le foie et les poumons. C'est pourquoi votre médecin vous suit de près.
+
+### Quelle surveillance ?
+
+Avant le traitement, vous faites une prise de sang et une radiographie des poumons. Ensuite, la prise de sang a lieu tous les 15 jours pendant 3 mois, puis chaque mois.
+
+::: {.quand-consulter}
+- Fièvre, mal de gorge, plaies dans la bouche, diarrhée, vomissements : appelez vite votre médecin et dites que vous prenez du méthotrexate.
+- Boutons sur la peau, saignement, faiblesse inhabituelle : appelez vite votre médecin.
+- Toux sèche, essoufflement, douleur dans la poitrine : consultez rapidement.
+- Vous avez pris du méthotrexate plusieurs jours de suite par erreur : appelez tout de suite votre médecin ou le 15.
+- Grande difficulté à respirer : appelez le 15.
+:::
+
+### Avec quels médicaments faut-il être prudent ?
+
+Certains médicaments augmentent la toxicité du méthotrexate. Ne les prenez pas sans avis médical :
+
+- les anti-inflammatoires non stéroïdiens (par exemple l'ibuprofène) et l'aspirine ;
+- les médicaments contre l'acidité de l'estomac, comme l'oméprazole ;
+- certains antibiotiques, par exemple l'amoxicilline ou l'association sulfaméthoxazole et triméthoprime.
+
+Certains vaccins sont interdits : les vaccins vivants, comme ceux contre la fièvre jaune ou la rougeole. Signalez votre traitement avant tout vaccin.
+
+### Grossesse, allaitement, conduite
+
+Le méthotrexate peut provoquer des malformations et des fausses couches. Les femmes utilisent une contraception efficace pendant le traitement et au moins 6 mois après l'arrêt. Les hommes, ou leur partenaire, utilisent une contraception pendant le traitement et 3 mois après. Les hommes ne donnent pas leur sperme pendant cette période.
+
+N'allaitez pas pendant le traitement. Si vous avez un projet de grossesse, parlez-en à votre médecin avant d'arrêter la contraception. Le Centre de référence sur les agents tératogènes (CRAT) informe sur les médicaments et la grossesse : [lecrat.fr](https://www.lecrat.fr/).
+
+### Puis-je arrêter mon traitement ?
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+### Signaler un effet indésirable
+
+Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr).
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Points clés de sécurité
+
+- Dans la polyarthrite rhumatoïde, le psoriasis et l'entretien de la leucémie aiguë lymphoblastique, le méthotrexate oral se prend **une fois par semaine**. La prise quotidienne par erreur entraîne des surdosages parfois mortels, en particulier chez le sujet âgé ; ils persistent malgré les mesures en place (ANSM, 2025).
+- Tableau du surdosage : leucopénie, thrombopénie, pancytopénie par aplasie, mucite, stomatite, ulcérations buccales, nausées, vomissements. Décès le plus souvent par sepsis, insuffisance rénale ou aplasie.
+- Prise en charge : **folinate de calcium** le plus tôt possible (pas l'acide folique), posologie guidée par la méthotrexatémie. La toxicité peut devenir irréversible si l'acide folinique n'est pas débuté dans les 42 à 48 heures.
+- Contre-indications (RCP) : clairance de la créatinine < 30 mL/min, grossesse dans les indications non oncologiques, allaitement, association aux vaccins vivants atténués, au probénécide, au triméthoprime, à l'acitrétine, et à l'aspirine à dose antalgique, antipyrétique ou anti-inflammatoire si méthotrexate > 20 mg/semaine.
+- Tératogène : dans les études citées par le RCP, avortements spontanés chez 42,5 % des femmes exposées à faible dose (< 30 mg/semaine) contre 22,5 %, malformations majeures dans 6,6 % des naissances vivantes contre environ 4 %.
+
+### Surveillance
+
+- Avant traitement : NFS et plaquettes, enzymes hépatiques, sérologies hépatite B et C, fonction rénale, radiographie thoracique ; épreuves fonctionnelles respiratoires si tabagisme ou atteinte bronchopulmonaire.
+- Pendant : NFS et plaquettes tous les 15 jours pendant 3 mois puis chaque mois ; urée, créatinine, albumine, transaminases, bilirubine chaque mois.
+- Élévations transitoires des transaminases (2 à 3 fois la normale) chez 13 à 20 % des patients ; fibrose ou cirrhose possibles avec un bilan hépatique normal, d'où l'intérêt de méthodes non invasives d'évaluation hépatique.
+- Toux, dyspnée, fièvre ou infiltrat : évoquer une pneumopathie au méthotrexate (possible à faible dose, à tout moment) ou une pneumocystose.
+- Acide folique ≥ 5 mg/semaine recommandé, jamais le jour du méthotrexate ; contrôler la vitamine B12 avant, surtout après 50 ans.
+
+### Interactions majeures
+
+Niveaux du Thésaurus de l'ANSM (version du 15 septembre 2023) :
+
+| Association | Méthotrexate ≤ 20 mg/semaine | Méthotrexate > 20 mg/semaine |
+|---|---|---|
+| Aspirine, doses antalgiques ou anti-inflammatoires | Précaution d'emploi | Contre-indication |
+| Aspirine, doses antiagrégantes | — | Précaution d'emploi |
+| AINS | Précaution d'emploi | Association déconseillée |
+| Inhibiteurs de la pompe à protons | À prendre en compte | Association déconseillée |
+| Triméthoprime (seul ou associé) | Association déconseillée | Contre-indication |
+
+Quelle que soit la dose : probénécide et acitrétine, **contre-indication** ; pénicillines, ciprofloxacine et tédizolide, **association déconseillée** ; ciclosporine, sulfamides antibactériens et ponatinib, **précaution d'emploi**. Précaution d'emploi type : hémogramme hebdomadaire les premières semaines, surveillance renforcée si altération même légère de la fonction rénale et chez le sujet âgé. Le RCP signale aussi le protoxyde d'azote (myélosuppression, stomatite).
+
+### Adaptation des doses
+
+Polyarthrite rhumatoïde et psoriasis : 7,5 à 25 mg par semaine en une prise, paliers de 2,5 à 5 mg par semaine sur 4 à 6 semaines, sans dépasser 25 mg par semaine. Insuffisance rénale (dose de départ) : clairance > 60 mL/min, 100 % ; 30 à 59 mL/min, 50 % ; < 30 mL/min, contre-indication. Interrompre en cas de vomissements, diarrhée ou stomatite avec déshydratation.
+
+### Pièges fréquents
+
+[À compléter par le CRPV à partir de cas anonymisés.]
+
+### Mesures de réduction du risque
+
+- Écrire sur l'ordonnance et la boîte le jour unique et la dose, en toutes lettres (exemple ANSM : « Prendre 10 mg chaque lundi »).
+- À chaque prescription, renouvellement et délivrance : vérifier que le patient a compris le rythme hebdomadaire, convenir du jour et le faire noter sur la carte patient ; si la dose hebdomadaire est fractionnée dans la journée, vérifier la compréhension du schéma.
+- Informer l'aidant chez le sujet âgé ou en cas de troubles cognitifs.
+- Infirmiers : vérifier le jour sur l'ordonnance et tracer chaque administration.
+- Contraception : femmes pendant et au moins 6 mois après l'arrêt ; hommes ou partenaire pendant et 3 mois après, sans don de sperme.
+
+:::
+
+:::

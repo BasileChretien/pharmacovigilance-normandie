@@ -1,0 +1,49 @@
+---
+title: "En Normandie"
+description: "Ce qui est propre à la région : qui contacter, les chiffres de la pharmacovigilance normande, les sujets régionaux."
+toc: false
+---
+
+::: {.cartes}
+
+::: {.carte}
+### [Qui contacter ?](qui-contacter.qmd)
+Urgence, intoxication, effet indésirable, addiction, transfusion : le bon interlocuteur.
+:::
+
+::: {.carte}
+### [Les CRPV de Normandie](carte.qmd)
+Quel centre couvre votre département.
+:::
+
+::: {.carte}
+### [Les chiffres de la région](chiffres.qmd)
+Les déclarations reçues chaque année, et ce qu'elles ont permis.
+:::
+
+::: {.carte}
+### [Cas marquants](cas-marquants.qmd)
+Des cas anonymisés et ce qu'ils nous apprennent.
+:::
+
+::: {.carte}
+### [Décryptages régionaux](decryptages/index.qmd)
+L'actualité normande liée aux médicaments, expliquée.
+:::
+
+::: {.carte}
+### [Priorités régionales](priorites.qmd)
+Les sujets sur lesquels les centres agissent en priorité.
+:::
+
+::: {.carte}
+### [Formations et événements](formations.qmd)
+Enseignements, interventions, journées régionales.
+:::
+
+::: {.carte}
+### [Medicines safety in Normandy](en/index.qmd)
+A short page in English for visitors and English-speaking residents.
+:::
+
+:::

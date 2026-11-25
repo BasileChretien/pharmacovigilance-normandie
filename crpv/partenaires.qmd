@@ -1,0 +1,18 @@
+---
+title: "Réseau et partenaires"
+description: "Les structures avec lesquelles travaillent les CRPV de Caen et de Rouen."
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+---
+
+| Structure | Rôle |
+|---|---|
+| [Réseau français des centres régionaux de pharmacovigilance](https://www.rfcrpv.fr) | Réseau national des CRPV |
+| [Agence nationale de sécurité du médicament (ANSM)](https://ansm.sante.fr) | Autorité nationale ; coordonne la pharmacovigilance en France |
+| Centre d'évaluation et d'information sur la pharmacodépendance – addictovigilance (CEIP-A) de Caen | Abus, dépendance et usage détourné des substances |
+| Centre antipoison d'Angers | Intoxications, pour la Normandie |
+| OMéDIT Normandie | Bon usage du médicament dans les établissements ; liste des médicaments écrasables |
+| ARS Normandie | Agence régionale de santé ; anime le réseau régional de vigilances et d'appui |

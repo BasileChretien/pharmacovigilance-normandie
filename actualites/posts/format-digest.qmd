@@ -1,0 +1,19 @@
+---
+title: "Digest de la semaine (format de démonstration)"
+description: "À quoi ressemblera le digest hebdomadaire : trois à cinq informations, deux lignes chacune, la référence et ce que cela change."
+date: 2026-11-24
+categories: [digest]
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+---
+
+**Page de démonstration** : elle montre la forme du digest, pas de vraies informations.
+
+1. **[Titre de l'information]** — [ce qui est nouveau, en une ligne]. *Ce que cela change :* [une ligne]. [Source]
+2. **[Titre de l'information]** — [une ligne]. *Ce que cela change :* [une ligne]. [Source]
+3. **[Titre de l'information]** — [une ligne]. *Ce que cela change :* [une ligne]. [Source]
+
+Chaque digest est préparé à partir d'une veille automatique, rédigé avec l'aide d'une IA, vérifié par des contrôles automatiques, puis relu et signé par un pharmacologue. Voir la [politique éditoriale](../../a-propos/politique-editoriale.qmd).

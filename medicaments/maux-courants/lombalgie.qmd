@@ -1,0 +1,119 @@
+---
+title: "Mal de dos aigu (lombalgie) : quels médicaments ?"
+description: "Dans la lombalgie commune, l'activité physique est le traitement principal ; paracétamol et anti-inflammatoires soulagent, opioïdes et myorelaxants ont des limites."
+public: [patients, professionnels]
+recommandation_de_reference: "HAS, Prise en charge du patient présentant une lombalgie commune, recommandation de bonne pratique, mars 2019"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "HAS, Prise en charge du patient présentant une lombalgie commune, recommandation de bonne pratique, 2019 (page de présentation)"
+    url: "https://www.has-sante.fr/jcms/c_2961499/fr/prise-en-charge-du-patient-presentant-une-lombalgie-commune"
+    consulte_le: 2026-11-25
+  - titre: "HAS, Fiche mémo – Prise en charge du patient présentant une lombalgie commune, mars 2019 (PDF)"
+    url: "https://www.has-sante.fr/upload/docs/application/pdf/2019-04/fm_lombalgie_v2_2.pdf"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments, THIOCOLCHICOSIDE BIOGARAN 4 mg, comprimé (RCP)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67136662/extrait"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Savez-vous bien utiliser le paracétamol contre la douleur et la fièvre ?, 18 octobre 2021"
+    url: "https://ansm.sante.fr/actualites/savez-vous-bien-utiliser-le-paracetamol-contre-la-douleur-et-la-fievre"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Traitement de la douleur durant la grossesse"
+    url: "https://ansm.sante.fr/dossiers-thematiques/medicaments-et-grossesse/traitement-de-la-douleur-durant-la-grossesse"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.quand-consulter}
+- La douleur ne se calme pas au repos, et surtout la nuit.
+- Vous avez de la fièvre, ou vous maigrissez sans raison.
+- La douleur suit une chute ou un choc important.
+- Vous avez déjà eu un cancer.
+- La douleur dure ou s'aggrave après 2 à 4 semaines.
+- Vous perdez des urines ou des selles, ou vous ne sentez plus la zone entre les cuisses : appelez le 15.
+- Une jambe devient faible ou ne vous porte plus : appelez le 15.
+:::
+
+::: {.a-retenir}
+- Bouger et reprendre vos activités est le meilleur traitement.
+- Les médicaments soulagent la douleur, mais ne guérissent pas plus vite.
+- 9 personnes sur 10 vont mieux en moins de 4 à 6 semaines.
+:::
+
+### Pourquoi bouger plutôt que rester couché ?
+
+La lombalgie commune est une douleur du bas du dos sans signe de maladie grave. Elle fait peur, mais elle guérit le plus souvent seule. Reprendre peu à peu vos activités aide à guérir. Si possible, reprenez aussi le travail tôt. Le repos au lit prolongé ne fait pas guérir plus vite. Une radio ou une imagerie par résonance magnétique (IRM) est en général inutile au début.
+
+<!-- FIGURE À FAIRE : grille de 10 personnages dont 9 colorés (« vont mieux en moins de 4 à 6 semaines ») et 1 non coloré. Texte alternatif : « Sur 10 personnes ayant une lombalgie commune, 9 vont mieux en moins de 4 à 6 semaines. » -->
+
+### Quels médicaments peuvent aider ?
+
+- Le **paracétamol** peut soulager une douleur légère.
+- Les **anti-inflammatoires** (AINS, anti-inflammatoires non stéroïdiens), comme l'ibuprofène, peuvent être proposés. Ils se prennent à la dose la plus faible, le moins longtemps possible.
+- Les **opioïdes** (antidouleurs de la famille de la morphine, comme le tramadol ou la codéine) ne viennent qu'en deuxième choix.
+
+### Comment choisir ?
+
+Le choix dépend de vos autres maladies et de vos médicaments. Les anti-inflammatoires ne conviennent pas à tout le monde. Ils sont risqués en cas d'ulcère, de maladie des reins ou du cœur. Pendant la grossesse, ne prenez jamais d'anti-inflammatoire de vous-même. À partir du 6e mois, une seule prise est interdite. Demandez conseil à votre pharmacien.
+
+### Comment bien les utiliser ?
+
+Pour le paracétamol chez l'adulte, ne dépassez pas 3 grammes par jour sans avis médical. Vérifiez qu'un autre médicament ne contient pas déjà du paracétamol. Prenez les anti-inflammatoires sur une durée courte, en suivant la notice. Arrêtez les médicaments quand la douleur se calme.
+
+### Quels effets surveiller ?
+
+Les anti-inflammatoires peuvent irriter l'estomac et abîmer les reins. Les opioïdes donnent souvent constipation, nausées et somnolence (envie de dormir). Ils peuvent aussi créer une dépendance. Ne conduisez pas si vous vous sentez endormi.
+
+### Ce qu'il vaut mieux éviter
+
+- Les **myorelaxants** (médicaments qui relâchent les muscles) : ils apportent plus de risques que de bénéfices dans ce mal de dos.
+- Associer deux anti-inflammatoires, ou deux médicaments contenant du paracétamol.
+- Garder des opioïdes « au cas où » après la crise.
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Signes d'alerte (drapeaux rouges, HAS 2019)
+
+Douleur non mécanique (aggravation progressive, au repos, nocturne) ; symptôme neurologique étendu (troubles sphinctériens, déficit moteur des membres inférieurs, syndrome de la queue-de-cheval) ; paresthésies du périnée ; traumatisme important ; perte de poids inexpliquée ; antécédent de cancer ; usage de drogue intraveineuse ou corticothérapie prolongée ; déformation structurale importante ; douleur thoracique ; début avant 20 ans ou après 55 ans ; fièvre ; altération de l'état général. C'est leur combinaison qui oriente. Réévaluation recommandée 2 à 4 semaines après une poussée aiguë (AE). Pas d'imagerie en l'absence de drapeau rouge (grade C).
+
+### Stratégie thérapeutique
+
+L'exercice physique est le traitement principal (grade B). Aucun antalgique n'a prouvé d'efficacité à moyen terme sur l'évolution d'une poussée aiguë (AE). Une prise en charge antalgique graduée reste possible pour les accès douloureux :
+
+- **Première intention** : paracétamol, utile à visée symptomatique (AE) ; AINS après évaluation du rapport bénéfice/risque, à la dose efficace la plus faible et pour la durée la plus courte (grade A).
+- **Seconde intention** : opioïdes faibles, avec ou sans paracétamol, à faible dose, en cas d'échec ou de contre-indication aux AINS, pour la durée la plus courte (grade B). Opioïdes forts réservés aux lombalgies réfractaires à une prise en charge bien conduite, y compris pluridisciplinaire (grade B). Évaluer le risque de mésusage avant la première prescription (Opioid Risk Tool) et avant renouvellement (échelle POMI).
+- **Non indiqués en poussée aiguë** : antidépresseurs tricycliques ou IRSNa, gabapentinoïdes (grade A). Ils se discutent en cas de radiculalgie chronique neuropathique.
+
+### Ce qu'il faut éviter
+
+- **Myorelaxants** : balance bénéfice/risque défavorable dans la lombalgie commune (AE). Pour le thiocolchicoside, le RCP restreint l'indication au traitement d'appoint des contractures douloureuses en pathologie rachidienne aiguë, à partir de 16 ans. La dose maximale est de 8 mg toutes les 12 heures, pendant 7 jours consécutifs au plus. Son métabolite SL59.0955 induit une aneuploïdie : contre-indication pendant la grossesse et l'allaitement, et contraception efficace requise chez la femme (jusqu'à 1 mois après) et chez l'homme (jusqu'à 3 mois après).
+- **Corticoïdes et néfopam** : pas de recommandation possible faute d'étude (AE).
+- **Antibiotiques, vitamine D** (grade B), **patch de lidocaïne, anti-TNF** (AE) : pas d'indication.
+
+### Précautions et effets indésirables
+
+- **Paracétamol** : 3 g/j au maximum en automédication chez l'adulte de plus de 50 kg, 4 g/j au maximum sur avis médical. Le mésusage est la première cause de greffe hépatique d'origine médicamenteuse en France (ANSM).
+- **AINS** : tenir compte des antécédents digestifs, rénaux et cardiovasculaires. Toute prise, même ponctuelle, est contre-indiquée à partir du 6e mois de grossesse (ANSM).
+- **Opioïdes** : informer des effets indésirables et réévaluer très régulièrement le maintien du traitement (AE). En cas de mésusage avéré, prise en charge conjointe avec un centre de la douleur ou d'addictologie (AE).
+
+### Outils et liens
+
+- Arbre décisionnel HAS 2019 et questionnaires de risque de chronicité (STarT Back, Örebro) cités dans la fiche mémo.
+- Rechercher les drapeaux jaunes, bleus et noirs en cas d'arrêts de travail répétés ou de plus de 4 semaines (AE).
+
+:::
+
+:::

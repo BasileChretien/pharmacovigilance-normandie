@@ -1,0 +1,136 @@
+---
+title: "Pourquoi déclarer un effet indésirable ?"
+description: "Qui peut déclarer un effet indésirable en France, quoi déclarer, comment, ce que devient la déclaration, et des exemples de mesures nées des déclarations."
+public: [patients, professionnels]
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "ANSM, Comment déclarer si vous êtes patient ou usager ?"
+    url: "https://ansm.sante.fr/documents/reference/declarer-un-effet-indesirable/comment-declarer-si-vous-etes-patient-ou-usager"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Comment déclarer si vous êtes professionnel de santé ?"
+    url: "https://ansm.sante.fr/documents/reference/declarer-un-effet-indesirable/comment-declarer-si-vous-etes-professionnel-de-sante"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Organiser les vigilances"
+    url: "https://ansm.sante.fr/qui-sommes-nous/nos-missions/assurer-la-securite-des-produits-de-sante/p/organiser-les-vigilances"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, La surveillance renforcée des médicaments (BNPV, enquêtes, détection des signaux)"
+    url: "https://ansm.sante.fr/page/la-surveillance-renforcee-des-medicaments"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Réglementation relative à la pharmacovigilance (décret n° 2011-655 du 10 juin 2011)"
+    url: "https://ansm.sante.fr/documents/reference/reglementation-relative-a-la-pharmacovigilance"
+    consulte_le: 2026-11-25
+  - titre: "EMA, Que signifie le triangle noir ? (pourquoi surveiller les médicaments après leur autorisation)"
+    url: "https://www.ema.europa.eu/fr/documents/other/what-does-black-triangle-mean_fr.pdf"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Levothyrox : les nouveaux résultats de l'enquête nationale de pharmacovigilance confirment les premiers résultats (30/01/2018)"
+    url: "https://ansm.sante.fr/actualites/point-dactualite-sur-le-levothyrox-et-les-autres-medicaments-a-base-de-levothyroxine-les-nouveaux-resultats-de-lenquete-nationale-de-pharmacovigilance-confirment-les-premiers-resultats-publies-le-10-octobre-2017-communique"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Médicaments à base de lévothyroxine : les études menées et les analyses en laboratoire"
+    url: "https://ansm.sante.fr/dossiers-thematiques/les-medicaments-a-base-de-levothyroxine-disponibles-en-france-1/les-etudes-menees-et-les-analyses-en-laboratoire"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Benfluorex (Mediator) : bilan du suivi de pharmacovigilance"
+    url: "https://ansm.sante.fr/actualites/benfluorex-mediator-bilan-du-suivi-de-pharmacovigilance"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Vous pouvez déclarer vous-même un effet indésirable, sans passer par votre médecin.
+- Déclarez même si vous n'êtes pas sûr que le médicament soit en cause.
+- Chaque déclaration est analysée par un centre régional de pharmacovigilance.
+:::
+
+### Pourquoi déclarer ?
+
+Avant d'être autorisé, un médicament est testé chez un nombre limité de personnes. Une fois en vente, il est pris par beaucoup plus de monde, pendant plus longtemps. Certains effets rares n'apparaissent qu'à ce moment-là. Vos déclarations permettent de les repérer. Elles aident à vérifier que les bénéfices du médicament restent plus importants que ses risques.
+
+### Qui peut déclarer ?
+
+Vous, et les professionnels de santé. Depuis 2011, les patients peuvent déclarer eux-mêmes un effet indésirable. Un représentant peut aussi le faire pour vous, par exemple un parent pour son enfant. Une association de patients agréée peut le faire à votre demande.
+
+Les médecins, les dentistes, les sages-femmes, les pharmaciens et les infirmiers doivent déclarer les effets qu'ils suspectent. C'est une obligation pour eux.
+
+### Que faut-il déclarer ?
+
+Tout effet que vous pensez lié à un médicament. Il n'est pas nécessaire d'être sûr : c'est le rôle des experts de chercher le lien. Déclarez aussi :
+
+- un effet déjà écrit dans la notice ;
+- un effet survenu après une erreur, par exemple une dose prise deux fois ;
+- un effet survenu après un mauvais usage du médicament.
+
+### Comment déclarer ?
+
+Le plus simple est le portail en ligne [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr/). À la fin, le site vous dit à quel centre votre déclaration est envoyée. Vous pouvez aussi écrire directement au centre régional de pharmacovigilance (CRPV) de votre région.
+
+Gardez la boîte du médicament à portée de main. Le nom exact et le numéro de lot (un code imprimé sur la boîte) sont utiles. Notez aussi les dates : début du traitement, début de l'effet, arrêt éventuel.
+
+Voir aussi la page [Déclarer](../declarer.qmd).
+
+<!-- FIGURE À FAIRE : parcours d'une déclaration en 5 étapes, de gauche à droite : 1) vous ou votre soignant déclarez ; 2) le CRPV analyse et vous recontacte si besoin ; 3) le cas est enregistré dans la base nationale ; 4) l'ANSM surveille les signaux ; 5) les cas graves partent dans la base européenne. Une flèche de retour vers « mesures : notice modifiée, restriction, retrait ». -->
+
+### Que devient votre déclaration ?
+
+Elle arrive au CRPV de votre région. Un expert l'analyse. Il peut vous recontacter pour compléter le dossier. Il évalue ensuite le rôle possible du médicament.
+
+Le cas est enregistré dans la base nationale de pharmacovigilance. L'Agence nationale de sécurité du médicament et des produits de santé (ANSM) y a accès. Elle y recherche des signaux, c'est-à-dire des effets nouveaux ou plus fréquents que prévu. Les cas graves sont aussi envoyés dans une base européenne.
+
+### Les déclarations ont-elles déjà changé quelque chose ?
+
+Oui. Deux exemples :
+
+- **Le benfluorex (Mediator).** Il a été retiré du marché le 30 novembre 2009. Des atteintes des valves du cœur avaient été observées chez des personnes traitées. Après le retrait, l'analyse des déclarations a continué. Elle a fait apparaître un autre effet rare, sur la plèvre (l'enveloppe des poumons).
+- **Le Levothyrox, nouvelle formule (2017).** Ce médicament traite le manque d'hormone thyroïdienne. Après le changement de formule, plus de 17 000 cas ont été déclarés entre mars et novembre 2017. À l'automne, environ 9 déclarations sur 10 venaient de patients. L'ANSM a analysé ces cas dans une enquête nationale. Elle a aussi lancé une grande étude sur les données de l'Assurance maladie. À partir d'octobre 2017, d'autres médicaments à base de lévothyroxine ont été rendus disponibles.
+
+Une déclaration ne prouve pas à elle seule qu'un médicament est en cause. Mais beaucoup de déclarations semblables donnent l'alerte.
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Qui déclare
+
+- **Obligation** : médecins, chirurgiens-dentistes, sages-femmes, pharmaciens et infirmiers doivent signaler tout effet indésirable suspecté d'être dû à un médicament, quel que soit le contexte de survenue (ANSM, page mise à jour le 23/06/2026). [à compléter : article du CSP fondant l'obligation, sur Légifrance.]
+- **Faculté** : tout autre professionnel de santé ayant connaissance d'un effet indésirable.
+- **Patients** : déclaration directe par le patient ou son représentant mandaté (parent d'un enfant, association agréée sollicitée par le patient). Base réglementaire : décret n° 2011-655 du 10 juin 2011 et arrêté du même jour relatifs au signalement par les patients et les associations agréées de patients.
+
+### Quoi déclarer
+
+Tout effet indésirable suspecté, y compris en cas de mésusage, surdosage, erreur médicamenteuse ou exposition professionnelle. La certitude sur l'imputabilité n'est pas requise : l'imputation est faite par le CRPV. Cas particuliers :
+
+- abus et pharmacodépendance : CEIP-A (centre d'évaluation et d'information sur la pharmacodépendance-addictovigilance) ;
+- défaut qualité sans effet indésirable : case dédiée du portail, transmission à l'ANSM ;
+- erreur médicamenteuse : formulaire spécifique à adresser au CRPV.
+
+### Comment
+
+Portail commun des vigilances, ouvert en 2017 aux professionnels et aux usagers : [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr/). Le déclarant est informé en fin de saisie du destinataire. Formulaires papier ou courriel possibles directement auprès du CRPV. Éléments utiles : spécialité et numéro de lot, chronologie (début, arrêt, réintroduction), co-médications, évolution.
+
+### Circuit
+
+1. Le CRPV (31 centres en France) instruit le cas, échange si besoin avec le déclarant ou le patient, et détermine l'imputabilité.
+2. Le cas est saisi dans la BNPV (base nationale de pharmacovigilance), créée en 1985 par les premiers CRPV. Elle contient plus de 900 000 cas et sert à la détection statistique des signaux.
+3. Les CRPV signalent à l'ANSM les « cas marquants ». L'ANSM catégorise chaque signal selon son niveau de risque. Elle peut confier une enquête de pharmacovigilance à un CRPV.
+4. Les effets indésirables graves sont transmis à EudraVigilance, base de l'EMA, où le PRAC (Pharmacovigilance Risk Assessment Committee) évalue les signaux européens.
+
+### Mesures issues des déclarations
+
+- **Benfluorex** : retrait du marché le 30 novembre 2009 après l'observation de valvulopathies. Le suivi s'est appuyé ensuite sur les rapports de deux CRPV (Lyon et Paris-HEGP). Il a confirmé les signaux de valvulopathies et d'HTAP (hypertension artérielle pulmonaire). Il a identifié la fibrose pleurale comme effet possible mais rare : 11 cas rapportés de 1974 au 31 mars 2015.
+- **Levothyrox, nouvelle formule** (mise sur le marché en mars 2017) : 5 062 cas (fin mars au 15 septembre 2017), puis 12 248 cas (15 septembre au 30 novembre 2017) enregistrés dans la BNPV, ces derniers « très majoritairement déclarés par les patients (90 %) » selon l'ANSM. Suites : enquête nationale de pharmacovigilance, étendue aux autres lévothyroxines ; étude de pharmaco-épidémiologie sur les données de l'Assurance maladie ; contrôles en laboratoire ; offre thérapeutique diversifiée à partir d'octobre 2017. Conclusions : profil d'effets similaire à l'ancienne formule, fréquence de déclaration inattendue, pas d'augmentation des problèmes de santé graves dans l'étude de pharmaco-épidémiologie, qualité du principe actif conforme.
+
+Ces deux exemples illustrent deux rôles de la notification : faire émerger un risque, et objectiver l'ampleur d'un phénomène pour orienter des études complémentaires.
+
+:::
+
+:::

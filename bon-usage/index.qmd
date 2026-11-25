@@ -1,0 +1,13 @@
+---
+title: "Bon usage"
+description: "Quand prendre ses médicaments, écraser ou couper un comprimé, les interactions à connaître."
+toc: false
+listing:
+  contents: "*.qmd"
+  type: grid
+  sort: "title"
+  fields: [title, description]
+  grid-columns: 2
+---
+
+Des pages pratiques pour bien prendre ses médicaments, liées depuis chaque fiche.

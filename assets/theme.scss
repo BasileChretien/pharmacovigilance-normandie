@@ -1,0 +1,211 @@
+/*-- scss:defaults --*/
+
+// Design tokens. Every text/background pair used on the site is listed in
+// tools/checks/contrast_pairs.yml and checked against WCAG AA by
+// tools/checks/check_contrast.py. Change a colour here, and the check runs on it.
+$pv-ink: #1f2328;            // body text
+$pv-ink-quiet: #4a5058;      // secondary text
+$pv-paper: #ffffff;          // page background
+$pv-blue: #1b4f8a;           // primary: links, buttons, headings accents
+$pv-blue-dark: #123a66;      // primary hover
+$pv-blue-tint: #e7f1fb;      // primary tint (cards, active tabs)
+$pv-green: #1e6b3c;          // "À retenir"
+$pv-green-tint: #e5f4e4;
+$pv-red: #7a1a1a;            // "Quand consulter"
+$pv-red-tint: #fbebeb;
+$pv-amber: #6b4a00;          // draft banner text
+$pv-amber-tint: #f9eeda;
+$pv-rule: #d0d4d9;           // borders
+
+$body-color: $pv-ink;
+$body-bg: $pv-paper;
+$primary: $pv-blue;
+$link-color: $pv-blue;
+$link-hover-color: $pv-blue-dark;
+$navbar-bg: $pv-paper;
+$navbar-fg: $pv-ink;
+$navbar-hl: $pv-blue;
+$footer-bg: #f4f5f7;
+$footer-fg: $pv-ink;
+
+// System fonts only: no font is loaded from a third-party server.
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+$font-size-root: 17px;
+$line-height-base: 1.6;
+$headings-font-weight: 650;
+$border-radius: 0.5rem;
+
+/*-- scss:rules --*/
+
+body {
+  font-size: 1rem;
+}
+
+main.content {
+  max-width: 46rem; // about 70 characters a line
+}
+
+h1.title {
+  font-size: 2rem;
+}
+
+h2 {
+  margin-top: 2.25rem;
+  border-bottom: none;
+}
+
+a {
+  text-underline-offset: 0.15em;
+}
+
+// Visible keyboard focus everywhere (RGAA 10.7).
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid $pv-blue;
+  outline-offset: 2px;
+}
+
+.navbar .nav-link {
+  white-space: nowrap;
+}
+
+// Navbar: "Déclarer" and "Poser une question" are buttons.
+.navbar .nav-link[href$="declarer.html"],
+.navbar .nav-link[href$="poser-une-question.html"] {
+  border: 2px solid $pv-blue;
+  border-radius: $border-radius;
+  padding: 0.3rem 0.75rem !important;
+  margin-left: 0.5rem;
+  color: $pv-blue !important;
+  font-weight: 600;
+}
+.navbar .nav-link[href$="declarer.html"] {
+  background: $pv-blue;
+  color: $pv-paper !important;
+}
+
+// Boxes produced by the page-meta filter.
+.encadre {
+  border-left: 6px solid $pv-rule;
+  border-radius: $border-radius;
+  padding: 0.9rem 1.1rem 0.4rem;
+  margin: 1.5rem 0;
+}
+.encadre-titre {
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+.a-retenir {
+  background: $pv-green-tint;
+  border-left-color: $pv-green;
+}
+.a-retenir .encadre-titre { color: $pv-green; }
+.quand-consulter {
+  background: $pv-red-tint;
+  border-left-color: $pv-red;
+}
+.quand-consulter .encadre-titre { color: $pv-red; }
+
+.statut-brouillon {
+  background: $pv-amber-tint;
+  color: $pv-amber;
+  border-left: 6px solid $pv-amber;
+  border-radius: $border-radius;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.sources-relecture {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid $pv-rule;
+  font-size: 0.92rem;
+  color: $pv-ink-quiet;
+}
+.sources-relecture h2 {
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+// Cards for section landing pages and team members.
+.cartes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.carte {
+  border: 1px solid $pv-rule;
+  border-radius: $border-radius;
+  padding: 1rem 1.1rem;
+  background: $pv-paper;
+}
+.carte h3 {
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+.carte p:last-child { margin-bottom: 0; }
+
+.membre {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+.membre img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: $pv-blue-tint;
+}
+
+// Partner logos (footer) and logos at the top of the team pages.
+// Logos taken from the CHU websites: to be approved by the communication departments before release.
+.logo-partenaire {
+  height: 44px;
+  width: auto;
+  margin: 0.25rem 0.6rem;
+  vertical-align: middle;
+}
+.logo-page {
+  height: 96px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+// Category badges of the news listings: Quarto's default grey fails WCAG AA (4.2:1).
+.quarto-category,
+.quarto-category a,
+.listing-categories .listing-category {
+  color: $pv-ink-quiet !important;
+  opacity: 1 !important; // Quarto fades the badge to 60 %, which breaks the contrast
+  font-size: 0.85rem;
+}
+
+// Tables: readable on phones.
+.table-responsive, table {
+  font-size: 0.95rem;
+}
+
+// Interactive frequency grids (comprendre/frequences).
+.frequences-outil {
+  border: 1px solid $pv-rule;
+  border-radius: $border-radius;
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+.frequences-outil fieldset { border: 0; padding: 0; margin: 0 0 0.75rem; }
+.frequences-outil legend { font-size: 1rem; font-weight: 600; }
+.frequences-outil label { margin-right: 1rem; }
+.frequences-grille { line-height: 0; }
+.frequences-grille svg { max-width: 100%; height: auto; }
+.frequences-resume { font-weight: 600; margin-top: 0.75rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}

@@ -1,0 +1,20 @@
+---
+title: "Priorités régionales"
+description: "Les sujets sur lesquels les CRPV de Normandie concentrent leur information, choisis à partir des données de santé de la région."
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+---
+
+Les priorités sont choisies à partir de données, pas d'impressions. Un premier travail avec l'observatoire régional de la santé et l'ARS Normandie fixera les trois ou quatre sujets de la première année.
+
+## Pistes à confirmer par les données
+
+- Les personnes âgées qui prennent beaucoup de médicaments, à domicile et en EHPAD (établissements d'hébergement pour personnes âgées dépendantes).
+- Les territoires ruraux, où le pharmacien est souvent le premier interlocuteur.
+- Les opioïdes et le mésusage des médicaments, avec le centre d'addictovigilance de Caen.
+- Le bon usage des antibiotiques.
+
+[À compléter après l'analyse des données régionales.]

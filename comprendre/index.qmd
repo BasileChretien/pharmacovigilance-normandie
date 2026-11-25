@@ -1,0 +1,13 @@
+---
+title: "Comprendre"
+description: "Lire une notice et un RCP, comprendre les fréquences, le triangle noir, le rapport bénéfice-risque, et pourquoi déclarer."
+toc: false
+listing:
+  contents: "*.qmd"
+  type: grid
+  sort: "title"
+  fields: [title, description]
+  grid-columns: 2
+---
+
+Les notions utiles pour lire les documents sur les médicaments et comprendre la pharmacovigilance.

@@ -1,0 +1,19 @@
+---
+title: "S'abonner à Vigiking"
+description: "Recevoir Vigiking par courriel : un message court avec des liens vers les articles."
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+---
+
+Le formulaire d'inscription sera ajouté quand l'outil d'envoi aura été choisi et validé par les délégués à la protection des données des CHU.
+
+Ce qui est prévu :
+
+- un courriel court à chaque numéro, avec trois à cinq articles et un lien vers chacun ;
+- une seule information demandée : votre adresse électronique ;
+- une double confirmation à l'inscription ;
+- une désinscription en un clic dans chaque courriel ;
+- un outil hébergé dans l'Union européenne.

@@ -1,0 +1,136 @@
+---
+title: "Insomnie : quels médicaments ?"
+description: "Dans l'insomnie, les mesures d'hygiène du sommeil et les thérapies comportementales viennent d'abord ; les somnifères se prennent peu de temps ; ce qu'il faut savoir sur la mélatonine."
+public: [patients, professionnels]
+recommandation_de_reference: "HAS, Quelle place pour les benzodiazépines dans l'insomnie ?, fiche de bon usage du médicament, juillet 2024"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "HAS, Quelle place pour les benzodiazépines dans l'insomnie ?, fiche de bon usage, validée le 11 juillet 2024 (PDF)"
+    url: "https://www.has-sante.fr/upload/docs/application/pdf/2024-07/bum_bzd_insomnie_11_07_24_vf.pdf"
+    consulte_le: 2026-11-25
+  - titre: "HAS et SFTG, Prise en charge du patient adulte se plaignant d'insomnie en médecine générale, synthèse des recommandations, décembre 2006 (PDF)"
+    url: "https://www.has-sante.fr/upload/docs/application/pdf/rpc_sftg_insomnie_-_synthese_des_recommandations.pdf"
+    consulte_le: 2026-11-25
+  - titre: "EMA, Circadin (mélatonine 2 mg LP), informations sur le produit (RCP et notice), version française"
+    url: "https://www.ema.europa.eu/fr/documents/product-information/circadin-epar-product-information_fr.pdf"
+    consulte_le: 2026-11-25
+  - titre: "Ordre national des pharmaciens, Compléments alimentaires contenant de la mélatonine : certaines populations doivent en éviter la consommation selon l'Anses, 19 avril 2018 (relais de l'avis de l'Anses, page de l'Anses inaccessible le jour de la consultation)"
+    url: "https://www.ordre.pharmacien.fr/les-communications/focus-sur/les-actualites/complements-alimentaires-contenant-de-la-melatonine-certaines-populations-doivent-en-eviter-la-consommation-selon-l-anses"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Médicaments et conduite"
+    url: "https://ansm.sante.fr/dossiers-thematiques/medicaments-et-conduite"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.quand-consulter}
+- Vous dormez mal depuis plus de 3 mois.
+- Le manque de sommeil vous gêne beaucoup dans la journée.
+- Vous ronflez fort, ou on vous a vu arrêter de respirer en dormant.
+- Vos jambes bougent ou vous gênent le soir au coucher.
+- Vous vous sentez triste ou très anxieux depuis plusieurs semaines.
+- Vous prenez un somnifère depuis plus de 4 semaines.
+:::
+
+::: {.a-retenir}
+- De bonnes habitudes de sommeil passent avant tout médicament.
+- Un somnifère se prend au plus 4 semaines, arrêt compris.
+- La mélatonine n'est pas sans risque : demandez conseil avant d'en prendre.
+:::
+
+### Par quoi commencer ?
+
+Une mauvaise nuit de temps en temps est normale. Avant tout médicament, quelques règles aident souvent :
+
+- vous lever et vous coucher à heures régulières ;
+- éviter les siestes de plus d'une heure, ou après 16 heures ;
+- éviter le café, l'alcool et le tabac ;
+- faire de l'exercice dans la journée, plutôt avant 17 heures ;
+- éviter un repas trop gras ou trop copieux le soir ;
+- limiter les écrans avant le coucher ;
+- garder une chambre calme, sombre et pas trop chaude.
+
+Si l'insomnie dure, une thérapie cognitive et comportementale (TCC) est le traitement conseillé en premier. C'est un accompagnement qui aide à changer les habitudes et les pensées qui gênent le sommeil.
+
+<!-- FIGURE À FAIRE : frise d'une journée type (lever, journée, sieste courte avant 16 h, sport avant 17 h, dîner léger, écrans éteints, coucher) avec les bons moments repérés. Couleurs lisibles par les personnes daltoniennes. -->
+
+### Que font les somnifères ?
+
+Les somnifères les plus courants sont des benzodiazépines ou des médicaments proches, comme le zolpidem. Ils aident à s'endormir. Leur effet est faible : on s'endort en moyenne une vingtaine de minutes plus tôt. Ils ne traitent pas la cause de l'insomnie.
+
+### Comment bien les utiliser ?
+
+Un somnifère se prend sur une courte période, à la dose la plus faible. La durée totale ne dépasse pas 4 semaines, arrêt progressif compris. Après plusieurs semaines de prise, l'arrêt doit être progressif. Votre médecin vous dira comment faire.
+
+### Quels effets surveiller ?
+
+- Somnolence le lendemain matin, avec un risque au volant.
+- Troubles de la mémoire et du comportement.
+- Chutes, surtout chez les personnes âgées.
+- Dépendance (besoin de continuer à en prendre), même sans terrain à risque.
+- Retour de l'insomnie à l'arrêt, souvent passager.
+
+Pratiquement tous les somnifères rendent la conduite dangereuse. Ne conduisez pas après en avoir pris.
+
+### Et la mélatonine ?
+
+La mélatonine existe en médicament sur ordonnance. Il est réservé aux personnes de 55 ans ou plus, pour une durée courte. Elle existe aussi en complément alimentaire. Ces compléments sont déconseillés pendant la grossesse et l'allaitement, et chez l'enfant et l'adolescent. Ils le sont aussi en cas de maladie inflammatoire ou auto-immune, ou d'activité demandant une grande vigilance. Demandez conseil si vous avez une épilepsie, un asthme, un trouble de l'humeur, ou un autre traitement.
+
+### Ce qu'il vaut mieux éviter
+
+- Prendre deux médicaments pour dormir ou contre l'anxiété en même temps.
+- L'alcool avec un somnifère ou avec la mélatonine.
+- Arrêter d'un coup un somnifère pris depuis longtemps.
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Signes d'alerte
+
+Une insomnie isolée est fréquemment le symptôme avant-coureur d'un état dépressif. La majeure partie des insomnies chroniques est liée à une pathologie dépressive ou anxieuse (HAS-SFTG 2006). Adresser à un centre du sommeil en cas de suspicion de syndrome d'apnées du sommeil ou de jambes sans repos. Recourir au spécialiste en cas d'insomnie atypique ou rebelle.
+
+### Stratégie thérapeutique (HAS 2024)
+
+- Règles d'hygiène du sommeil dans tous les cas ; elles peuvent suffire dans les insomnies légères sans comorbidité.
+- Devant toute insomnie autre qu'occasionnelle : **TCC en première intention**.
+- **Hypnotique** (benzodiazépine ou apparenté) : seconde intention, stratégie à court terme, seulement dans l'insomnie occasionnelle ou transitoire sévère. Dose minimale utile, prescription limitée à 4 semaines période de réduction comprise (28 jours). Zolpidem : ordonnance sécurisée.
+- **Insomnie chronique (> 3 mois)** : aucune benzodiazépine n'est indiquée ; seul le daridorexant (antagoniste des récepteurs de l'orexine) a actuellement cette indication.
+- **Sujet âgé** : favoriser l'éveil diurne et un coucher retardé ; non pharmacologique d'abord ; si hypnotique, réduire la posologie (de moitié par exemple).
+
+### Mécanismes d'action
+
+Benzodiazépines et apparentés (zolpidem, zopiclone) : modulateurs allostériques positifs du récepteur GABA-A. Efficacité faible, de l'ordre d'une vingtaine de minutes gagnées sur la latence d'endormissement, évaluée sur une nuit à 6 semaines ; maintien à long terme non démontré (HAS 2024). Mélatonine LP (Circadin) : agoniste des récepteurs de la mélatonine.
+
+### Précautions et effets indésirables
+
+- **Hypnotiques** : troubles de la mémoire, baisse de vigilance, troubles du comportement, chutes, tolérance et dépendance psychique et physique. L'association épidémiologique avec la démence n'est pas causale (HAS 2024). Contre-indications principales : syndrome d'apnées du sommeil, myasthénie, dépression respiratoire sévère. Rebond d'insomnie à l'arrêt. Conduite : niveau 3 pour pratiquement tous les somnifères (ANSM).
+- **Circadin 2 mg LP** (RCP) : monothérapie de l'insomnie primaire avec sommeil de mauvaise qualité à partir de 55 ans. Dose : 2 mg une fois par jour, 1 à 2 heures avant le coucher, après le repas, jusqu'à 13 semaines. Alcool à proscrire ; influence modérée sur l'aptitude à conduire.
+- **Compléments alimentaires à base de mélatonine** (Anses, 2018) : à éviter chez la femme enceinte ou allaitante, l'enfant, l'adolescent, en cas de maladie inflammatoire ou auto-immune et d'activité exigeant une vigilance soutenue. Avis médical préalable en cas d'épilepsie, d'asthme, de troubles de l'humeur, du comportement ou de la personnalité, ou de traitement en cours. Usage ponctuel.
+
+### Ce qu'il faut éviter
+
+- Prescrire ou renouveler un hypnotique de façon systématique.
+- Associer deux hypnotiques ou deux anxiolytiques ; cumuler les sédatifs.
+- Arrêter brutalement : chez l'utilisateur au long cours, sevrage progressif sur quelques semaines à plusieurs mois. Proposer une stratégie d'arrêt à tout patient traité quotidiennement depuis plus d'un mois. Les traitements de 2 à 5 jours ne nécessitent pas d'arrêt progressif.
+
+### Outils et liens
+
+- HAS, Arrêt des benzodiazépines et médicaments apparentés : démarche du médecin traitant en ambulatoire (2015), cité dans la fiche 2024.
+- Agenda du sommeil (HAS-SFTG 2006).
+
+:::
+
+:::

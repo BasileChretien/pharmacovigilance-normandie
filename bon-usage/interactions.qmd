@@ -1,0 +1,196 @@
+---
+title: "Les interactions à connaître"
+description: "Quinze associations fréquentes et dangereuses entre médicaments, plantes, aliments et alcool, expliquées simplement et vérifiées sur le Thésaurus des interactions de l'ANSM."
+public: [patients, professionnels]
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "ANSM, Thésaurus des interactions médicamenteuses (page de référence ; dernière version du 15 septembre 2023, en ligne sans mise à jour jusqu'au 15 juin 2027)"
+    url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Thésaurus des interactions médicamenteuses, septembre 2023 (PDF, 263 pages)"
+    url: "https://ansm.sante.fr/uploads/2024/06/07/20230915-thesaurus-interactions-medicamenteuses-septembre-2023.pdf"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, dossier thématique « Le paracétamol » (mis à jour le 25/06/2024)"
+    url: "https://ansm.sante.fr/dossiers-thematiques/medicaments-de-la-douleur/le-paracetamol"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Paracétamol et risque pour le foie : un message d'alerte ajouté sur les boîtes de médicament (communiqué du 09/07/2019, mis à jour le 15/01/2021)"
+    url: "https://ansm.sante.fr/actualites/paracetamol-et-risque-pour-le-foie-un-message-dalerte-ajoute-sur-les-boites-de-medicament-communique"
+    consulte_le: 2026-11-25
+---
+
+<!-- NOTE DE RÉDACTION (à retirer avant publication) : chaque association a été vérifiée le 25/11/2026 dans le PDF du Thésaurus de septembre 2023 (niveau et texte recopiés dans l'onglet professionnel). L'ANSM indique que cette version est la dernière et qu'elle restera en ligne sans mise à jour jusqu'au 15 juin 2027 ; les RCP et notices sont les seuls documents de référence opposables. Le relecteur vérifie qu'aucun RCP récent ne modifie un niveau, et décide quelle référence citer après juin 2027. -->
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Montrez la liste de tous vos produits à chaque médecin et pharmacien : médicaments sans ordonnance, plantes et compléments compris.
+- Ne prenez pas d'anti-inflammatoire ni d'aspirine avec un médicament qui rend le sang plus fluide, sans avis médical.
+- Le paracétamol se cache dans de nombreux médicaments : vérifiez la composition avant d'en prendre un autre.
+:::
+
+<!-- FIGURE À FAIRE : tableau illustré à double entrée « Ce que je prends / Ce que je veux ajouter », avec des pictogrammes (pilule, plante, verre de jus de pamplemousse, verre d'alcool) et un code de couleur lisible en niveaux de gris (interdit, à éviter, avec précaution). Texte alternatif : « Grille des associations à éviter entre médicaments, plantes, aliments et alcool ». -->
+
+### Qu'est-ce qu'une interaction ?
+
+Une interaction se produit quand deux produits pris ensemble modifient leurs effets. L'effet d'un médicament peut augmenter, avec un risque de surdosage. Il peut aussi diminuer, et le médicament ne marche plus.
+
+Les produits en cause ne sont pas seulement les médicaments sur ordonnance. Les médicaments achetés sans ordonnance comptent aussi, ainsi que les plantes, certains aliments et l'alcool.
+
+### Comment lire les niveaux de risque ?
+
+L'Agence nationale de sécurité du médicament (ANSM) classe les interactions en quatre niveaux :
+
+- **Contre-indication** (association interdite) : ne prenez jamais les deux ensemble.
+- **Association déconseillée** : à éviter, sauf décision du médecin.
+- **Précaution d'emploi** : possible, avec des précautions précises.
+- **À prendre en compte** : un risque à connaître, que le médecin évalue.
+
+### Anticoagulant et anti-inflammatoire ou aspirine ?
+
+Un anticoagulant (médicament qui rend le sang plus fluide) évite les caillots. C'est le cas de la warfarine, de la fluindione, de l'apixaban, du rivaroxaban ou du dabigatran.
+
+- **Avec un anti-inflammatoire** comme l'ibuprofène, le kétoprofène ou le naproxène : association déconseillée. L'anti-inflammatoire abîme la paroi de l'estomac. Le risque de saignement augmente.
+- **Avec l'aspirine contre la douleur ou la fièvre** : déconseillée, et même interdite si vous avez déjà eu un ulcère (plaie de l'estomac ou de l'intestin). À forte dose, elle est toujours interdite.
+- **Avec l'aspirine à petite dose** : votre médecin la prescrit parfois en même temps, pour le cœur. C'est une décision médicale.
+
+### Deux anti-inflammatoires en même temps ?
+
+Prendre deux anti-inflammatoires ensemble est déconseillé. C'est aussi vrai pour un anti-inflammatoire avec de l'aspirine contre la douleur. Le risque de plaie et de saignement de l'estomac augmente. Attention aux produits contre le rhume ou les règles douloureuses : certains contiennent un anti-inflammatoire.
+
+### Anti-inflammatoire et médicament contre la tension ?
+
+Certains médicaments contre la tension portent un nom finissant par « -pril » (comme le ramipril) ou « -sartan » (comme le valsartan). D'autres sont des diurétiques (médicaments qui font uriner).
+
+Avec un anti-inflammatoire, ces médicaments demandent des précautions. Les reins peuvent cesser brutalement de fonctionner. Le risque est plus grand chez les personnes âgées, déshydratées, ou qui prennent déjà un diurétique. L'anti-inflammatoire diminue aussi l'effet sur la tension. Si l'association est nécessaire, buvez assez et faites contrôler vos reins par une prise de sang.
+
+### Trop de potassium dans le sang ?
+
+Plusieurs médicaments font monter le potassium dans le sang. C'est le cas des médicaments en « -pril » et en « -sartan », de la spironolactone, des comprimés de potassium et des anti-inflammatoires. Associés, ils peuvent provoquer un excès de potassium. Cet excès peut être mortel. Votre médecin surveille alors votre potassium par des prises de sang.
+
+### Le millepertuis, une plante pas si douce ?
+
+Le millepertuis est une plante vendue contre la déprime. Il accélère l'élimination de nombreux médicaments, qui deviennent moins efficaces.
+
+- **Avec la pilule contraceptive** : interdit. Risque de grossesse.
+- **Avec la warfarine ou la fluindione** : interdit. Risque de caillot.
+- **Avec la digoxine**, un médicament du cœur : interdit.
+- **Avec les médicaments contre le rejet de greffe** : interdit. Risque de rejet.
+- **Avec la lévothyroxine** (hormone de la thyroïde) : déconseillé.
+- **Avec certains antidépresseurs** : précaution, à cause du risque décrit plus bas.
+
+Si vous prenez déjà du millepertuis avec la warfarine ou la fluindione, ne l'arrêtez pas brutalement. Parlez-en d'abord à votre médecin. Il fera contrôler votre INR (prise de sang qui mesure la fluidité du sang) avant et après l'arrêt.
+
+### Le pamplemousse, un fruit à surveiller ?
+
+Le jus et le fruit du pamplemousse augmentent la quantité de certains médicaments dans le sang.
+
+- **Avec la simvastatine** (contre le cholestérol) : déconseillé. Risque de douleurs et d'atteinte des muscles.
+- **Avec la ciclosporine, le tacrolimus ou le sirolimus** (contre le rejet de greffe) : déconseillé.
+- **Avec le ticagrélor** (contre les caillots) : déconseillé. Risque de saignement.
+- **Avec l'atorvastatine** : risque à prendre en compte.
+
+### L'alcool avec des médicaments ?
+
+- **Avec les médicaments qui font dormir ou calment l'anxiété** : déconseillé. La somnolence augmente. Conduire devient dangereux.
+- **Avec l'insuline ou certains comprimés contre le diabète** : déconseillé. Risque d'hypoglycémie (baisse du sucre dans le sang) grave.
+- **Avec la metformine** (contre le diabète) : déconseillé. Une ivresse expose à une acidose lactique, un excès d'acide dans le sang.
+- **Avec certains médicaments**, comme le métronidazole (un antibiotique) : déconseillé. Bouffées de chaleur, rougeurs, vomissements et cœur qui bat vite.
+
+### Plusieurs médicaments qui font dormir ?
+
+Beaucoup de médicaments diminuent la vigilance. C'est le cas des somnifères, des calmants comme les benzodiazépines, des antidouleurs dérivés de la morphine et de certains antidépresseurs. Certains antiallergiques en font partie aussi.
+
+Leurs effets s'additionnent. Une benzodiazépine avec un dérivé de la morphine peut ralentir la respiration. Cela peut aller jusqu'au coma ou au décès, surtout chez les personnes âgées. Le médecin limite alors les doses et la durée.
+
+### Le paracétamol dans plusieurs médicaments ?
+
+Ce n'est pas une interaction, mais un risque de surdosage. Plus de 200 médicaments vendus en France contiennent du paracétamol. Certains sont contre le rhume, d'autres contre la douleur.
+
+Un surdosage en paracétamol peut abîmer gravement le foie, parfois de façon définitive. C'est la première cause de greffe du foie due à un médicament en France. Chez l'adulte de plus de 50 kilos, ne dépassez pas 3 grammes par jour sans ordonnance. Laissez au moins 4 heures entre deux prises.
+
+Avant de prendre un médicament, regardez sa composition sur la boîte. En cas de doute, demandez à votre pharmacien.
+
+### Fer, calcium et pansements gastriques ?
+
+Le fer, le calcium et les pansements gastriques (médicaments contre les brûlures d'estomac) empêchent certains médicaments de passer dans le sang. Prenez-les à plus de 2 heures d'intervalle, si possible :
+
+- des antibiotiques comme la doxycycline ou la ciprofloxacine ;
+- la lévothyroxine.
+
+Les médicaments qui réduisent l'acidité de l'estomac, comme l'oméprazole, peuvent aussi gêner la lévothyroxine. Votre médecin peut alors contrôler votre thyroïde.
+
+### Trop de sérotonine ?
+
+Certains médicaments augmentent la sérotonine, une substance du cerveau. C'est le cas de la plupart des antidépresseurs, du tramadol (un antidouleur), du lithium et du millepertuis.
+
+Associés, ils peuvent provoquer un syndrome sérotoninergique (excès de sérotonine). Les signes sont une diarrhée, des sueurs, des tremblements et une confusion. Dans les cas graves, un coma peut survenir. Consultez sans attendre si ces signes apparaissent.
+
+Le tramadol avec la fluoxétine ou la paroxétine est aussi déconseillé pour une autre raison. Le tramadol risque de ne plus soulager la douleur.
+
+### Lithium, méthotrexate, colchicine : des médicaments à surveiller ?
+
+- **Le lithium** (contre les troubles de l'humeur) avec un anti-inflammatoire, un médicament en « -pril », en « -sartan » ou certains diurétiques : déconseillé. Le lithium peut atteindre une dose toxique.
+- **Le méthotrexate** pris chaque semaine avec le triméthoprime : déconseillé, voire interdit selon la dose. Le triméthoprime est un antibiotique présent dans le Bactrim.
+- **La colchicine** (contre la goutte) avec la clarithromycine ou l'érythromycine (des antibiotiques) : interdit. Les effets indésirables de la colchicine peuvent être mortels.
+- **La simvastatine** avec la clarithromycine : interdit. Risque de destruction des muscles.
+- **La warfarine ou la fluindione** avec le miconazole (un médicament contre les champignons) : interdit. Risque de saignements graves.
+
+### Que faire avant de prendre un nouveau produit ?
+
+Demandez conseil à votre pharmacien, même pour un produit sans ordonnance ou une plante. Gardez sur vous la liste à jour de vos médicaments. Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+### Signaler un effet indésirable
+
+Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr).
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Statut du Thésaurus de l'ANSM
+
+Les niveaux ci-dessous sont ceux du [Thésaurus des interactions médicamenteuses](https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1), version du 15 septembre 2023. L'ANSM indique que cette version est la dernière : aucune nouvelle actualisation ne sera faite, et le Thésaurus reste en ligne sans mise à jour jusqu'au 15 juin 2027. L'ANSM rappelle que le RCP et la notice de chaque spécialité sont les seuls documents de référence opposables. Vérifiez donc toujours la rubrique 4.5 du RCP à jour.
+
+### Niveaux du Thésaurus pour les associations de la page
+
+| Association | Niveau (Thésaurus, septembre 2023) | Risque et conduite à tenir (résumé) |
+|---|---|---|
+| Anticoagulants oraux + AINS | Association déconseillée | Augmentation du risque hémorragique (agression de la muqueuse gastroduodénale). Si l'association ne peut être évitée : surveillance clinique étroite, voire biologique. |
+| Anticoagulants oraux + acide acétylsalicylique | CI : doses anti-inflammatoires (≥ 1 g par prise et/ou ≥ 3 g/j), ou doses antalgiques/antipyrétiques (≥ 500 mg par prise et/ou < 3 g/j) avec antécédent d'ulcère. ASDEC : doses antalgiques/antipyrétiques sans antécédent d'ulcère ; doses antiagrégantes (50 à 375 mg/j) avec antécédent d'ulcère. À prendre en compte : doses antiagrégantes | Majoration du risque hémorragique. |
+| AINS + autres AINS | Association déconseillée | Majoration du risque ulcérogène et hémorragique digestif. |
+| AINS + acide acétylsalicylique | ASDEC aux doses anti-inflammatoires et antalgiques ; à prendre en compte aux doses antiagrégantes | Majoration du risque ulcérogène et hémorragique digestif. |
+| AINS + IEC, AINS + ARA II, AINS + diurétiques | Précaution d'emploi | Insuffisance rénale aiguë chez le patient à risque (âgé, déshydraté, sous diurétiques, fonction rénale altérée) ; réduction de l'effet antihypertenseur. Hydrater, surveiller la fonction rénale. |
+| Hyperkaliémiants entre eux | À prendre en compte (niveaux propres à chaque substance) | Hyperkaliémie potentiellement létale ; risque maximal avec les diurétiques épargneurs de potassium, entre eux ou avec des sels de potassium. |
+| Millepertuis + estroprogestatifs contraceptifs, + AVK, + digoxine, + immunosuppresseurs | Contre-indication | Baisse d'efficacité par induction enzymatique. Avec les AVK et la digoxine : en cas d'association fortuite, ne pas arrêter brutalement le millepertuis, contrôler l'INR ou la digoxinémie avant et après l'arrêt. |
+| Millepertuis + hormones thyroïdiennes | Association déconseillée | Baisse d'efficacité des hormones thyroïdiennes. |
+| Millepertuis + ISRS | Précaution d'emploi | Syndrome sérotoninergique ; surveillance clinique et biologique, notamment en début d'association. |
+| Pamplemousse (jus et fruit) + simvastatine, + immunosuppresseurs, + ticagrélor | Association déconseillée | Augmentation des concentrations (effets indésirables musculaires, immunosuppresseurs, hémorragiques). |
+| Pamplemousse + atorvastatine | À prendre en compte | Augmentation des concentrations, effets indésirables musculaires. |
+| Alcool + médicaments sédatifs, + insuline, + sulfamides hypoglycémiants, + metformine, + médicaments à effet antabuse | Association déconseillée | Majoration de la sédation ; hypoglycémie ; acidose lactique en cas d'intoxication alcoolique aiguë ; effet antabuse (dont métronidazole, glibenclamide). |
+| Benzodiazépines + morphiniques | À prendre en compte | Sédation et dépression respiratoire pouvant entraîner coma et décès, notamment chez le sujet âgé ; limiter doses et durée. |
+| Fer + cyclines, + fluoroquinolones, + hormones thyroïdiennes ; calcium + cyclines, + ciprofloxacine, + hormones thyroïdiennes ; topiques gastro-intestinaux et antiacides + médicaments oraux | Précaution d'emploi (topiques et antiacides : association déconseillée avec les inhibiteurs d'intégrase) | Espacer les prises de plus de 2 heures si possible. |
+| Hormones thyroïdiennes + IPP | Précaution d'emploi | Diminution probable de l'absorption ; contrôle clinique et biologique. |
+| Tramadol + ISRS | À prendre en compte | Convulsions et/ou syndrome sérotoninergique. |
+| Tramadol ou codéine + fluoxétine, + paroxétine | Association déconseillée | Diminution de l'efficacité de l'opiacé par inhibition de son métabolisme (CYP2D6). |
+| Lithium + AINS, + IEC, + ARA II, + diurétiques thiazidiques et de l'anse | Association déconseillée | Augmentation de la lithémie pouvant atteindre des valeurs toxiques. |
+| Méthotrexate + triméthoprime | CI au-delà de 20 mg/semaine ; ASDEC jusqu'à 20 mg/semaine | Augmentation de la toxicité hématologique. |
+| Colchicine + macrolides (sauf spiramycine) | Contre-indication | Effets indésirables de la colchicine aux conséquences potentiellement fatales. |
+| Simvastatine + inhibiteurs puissants du CYP3A4 (dont clarithromycine) | Contre-indication | Rhabdomyolyse. |
+| Miconazole + AVK | Contre-indication | Hémorragies imprévisibles, éventuellement graves. |
+
+Le risque de surdosage en paracétamol ne relève pas du Thésaurus. Source : ANSM, dossier « Le paracétamol » (dose maximale de 60 mg/kg/j, au plus 3 g/j sans ordonnance, au moins 4 heures entre deux prises ; plus de 200 spécialités en contiennent ; première cause de greffe hépatique d'origine médicamenteuse en France).
+
+Pour les interactions pharmacocinétiques liées aux cytochromes, voir le [tableau des cytochromes P450 et de la P-glycoprotéine](cytochromes.qmd).
+
+:::
+
+:::

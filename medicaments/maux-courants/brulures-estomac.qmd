@@ -1,0 +1,120 @@
+---
+title: "Brûlures d'estomac et reflux : quels médicaments ?"
+description: "Antiacides, alginates et inhibiteurs de la pompe à protons dans les brûlures d'estomac : comment ils agissent, comment les utiliser en cure courte, quand consulter."
+public: [patients, professionnels]
+recommandation_de_reference: "HAS, Fiche bon usage des inhibiteurs de la pompe à protons (IPP), septembre 2022"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "HAS, Fiche bon usage des inhibiteurs de la pompe à protons (IPP), validée le 8 septembre 2022 (page de présentation)"
+    url: "https://www.has-sante.fr/jcms/p_3372966/fr/fiche-bon-usage-des-inhibiteurs-de-la-pompe-a-protons-ipp"
+    consulte_le: 2026-11-25
+  - titre: "HAS, Fiche BUM – Bon usage des inhibiteurs de la pompe à protons (IPP), septembre 2022 (PDF)"
+    url: "https://www.has-sante.fr/upload/docs/application/pdf/2022-09/fiche_bum_-_bon_usage_des_inhibiteurs_de_la_pompe_a_protons_ipp.pdf"
+    consulte_le: 2026-11-25
+  - titre: "HAS, Commission de la transparence, Rapport de réévaluation des inhibiteurs de la pompe à protons, avis définitif, 2020"
+    url: "https://www.has-sante.fr/upload/docs/application/pdf/2020-11/rapport_reevaluation_ipp_avisdef_cteval493.pdf"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.quand-consulter}
+- Vous avez du mal à avaler, ou les aliments restent bloqués.
+- Vous maigrissez sans raison.
+- Vous vomissez souvent.
+- Vous êtes très fatigué et pâle (signe possible d'anémie, un manque de globules rouges).
+- Les brûlures durent malgré le traitement, ou reviennent dès l'arrêt.
+- Vous avez plus de 50 ans et ces brûlures sont nouvelles pour vous.
+- Vous vomissez du sang ou vos selles sont noires : appelez le 15.
+- Une douleur serre la poitrine et peut venir du cœur : appelez le 15.
+:::
+
+::: {.a-retenir}
+- Des brûlures rares se soulagent avec un médicament pris seulement au moment de la gêne.
+- Un traitement de fond dure en général 4 semaines, pas plus sans avis médical.
+- Certains signes doivent faire consulter vite : voir l'encadré ci-dessus.
+:::
+
+### De quoi parle-t-on ?
+
+Le reflux est une remontée d'acide de l'estomac vers l'œsophage. L'œsophage est le tube qui relie la bouche à l'estomac. Ce reflux donne des brûlures qui montent derrière le sternum (l'os plat au milieu de la poitrine). Il peut aussi faire remonter un liquide acide dans la bouche.
+
+### Quels médicaments peuvent aider ?
+
+Trois familles de médicaments existent :
+
+- les **antiacides** : ils neutralisent l'acide déjà présent dans l'estomac ;
+- les **alginates** : ils forment une couche qui flotte sur le contenu de l'estomac et protège l'œsophage ;
+- les **inhibiteurs de la pompe à protons**, souvent appelés IPP : ils diminuent la fabrication d'acide par l'estomac.
+
+<!-- FIGURE À FAIRE : schéma simple de l'estomac et de l'œsophage montrant où agit chaque famille (antiacide dans l'estomac, alginate en couche flottante, IPP sur la paroi de l'estomac qui fabrique l'acide). Couleurs lisibles par les personnes daltoniennes. -->
+
+### Comment choisir ?
+
+Si les brûlures sont rares, moins d'une fois par semaine, un antiacide ou un alginate suffit souvent. Il agit vite, mais peu de temps. Si les brûlures reviennent plus d'une fois par semaine, un IPP peut être proposé. Votre pharmacien peut vous conseiller. Parlez-lui de vos autres médicaments, d'une grossesse ou d'une maladie des reins.
+
+### Comment bien les utiliser ?
+
+Prenez l'antiacide ou l'alginate au moment de la gêne. Un IPP se prend une fois par jour, souvent avant un repas. Suivez la notice ou l'ordonnance. Sans ordonnance, ne prenez pas d'IPP plus de 14 jours s'il ne vous soulage pas : consultez. Un traitement prescrit dure en général 4 semaines.
+
+### Quels effets surveiller ?
+
+Les IPP sont en général bien tolérés sur une courte durée. Pris pendant des mois ou des années, ils peuvent favoriser des infections de l'intestin. D'autres effets ont été décrits, comme une baisse du magnésium dans le sang ou des fractures. À l'arrêt, les brûlures peuvent revenir quelques jours : c'est l'effet rebond. Il ne veut pas dire que le traitement doit reprendre.
+
+### Ce qu'il vaut mieux éviter
+
+- Prendre un IPP tous les jours pendant des mois sans en reparler à votre médecin.
+- Les repas gras et copieux le soir, l'alcool, et vous coucher juste après manger.
+- L'aspirine et les anti-inflammatoires sans avis : ils peuvent aggraver les brûlures.
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Signes d'alerte
+
+Une endoscopie digestive haute est recommandée en cas de symptômes atypiques ou de signes d'alarme : amaigrissement, dysphagie, anémie ferriprive, vomissements, hémorragie digestive. Elle l'est aussi en cas de symptômes apparus après 50 ans (seuil de la SNFGE) ou 60 ans (seuil de l'ANSM), selon la synthèse de la HAS (rapport de réévaluation, 2020). Elle est également indiquée en cas d'échec d'un IPP bien conduit.
+
+### Stratégie thérapeutique
+
+- **Symptômes typiques espacés (< 1 par semaine)** : traitement ponctuel d'action rapide par antiacide, alginate ou antisécrétoire à la demande, avec les mesures hygiéno-diététiques. L'automédication après conseil pharmaceutique est une option, sans dépasser 14 jours en cas d'inefficacité (HAS 2020).
+- **Symptômes typiques rapprochés (> 1 par semaine)** : IPP pendant 4 semaines au maximum (HAS 2022). Doses du traitement symptomatique initial du RGO sans œsophagite : demi-dose pour ésoméprazole, lansoprazole, pantoprazole et rabéprazole ; pleine dose pour oméprazole. Les topiques peuvent être associés en cas de symptômes résiduels.
+- **Pas d'IPP** en cas de « pyrosis fonctionnel », ni comme test thérapeutique devant des manifestations extradigestives isolées (toux chronique, symptômes ORL, asthme, douleur thoracique non cardiaque) sans RGO documenté.
+- **Traitement prolongé justifié** : œsophagite de grade C ou D (Los Angeles), endobrachyœsophage, RGO symptomatique invalidant mal contrôlé par un traitement intermittent. Au-delà de 3 mois : investiguer (endoscopie) et rechercher la dose minimale efficace.
+
+### Mécanismes d'action
+
+Les antiacides neutralisent l'acidité gastrique (effet immédiat, modeste). Les alginates forment un gel surnageant en milieu acide qui limite le reflux (effet modeste). Les IPP inhibent la H+/K+-ATPase de la cellule pariétale ; ils préviennent mieux les rechutes que les anti-H2.
+
+### Précautions et effets indésirables
+
+En usage prolongé, le risque établi avec un bon niveau de preuve est celui d'infections intestinales (essai COMPASS cité par la HAS). Les RCP mentionnent aussi hyponatrémie, hypomagnésémie sévère, fractures, néphrites interstitielles, colites. Des associations avec surmortalité, démence ou cancer ont été rapportées en observationnel, sans lien causal établi. L'utilisation au long cours expose à la polymédication, en particulier chez le sujet âgé. Les topiques peuvent réduire l'absorption digestive d'autres médicaments administrés simultanément [à compléter : source — RCP d'un antiacide et Thésaurus ANSM pour le délai à respecter].
+
+### Ce qu'il faut éviter
+
+- Renouveler un IPP au-delà de 4 semaines sans réévaluation. La HAS estime que plus de la moitié des usages ne seraient pas justifiés.
+- Associer un IPP à un AINS en l'absence de facteur de risque (âge ≥ 65 ans, antécédent d'ulcère, association à un antiagrégant, un corticoïde ou un anticoagulant).
+
+### Déprescription
+
+Si l'ordonnance contient un IPP depuis plus de 4 semaines dans un RGO non compliqué : arrêter l'IPP et informer le patient qu'un effet rebond est possible mais ne justifie pas une nouvelle prescription. Si les symptômes reviennent de façon occasionnelle : antiacide, anti-H2, alginate ou IPP à la demande (arbre de déprescription, HAS 2022).
+
+### Outils et liens
+
+- Arbre de déprescription des IPP dans le RGO de l'adulte : page 3 de la fiche HAS 2022 (voir sources).
+- Conseil pharmaceutique et coordination prescripteur-pharmacien recommandés par la HAS pour réussir l'arrêt.
+
+:::
+
+:::

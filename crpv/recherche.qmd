@@ -1,0 +1,19 @@
+---
+title: "Recherche et publications"
+description: "Les travaux de recherche des CRPV de Caen et de Rouen sur la sécurité des médicaments."
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+---
+
+Les publications des deux équipes seront listées ici et mises à jour automatiquement à partir d'ORCID et d'OpenAlex. Chaque membre a aussi sa page SigmaCV, liée depuis sa carte sur les pages [Équipe de Caen](equipe-caen.qmd) et [Équipe de Rouen](equipe-rouen.qmd).
+
+## Projets en cours
+
+[À compléter par les équipes.]
+
+## Publications récentes
+
+[Liste générée automatiquement : à brancher sur ORCID et OpenAlex.]

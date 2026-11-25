@@ -1,0 +1,12 @@
+{
+  "name": "pharmacovigilance-normandie",
+  "private": true,
+  "description": "HTML and accessibility checks for the rendered site (_site/).",
+  "scripts": {
+    "check:html": "html-validate \"_site/**/*.html\"",
+    "check:a11y": "node tools/a11y/run-axe.mjs"
+  },
+  "devDependencies": {
+    "html-validate": "^9.0.0"
+  }
+}

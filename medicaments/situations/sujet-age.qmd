@@ -1,0 +1,116 @@
+---
+title: "Les médicaments chez la personne âgée"
+description: "Pourquoi les médicaments sont plus risqués avec l'âge : nombreux traitements, chutes, médicaments anticholinergiques, et comment faire le point avec son médecin et son pharmacien."
+public: [patients, professionnels]
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "HAS, Points clés – Comment améliorer la qualité et la sécurité des prescriptions de médicaments chez la personne âgée ?, septembre 2014 (PDF)"
+    url: "https://has-sante.fr/upload/docs/application/pdf/2014-10/fpcs_prescription_web.pdf"
+    consulte_le: 2026-11-25
+  - titre: "HAS, Quelle place pour les benzodiazépines dans l'insomnie ?, fiche de bon usage, juillet 2024 (PDF)"
+    url: "https://www.has-sante.fr/upload/docs/application/pdf/2024-07/bum_bzd_insomnie_11_07_24_vf.pdf"
+    consulte_le: 2026-11-25
+  - titre: "HAS, Élaboration d'un bilan médicamenteux harmonisé et partagé, note de cadrage, juillet 2024 (PDF)"
+    url: "https://has-sante.fr/upload/docs/application/pdf/2024-07/note_de_cadrage_bilan_medicamenteux_harmonise_et_partage_vd.pdf"
+    consulte_le: 2026-11-25
+  - titre: "OMÉDIT Pays de la Loire, Médicaments anticholinergiques chez le sujet âgé : les bons réflexes de prescription, V3, février 2026 (PDF)"
+    url: "https://www.omedit-paysdelaloire.fr/wp-content/uploads/2021/09/20260217_Fiche-des-medicaments-anticholinergiques_V3.pdf"
+    consulte_le: 2026-11-25
+  - titre: "HAS, Fiche BUM – Bon usage des inhibiteurs de la pompe à protons (IPP), septembre 2022 (PDF)"
+    url: "https://www.has-sante.fr/upload/docs/application/pdf/2022-09/fiche_bum_-_bon_usage_des_inhibiteurs_de_la_pompe_a_protons_ipp.pdf"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Un symptôme nouveau peut venir d'un médicament : parlez-en à votre médecin.
+- Une chute, une confusion ou une grande fatigue doivent faire revoir les traitements.
+- Votre pharmacien peut faire avec vous le point sur tous vos médicaments.
+:::
+
+::: {.quand-consulter}
+- Vous êtes tombé, ou vous avez souvent la tête qui tourne en vous levant.
+- Vous ou vos proches remarquez une confusion (vous êtes perdu, désorienté) ou des troubles de mémoire nouveaux.
+- Vous avez des bleus ou des saignements inhabituels.
+- Vous avez de la fièvre, une diarrhée, des vomissements, ou vous buvez peu par forte chaleur.
+- Vous sortez de l'hôpital avec une nouvelle ordonnance.
+:::
+
+### Pourquoi les médicaments sont-ils plus risqués avec l'âge ?
+
+Avec l'âge, le foie et les reins éliminent les médicaments plus lentement. Un médicament peut donc s'accumuler dans le corps. Beaucoup de personnes âgées ont aussi plusieurs maladies. Elles prennent alors plusieurs médicaments : on parle de polymédication. Plus on prend de médicaments, plus le risque d'effet indésirable augmente.
+
+Les médicaments les plus souvent en cause sont des traitements utiles et courants. C'est le cas des anticoagulants (qui fluidifient le sang) et des diurétiques (qui font uriner). C'est aussi le cas des médicaments de la tension et des psychotropes (médicaments qui agissent sur le cerveau).
+
+### Comment les médicaments peuvent-ils faire tomber ?
+
+Certains médicaments donnent des vertiges, une baisse de tension en se levant, ou de la somnolence. Les somnifères et les médicaments contre l'anxiété exposent tout particulièrement aux chutes. Une chute peut entraîner une fracture et une perte d'autonomie.
+
+<!-- FIGURE À FAIRE : schéma « du médicament à la chute » : somnolence, vertiges, baisse de tension en se levant, confusion → chute → fracture. Pictogrammes simples, couleurs lisibles par les personnes daltoniennes. -->
+
+### Que sont les médicaments anticholinergiques ?
+
+Ce sont des médicaments qui bloquent un messager chimique du corps, l'acétylcholine. On les trouve parmi des médicaments de la dépression, de certaines allergies, de la maladie de Parkinson ou de la vessie. Leurs effets s'additionnent quand on en prend plusieurs. Ils peuvent donner bouche sèche, constipation, difficulté à uriner, confusion ou troubles de mémoire. Pensez aussi aux gouttes pour les yeux, aux sprays pour le nez et aux médicaments achetés sans ordonnance.
+
+### Comment faire le point sur vos médicaments ?
+
+Le pharmacien peut vous proposer un **bilan partagé de médication**. C'est un entretien sur tous les médicaments que vous prenez. Il s'adresse aux personnes de plus de 65 ans ayant une maladie chronique (de longue durée). Il faut aussi au moins 5 médicaments prescrits pour 6 mois ou plus. Le pharmacien transmet ensuite ses conclusions à votre médecin.
+
+Pour préparer une consultation, apportez toutes vos boîtes, y compris les gouttes, les crèmes et les produits achetés sans ordonnance.
+
+### Ce qu'il vaut mieux éviter
+
+- Ajouter un médicament sans ordonnance sans demander l'avis du pharmacien.
+- Prendre un somnifère tous les jours pendant des mois.
+- Garder un traitement dont vous ne savez plus à quoi il sert : posez la question.
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Pourquoi c'est un enjeu
+
+La iatrogénie médicamenteuse représente 20 % des hospitalisations en urgence des plus de 75 ans et 25 % des admissions des plus de 85 ans. De 50 à 70 % des événements indésirables liés à une prise en charge inappropriée sont jugés évitables (HAS 2014). Polypathologie et polymédication concernent au moins 10 % des 75 ans et plus. Un événement indésirable médicamenteux (EIM) sur deux survient lors d'un événement intercurrent (fièvre, déshydratation). Anticoagulants, diurétiques, antiagrégants, antihypertenseurs et psychotropes sont responsables de la majorité des EIM.
+
+### Repérer
+
+- **Réflexe iatrogénique** : tout symptôme nouveau chez un patient âgé polymédiqué doit faire évoquer un EIM (chute, confusion, perte de poids, hématomes, saignements, vomissements, douleurs abdominales).
+- **Alertes biologiques** : INR hors zone, hypokaliémie, hyponatrémie, anémie.
+- **Situations à risque** : sortie d'hospitalisation, changement thérapeutique récent, événement intercurrent (fièvre, diarrhée, canicule), perte de l'aidant.
+
+### Revoir l'ordonnance (HAS 2014)
+
+Établir la liste exhaustive des médicaments (compte Ameli, Dossier pharmaceutique, avis du pharmacien). La confronter à la liste hiérarchisée des maladies. Rechercher redondances et interactions, et les prescriptions sans indication robuste (plus de 2 psychotropes, plus de 3 antihypertenseurs). Vérifier l'adaptation des doses à l'âge et à la fonction rénale. Vérifier les durées : IPP, benzodiazépines, antidépresseurs, antiagrégants, statines.
+
+- **IPP** : la poursuite au-delà de 4 semaines dans le RGO est rarement justifiée, notamment chez le sujet âgé polymédiqué (HAS 2022).
+- **Hypnotiques** : exposent particulièrement aux chutes, aux altérations cognitives et aux accidents de la voie publique. Réduire la posologie (de moitié par exemple) ; analyser avec le patient les bénéfices et risques de la poursuite et de l'arrêt (HAS 2024).
+
+### Charge anticholinergique
+
+Les médicaments anticholinergiques font partie des médicaments potentiellement inappropriés chez le sujet âgé. La fiche de l'OMÉDIT Pays de la Loire (2026) propose de mesurer la charge cumulée avant d'introduire un tel médicament et devant un effet évocateur. Échelle ACB (effets centraux) : impact cognitif significatif si score ≥ 4. Échelle CIA (effets périphériques) : imprégnation élevée si score > 5. Rechercher une alternative aux molécules de score 3 (liste REMEDI[e]S), sinon dose efficace la plus faible et durée la plus courte. Attention à l'interaction avec les anticholinestérasiques, aux voies nasale et oculaire et à l'automédication.
+
+### Bilan partagé de médication
+
+Réalisé par le pharmacien d'officine, il recueille et analyse tous les médicaments pris et formalise des conclusions pour le patient et le prescripteur. Il s'adresse aux patients de plus de 65 ans atteints d'une ou plusieurs pathologies chroniques et ayant au moins cinq molécules prescrites pour 6 mois ou plus, ainsi qu'aux résidents d'EHPAD fortement polymédiqués (HAS 2024). Les conditions conventionnelles exactes (ALD, âge) sont à vérifier sur ameli.fr [à compléter : source — page ameli inaccessible le jour de la consultation].
+
+### Outils et liens
+
+- Programme HAS « Prescription médicamenteuse chez le sujet âgé » (PMSA).
+- Liste REMEDI[e]S des médicaments potentiellement inappropriés.
+- Déclaration d'effet indésirable : CRPV de Caen ou de Rouen.
+
+:::
+
+:::

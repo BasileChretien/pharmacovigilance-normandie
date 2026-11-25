@@ -1,0 +1,64 @@
+---
+title: "Lire un RCP"
+description: "Où trouver quoi dans le résumé des caractéristiques du produit, et les pièges de la section 4.8."
+public: [professionnels, etudiants]
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "Commission européenne, Guideline on Summary of Product Characteristics (SmPC), rév. 2"
+    url: "https://health.ec.europa.eu/document/download/6a043dea-7d0f-4252-947b-cef58f53d37e_en"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/"
+    consulte_le: 2026-11-25
+---
+
+::: {.texte-pro}
+
+Le résumé des caractéristiques du produit (RCP) est le document de référence d'un médicament pour les professionnels. Son plan est le même pour tous les médicaments autorisés dans l'Union européenne. La notice destinée au patient en reprend le contenu en langage courant ([lire une notice](lire-une-notice.qmd)).
+
+Les RCP à jour sont sur la [base de données publique des médicaments](https://base-donnees-publique.medicaments.gouv.fr/) et, pour les médicaments autorisés par procédure centralisée, dans l'EPAR de l'Agence européenne des médicaments. Vérifiez toujours la date de mise à jour (section 10).
+
+## Où chercher quoi ?
+
+| Question | Section du RCP |
+|---|---|
+| Pour quoi est-il autorisé ? | 4.1 Indications thérapeutiques |
+| Quelle dose, et faut-il l'adapter (rein, foie, âge) ? | 4.2 Posologie et mode d'administration |
+| Quand ne faut-il jamais le donner ? | 4.3 Contre-indications |
+| Quelles précautions et quelle surveillance ? | 4.4 Mises en garde spéciales et précautions d'emploi |
+| Avec quels médicaments est-il risqué ? | 4.5 Interactions, avec le [Thésaurus de l'ANSM](https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1) |
+| Grossesse, allaitement, fertilité ? | 4.6, et le [CRAT](https://www.lecrat.fr/) pour la grossesse |
+| Peut-on conduire ? | 4.7, en quatre niveaux : influence nulle ou négligeable, mineure, modérée ou importante |
+| Quels effets indésirables ? | 4.8 Effets indésirables |
+| Que faire en cas de surdosage ? | 4.9 Surdosage |
+| Comment agit-il, comment est-il éliminé ? | 5.1 et 5.2 Propriétés pharmacodynamiques et pharmacocinétiques |
+| Quels excipients ? | 2 Composition, et 6.1 Liste des excipients |
+| Est-ce la version à jour ? | 10 Date de mise à jour du texte |
+
+## Cinq pièges de la section 4.8
+
+1. **Une fréquence n'est pas un risque attribuable.** Les fréquences tirées des essais sont des taux bruts chez les patients traités, pas des différences avec le placebo ou un comparateur. Quand un effet fréquent survient aussi sous placebo à une fréquence notable, les deux taux peuvent être donnés, souvent en 4.8c.
+2. **Être listé ne prouve pas la causalité.** Un effet figure dans le RCP quand le lien de causalité est au moins une possibilité raisonnable, après évaluation des données disponibles.
+3. **« Fréquence indéterminée » ne veut pas dire « rare ».** La catégorie s'utilise quand les données ne permettent pas d'estimer la fréquence.
+4. **« Rare » peut être une borne haute.** Pour un effet identifié après la commercialisation et jamais observé dans les essais, la borne supérieure de l'intervalle de confiance à 95 % est d'au plus 3/X, X étant le nombre de patients exposés dans les essais (règle de trois). Exemple de la ligne directrice : non observé chez 3 600 patients, la borne est de 1/1 200, et l'effet est classé « rare ».
+5. **Le tableau n'est pas classé par gravité.** L'ordre est : classe de systèmes d'organes (MedDRA), puis fréquence, puis gravité décroissante au sein d'une même fréquence. Les effets graves sont décrits en 4.4 et en 4.8c.
+
+## Les catégories de fréquence
+
+| Catégorie | Seuil |
+|---|---|
+| Très fréquent | ≥ 1/10 |
+| Fréquent | ≥ 1/100 à < 1/10 |
+| Peu fréquent | ≥ 1/1 000 à < 1/100 |
+| Rare | ≥ 1/10 000 à < 1/1 000 |
+| Très rare | < 1/10 000 |
+| Fréquence indéterminée | ne peut être estimée sur la base des données disponibles |
+
+Une version illustrée pour les patients se trouve sur la page [Que veulent dire « fréquent » et « rare » ?](frequences.qmd).
+
+<!-- FIGURE À FAIRE : RCP annoté d'un médicament courant, un clic sur chaque section affiche ce qu'il faut y chercher -->
+
+:::

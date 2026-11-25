@@ -1,0 +1,172 @@
+---
+title: "Les médicaments de l'hypertension artérielle"
+description: "IEC, sartans, inhibiteurs calciques, diurétiques thiazidiques et bêtabloquants : effets indésirables fréquents, précautions chez la personne âgée et danger de l'association avec les anti-inflammatoires."
+public: [patients, professionnels]
+classe: "antihypertenseurs"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "Base de données publique des médicaments, RCP et notice de TRIATEC 10 mg, comprimé sécable (ramipril, CIS 60161143)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/60161143/extrait"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments, RCP et notice d'AMLOR 5 mg, gélule (amlodipine, CIS 63458349)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/63458349/extrait"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments, RCP et notice d'ESIDREX 25 mg, comprimé sécable (hydrochlorothiazide, CIS 66153192)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/66153192/extrait"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments, RCP et notice de DETENSIEL 10 mg, comprimé pelliculé sécable (bisoprolol, CIS 60747455)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/60747455/extrait"
+    consulte_le: 2026-11-25
+  - titre: "HAS et SFHTA, Prise en charge de l'hypertension artérielle de l'adulte (2016)"
+    url: "https://www.has-sante.fr/jcms/c_2059286/fr/prise-en-charge-de-l-hypertension-arterielle-de-l-adulte"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
+    url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Prenez votre traitement chaque jour, même si vous ne ressentez rien.
+- En cas de diarrhée, de vomissements ou de forte fièvre, appelez votre médecin : il peut suspendre un médicament pour un temps.
+- Ne prenez pas d'anti-inflammatoire (ibuprofène, par exemple) sans avis : avec ces traitements, il peut abîmer les reins.
+:::
+
+### À quoi sert ce traitement ?
+
+Ces médicaments font baisser une tension artérielle trop élevée (hypertension). Une tension bien contrôlée protège le cœur, le cerveau et les reins.
+
+Il existe cinq grandes familles :
+
+- les inhibiteurs de l'enzyme de conversion (IEC), comme le ramipril (Triatec) ou le périndopril ;
+- les sartans, comme le losartan ou le valsartan ;
+- les inhibiteurs calciques, comme l'amlodipine (Amlor) ;
+- les diurétiques, qui font uriner, comme l'hydrochlorothiazide (Esidrex) ou l'indapamide ;
+- les bêtabloquants, comme le bisoprolol (Detensiel).
+
+Beaucoup de personnes prennent deux ou trois de ces médicaments, parfois réunis dans un seul comprimé.
+
+### Comment le prendre ?
+
+Prenez vos comprimés à la même heure chaque jour. Avec l'amlodipine, ne buvez pas de jus de pamplemousse.
+
+En cas d'oubli, ne prenez pas de dose double. Prenez la dose suivante à l'heure habituelle.
+
+Levez-vous doucement, surtout au début du traitement.
+
+### Quels effets indésirables ?
+
+Ils sont souvent légers. Les plus fréquents dépendent de la famille :
+
+- vertiges ou malaise en se levant : jusqu'à 1 personne sur 10 avec le ramipril ;
+- toux sèche qui dure, avec les IEC : jusqu'à 1 personne sur 10 ;
+- chevilles gonflées avec l'amlodipine : plus de 1 personne sur 10 ;
+- manque de sel dans le sang (hyponatrémie) avec les diurétiques ;
+- vertiges ou maux de tête avec les bêtabloquants.
+
+L'hydrochlorothiazide rend la peau sensible au soleil. Il augmente aussi le risque de certains cancers de la peau. Protégez-vous du soleil et montrez à votre médecin toute tache nouvelle.
+
+### Et chez les personnes âgées ?
+
+Avec l'âge, la tension peut chuter quand on se lève, et faire tomber. Votre médecin mesure donc aussi votre tension debout. Après 80 ans, il limite en général le traitement à trois médicaments.
+
+<!-- FIGURE À FAIRE : trois vignettes « couché », « assis », « debout » avec un tensiomètre ; la troisième montre une personne qui se tient à une chaise pour se lever doucement. -->
+
+::: {.quand-consulter}
+- Gonflement du visage, des lèvres, de la langue ou de la gorge, gêne pour avaler ou respirer : appelez le 15.
+- Malaise, évanouissement ou chute.
+- Confusion, nausées, grande fatigue sous diurétique.
+- Baisse brutale de la vue ou douleur de l'œil sous hydrochlorothiazide.
+- Cœur très lent ou essoufflement inhabituel sous bêtabloquant.
+- Diarrhée, vomissements ou fièvre qui durent : appelez votre médecin le jour même.
+:::
+
+### Avec quels médicaments faut-il être prudent ?
+
+Le plus grand danger vient des anti-inflammatoires non stéroïdiens (AINS) : ibuprofène, kétoprofène, naproxène, diclofénac. Certains sont vendus sans ordonnance. Pris avec un IEC ou un sartan et un diurétique, ils peuvent abîmer brutalement les reins. Le risque est plus grand si vous êtes âgé ou si vous buvez peu.
+
+<!-- FIGURE À FAIRE : schéma « trois médicaments, un rein » : une boîte d'IEC ou de sartan, une boîte de diurétique et une boîte d'anti-inflammatoire convergent vers un rein qui devient gris ; légende « ensemble, ils peuvent bloquer les reins ». -->
+
+Demandez aussi conseil avant de prendre :
+
+- des compléments de potassium ;
+- du lithium (traitement de l'humeur) ;
+- des médicaments de la prostate, de la maladie de Parkinson ou certains antidépresseurs, qui font aussi baisser la tension.
+
+### Grossesse, allaitement, conduite
+
+Les IEC et les sartans ne doivent pas être pris pendant la grossesse. Si vous envisagez une grossesse, parlez-en à votre médecin pour changer de traitement. Le Centre de référence sur les agents tératogènes (CRAT) informe les professionnels sur [lecrat.fr](https://www.lecrat.fr).
+
+Au début du traitement, les vertiges peuvent gêner la conduite.
+
+### Puis-je arrêter mon traitement ?
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien. N'arrêtez jamais d'un coup un bêtabloquant : votre maladie du cœur pourrait s'aggraver.
+
+### Signaler un effet indésirable
+
+Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr).
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Points clés de sécurité
+
+- **IEC et ARA II** : hypotension à la première dose en cas de système rénine-angiotensine activé (déplétion hydrosodée, diurétique), hyperkaliémie (insuffisance rénale, âge > 70 ans, diabète déséquilibré), insuffisance rénale aiguë, angio-œdème (y compris intestinal), toux sèche sous IEC. Contre-indiqués aux 2^e^ et 3^e^ trimestres de grossesse, à ne pas débuter pendant la grossesse.
+- **Diurétiques thiazidiques** : hyponatrémie, parfois symptomatique ; hyperuricémie ; photosensibilité. Hydrochlorothiazide : risque de cancer cutané non mélanome dose-dépendant, épanchement choroïdien et glaucome aigu à angle fermé.
+- **Amlodipine** : œdèmes très fréquents ; exposition accrue par les inhibiteurs du CYP3A4 et le pamplemousse.
+- **Bêtabloquants** : pas d'arrêt brutal (cardiopathie ischémique) ; contre-indiqués notamment en cas d'asthme sévère ou de bradycardie symptomatique ; masquent la tachycardie de l'hypoglycémie.
+
+### Sujet âgé et association « IEC ou ARA II + diurétique + AINS »
+
+L'association d'un bloqueur du système rénine-angiotensine, d'un diurétique et d'un AINS (familièrement « triple whammy ») expose à l'insuffisance rénale aiguë fonctionnelle. Le Thésaurus décrit ce risque « chez le patient à risque (âgé, déshydraté, sous diurétiques, avec une fonction rénale altérée) », par baisse de la synthèse des prostaglandines rénales. Conduite : éviter l'AINS ; sinon hydrater et surveiller la créatinine en début de traitement puis régulièrement.
+
+Après 80 ans (HAS 2016) : objectif de PAS < 150 mmHg sans hypotension orthostatique, au plus trois antihypertenseurs dans la plupart des cas. IEC, ARA II et diurétiques peuvent être suspendus temporairement en cas d'hypovolémie ou d'événement intercurrent (diarrhée, déshydratation, infection), avec contrôle de la natrémie, de la kaliémie et de la créatinine.
+
+### Surveillance
+
+- Natrémie, kaliémie, créatinine et DFG 1 à 4 semaines après l'introduction d'un IEC ou d'un ARA II, et après chaque changement de dose (HAS).
+- Recherche d'hypotension orthostatique à l'initiation et au suivi, plus souvent chez le sujet âgé, diabétique ou parkinsonien.
+- Examen régulier de la peau sous hydrochlorothiazide.
+
+### Interactions majeures
+
+- IEC + sacubitril : **contre-indication** (délai de 36 heures). IEC + aliskiren : contre-indiqué en cas de diabète ou d'insuffisance rénale (RCP).
+- IEC ou ARA II + diurétiques épargneurs de potassium, ou + potassium : **association déconseillée** (sauf hypokaliémie).
+- IEC, ARA II ou diurétiques + AINS : **précaution d'emploi**. IEC + ARA II : **à prendre en compte**.
+- IEC ou ARA II + lithium, thiazidiques + lithium : **association déconseillée**.
+- IEC + diurétique hypokaliémiant : **précaution d'emploi** (hypotension brutale à l'instauration).
+- IEC + gliptines : **à prendre en compte** (angio-œdème). Angio-œdème majoré aussi avec les inhibiteurs de mTOR et le racécadotril (RCP).
+- Bêtabloquants + diltiazem ou vérapamil : **association déconseillée**. Bêtabloquants + sulfamides hypoglycémiants ou insuline : **précaution d'emploi**.
+- Antihypertenseurs + médicaments à l'origine d'une hypotension orthostatique (alpha-bloquants urologiques, imipraminiques, agonistes dopaminergiques) : **à prendre en compte**.
+- Thiazidiques + autres hyponatrémiants (ISRS, carbamazépine, desmopressine) : **à prendre en compte**.
+- Amlodipine : simvastatine limitée à 20 mg/j (RCP).
+
+### Adaptation des doses
+
+- Ramipril : dose initiale réduite (1,25 mg) et titration lente chez le sujet très âgé ou fragile, et en cas de système rénine-angiotensine activé.
+- Thiazidiques : pleinement efficaces seulement si la fonction rénale est normale ou peu altérée.
+- Amlodipine : schéma habituel chez le sujet âgé, augmentation prudente.
+
+### Pièges fréquents
+
+À compléter par le CRPV à partir de cas anonymisés.
+
+### Mesures de réduction du risque
+
+Informer le patient de la conduite à tenir en cas de déshydratation et du risque des AINS en automédication. Arrêter le ramipril si possible un jour avant une intervention chirurgicale (RCP).
+
+:::
+
+:::

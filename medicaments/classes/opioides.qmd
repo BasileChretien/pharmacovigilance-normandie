@@ -1,0 +1,156 @@
+---
+title: "Les antalgiques opioïdes"
+description: "Tramadol, codéine, morphine, oxycodone : bien les utiliser, reconnaître la dépendance et le surdosage, savoir à qui s'adresser."
+public: [patients, professionnels]
+classe: "antalgiques opioïdes"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "Base de données publique des médicaments, TOPALGIC 50 mg (tramadol) : RCP et notice"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/63435884/extrait"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments, DAFALGAN CODEINE, comprimé pelliculé (paracétamol, codéine) : RCP"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/66003374/extrait"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Tramadol et codéine : les nouvelles règles de prescription et délivrance entrent en vigueur le 1er mars 2025"
+    url: "https://ansm.sante.fr/actualites/tramadol-et-codeine-les-nouvelles-regles-de-prescription-et-delivrance-entrent-en-vigueur-le-1er-mars-2025"
+    consulte_le: 2026-11-25
+  - titre: "HAS, Opioïdes : éviter leur banalisation pour limiter les risques (communiqué, 24 mars 2022)"
+    url: "https://has-sante.fr/jcms/p_3326113/fr/opioides-eviter-leur-banalisation-pour-limiter-les-risques"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Liste des centres d'évaluation et d'information sur la pharmacodépendance-addictovigilance (CEIP-A)"
+    url: "https://ansm.sante.fr/page/liste-des-centres-devaluation-et-dinformation-sur-la-pharmacodependance-addictovigilance-ceip-a"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
+    url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Ces médicaments soulagent les douleurs fortes, mais tous peuvent rendre dépendant, même ceux dits « faibles ».
+- Ne les associez pas à l'alcool, aux somnifères ou aux calmants : la respiration peut ralentir dangereusement.
+- Une personne très endormie qui respire mal est en danger : appelez le 15.
+:::
+
+### À quoi sert ce traitement ?
+
+Les opioïdes sont des antidouleurs puissants. Ils agissent sur le cerveau et la moelle épinière pour bloquer le message de la douleur. Les plus utilisés sont le tramadol, la codéine (souvent associée au paracétamol), la morphine et l'oxycodone.
+
+Ils sont tous délivrés sur ordonnance. Depuis le 1er mars 2025, le tramadol et la codéine demandent une ordonnance sécurisée. Elle est valable 3 mois au plus.
+
+<!-- FIGURE À FAIRE : schéma du trajet du message de la douleur (blessure, nerf, moelle épinière, cerveau) avec l'endroit où l'opioïde le bloque. -->
+
+### Comment le prendre ?
+
+- Respectez la dose et les horaires prescrits. Dépasser la dose est dangereux.
+- Dès le début, convenez avec votre médecin de la durée du traitement et de la façon de l'arrêter.
+- Ne reprenez jamais un ancien traitement sans avis médical.
+- Ne donnez jamais votre médicament à une autre personne.
+- La codéine est interdite avant 12 ans.
+
+### Quels effets indésirables ?
+
+Avec le tramadol, plus de 1 personne sur 10 a des nausées ou des vertiges. Entre 1 personne sur 100 et 1 personne sur 10 a une constipation, une somnolence, des vomissements ou la bouche sèche. Chez les personnes âgées, il augmente le risque de chute.
+
+Plus rarement, le tramadol peut provoquer des convulsions (crises d'épilepsie) ou une baisse du sucre dans le sang (hypoglycémie). Associé à certains antidépresseurs, il peut entraîner un syndrome sérotoninergique (diarrhée, sueurs, tremblements, confusion).
+
+### Comment reconnaître une dépendance ?
+
+La dépendance peut survenir même aux doses prescrites. Le risque augmente avec la dose et la durée. Parlez-en à votre médecin si :
+
+- vous prenez le médicament plus longtemps ou à plus forte dose que prévu ;
+- vous le prenez pour autre chose que la douleur, par exemple pour dormir ou rester calme ;
+- vous n'arrivez pas à réduire ou à arrêter ;
+- vous vous sentez mal à l'arrêt, et mieux quand vous le reprenez.
+
+En Normandie, le CEIP-A (Centre d'évaluation et d'information sur la pharmacodépendance-addictovigilance) se trouve au centre hospitalier universitaire de Caen.
+
+::: {.quand-consulter}
+- Constipation qui dure, somnolence dans la journée : parlez-en à votre médecin.
+- Sueurs, tremblements, diarrhée, confusion, surtout avec un antidépresseur : consultez sans attendre.
+- Personne qu'on n'arrive pas à réveiller, ou qui respire très lentement : appelez le 15. Si vous avez de la naloxone (l'antidote), utilisez-la.
+:::
+
+### Avec quels médicaments faut-il être prudent ?
+
+- Les somnifères et les calmants de la famille des benzodiazépines : risque de sommeil profond, d'arrêt respiratoire, de coma.
+- L'alcool : il renforce la somnolence. Évitez-le pendant le traitement.
+- Certains antidépresseurs : risque de syndrome sérotoninergique ou de convulsions avec le tramadol. D'autres empêchent le tramadol et la codéine d'agir.
+- Les anticoagulants (médicaments qui fluidifient le sang) : le tramadol augmente le risque de saignement, surtout chez les personnes âgées.
+
+### Grossesse, allaitement, conduite
+
+- Le tramadol ne doit pas être utilisé pendant la grossesse. Une prise prolongée peut provoquer un sevrage (manque) chez le nouveau-né.
+- La codéine est contre-indiquée pendant l'allaitement.
+- Votre médecin peut demander l'avis du CRAT (Centre de référence sur les agents tératogènes) : [lecrat.fr](https://www.lecrat.fr).
+- Ces médicaments peuvent endormir. Ne conduisez pas si vous vous sentez somnolent.
+
+### Puis-je arrêter mon traitement ?
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+Après un traitement long, un arrêt brutal peut provoquer un manque : anxiété, insomnie, tremblements. Votre médecin vous aidera à baisser les doses peu à peu.
+
+### Signaler un effet indésirable
+
+Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr).
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Points clés de sécurité
+
+- Tous les opioïdes, dits « faibles » ou « forts », exposent à la tolérance, à la dépendance physique, au trouble de l'usage d'opioïdes (TUO) et au surdosage. Le risque dépend surtout de la durée et de la quantité prescrites (HAS 2022).
+- Douleur chronique non cancéreuse : opioïdes en dernier recours ; non recommandés dans les douleurs pelviennes ou musculosquelettiques chroniques ni dans la migraine. Au-delà de 6 mois de traitement continu, envisager une réduction ou un arrêt progressif (HAS 2022).
+- Avant l'instauration : définir avec le patient les objectifs, la durée et un plan d'arrêt ; l'informer des signes du TUO (RCP tramadol).
+- Tramadol : convulsions (risque accru au-delà de 400 mg/j ou avec un médicament abaissant le seuil épileptogène), syndrome sérotoninergique, hypoglycémie, chute chez le sujet âgé. Métabolisme par le CYP2D6 : moindre efficacité chez les métaboliseurs lents ; toxicité possible chez les métaboliseurs ultrarapides.
+- Codéine : contre-indiquée avant 12 ans, pendant l'allaitement, chez les métaboliseurs ultrarapides du CYP2D6, chez l'asthmatique et l'insuffisant respiratoire, et avant 18 ans après amygdalectomie ou adénoïdectomie pour apnée obstructive du sommeil.
+
+### Surveillance
+
+- Réévaluer régulièrement la nécessité de poursuivre ; rechercher une consommation excessive (demandes de renouvellement anticipées), l'association à d'autres psychotropes, une somnolence, une dépression respiratoire.
+- Envisager la prescription et la délivrance de naloxone prête à l'emploi, en particulier chez les patients vulnérables (sortie d'hospitalisation ou de détention). En cas de suspicion de surdose : appeler le SAMU ; deuxième dose 2 à 3 minutes plus tard en l'absence d'amélioration (HAS 2022).
+
+### Interactions majeures
+
+Niveaux du Thésaurus de l'ANSM (version du 15 septembre 2023, non mise à jour depuis ; le RCP fait référence).
+
+| Association | Niveau |
+|---|---|
+| Morphiniques + benzodiazépines et apparentés, barbituriques | À prendre en compte (sédation, dépression respiratoire, coma, décès) |
+| Médicaments sédatifs + alcool | Association déconseillée |
+| Tramadol + IMAO irréversibles | Contre-indication |
+| Tramadol + IMAO-A réversibles (dont linézolide, bleu de méthylène) | Association déconseillée |
+| Tramadol ou codéine + fluoxétine, paroxétine, duloxétine, bupropion, terbinafine, quinidine, cinacalcet | Association déconseillée (inefficacité par inhibition du CYP2D6) |
+| Tramadol + ISRS, venlafaxine | À prendre en compte (convulsions, syndrome sérotoninergique) |
+| Tramadol + anticoagulants oraux | À prendre en compte |
+| Agonistes-antagonistes morphiniques (buprénorphine, nalbuphine) + antalgiques de palier II | Association déconseillée |
+
+### Adaptation des doses
+
+- Tramadol (gélule 50 mg) : 50 à 100 mg toutes les 4 à 6 heures, sans dépasser 400 mg/24 h. Après 75 ans, et en cas d'insuffisance rénale ou hépatique, allonger l'intervalle entre les prises.
+- Paracétamol-codéine 500 mg/30 mg chez l'adulte : 1 à 2 comprimés par prise, 6 heures minimum entre les prises, 8 comprimés par jour au maximum.
+
+### Pièges fréquents
+
+[À compléter par le CRPV à partir de cas anonymisés.]
+
+### Mesures de réduction du risque
+
+- Tramadol, codéine et dihydrocodéine : ordonnance sécurisée depuis le 1er mars 2025, posologie et durée en toutes lettres ; durée de prescription limitée à 12 semaines.
+- Addictovigilance : le CEIP-A de Caen (CHU de Caen) couvre les cinq départements normands (14, 27, 50, 61, 76). Les cas d'abus, de pharmacodépendance ou d'usage détourné se déclarent sur [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr).
+
+:::
+
+:::

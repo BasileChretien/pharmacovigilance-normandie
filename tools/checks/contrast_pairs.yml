@@ -1,0 +1,15 @@
+# Text/background pairs used on the site, checked against WCAG 2.1 AA:
+# 4.5:1 for body text, 3:1 for large text and interface elements.
+paires:
+  - { texte: pv-ink, fond: pv-paper, minimum: 4.5, usage: "texte courant" }
+  - { texte: pv-ink-quiet, fond: pv-paper, minimum: 4.5, usage: "texte secondaire, sources" }
+  - { texte: pv-blue, fond: pv-paper, minimum: 4.5, usage: "liens, bouton Poser une question" }
+  - { texte: pv-paper, fond: pv-blue, minimum: 4.5, usage: "bouton Déclarer" }
+  - { texte: pv-blue-dark, fond: pv-paper, minimum: 4.5, usage: "liens au survol" }
+  - { texte: pv-ink, fond: pv-blue-tint, minimum: 4.5, usage: "texte sur fond bleu clair" }
+  - { texte: pv-green, fond: pv-green-tint, minimum: 4.5, usage: "titre de l'encadré À retenir" }
+  - { texte: pv-ink, fond: pv-green-tint, minimum: 4.5, usage: "texte de l'encadré À retenir" }
+  - { texte: pv-red, fond: pv-red-tint, minimum: 4.5, usage: "titre de l'encadré Quand consulter" }
+  - { texte: pv-ink, fond: pv-red-tint, minimum: 4.5, usage: "texte de l'encadré Quand consulter" }
+  - { texte: pv-amber, fond: pv-amber-tint, minimum: 4.5, usage: "bandeau Brouillon" }
+  - { texte: pv-rule, fond: pv-paper, minimum: 1.3, usage: "bordures décoratives (non porteuses d'information)" }

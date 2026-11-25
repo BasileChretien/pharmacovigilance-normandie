@@ -1,0 +1,152 @@
+---
+title: "Les corticoïdes par voie orale"
+description: "Prednisone, prednisolone et autres corticoïdes en comprimés : prise le matin, effets d'un traitement prolongé, arrêt progressif et interactions."
+public: [patients, professionnels]
+classe: "glucocorticoïdes oraux"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "Base de données publique des médicaments, RCP et notice de CORTANCYL 20 mg, comprimé sécable (prednisone, CIS 62390849)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/62390849/extrait"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
+    url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
+    consulte_le: 2026-11-25
+  - titre: "Centre de référence sur les agents tératogènes (CRAT)"
+    url: "https://www.lecrat.fr/"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Prenez votre corticoïde le matin, en une prise, pendant le repas.
+- Après un traitement long, n'arrêtez jamais d'un coup : la dose baisse par étapes.
+- Signalez votre traitement avant une opération, un vaccin ou un nouveau médicament.
+:::
+
+### À quoi sert ce traitement ?
+
+Les corticoïdes (médicaments proches d'une hormone fabriquée par le corps, le cortisol) calment l'inflammation et freinent les défenses du corps. En comprimés, on utilise surtout la prednisone (par exemple Cortancyl) et la prednisolone. Ils traitent de nombreuses maladies : asthme, rhumatismes inflammatoires, certaines maladies de la peau, de l'intestin ou des reins.
+
+### Comment le prendre ?
+
+Avalez les comprimés avec un peu d'eau, pendant le repas, en une prise le matin. Au début d'un traitement à forte dose, votre médecin peut répartir la dose en deux prises.
+
+<!-- FIGURE À FAIRE : frise d'une journée avec un soleil levant et un petit-déjeuner, le comprimé placé à ce moment ; le reste de la journée sans prise. Lisible en niveaux de gris. -->
+
+Si vous oubliez une prise, continuez le traitement normalement le lendemain.
+
+Lors d'un traitement long, votre médecin peut vous conseiller de manger moins salé, moins sucré, et plus de protéines. Il peut aussi prescrire du calcium et de la vitamine D pour protéger vos os.
+
+### Quels effets indésirables ?
+
+Les effets dépendent de la dose et de la durée. Ils surviennent surtout à forte dose ou après plusieurs mois. Des troubles du sommeil ou de l'humeur sont fréquents : ils touchent entre 1 et 10 personnes sur 100.
+
+Un traitement long peut aussi provoquer :
+
+- une prise de poids et un visage gonflé et rouge ;
+- une hausse de la tension artérielle et de la glycémie (sucre dans le sang) ;
+- une fragilité des os (ostéoporose), avec un risque de fractures ;
+- une fonte des muscles et une peau plus fine, avec des bleus ;
+- plus d'infections ;
+- des troubles de la vue (cataracte, glaucome).
+
+### Comment limiter les risques d'infection ?
+
+Évitez le contact avec les personnes qui ont la varicelle ou la rougeole. Ces maladies peuvent devenir graves pendant le traitement.
+
+::: {.quand-consulter}
+- Fièvre, signes d'infection : consultez votre médecin.
+- Vision floue ou autre trouble de la vue : consultez votre médecin.
+- Douleur d'un tendon, surtout avec certains antibiotiques : consultez votre médecin.
+- Soif intense, envie fréquente d'uriner : consultez votre médecin.
+- Selles noires, vomissement de sang, douleur forte du ventre : appelez le 15.
+- Grande fatigue, vomissements, malaise après l'arrêt ou une baisse de dose : appelez le 15.
+:::
+
+### Avec quels médicaments faut-il être prudent ?
+
+Demandez conseil avant de prendre :
+
+- de l'aspirine ou un anti-inflammatoire, comme l'ibuprofène : le risque d'ulcère (plaie de l'estomac ou de l'intestin) et de saignement augmente ;
+- certains antibiotiques (fluoroquinolones, par exemple la ciprofloxacine) : le risque d'atteinte des tendons augmente ;
+- un anticoagulant (médicament qui rend le sang plus fluide) : votre médecin renforce la surveillance.
+
+Les vaccins vivants (par exemple contre la fièvre jaune ou la rougeole) peuvent être interdits pendant le traitement et 3 mois après. Si vous êtes diabétique, surveillez plus souvent votre glycémie : votre traitement peut devoir changer.
+
+### Grossesse, allaitement, conduite
+
+Pendant la grossesse, votre médecin prescrit un corticoïde seulement si le bénéfice pour vous dépasse le risque. Prévenez-le dès que vous êtes enceinte. Le Centre de référence sur les agents tératogènes (CRAT) informe sur les médicaments et la grossesse : [lecrat.fr](https://www.lecrat.fr/).
+
+À forte dose et sur une longue durée, l'allaitement est déconseillé. Parlez-en avec votre médecin.
+
+### Puis-je arrêter mon traitement ?
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+Après un traitement long, votre corps fabrique moins de cortisol. Un arrêt brutal peut provoquer un manque grave de cette hormone. Il peut aussi provoquer un syndrome de sevrage (fièvre, nausées, fatigue, douleurs des articulations) ou le retour de la maladie. Votre médecin baisse donc la dose par étapes. Une cure courte, de moins de 10 jours, s'arrête en général sans baisse progressive.
+
+Pendant l'année qui suit l'arrêt, prévenez le médecin avant une opération, ou en cas de forte fièvre ou de maladie.
+
+### Signaler un effet indésirable
+
+Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr).
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Points clés de sécurité
+
+- Freinage de l'axe hypothalamo-hypophyso-surrénalien, parfois durable : risque d'insuffisance surrénale aiguë à l'arrêt brutal ou en situation de stress (infection, chirurgie, traumatisme), de rechute et de syndrome de sevrage (fièvre, anorexie, nausées, léthargie, arthralgies, desquamation, hypotension, perte de poids).
+- Effets surtout dose- et durée-dépendants : syndrome de Cushing iatrogène, diabète ou déséquilibre glycémique, rétention hydrosodée et HTA, hypokaliémie, ostéoporose et fractures, ostéonécrose aseptique de la tête fémorale, amyotrophie, ulcère et perforation digestifs, cataracte, glaucome, choriorétinopathie séreuse centrale, troubles psychiques, retard de croissance chez l'enfant.
+- Risque infectieux : écarter un foyer viscéral (tuberculose notamment) avant traitement. Chez tout sujet venant d'une zone d'endémie (régions tropicales, subtropicales, sud de l'Europe) : examen parasitologique des selles et traitement éradicateur systématique de l'anguillulose avant corticothérapie.
+- Contre-indications usuelles (aucune n'est absolue en cas d'indication vitale) : infection non contrôlée, certaines viroses évolutives (hépatites, herpès, varicelle, zona), états psychotiques non contrôlés, vaccins vivants.
+- Sclérodermie systémique : crise rénale sclérodermique avec des doses ≥ 15 mg/j de prednisolone ; surveiller pression artérielle et créatinine.
+
+### Surveillance
+
+Pression artérielle, poids, glycémie (autosurveillance renforcée chez le diabétique, l'efficacité de l'insuline, de la metformine et des sulfamides hypoglycémiants diminuant), kaliémie si forte dose, traitement prolongé, risque de troubles du rythme ou association hypokaliémiante. Examen ophtalmologique en cas de vision floue. Mesures associées au long cours : apport calcique et vitamine D systématique, régime pauvre en sucres rapides et riche en protéines, apport sodé réduit au-delà de 15 à 20 mg/j d'équivalent prednisone. Indications de l'ostéodensitométrie et d'un traitement anti-ostéoporotique : [à compléter : source, recommandations françaises sur l'ostéoporose cortisonique].
+
+### Interactions majeures
+
+Niveaux du Thésaurus de l'ANSM (version du 15 septembre 2023), entrée « glucocorticoïdes (sauf hydrocortisone) » sauf mention :
+
+- Vaccins vivants atténués : **contre-indication** pour des doses > 10 mg/j d'équivalent prednisone (> 2 mg/kg/j chez l'enfant, ou > 20 mg/j chez l'enfant de plus de 10 kg) pendant plus de 2 semaines, et pour les bolus ; jusqu'à 3 mois après l'arrêt.
+- Aspirine : **association déconseillée** à dose anti-inflammatoire (≥ 1 g par prise et/ou ≥ 3 g/j) ; **à prendre en compte** à dose antalgique ou antipyrétique.
+- AINS : **à prendre en compte** (ulcération et hémorragie digestives).
+- Anticoagulants oraux : **précaution d'emploi** ; avec les antivitamines K, INR au 8e jour puis tous les 15 jours pendant et après la corticothérapie.
+- Inducteurs enzymatiques : **précaution d'emploi** (baisse d'efficacité, majeure chez l'addisonien et le transplanté).
+- Inhibiteurs puissants du CYP3A4 (prednisone, prednisolone, méthylprednisolone, dexaméthasone) : **association déconseillée** (entrée « corticoïdes métabolisés ») ; préférer un corticoïde non métabolisé.
+- Fluoroquinolones : **à prendre en compte** (tendinopathie, rupture tendineuse).
+- Isoniazide : **précaution d'emploi**.
+- Mifamurtide : **association déconseillée** (entrée « corticoïdes »).
+- Glucocorticoïdes et médicaments susceptibles de donner des torsades de pointes : **précaution d'emploi** (entrée « hypokaliémiants ») ; corriger l'hypokaliémie, surveillance électrolytique et ECG.
+
+### Adaptation des doses
+
+Prise unique matinale au cours d'un repas ; les premières doses d'un traitement prolongé à forte dose peuvent être fractionnées en deux prises. Décroissance d'une cure prolongée : par paliers, environ 10 % tous les 8 à 15 jours. Pas de décroissance nécessaire pour une cure de moins de 10 jours. Vers 5 à 7 mg/j d'équivalent prednisone, si la maladie le permet, relais possible par hydrocortisone 20 mg/j jusqu'à reprise de la fonction corticotrope. En cas de stress chez un patient sous hydrocortisone ou à distance de l'arrêt : augmentation de dose ou reprise d'une substitution (par exemple hydrocortisone 100 mg IM toutes les 6 à 8 heures). Sujet âgé, insuffisance rénale ou hépatique : surveillance adaptée (RCP) ; ajustement chiffré [à compléter : source].
+
+### Pièges fréquents
+
+[À compléter par le CRPV à partir de cas anonymisés.]
+
+### Mesures de réduction du risque
+
+- Annoncer d'emblée la durée prévue et le schéma de décroissance.
+- Rappeler au patient de signaler la corticothérapie, et pendant un an après l'arrêt, avant toute chirurgie ou en cas de maladie aiguë.
+- Vérifier le statut vaccinal avant une corticothérapie prolongée.
+- Grossesse : utiliser seulement si le bénéfice maternel l'emporte (sur-risque possible de fente labio-palatine au premier trimestre selon une étude épidémiologique) ; surveillance du nouveau-né après traitement prolongé à forte dose.
+
+:::
+
+:::

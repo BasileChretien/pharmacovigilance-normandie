@@ -1,0 +1,169 @@
+---
+title: "Les anticoagulants oraux"
+description: "Antivitamines K et anticoagulants oraux directs : comment les prendre, quels signes de saignement surveiller, quelles associations éviter."
+public: [patients, professionnels]
+classe: "anticoagulants oraux"
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "EMA, Eliquis (apixaban) : informations sur le produit (RCP et notice, version française)"
+    url: "https://www.ema.europa.eu/fr/documents/product-information/eliquis-epar-product-information_fr.pdf"
+    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments, PREVISCAN 20 mg (fluindione) : RCP et notice"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/68133651/extrait"
+    consulte_le: 2026-11-25
+  - titre: "HAS, Fiche bon usage du médicament : Fibrillation auriculaire non valvulaire, quelle place pour les anticoagulants oraux ? (mise à jour mai 2018)"
+    url: "https://www.has-sante.fr/upload/docs/application/pdf/2018-05/fiche_bon_usage_anticoagulants_oraux.pdf"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Bon usage des médicaments antivitamine K (AVK), actualisation juillet 2012"
+    url: "https://ansm.sante.fr/uploads/2021/01/13/bon-usage-avk-actualisee-juillet-2012.pdf"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Quoi de neuf concernant les antivitamines K ? (2018, mis à jour 2021)"
+    url: "https://ansm.sante.fr/actualites/quoi-de-neuf-concernant-les-antivitamines-k"
+    consulte_le: 2026-11-25
+  - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
+    url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
+    consulte_le: 2026-11-25
+---
+
+::: {.panel-tabset}
+
+## Pour les patients
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- Ce médicament ralentit la coagulation du sang : il protège des caillots, mais augmente le risque de saignement.
+- Prenez-le chaque jour à la même heure, et ne doublez jamais une dose oubliée.
+- Avant tout autre médicament, même sans ordonnance, demandez l'avis de votre pharmacien.
+:::
+
+### À quoi sert ce traitement ?
+
+Un anticoagulant évite qu'un caillot bouche une veine ou une artère. Il est prescrit par exemple pour un trouble du rythme du cœur (fibrillation atriale) ou une phlébite (caillot dans une veine).
+
+Il existe deux familles :
+
+- les AVK (antivitamines K) : warfarine, fluindione, acénocoumarol. Leur dose s'ajuste selon une prise de sang, l'INR (test qui mesure le temps de coagulation) ;
+- les AOD (anticoagulants oraux directs) : apixaban, rivaroxaban, dabigatran, édoxaban. Leur dose est fixe, sans INR.
+
+<!-- FIGURE À FAIRE : schéma simple de la coagulation montrant où agissent les AVK (vitamine K, foie) et les AOD (facteur Xa, thrombine), avec un caillot qui se forme moins vite. -->
+
+### Comment le prendre ?
+
+- Prenez-le chaque jour à la même heure. Un pilulier aide à ne pas oublier.
+- Un AVK se prend une fois par jour, de préférence le soir. Faites l'INR aux dates prévues, au moins une fois par mois, et notez-le dans votre carnet.
+- L'apixaban et le dabigatran se prennent deux fois par jour. Le rivaroxaban et l'édoxaban, une fois par jour. Le rivaroxaban se prend au repas.
+- Gardez sur vous la carte qui signale votre anticoagulant.
+
+<!-- FIGURE À FAIRE : frise d'une journée montrant le moment de prise (soir pour un AVK ; matin et soir pour l'apixaban ou le dabigatran ; une prise au repas pour le rivaroxaban). -->
+
+### Que faire en cas d'oubli ?
+
+- AVK : prenez la dose oubliée dans les 8 heures. Après, sautez-la et notez l'oubli dans votre carnet.
+- AOD : la règle dépend du médicament. Lisez la notice ou demandez à votre pharmacien.
+- Ne prenez jamais deux doses pour rattraper un oubli.
+
+### Quels effets indésirables ?
+
+Le principal effet est le saignement. Avec l'apixaban, des petits saignements touchent entre 1 personne sur 100 et 1 personne sur 10 : bleus, saignement du nez.
+
+La fluindione peut, rarement, donner une allergie grave de la peau, du foie ou des reins, surtout les 6 premiers mois. Les médecins ne la prescrivent plus pour un nouveau traitement.
+
+::: {.quand-consulter}
+- Saignement des gencives ou du nez, sang dans les urines, règles abondantes, bleus inhabituels : prévenez votre médecin.
+- Fatigue qui dure, essoufflement anormal, mal de tête rebelle aux antidouleurs : consultez. Ce peut être un saignement caché.
+- Sous fluindione depuis moins de 6 mois : fièvre, plaques rouges sur la peau, gêne pour respirer. Appelez votre médecin.
+- Sang rouge ou noir dans les selles, vomissements ou crachats de sang, saignement qui ne s'arrête pas : appelez le 15.
+:::
+
+### Avec quels médicaments faut-il être prudent ?
+
+- Les anti-inflammatoires (ibuprofène, kétoprofène…) et l'aspirine augmentent le risque de saignement. Évitez-les, y compris en automédication.
+- Avec un AVK, le paracétamol à 4 grammes par jour pendant 4 jours ou plus peut augmenter l'INR.
+- Avec un AVK, le miconazole (contre les champignons) est interdit, même en gel pour la bouche.
+- Le millepertuis (une plante utilisée contre la déprime) diminue l'effet des AVK et du rivaroxaban.
+- Sous AVK, un antibiotique peut déséquilibrer l'INR.
+- Sous AVK, gardez une alimentation régulière : choux, épinards, brocolis et certaines salades sont riches en vitamine K.
+
+### Grossesse, allaitement, conduite
+
+- Les AVK sont contre-indiqués pendant la grossesse, sauf situation exceptionnelle. Les AOD ne doivent pas être utilisés pendant la grossesse.
+- Si vous envisagez une grossesse, parlez-en d'abord à votre médecin.
+- Pendant l'allaitement, la warfarine et l'acénocoumarol sont possibles. La fluindione et les AOD ne le sont pas.
+- Votre médecin peut consulter le CRAT (Centre de référence sur les agents tératogènes) : [lecrat.fr](https://www.lecrat.fr).
+- Le rivaroxaban peut donner des vertiges. Dans ce cas, ne conduisez pas.
+
+### Puis-je arrêter mon traitement ?
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
+
+Un arrêt, même bref, expose au risque de caillot. Avant une opération ou un soin dentaire, signalez votre traitement.
+
+### Signaler un effet indésirable
+
+Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr).
+
+:::
+
+## Pour les professionnels
+
+::: {.texte-pro}
+
+### Points clés de sécurité
+
+- Les anticoagulants, AVK en tête, sont au premier rang des médicaments responsables d'accidents iatrogènes graves (ENEIS 2004 et 2009, cité par l'ANSM en 2012).
+- Instauration : AVK ou AOD peuvent être prescrits en première intention (HAS 2018). Si un AVK est choisi, privilégier un coumarinique ; la warfarine est l'AVK le mieux évalué.
+- Fluindione : ne plus initier de traitement (ANSM 2018), en raison d'atteintes immuno-allergiques (cutanées, hépatiques, rénales, hématologiques), surtout dans les 6 premiers mois. Patient traité depuis plus de 6 mois et équilibré : pas de raison de changer.
+- Aucun argument pour remplacer un anticoagulant efficace et bien toléré par un autre (HAS 2018).
+- Mésusages identifiés par la HAS : sous-dosage intentionnel des AOD, prescription hors indication (CHA2DS2-VASc = 0, valvulopathie pour les AOD).
+- Antagonisation : vitamine K et concentrés de complexes prothrombiniques pour les AVK ; idarucizumab pour le dabigatran ; andexanet alfa disponible chez l'adulte pour l'apixaban (RCP Eliquis).
+
+### Surveillance
+
+- AVK : INR cible 2,5 (zone 2-3) pour la plupart des indications, plus élevé pour certaines prothèses mécaniques ; INR au moins mensuel, et à chaque ajout ou arrêt d'un médicament.
+- AOD (HAS 2018) : clairance de la créatinine (Cockcroft-Gault), bilan hépatique et hémoglobine avant traitement, puis au moins chaque année. Fonction rénale tous les 6 mois si plus de 75 ans, moins de 60 kg ou ClCr initiale 30-60 mL/min ; tous les 3 mois si ClCr < 30 mL/min.
+
+### Interactions majeures
+
+Niveaux du Thésaurus de l'ANSM (dernière version : 15 septembre 2023 ; l'ANSM ne le met plus à jour et renvoie au RCP de chaque spécialité).
+
+| Association | Niveau |
+|---|---|
+| Anticoagulant oral + AINS | Association déconseillée |
+| Anticoagulant oral + aspirine ≥ 1 g/prise et/ou ≥ 3 g/j | Contre-indication |
+| Anticoagulant oral + aspirine antalgique (≥ 500 mg/prise et/ou < 3 g/j) | CI si antécédent d'ulcère ; sinon association déconseillée |
+| Anticoagulant oral + aspirine 50-375 mg/j | À prendre en compte (déconseillée si antécédent d'ulcère) |
+| Anticoagulant oral + antiagrégants, ISRS, tramadol | À prendre en compte |
+| AVK + miconazole (toutes formes et voies) | Contre-indication |
+| AVK + millepertuis | Contre-indication |
+| AVK + amiodarone, fluconazole, fluoroquinolones, statines, allopurinol, inducteurs enzymatiques, paracétamol 4 g/j ≥ 4 jours | Précaution d'emploi (INR rapproché) |
+| Apixaban ou rivaroxaban + inhibiteurs puissants du CYP3A4, fluconazole, inducteurs puissants, rifampicine | Association déconseillée |
+| Rivaroxaban + millepertuis | Contre-indication |
+| Dabigatran + ciclosporine, dronédarone, itraconazole, kétoconazole, glécaprévir/pibrentasvir | Contre-indication |
+| Dabigatran + amiodarone, quinidine | Précaution d'emploi |
+
+### Adaptation des doses
+
+- Apixaban (FANV) : 5 mg × 2/j ; 2,5 mg × 2/j si au moins deux critères parmi âge ≥ 80 ans, poids ≤ 60 kg, créatinine ≥ 133 µmol/L, ou si ClCr 15-29 mL/min. Non recommandé si ClCr < 15 mL/min ou dialyse.
+- Rivaroxaban (FANV) : 20 mg/j, 15 mg/j si ClCr 15-49 mL/min ; à prendre avec des aliments.
+- Dabigatran (FANV) : 150 mg × 2/j ; 110 mg × 2/j à 80 ans ou plus ou avec le vérapamil ; contre-indiqué si ClCr < 30 mL/min.
+- Édoxaban (FANV) : 60 mg/j ; 30 mg/j si ClCr 15-49 mL/min, poids ≤ 60 kg, ou association à ciclosporine, dronédarone, érythromycine ou kétoconazole.
+- AVK : dose initiale réduite de moitié chez le sujet âgé ; jamais de dose de charge (ANSM 2012).
+- Relais AVK vers AOD : débuter l'AOD quand l'INR est < 2 (apixaban, dabigatran), < 3 (rivaroxaban), ≤ 2,5 (édoxaban).
+
+### Pièges fréquents
+
+[À compléter par le CRPV à partir de cas anonymisés.]
+
+### Mesures de réduction du risque
+
+- Carnet d'information et de suivi pour tout patient sous AVK ; carte de porteur d'un anticoagulant pour les AOD.
+- Éducation thérapeutique dès l'instauration : prise à heure fixe, conduite à tenir en cas d'oubli, signes de saignement, automédication à éviter, alimentation stable sous AVK.
+- Informer le biologiste de l'indication et de l'INR cible.
+
+:::
+
+:::

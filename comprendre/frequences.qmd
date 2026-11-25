@@ -1,0 +1,101 @@
+---
+title: "Que veulent dire « fréquent » et « rare » ?"
+description: "Les mots de fréquence de la notice et du RCP, expliqués avec des grilles de personnes, et ce qu'ils ne disent pas."
+public: [patients, professionnels, etudiants]
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "Commission européenne, Guideline on Summary of Product Characteristics (SmPC), rév. 2, section 4.8"
+    url: "https://health.ec.europa.eu/document/download/6a043dea-7d0f-4252-947b-cef58f53d37e_en"
+    consulte_le: 2026-11-25
+  - titre: "EMA, QRD product information annotated template (English), version 10.3"
+    url: "https://www.ema.europa.eu/en/documents/template-form/qrd-product-information-annotated-template-english-version-103_en.pdf"
+    consulte_le: 2026-11-25
+  - titre: "Wood FA et al. N-of-1 trial of a statin, placebo, or no treatment to assess side effects. N Engl J Med. 2020 (essai SAMSON)"
+    url: "https://doi.org/10.1056/NEJMc2031173"
+    consulte_le: 2026-11-25
+---
+
+::: {.texte-patient}
+
+::: {.a-retenir}
+- « Fréquent » veut dire : de 1 à 10 personnes sur 100.
+- Ce chiffre compte aussi les personnes qui auraient eu le symptôme sans le médicament.
+- « Fréquence indéterminée » ne veut pas dire « rare ».
+:::
+
+### D'où viennent ces mots ?
+
+La notice et le RCP (résumé des caractéristiques du produit, le document de référence des professionnels) utilisent les mêmes six mots. Ils sont définis par une règle européenne. Chaque mot correspond à une tranche de chiffres.
+
+| Mot de la notice | Ce que cela veut dire |
+|---|---|
+| Très fréquent | plus d'une personne sur 10 |
+| Fréquent | de 1 à 10 personnes sur 100 |
+| Peu fréquent | de 1 à 10 personnes sur 1 000 |
+| Rare | de 1 à 10 personnes sur 10 000 |
+| Très rare | moins d'une personne sur 10 000 |
+| Fréquence indéterminée | on ne peut pas l'estimer avec les données disponibles |
+
+### À quoi cela ressemble-t-il ?
+
+Choisissez un mot. La grille montre combien de personnes ont l'effet dans un groupe.
+
+```{=html}
+<div class="frequences-outil" data-outil="frequences">
+  <fieldset>
+    <legend>Choisissez une fréquence</legend>
+    <label><input type="radio" name="frequence" value="tres-frequent" checked> Très fréquent</label>
+    <label><input type="radio" name="frequence" value="frequent"> Fréquent</label>
+    <label><input type="radio" name="frequence" value="peu-frequent"> Peu fréquent</label>
+    <label><input type="radio" name="frequence" value="rare"> Rare</label>
+    <label><input type="radio" name="frequence" value="tres-rare"> Très rare</label>
+    <label><input type="radio" name="frequence" value="indeterminee"> Fréquence indéterminée</label>
+  </fieldset>
+  <div class="frequences-grille" aria-hidden="true"></div>
+  <p class="frequences-resume" aria-live="polite"></p>
+</div>
+```
+
+### Le médicament est-il toujours en cause ?
+
+Pas toujours. Le chiffre de la notice compte toutes les personnes qui ont eu le symptôme pendant les essais. Certaines l'auraient eu de toute façon. Par exemple, on a souvent mal à la tête, avec ou sans médicament.
+
+Pour le savoir, les essais comparent avec un placebo (un comprimé sans substance active). L'exemple ci-dessous est inventé pour expliquer l'idée.
+
+```{=html}
+<div class="frequences-outil" data-outil="placebo">
+  <fieldset>
+    <legend>Exemple inventé : maux de tête pendant un essai</legend>
+    <label><input type="checkbox"> Montrer les personnes qui ont aussi eu mal à la tête avec le placebo</label>
+  </fieldset>
+  <div class="frequences-grille" aria-hidden="true"></div>
+  <p class="frequences-resume" aria-live="polite"></p>
+</div>
+```
+
+Pour les statines (médicaments contre le cholestérol), un essai a montré que la plupart des douleurs musculaires revenaient aussi avec un placebo. On appelle cela l'effet nocebo : on ressent un effet parce qu'on s'y attend.
+
+### Un effet listé va-t-il m'arriver ?
+
+Non, pas forcément. Un effet figure dans la notice dès que le lien avec le médicament est possible. Ce n'est pas une preuve. Et même un effet « très fréquent » ne touche pas la plupart des personnes.
+
+### « Rare » veut-il dire « jamais vu » ?
+
+Parfois. Un effet peut être découvert après la mise sur le marché, sans avoir été vu dans les essais. On le classe alors grâce à un calcul : s'il n'est jamais apparu chez 3 600 personnes, il touche au plus 1 personne sur 1 200. Il est donc classé « rare ». Le mot donne une limite haute, pas un comptage.
+
+### Dans quel ordre sont listés les effets ?
+
+Dans la notice, les effets graves viennent en premier, avec ce qu'il faut faire s'ils surviennent. Les autres effets suivent, du plus fréquent au moins fréquent.
+
+Le RCP, destiné aux professionnels, les range autrement : par organe (cœur, peau, estomac…), puis par fréquence. L'effet le plus grave n'y est donc pas forcément en haut du tableau.
+
+Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien. Si un effet vous inquiète, demandez-leur conseil, ou [déclarez-le](../declarer.qmd).
+
+:::
+
+```{=html}
+<script src="../assets/js/frequences.js" defer></script>
+```
