@@ -27,6 +27,9 @@ Status and open tasks: `docs/STATUS.md`. Points for medical reviewers: `docs/rel
   `tools/checks/contrast_pairs.yml`. `pv-cyan` and `pv-green` are decorative, never text.
 - Fonts are self-hosted in `assets/fonts/` (OFL, from @fontsource-variable); never load fonts from a third-party server.
 - The home-page signal figure is generated: edit `tools/design/make_signal.py`, not `_includes/signal.md`.
+- Search synonyms and the accent-free index copy: `tools/build/search_postprocess.py` (post-render).
+- `[à compléter …]`-style brackets render as badges (page-meta.lua); in Lua use `pandoc.text.lower`, not `string.lower` (breaks UTF-8 on Windows).
+- Pushing to `main` deploys GitHub Pages (`.github/workflows/pages.yml`); keep links relative (site lives under a subpath).
 - No invented figures: an unsourced number becomes `[à compléter : source]`.
 - No real person's name or photo without written consent; keep `noindex` until launch.
 - Logos in `assets/img/logos/` come from the CHU websites; communication departments must approve them before release.

@@ -2,6 +2,7 @@
 title: "Medicines safety in Normandy"
 description: "In English: emergency numbers, what to do about a side effect, and how to report it in France."
 lang: en
+toc-title: "On this page"
 type: institutionnel
 statut: brouillon
 relu_par: null
@@ -14,13 +15,16 @@ sources:
   - titre: "CHU d'Angers, poison centre (in French)"
     url: "https://www.chu-angers.fr/soins-specialites/services/centre-antipoison"
     consulte_le: 2026-11-25
+  - titre: "French public medicines database, SmPC and leaflet of TRIATEC 10 mg (ramipril, CIS 60161143), in French"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/60161143/extrait"
+    consulte_le: 2026-11-25
 ---
 
 This page is for visitors and English-speaking residents of Normandy. The rest of the website is in French. This page is a draft that the regional centres still have to review.
 
 ::: {.quand-consulter titre="Emergency"}
 - **Medical emergency: call 15** (the French ambulance service, SAMU) **or 112** (the European emergency number, which also works from any mobile phone). Like 999 in the UK.
-- **Poisoning, or too much of a medicine: call the Angers poison centre on 02 41 48 21 21**, 24 hours a day. It covers Normandy.
+- **Poisoning, or too much of a medicine: call the Angers poison centre on [02 41 48 21 21](tel:+33241482121)**, 24 hours a day. It covers Normandy.
 :::
 
 ## I think a medicine is making me ill
@@ -28,6 +32,10 @@ This page is for visitors and English-speaking residents of Normandy. The rest o
 1. If it is serious (difficulty breathing, swelling of the face or throat, fainting): call 15.
 2. Otherwise, talk to a doctor or a pharmacist the same day. Pharmacies have a green cross. At night and on Sundays, call 3237 (in French) to find the pharmacy on duty [to confirm].
 3. Do not stop or change a treatment without talking to a doctor or a pharmacist.
+
+### Example: a dry cough with a blood-pressure medicine
+
+Some blood-pressure medicines (ACE inhibitors, whose names end in *-pril*, such as ramipril or perindopril) can cause a dry, tickly cough that does not go away. It affects up to 1 person in 10 taking ramipril. Do not stop the medicine on your own: see your doctor, who can switch you to another medicine. You can also report the cough as a side effect (see [Reporting a side effect](#reporting-a-side-effect)).
 
 ## Reporting a side effect
 
@@ -37,14 +45,16 @@ Anyone can report a suspected side effect of a medicine in France, including pat
 2. Have ready: the name of the medicine (as on the box), the dates you took it, what happened and when, your age, and your other medicines.
 3. A pharmacist or doctor can help you fill it in, or report it for you.
 
+The French page [[Déclarer un effet indésirable]{lang="fr"}](../../declarer.qmd) explains the same steps in more detail.
+
 Your report goes to the regional pharmacovigilance centre: Caen for Calvados, Manche and Orne; Rouen for Eure and Seine-Maritime. It is recorded without your name in the national database.
 
 ## The regional pharmacovigilance centres
 
 | Area | Centre | Phone | Email |
 |---|---|---|---|
-| Calvados, Manche, Orne | CRPV de Caen | 02 31 06 46 72 | pharmacovigilance@chu-caen.fr |
-| Eure, Seine-Maritime | CRPV de Rouen | 02 32 88 90 79 | pharmacovigilance@chu-rouen.fr |
+| Calvados, Manche, Orne | CRPV de Caen | [02 31 06 46 72](tel:+33231064672) | pharmacovigilance@chu-caen.fr |
+| Eure, Seine-Maritime | CRPV de Rouen | [02 32 88 90 79](tel:+33232889079) | pharmacovigilance@chu-rouen.fr |
 
 Whether the centres can answer in English is [to confirm with each centre].
 

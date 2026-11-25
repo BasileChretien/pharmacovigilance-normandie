@@ -35,6 +35,9 @@ sources:
   - titre: "Base de données publique des médicaments. IMIGRANE 50 mg (sumatriptan), RCP mis à jour le 30/10/2025"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/64676030/extrait"
     consulte_le: 2026-11-25
+  - titre: "ANSM, AINS chez les femmes enceintes : améliorer l'information sur les risques pour un meilleur usage (avril 2025)"
+    url: "https://ansm.sante.fr/actualites/anti-inflammatoires-non-steroidiens-ains-chez-les-femmes-enceintes-ameliorer-linformation-sur-les-risques-pour-un-meilleur-usage"
+    consulte_le: 2026-11-25
 ---
 
 ::: {.deux-versions}
@@ -60,7 +63,7 @@ sources:
 ::: {.encadre-pratique}
 ### Vous êtes enceinte ou vous allaitez ?
 
-- Ne prenez ni ibuprofène ni aspirine sans avis médical. Ces anti-inflammatoires sont interdits à partir du début du 6e mois de grossesse, et déconseillés avant.
+- Ne prenez ni ibuprofène ni aspirine sans avis médical. Ces anti-inflammatoires sont interdits à partir du début du 6e mois de grossesse (24 semaines d'aménorrhée, comptées depuis le premier jour des dernières règles), même en une seule prise, et déconseillés avant. Voir [Les anti-inflammatoires (AINS)](../classes/ains.qmd).
 - Le paracétamol (Doliprane, Dafalgan, Efferalgan) peut être utilisé, à la dose la plus faible et le moins longtemps possible.
 - Parlez de vos migraines à votre médecin ou à votre sage-femme. Voir aussi [Grossesse et allaitement](../situations/grossesse-allaitement.qmd).
 :::

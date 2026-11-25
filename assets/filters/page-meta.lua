@@ -12,6 +12,26 @@ local TITRES = {
   ["quand-consulter"] = "Quand consulter",
 }
 
+-- Labels of the generated blocks, by page language (lang: en in the front matter).
+local LIBELLES = {
+  fr = {
+    brouillon = "Brouillon à relire : ce contenu n’a pas encore été validé par un pharmacologue.",
+    sources = "Sources et relecture",
+    consulte = "consulté le",
+    relu = "Relu par %s le %s.",
+    pas_relu = "Pas encore relu.",
+    prochaine = " Prochaine relecture : %s.",
+  },
+  en = {
+    brouillon = "Draft to be reviewed: a pharmacologist has not yet checked this content.",
+    sources = "Sources and review",
+    consulte = "accessed",
+    relu = "Reviewed by %s on %s.",
+    pas_relu = "Not reviewed yet.",
+    prochaine = " Next review: %s.",
+  },
+}
+
 local function date_fr(s)
   local y, m, d = s:match("^(%d%d%d%d)%-(%d%d)%-(%d%d)$")
   if y then
@@ -106,7 +126,7 @@ function Div(el)
   return nil
 end
 
-local function sources_list(meta)
+local function sources_list(meta, libelles)
   local items = {}
   local src = meta.sources
   if type(src) ~= "table" then
@@ -122,7 +142,7 @@ local function sources_list(meta)
         inlines = pandoc.Inlines(titre)
       end
       if s.consulte_le ~= nil then
-        inlines:extend(pandoc.Inlines(" (consulté le " .. date_fr(stringify(s.consulte_le)) .. ")"))
+        inlines:extend(pandoc.Inlines(" (" .. libelles.consulte .. " " .. date_fr(stringify(s.consulte_le)) .. ")"))
       end
       table.insert(items, { pandoc.Plain(inlines) })
     end
@@ -130,22 +150,112 @@ local function sources_list(meta)
   return items
 end
 
+-- Editorial placeholders such as "[à compléter : source]" or "[to confirm]" become a
+-- small labelled badge, so readers see a deliberate "to be completed" mark rather than
+-- stray brackets (user panel, round 2: 8 of 10 testers lost trust over raw brackets).
+local PLACEHOLDER_WORDS = { "compléter", "vérifier", "to confirm", "à construire", "à publier",
+  "à préciser", "à demander", "à valider", "draft", "à confirmer" }
+
+local function is_placeholder(text)
+  -- pandoc.text.lower, not string.lower: on Windows string.lower reads UTF-8 bytes
+  -- as Latin-1 and breaks accented letters, so "compléter" never matched.
+  local lower = pandoc.text.lower(text)
+  for _, word in ipairs(PLACEHOLDER_WORDS) do
+    if lower:find(word, 1, true) then
+      return true
+    end
+  end
+  return false
+end
+
+local function closes_bracket(el)
+  return el.t == "Str" and el.text:find("]", 1, true) ~= nil
+end
+
+-- If a placeholder starts at inlines[i], return its badge, the text after the closing
+-- bracket, and the index of the last token used; otherwise nil.
+local function placeholder_at(inlines, i)
+  local first = inlines[i]
+  if first.t ~= "Str" or first.text:sub(1, 1) ~= "[" then
+    return nil
+  end
+  local j = i
+  while j <= #inlines and not closes_bracket(inlines[j]) do
+    j = j + 1
+  end
+  if j > #inlines then
+    return nil
+  end
+  local run = pandoc.Inlines({})
+  for k = i, j do
+    run:insert(inlines[k])
+  end
+  local last = run[#run].text
+  local close = last:find("]", 1, true)
+  run[#run] = pandoc.Str(last:sub(1, close))
+  if not is_placeholder(stringify(run)) then
+    return nil
+  end
+  local badge = pandoc.Span(run, pandoc.Attr("", { "a-completer" }, { { "title", "Élément à compléter avant publication" } }))
+  return badge, last:sub(close + 1), j
+end
+
+function Inlines(inlines)
+  local out = pandoc.Inlines({})
+  local i = 1
+  while i <= #inlines do
+    local badge, trailing, j = placeholder_at(inlines, i)
+    if badge then
+      out:insert(badge)
+      if trailing ~= "" then
+        out:insert(pandoc.Str(trailing))
+      end
+      i = j + 1
+    else
+      out:insert(inlines[i])
+      i = i + 1
+    end
+  end
+  return out
+end
+
+-- Pages written with "###" directly under the title (no "##") skip a heading level:
+-- shift them up so the outline goes h1 -> h2 -> h3 (RGAA 9.1).
+local function fix_heading_levels(blocks)
+  local min_level = 7
+  blocks:walk({ Header = function(h)
+    if h.level < min_level then
+      min_level = h.level
+    end
+  end })
+  if min_level >= 3 and min_level < 7 then
+    local shift = min_level - 2
+    return blocks:walk({ Header = function(h)
+      h.level = h.level - shift
+      return h
+    end })
+  end
+  return blocks
+end
+
 function Pandoc(doc)
   local meta = doc.meta
   local statut = meta_str(meta, "statut")
+  local libelles = LIBELLES[meta_str(meta, "lang") or "fr"] or LIBELLES.fr
+  doc.blocks = fix_heading_levels(doc.blocks)
 
   if statut == "brouillon" then
     local bandeau = pandoc.Div(
-      { pandoc.Para(pandoc.Inlines("Brouillon à relire : ce contenu n’a pas encore été validé par un pharmacologue.")) },
+      { pandoc.Para(pandoc.Inlines(libelles.brouillon)) },
       pandoc.Attr("", { "statut-brouillon" }, { { "role", "note" } })
     )
     doc.blocks:insert(1, bandeau)
   end
 
-  local items = sources_list(meta)
+  local items = sources_list(meta, libelles)
   if statut ~= nil or #items > 0 then
     local bloc = pandoc.Blocks({})
-    bloc:insert(pandoc.Header(2, pandoc.Inlines("Sources et relecture"), pandoc.Attr("sources-et-relecture")))
+    bloc:insert(pandoc.Header(2, pandoc.Inlines(libelles.sources), pandoc.Attr("sources-et-relecture")))
     if #items > 0 then
       bloc:insert(pandoc.BulletList(items))
     end
@@ -154,12 +264,12 @@ function Pandoc(doc)
     local prochaine = meta_str(meta, "prochaine_relecture")
     local txt
     if relu_par and relu_le then
-      txt = "Relu par " .. relu_par .. " le " .. date_fr(relu_le) .. "."
+      txt = string.format(libelles.relu, relu_par, date_fr(relu_le))
     else
-      txt = "Pas encore relu."
+      txt = libelles.pas_relu
     end
     if prochaine then
-      txt = txt .. " Prochaine relecture : " .. date_fr(prochaine) .. "."
+      txt = txt .. string.format(libelles.prochaine, date_fr(prochaine))
     end
     bloc:insert(pandoc.Para(pandoc.Inlines(txt)))
     doc.blocks:insert(pandoc.Div(bloc, pandoc.Attr("", { "sources-relecture" })))

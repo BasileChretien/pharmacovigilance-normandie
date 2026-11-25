@@ -702,7 +702,7 @@ a[href^="tel:"]::after {
 
 .publics {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
 }
 .public {
@@ -799,7 +799,26 @@ a[href^="tel:"]::after {
   .publics, .rubriques { grid-template-columns: 1fr; }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .rubriques { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .rubriques, .publics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  // Four columns overlapped at 1024 px (user panel, round 2): title on its own row,
+  // the two numbers side by side, the links below.
+  .urgence { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem 1.5rem; }
+  .urgence-titre, .urgence > div:last-child { grid-column: 1 / -1; }
+}
+
+// Phones: a shorter hero, so the emergency numbers show without scrolling (user panel,
+// round 2: four testers had to scroll to reach them). The intro sentence is dropped there;
+// the surtitle already names the two centres.
+@media (max-width: 575.98px) {
+  .quarto-announcement { font-size: 0.85rem; padding-top: 0.35rem; padding-bottom: 0.35rem; }
+  .hero { padding: 1rem 0 1rem; }
+  .hero-surtitre { margin-bottom: 0.4rem; }
+  .hero h1 { font-size: 2.1rem; margin-bottom: 0; }
+  .hero-chapo { display: none; }
+  .hero-recherche { margin: 1rem 0 0.9rem; padding: 0.75rem 1rem; }
+  .hero-actions .btn-lg { padding: 0.55rem 1rem; font-size: 1rem; }
+  .urgence { padding: 0.9rem 1rem; }
+  .urgence-numero { font-size: 1.3rem; }
 }
 
 // ---------- Interactive frequency grids (comprendre/frequences) -----------
@@ -853,4 +872,16 @@ a[href^="tel:"]::after {
   .encadre, .encadre-pratique, .sources-relecture { break-inside: avoid; }
   a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.8em; word-break: break-all; }
   .hero-figure, .rubriques, .publics { display: none !important; }
+}
+
+// Editorial placeholders, marked by the page-meta filter.
+.a-completer {
+  display: inline;
+  padding: 0.05rem 0.4rem;
+  border-radius: 0.4rem;
+  background: $pv-amber-tint;
+  color: $pv-amber;
+  font-size: 0.85em;
+  font-weight: 600;
+  white-space: normal;
 }

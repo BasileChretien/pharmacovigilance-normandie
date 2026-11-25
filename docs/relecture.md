@@ -71,3 +71,20 @@ marques `[à compléter : source]` et ses `<!-- FIGURE À FAIRE -->`.
 | bon-usage/cytochromes | Index par médicament généré automatiquement depuis le tableau : il hérite des points à vérifier du tableau |
 | crpv/enseignement | Modalités de candidature proposées, à valider par chaque centre |
 | bon-usage/interactions-ville | Page nouvelle, 16 associations : niveaux relevés sur le Thésaurus du 15/09/2023 (pages 26, 102 et 228 lues en texte seulement) ; « triple whammy » reconstitué à partir de trois couples ; clopidogrel + oméprazole d'après le RCP de Plavix |
+
+## Ajouts après le 2e tour du panel (26/11/2026)
+
+Synthèse : `docs/panel/synthese-tour2.md`.
+
+| Page | À vérifier |
+|---|---|
+| maux-courants/fievre-douleur-enfant | Intervalle unique « 6 h si possible, jamais moins de 4 h, 4 prises par 24 h » ; exemple 16 kg ≈ 240 mg (15 mg/kg) ; « fièvre plus de 3 jours : consultez », repris de la page « enfant » et du RCP Doliprane 2,4 % |
+| maux-courants/migraine | « 24 semaines d'aménorrhée » et « même en une seule prise » (ANSM, avril 2025) |
+| situations/grossesse-allaitement | Phrase sur les fiches allaitement du CRAT |
+| classes/anticoagulants-oraux | Advil et Nurofen cités comme exemples d'ibuprofène |
+| normandie/en | Exemple de la toux sous IEC : « jusqu'à 1 personne sur 10 » (RCP du Triatec), conduite « ne pas arrêter seul, voir son médecin » |
+| normandie/qui-contacter | Numéros des deux CRPV dans la ligne « Effet indésirable » |
+| interactions-ville, statines, colchicine | Proposer une conduite de remplacement pour chaque contre-indication (par exemple autre macrolide ou suspension de la statine), d'après le Thésaurus et les RCP |
+| classes/fluoroquinolones, que-faire-effet-indesirable | Harmoniser « arrêtez dès la douleur au tendon » et « ne modifiez pas votre traitement sans avis » : règle générale et exception |
+| bon-usage/interactions | Ajouter pour les patients la pilule et les inducteurs enzymatiques (rifampicine, certains antiépileptiques), aujourd'hui seulement côté professionnels |
+| bon-usage/ecraser-fiche | Version PDF d'une page après relecture ; protocole pas à pas pour l'équipe d'EHPAD, avec l'OMéDIT |

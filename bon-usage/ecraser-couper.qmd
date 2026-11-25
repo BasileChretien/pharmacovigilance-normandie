@@ -29,7 +29,7 @@ sources:
 ::: {.deux-versions}
 
 ::: {.encadre-pratique}
-### Vous êtes soignant ?
+## Vous êtes soignant ?
 
 Pour les personnes qui avalent mal (troubles de la déglutition, risque de fausse route) ou qui ont une sonde :
 

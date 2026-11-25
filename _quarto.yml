@@ -5,6 +5,8 @@ project:
     - assets/js/
     - assets/img/
     - assets/fonts/
+  post-render:
+    - tools/build/search_postprocess.py
   render:
     - "*.qmd"
     - "!_templates/"
@@ -21,6 +23,7 @@ website:
   search:
     location: navbar
     type: overlay
+    keyboard-shortcut: []
   announcement:
     content: "**Prototype non officiel** : brouillons en cours de relecture, à ne pas utiliser pour une décision de soin."
     type: warning
@@ -55,7 +58,9 @@ website:
         href: poser-une-question.qmd
   page-footer:
     left: |
-      Centres régionaux de pharmacovigilance de Caen et de Rouen. Prototype non officiel.
+      **CRPV de Caen** (Calvados, Manche, Orne) : [02 31 06 46 72](tel:+33231064672)  
+      **CRPV de Rouen** (Eure, Seine-Maritime) : [02 32 88 90 79](tel:+33232889079)  
+      Prototype non officiel.
     center: |
       ![Logo du CRPV Normandie Caen](/assets/img/logos/crpv-caen.png){.logo-partenaire} ![Logo du CHU de Caen Normandie](/assets/img/logos/chu-caen-normandie.png){.logo-partenaire} ![Logo du CHU de Rouen Normandie](/assets/img/logos/chu-rouen.png){.logo-partenaire}
     right:
@@ -67,7 +72,7 @@ website:
         href: a-propos/accessibilite.qmd
       - text: "English"
         href: normandie/en/index.qmd
-  back-to-top-navigation: true
+  back-to-top-navigation: false
   page-navigation: false
 
 format:
@@ -88,6 +93,12 @@ format:
     include-in-header:
       - text: |
           <meta name="robots" content="noindex, nofollow">
+    include-after-body:
+      - text: |
+          <script>
+          // The navbar toggle opens a disclosure, not an ARIA menu (user panel, round 2).
+          document.querySelectorAll(".navbar-toggler[role='menu']").forEach(function (b) { b.removeAttribute("role"); });
+          </script>
     include-before-body:
       - text: |
           <a class="lien-evitement" href="#quarto-document-content">Aller au contenu</a>

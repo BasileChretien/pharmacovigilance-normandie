@@ -1,12 +1,15 @@
 # État du projet
 
-Mis à jour le 25/11/2026. Prototype non officiel, branche `feat/prototype-site`.
+Mis à jour le 26/11/2026. Prototype non officiel, branche `feat/prototype-site`.
 
 ## Où on en est
 
 - 78 pages construites, toutes au statut « brouillon ».
-- Design refait, puis corrigé d'après un panel de 10 utilisateurs simulés
-  (`docs/panel/synthese.md`).
+- Design refait, puis corrigé d'après deux tours d'un panel de 10 utilisateurs simulés
+  (`docs/panel/synthese.md`, `docs/panel/synthese-tour2.md`) : 11 puis 22 tâches réussies
+  sur 30.
+- Recherche tolérante aux accents, avec synonymes (`tools/build/search_postprocess.py`).
+- Les marques « [à compléter] » s'affichent comme des étiquettes (101 à ce jour).
 - Contrôles automatiques en place : règles de rédaction, contrastes, HTML, accessibilité
   (axe-core), tests.
 
@@ -37,5 +40,6 @@ par page (`docs/relecture.md`).
 - [ ] Liste des publications générée depuis ORCID et OpenAlex.
 - [ ] Les 52 figures marquées `FIGURE À FAIRE`.
 - [ ] Contrôles automatiques : mode « site » dans manuscript-guard ou script séparé (décision).
+- [ ] Filtre par médicament dans les tableaux des interactions et des cytochromes.
 - [ ] Créer le dépôt distant et faire tourner la CI (`.github/workflows/ci.yml`).
 - [ ] Refaire le test avec de vrais utilisateurs normands après la relecture.

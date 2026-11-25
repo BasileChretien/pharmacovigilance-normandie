@@ -6,6 +6,9 @@ Pharmacovigilance Normandie ». Tous les contenus sont des brouillons à relire 
 pharmacologue avant toute mise en ligne. Le site demande aux moteurs de recherche de ne pas
 l'indexer.
 
+Aperçu en ligne : <https://basilechretien.github.io/pharmacovigilance-normandie/>, reconstruit à
+chaque push sur `main` (`.github/workflows/pages.yml`).
+
 Les logos de `assets/img/logos/` (CRPV Normandie Caen, CHU de Caen Normandie, CHU de Rouen
 Normandie) ont été repris des sites des CHU le 25/11/2026. Ils doivent être validés, et si
 possible remplacés par les fichiers officiels, par les directions de la communication avant
@@ -13,7 +16,7 @@ toute mise en ligne.
 
 ## Construire et prévisualiser
 
-Prérequis : [Quarto](https://quarto.org) 1.5 ou plus, [uv](https://docs.astral.sh/uv/)
+Prérequis : [Quarto](https://quarto.org) 1.10 ou plus, [uv](https://docs.astral.sh/uv/)
 pour les contrôles Python, Node.js pour les contrôles HTML.
 
 ```bash

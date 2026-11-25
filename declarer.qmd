@@ -24,6 +24,8 @@ sources:
 <p><a class="btn btn-primary btn-lg" href="https://signalement.social-sante.gouv.fr">Déclarer sur signalement.social-sante.gouv.fr</a></p>
 ```
 
+## Vous êtes un patient ou un proche
+
 ### Qui peut déclarer ?
 
 Vous pouvez déclarer vous-même un effet indésirable, pour vous ou pour un proche. Les professionnels de santé peuvent aussi déclarer. Votre médecin ou votre pharmacien peut vous aider.

@@ -10,3 +10,5 @@ listing:
 ---
 
 Trois formats, du plus automatique au plus rédigé. Seul le fil des alertes officielles est publié sans relecture, car il ne contient que des titres et des liens vers les sources officielles. Tout texte rédigé est relu par un pharmacologue avant publication.
+
+## Les derniers billets

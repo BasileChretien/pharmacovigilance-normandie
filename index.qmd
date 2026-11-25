@@ -87,6 +87,16 @@ listing:
         <li><a href="crpv/enseignement.html">Enseignement et stages</a></li>
       </ul>
     </div>
+    <div class="public">
+      <span class="icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 10.5 12 4l8.5 6.5"/><path d="M5.5 9v11h13V9"/><path d="M12 17.5s-3-1.9-3-4a1.6 1.6 0 0 1 3-.8 1.6 1.6 0 0 1 3 .8c0 2.1-3 4-3 4Z"/></svg></span>
+      <h3>Soignant en EHPAD ou à domicile</h3>
+      <ul>
+        <li><a href="bon-usage/ecraser-fiche.html">Écraser un comprimé : la fiche à imprimer</a></li>
+        <li><a href="medicaments/situations/sujet-age.html">Médicaments et personnes âgées, chutes</a></li>
+        <li><a href="bon-usage/quand-prendre.html">Quand donner les médicaments</a></li>
+        <li><a href="declarer.html">Déclarer un effet indésirable</a></li>
+      </ul>
+    </div>
   </div>
 </section>
 

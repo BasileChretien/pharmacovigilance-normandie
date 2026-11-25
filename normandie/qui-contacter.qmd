@@ -32,7 +32,7 @@ Du plus urgent au moins urgent :
 |---|---|---|
 | Urgence vitale : malaise grave, gêne pour respirer, perte de connaissance | SAMU | 15, ou 112 |
 | Intoxication, ou question sur un produit toxique | Centre antipoison d'Angers, compétent pour la Normandie | 02 41 48 21 21, 24 heures sur 24 |
-| Effet indésirable d'un médicament | Votre médecin ou votre pharmacien ; le CRPV de Caen ou de Rouen selon le département | [Déclarer en ligne](../declarer.qmd) ; [contacts des CRPV](../crpv/acces.qmd) |
+| Effet indésirable d'un médicament | Votre médecin ou votre pharmacien ; le CRPV de Caen (Calvados, Manche, Orne) ou de Rouen (Eure, Seine-Maritime) | Caen : [02 31 06 46 72](tel:+33231064672) ; Rouen : [02 32 88 90 79](tel:+33232889079) ; [déclarer en ligne](../declarer.qmd) ; [accès et horaires des CRPV](../crpv/acces.qmd) |
 | Abus, dépendance ou usage détourné d'un médicament ou d'une substance | CEIP-A de Caen (centre d'addictovigilance) | Coordonnées [à vérifier] ; déclaration sur signalement.social-sante.gouv.fr |
 | Effet indésirable lié à une transfusion | L'équipe soignante, qui prévient le correspondant d'hémovigilance de l'hôpital. Donneur de sang : l'Établissement français du sang (EFS) | Par l'équipe soignante, ou le site de don |
 | Incident avec un dispositif médical (pompe, prothèse, test…) | L'équipe soignante ; le correspondant de matériovigilance de l'établissement | Déclaration sur signalement.social-sante.gouv.fr |
