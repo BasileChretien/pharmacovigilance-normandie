@@ -19,7 +19,10 @@ function htmlFiles(dir) {
 }
 
 const browser = await chromium.launch();
-const page = await browser.newPage();
+// @axe-core/playwright opens extra pages in the page's context, so the page must come
+// from an explicit context (browser.newPage() fails with "Please use browser.newContext()").
+const context = await browser.newContext();
+const page = await context.newPage();
 let blocking = 0;
 for (const file of htmlFiles(SITE)) {
   await page.goto(pathToFileURL(file).href);
