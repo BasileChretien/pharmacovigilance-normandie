@@ -115,7 +115,7 @@ def main() -> int:
             "contours": CONTOURS_URL,
             "villes": COMMUNES_URL.format(code="{code}"),
             "licence": "Licence Ouverte / Open Licence 2.0 (Etalab)",
-            "consulte_le": dt.date.today().isoformat(),
+            "consulte_le": dt.datetime.now(dt.timezone.utc).date().isoformat(),
             "population_minimale": MIN_POPULATION,
         },
         "departements": sorted(departements, key=lambda d: d["code"]),
