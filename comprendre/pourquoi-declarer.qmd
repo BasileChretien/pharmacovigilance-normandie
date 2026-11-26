@@ -34,6 +34,13 @@ sources:
   - titre: "ANSM, Benfluorex (Mediator) : bilan du suivi de pharmacovigilance"
     url: "https://ansm.sante.fr/actualites/benfluorex-mediator-bilan-du-suivi-de-pharmacovigilance"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Missions du réseau des CRPV"
+    url: "https://www.rfcrpv.fr/missions/"
+    site: rfcrpv
+  - titre: "Pharmacovigilance"
+    url: "https://pharmacomedicale.org/pharmacologie/risque-des-medicaments/30-pharmacovigilance"
+    site: cnpm
 ---
 
 ::: {.deux-versions}

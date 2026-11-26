@@ -94,6 +94,25 @@ def test_missing_sources_is_an_error():
     assert "FM-SOURCES" in rules(check(text))
 
 
+PLUS_LOIN = """pour_aller_plus_loin:
+  - titre: "Quinolones"
+    url: "{url}"
+    site: cnpm
+"""
+
+
+def test_further_reading_with_title_and_https_url_passes():
+    text = page(GOOD_PATIENT).replace("sources:", PLUS_LOIN.format(url="https://pharmacomedicale.org/q") + "sources:")
+    assert "FM-LIENS" not in rules(check(text))
+
+
+def test_further_reading_without_url_or_with_plain_http_is_an_error():
+    no_url = page(GOOD_PATIENT).replace("sources:", PLUS_LOIN.format(url="") + "sources:")
+    http = page(GOOD_PATIENT).replace("sources:", PLUS_LOIN.format(url="http://example.org") + "sources:")
+    assert "FM-LIENS" in rules(check(no_url))
+    assert "FM-LIENS" in rules(check(http))
+
+
 def test_institutional_page_needs_no_source():
     text = page(GOOD_PATIENT).replace("sources:", "type: institutionnel\nautres:")
     assert "FM-SOURCES" not in rules(check(text, path="a-propos/mentions-legales.qmd"))

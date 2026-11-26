@@ -13,6 +13,10 @@ sources:
   - titre: "Base de données publique des médicaments"
     url: "https://base-donnees-publique.medicaments.gouv.fr/"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Mise sur le marché des médicaments"
+    url: "https://pharmacomedicale.org/pharmacologie/developpement-et-suivi-des-medicaments/29-mise-sur-le-marche-des-medicaments"
+    site: cnpm
 ---
 
 ::: {.texte-pro}

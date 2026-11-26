@@ -6,6 +6,16 @@ listing:
   sort: "date desc"
   type: default
   fields: [date, title, description]
+pour_aller_plus_loin:
+  - titre: "Vigiking sur le site du réseau des CRPV"
+    url: "https://www.rfcrpv.fr/bulletins-des-crpv/vigiking-rouen-caen/"
+    site: rfcrpv
+  - titre: "Les bulletins des autres centres"
+    url: "https://www.rfcrpv.fr/bulletins-des-crpv/"
+    site: rfcrpv
+  - titre: "CRPVue : un outil de recherche qui change l'accès aux bulletins de pharmacovigilance !"
+    url: "https://www.rfcrpv.fr/crpvue-un-outil-de-recherche-qui-change-lacces-aux-bulletins-de-pharmacovigilance/"
+    site: rfcrpv
 ---
 
 Vigiking est le bulletin des centres régionaux de pharmacovigilance de Caen et de Rouen. Chaque numéro est publié ici, article par article, et envoyé par courriel aux abonnés. Une version PDF reste disponible pour l'affichage dans les services et les officines.

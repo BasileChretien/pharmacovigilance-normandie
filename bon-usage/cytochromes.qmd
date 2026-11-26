@@ -25,6 +25,13 @@ sources:
   - titre: "ANSM, Thésaurus des interactions médicamenteuses, septembre 2023 (PDF)"
     url: "https://ansm.sante.fr/uploads/2024/06/07/20230915-thesaurus-interactions-medicamenteuses-septembre-2023.pdf"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Variabilités pharmacocinétiques"
+    url: "https://pharmacomedicale.org/pharmacologie/les-sources-de-variabilite-de-la-reponse-au-medicament/45-variabilites-pharmacocinetiques"
+    site: cnpm
+  - titre: "Codéine, oxycodone, tramadol et le cytochrome CYP2D6 : attention aux métabolites actifs !"
+    url: "https://www.rfcrpv.fr/codeine-oxycodone-tramadol-et-le-cytochrome-cyp2d6-attention-aux-metabolites-actifs/"
+    site: rfcrpv
 ---
 
 <!-- NOTE DE RÉDACTION (à retirer avant publication) : les classements HUG ont été relevés le 25/11/2026 sur le PDF « carte_des_cytochromes_2020.pdf » (cases colorées lues automatiquement puis contrôlées visuellement sur un extrait). Chaque ligne doit être relue contre le PDF original. Le PDF renvoie à des tableaux dynamiques sur www.pharmacoclin.ch : ce domaine est en vente au 25/11/2026, aucune version plus récente n'a été trouvée sur hug.ch. Le relecteur peut demander au CIT-PV de Genève s'il existe une mise à jour. Commercialisation en France : vérifiée de mémoire seulement, pas sur la base de données publique ; les molécules douteuses ont été retirées (voir la section « Méthode »). -->

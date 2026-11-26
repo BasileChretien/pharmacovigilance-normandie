@@ -34,6 +34,10 @@ sources:
   - titre: "ANSM, Benfluorex (Mediator) : bilan du suivi de pharmacovigilance"
     url: "https://ansm.sante.fr/actualites/benfluorex-mediator-bilan-du-suivi-de-pharmacovigilance"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Effets indésirables"
+    url: "https://pharmacomedicale.org/pharmacologie/risque-des-medicaments/47-effets-indesirables"
+    site: cnpm
 ---
 
 ::: {.deux-versions}

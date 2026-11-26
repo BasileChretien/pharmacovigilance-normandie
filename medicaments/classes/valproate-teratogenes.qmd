@@ -29,6 +29,16 @@ sources:
   - titre: "Centre de référence sur les agents tératogènes (CRAT)"
     url: "https://www.lecrat.fr/"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Valproate de sodium (sauf comme régulateur de l'humeur)"
+    url: "https://pharmacomedicale.org/medicaments/par-specialites/item/valproate-de-sodium-sauf-comme-regulateur-de-l-humeur"
+    site: cnpm
+  - titre: "Troubles du neuro-développement et exposition in utero aux anti-épileptiques"
+    url: "https://www.rfcrpv.fr/troubles-neuro-developpement-exposition-in-utero-aux-anti-epileptiques/"
+    site: rfcrpv
+  - titre: "Médicaments et grossesse"
+    url: "https://pharmacomedicale.org/pharmacologie/medicaments-et-grossesse/294-medicaments-et-grossesse"
+    site: cnpm
 ---
 
 ::: {.deux-versions}

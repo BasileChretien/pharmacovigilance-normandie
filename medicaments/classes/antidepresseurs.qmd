@@ -29,6 +29,13 @@ sources:
   - titre: "3114, numéro national de prévention du suicide"
     url: "https://3114.fr/"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Antidépresseurs : les points essentiels"
+    url: "https://pharmacomedicale.org/medicaments/par-specialites/item/antidepresseurs-les-points-essentiels"
+    site: cnpm
+  - titre: "Antidépresseurs et risque de saignement"
+    url: "https://www.rfcrpv.fr/antidepresseurs-et-risque-de-saignement/"
+    site: rfcrpv
 ---
 
 ::: {.deux-versions}

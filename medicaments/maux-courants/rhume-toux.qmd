@@ -41,6 +41,10 @@ sources:
   - titre: "Santé.fr (ministère de la Santé), Antibio'Malin. Bronchite aiguë, 16/09/2025"
     url: "https://www.sante.fr/antibiomalin-pour-savoir-comment-bien-utiliser-les-antibiotiques/bronchite-aigue-definition-diagnostic-traitement-prevention"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Médicaments pour le rhume, désormais sur prescription obligatoire : une décision au bénéfice des patients"
+    url: "https://www.rfcrpv.fr/medicaments-pour-le-rhume-desormais-sur-prescription-obligatoire-une-decision-au-benefice-des-patients/"
+    site: rfcrpv
 ---
 
 ::: {.deux-versions}

@@ -14,6 +14,8 @@ Mis à jour le 26/11/2026. Prototype non officiel, branche `feat/prototype-site`
 - Les marques « [à compléter] » s'affichent comme des étiquettes (101 à ce jour).
 - Champ de filtre au-dessus des longs tableaux (interactions en ville, cytochromes et leur
   index par médicament) : `assets/js/table-filter.js`.
+- Liens « Pour aller plus loin » vers rfcrpv.fr et pharmacomedicale.org sur 46 pages
+  (`pour_aller_plus_loin` dans l'en-tête des pages).
 - Contrôles automatiques en place : règles de rédaction, contrastes, HTML, accessibilité
   (axe-core), tests.
 

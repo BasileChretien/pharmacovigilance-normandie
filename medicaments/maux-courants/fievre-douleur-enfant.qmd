@@ -26,6 +26,16 @@ sources:
   - titre: "Base de données publique des médicaments. DAFALGAN CODEINE, comprimé pelliculé, RCP mis à jour le 31/07/2026"
     url: "http://base-donnees-publique.medicaments.gouv.fr/medicament/66003374/extrait"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Paracétamol"
+    url: "https://pharmacomedicale.org/medicaments/par-specialites/item/paracetamol"
+    site: cnpm
+  - titre: "L'ibuprofène majore le risque de complications en cas de sinusite chez l'enfant"
+    url: "https://www.rfcrpv.fr/libuprofene-majore-le-risque-de-complications-en-cas-de-sinusite-chez-lenfant/"
+    site: rfcrpv
+  - titre: "Ibuprofène et symptômes infectieux : les liaisons dangereuses !"
+    url: "https://www.rfcrpv.fr/ibuprofene-et-symptomes-infectieux-les-liaisons-dangereuses/"
+    site: rfcrpv
 ---
 
 ::: {.deux-versions}

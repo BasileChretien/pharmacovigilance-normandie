@@ -19,6 +19,16 @@ sources:
   - titre: "ANSM, Paracétamol et risque pour le foie : un message d'alerte ajouté sur les boîtes de médicament (communiqué du 09/07/2019, mis à jour le 15/01/2021)"
     url: "https://ansm.sante.fr/actualites/paracetamol-et-risque-pour-le-foie-un-message-dalerte-ajoute-sur-les-boites-de-medicament-communique"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Interactions entre médicaments et pamplemousse"
+    url: "https://www.rfcrpv.fr/interactions-entre-medicaments-et-pamplemousse/"
+    site: rfcrpv
+  - titre: "Association alcool-médicament, quelles interactions ?"
+    url: "https://www.rfcrpv.fr/association-alcool-medicament-quelles-interactions/"
+    site: rfcrpv
+  - titre: "Quels risques d'interaction médicamenteuse au cours de la contraception ?"
+    url: "https://www.rfcrpv.fr/quels-risques-dinteraction-medicamenteuse-au-cours-de-la-contraception/"
+    site: rfcrpv
 ---
 
 <!-- NOTE DE RÉDACTION (à retirer avant publication) : chaque association a été vérifiée le 25/11/2026 dans le PDF du Thésaurus de septembre 2023 (niveau et texte recopiés dans l'onglet professionnel). L'ANSM indique que cette version est la dernière et qu'elle restera en ligne sans mise à jour jusqu'au 15 juin 2027 ; les RCP et notices sont les seuls documents de référence opposables. Le relecteur vérifie qu'aucun RCP récent ne modifie un niveau, et décide quelle référence citer après juin 2027. -->

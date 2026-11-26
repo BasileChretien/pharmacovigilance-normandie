@@ -28,6 +28,16 @@ sources:
   - titre: "CRAT, Mises en garde"
     url: "https://www.lecrat.fr/mises-en-garde/"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Médicaments et grossesse"
+    url: "https://pharmacomedicale.org/pharmacologie/medicaments-et-grossesse/294-medicaments-et-grossesse"
+    site: cnpm
+  - titre: "Antalgiques et allaitement"
+    url: "https://www.rfcrpv.fr/antalgiques-et-allaitement/"
+    site: rfcrpv
+  - titre: "Grossesse et médicaments : quand l'exposition paternelle pose aussi question"
+    url: "https://www.rfcrpv.fr/grossesse-et-medicaments-quand-lexposition-paternelle-pose-aussi-question/"
+    site: rfcrpv
 ---
 
 ::: {.deux-versions}

@@ -31,6 +31,10 @@ sources:
   - titre: "Ordre national des pharmaciens, Compléments alimentaires contenant de la mélatonine : certaines populations doivent en éviter la consommation selon l'Anses, 19 avril 2018"
     url: "https://www.ordre.pharmacien.fr/les-communications/focus-sur/les-actualites/complements-alimentaires-contenant-de-la-melatonine-certaines-populations-doivent-en-eviter-la-consommation-selon-l-anses"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Variabilités pharmacocinétiques"
+    url: "https://pharmacomedicale.org/pharmacologie/les-sources-de-variabilite-de-la-reponse-au-medicament/45-variabilites-pharmacocinetiques"
+    site: cnpm
 ---
 
 ::: {.deux-versions}

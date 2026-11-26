@@ -19,6 +19,13 @@ sources:
   - titre: "EMA, Plavix (clopidogrel) : informations sur le produit, RCP, rubrique 4.5 « Interactions avec d'autres médicaments » (pages 8-9 du PDF)"
     url: "https://www.ema.europa.eu/fr/documents/product-information/plavix-epar-product-information_fr.pdf"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Interactions médicamenteuses"
+    url: "https://pharmacomedicale.org/pharmacologie/risque-des-medicaments/50-interactions-medicamenteuses"
+    site: cnpm
+  - titre: "Interactions entre plantes, aliments et médicaments antiagrégants plaquettaires ou anticoagulants"
+    url: "https://www.rfcrpv.fr/interactions-entre-plantes-aliments-et-medicaments-antiagregants-plaquettaires-ou-anticoagulants/"
+    site: rfcrpv
 ---
 
 <!-- NOTE DE RÉDACTION (à retirer avant publication) : niveaux et conduites à tenir relevés le 25/11/2026 sur le PDF du Thésaurus du 15/09/2023, texte extrait puis contrôlé visuellement sur l'image des pages 21, 24, 25, 36, 47, 64, 83, 94, 113, 156, 166, 223 et 249 (la mise en page en colonnes décale les niveaux dans le texte extrait). Points à trancher par le relecteur : (1) le Thésaurus n'a pas d'entrée propre à l'association triple IEC ou sartan + diurétique + AINS : la ligne reprend les trois paires AINS + IEC, AINS + ARA II et AINS + diurétiques, toutes en précaution d'emploi ; (2) tramadol + ISRS est « à prendre en compte » sans conduite à tenir écrite dans le Thésaurus ; (3) clopidogrel + oméprazole n'est pas dans le Thésaurus 2023 : la ligne cite le RCP de Plavix (EMA), atteint depuis la fiche de la base de données publique, et non le RCP de chaque générique ; (4) l'oméprazole et l'ésoméprazole sont aussi en vente sans ordonnance, ce que la page ne dit pas. -->

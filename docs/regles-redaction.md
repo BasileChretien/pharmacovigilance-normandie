@@ -19,6 +19,10 @@ sources:
   - titre: "ANSM, Thésaurus des interactions médicamenteuses"
     url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:                # facultatif : lectures complémentaires
+  - titre: "Je prends un anticoagulant oral, quels sont les risques ?"
+    url: "https://www.rfcrpv.fr/prends-anticoagulant-oral-risques/"
+    site: rfcrpv                     # rfcrpv | cnpm, ou le nom du site en clair
 ---
 ```
 
@@ -27,6 +31,12 @@ sources:
   savante, article publié). Pas de source secondaire quand la source primaire existe.
 - Le filtre `assets/filters/page-meta.lua` affiche automatiquement le bandeau
   « Brouillon », les sources et les dates de relecture : ne pas les réécrire à la main.
+- `pour_aller_plus_loin` : liens vers des contenus qui prolongent la page, d'abord ceux du
+  réseau des CRPV ([rfcrpv.fr](https://www.rfcrpv.fr), `site: rfcrpv`) et du Collège national de
+  pharmacologie médicale ([pharmacomedicale.org](https://pharmacomedicale.org), `site: cnpm`,
+  écrit pour les professionnels et les étudiants). Trois liens au plus, en https, vérifiés
+  avant d'être ajoutés ; le filtre les affiche dans « Pour aller plus loin », avant les
+  sources. Ce ne sont pas des sources : ce que la page affirme reste sourcé dans `sources`.
 
 ## 2. Texte destiné aux patients
 

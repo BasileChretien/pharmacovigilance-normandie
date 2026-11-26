@@ -32,6 +32,10 @@ sources:
   - titre: "Antibioclic, outil d'aide à la prescription antibiotique (angine)"
     url: "https://antibioclic.com/"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Infections à streptocoque : surtout pas d'anti-inflammatoire non stéroïdien (AINS) !"
+    url: "https://www.rfcrpv.fr/infections-a-streptocoque-surtout-pas-danti-inflammatoire-non-steroidien-ains/"
+    site: rfcrpv
 ---
 
 ::: {.deux-versions}

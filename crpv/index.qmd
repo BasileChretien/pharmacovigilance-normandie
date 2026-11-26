@@ -2,6 +2,16 @@
 title: "Les CRPV de Caen et de Rouen"
 description: "Les missions des deux centres régionaux de pharmacovigilance de Normandie, leurs équipes et leurs activités."
 toc: false
+pour_aller_plus_loin:
+  - titre: "Organisation du réseau des CRPV"
+    url: "https://www.rfcrpv.fr/organisation/"
+    site: rfcrpv
+  - titre: "Missions du réseau des CRPV"
+    url: "https://www.rfcrpv.fr/missions/"
+    site: rfcrpv
+  - titre: "Votre CRPV : trouver le centre de sa région"
+    url: "https://www.rfcrpv.fr/votre-crpv/"
+    site: rfcrpv
 ---
 
 Les centres régionaux de pharmacovigilance (CRPV) font partie du réseau national de 31 centres coordonné par l'Agence nationale de sécurité du médicament (ANSM) [nombre à vérifier]. En Normandie, deux centres se partagent la région : Caen pour le Calvados, la Manche et l'Orne ; Rouen pour l'Eure et la Seine-Maritime.

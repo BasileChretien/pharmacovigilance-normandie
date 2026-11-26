@@ -198,6 +198,11 @@ def front_matter_rules(meta: dict, path: Path) -> list[Finding]:
     for s in sources if isinstance(sources, list) else []:
         if isinstance(s, dict) and _present(s.get("consulte_le")) and not _is_date(s.get("consulte_le")):
             findings.append(Finding("error", "FM-DATE", f"date de consultation invalide : {s.get('consulte_le')}"))
+    liens = meta.get("pour_aller_plus_loin") or []
+    for lien in liens if isinstance(liens, list) else [liens]:
+        url = str(lien.get("url") or "") if isinstance(lien, dict) else ""
+        if not (isinstance(lien, dict) and _present(lien.get("titre")) and url.startswith("https://")):
+            findings.append(Finding("error", "FM-LIENS", f"lien « pour aller plus loin » sans titre ou sans URL https : {lien}"))
     if statut in STRICT_STATUTS and not (_present(meta.get("relu_par")) and _present(meta.get("relu_le"))):
         findings.append(Finding("error", "FM-RELECTURE", "page relue ou publiée sans relu_par et relu_le"))
     for key in ("relu_le", "prochaine_relecture"):

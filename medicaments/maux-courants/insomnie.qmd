@@ -23,6 +23,10 @@ sources:
   - titre: "ANSM, Médicaments et conduite"
     url: "https://ansm.sante.fr/dossiers-thematiques/medicaments-et-conduite"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Hypnotiques : les points essentiels"
+    url: "https://pharmacomedicale.org/medicaments/par-specialites/item/hypnotiques-les-points-essentiels"
+    site: cnpm
 ---
 
 ::: {.deux-versions}

@@ -26,6 +26,16 @@ sources:
   - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
     url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Opiacés : les points essentiels"
+    url: "https://pharmacomedicale.org/medicaments/par-specialites/item/opiaces-les-points-essentiels"
+    site: cnpm
+  - titre: "Codéine, oxycodone, tramadol et le cytochrome CYP2D6 : attention aux métabolites actifs !"
+    url: "https://www.rfcrpv.fr/codeine-oxycodone-tramadol-et-le-cytochrome-cyp2d6-attention-aux-metabolites-actifs/"
+    site: rfcrpv
+  - titre: "Hypoglycémie, un effet indésirable du tramadol de plus en plus documenté"
+    url: "https://www.rfcrpv.fr/hypoglycemie-un-effet-indesirable-du-tramadol-de-plus-en-plus-documente/"
+    site: rfcrpv
 ---
 
 ::: {.deux-versions}

@@ -6,6 +6,10 @@ statut: brouillon
 relu_par: null
 relu_le: null
 prochaine_relecture: null
+pour_aller_plus_loin:
+  - titre: "Site du Collège national de pharmacologie médicale"
+    url: "https://pharmacomedicale.org/"
+    site: cnpm
 ---
 
 ## Enseignements

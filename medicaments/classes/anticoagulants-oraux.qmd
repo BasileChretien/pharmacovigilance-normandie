@@ -26,6 +26,16 @@ sources:
   - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
     url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Je prends un anticoagulant oral, quels sont les risques ?"
+    url: "https://www.rfcrpv.fr/prends-anticoagulant-oral-risques/"
+    site: rfcrpv
+  - titre: "Anticoagulants par voie orale : inhibition directe des facteurs de la coagulation (AOD)"
+    url: "https://pharmacomedicale.org/medicaments/par-specialites/item/anticoagulants-par-voie-orale-inhibition-directe-des-facteurs-de-la-coagulation-aods"
+    site: cnpm
+  - titre: "Anticoagulants par voie orale : inhibition indirecte de la synthèse des facteurs de la coagulation vitamine K dépendants (AVK)"
+    url: "https://pharmacomedicale.org/medicaments/par-specialites/item/anticoagulants-par-voie-orale-inhibition-indirecte-de-la-synthese-des-facteurs-de-la-coagulation-vitamine-k-dependants-avk"
+    site: cnpm
 ---
 
 ::: {.deux-versions}
