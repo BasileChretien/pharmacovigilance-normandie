@@ -625,36 +625,26 @@ body {
 }
 .hero-figure { margin: 0; }
 .hero-figure svg { width: 100%; height: auto; display: block; }
-.hero-legende {
-  font-size: 0.92rem;
-  color: $pv-ink-quiet;
-  max-width: 26rem;
-  margin: 0.5rem auto 0;
-  text-align: center;
-}
-.hero-source {
-  font-size: 0.8rem;
-  color: $pv-ink-quiet;
-  max-width: 26rem;
-  margin: 0.4rem auto 0;
-  text-align: center;
-}
 
 // The signature: the towns of Normandy, linked to the two CRPV (tools/design/make_signal.py).
 // It moves only once assets/js/accueil.js adds .signal-anime, and that script also adds the
 // pause button that motion lasting over 5 s requires (WCAG 2.2.2, RGAA 13.8). Without
 // JavaScript, or with reduced motion, the figure stays still: links drawn, no pulse.
+// Dashes are sized with each line's real length (--len, written by make_signal.py), not
+// with pathLength, which Chromium ignores on <line>.
+$signal-pulse: 18px; // pulse length, in figure units (px = SVG user units)
 .signal-flux,
 .signal-anneau { opacity: 0; }
 .signal-anime {
   .signal-lien {
-    stroke-dasharray: 1;
-    stroke-dashoffset: 1;
+    stroke-dasharray: var(--len);
+    stroke-dashoffset: var(--len);
     animation: signal-trace 0.9s ease-out var(--d, 0s) forwards;
   }
   .signal-flux {
     opacity: 1;
-    stroke-dasharray: 0.1 1;
+    // one pulse, then a gap longer than the line, so a single pulse shows at a time
+    stroke-dasharray: $signal-pulse var(--len);
     animation: signal-flux var(--t, 4s) linear var(--d, 0s) infinite both;
   }
   .signal-anneau {
@@ -667,8 +657,8 @@ body {
 @keyframes signal-trace { to { stroke-dashoffset: 0; } }
 // A pulse travels from the town to its centre, then waits before the next one.
 @keyframes signal-flux {
-  0% { stroke-dashoffset: 0.12; }
-  70%, 100% { stroke-dashoffset: -1; }
+  0% { stroke-dashoffset: $signal-pulse; }                 // just before the town
+  70%, 100% { stroke-dashoffset: calc(-1 * var(--len)); }  // just past the centre
 }
 @keyframes signal-pouls {
   0% { transform: scale(0.6); opacity: 0.7; }

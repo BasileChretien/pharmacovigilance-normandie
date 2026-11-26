@@ -72,3 +72,22 @@ def test_svg_is_decorative_deterministic_and_animates_each_link():
     )
     n_links = len(ms.links(ms.select_towns(TOWNS, project)))
     assert first.count('class="signal-flux"') == n_links
+
+
+def test_links_carry_their_real_length_instead_of_path_length():
+    # Chromium ignores pathLength on <line>: dashes sized as fractions of 1 drew
+    # 1 px lines and 0.1 px pulses, so the map looked still. Each link must carry
+    # its length in figure units, for the CSS to size the dashes.
+    import re
+
+    out = ms.svg({"departements": DEPS, "villes": TOWNS})
+    assert "pathLength" not in out
+    lines = re.findall(r'<line class="signal-(?:lien|flux)"[^>]*>', out)
+    assert lines
+    for line in lines:
+        x1, y1, x2, y2 = (
+            float(re.search(rf'{k}="([-\d.]+)"', line).group(1))
+            for k in ("x1", "y1", "x2", "y2")
+        )
+        length = float(re.search(r"--len:([\d.]+)", line).group(1))
+        assert abs(length - ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5) < 0.2

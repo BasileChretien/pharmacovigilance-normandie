@@ -33,6 +33,7 @@ SPEED = 95.0  # pulse speed, figure units per second
 CRPV = {"14": "Caen", "50": "Caen", "61": "Caen", "27": "Rouen", "76": "Rouen"}
 
 CYAN, GREEN, INK, HALO = "#19a6e3", "#2bcf8c", "#10283a", "#eef6fa"
+PULSE = "#0a5c9e"  # pv-signal: stands out on both tints, where cyan-to-green did not
 DOT, LINK = (
     "#7f9fb3",
     "#9bb9cb",
@@ -118,17 +119,27 @@ def _links(pairs: list[tuple[dict, dict]]) -> list[str]:
     rng = random.Random(SEED)
     parts = []
     for i, (town, hub) in enumerate(pairs):
-        coords = f'x1="{town["x"]:.1f}" y1="{town["y"]:.1f}" x2="{hub["x"]:.1f}" y2="{hub["y"]:.1f}"'
-        travel = math.dist((town["x"], town["y"]), (hub["x"], hub["y"])) / SPEED
+        x1, y1, x2, y2 = (
+            round(v, 1) for v in (town["x"], town["y"], hub["x"], hub["y"])
+        )
+        coords = f'x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}"'
+        # Real length, in figure units: the CSS sizes the dashes with it. pathLength="1"
+        # is ignored on <line> by Chromium, which left 1 px links and 0.1 px pulses.
+        length = math.dist((x1, y1), (x2, y2))
+        travel = length / SPEED
         delay = 1.2 + rng.uniform(0, 4)
         period = travel / 0.7 + rng.uniform(
             0, 1.2
         )  # the pulse travels for 70 % of the period
         parts += [
-            f'<line class="signal-lien" style="--d:{0.1 + i * 0.05:.2f}s" pathLength="1" {coords} '
-            f'stroke="{LINK}" stroke-width="1.2" stroke-linecap="round"/>',
-            f'<line class="signal-flux" style="--d:{delay:.2f}s;--t:{period:.2f}s" pathLength="1" {coords} '
-            'stroke="url(#signal-degrade)" stroke-width="3" stroke-linecap="round"/>',
+            (
+                f'<line class="signal-lien" style="--d:{0.1 + i * 0.05:.2f}s;--len:{length:.1f}px" {coords} '
+                f'stroke="{LINK}" stroke-width="1.4" stroke-linecap="round"/>'
+            ),
+            (
+                f'<line class="signal-flux" style="--d:{delay:.2f}s;--t:{period:.2f}s;--len:{length:.1f}px" {coords} '
+                f'stroke="{PULSE}" stroke-width="3.2" stroke-linecap="round"/>'
+            ),
         ]
     return parts
 
@@ -136,13 +147,17 @@ def _links(pairs: list[tuple[dict, dict]]) -> list[str]:
 def _hub(hub: dict, j: int) -> list[str]:
     x, y, r = hub["x"], hub["y"], hub["r"]
     return [
-        f'<circle class="signal-anneau" style="--d:{j * 1.3:.1f}s" cx="{x:.1f}" cy="{y:.1f}" r="{r + 8:.1f}" '
-        f'fill="none" stroke="{GREEN}" stroke-width="3"/>',
+        (
+            f'<circle class="signal-anneau" style="--d:{j * 1.3:.1f}s" cx="{x:.1f}" cy="{y:.1f}" r="{r + 8:.1f}" '
+            f'fill="none" stroke="{GREEN}" stroke-width="3"/>'
+        ),
         f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r:.1f}" fill="url(#signal-degrade)" stroke="#ffffff" stroke-width="3"/>',
-        f'<text x="{x:.1f}" y="{y - r - 12:.1f}" text-anchor="middle" '
-        'font-family="Atkinson Hyperlegible Mono Variable, monospace" font-size="15" font-weight="700" '
-        f'fill="{INK}" stroke="{HALO}" stroke-width="6" stroke-linejoin="round" paint-order="stroke">'
-        f"CRPV {hub['nom']}</text>",
+        (
+            f'<text x="{x:.1f}" y="{y - r - 12:.1f}" text-anchor="middle" '
+            'font-family="Atkinson Hyperlegible Mono Variable, monospace" font-size="15" font-weight="700" '
+            f'fill="{INK}" stroke="{HALO}" stroke-width="6" stroke-linejoin="round" paint-order="stroke">'
+            f"CRPV {hub['nom']}</text>"
+        ),
     ]
 
 
