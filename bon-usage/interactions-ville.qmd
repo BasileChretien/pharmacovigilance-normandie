@@ -29,6 +29,7 @@ Une ligne par association, classées par famille. Le niveau est celui du Thésau
 
 ## Les seize associations
 
+::: {.tableau-filtrable libelle="Filtrer les seize associations"}
 | Association | Niveau (Thésaurus ANSM) | Risque | Conduite à tenir |
 |---|---|---|---|
 | **Anticoagulants oraux** (AVK ; apixaban, dabigatran, édoxaban, rivaroxaban) + AINS | Association déconseillée | Augmentation du risque hémorragique (agression de la muqueuse gastroduodénale par l'AINS). | Si l'association ne peut être évitée, surveillance clinique étroite, voire biologique. |
@@ -47,6 +48,7 @@ Une ligne par association, classées par famille. Le niveau est celui du Thésau
 | **Lévothyroxine** (hormones thyroïdiennes) + sels de calcium ou de fer | Précaution d'emploi | Diminution de l'absorption digestive des hormones thyroïdiennes. | Prendre le calcium ou le fer à distance de la lévothyroxine (plus de 2 heures, si possible). |
 | **Fluoroquinolones** + fer, calcium, antiacides | Précaution d'emploi | Diminution de l'absorption digestive de la fluoroquinolone. | Prendre le fer, le calcium (entrées propres à la ciprofloxacine et à la norfloxacine) ou l'antiacide à distance de la fluoroquinolone (plus de 2 heures, si possible). |
 | **ISRS** + tramadol | À prendre en compte ; fluoxétine ou paroxétine : association déconseillée | Risque de convulsions et/ou de syndrome sérotoninergique ; avec la fluoxétine et la paroxétine, baisse de l'efficacité du tramadol par inhibition de son métabolisme. | Pas de conduite à tenir écrite dans le Thésaurus pour le niveau « à prendre en compte ». |
+:::
 
 ## Référence et contact
 
@@ -57,3 +59,7 @@ Voir aussi la page patients [Les interactions à connaître](interactions.qmd) e
 Pour une question sur un patient, contactez le centre régional de pharmacovigilance.
 
 :::
+
+```{=html}
+<script src="../assets/js/table-filter.js" defer></script>
+```

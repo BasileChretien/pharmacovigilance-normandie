@@ -885,3 +885,20 @@ a[href^="tel:"]::after {
   font-weight: 600;
   white-space: normal;
 }
+
+// Filter field above long tables (assets/js/table-filter.js). The field border uses
+// pv-ink-quiet so the control stands out from the page (WCAG 1.4.11, 3:1).
+.filtre-tableau {
+  max-width: 34rem;
+  margin: 0 0 1rem;
+}
+.filtre-tableau .form-label { font-weight: 700; margin-bottom: 0.25rem; }
+.filtre-tableau .form-control { border: 1px solid $pv-ink-quiet; }
+.filtre-tableau-aide,
+.filtre-tableau-etat { font-size: 0.9rem; color: $pv-ink-quiet; margin: 0.35rem 0 0; }
+.filtre-tableau-etat { font-weight: 600; }
+@media print {
+  // A printed table is always complete, whatever was typed in the filter.
+  .filtre-tableau { display: none; }
+  .tableau-filtrable tr[hidden] { display: table-row !important; }
+}

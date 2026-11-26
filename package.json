@@ -4,7 +4,8 @@
   "description": "HTML and accessibility checks for the rendered site (_site/).",
   "scripts": {
     "check:html": "html-validate \"_site/**/*.html\"",
-    "check:a11y": "node tools/a11y/run-axe.mjs"
+    "check:a11y": "node tools/a11y/run-axe.mjs",
+    "test:js": "node --test \"tests/js/*.test.mjs\""
   },
   "devDependencies": {
     "@fontsource-variable/atkinson-hyperlegible-mono": "^5.3.0",

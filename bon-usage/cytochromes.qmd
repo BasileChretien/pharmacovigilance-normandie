@@ -63,6 +63,7 @@ Chaque ligne est **à revérifier sur le Thésaurus de l'ANSM et le RCP** avant 
 
 ## Le tableau
 
+::: {.tableau-filtrable libelle="Filtrer le tableau par enzyme ou par médicament"}
 | Enzyme ou transporteur | Substrats (exemples) | Inhibiteurs puissants / modérés (exemples) | Inducteurs (exemples) | Conséquence pratique (exemple du Thésaurus de l'ANSM) |
 |---|---|---|---|---|
 | **CYP1A2** | Caféine, clozapine, duloxétine, olanzapine, théophylline, agomélatine, imipramine, clomipramine, erlotinib | Puissants : ciprofloxacine, fluvoxamine, norfloxacine. Modérés : éthinylestradiol (contraceptifs oraux), amiodarone, propafénone, vérapamil | Puissants : tabac (goudrons), légumes crucifères (chou, brocoli). Modérés : carbamazépine, oméprazole, lansoprazole, ritonavir, modafinil | Théophylline + fluvoxamine, théophylline + ciprofloxacine : précaution d'emploi (hausse de la théophyllinémie, surdosage). Clozapine + fluvoxamine : précaution d'emploi. Arrêt du tabac chez un patient sous clozapine ou théophylline : [à compléter : source et conduite à tenir]. *À revérifier sur le Thésaurus de l'ANSM et le RCP.* |
@@ -73,12 +74,15 @@ Chaque ligne est **à revérifier sur le Thésaurus de l'ANSM et le RCP** avant 
 | **CYP2D6** | Métoprolol, nébivolol, carvédilol, propafénone, flécaïnide, amitriptyline, imipramine, clomipramine, nortriptyline, venlafaxine, atomoxétine, dextrométhorphane, halopéridol, rispéridone, aripiprazole. Prodrogues : codéine (mineure), tramadol (mineure), tamoxifène | Puissants : fluoxétine, paroxétine, bupropion, quinidine, terbinafine, amiodarone, propafénone, halopéridol. Modérés : duloxétine, sertraline, citalopram, dronédarone | Pas d'inducteur cliniquement notable (HUG, FDA) | Codéine ou tramadol + fluoxétine, paroxétine, bupropion, quinidine, terbinafine ou duloxétine : association déconseillée (inefficacité de l'opiacé). Tamoxifène + paroxétine, fluoxétine, bupropion, quinidine ou terbinafine : association déconseillée (baisse d'efficacité). Métoprolol + paroxétine : précaution d'emploi (bradycardie). *À revérifier sur le Thésaurus de l'ANSM et le RCP.* |
 | **CYP3A4/5** | Midazolam, triazolam, alprazolam, simvastatine, atorvastatine, ciclosporine, tacrolimus, sirolimus, évérolimus, colchicine, ticagrélor, amlodipine, félodipine, nifédipine, quétiapine, fentanyl, oxycodone, sildénafil, tadalafil ; apixaban et rivaroxaban (mineure) | Puissants : clarithromycine, érythromycine, itraconazole, kétoconazole, posaconazole, voriconazole, fluconazole, ritonavir, cobicistat, diltiazem, vérapamil, pamplemousse. Modérés : ciprofloxacine, dronédarone, doxycycline | Puissants : rifampicine, carbamazépine, phénytoïne, phénobarbital, primidone, millepertuis, enzalutamide, éfavirenz, bosentan. Modérés : rifabutine, névirapine, étravirine, modafinil, dexaméthasone | Simvastatine, ticagrélor + inhibiteurs puissants du CYP3A4 : contre-indication. Colchicine + macrolides (sauf spiramycine) : contre-indication. Apixaban, rivaroxaban + inhibiteurs puissants : association déconseillée. Immunosuppresseurs + clarithromycine, itraconazole ou kétoconazole : association déconseillée. Estroprogestatifs + inducteurs enzymatiques : association déconseillée ; + millepertuis : contre-indication. *À revérifier sur le Thésaurus de l'ANSM et le RCP.* |
 | **P-glycoprotéine (P-gp)** | Digoxine, dabigatran, édoxaban, apixaban, rivaroxaban, fexofénadine, colchicine, ticagrélor, ciclosporine, tacrolimus, lopéramide, céliprolol | Puissants : amiodarone, ciclosporine, clarithromycine, érythromycine, itraconazole, kétoconazole, vérapamil, quinidine, propafénone, ritonavir, cobicistat. Modérés : dronédarone, diltiazem, posaconazole | Puissants : rifampicine, millepertuis, carbamazépine, rifabutine. Modérés : phénobarbital, phénytoïne, primidone | Dabigatran + ciclosporine, dronédarone, itraconazole ou kétoconazole : contre-indication. Dabigatran + amiodarone ou vérapamil : précaution d'emploi (adaptation de dose). Dabigatran + inducteurs enzymatiques puissants : association déconseillée. Digoxine + dronédarone : association déconseillée ; + amiodarone, vérapamil, propafénone ou quinidine : précaution d'emploi. *À revérifier sur le Thésaurus de l'ANSM et le RCP.* |
+:::
 
 ## Index par médicament
 
 Le même tableau, rangé par médicament : cherchez une molécule pour voir ses rôles. Cet index est produit automatiquement à partir du tableau ci-dessus.
 
+::: {.tableau-filtrable libelle="Filtrer l'index par médicament"}
 {{< include ../_includes/cyp-index.md >}}
+:::
 
 ## Désaccords entre les HUG et la FDA
 
@@ -112,3 +116,7 @@ Le Thésaurus de l'ANSM a sa propre liste d'inhibiteurs puissants du CYP3A4 : an
 Pour une question sur un patient, contactez le centre régional de pharmacovigilance.
 
 :::
+
+```{=html}
+<script src="../assets/js/table-filter.js" defer></script>
+```
