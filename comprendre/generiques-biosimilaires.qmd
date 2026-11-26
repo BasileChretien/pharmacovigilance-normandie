@@ -28,6 +28,10 @@ sources:
   - titre: "ANSM, Médicaments à base de lévothyroxine : les études menées et les analyses en laboratoire"
     url: "https://ansm.sante.fr/dossiers-thematiques/les-medicaments-a-base-de-levothyroxine-disponibles-en-france-1/les-etudes-menees-et-les-analyses-en-laboratoire"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Les génériques"
+    url: "https://pharmacomedicale.org/pharmacologie/enjeux-financiers-du-medicament/95-les-generiques"
+    site: cnpm
 ---
 
 ::: {.deux-versions}

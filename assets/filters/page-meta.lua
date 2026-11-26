@@ -17,6 +17,7 @@ local LIBELLES = {
   fr = {
     brouillon = "Brouillon à relire : ce contenu n’a pas encore été validé par un pharmacologue.",
     sources = "Sources et relecture",
+    plus_loin = "Pour aller plus loin",
     consulte = "consulté le",
     relu = "Relu par %s le %s.",
     pas_relu = "Pas encore relu.",
@@ -25,6 +26,7 @@ local LIBELLES = {
   en = {
     brouillon = "Draft to be reviewed: a pharmacologist has not yet checked this content.",
     sources = "Sources and review",
+    plus_loin = "Further reading (in French)",
     consulte = "accessed",
     relu = "Reviewed by %s on %s.",
     pas_relu = "Not reviewed yet.",
@@ -137,6 +139,34 @@ function Div(el)
     end
   end
   return nil
+end
+
+-- Further reading, from the front matter (pour_aller_plus_loin: titre, url, site), so the
+-- links to the CRPV network and to the French college of medical pharmacology look the
+-- same on every page. A site code gives the publisher's name; any other text is shown as is.
+local SITES = {
+  rfcrpv = "Réseau français des centres régionaux de pharmacovigilance",
+  cnpm = "Collège national de pharmacologie médicale (pour les professionnels et les étudiants)",
+}
+
+local function plus_loin_list(meta)
+  local items = {}
+  local liens = meta.pour_aller_plus_loin
+  if type(liens) ~= "table" then
+    return items
+  end
+  for _, l in ipairs(liens) do
+    -- An empty url would render as a link to the page itself: skip it (check_content flags it).
+    if type(l) == "table" and l.titre ~= nil and l.url ~= nil and stringify(l.url) ~= "" then
+      local inlines = pandoc.Inlines({ pandoc.Link(pandoc.Inlines(stringify(l.titre)), stringify(l.url)) })
+      if l.site ~= nil then
+        local site = stringify(l.site)
+        inlines:extend(pandoc.Inlines(" — " .. (SITES[site] or site)))
+      end
+      table.insert(items, { pandoc.Plain(inlines) })
+    end
+  end
+  return items
 end
 
 local function sources_list(meta, libelles)
@@ -263,6 +293,14 @@ function Pandoc(doc)
       pandoc.Attr("", { "statut-brouillon" }, { { "role", "note" } })
     )
     doc.blocks:insert(1, bandeau)
+  end
+
+  local liens = plus_loin_list(meta)
+  if #liens > 0 then
+    doc.blocks:insert(pandoc.Div({
+      pandoc.Header(2, pandoc.Inlines(libelles.plus_loin), pandoc.Attr("pour-aller-plus-loin")),
+      pandoc.BulletList(liens),
+    }, pandoc.Attr("", { "plus-loin" })))
   end
 
   local items = sources_list(meta, libelles)

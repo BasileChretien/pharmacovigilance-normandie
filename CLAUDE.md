@@ -24,6 +24,7 @@ Status and open tasks: `docs/STATUS.md`. Points for medical reviewers: `docs/rel
   boxes are `::: {.a-retenir}` (3 points max) and `::: {.quand-consulter}`.
 - Never write sources, review dates or the draft banner by hand: `assets/filters/page-meta.lua`
   builds them from the front matter.
+- Further reading goes in `pour_aller_plus_loin:` (titre, url, site: rfcrpv | cnpm), 3 links at most, each checked to answer before adding.
 - Colours live only in `assets/theme.scss`; add every new text/background pair to
   `tools/checks/contrast_pairs.yml`. `pv-cyan` and `pv-green` are decorative, never text.
 - Fonts are self-hosted in `assets/fonts/` (OFL, from @fontsource-variable); never load fonts from a third-party server.

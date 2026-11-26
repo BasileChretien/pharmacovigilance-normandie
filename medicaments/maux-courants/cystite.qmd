@@ -26,6 +26,10 @@ sources:
   - titre: "Antibioclic, outil d'aide à la prescription antibiotique (cystite de la femme et de l'enfant)"
     url: "https://antibioclic.com/"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Fosfomycine"
+    url: "https://pharmacomedicale.org/medicaments/par-specialites/item/fosfomycine"
+    site: cnpm
 ---
 
 ::: {.deux-versions}

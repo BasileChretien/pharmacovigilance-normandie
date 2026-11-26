@@ -38,6 +38,13 @@ sources:
   - titre: "ANSM, AINS chez les femmes enceintes : améliorer l'information sur les risques pour un meilleur usage (avril 2025)"
     url: "https://ansm.sante.fr/actualites/anti-inflammatoires-non-steroidiens-ains-chez-les-femmes-enceintes-ameliorer-linformation-sur-les-risques-pour-un-meilleur-usage"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Antimigraineux : les points essentiels"
+    url: "https://pharmacomedicale.org/medicaments/par-specialites/item/antimigraineux-points-essentiels"
+    site: cnpm
+  - titre: "Point sur les anti-CGRP (Calcitonine Gene-Related Peptide) utilisés dans la migraine"
+    url: "https://www.rfcrpv.fr/point-sur-les-anti-cgrp-calcitonine-gene-related-peptide-utilises-dans-la-migraine/"
+    site: rfcrpv
 ---
 
 ::: {.deux-versions}

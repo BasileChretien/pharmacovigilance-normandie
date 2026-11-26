@@ -186,6 +186,12 @@ def front_matter_rules(meta: dict, path: Path) -> list[Finding]:
     for key in ("title", "description"):
         if not _present(meta.get(key)):
             findings.append(Finding("error", "FM-CHAMP", f"champ « {key} » manquant"))
+    # Checked on every page, navigation pages included (crpv/index.qmd has links and no statut).
+    liens = meta.get("pour_aller_plus_loin") or []
+    for lien in liens if isinstance(liens, list) else [liens]:
+        url = str(lien.get("url") or "") if isinstance(lien, dict) else ""
+        if not (isinstance(lien, dict) and _present(lien.get("titre")) and url.startswith("https://")):
+            findings.append(Finding("error", "FM-LIENS", f"lien « pour aller plus loin » sans titre ou sans URL https : {lien}"))
     if navigation and "statut" not in meta:
         return findings
     statut = str(meta.get("statut", "")).strip()

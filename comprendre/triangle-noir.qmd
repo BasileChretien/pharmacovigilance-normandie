@@ -25,6 +25,10 @@ sources:
   - titre: "ANSM, Réglementation relative à la pharmacovigilance (liste des textes)"
     url: "https://ansm.sante.fr/documents/reference/reglementation-relative-a-la-pharmacovigilance"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Suivi après la mise sur le marché : la pharmacoépidémiologie"
+    url: "https://pharmacomedicale.org/pharmacologie/developpement-et-suivi-des-medicaments/72-suivi-apres-la-mise-sur-le-marche-la-pharmacoepidemiologie"
+    site: cnpm
 ---
 
 ::: {.deux-versions}

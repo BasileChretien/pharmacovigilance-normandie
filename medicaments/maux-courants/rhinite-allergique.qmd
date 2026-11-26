@@ -17,6 +17,10 @@ sources:
   - titre: "Afssaps (ANSM), Mise au point – Médicaments et conduite automobile, actualisation mars 2009 (PDF)"
     url: "https://ansm.sante.fr/uploads/2021/03/11/faff1e402339cd443a9894792f20d31d.pdf"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Antihistaminiques H1"
+    url: "https://pharmacomedicale.org/medicaments/par-specialites/item/antihistaminiques-h1"
+    site: cnpm
 ---
 
 ::: {.deux-versions}

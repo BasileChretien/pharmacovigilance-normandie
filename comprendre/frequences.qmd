@@ -16,6 +16,10 @@ sources:
   - titre: "Wood FA et al. N-of-1 trial of a statin, placebo, or no treatment to assess side effects. N Engl J Med. 2020 (essai SAMSON)"
     url: "https://doi.org/10.1056/NEJMc2031173"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Effets indésirables"
+    url: "https://pharmacomedicale.org/pharmacologie/risque-des-medicaments/47-effets-indesirables"
+    site: cnpm
 ---
 
 ::: {.texte-patient}

@@ -22,6 +22,10 @@ sources:
   - titre: "HAS, Fiche BUM – Bon usage des inhibiteurs de la pompe à protons (IPP), septembre 2022 (PDF)"
     url: "https://www.has-sante.fr/upload/docs/application/pdf/2022-09/fiche_bum_-_bon_usage_des_inhibiteurs_de_la_pompe_a_protons_ipp.pdf"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Variabilités pharmacocinétiques"
+    url: "https://pharmacomedicale.org/pharmacologie/les-sources-de-variabilite-de-la-reponse-au-medicament/45-variabilites-pharmacocinetiques"
+    site: cnpm
 ---
 
 ::: {.deux-versions}

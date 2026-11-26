@@ -22,6 +22,10 @@ sources:
   - titre: "RCP et notice ACIDE ALENDRONIQUE CRISTERS 70 mg, comprimé (base de données publique des médicaments)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67464926/extrait"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Influence des formes et voies d'administration sur le devenir du médicament"
+    url: "https://pharmacomedicale.org/pharmacologie/pharmacocinetique/37-influence-des-formes-et-voies-d-administration-sur-le-devenir-du-medicament"
+    site: cnpm
 ---
 
 <!-- NOTE DE RÉDACTION (à retirer avant publication) : le 25/11/2026, la page de l'OMéDIT affiche « Mise à jour octobre 2026 » et annonce une nouvelle colonne CMR, mais le fichier téléchargeable s'appelle liste-medicaments-ecrasables_01122025.xlsx (1er décembre 2025). La commande éditoriale parlait d'une mise à jour de novembre 2025. Le relecteur vérifie la date à afficher. La liste n'est pas recopiée ici, conformément à la consigne : on renvoie vers la page de l'OMéDIT. -->

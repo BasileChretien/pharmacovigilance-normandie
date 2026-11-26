@@ -17,6 +17,10 @@ sources:
   - titre: "HAS, Commission de la transparence, Rapport de réévaluation des inhibiteurs de la pompe à protons, avis définitif, 2020"
     url: "https://www.has-sante.fr/upload/docs/application/pdf/2020-11/rapport_reevaluation_ipp_avisdef_cteval493.pdf"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Antiulcéreux : les points essentiels"
+    url: "https://pharmacomedicale.org/medicaments/par-specialites/item/antiulcereux-les-points-essentiels"
+    site: cnpm
 ---
 
 ::: {.deux-versions}

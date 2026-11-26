@@ -88,3 +88,15 @@ Synthèse : `docs/panel/synthese-tour2.md`.
 | classes/fluoroquinolones, que-faire-effet-indesirable | Harmoniser « arrêtez dès la douleur au tendon » et « ne modifiez pas votre traitement sans avis » : règle générale et exception |
 | bon-usage/interactions | Ajouter pour les patients la pilule et les inducteurs enzymatiques (rifampicine, certains antiépileptiques), aujourd'hui seulement côté professionnels |
 | bon-usage/ecraser-fiche | Version PDF d'une page après relecture ; protocole pas à pas pour l'équipe d'EHPAD, avec l'OMéDIT |
+
+## Liens « Pour aller plus loin » (26/11/2026)
+
+Demandés par le CRPV de Caen : 81 liens sur 46 pages vers le réseau des CRPV (rfcrpv.fr) et
+le Collège national de pharmacologie médicale (pharmacomedicale.org), dans
+`pour_aller_plus_loin` de chaque page. Tous répondaient le 26/11/2026.
+
+| À vérifier | Pourquoi |
+|---|---|
+| Actualité de chaque article du réseau | Beaucoup affichent « modifié le 04/05/2024 » dans le plan du site, sans date de publication visible : cette date semble être celle de la migration du site, pas celle de l'article |
+| Fiches du Collège | Pas de date de mise à jour visible ; elles sont écrites pour les professionnels et les étudiants |
+| Choix des liens | Un lien par sujet évident ; certaines pages (conduite, quand prendre, lire une notice) n'en ont pas, faute de contenu correspondant |

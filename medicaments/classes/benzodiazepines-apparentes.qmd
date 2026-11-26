@@ -26,6 +26,13 @@ sources:
   - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
     url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Benzodiazépines"
+    url: "https://pharmacomedicale.org/medicaments/par-specialites/item/benzodiazepines"
+    site: cnpm
+  - titre: "Hypnotiques : les points essentiels"
+    url: "https://pharmacomedicale.org/medicaments/par-specialites/item/hypnotiques-les-points-essentiels"
+    site: cnpm
 ---
 
 ::: {.deux-versions}

@@ -10,6 +10,16 @@ sources:
   - titre: "Portail de signalement des événements sanitaires indésirables"
     url: "https://signalement.social-sante.gouv.fr"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Je déclare"
+    url: "https://www.rfcrpv.fr/je-declare/"
+    site: rfcrpv
+  - titre: "Bien utiliser le portail de signalement"
+    url: "https://www.rfcrpv.fr/bien-utiliser-portail-de-signalement/"
+    site: rfcrpv
+  - titre: "Obligation de déclaration des effets indésirables médicamenteux étendue à la profession infirmière"
+    url: "https://www.rfcrpv.fr/obligation-de-declaration-des-effets-indesirables-medicamenteux-etendue-a-la-profession-infirmiere/"
+    site: rfcrpv
 ---
 
 ::: {.texte-patient}

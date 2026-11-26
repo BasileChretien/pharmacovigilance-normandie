@@ -17,6 +17,10 @@ sources:
   - titre: "Centre de référence sur les agents tératogènes (CRAT)"
     url: "https://www.lecrat.fr/"
     consulte_le: 2026-11-25
+pour_aller_plus_loin:
+  - titre: "Corticoïdes : les points essentiels"
+    url: "https://pharmacomedicale.org/medicaments/par-specialites/item/corticoides-les-points-essentiels"
+    site: cnpm
 ---
 
 ::: {.deux-versions}
