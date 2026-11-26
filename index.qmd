@@ -38,7 +38,8 @@ listing:
 {{< include _includes/signal.md >}}
 
 ```{=html}
-<p class="hero-legende">Chaque point est une déclaration. Reliées entre elles, les déclarations font apparaître un signal&nbsp;: c'est ainsi que l'on repère un risque.</p>
+<p class="hero-legende">Chaque point est une ville de Normandie, d'autant plus grand qu'elle compte d'habitants. Les déclarations convergent vers les deux centres de pharmacovigilance&nbsp;: Caen pour le Calvados, la Manche et l'Orne&nbsp;; Rouen pour l'Eure et la Seine-Maritime.</p>
+<p class="hero-source">Communes de plus de 5&nbsp;000 habitants (populations légales de l'INSEE, via geo.api.gouv.fr)&nbsp;; celles qui touchent une ville plus grande, comme dans les agglomérations de Rouen, de Caen ou du Havre, sont confondues avec elle. Contours&nbsp;: IGN Admin Express, Etalab 2024. Licence Ouverte.</p>
 ```
 :::
 

@@ -27,3 +27,5 @@ Délégués à la protection des données : [à compléter pour chaque CHU].
 ## Propriété intellectuelle
 
 Les contenus du site sont publiés par les CRPV de Caen et de Rouen. Les sources reprises sont citées sur chaque page.
+
+La carte de la page d'accueil utilise des données publiques sous Licence Ouverte (Etalab) : les contours des départements (IGN Admin Express, contours administratifs Etalab 2024) et les populations légales des communes de l'INSEE, obtenues par [geo.api.gouv.fr](https://geo.api.gouv.fr).

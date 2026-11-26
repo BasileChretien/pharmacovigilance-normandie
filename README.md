@@ -50,8 +50,10 @@ npm install && npm run check:html               # validité du HTML rendu
 Blanc clinique et bleu-vert du logo du CRPV, utilisé avec parcimonie. Polices libres
 (licence SIL OFL) hébergées dans `assets/fonts/` : Atkinson Hyperlegible Next pour le texte,
 Bricolage Grotesque pour les titres, Atkinson Hyperlegible Mono pour les numéros et les
-chiffres. La figure « signal » de l'accueil est produite par
-`uv run python tools/design/make_signal.py`.
+chiffres. La carte animée de l'accueil (villes de Normandie reliées aux deux CRPV) est produite
+par `uv run python tools/design/make_signal.py` à partir de `data/normandie-carte.json`, que
+`uv run python tools/design/fetch_normandie.py` télécharge (contours Etalab, populations INSEE
+via geo.api.gouv.fr). L'animation se lance par `assets/js/accueil.js`, avec un bouton pause.
 
 ## Organisation
 
