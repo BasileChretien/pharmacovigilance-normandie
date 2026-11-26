@@ -5,8 +5,8 @@
 // tools/checks/check_contrast.py. Change a colour here, and the check runs on it.
 //
 // Direction: cool clinical white, with the cyan-to-green of the CRPV logo used as
-// a signal colour, sparingly. The signature is the "signal" figure of the home page:
-// dots (reports) that connect into a signal.
+// a signal colour, sparingly. The signature is the animated map of the home page:
+// the towns of Normandy, linked to the two regional pharmacovigilance centres.
 $pv-ink: #10283a;            // body text
 $pv-ink-quiet: #46586a;      // secondary text
 $pv-paper: #ffffff;          // page background
@@ -632,23 +632,51 @@ body {
   margin: 0.5rem auto 0;
   text-align: center;
 }
+.hero-source {
+  font-size: 0.8rem;
+  color: $pv-ink-quiet;
+  max-width: 26rem;
+  margin: 0.4rem auto 0;
+  text-align: center;
+}
 
-// The signature: reports (dots) that connect into a signal.
-.signal-lien {
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
-  animation: signal-trace 0.9s ease-out forwards;
-  animation-delay: var(--d, 0s);
+// The signature: the towns of Normandy, linked to the two CRPV (tools/design/make_signal.py).
+// It moves only once assets/js/accueil.js adds .signal-anime, and that script also adds the
+// pause button that motion lasting over 5 s requires (WCAG 2.2.2, RGAA 13.8). Without
+// JavaScript, or with reduced motion, the figure stays still: links drawn, no pulse.
+.signal-flux,
+.signal-anneau { opacity: 0; }
+.signal-anime {
+  .signal-lien {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: signal-trace 0.9s ease-out var(--d, 0s) forwards;
+  }
+  .signal-flux {
+    opacity: 1;
+    stroke-dasharray: 0.1 1;
+    animation: signal-flux var(--t, 4s) linear var(--d, 0s) infinite both;
+  }
+  .signal-anneau {
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: signal-pouls 2.6s ease-out var(--d, 0s) infinite both;
+  }
 }
-.signal-anneau {
-  transform-origin: center;
-  transform-box: fill-box;
-  animation: signal-pouls 1.6s ease-out 1.4s 2 both;
-}
+.signal-anime.signal-en-pause * { animation-play-state: paused !important; }
 @keyframes signal-trace { to { stroke-dashoffset: 0; } }
+// A pulse travels from the town to its centre, then waits before the next one.
+@keyframes signal-flux {
+  0% { stroke-dashoffset: 0.12; }
+  70%, 100% { stroke-dashoffset: -1; }
+}
 @keyframes signal-pouls {
-  0% { transform: scale(0.6); opacity: 0.6; }
-  100% { transform: scale(1.6); opacity: 0; }
+  0% { transform: scale(0.6); opacity: 0.7; }
+  100% { transform: scale(1.7); opacity: 0; }
+}
+.signal-pause {
+  display: block;
+  margin: 0.75rem auto 0;
 }
 
 .section-accueil {
@@ -841,8 +869,7 @@ a[href^="tel:"]::after {
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
-  .signal-lien { stroke-dashoffset: 0; }
-  .signal-anneau { opacity: 0; }
+  .signal-pause { display: none; }
 }
 
 .frequences-legende {

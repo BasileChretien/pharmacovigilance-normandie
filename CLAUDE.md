@@ -27,7 +27,7 @@ Status and open tasks: `docs/STATUS.md`. Points for medical reviewers: `docs/rel
 - Colours live only in `assets/theme.scss`; add every new text/background pair to
   `tools/checks/contrast_pairs.yml`. `pv-cyan` and `pv-green` are decorative, never text.
 - Fonts are self-hosted in `assets/fonts/` (OFL, from @fontsource-variable); never load fonts from a third-party server.
-- The home-page signal figure is generated: edit `tools/design/make_signal.py`, not `_includes/signal.md`.
+- The home-page map is generated: edit `tools/design/make_signal.py` (data: `data/normandie-carte.json`, refreshed by `tools/design/fetch_normandie.py`), not `_includes/signal.md`. Its motion needs the pause button (WCAG 2.2.2): keep animations gated by `.signal-anime` (added by `assets/js/accueil.js`).
 - Search synonyms and the accent-free index copy: `tools/build/search_postprocess.py` (post-render).
 - Long tables get a filter field: wrap them in `::: {.tableau-filtrable}` and load `assets/js/table-filter.js` (see `bon-usage/cytochromes.qmd`); JS tests: `npm run test:js`.
 - `[à compléter …]`-style brackets render as badges (page-meta.lua); in Lua use `pandoc.text.lower`, not `string.lower` (breaks UTF-8 on Windows).
