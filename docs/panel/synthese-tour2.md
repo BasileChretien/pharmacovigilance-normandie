@@ -73,7 +73,7 @@ Notes globales données par les participants : de 5 à 7 sur 10, moyenne 6.
 | Recevoir Vigiking par courriel seulement | 1 | Choix de l'outil d'envoi par les CRPV | À décider par les CRPV |
 | Fiche « écraser » : pas de PDF, « brouillon » à l'impression ; protocole d'EHPAD pas à pas | 2 | PDF après relecture ; protocole à écrire avec l'OMéDIT | Après relecture |
 | Page stages encore vide | 1 | Contenu à fournir par les CRPV | À faire par les CRPV |
-| Tableaux longs sans filtre (interactions, cytochromes) | 2 | Filtre par médicament | À faire (technique) |
+| Tableaux longs sans filtre (interactions, cytochromes) | 2 | Champ de filtre au-dessus des tableaux, sans accents obligatoires | Fait (`assets/js/table-filter.js`) |
 | Pages de démonstration dans les actualités (« format de démonstration ») | 3 | Retirer ou remplacer par de vrais billets au lancement | Au lancement |
 | Version « facile à lire » (phrases courtes, pictogrammes) | 1 | Étudier le FALC pour les fiches les plus lues | Plus tard |
 

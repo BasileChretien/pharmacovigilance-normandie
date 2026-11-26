@@ -28,6 +28,7 @@ Status and open tasks: `docs/STATUS.md`. Points for medical reviewers: `docs/rel
 - Fonts are self-hosted in `assets/fonts/` (OFL, from @fontsource-variable); never load fonts from a third-party server.
 - The home-page signal figure is generated: edit `tools/design/make_signal.py`, not `_includes/signal.md`.
 - Search synonyms and the accent-free index copy: `tools/build/search_postprocess.py` (post-render).
+- Long tables get a filter field: wrap them in `::: {.tableau-filtrable}` and load `assets/js/table-filter.js` (see `bon-usage/cytochromes.qmd`); JS tests: `npm run test:js`.
 - `[à compléter …]`-style brackets render as badges (page-meta.lua); in Lua use `pandoc.text.lower`, not `string.lower` (breaks UTF-8 on Windows).
 - Pushing to `main` deploys GitHub Pages (`.github/workflows/pages.yml`); keep links relative (site lives under a subpath).
 - No invented figures: an unsourced number becomes `[à compléter : source]`.
