@@ -21,11 +21,11 @@ listing:
 ::: {.hero-texte}
 ```{=html}
 <p class="hero-surtitre">CRPV de Caen et de Rouen · Normandie · <a href="normandie/en/index.html" lang="en">English</a></p>
-<h1>Un doute sur un médicament&nbsp;?</h1>
+<h1>Un doute sur un <span class="surligne">médicament</span>&nbsp;?</h1>
 <p class="hero-chapo">Les centres régionaux de pharmacovigilance vous aident à bien utiliser vos médicaments, à repérer leurs effets indésirables et à les déclarer.</p>
 <button type="button" class="hero-recherche">
   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
-  <span>Rechercher un médicament, un symptôme, une question…</span>
+  <span>Rechercher un médicament, un symptôme…</span>
 </button>
 <p class="hero-actions">
   <a class="btn btn-primary btn-lg" href="declarer.html">Déclarer un effet indésirable</a>
@@ -138,6 +138,26 @@ listing:
     <li><a href="bon-usage/interactions.html">Puis-je associer ces médicaments&nbsp;?</a></li>
     <li><a href="medicaments/situations/grossesse-allaitement.html">Je suis enceinte ou j'allaite</a></li>
   </ul>
+</section>
+<section class="centres" aria-labelledby="titre-centres">
+  <div class="centres-grille">
+    <h2 id="titre-centres">De la Hague au pays de Bray, deux centres pour vous répondre</h2>
+    <p class="centres-chapo">Un effet inattendu, une question sur un médicament&nbsp;? Appelez le centre de votre département.</p>
+    <div class="centres-cartes">
+      <div class="centre">
+        <h3>CRPV de Caen</h3>
+        <p class="centre-departements">Calvados, Manche, Orne</p>
+        <a class="centre-telephone" href="tel:+33231064672">02&nbsp;31&nbsp;06&nbsp;46&nbsp;72</a>
+        <p><a href="crpv/acces.html">Accès et contacts&nbsp;→</a></p>
+      </div>
+      <div class="centre">
+        <h3>CRPV de Rouen</h3>
+        <p class="centre-departements">Eure, Seine-Maritime</p>
+        <a class="centre-telephone" href="tel:+33232889079">02&nbsp;32&nbsp;88&nbsp;90&nbsp;79</a>
+        <p><a href="crpv/acces.html">Accès et contacts&nbsp;→</a></p>
+      </div>
+    </div>
+  </div>
 </section>
 ```
 

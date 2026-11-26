@@ -19,3 +19,7 @@ paires:
   - { texte: pv-signal, fond: pv-alert-tint, minimum: 4.5, usage: "lien du bandeau urgence" }
   - { texte: pv-amber, fond: pv-amber-tint, minimum: 4.5, usage: "bandeau prototype, statut brouillon" }
   - { texte: pv-signal, fond: pv-rule, minimum: 3.0, usage: "bordure du champ de recherche au survol (élément d'interface)" }
+  - { texte: pv-paper, fond: pv-manche, minimum: 4.5, usage: "texte et liens du pied de page (la Manche)" }
+  - { texte: pv-ecume, fond: pv-manche, minimum: 4.5, usage: "texte secondaire du pied de page" }
+  - { texte: pv-ink, fond: pv-or, minimum: 4.5, usage: "mot surligné en or du titre d'accueil" }
+  - { texte: pv-ink, fond: pv-mist-deep, minimum: 4.5, usage: "titres des parties patients et professionnels" }

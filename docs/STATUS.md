@@ -16,6 +16,8 @@ Mis à jour le 26/11/2026. Prototype non officiel, branche `feat/prototype-site`
   index par médicament) : `assets/js/table-filter.js`.
 - Liens « Pour aller plus loin » vers rfcrpv.fr et pharmacomedicale.org sur 46 pages
   (`pour_aller_plus_loin` dans l'en-tête des pages).
+- Design rafraîchi (26/11/2026) : en-tête sur deux lignes dès 1 200 px, cartes, pied de page
+  « Manche », colombages, bandeau des deux centres, page 404.
 - Contrôles automatiques en place : règles de rédaction, contrastes, HTML, accessibilité
   (axe-core), tests.
 
