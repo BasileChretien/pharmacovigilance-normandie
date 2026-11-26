@@ -11,6 +11,7 @@ reviews it.
 - `uv run python tools/checks/check_content.py [--strict] [files]` — writing and front-matter rules.
 - `uv run python tools/checks/check_contrast.py` — WCAG contrast of the colour tokens.
 - `npm run check:html` — validate rendered HTML (after `quarto render`).
+- `uv run python tools/checks/check_toc.py` — every section heading is in its page's table of contents (after `quarto render`).
 
 - `uv run python tools/build/make_cyp_index.py` — regenerate the per-drug index of the cytochrome table.
 
@@ -19,7 +20,7 @@ Status and open tasks: `docs/STATUS.md`. Points for medical reviewers: `docs/rel
 ## Conventions
 
 - Writing rules and front-matter schema: `docs/regles-redaction.md`. Templates: `_templates/`.
-- Patient text goes in `::: {.texte-patient}`, professional text in `::: {.texte-pro}`;
+- Patient text goes in `::: {.texte-patient}`, professional text in `::: {.texte-pro}` (source-only markers: the filter drops them so their headings reach the table of contents);
   boxes are `::: {.a-retenir}` (3 points max) and `::: {.quand-consulter}`.
 - Never write sources, review dates or the draft banner by hand: `assets/filters/page-meta.lua`
   builds them from the front matter.

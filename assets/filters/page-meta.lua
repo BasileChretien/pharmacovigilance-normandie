@@ -101,7 +101,20 @@ local function sections_from_tabset(el)
   return out
 end
 
+-- ::: {.texte-patient} and ::: {.texte-pro} only mark text for check_content.py, which
+-- reads the source. Nothing in the rendered site uses them, and Pandoc leaves any heading
+-- inside an ordinary div out of the table of contents (user panel, round 2: "Sur cette
+-- page" listed only "Sources et relecture"). So the bare wrapper is dropped from the output.
+local WRAPPERS = { ["texte-patient"] = true, ["texte-pro"] = true }
+
+local function is_bare_wrapper(el)
+  return #el.classes == 1 and WRAPPERS[el.classes[1]] and el.identifier == "" and #el.attributes == 0
+end
+
 function Div(el)
+  if is_bare_wrapper(el) then
+    return el.content
+  end
   if el.classes:includes("deux-versions") then
     return sections_from_tabset(el)
   end
