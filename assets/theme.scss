@@ -5,7 +5,8 @@
 // tools/checks/check_contrast.py. Change a colour here, and the check runs on it.
 //
 // Direction: cool clinical white, with the cyan-to-green of the CRPV logo used as
-// a signal colour, sparingly. The signature is the animated map of the home page:
+// a signal colour, sparingly. Quiet nods to Normandy: half-timbering (colombages) as a
+// faint texture, the Channel as the footer, the gold of the two leopards as a marker. The signature is the animated map of the home page:
 // the towns of Normandy, linked to the two regional pharmacovigilance centres.
 $pv-ink: #10283a;            // body text
 $pv-ink-quiet: #46586a;      // secondary text
@@ -23,6 +24,9 @@ $pv-alert-tint: #fdeceb;
 $pv-amber: #7a4f00;          // draft and prototype notices
 $pv-amber-tint: #fdf1d8;
 $pv-rule: #d5e2ea;           // borders
+$pv-manche: #0d4a5e;         // the Channel: footer band
+$pv-ecume: #bfe3ee;          // sea foam: secondary text on the Channel band
+$pv-or: #e7b03b;             // gold of the Normandy leopards: decorative, never text
 
 $body-color: $pv-ink;
 $body-bg: $pv-paper;
@@ -32,8 +36,8 @@ $link-hover-color: $pv-signal-dark;
 $navbar-bg: $pv-paper;
 $navbar-fg: $pv-ink;
 $navbar-hl: $pv-signal;
-$footer-bg: $pv-mist;
-$footer-fg: $pv-ink;
+$footer-bg: $pv-manche;
+$footer-fg: $pv-paper;
 
 // Self-hosted open fonts (assets/fonts/fonts.css, SIL OFL): no third-party server.
 // Body: Atkinson Hyperlegible, designed for readers with low vision.
@@ -50,6 +54,14 @@ $border-radius: 0.75rem;
 $border-radius-lg: 1.25rem;
 
 /*-- scss:rules --*/
+
+// Nods to Normandy, drawn as inline SVG so nothing is downloaded.
+// Half-timbering (colombages): studs, rails, a St Andrew's cross and a brace.
+$motif-colombage: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120' fill='none' stroke='%2310283a' stroke-opacity='.07' stroke-width='3'%3E%3Cpath d='M0 1.5h120M0 60h120M1.5 0v120M30 0v120M60 0v120M90 0v120M30 0l30 60M60 0 30 60M90 60l30 60'/%3E%3C/svg%3E");
+// The Channel: a wave along the top of the footer (fill = $pv-manche, #0d4a5e).
+$vague-manche: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 24' preserveAspectRatio='none'%3E%3Cpath fill='%230d4a5e' d='M0 12C120 0 240 0 360 12S600 24 720 12 960 0 1080 12 1320 24 1440 12V24H0Z'/%3E%3C/svg%3E");
+$degrade-logo: linear-gradient(90deg, $pv-cyan, $pv-green);
+$ombre-carte: 0 12px 32px -24px rgba(16, 40, 58, 0.5);
 
 // ---------- Base ----------------------------------------------------------
 
@@ -114,6 +126,9 @@ summary:focus-visible,
 }
 
 .navbar {
+  background: rgba(255, 255, 255, 0.9) !important;
+  -webkit-backdrop-filter: saturate(1.5) blur(12px);
+  backdrop-filter: saturate(1.5) blur(12px);
   border-bottom: 1px solid $pv-rule;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
@@ -178,6 +193,27 @@ summary:focus-visible,
   border-color: $pv-signal-dark;
 }
 
+// From 1200 px the menu is open, on two rows: the site name and the search on the first,
+// the ten links on the second. On one row they need about 1,600 px, so the links were
+// hidden behind the menu button on most laptops.
+@media (min-width: 1200px) {
+  .navbar > .container-fluid { flex-wrap: wrap; row-gap: 0.2rem; }
+  .navbar .navbar-brand-container {
+    order: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  #quarto-search { order: 1 !important; margin-left: auto !important; }
+  .quarto-navbar-tools { order: 1 !important; }
+  .navbar .navbar-collapse {
+    order: 2 !important;
+    flex-basis: 100%;
+    border-top: 1px solid $pv-rule;
+    padding-top: 0.35rem;
+  }
+  .navbar .nav-link { padding: 0.3rem 0.6rem !important; font-size: 0.95rem; }
+}
+
 // Prototype notice under the navbar: present, but quiet.
 .quarto-announcement {
   background: $pv-amber-tint !important;
@@ -191,12 +227,37 @@ summary:focus-visible,
 // ---------- Title banner of content pages ----------------------------------
 
 .quarto-title-banner {
-  background: $pv-mist !important;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(56rem 20rem at 88% 0%, rgba(25, 166, 227, 0.11), transparent 70%),
+    $pv-mist !important;
   color: $pv-ink !important;
-  border-bottom: 1px solid $pv-rule;
-  padding: 2.75rem 0 2.25rem;
+  border-bottom: none;
+  padding: 3rem 0 2.5rem;
   margin-bottom: 2rem;
 }
+// Half-timbering on the right of the banner, fading out before the title.
+.quarto-title-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 48%;
+  background: $motif-colombage;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 70%);
+  mask-image: linear-gradient(90deg, transparent, #000 70%);
+  pointer-events: none;
+}
+// The logo gradient as a thin rule under the banner.
+.quarto-title-banner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: $degrade-logo;
+}
+.quarto-title-banner > * { position: relative; z-index: 1; }
 .quarto-title-banner .title {
   font-size: clamp(2rem, 1.5rem + 2vw, 2.9rem);
   font-weight: 750;
@@ -287,6 +348,8 @@ summary:focus-visible,
   background: $pv-mist;
   font-size: 1.35rem;
 }
+.partie-patients > h2:first-child { box-shadow: inset 5px 0 0 $pv-cyan; }
+.partie-pros > h2:first-child { box-shadow: inset 5px 0 0 $pv-green; }
 .partie-pros {
   margin-top: 3.5rem;
   padding-top: 2rem;
@@ -337,6 +400,7 @@ $icon-alert: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' v
   padding: 1.1rem 1.35rem 0.5rem;
   margin: 1.75rem 0;
   border: 1px solid transparent;
+  border-left-width: 5px;
 }
 .encadre-titre {
   display: flex;
@@ -363,6 +427,7 @@ $icon-alert: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' v
 .a-retenir {
   background: $pv-green-tint;
   border-color: rgba(11, 107, 69, 0.18);
+  border-left-color: $pv-green-ink;
   --icone: #{$icon-check};
 }
 .a-retenir .encadre-titre { color: $pv-green-ink; }
@@ -370,6 +435,7 @@ $icon-alert: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' v
 .quand-consulter {
   background: $pv-alert-tint;
   border-color: rgba(179, 38, 30, 0.22);
+  border-left-color: $pv-alert;
   --icone: #{$icon-alert};
 }
 .quand-consulter .encadre-titre { color: $pv-alert; }
@@ -378,6 +444,7 @@ $icon-alert: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' v
 .encadre-pratique {
   background: $pv-mist;
   border: 1px solid $pv-rule;
+  border-left: 5px solid $pv-signal;
   border-radius: $border-radius-lg;
   padding: 1rem 1.35rem 0.4rem;
   margin: 1.75rem 0;
@@ -409,6 +476,7 @@ main table td, main table th {
   border-top: 1px solid $pv-rule;
 }
 main table tbody tr:first-child td { border-top: none; }
+main table tbody tr:nth-child(even) td { background: rgba(238, 246, 250, 0.6); }
 
 // ---------- Sources and review block --------------------------------------
 
@@ -426,6 +494,35 @@ main table tbody tr:first-child td { border-top: none; }
 }
 .sources-relecture a { word-break: break-word; }
 
+// Further reading (front matter pour_aller_plus_loin, built by the page-meta filter).
+.plus-loin {
+  margin-top: 3.5rem;
+  padding: 1.25rem 1.5rem 0.5rem;
+  border: 1px solid $pv-rule;
+  border-radius: $border-radius-lg;
+  background: $pv-paper;
+  box-shadow: $ombre-carte;
+}
+.plus-loin h2 { font-size: 1.15rem; margin-top: 0; }
+.plus-loin ul { list-style: none; padding: 0; margin: 0; }
+.plus-loin li {
+  position: relative;
+  padding: 0.7rem 0 0.7rem 1.7rem;
+  border-top: 1px solid $pv-rule;
+  font-size: 0.92rem;
+  color: $pv-ink-quiet;
+}
+.plus-loin li:first-child { border-top: none; }
+.plus-loin li::before {
+  content: "→";
+  position: absolute;
+  left: 0.15rem;
+  color: $pv-signal;
+  font-weight: 700;
+}
+.plus-loin li a { font-size: 1rem; font-weight: 700; }
+.plus-loin + .sources-relecture { margin-top: 1.25rem; }
+
 // ---------- Cards: section landing pages, listings, team -----------------
 
 .cartes {
@@ -440,6 +537,7 @@ main table tbody tr:first-child td { border-top: none; }
   border-radius: $border-radius-lg !important;
   padding: 1.15rem 1.25rem;
   background: $pv-paper;
+  box-shadow: $ombre-carte;
   transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
 }
 .carte:hover,
@@ -480,9 +578,19 @@ main table tbody tr:first-child td { border-top: none; }
 
 // Listings (news, Vigiking).
 .quarto-listing-default .quarto-post {
-  border-bottom: 1px solid $pv-rule;
-  padding-bottom: 1.25rem;
+  border: 1px solid $pv-rule;
+  border-radius: $border-radius-lg;
+  padding: 1.1rem 1.35rem;
+  margin-bottom: 0.9rem;
+  background: $pv-paper;
+  box-shadow: $ombre-carte;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
+.quarto-listing-default .quarto-post:hover {
+  border-color: $pv-signal;
+  box-shadow: 0 8px 24px -12px rgba(10, 92, 158, 0.35);
+}
+.quarto-listing-default .quarto-post .listing-title { margin-top: 0; }
 .quarto-post .listing-date, .listing-date {
   font-family: $font-family-monospace;
   font-size: 0.85rem;
@@ -512,7 +620,9 @@ main table tbody tr:first-child td { border-top: none; }
 .btn-primary {
   background: $pv-signal;
   border-color: $pv-signal;
+  box-shadow: 0 8px 18px -10px rgba(10, 92, 158, 0.7);
 }
+.btn:hover { transform: translateY(-1px); }
 .btn-primary:hover {
   background: $pv-signal-dark;
   border-color: $pv-signal-dark;
@@ -525,12 +635,39 @@ main table tbody tr:first-child td { border-top: none; }
 
 // ---------- Footer ---------------------------------------------------------
 
-.nav-footer {
-  border-top: 1px solid $pv-rule;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  font-size: 0.9rem;
+// The footer is the Channel: deep sea blue, with a wave rising into the page.
+.footer {
+  position: relative;
+  margin-top: 4.5rem;
+  background: $pv-manche;
+  color: $pv-paper;
 }
+.footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -23px;
+  height: 24px;
+  background: $vague-manche center bottom / 100% 24px no-repeat;
+  pointer-events: none;
+}
+.nav-footer {
+  border-top: none;
+  padding-top: 2.25rem;
+  padding-bottom: 2rem;
+  font-size: 0.9rem;
+  background: transparent;
+  color: $pv-ecume;
+}
+.nav-footer strong { color: $pv-paper; }
+.nav-footer a,
+.nav-footer .nav-link { color: $pv-paper !important; }
+// A gold focus ring stays visible on the sea (4.9:1 against $pv-manche).
+.nav-footer a:focus-visible { outline-color: $pv-or; }
+// Footer links keep each label on one line; the list wraps instead.
+.nav-footer .footer-items { flex-wrap: wrap; justify-content: flex-end; }
+.nav-footer .footer-items .nav-link { white-space: nowrap; }
 .logo-partenaire {
   height: 46px;
   width: auto;
@@ -563,12 +700,30 @@ body {
   margin-top: -1rem;
 }
 
-.hero {
-  background: $pv-mist;
-  border-bottom: 1px solid $pv-rule;
-  padding: 3.5rem 0 3rem;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
+// Full-width bands (hero, centres) draw their background with a pseudo-element, so their
+// content stays in the page column and lines up with the other home sections.
+.hero,
+.centres {
+  position: relative;
+  isolation: isolate;
+}
+.hero::before,
+.centres::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 50vw);
+  right: calc(50% - 50vw);
+  z-index: -2;
+}
+.hero { padding: 3.5rem 0 3rem; }
+.hero::before {
+  // Soft glows of the logo colours behind the map.
+  background:
+    radial-gradient(40rem 30rem at 80% 45%, rgba(25, 166, 227, 0.22), transparent 70%),
+    radial-gradient(32rem 24rem at 97% 95%, rgba(43, 207, 140, 0.2), transparent 70%),
+    $pv-mist;
 }
 .hero-grille {
   display: grid;
@@ -593,6 +748,13 @@ body {
   letter-spacing: -0.035em;
   font-variation-settings: "opsz" 96;
   margin: 0 0 1rem;
+}
+// The gold of the Normandy leopards, as a marker under one word of the title.
+.surligne {
+  background: linear-gradient(transparent 64%, rgba(231, 176, 59, 0.6) 64%, rgba(231, 176, 59, 0.6) 90%, transparent 90%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 0 0.04em;
 }
 .hero-chapo {
   font-size: 1.2rem;
@@ -678,13 +840,26 @@ $signal-pulse: 18px; // pulse length, in figure units (px = SVG user units)
   margin-top: 0;
   margin-bottom: 1.25rem;
 }
+// A short bar in the logo gradient over each home section title.
+.section-accueil > h2::before,
+.accueil-actualites > h2::before,
+.centres h2::before {
+  content: "";
+  display: block;
+  width: 2.75rem;
+  height: 4px;
+  border-radius: 2px;
+  background: $degrade-logo;
+  margin-bottom: 0.8rem;
+}
 
 .urgence {
   display: grid;
   grid-template-columns: auto repeat(2, minmax(0, 1fr)) auto;
   gap: 1.5rem;
   align-items: center;
-  max-width: 72rem;
+  width: calc(100% - 3rem); // same edges as the cards of the sections below
+  max-width: 69rem;
   margin: 2rem auto 0;
   padding: 1.1rem 1.5rem;
   background: $pv-alert-tint;
@@ -724,17 +899,29 @@ a[href^="tel:"]::after {
   gap: 1rem;
 }
 .public {
+  position: relative;
+  overflow: hidden;
   border-radius: $border-radius-lg;
-  padding: 1.4rem 1.4rem 1rem;
-  background: $pv-mist;
+  padding: 1.5rem 1.4rem 1rem;
+  background: $pv-paper;
+  border: 1px solid $pv-rule;
+  box-shadow: $ombre-carte;
 }
+.public::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: $degrade-logo;
+}
+.public .icone { background: $pv-mist; }
 .public h3 {
   font-family: $headings-font-family;
   font-size: 1.3rem;
   margin: 0.6rem 0 0.75rem;
 }
 .public ul { list-style: none; padding: 0; margin: 0; }
-.public li { padding: 0.4rem 0; border-top: 1px solid $pv-mist-deep; }
+.public li { padding: 0.4rem 0; border-top: 1px solid $pv-rule; }
 .public li:first-child { border-top: none; }
 .public li a { font-weight: 600; }
 .icone {
@@ -771,6 +958,17 @@ a[href^="tel:"]::after {
   color: $pv-ink;
 }
 .rubrique .icone { background: $pv-mist; flex: none; }
+.rubrique { box-shadow: $ombre-carte; background: $pv-paper; }
+.rubrique::after {
+  content: "→";
+  margin-left: auto;
+  align-self: center;
+  color: $pv-signal;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+.rubrique:hover::after { opacity: 1; transform: translateX(2px); }
 .rubrique strong {
   display: block;
   font-family: $headings-font-family;
@@ -801,6 +999,64 @@ a[href^="tel:"]::after {
   background: $pv-mist;
 }
 
+// The two centres, from la Hague to the pays de Bray: a full-width band with half-timbering.
+.centres {
+  margin-top: 3.5rem;
+  padding: 3rem 0;
+}
+.centres::before { background: $pv-mist; }
+// Half-timbering on the left of the band, fading towards the cards.
+.centres::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 50vw);
+  width: 70vw;
+  z-index: -1;
+  background: $motif-colombage;
+  -webkit-mask-image: linear-gradient(90deg, #000 25%, transparent);
+  mask-image: linear-gradient(90deg, #000 25%, transparent);
+  pointer-events: none;
+}
+.centres-grille {
+  position: relative;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.centres h2 { margin-top: 0; }
+.centres-chapo { color: $pv-ink-quiet; max-width: 40rem; }
+.centres-cartes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+.centre {
+  background: $pv-paper;
+  border: 1px solid $pv-rule;
+  border-radius: $border-radius-lg;
+  padding: 1.4rem 1.5rem 1.1rem;
+  box-shadow: $ombre-carte;
+}
+.centre h3 {
+  font-family: $headings-font-family;
+  font-size: 1.35rem;
+  margin: 0 0 0.2rem;
+}
+.centre-departements { color: $pv-ink-quiet; margin-bottom: 0.6rem; }
+.centre-telephone {
+  display: inline-block;
+  font-family: $font-family-monospace;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: $pv-ink;
+  text-decoration: none;
+  margin-bottom: 0.4rem;
+}
+.centre-telephone:hover { color: $pv-signal-dark; text-decoration: underline; }
+
 .accueil-actualites {
   max-width: 72rem;
   margin: 0 auto;
@@ -815,6 +1071,13 @@ a[href^="tel:"]::after {
   .urgence { margin-top: 1.25rem; }
   .urgence { grid-template-columns: 1fr; gap: 0.75rem; }
   .publics, .rubriques { grid-template-columns: 1fr; }
+  .centres-cartes { grid-template-columns: 1fr; }
+  // The page column already has side margins on small screens: no second indent.
+  .hero-grille, .section-accueil, .centres-grille, .accueil-actualites {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .urgence { width: 100%; }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .rubriques, .publics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -838,6 +1101,21 @@ a[href^="tel:"]::after {
   .urgence { padding: 0.9rem 1rem; }
   .urgence-numero { font-size: 1.3rem; }
 }
+
+// ---------- 404: lost in the bocage ----------------------------------------
+.page-404 { font-size: 1.15rem; }
+.page-404 ul { list-style: none; padding: 0; margin-top: 1.5rem; }
+.page-404 li { margin-bottom: 0.6rem; }
+.page-404 li a {
+  display: inline-block;
+  padding: 0.55rem 1.1rem;
+  border: 1px solid $pv-rule;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  background: $pv-paper;
+}
+.page-404 li a:hover { border-color: $pv-signal; background: $pv-mist; }
 
 // ---------- Interactive frequency grids (comprendre/frequences) -----------
 

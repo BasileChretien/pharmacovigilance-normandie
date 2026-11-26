@@ -1,0 +1,18 @@
+---
+title: "Page introuvable"
+description: "Cette page n'existe pas, ou elle a changé d'adresse."
+type: navigation
+toc: false
+search: false
+---
+
+::: {.page-404}
+
+Même dans le bocage normand, certains chemins mènent à une impasse. Cette page n'existe pas, ou elle a changé d'adresse.
+
+- [Revenir à l'accueil](index.qmd)
+- [Déclarer un effet indésirable](declarer.qmd)
+- [Poser une question au CRPV](poser-une-question.qmd)
+- [Qui contacter en Normandie](normandie/qui-contacter.qmd)
+
+:::

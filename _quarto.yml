@@ -18,6 +18,8 @@ lang: fr
 
 website:
   title: "Pharmacovigilance Normandie"
+  # Needed for the 404 page, whose links Quarto makes absolute (it is served at any address).
+  site-url: "https://basilechretien.github.io/pharmacovigilance-normandie/"
   description: "Information sur les médicaments par les centres régionaux de pharmacovigilance de Caen et de Rouen (prototype)."
   favicon: assets/img/favicon.svg
   search:
@@ -33,7 +35,7 @@ website:
     title: "Pharmacovigilance Normandie"
     logo: assets/img/logo-mark.svg
     logo-alt: "Accueil Pharmacovigilance Normandie"
-    collapse-below: xxl
+    collapse-below: xl
     left:
       - text: "Médicaments"
         href: medicaments/index.qmd
@@ -58,6 +60,7 @@ website:
         href: poser-une-question.qmd
   page-footer:
     left: |
+      **Pharmacovigilance Normandie**, de la Hague au pays de Bray.  
       **CRPV de Caen** (Calvados, Manche, Orne) : [02 31 06 46 72](tel:+33231064672)  
       **CRPV de Rouen** (Eure, Seine-Maritime) : [02 32 88 90 79](tel:+33232889079)  
       Prototype non officiel.

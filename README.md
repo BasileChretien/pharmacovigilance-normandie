@@ -55,6 +55,12 @@ par `uv run python tools/design/make_signal.py` à partir de `data/normandie-car
 `uv run python tools/design/fetch_normandie.py` télécharge (contours Etalab, populations INSEE
 via geo.api.gouv.fr). L'animation se lance par `assets/js/accueil.js`, avec un bouton pause.
 
+Clins d'œil à la Normandie, discrets : un motif de colombages dans les bandeaux de titre et
+le bandeau des deux centres (« De la Hague au pays de Bray »), un pied de page couleur Manche
+avec une vague, l'or des léopards normands pour souligner un mot du titre d'accueil, et une page
+404 « impasse du bocage ». Tous sont dessinés en SVG dans `assets/theme.scss` : rien n'est
+téléchargé.
+
 ## Organisation
 
 | Dossier | Contenu |

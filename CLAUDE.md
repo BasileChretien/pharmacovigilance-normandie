@@ -26,7 +26,7 @@ Status and open tasks: `docs/STATUS.md`. Points for medical reviewers: `docs/rel
   builds them from the front matter.
 - Further reading goes in `pour_aller_plus_loin:` (titre, url, site: rfcrpv | cnpm), 3 links at most, each checked to answer before adding.
 - Colours live only in `assets/theme.scss`; add every new text/background pair to
-  `tools/checks/contrast_pairs.yml`. `pv-cyan` and `pv-green` are decorative, never text.
+  `tools/checks/contrast_pairs.yml`. `pv-cyan`, `pv-green` and `pv-or` (Normandy gold) are decorative, never text; Normandy motifs (colombages, Channel wave) are inline SVG in `theme.scss`.
 - Fonts are self-hosted in `assets/fonts/` (OFL, from @fontsource-variable); never load fonts from a third-party server.
 - The home-page map is generated: edit `tools/design/make_signal.py` (data: `data/normandie-carte.json`, refreshed by `tools/design/fetch_normandie.py`), not `_includes/signal.md`. Its motion needs the pause button (WCAG 2.2.2): keep animations gated by `.signal-anime` (added by `assets/js/accueil.js`).
 - Search synonyms and the accent-free index copy: `tools/build/search_postprocess.py` (post-render).
