@@ -113,6 +113,14 @@ def test_further_reading_without_url_or_with_plain_http_is_an_error():
     assert "FM-LIENS" in rules(check(http))
 
 
+def test_further_reading_is_checked_on_navigation_pages_too():
+    # crpv/index.qmd and vigiking/index.qmd have no statut: the link rule must still run.
+    text = page(GOOD_PATIENT).replace("statut: brouillon\n", "")
+    text = text.replace("sources:", PLUS_LOIN.format(url="http://www.rfcrpv.fr/missions/") + "sources:")
+    assert "statut:" not in text
+    assert "FM-LIENS" in rules(check(text, path="crpv/index.qmd"))
+
+
 def test_institutional_page_needs_no_source():
     text = page(GOOD_PATIENT).replace("sources:", "type: institutionnel\nautres:")
     assert "FM-SOURCES" not in rules(check(text, path="a-propos/mentions-legales.qmd"))

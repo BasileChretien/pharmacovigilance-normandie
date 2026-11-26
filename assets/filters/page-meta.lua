@@ -156,7 +156,8 @@ local function plus_loin_list(meta)
     return items
   end
   for _, l in ipairs(liens) do
-    if type(l) == "table" and l.titre ~= nil and l.url ~= nil then
+    -- An empty url would render as a link to the page itself: skip it (check_content flags it).
+    if type(l) == "table" and l.titre ~= nil and l.url ~= nil and stringify(l.url) ~= "" then
       local inlines = pandoc.Inlines({ pandoc.Link(pandoc.Inlines(stringify(l.titre)), stringify(l.url)) })
       if l.site ~= nil then
         local site = stringify(l.site)
