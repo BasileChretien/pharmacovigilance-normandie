@@ -60,6 +60,7 @@ Notes globales données par les participants : de 5 à 7 sur 10, moyenne 6.
 | Numéros des CRPV absents de l'accueil, de « Qui contacter » et des fiches | 5 | Numéros des deux centres dans le pied de chaque page et dans « Qui contacter » | Fait |
 | Fiche fièvre : pas d'exemple pour 16 kg, 4 h ou 6 h selon le paragraphe, pas de seuil de durée | 1 (risque) | Un seul intervalle (6 h si possible, jamais moins de 4 h), exemple pour 16 kg, « fièvre plus de 3 jours : consultez » | Fait |
 | Titres h1 → h3 sans h2 (fréquences, déclarer, plusieurs fiches) | 1 | Le filtre remonte les titres d'un niveau quand la page n'a pas de h2 ; h2 ajouté sur « Déclarer » | Fait : aucun saut de niveau sur les 78 pages |
+| Sommaire « Sur cette page » réduit à « Sources et relecture » (44 pages sur 78) | 1 | Le filtre retire les enveloppes `texte-patient` et `texte-pro` à la sortie : Pandoc ignorait les titres placés dans un div ; contrôle `tools/checks/check_toc.py` en CI | Fait |
 | Bouton de menu `role="menu"`, « Retour en haut » non focalisable, raccourcis clavier `f`, `/` et `s` en conflit avec NVDA | 2 | Retirer le rôle, retirer le lien, désactiver les raccourcis | Fait |
 | Accueil sur téléphone : héros trop haut, urgences sous la ligne de flottaison ; bandeau d'urgence qui se chevauche à 1 024 px | 4 | Héros compact sous 576 px ; bandeau sur deux colonnes entre 992 et 1 199 px | Fait |
 | Migraine et grossesse : « début du 6e mois » ambigu | 1 | Ajouter « 24 semaines d'aménorrhée », source ANSM, lien vers la fiche AINS | Fait |
