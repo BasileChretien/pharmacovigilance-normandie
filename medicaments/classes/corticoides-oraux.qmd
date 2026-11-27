@@ -3,6 +3,7 @@ title: "Les corticoïdes par voie orale"
 description: "Prednisone, prednisolone et autres corticoïdes en comprimés : prise le matin, effets d'un traitement prolongé, arrêt progressif et interactions."
 public: [patients, professionnels]
 classe: "glucocorticoïdes oraux"
+substances: [prednisone, prednisolone]
 statut: brouillon
 relu_par: null
 relu_le: null

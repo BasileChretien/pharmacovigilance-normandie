@@ -3,6 +3,7 @@ title: "Les antalgiques opioïdes"
 description: "Tramadol, codéine, morphine, oxycodone : bien les utiliser, reconnaître la dépendance et le surdosage, savoir à qui s'adresser."
 public: [patients, professionnels]
 classe: "antalgiques opioïdes"
+substances: [tramadol, codéine, morphine, oxycodone]
 statut: brouillon
 relu_par: null
 relu_le: null

@@ -3,6 +3,7 @@ title: "Les fluoroquinolones"
 description: "Ciprofloxacine, lévofloxacine, ofloxacine, moxifloxacine : des antibiotiques réservés aux infections sans autre option, en raison d'effets indésirables rares mais parfois durables (tendons, nerfs, aorte)."
 public: [patients, professionnels]
 classe: "fluoroquinolones"
+substances: [ciprofloxacine, lévofloxacine, ofloxacine, moxifloxacine]
 statut: brouillon
 relu_par: null
 relu_le: null

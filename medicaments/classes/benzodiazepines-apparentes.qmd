@@ -3,6 +3,7 @@ title: "Les benzodiazépines et médicaments apparentés"
 description: "Anxiolytiques et somnifères (lorazépam, alprazolam, zolpidem, zopiclone…) : durées limitées, chutes chez les personnes âgées, arrêt progressif."
 public: [patients, professionnels]
 classe: "benzodiazépines et apparentés"
+substances: [lorazépam, alprazolam, zolpidem, zopiclone]
 statut: brouillon
 relu_par: null
 relu_le: null

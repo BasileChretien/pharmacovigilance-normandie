@@ -4,6 +4,8 @@
 -- 3. Appends a "Sources et relecture" section built from the front matter
 --    (sources, relu_par, relu_le, prochaine_relecture), so every page shows
 --    its sources and review dates in the same place.
+-- 4. Adds "Notices et RCP officiels" on pages that list substances (front matter
+--    substances: [...]), from data/bdpm-liens.json (tools/build/make_bdpm_liens.py).
 
 local stringify = pandoc.utils.stringify
 
@@ -150,6 +152,68 @@ local SITES = {
   rfcrpv = "Réseau français des centres régionaux de pharmacovigilance",
   cnpm = "Collège national de pharmacologie médicale (pour les professionnels et les étudiants)",
 }
+
+-- Official notice and SmPC links: one example product per substance, chosen by
+-- tools/build/make_bdpm_liens.py from the open files of the public medicines database.
+local BDPM_URL = "https://base-donnees-publique.medicaments.gouv.fr/medicament/%s/extrait"
+local NOTICES = {
+  titre = "Notices et RCP officiels",
+  intro = "Chaque médicament a sa notice : celle de votre boîte est la bonne. "
+    .. "Voici un exemple par substance, sur la base de données publique des médicaments. "
+    .. "Chaque page donne la notice, pour les patients, et le résumé des caractéristiques du produit (RCP), pour les professionnels.",
+  association = " (en association)",
+  source = "Base de données publique des médicaments (ANSM), fichiers du %s ; exemples choisis parmi les médicaments commercialisés : la substance seule, une forme orale, puis le médicament de référence.",
+}
+local bdpm_cache = nil
+
+local function bdpm_data()
+  if bdpm_cache == nil then
+    bdpm_cache = false
+    local root = (quarto and quarto.project and quarto.project.directory) or "."
+    local f = io.open(pandoc.path.join({ root, "data", "bdpm-liens.json" }), "r")
+    if f then
+      local ok, data = pcall(pandoc.json.decode, f:read("a"), false)
+      f:close()
+      if ok and type(data) == "table" and type(data.substances) == "table" then
+        bdpm_cache = data
+      end
+    end
+  end
+  return bdpm_cache or nil
+end
+
+local function notices_block(meta)
+  local liste = meta.substances
+  local data = bdpm_data()
+  if type(liste) ~= "table" or #liste == 0 or not data then
+    return nil
+  end
+  local items = {}
+  for _, s in ipairs(liste) do
+    local nom = stringify(s)
+    local choix = data.substances[nom]
+    if type(choix) == "table" and type(choix.cis) == "string" and type(choix.nom) == "string" then
+      local libelle = pandoc.text.upper(pandoc.text.sub(nom, 1, 1)) .. pandoc.text.sub(nom, 2)
+      local inlines = pandoc.Inlines({ pandoc.Strong(pandoc.Inlines(libelle)), pandoc.Str(" :"), pandoc.Space() })
+      inlines:insert(pandoc.Link(pandoc.Inlines(choix.nom), string.format(BDPM_URL, choix.cis)))
+      if choix.association == true then
+        inlines:extend(pandoc.Inlines(NOTICES.association))
+      end
+      table.insert(items, { pandoc.Plain(inlines) })
+    end
+  end
+  if #items == 0 then
+    return nil
+  end
+  -- A JSON null decodes to pandoc.json.null, which is truthy: check the type.
+  local date = type(data.mis_a_jour) == "string" and date_fr(data.mis_a_jour) or "?"
+  return pandoc.Div({
+    pandoc.Header(2, pandoc.Inlines(NOTICES.titre), pandoc.Attr("notices-et-rcp-officiels")),
+    pandoc.Para(pandoc.Inlines(NOTICES.intro)),
+    pandoc.BulletList(items),
+    pandoc.Para({ pandoc.Span(pandoc.Inlines(string.format(NOTICES.source, date)), pandoc.Attr("", { "notices-source" })) }),
+  }, pandoc.Attr("", { "notices-officielles" }))
+end
 
 local function plus_loin_list(meta)
   local items = {}
@@ -305,6 +369,11 @@ function Pandoc(doc)
     doc.blocks:insert(position, pandoc.Para({
       pandoc.Span(pandoc.Inlines(string.format(libelles.maj, date_fr(maj))), pandoc.Attr("", { "mise-a-jour" })),
     }))
+  end
+
+  local notices = notices_block(meta)
+  if notices then
+    doc.blocks:insert(notices)
   end
 
   local liens = plus_loin_list(meta)

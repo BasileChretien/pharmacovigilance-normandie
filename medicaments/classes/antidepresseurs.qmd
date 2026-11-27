@@ -3,6 +3,7 @@ title: "Les antidépresseurs"
 description: "ISRS, IRSN, tricycliques et mirtazapine : délai d'action, symptômes à l'arrêt, syndrome sérotoninergique, manque de sel chez la personne âgée et interactions."
 public: [patients, professionnels]
 classe: "antidépresseurs"
+substances: [sertraline, escitalopram, fluoxétine, venlafaxine, amitriptyline, mirtazapine]
 statut: brouillon
 relu_par: null
 relu_le: null

@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import json
 import re
 import sys
 from dataclasses import dataclass
@@ -28,6 +29,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[2]
 JARGON_FILE = ROOT / "data" / "jargon.yml"
+BDPM_FILE = ROOT / "data" / "bdpm-liens.json"  # tools/build/make_bdpm_liens.py
 EXCLUDED_DIRS = {"_site", "_templates", "docs", "node_modules", ".quarto", ".venv", "tests", "tools"}
 
 STATUTS = {"brouillon", "relu", "publie"}
@@ -63,6 +65,7 @@ _PASSIVE = re.compile(
 )
 _PERCENT = re.compile(r"\d\s?%|\bpour\s?cent\b", re.IGNORECASE)
 _VOWELS = re.compile(r"[aeiouyàâäéèêëîïôöùûüÿœæ]+", re.IGNORECASE)
+_BDPM_CIS = re.compile(r"base-donnees-publique\.medicaments\.gouv\.fr/medicament/(\d{8})")
 
 
 @dataclass(frozen=True)
@@ -212,6 +215,25 @@ def front_matter_rules(meta: dict, path: Path) -> list[Finding]:
     return findings
 
 
+def bdpm_rules(meta: dict, text: str, bdpm: dict) -> list[Finding]:
+    """Cited BDPM products must still be marketed; listed substances need an official link."""
+    findings: list[Finding] = []
+    cites = bdpm.get("cites") or {}
+    for cis in dict.fromkeys(_BDPM_CIS.findall(text)):
+        statut = cites.get(cis)
+        if statut is None:
+            findings.append(Finding("warning", "FM-BDPM", f"médicament {cis} pas encore vérifié : lancer tools/build/make_bdpm_liens.py"))
+        elif statut.get("etat") != "Commercialisée":
+            nom = statut.get("nom") or "?"
+            findings.append(Finding("error", "FM-BDPM", f"médicament {cis} ({nom}) : {statut.get('etat')} dans la BDPM du {bdpm.get('mis_a_jour')}"))
+    known = bdpm.get("substances") or {}
+    listed = meta.get("substances") or []
+    for substance in listed if isinstance(listed, list) else [listed]:
+        if str(substance) not in known:
+            findings.append(Finding("warning", "FM-BDPM", f"substance « {substance} » sans notice officielle : vérifier son nom ou lancer tools/build/make_bdpm_liens.py"))
+    return findings
+
+
 def _first_unexplained(pattern: str, text: str) -> bool:
     """True when the first occurrence of `pattern` is neither followed by ' (' nor inside '( )'."""
     match = re.search(pattern, text, re.IGNORECASE)
@@ -284,9 +306,13 @@ def patient_rules(patient: str, posix: str, level: str, jargon: dict[str, str]) 
     return findings
 
 
-def check_text(text: str, path: Path, jargon: dict[str, str], strict: bool = False) -> list[Finding]:
+def check_text(
+    text: str, path: Path, jargon: dict[str, str], strict: bool = False, bdpm: dict | None = None
+) -> list[Finding]:
     meta, body = parse_front_matter(text)
     findings = front_matter_rules(meta, path)
+    if bdpm is not None:
+        findings.extend(bdpm_rules(meta, text, bdpm))
     statut = str(meta.get("statut", "")).strip()
     level = "error" if (strict or statut in STRICT_STATUTS) else "warning"
     blocks = extract_divs(body, "texte-patient")
@@ -302,6 +328,12 @@ def load_jargon() -> dict[str, str]:
         return {}
     data = yaml.safe_load(JARGON_FILE.read_text(encoding="utf-8")) or {}
     return {str(k): str(v) for k, v in data.items()}
+
+
+def load_bdpm() -> dict | None:
+    if not BDPM_FILE.exists():
+        return None
+    return json.loads(BDPM_FILE.read_text(encoding="utf-8"))
 
 
 def site_pages() -> list[Path]:
@@ -329,10 +361,11 @@ def main(argv: list[str] | None = None) -> int:
         sys.stdout.reconfigure(encoding="utf-8")
 
     jargon = load_jargon()
+    bdpm = load_bdpm()
     pages = [p.resolve() for p in args.paths] or site_pages()
     totals = {"error": 0, "warning": 0}
     for page in pages:
-        findings = check_text(page.read_text(encoding="utf-8"), page, jargon, strict=args.strict)
+        findings = check_text(page.read_text(encoding="utf-8"), page, jargon, strict=args.strict, bdpm=bdpm)
         shown = [f for f in findings if f.level == "error" or (not args.quiet and f.level != "info")]
         for f in findings:
             if f.level in totals:

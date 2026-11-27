@@ -3,6 +3,7 @@ title: "L'isotrétinoïne par voie orale"
 description: "Isotrétinoïne orale contre l'acné sévère : risque pour l'enfant à naître, programme de prévention des grossesses, effets psychiques et surveillance."
 public: [patients, professionnels]
 classe: "isotrétinoïne orale"
+substances: [isotrétinoïne]
 statut: brouillon
 relu_par: null
 relu_le: null

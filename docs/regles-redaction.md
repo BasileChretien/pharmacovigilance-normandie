@@ -15,6 +15,7 @@ statut: brouillon                    # brouillon | relu | publie
 relu_par: null                       # nom du relecteur, une fois relu
 relu_le: null                        # AAAA-MM-JJ
 prochaine_relecture: null            # AAAA-MM-JJ
+substances: [warfarine, apixaban]    # fiches de classe : substances, telles qu'écrites sur la page
 sources:
   - titre: "ANSM, Thésaurus des interactions médicamenteuses"
     url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
@@ -31,6 +32,16 @@ pour_aller_plus_loin:                # facultatif : lectures complémentaires
   savante, article publié). Pas de source secondaire quand la source primaire existe.
 - Le filtre `assets/filters/page-meta.lua` affiche automatiquement le bandeau
   « Brouillon », les sources et les dates de relecture : ne pas les réécrire à la main.
+- `substances` (fiches de classe) : les substances dont parle la fiche, six au plus. Le filtre
+  ajoute « Notices et RCP officiels » : pour chacune, la page de la base de données publique
+  des médicaments d'un médicament commercialisé qui la contient seule (forme orale, puis
+  médicament de référence en premier), choisi par `tools/build/make_bdpm_liens.py`. Après
+  avoir ajouté une substance, relancer ce script ; `check_content.py` signale une substance
+  sans lien.
+- Un médicament de la base de données publique cité en source doit être encore
+  commercialisé : `check_content.py` le vérifie (erreur `FM-BDPM`) d'après
+  `data/bdpm-liens.json`, mis à jour chaque mois avec `fetch_bdpm.py` puis
+  `make_bdpm_liens.py`.
 - `pour_aller_plus_loin` : liens vers des contenus qui prolongent la page, d'abord ceux du
   réseau des CRPV ([rfcrpv.fr](https://www.rfcrpv.fr), `site: rfcrpv`) et du Collège national de
   pharmacologie médicale ([pharmacomedicale.org](https://pharmacomedicale.org), `site: cnpm`,

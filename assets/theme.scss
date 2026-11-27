@@ -500,6 +500,23 @@ main table tbody tr:nth-child(even) td { background: rgba(238, 246, 250, 0.6); }
 }
 .sources-relecture a { word-break: break-word; }
 
+// Official notice and SmPC links (front matter substances, built by the page-meta filter).
+.notices-officielles {
+  margin-top: 3.5rem;
+  padding: 1.25rem 1.5rem 0.75rem;
+  border: 1px solid $pv-rule;
+  border-left: 5px solid $pv-signal;
+  border-radius: $border-radius-lg;
+  background: $pv-paper;
+  box-shadow: $ombre-carte;
+}
+.notices-officielles h2 { font-size: 1.15rem; margin-top: 0; }
+.notices-officielles ul { list-style: none; padding: 0; margin: 0 0 0.75rem; }
+.notices-officielles li { padding: 0.45rem 0; border-top: 1px solid $pv-rule; }
+.notices-officielles li:first-child { border-top: none; }
+.notices-source { color: $pv-ink-quiet; font-size: 0.88rem; }
+.notices-officielles + .plus-loin { margin-top: 1.5rem; }
+
 // Further reading (front matter pour_aller_plus_loin, built by the page-meta filter).
 .plus-loin {
   margin-top: 3.5rem;

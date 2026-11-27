@@ -3,6 +3,7 @@ title: "Les statines"
 description: "Atorvastatine, rosuvastatine, simvastatine, pravastatine : douleurs musculaires et effet nocebo, signes d'alerte, interactions à connaître."
 public: [patients, professionnels]
 classe: "statines"
+substances: [atorvastatine, rosuvastatine, simvastatine, pravastatine]
 statut: brouillon
 relu_par: null
 relu_le: null

@@ -1,0 +1,559 @@
+{
+ "source": "https://base-donnees-publique.medicaments.gouv.fr/telechargement",
+ "mis_a_jour": "2026-11-20",
+ "substances": {
+  "ibuprofène": {
+   "cis": "68634000",
+   "nom": "ADVIL 200 mg, comprimé enrobé",
+   "princeps": true,
+   "association": false,
+   "nb": 79
+  },
+  "kétoprofène": {
+   "cis": "61165486",
+   "nom": "BI PROFENID LP 100 mg, comprimé sécable à libération prolongée",
+   "princeps": true,
+   "association": false,
+   "nb": 24
+  },
+  "naproxène": {
+   "cis": "63738842",
+   "nom": "APRANAX 550 mg, comprimé pelliculé sécable",
+   "princeps": true,
+   "association": false,
+   "nb": 12
+  },
+  "diclofénac": {
+   "cis": "62431527",
+   "nom": "VOLTARENE 50 mg, comprimé enrobé gastro-résistant",
+   "princeps": true,
+   "association": false,
+   "nb": 56
+  },
+  "célécoxib": {
+   "cis": "68952704",
+   "nom": "CELEBREX 100 mg, gélule",
+   "princeps": true,
+   "association": false,
+   "nb": 19
+  },
+  "warfarine": {
+   "cis": "64631925",
+   "nom": "COUMADINE 2 mg, comprimé sécable",
+   "princeps": false,
+   "association": false,
+   "nb": 3
+  },
+  "fluindione": {
+   "cis": "68133651",
+   "nom": "PREVISCAN 20 mg, comprimé quadrisécable",
+   "princeps": false,
+   "association": false,
+   "nb": 1
+  },
+  "acénocoumarol": {
+   "cis": "62148714",
+   "nom": "MINI-SINTROM 1 mg, comprimé",
+   "princeps": false,
+   "association": false,
+   "nb": 2
+  },
+  "apixaban": {
+   "cis": "69340279",
+   "nom": "ELIQUIS 2,5 mg, comprimé pelliculé",
+   "princeps": true,
+   "association": false,
+   "nb": 6
+  },
+  "rivaroxaban": {
+   "cis": "65763132",
+   "nom": "XARELTO 10 mg, comprimé pelliculé",
+   "princeps": true,
+   "association": false,
+   "nb": 50
+  },
+  "dabigatran": {
+   "cis": "65570603",
+   "nom": "PRADAXA 110 mg, gélule",
+   "princeps": true,
+   "association": false,
+   "nb": 15
+  },
+  "sertraline": {
+   "cis": "60155788",
+   "nom": "ZOLOFT 25 mg, gélule",
+   "princeps": true,
+   "association": false,
+   "nb": 19
+  },
+  "escitalopram": {
+   "cis": "67219535",
+   "nom": "SEROPLEX 10 mg, comprimé pelliculé sécable",
+   "princeps": true,
+   "association": false,
+   "nb": 51
+  },
+  "fluoxétine": {
+   "cis": "63686057",
+   "nom": "FLUOXETINE ACCORD 20 mg, gélule",
+   "princeps": false,
+   "association": false,
+   "nb": 21
+  },
+  "venlafaxine": {
+   "cis": "66430942",
+   "nom": "EFFEXOR L.P. 37,5 mg, gélule à libération prolongée",
+   "princeps": true,
+   "association": false,
+   "nb": 32
+  },
+  "amitriptyline": {
+   "cis": "68969066",
+   "nom": "LAROXYL 40 mg/ml, solution buvable",
+   "princeps": true,
+   "association": false,
+   "nb": 7
+  },
+  "mirtazapine": {
+   "cis": "65124914",
+   "nom": "NORSET 15 mg, comprimé pelliculé",
+   "princeps": true,
+   "association": false,
+   "nb": 13
+  },
+  "metformine": {
+   "cis": "61052830",
+   "nom": "GLUCOPHAGE 1000 mg, comprimé pelliculé sécable",
+   "princeps": true,
+   "association": false,
+   "nb": 69
+  },
+  "gliclazide": {
+   "cis": "68831670",
+   "nom": "DIAMICRON 60 mg, comprimé sécable à libération modifiée",
+   "princeps": true,
+   "association": false,
+   "nb": 25
+  },
+  "sitagliptine": {
+   "cis": "64889982",
+   "nom": "JANUVIA 100 mg, comprimé pelliculé",
+   "princeps": true,
+   "association": false,
+   "nb": 40
+  },
+  "dapagliflozine": {
+   "cis": "67456363",
+   "nom": "FORXIGA 10 mg, comprimé pelliculé",
+   "princeps": true,
+   "association": false,
+   "nb": 2
+  },
+  "sémaglutide": {
+   "cis": "69113018",
+   "nom": "WEGOVY 1.5 mg, comprimé",
+   "princeps": false,
+   "association": false,
+   "nb": 13
+  },
+  "ramipril": {
+   "cis": "60161143",
+   "nom": "TRIATEC 10 mg, comprimé sécable",
+   "princeps": true,
+   "association": false,
+   "nb": 59
+  },
+  "valsartan": {
+   "cis": "61823653",
+   "nom": "TAREG 160 mg, comprimé pelliculé",
+   "princeps": true,
+   "association": false,
+   "nb": 104
+  },
+  "amlodipine": {
+   "cis": "61939921",
+   "nom": "AMLOR 10 mg, gélule",
+   "princeps": true,
+   "association": false,
+   "nb": 142
+  },
+  "hydrochlorothiazide": {
+   "cis": "66153192",
+   "nom": "ESIDREX 25 mg, comprimé sécable",
+   "princeps": true,
+   "association": false,
+   "nb": 233
+  },
+  "bisoprolol": {
+   "cis": "63162282",
+   "nom": "CARDENSIEL 1,25 mg, comprimé pelliculé",
+   "princeps": true,
+   "association": false,
+   "nb": 105
+  },
+  "lorazépam": {
+   "cis": "67917629",
+   "nom": "TEMESTA 1 mg, comprimé sécable",
+   "princeps": true,
+   "association": false,
+   "nb": 8
+  },
+  "alprazolam": {
+   "cis": "69847791",
+   "nom": "XANAX 0,25 mg, comprimé sécable",
+   "princeps": true,
+   "association": false,
+   "nb": 25
+  },
+  "zolpidem": {
+   "cis": "63179285",
+   "nom": "STILNOX 10 mg, comprimé pelliculé sécable",
+   "princeps": true,
+   "association": false,
+   "nb": 11
+  },
+  "zopiclone": {
+   "cis": "68508795",
+   "nom": "IMOVANE 7,5 mg, comprimé pelliculé sécable",
+   "princeps": true,
+   "association": false,
+   "nb": 12
+  },
+  "prednisone": {
+   "cis": "60118715",
+   "nom": "CORTANCYL 1 mg, comprimé",
+   "princeps": true,
+   "association": false,
+   "nb": 17
+  },
+  "prednisolone": {
+   "cis": "63226984",
+   "nom": "SOLUPRED 20 mg, comprimé orodispersible",
+   "princeps": true,
+   "association": false,
+   "nb": 24
+  },
+  "ciprofloxacine": {
+   "cis": "65636245",
+   "nom": "CIFLOX 500 mg, comprimé pelliculé sécable",
+   "princeps": true,
+   "association": false,
+   "nb": 29
+  },
+  "lévofloxacine": {
+   "cis": "64784789",
+   "nom": "TAVANIC 500 mg, comprimé pelliculé sécable",
+   "princeps": true,
+   "association": false,
+   "nb": 16
+  },
+  "ofloxacine": {
+   "cis": "66484819",
+   "nom": "OFLOCET 200 mg, comprimé pelliculé sécable",
+   "princeps": true,
+   "association": false,
+   "nb": 18
+  },
+  "moxifloxacine": {
+   "cis": "65521531",
+   "nom": "MOXIFLOXACINE ARROW 400 mg, comprimé pelliculé",
+   "princeps": false,
+   "association": false,
+   "nb": 6
+  },
+  "oméprazole": {
+   "cis": "69606819",
+   "nom": "MOPRAL 10 mg, gélule gastro-résistante",
+   "princeps": true,
+   "association": false,
+   "nb": 38
+  },
+  "ésoméprazole": {
+   "cis": "63451237",
+   "nom": "INEXIUM 10 mg, granulés pour suspension buvable gastrorésistante en sachet",
+   "princeps": true,
+   "association": false,
+   "nb": 38
+  },
+  "pantoprazole": {
+   "cis": "65220275",
+   "nom": "INIPOMP 20 mg, comprimé gastro-résistant",
+   "princeps": true,
+   "association": false,
+   "nb": 44
+  },
+  "isotrétinoïne": {
+   "cis": "63918395",
+   "nom": "CONTRACNE 10 mg, capsule molle",
+   "princeps": false,
+   "association": false,
+   "nb": 17
+  },
+  "lévothyroxine": {
+   "cis": "68416845",
+   "nom": "LEVOTHYROX 100 microgrammes, comprimé sécable",
+   "princeps": true,
+   "association": false,
+   "nb": 55
+  },
+  "méthotrexate": {
+   "cis": "67853564",
+   "nom": "NOVATREX 2,5 mg, comprimé",
+   "princeps": true,
+   "association": false,
+   "nb": 59
+  },
+  "tramadol": {
+   "cis": "68655884",
+   "nom": "CONTRAMAL 50 mg, gélule",
+   "princeps": true,
+   "association": false,
+   "nb": 87
+  },
+  "codéine": {
+   "cis": "62582924",
+   "nom": "PADERYL 0,1 POUR CENT, sirop",
+   "princeps": false,
+   "association": false,
+   "nb": 23
+  },
+  "morphine": {
+   "cis": "62469549",
+   "nom": "ACTISKENAN 1 mg, comprimé orodispersible",
+   "princeps": false,
+   "association": false,
+   "nb": 38
+  },
+  "oxycodone": {
+   "cis": "61200108",
+   "nom": "OXYCONTIN LP 10 mg, comprimé pelliculé à libération prolongée",
+   "princeps": true,
+   "association": false,
+   "nb": 61
+  },
+  "atorvastatine": {
+   "cis": "67143532",
+   "nom": "TAHOR 10 mg, comprimé pelliculé",
+   "princeps": true,
+   "association": false,
+   "nb": 107
+  },
+  "rosuvastatine": {
+   "cis": "68479386",
+   "nom": "CRESTOR 10 mg, comprimé pelliculé",
+   "princeps": true,
+   "association": false,
+   "nb": 72
+  },
+  "simvastatine": {
+   "cis": "67037301",
+   "nom": "ZOCOR 20 mg, comprimé pelliculé",
+   "princeps": true,
+   "association": false,
+   "nb": 59
+  },
+  "pravastatine": {
+   "cis": "61650728",
+   "nom": "PRAVASTATINE ACCORD 10 mg, comprimé",
+   "princeps": false,
+   "association": false,
+   "nb": 34
+  },
+  "valproate de sodium": {
+   "cis": "62410472",
+   "nom": "DEPAKINE 200 mg/ml, solution buvable",
+   "princeps": true,
+   "association": false,
+   "nb": 13
+  },
+  "topiramate": {
+   "cis": "61913385",
+   "nom": "EPITOMAX 100 mg, comprimé pelliculé",
+   "princeps": true,
+   "association": false,
+   "nb": 14
+  }
+ },
+ "cites": {
+  "60161143": {
+   "nom": "TRIATEC 10 mg, comprimé sécable",
+   "etat": "Commercialisée"
+  },
+  "60492702": {
+   "nom": "CORTANCYL 5 mg, comprimé sécable",
+   "etat": "Commercialisée"
+  },
+  "60670489": {
+   "nom": "SELEXID 200 mg, comprimé pelliculé",
+   "etat": "Commercialisée"
+  },
+  "60683198": {
+   "nom": "ZOLOFT 50 mg, gélule",
+   "etat": "Commercialisée"
+  },
+  "60747455": {
+   "nom": "DETENSIEL 10 mg, comprimé pelliculé sécable",
+   "etat": "Commercialisée"
+  },
+  "61052830": {
+   "nom": "GLUCOPHAGE 1000 mg, comprimé pelliculé sécable",
+   "etat": "Commercialisée"
+  },
+  "61203061": {
+   "nom": "IMODIUMCAPS 2 mg, gélule",
+   "etat": "Commercialisée"
+  },
+  "61403425": {
+   "nom": "EFFEXOR L.P. 75 mg, gélule à libération prolongée",
+   "etat": "Commercialisée"
+  },
+  "62390849": {
+   "nom": "CORTANCYL 20 mg, comprimé sécable",
+   "etat": "Commercialisée"
+  },
+  "63179285": {
+   "nom": "STILNOX 10 mg, comprimé pelliculé sécable",
+   "etat": "Commercialisée"
+  },
+  "63435884": {
+   "nom": "TOPALGIC 50 mg, gélule",
+   "etat": "Commercialisée"
+  },
+  "63458349": {
+   "nom": "AMLOR 5 mg, gélule",
+   "etat": "Commercialisée"
+  },
+  "63564053": {
+   "nom": "PLAVIX 75 mg, comprimé pelliculé",
+   "etat": "Commercialisée"
+  },
+  "63646874": {
+   "nom": "ADVIL 400 mg, comprimé enrobé",
+   "etat": "Commercialisée"
+  },
+  "63671347": {
+   "nom": "ZECLAR 250 mg, comprimé pelliculé",
+   "etat": "Commercialisée"
+  },
+  "64103828": {
+   "nom": "MOPRAL 20 mg, gélule gastro-résistante",
+   "etat": "Commercialisée"
+  },
+  "64676030": {
+   "nom": "IMIGRANE 50 mg, comprimé pelliculé",
+   "etat": "Commercialisée"
+  },
+  "64784789": {
+   "nom": "TAVANIC 500 mg, comprimé pelliculé sécable",
+   "etat": "Commercialisée"
+  },
+  "65124914": {
+   "nom": "NORSET 15 mg, comprimé pelliculé",
+   "etat": "Commercialisée"
+  },
+  "65220275": {
+   "nom": "INIPOMP 20 mg, comprimé gastro-résistant",
+   "etat": "Commercialisée"
+  },
+  "65606743": {
+   "nom": "LASILIX 40 mg, comprimé sécable",
+   "etat": "Commercialisée"
+  },
+  "65636245": {
+   "nom": "CIFLOX 500 mg, comprimé pelliculé sécable",
+   "etat": "Commercialisée"
+  },
+  "65892928": {
+   "nom": "LAROXYL 25 mg, comprimé pelliculé",
+   "etat": "Commercialisée"
+  },
+  "66003374": {
+   "nom": "DAFALGAN CODEINE, comprimé pelliculé",
+   "etat": "Commercialisée"
+  },
+  "66150367": {
+   "nom": "CELEBREX 200 mg, gélule",
+   "etat": "Commercialisée"
+  },
+  "66153192": {
+   "nom": "ESIDREX 25 mg, comprimé sécable",
+   "etat": "Commercialisée"
+  },
+  "66477582": {
+   "nom": "DOLIPRANE 2,4 POUR CENT, suspension buvable",
+   "etat": "Commercialisée"
+  },
+  "67037301": {
+   "nom": "ZOCOR 20 mg, comprimé pelliculé",
+   "etat": "Commercialisée"
+  },
+  "67136662": {
+   "nom": "THIOCOLCHICOSIDE BIOGARAN 4 mg, comprimé",
+   "etat": "Commercialisée"
+  },
+  "67143532": {
+   "nom": "TAHOR 10 mg, comprimé pelliculé",
+   "etat": "Commercialisée"
+  },
+  "67219535": {
+   "nom": "SEROPLEX 10 mg, comprimé pelliculé sécable",
+   "etat": "Commercialisée"
+  },
+  "67464926": {
+   "nom": "ACIDE ALENDRONIQUE CRISTERS 70 mg, comprimé",
+   "etat": "Commercialisée"
+  },
+  "67707794": {
+   "nom": "CLAMOXYL 500 mg, gélule",
+   "etat": "Commercialisée"
+  },
+  "67853564": {
+   "nom": "NOVATREX 2,5 mg, comprimé",
+   "etat": "Commercialisée"
+  },
+  "67917629": {
+   "nom": "TEMESTA 1 mg, comprimé sécable",
+   "etat": "Commercialisée"
+  },
+  "67951706": {
+   "nom": "MONURIL 3 g, granulés pour solution buvable en sachet",
+   "etat": "Commercialisée"
+  },
+  "68133651": {
+   "nom": "PREVISCAN 20 mg, comprimé quadrisécable",
+   "etat": "Commercialisée"
+  },
+  "68269288": {
+   "nom": "TARDYFERON 80 mg, comprimé pelliculé",
+   "etat": "Commercialisée"
+  },
+  "68416845": {
+   "nom": "LEVOTHYROX 100 microgrammes, comprimé sécable",
+   "etat": "Commercialisée"
+  },
+  "68479386": {
+   "nom": "CRESTOR 10 mg, comprimé pelliculé",
+   "etat": "Commercialisée"
+  },
+  "68508795": {
+   "nom": "IMOVANE 7,5 mg, comprimé pelliculé sécable",
+   "etat": "Commercialisée"
+  },
+  "68588503": {
+   "nom": "LEVOTHYROX 25 microgrammes, comprimé sécable",
+   "etat": "Commercialisée"
+  },
+  "68634000": {
+   "nom": "ADVIL 200 mg, comprimé enrobé",
+   "etat": "Commercialisée"
+  },
+  "68831670": {
+   "nom": "DIAMICRON 60 mg, comprimé sécable à libération modifiée",
+   "etat": "Commercialisée"
+  },
+  "69164379": {
+   "nom": "CURACNE 20 mg, capsule molle",
+   "etat": "Commercialisée"
+  }
+ }
+}

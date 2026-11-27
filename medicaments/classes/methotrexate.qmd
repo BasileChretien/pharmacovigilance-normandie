@@ -3,6 +3,7 @@ title: "Le méthotrexate à faible dose par voie orale"
 description: "Méthotrexate en comprimés : une prise par semaine, jamais tous les jours ; signes de surdosage, interactions et surveillance."
 public: [patients, professionnels]
 classe: "méthotrexate oral faible dose"
+substances: [méthotrexate]
 statut: brouillon
 relu_par: null
 relu_le: null

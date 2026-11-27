@@ -3,6 +3,7 @@ title: "Les anti-inflammatoires non stéroïdiens (AINS)"
 description: "Ibuprofène, kétoprofène, naproxène, diclofénac, célécoxib : bon usage, automédication, infections, reins, grossesse et interactions."
 public: [patients, professionnels]
 classe: "AINS"
+substances: [ibuprofène, kétoprofène, naproxène, diclofénac, célécoxib]
 statut: brouillon
 relu_par: null
 relu_le: null
