@@ -167,6 +167,15 @@ local NOTICES = {
   source = "Base de données publique des médicaments (ANSM), fichiers du %s ; exemples choisis parmi les médicaments commercialisés : celui que la page cite dans ses sources, sinon la substance seule, une forme orale, puis le médicament de référence.",
 }
 
+-- A build warning: Quarto's log when the filter runs under Quarto, else stderr.
+local function warn(message)
+  if quarto and quarto.log and quarto.log.warning then
+    quarto.log.warning(message)
+  else
+    io.stderr:write(message .. "\n")
+  end
+end
+
 -- The page's path from the project root, as make_bdpm_liens.py writes it ("a/b.qmd").
 local function page_relative()
   local input = quarto and quarto.doc and quarto.doc.input_file
@@ -201,7 +210,27 @@ local function notices_block(meta)
     return nil
   end
   -- Examples of this page's own (a product it cites), before the site-wide ones.
-  local propres = type(data.pages) == "table" and data.pages[page_relative() or ""] or nil
+  local cle = page_relative()
+  local propres = type(data.pages) == "table" and data.pages[cle or ""] or nil
+  -- Every page that lists substances is in pages_lues: a page missing from it has a path
+  -- the script did not write (drive letter, page outside the project) or data older than
+  -- the page. Say so, rather than fall back silently to the site-wide examples.
+  if type(data.pages_lues) == "table" then
+    local connue = false
+    for _, p in ipairs(data.pages_lues) do
+      if p == cle then
+        connue = true
+        break
+      end
+    end
+    if not connue then
+      warn(string.format(
+        "page-meta : « %s » absente de data/bdpm-liens.json (pages_lues) ; exemples du site utilisés. "
+          .. "Relancez tools/build/make_bdpm_liens.py, ou vérifiez le chemin de la page.",
+        cle or "?"
+      ))
+    end
+  end
   local items = {}
   for _, s in ipairs(liste) do
     local nom = stringify(s)

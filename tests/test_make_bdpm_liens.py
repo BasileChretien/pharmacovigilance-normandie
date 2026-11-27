@@ -387,9 +387,10 @@ def test_pages_give_their_substances_and_the_products_they_cite(tmp_path):
         "---\ntitle: Autre\n---\n\nVoir https://base-donnees-publique.medicaments.gouv.fr/medicament/60000006/extrait\n",
         encoding="utf-8",
     )
-    substances, cites = mb.lire_pages(tmp_path)
+    substances, cites, en_sources = mb.lire_pages(tmp_path)
     assert substances == {"medicaments/ains.qmd": ["ibuprofène", "codéine"]}
     assert cites == {"68634000": ["medicaments/ains.qmd"], "60000006": ["autre.qmd"]}
+    assert en_sources == {"68634000": ["medicaments/ains.qmd"]}
 
 
 def test_report_lists_unknown_substances_and_products_no_longer_marketed():
@@ -441,11 +442,9 @@ def test_an_inverted_salt_reads_as_the_usual_name():
 
 
 def _pages(listed: list[str], cited: list[str]) -> dict:
+    en_sources = {cis: ["medicaments/p.qmd"] for cis in cited}
     data = mb.construire(
-        _base(),
-        {"medicaments/p.qmd": listed},
-        {cis: ["medicaments/p.qmd"] for cis in cited},
-        "2026-11-20",
+        _base(), {"medicaments/p.qmd": listed}, en_sources, "2026-11-20", en_sources
     )
     return data["pages"]
 
@@ -462,10 +461,14 @@ def test_a_page_citing_a_marketed_product_of_the_substance_alone_gets_it_as_exam
             }
         }
     }
-    # The site-wide example is unchanged.
+
+
+def test_a_page_with_its_own_example_leaves_the_site_wide_one_unchanged():
+    cites = {"60000001": ["medicaments/p.qmd"]}
     data = mb.construire(
-        _base(), {"medicaments/p.qmd": ["ibuprofène"]}, {"60000001": ["p"]}, None
+        _base(), {"medicaments/p.qmd": ["ibuprofène"]}, cites, None, cites
     )
+    assert data["pages"]["medicaments/p.qmd"]["ibuprofène"]["cis"] == "60000001"
     assert data["substances"]["ibuprofène"]["cis"] == "68634000"
 
 
@@ -502,3 +505,30 @@ def test_a_plant_extract_with_a_second_parenthesis_is_left_as_written():
         mb.normalise("AUBÉPINE (EXTRAIT D') (FLUIDE)")
         == "aubepine (extrait d') (fluide)"
     )
+
+
+def test_only_a_product_cited_in_the_sources_can_be_the_page_example(tmp_path):
+    (tmp_path / "medicaments").mkdir()
+    (tmp_path / "medicaments" / "ains.qmd").write_text(
+        "---\ntitle: AINS\nsubstances: [ibuprofène]\nsources:\n"
+        '  - titre: "ANSM"\n'
+        '    url: "https://ansm.sante.fr/"\n'
+        "---\n\nÀ éviter : https://base-donnees-publique.medicaments.gouv.fr/medicament/60000001/extrait\n",
+        encoding="utf-8",
+    )
+    substances, cites, en_sources = mb.lire_pages(tmp_path)
+    assert en_sources == {}
+    data = mb.construire(_base(), substances, cites, "2026-11-20", en_sources)
+    assert data["pages"] == {}
+    # The product named in the text is still checked for its marketing status.
+    assert data["cites"]["60000001"]["etat"] == mb.COMMERCIALISEE
+
+
+def test_every_page_that_lists_substances_is_named_for_the_filter():
+    data = mb.construire(
+        _base(),
+        {"medicaments/b.qmd": ["ibuprofène"], "medicaments/a.qmd": ["inconnue"]},
+        {},
+        "2026-11-20",
+    )
+    assert data["pages_lues"] == ["medicaments/a.qmd", "medicaments/b.qmd"]
