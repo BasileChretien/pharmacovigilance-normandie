@@ -85,3 +85,52 @@ test("a sheet reached through two salts of the same substance is listed once", (
   const e = ENTREES.find((x) => x.cis === "60000013");
   assert.deepEqual(e.fiches, [["medicaments/classes/ains.html", "Les AINS"]]);
 });
+
+// A minimal document: enough for the result line built by ligne().
+function fauxDocument() {
+  function noeud(tag) {
+    return {
+      tag: tag,
+      attributes: {},
+      children: [],
+      _text: "",
+      set textContent(t) { this._text = t; this.children = []; },
+      get textContent() { return this._text + this.children.map((c) => c.textContent).join(""); },
+      setAttribute(k, v) { this.attributes[k] = v; },
+      appendChild(c) { this.children.push(c); return c; },
+    };
+  }
+  return {
+    createElement: noeud,
+    createTextNode: (t) => ({ tag: "#text", textContent: t, children: [] }),
+  };
+}
+const liens = (n) => (n.tag === "a" ? [n] : []).concat(...(n.children || []).map(liens));
+
+test("the site's sheets of a medicine share one line, each a link", () => {
+  const entree = {
+    nom: "DOLIPRANE 1000 mg, comprimé",
+    url: "https://example.org/x",
+    substances: ["paracétamol"],
+    fiches: [
+      ["medicaments/maux-courants/angine-mal-de-gorge.html", "Le mal de gorge"],
+      ["medicaments/maux-courants/migraine.html", "La migraine"],
+    ],
+  };
+  const li = cm.ligne(fauxDocument(), entree, "../");
+  const lignes = li.children.filter((c) => c.attributes.class === "medicament-fiche");
+  assert.equal(lignes.length, 1);
+  assert.equal(lignes[0].textContent, "Fiches du site : Le mal de gorge, La migraine");
+  assert.deepEqual(
+    liens(lignes[0]).map((a) => a.attributes.href),
+    ["../medicaments/maux-courants/angine-mal-de-gorge.html", "../medicaments/maux-courants/migraine.html"],
+  );
+});
+
+test("a single sheet is named in the singular, and none gives no line", () => {
+  const base = { nom: "X", url: "u", substances: ["codéine"] };
+  const une = cm.ligne(fauxDocument(), { ...base, fiches: [["a.html", "Les opioïdes"]] }, "");
+  assert.equal(une.children.find((c) => c.attributes.class === "medicament-fiche").textContent, "Fiche du site : Les opioïdes");
+  const aucune = cm.ligne(fauxDocument(), { ...base, fiches: [] }, "");
+  assert.equal(aucune.children.some((c) => c.attributes.class === "medicament-fiche"), false);
+});

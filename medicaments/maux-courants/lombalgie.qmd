@@ -7,6 +7,7 @@ statut: brouillon
 relu_par: null
 relu_le: null
 prochaine_relecture: null
+substances: [paracétamol, ibuprofène]
 sources:
   - titre: "HAS, Prise en charge du patient présentant une lombalgie commune, recommandation de bonne pratique, 2019 (page de présentation)"
     url: "https://www.has-sante.fr/jcms/c_2961499/fr/prise-en-charge-du-patient-presentant-une-lombalgie-commune"

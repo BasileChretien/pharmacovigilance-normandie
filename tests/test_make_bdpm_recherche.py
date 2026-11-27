@@ -263,3 +263,20 @@ def test_an_inverted_salt_and_every_sheet_of_a_substance_are_linked():
         ["medicaments/classes/opioides.html", "Les opioïdes"],
         ["medicaments/maux-courants/toux.html", "La toux"],
     ]
+
+
+def test_a_common_ailment_sheet_is_named_by_its_ailment(tmp_path):
+    # "[Symptôme] : quels médicaments ?" (template of the maux-courants sheets): the search
+    # lists up to five such sheets on one line, so only the ailment is kept.
+    (tmp_path / "medicaments" / "maux-courants").mkdir(parents=True)
+    (tmp_path / "medicaments" / "maux-courants" / "migraine.qmd").write_text(
+        '---\ntitle: "Migraine et maux de tête : quels médicaments ?"\n'
+        "substances: [sumatriptan]\n---\n",
+        encoding="utf-8",
+    )
+    assert mr.lire_fiches(tmp_path) == {
+        "medicaments/maux-courants/migraine.qmd": (
+            "Migraine et maux de tête",
+            ["sumatriptan"],
+        )
+    }

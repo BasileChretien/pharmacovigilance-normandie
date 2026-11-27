@@ -7,6 +7,7 @@ statut: brouillon
 relu_par: null
 relu_le: null
 prochaine_relecture: null
+substances: [paracétamol, ibuprofène]
 sources:
   - titre: "HAS. Fiche mémo : Prise en charge de la fièvre chez l'enfant, octobre 2016"
     url: "https://has-sante.fr/upload/docs/application/pdf/2016-10/fiche_memo_-_prise_en_charge_de_la_fievre_chez_lenfant.pdf"

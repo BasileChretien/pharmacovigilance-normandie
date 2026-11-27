@@ -88,11 +88,16 @@
     if (entree.substances.length) {
       li.appendChild(element(doc, "p", "Substance" + (entree.substances.length > 1 ? "s" : "") + " : " + entree.substances.join(", "), { class: "medicament-substances" }));
     }
-    entree.fiches.forEach(function (f) {
-      var p = element(doc, "p", "Fiche du site : ", { class: "medicament-fiche" });
-      p.appendChild(element(doc, "a", f[1], { href: racine + f[0] }));
+    // Every sheet on one line (paracetamol is on five), each title a link.
+    if (entree.fiches.length) {
+      var pluriel = entree.fiches.length > 1 ? "s" : "";
+      var p = element(doc, "p", "Fiche" + pluriel + " du site : ", { class: "medicament-fiche" });
+      entree.fiches.forEach(function (f, i) {
+        if (i) p.appendChild(doc.createTextNode(", "));
+        p.appendChild(element(doc, "a", f[1], { href: racine + f[0] }));
+      });
       li.appendChild(p);
-    });
+    }
     return li;
   }
 
@@ -159,5 +164,5 @@
     });
   }
 
-  return { normalise: normalise, preparer: preparer, chercher: chercher, init: init };
+  return { normalise: normalise, preparer: preparer, chercher: chercher, ligne: ligne, init: init };
 });

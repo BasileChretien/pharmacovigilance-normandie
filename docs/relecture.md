@@ -115,6 +115,10 @@ le Collège national de pharmacologie médicale (pharmacomedicale.org), dans
 | Page | À vérifier |
 |---|---|
 | Fiches de classe | Les substances listées (`substances:`) : six au plus, celles dont parle la fiche. L'exemple de notice est choisi automatiquement (substance seule, forme orale, médicament de référence) : le garder, ou demander une autre spécialité |
+| Maux courants | Listes `substances:` sur 10 des 11 fiches (27/11/2026) : les substances du traitement, pas celles citées pour une interaction ou à éviter. La rhinite allergique n'en a pas (la fiche parle de familles). Écartés car l'exemple ne convient pas : séné (préparation à la coloscopie), aspirine (100 mg antiagrégant), azélastine (collyre) |
+| maux-courants/rhume-toux | Pseudoéphédrine : les 8 médicaments oraux qui en contiennent (ACTIFED RHUME, DOLIRHUME, HUMEX RHUME, NUROFEN RHUME, RHINADVIL…) sont « non commercialisés » dans la BDPM du 20/11/2026. La fiche met encore en garde contre ces comprimés : garder, ou dire qu'ils ne sont plus vendus ? |
+| maux-courants/diarrhee-aigue | Racécadotril : l'exemple est TIORFAN 10 mg NOURRISSONS ; une forme adulte conviendrait mieux |
+| maux-courants/angine-mal-de-gorge | Clarithromycine : l'exemple est ZECLAR 25 mg/ml, granulés (forme pédiatrique), alors que la fiche cite ZECLAR 250 mg comprimé en source |
 | antidiabetiques | Sémaglutide : l'exemple est WEGOVY 1,5 mg comprimé (amaigrissement), pas un médicament du diabète |
 | opioides | Codéine : l'exemple est PADERYL, un sirop contre la toux (codéine seule), alors que la fiche parle surtout de la codéine contre la douleur, associée au paracétamol |
 | maux-courants/diarrhee-aigue | IMODIUM 2 mg n'est plus commercialisé (BDPM du 20/11/2026). Le texte professionnel suit désormais le RCP d'IMODIUMCAPS 2 mg (sans ordonnance) : à partir de 15 ans, 6 gélules par jour au plus, 2 jours au plus. À confirmer, ainsi que la phrase patient « de 6 à 8 ans ou plus » |

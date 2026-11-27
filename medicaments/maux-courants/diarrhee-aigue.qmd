@@ -7,6 +7,7 @@ statut: brouillon
 relu_par: null
 relu_le: null
 prochaine_relecture: null
+substances: [lopéramide, racécadotril, diosmectite]
 sources:
   - titre: "GFHGNP. Jung C, Bellaiche M et le conseil d'administration du GFHGNP. Diarrhée aiguë du nourrisson et de l'enfant, recommandations d'experts, 2024"
     url: "https://www.gfhgnp.org/wp-content/uploads/kdocuments/Fiche-recommandations-DiarrhéesV3.pdf"
