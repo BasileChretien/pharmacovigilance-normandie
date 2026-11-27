@@ -1,50 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 642" width="440" height="642" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 770" width="440" height="770" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
   <defs>
     <marker id="cystite-1-fleche" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M0 0 L10 5 L0 10 Z" fill="#073f6e"/>
     </marker>
   </defs>
 
-  <rect x="16" y="12" width="408" height="56" rx="10" fill="#dcebf3" stroke="#073f6e" stroke-width="2"/>
-  <text x="32" y="36" font-size="17" font-weight="700">Femme : brûlures en urinant,</text>
-  <text x="32" y="58" font-size="17" font-weight="700">envies fréquentes</text>
-  <line x1="60" y1="68" x2="60" y2="92" stroke="#073f6e" stroke-width="2.5" marker-end="url(#cystite-1-fleche)"/>
+  <!-- Emergency first -->
+  <rect x="16" y="12" width="408" height="52" rx="10" fill="#fdeceb" stroke="#b3261e" stroke-width="2"/>
+  <text x="30" y="34" font-weight="700" fill="#b3261e">Grande faiblesse, confusion, peau marbrée :</text>
+  <text x="30" y="55" font-weight="700" fill="#b3261e">appelez le 15</text>
 
-  <!-- Warning signs, or a risk situation (the page's list) -->
-  <rect x="16" y="96" width="408" height="150" rx="10" fill="#eef6fa" stroke="#073f6e" stroke-width="2"/>
-  <text x="32" y="120" font-weight="700">Fièvre, frissons, douleur dans le dos</text>
-  <text x="32" y="142" font-weight="700">ou sur un côté, vomissements ?</text>
-  <text x="32" y="170" font-weight="700">Ou situation à risque ?</text>
-  <text x="32" y="192" fill="#46586a">grossesse, anomalie des voies urinaires,</text>
-  <text x="32" y="212" fill="#46586a">reins très malades, défenses affaiblies,</text>
-  <text x="32" y="232" fill="#46586a">plus de 75 ans, ou plus de 65 ans et fragile</text>
+  <rect x="16" y="76" width="408" height="56" rx="10" fill="#dcebf3" stroke="#073f6e" stroke-width="2"/>
+  <text x="32" y="100" font-size="17" font-weight="700">Femme : brûlures en urinant,</text>
+  <text x="32" y="122" font-size="17" font-weight="700">envies fréquentes</text>
+  <line x1="60" y1="132" x2="60" y2="156" stroke="#073f6e" stroke-width="2.5" marker-end="url(#cystite-1-fleche)"/>
+
+  <!-- Warning signs, early return, or a risk situation (the page's lists) -->
+  <rect x="16" y="160" width="408" height="192" rx="10" fill="#eef6fa" stroke="#073f6e" stroke-width="2"/>
+  <text x="32" y="184" font-weight="700">Fièvre, frissons, douleur dans le dos</text>
+  <text x="32" y="206" font-weight="700">ou sur un côté, vomissements ?</text>
+  <text x="32" y="232" font-weight="700">Ou signes revenus dans les 2 semaines ?</text>
+  <text x="32" y="258" font-weight="700">Ou situation à risque ?</text>
+  <text x="32" y="280" fill="#46586a">grossesse, anomalie des voies urinaires,</text>
+  <text x="32" y="300" fill="#46586a">reins qui fonctionnent très mal,</text>
+  <text x="32" y="320" fill="#46586a">défenses immunitaires très affaiblies,</text>
+  <text x="32" y="340" fill="#46586a">plus de 75 ans, ou plus de 65 ans et fragile</text>
 
   <!-- Yes: see a doctor -->
-  <line x1="320" y1="246" x2="320" y2="282" stroke="#073f6e" stroke-width="2.5" marker-end="url(#cystite-1-fleche)"/>
-  <text x="330" y="270" font-weight="700" fill="#073f6e">Oui</text>
-  <rect x="216" y="286" width="208" height="112" rx="10" fill="#fdeceb" stroke="#b3261e" stroke-width="2"/>
-  <text x="230" y="312" font-weight="700" fill="#b3261e">Consultez un médecin</text>
-  <text x="230" y="336">le jour même en cas</text>
-  <text x="230" y="358">de fièvre, frissons,</text>
-  <text x="230" y="380">douleur, vomissements</text>
+  <line x1="320" y1="352" x2="320" y2="388" stroke="#073f6e" stroke-width="2.5" marker-end="url(#cystite-1-fleche)"/>
+  <text x="330" y="376" font-weight="700" fill="#073f6e">Oui</text>
+  <rect x="216" y="392" width="208" height="134" rx="10" fill="#fdeceb" stroke="#b3261e" stroke-width="2"/>
+  <text x="230" y="418" font-weight="700" fill="#b3261e">Consultez un médecin</text>
+  <text x="230" y="442">le jour même en cas</text>
+  <text x="230" y="464">de fièvre, frissons,</text>
+  <text x="230" y="486">douleur dans le dos,</text>
+  <text x="230" y="508">vomissements</text>
 
   <!-- No: urine dipstick -->
-  <line x1="60" y1="246" x2="60" y2="410" stroke="#073f6e" stroke-width="2.5" marker-end="url(#cystite-1-fleche)"/>
-  <text x="70" y="330" font-weight="700" fill="#073f6e">Non</text>
-  <rect x="16" y="414" width="408" height="48" rx="10" fill="#eef6fa" stroke="#073f6e" stroke-width="2"/>
-  <text x="32" y="444" font-size="17" font-weight="700">Bandelette urinaire</text>
+  <line x1="60" y1="352" x2="60" y2="540" stroke="#073f6e" stroke-width="2.5" marker-end="url(#cystite-1-fleche)"/>
+  <text x="70" y="450" font-weight="700" fill="#073f6e">Non</text>
+  <rect x="16" y="544" width="408" height="48" rx="10" fill="#eef6fa" stroke="#073f6e" stroke-width="2"/>
+  <text x="32" y="574" font-size="17" font-weight="700">Bandelette urinaire</text>
 
-  <line x1="60" y1="462" x2="60" y2="498" stroke="#073f6e" stroke-width="2.5" marker-end="url(#cystite-1-fleche)"/>
-  <text x="70" y="486" font-weight="700" fill="#073f6e">Positive</text>
-  <rect x="16" y="502" width="196" height="126" rx="10" fill="#dcebf3" stroke="#073f6e" stroke-width="2"/>
-  <text x="30" y="528" font-weight="700">Antibiotique :</text>
-  <text x="30" y="552">fosfomycine,</text>
-  <text x="30" y="574">en une prise</text>
+  <line x1="60" y1="592" x2="60" y2="628" stroke="#073f6e" stroke-width="2.5" marker-end="url(#cystite-1-fleche)"/>
+  <text x="70" y="616" font-weight="700" fill="#073f6e">Positive</text>
+  <rect x="16" y="632" width="196" height="126" rx="10" fill="#dcebf3" stroke="#073f6e" stroke-width="2"/>
+  <text x="30" y="658" font-weight="700">Antibiotique :</text>
+  <text x="30" y="682">fosfomycine,</text>
+  <text x="30" y="704">en une prise</text>
 
-  <line x1="320" y1="462" x2="320" y2="498" stroke="#073f6e" stroke-width="2.5" marker-end="url(#cystite-1-fleche)"/>
-  <text x="330" y="486" font-weight="700" fill="#073f6e">Négative</text>
-  <rect x="228" y="502" width="196" height="126" rx="10" fill="#ffffff" stroke="#46586a" stroke-width="2"/>
-  <text x="242" y="528" font-weight="700">Avis médical</text>
-  <text x="242" y="552">pour chercher</text>
-  <text x="242" y="574">une autre cause</text>
+  <line x1="320" y1="592" x2="320" y2="628" stroke="#073f6e" stroke-width="2.5" marker-end="url(#cystite-1-fleche)"/>
+  <text x="330" y="616" font-weight="700" fill="#073f6e">Négative</text>
+  <rect x="228" y="632" width="196" height="126" rx="10" fill="#ffffff" stroke="#46586a" stroke-width="2"/>
+  <text x="242" y="658" font-weight="700">Avis médical</text>
+  <text x="242" y="682">pour chercher</text>
+  <text x="242" y="704">une autre cause</text>
 </svg>

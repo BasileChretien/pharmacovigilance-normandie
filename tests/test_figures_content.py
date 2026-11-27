@@ -28,13 +28,16 @@ def test_the_two_hour_rule_is_given_for_levofloxacin_only():
     assert "lévofloxacine" in code["legende"]
 
 
-def test_the_cystitis_tree_sends_risk_situations_to_a_doctor():
+def test_the_cystitis_tree_sends_risk_situations_and_warning_signs_to_a_doctor():
     # Page: « On parle de cystite simple quand il n'y a pas de fièvre ni de situation à
-    # risque » (pregnancy, urinary anomaly, kidneys, weakened immunity, age); the single
-    # dose of fosfomycin is for a simple cystitis only.
+    # risque »; the single dose of fosfomycin is for a simple cystitis only. The « Quand
+    # consulter » box adds signs that come back within 2 weeks (« consultez ») and great
+    # weakness, confusion or mottled skin (« appelez le 15 »).
     text = figure_text("cystite-1")
-    assert "situation à risque" in text
-    for situation in ("grossesse", "75 ans", "défenses"):
-        assert situation in text
     code = shortcode("medicaments/maux-courants/cystite.qmd", "cystite-1")
-    assert "situation à risque" in code["description"]
+    for words in ("situation à risque", "grossesse", "anomalie des voies urinaires",
+                  "reins qui fonctionnent très mal", "défenses immunitaires très affaiblies",
+                  "75 ans", "2 semaines", "appelez le 15", "douleur dans le dos"):
+        assert words in text, words
+        assert words in code["description"], words
+    assert "situation à risque" in code["alt"]
