@@ -66,7 +66,7 @@ Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre ph
 
 :::
 
-## Vous êtes un professionnel de santé ou un soignant
+## Vous êtes un professionnel de santé ou un soignant {#professionnels}
 
 ::: {.texte-pro}
 

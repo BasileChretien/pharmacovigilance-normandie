@@ -20,13 +20,19 @@ listing:
 
 ::: {.hero-texte}
 ```{=html}
-<p class="hero-surtitre">CRPV de Caen et de Rouen · Normandie · <a href="normandie/en/index.html" lang="en">English</a></p>
+<p class="hero-surtitre">CRPV de Caen et de Rouen · Normandie · <a href="normandie/en/index.html" lang="en">In English</a></p>
 <h1>Un doute sur un <span class="surligne">médicament</span>&nbsp;?</h1>
 <p class="hero-chapo">Les centres régionaux de pharmacovigilance vous aident à bien utiliser vos médicaments, à repérer leurs effets indésirables et à les déclarer.</p>
 <button type="button" class="hero-recherche">
   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
   <span>Rechercher un médicament, un symptôme…</span>
 </button>
+<p class="hero-exemples">Par exemple&nbsp;:
+  <a href="?q=parac%C3%A9tamol&amp;show-results=1">paracétamol</a>
+  <a href="?q=anticoagulant&amp;show-results=1">anticoagulant</a>
+  <a href="?q=%C3%A9craser&amp;show-results=1">écraser un comprimé</a>
+  <a href="?q=grossesse&amp;show-results=1">grossesse</a>
+</p>
 <p class="hero-actions">
   <a class="btn btn-primary btn-lg" href="declarer.html">Déclarer un effet indésirable</a>
   <a class="btn btn-outline-primary btn-lg" href="poser-une-question.html">Poser une question</a>
@@ -56,9 +62,9 @@ listing:
       <span class="icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7.5" r="3.5"/><path d="M5 20.5c.8-4 3.6-6 7-6s6.2 2 7 6"/></svg></span>
       <h3>Patient ou proche</h3>
       <ul>
-        <li><a href="medicaments/index.html">Les fiches sur vos médicaments</a></li>
         <li><a href="comprendre/lire-une-notice.html">Comprendre la notice</a></li>
         <li><a href="bon-usage/quand-prendre.html">Quand prendre ses médicaments</a></li>
+        <li><a href="medicaments/situations/conduite.html">Médicaments et conduite</a></li>
         <li><a href="declarer.html">Déclarer un effet indésirable</a></li>
       </ul>
     </div>
@@ -66,10 +72,9 @@ listing:
       <span class="icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5v5a4 4 0 0 0 8 0v-5"/><path d="M10 12.5v2a5 5 0 0 0 10 0V13"/><circle cx="20" cy="11" r="2"/></svg></span>
       <h3>Médecin, pharmacien, soignant</h3>
       <ul>
-        <li><a href="medicaments/index.html">Fiches professionnelles par classe</a></li>
         <li><a href="bon-usage/interactions-ville.html">Interactions fréquentes en ville</a></li>
         <li><a href="bon-usage/cytochromes.html">Tableau des cytochromes</a></li>
-        <li><a href="vigiking/index.html">Vigiking, le bulletin des CRPV</a></li>
+        <li><a href="declarer.html#professionnels">Déclarer quand on est professionnel</a></li>
         <li><a href="poser-une-question.html">Poser une question au CRPV</a></li>
       </ul>
     </div>
@@ -89,8 +94,8 @@ listing:
       <ul>
         <li><a href="bon-usage/ecraser-fiche.html">Écraser un comprimé : la fiche à imprimer</a></li>
         <li><a href="medicaments/situations/sujet-age.html">Médicaments et personnes âgées, chutes</a></li>
-        <li><a href="bon-usage/quand-prendre.html">Quand donner les médicaments</a></li>
-        <li><a href="declarer.html">Déclarer un effet indésirable</a></li>
+        <li><a href="medicaments/classes/benzodiazepines-apparentes.html">Somnifères et anxiolytiques</a></li>
+        <li><a href="declarer.html#professionnels">Déclarer un effet chez un résident</a></li>
       </ul>
     </div>
   </div>
@@ -131,8 +136,6 @@ listing:
   <ul class="raccourcis">
     <li><a href="que-faire-effet-indesirable.html">Je pense avoir un effet indésirable</a></li>
     <li><a href="bon-usage/ecraser-couper.html">Puis-je écraser ce comprimé&nbsp;?</a></li>
-    <li><a href="bon-usage/quand-prendre.html">À quel moment prendre mes médicaments&nbsp;?</a></li>
-    <li><a href="comprendre/frequences.html">« Fréquent », « rare » : qu'est-ce que ça veut dire&nbsp;?</a></li>
     <li><a href="medicaments/maux-courants/fievre-douleur-enfant.html">Mon enfant a de la fièvre</a></li>
     <li><a href="medicaments/classes/anticoagulants-oraux.html">Je prends un anticoagulant</a></li>
     <li><a href="bon-usage/interactions.html">Puis-je associer ces médicaments&nbsp;?</a></li>

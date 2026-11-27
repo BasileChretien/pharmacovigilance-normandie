@@ -84,6 +84,22 @@ Placé dans un bloc `::: {.texte-pro}`. Style d'une fiche de pharmacologie clini
 précis, sourcé, chiffré. Les niveaux d'interaction suivent le Thésaurus de l'ANSM
 (contre-indication, association déconseillée, précaution d'emploi, à prendre en compte).
 
+### Dire le niveau de preuve d'un effet
+
+Un effet signalé n'est pas un effet établi. Écrire ce que la source permet d'affirmer,
+dans les textes patients comme professionnels :
+
+| Ce que dit la source | Formulation |
+|---|---|
+| Effet indésirable listé à la rubrique 4.8 du RCP | « X peut provoquer Y », avec la fréquence du RCP |
+| Signal en cours d'évaluation (ANSM, PRAC) | Pas de commentaire (voir section 4) ; au plus, renvoyer à la communication officielle |
+| Association observée dans une étude | « Une étude a observé plus de Y chez les personnes traitées par X », avec le type d'étude |
+| Cas rapportés (notifications, publications de cas) | « Des cas de Y ont été rapportés avec X » |
+
+Ne jamais écrire « X provoque Y » sur la seule base de cas rapportés ou d'une
+association observée. Rappeler, quand c'est utile, qu'une déclaration ne prouve pas
+que le médicament est en cause.
+
 ## 4. Ce que le site ne fait pas
 
 - Pas de conseil individuel. Renvoyer vers le CRPV, le médecin ou le pharmacien.

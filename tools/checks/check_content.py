@@ -206,7 +206,7 @@ def front_matter_rules(meta: dict, path: Path) -> list[Finding]:
             findings.append(Finding("error", "FM-DATE", f"date de consultation invalide : {s.get('consulte_le')}"))
     if statut in STRICT_STATUTS and not (_present(meta.get("relu_par")) and _present(meta.get("relu_le"))):
         findings.append(Finding("error", "FM-RELECTURE", "page relue ou publiée sans relu_par et relu_le"))
-    for key in ("relu_le", "prochaine_relecture"):
+    for key in ("relu_le", "prochaine_relecture", "mise_a_jour"):
         if _present(meta.get(key)) and not _is_date(meta.get(key)):
             findings.append(Finding("error", "FM-DATE", f"{key} doit être une date AAAA-MM-JJ"))
     return findings

@@ -20,6 +20,10 @@ Des outils d'intelligence artificielle aident à repérer l'actualité et à ré
 
 Chaque page cite ses sources : documents officiels (résumé des caractéristiques du produit, notice, ANSM, HAS, Agence européenne des médicaments), recommandations de sociétés savantes, articles publiés. La date de consultation de chaque source est indiquée.
 
+## Ce qui est établi, ce qui est seulement signalé
+
+Le site distingue un effet indésirable établi, décrit dans le résumé des caractéristiques du produit, d'un effet seulement signalé : des cas rapportés, ou une association observée dans une étude. Il écrit « des cas ont été rapportés » quand c'est tout ce que l'on sait, et non « ce médicament provoque ». Une déclaration d'effet indésirable ne prouve pas, à elle seule, que le médicament en est la cause.
+
 ## Mises à jour et corrections
 
 Chaque page a une date de prochaine relecture. Elle est relue plus tôt si une de ses sources change. Une erreur est corrigée avec un erratum daté et visible.

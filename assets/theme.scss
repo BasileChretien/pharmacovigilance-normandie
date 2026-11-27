@@ -214,6 +214,12 @@ summary:focus-visible,
   .navbar .nav-link { padding: 0.3rem 0.6rem !important; font-size: 0.95rem; }
 }
 
+// "In English": one page for visitors, kept small at the end of the menu.
+.navbar .nav-link[href*="normandie/en/"] {
+  font-size: 0.85rem !important;
+  color: $pv-ink-quiet !important;
+}
+
 // Prototype notice under the navbar: present, but quiet.
 .quarto-announcement {
   background: $pv-amber-tint !important;
@@ -667,7 +673,14 @@ main table tbody tr:nth-child(even) td { background: rgba(238, 246, 250, 0.6); }
 .nav-footer a:focus-visible { outline-color: $pv-or; }
 // Footer links keep each label on one line; the list wraps instead.
 .nav-footer .footer-items { flex-wrap: wrap; justify-content: flex-end; }
-.nav-footer .footer-items .nav-link { white-space: nowrap; }
+.nav-footer .footer-items { row-gap: 0.25rem; }
+// At least 24 px targets, spaced apart (WCAG 2.2, 2.5.8).
+.nav-footer .footer-items .nav-link {
+  white-space: nowrap;
+  display: inline-block;
+  min-height: 24px;
+  padding: 0.3rem 0.5rem;
+}
 .logo-partenaire {
   height: 46px;
   width: auto;
@@ -780,6 +793,25 @@ body {
 }
 .hero-recherche:hover { border-color: $pv-signal; }
 .hero-recherche svg { flex: none; color: $pv-signal; }
+// Example searches under the search field: each opens the site search, already filled in.
+.hero-exemples {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin: -0.5rem 0 1.25rem;
+  font-size: 0.9rem;
+  color: $pv-ink-quiet;
+}
+.hero-exemples a {
+  padding: 0.2rem 0.7rem;
+  border: 1px solid $pv-rule;
+  border-radius: 999px;
+  background: $pv-paper;
+  text-decoration: none;
+  font-weight: 600;
+}
+.hero-exemples a:hover { border-color: $pv-signal; }
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -1167,6 +1199,13 @@ a[href^="tel:"]::after {
   .encadre, .encadre-pratique, .sources-relecture { break-inside: avoid; }
   a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.8em; word-break: break-all; }
   .hero-figure, .rubriques, .publics { display: none !important; }
+}
+
+// Last-update date (front matter mise_a_jour), shown at the top of the page.
+.mise-a-jour {
+  font-family: $font-family-monospace;
+  font-size: 0.85rem;
+  color: $pv-ink-quiet;
 }
 
 // Editorial placeholders, marked by the page-meta filter.

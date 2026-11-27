@@ -44,7 +44,20 @@ par page (`docs/relecture.md`).
 
 ## À faire côté technique
 
-- [ ] Brancher le fil des alertes officielles (ANSM, EMA) : script de collecte.
+Prochaines pull requests, dans l'ordre (décidé le 27/11/2026) :
+
+- [ ] Liens simples : EudraVigilance (adrreports.eu, avec l'avertissement « un nombre de
+      déclarations n'est pas un risque »), Thériaque (lien seulement), OMS–UMC, ARS et CPias
+      Normandie, ameli.fr et vaccination-info-service.fr, GPR (après vérification du site).
+- [ ] Fil des alertes officielles : flux RSS de l'ANSM (filtrables par domaine médical) et de
+      l'EMA, récupérés à la construction (titre, date, lien, sans réécriture), reconstruit
+      chaque semaine ; date de mise à jour visible et responsable nommé.
+- [ ] Liens « notice officielle » et « RCP » sur chaque fiche, générés depuis les fichiers
+      ouverts de la base de données publique des médicaments, avec contrôle des noms encore
+      commercialisés.
+- [ ] Recherche par nom de médicament (marque et DCI) depuis la même base, présentée comme
+      pages officielles externes.
+- [ ] Lien « Signaler une correction » : adresse retenue pharmacovigilance@chu-caen.fr (fait).
 - [ ] Liste des publications générée depuis ORCID et OpenAlex.
 - [ ] Les 52 figures marquées `FIGURE À FAIRE`.
 - [ ] Contrôles automatiques : mode « site » dans manuscript-guard ou script séparé (décision).

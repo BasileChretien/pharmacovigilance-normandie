@@ -18,6 +18,7 @@ local LIBELLES = {
     brouillon = "Brouillon à relire : ce contenu n’a pas encore été validé par un pharmacologue.",
     sources = "Sources et relecture",
     plus_loin = "Pour aller plus loin",
+    maj = "Dernière mise à jour : %s.",
     consulte = "consulté le",
     relu = "Relu par %s le %s.",
     pas_relu = "Pas encore relu.",
@@ -27,6 +28,7 @@ local LIBELLES = {
     brouillon = "Draft to be reviewed: a pharmacologist has not yet checked this content.",
     sources = "Sources and review",
     plus_loin = "Further reading (in French)",
+    maj = "Last updated: %s.",
     consulte = "accessed",
     relu = "Reviewed by %s on %s.",
     pas_relu = "Not reviewed yet.",
@@ -293,6 +295,16 @@ function Pandoc(doc)
       pandoc.Attr("", { "statut-brouillon" }, { { "role", "note" } })
     )
     doc.blocks:insert(1, bandeau)
+  end
+
+  -- A visible last-update date (front matter mise_a_jour), for pages that must stay
+  -- current, such as the official alerts feed: a stale feed must look stale.
+  local maj = meta_str(meta, "mise_a_jour")
+  if maj then
+    local position = statut == "brouillon" and 2 or 1
+    doc.blocks:insert(position, pandoc.Para({
+      pandoc.Span(pandoc.Inlines(string.format(libelles.maj, date_fr(maj))), pandoc.Attr("", { "mise-a-jour" })),
+    }))
   end
 
   local liens = plus_loin_list(meta)
