@@ -539,4 +539,4 @@ def test_the_bulletin_folder_is_not_read(tmp_path):
     (tmp_path / "bulletin" / "numeros" / "n.qmd").write_text(
         "---\ntitle: N\nsubstances: [ibuprofène]\n---\n", encoding="utf-8"
     )
-    assert mb.lire_pages(tmp_path) == ({}, {})
+    assert mb.lire_pages(tmp_path) == ({}, {}, {})
