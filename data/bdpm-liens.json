@@ -641,6 +641,33 @@
    }
   }
  },
+ "pages_lues": [
+  "medicaments/classes/ains.qmd",
+  "medicaments/classes/anticoagulants-oraux.qmd",
+  "medicaments/classes/antidepresseurs.qmd",
+  "medicaments/classes/antidiabetiques.qmd",
+  "medicaments/classes/antihypertenseurs.qmd",
+  "medicaments/classes/benzodiazepines-apparentes.qmd",
+  "medicaments/classes/corticoides-oraux.qmd",
+  "medicaments/classes/fluoroquinolones.qmd",
+  "medicaments/classes/ipp.qmd",
+  "medicaments/classes/isotretinoine.qmd",
+  "medicaments/classes/levothyroxine.qmd",
+  "medicaments/classes/methotrexate.qmd",
+  "medicaments/classes/opioides.qmd",
+  "medicaments/classes/statines.qmd",
+  "medicaments/classes/valproate-teratogenes.qmd",
+  "medicaments/maux-courants/angine-mal-de-gorge.qmd",
+  "medicaments/maux-courants/brulures-estomac.qmd",
+  "medicaments/maux-courants/constipation.qmd",
+  "medicaments/maux-courants/cystite.qmd",
+  "medicaments/maux-courants/diarrhee-aigue.qmd",
+  "medicaments/maux-courants/fievre-douleur-enfant.qmd",
+  "medicaments/maux-courants/insomnie.qmd",
+  "medicaments/maux-courants/lombalgie.qmd",
+  "medicaments/maux-courants/migraine.qmd",
+  "medicaments/maux-courants/rhume-toux.qmd"
+ ],
  "cites": {
   "60161143": {
    "nom": "TRIATEC 10 mg, comprimé sécable",

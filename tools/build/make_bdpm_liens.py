@@ -3,10 +3,12 @@
 For each substance listed in a page's front matter (substances: [...]), picks one
 marketed product as an example of its official notice and SmPC: a product with that
 substance alone, an oral form first, then the princeps (reference medicine). A page that
-cites in its sources a marketed product with that substance alone gets that product as
-its own example instead ("pages" in the output). It also
-records the marketing status of every BDPM product the pages cite, so that
-tools/checks/check_content.py can flag a product no longer marketed.
+cites in its sources (front matter sources:, not the text) a marketed product with that
+substance alone gets that product as its own example instead ("pages" in the output;
+"pages_lues" names every page that lists substances, so that the filter can warn when a
+page's path matches none). It also records the marketing status of every BDPM product
+the pages cite, anywhere in the page, so that tools/checks/check_content.py can flag a
+product no longer marketed.
 
 Reads the cache written by tools/build/fetch_bdpm.py (data/bdpm/) and writes
 data/bdpm-liens.json, read by assets/filters/page-meta.lua ("Notices et RCP officiels").
@@ -228,26 +230,51 @@ def _front_matter(text: str) -> dict:
     return meta if isinstance(meta, dict) else {}
 
 
-def lire_pages(root: Path) -> tuple[dict[str, list[str]], dict[str, list[str]]]:
-    """Substances listed by each page, and the pages citing each BDPM product."""
+def _cites_en_sources(meta: dict) -> list[str]:
+    """The BDPM products linked from the front matter's sources (url fields)."""
+    sources = meta.get("sources")
+    urls = (
+        [s.get("url") for s in sources if isinstance(s, dict)]
+        if isinstance(sources, list)
+        else []
+    )
+    trouves = (_CITE.search(u) for u in urls if isinstance(u, str))
+    return list(dict.fromkeys(m.group(1) for m in trouves if m))
+
+
+def lire_pages(
+    root: Path,
+) -> tuple[dict[str, list[str]], dict[str, list[str]], dict[str, list[str]]]:
+    """Substances listed by each page; the pages citing each BDPM product anywhere (for
+    the marketing check); the pages citing it in their sources (for the page examples)."""
     substances: dict[str, list[str]] = {}
     cites: dict[str, list[str]] = {}
+    en_sources: dict[str, list[str]] = {}
     for path in sorted(root.rglob("*.qmd")):
         rel = path.relative_to(root)
         if any(part in EXCLUDED_DIRS for part in rel.parts):
             continue
         text = path.read_text(encoding="utf-8")
-        listed = _front_matter(text).get("substances") or []
+        meta = _front_matter(text)
+        listed = meta.get("substances") or []
         if listed:
             substances[rel.as_posix()] = [str(s) for s in listed]
         for cis in dict.fromkeys(_CITE.findall(text)):
             cites.setdefault(cis, []).append(rel.as_posix())
-    return substances, cites
+        for cis in _cites_en_sources(meta):
+            en_sources.setdefault(cis, []).append(rel.as_posix())
+    return substances, cites, en_sources
 
 
 def construire(
-    base: Base, substances: dict, cites: dict, mis_a_jour: str | None
+    base: Base,
+    substances: dict,
+    cites: dict,
+    mis_a_jour: str | None,
+    en_sources: dict | None = None,
 ) -> dict:
+    """The output: site-wide examples, page examples (from en_sources only), and the
+    marketing status of every product in cites."""
     choix = {}
     for listed in substances.values():
         for substance in listed:
@@ -255,9 +282,10 @@ def construire(
             if found:
                 choix[substance] = found
     # A page's own example: a product it cites in its sources, when it differs from the
-    # site-wide one (the children's sheet cites a suspension, not an adult tablet).
+    # site-wide one (the children's sheet cites a suspension, not an adult tablet). A
+    # product named in the text (one to avoid, say) is never the example.
     par_page: dict[str, list[str]] = {}
-    for cis, pages_citant in cites.items():
+    for cis, pages_citant in (en_sources or {}).items():
         for page in pages_citant:
             par_page.setdefault(page, []).append(cis)
     pages: dict[str, dict] = {}
@@ -275,6 +303,7 @@ def construire(
         "mis_a_jour": mis_a_jour,
         "substances": choix,
         "pages": pages,
+        "pages_lues": sorted(substances),
         "cites": statuts,
     }
 
@@ -311,8 +340,8 @@ def main() -> int:
     mis_a_jour = (
         date_specialites(page.read_text(encoding="utf-8")) if page.exists() else None
     )
-    substances, cites = lire_pages(ROOT)
-    data = construire(base, substances, cites, mis_a_jour)
+    substances, cites, en_sources = lire_pages(ROOT)
+    data = construire(base, substances, cites, mis_a_jour, en_sources)
     OUT.write_text(
         json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
     )
