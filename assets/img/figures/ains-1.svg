@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 224" width="440" height="224" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <defs>
+    <g id="ains-1-comprime">
+      <circle cx="0" cy="0" r="10" fill="#ffffff" stroke="#0b6b45" stroke-width="2"/>
+      <line x1="-6" y1="0" x2="6" y2="0" stroke="#0b6b45" stroke-width="2"/>
+    </g>
+    <g id="ains-1-medecin" fill="none" stroke="#7a4f00" stroke-width="2.2" stroke-linecap="round">
+      <path d="M-8 -11 V-3 a8 8 0 0 0 16 0 V-11"/>
+      <path d="M0 5 V8 a6 6 0 0 0 12 0 V2"/>
+      <circle cx="12" cy="0" r="3"/>
+    </g>
+  </defs>
+
+  <text x="16" y="22" fill="#46586a">Jours de traitement sans avis médical</text>
+  <g font-weight="700" text-anchor="middle">
+    <text x="123" y="52">1</text><text x="169" y="52">2</text><text x="215" y="52">3</text><text x="261" y="52">4</text>
+    <text x="307" y="52">5</text><text x="353" y="52">6</text><text x="399" y="52">7</text>
+  </g>
+
+  <!-- Fever: 3 days -->
+  <text x="16" y="90" font-size="18" font-weight="700">Fièvre</text>
+  <text x="16" y="112">3 jours</text>
+  <g fill="#e6f7ef" stroke="#0b6b45" stroke-width="2">
+    <rect x="102" y="64" width="42" height="64" rx="6"/><rect x="148" y="64" width="42" height="64" rx="6"/><rect x="194" y="64" width="42" height="64" rx="6"/>
+  </g>
+  <use href="#ains-1-comprime" x="123" y="96"/><use href="#ains-1-comprime" x="169" y="96"/><use href="#ains-1-comprime" x="215" y="96"/>
+  <rect x="241" y="65" width="178" height="62" rx="6" fill="#ffffff" stroke="#7a4f00" stroke-width="2" stroke-dasharray="6 4"/>
+  <use href="#ains-1-medecin" x="280" y="96"/>
+  <text x="304" y="102" font-weight="700" fill="#7a4f00">Consultez</text>
+
+  <!-- Pain: 5 days -->
+  <text x="16" y="170" font-size="18" font-weight="700">Douleur</text>
+  <text x="16" y="192">5 jours</text>
+  <g fill="#e6f7ef" stroke="#0b6b45" stroke-width="2">
+    <rect x="102" y="144" width="42" height="64" rx="6"/><rect x="148" y="144" width="42" height="64" rx="6"/><rect x="194" y="144" width="42" height="64" rx="6"/>
+    <rect x="240" y="144" width="42" height="64" rx="6"/><rect x="286" y="144" width="42" height="64" rx="6"/>
+  </g>
+  <use href="#ains-1-comprime" x="123" y="176"/><use href="#ains-1-comprime" x="169" y="176"/><use href="#ains-1-comprime" x="215" y="176"/>
+  <use href="#ains-1-comprime" x="261" y="176"/><use href="#ains-1-comprime" x="307" y="176"/>
+  <rect x="333" y="145" width="86" height="62" rx="6" fill="#ffffff" stroke="#7a4f00" stroke-width="2" stroke-dasharray="6 4"/>
+  <use href="#ains-1-medecin" x="372" y="162"/>
+  <text x="376" y="192" text-anchor="middle" font-weight="700" fill="#7a4f00">Consultez</text>
+
+</svg>

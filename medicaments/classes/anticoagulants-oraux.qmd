@@ -62,7 +62,7 @@ Il existe deux familles :
 
 Le nom écrit en gros sur votre boîte est souvent le nom de marque, entre parenthèses ci-dessus. Les génériques portent le nom de la molécule.
 
-<!-- FIGURE À FAIRE : schéma simple de la coagulation montrant où agissent les AVK (vitamine K, foie) et les AOD (facteur Xa, thrombine), avec un caillot qui se forme moins vite. -->
+{{< figure-svg anticoagulants-oraux-1 alt="Schéma de la coagulation. Le foie, avec la vitamine K, fabrique les facteurs de la coagulation. Le facteur Xa, puis la thrombine, forment le caillot. Les AVK agissent contre la vitamine K. Les AOD bloquent le facteur Xa ou la thrombine. Le caillot se forme moins vite." legende="Les deux familles freinent la coagulation à des endroits différents." >}}
 
 ### Comment le prendre ?
 
@@ -71,7 +71,7 @@ Le nom écrit en gros sur votre boîte est souvent le nom de marque, entre paren
 - L'apixaban et le dabigatran se prennent deux fois par jour. Le rivaroxaban et l'édoxaban, une fois par jour. Le rivaroxaban se prend au repas.
 - Gardez sur vous la carte qui signale votre anticoagulant.
 
-<!-- FIGURE À FAIRE : frise d'une journée montrant le moment de prise (soir pour un AVK ; matin et soir pour l'apixaban ou le dabigatran ; une prise au repas pour le rivaroxaban). -->
+{{< figure-svg anticoagulants-oraux-2 alt="Moment de prise selon le médicament. AVK : une fois par jour, plutôt le soir. Apixaban et dabigatran : deux fois par jour, matin et soir. Rivaroxaban : une fois par jour, au repas." legende="Prenez votre anticoagulant chaque jour à la même heure." >}}
 
 ### Que faire en cas d'oubli ?
 

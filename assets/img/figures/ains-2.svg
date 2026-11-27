@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 244" width="440" height="244" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <defs>
+    <pattern id="ains-2-hachures" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="10" height="10" fill="#fdeceb"/>
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#b3261e" stroke-width="3"/>
+    </pattern>
+  </defs>
+
+  <text x="16" y="22" fill="#46586a">Mois de grossesse</text>
+  <g font-weight="700" text-anchor="middle">
+    <text x="38" y="48">1</text><text x="82" y="48">2</text><text x="126" y="48">3</text><text x="170" y="48">4</text>
+    <text x="214" y="48">5</text><text x="258" y="48">6</text><text x="302" y="48">7</text><text x="346" y="48">8</text><text x="390" y="48">9</text>
+  </g>
+
+  <!-- Months 1 to 5: only if prescribed -->
+  <rect x="17" y="60" width="218" height="80" rx="8" fill="#fdf1d8" stroke="#7a4f00" stroke-width="2"/>
+  <text x="32" y="94" font-weight="700" fill="#7a4f00">Seulement si le</text>
+  <text x="32" y="116" font-weight="700" fill="#7a4f00">médecin l'a prescrit</text>
+
+  <!-- From month 6: forbidden -->
+  <rect x="237" y="60" width="175" height="80" rx="8" fill="url(#ains-2-hachures)" stroke="#b3261e" stroke-width="2"/>
+  <rect x="264" y="72" width="120" height="30" rx="6" fill="#b3261e"/>
+  <text x="324" y="93" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">Interdit</text>
+  <rect x="242" y="108" width="166" height="26" rx="4" fill="#ffffff"/>
+  <text x="325" y="126" text-anchor="middle" fill="#b3261e">même une seule prise</text>
+
+  <!-- Start of month 6 -->
+  <line x1="236" y1="140" x2="236" y2="160" stroke="#10283a" stroke-width="2"/>
+  <text x="244" y="174">Début du 6e mois :</text>
+  <text x="244" y="194">24 semaines</text>
+  <text x="244" y="214">d'aménorrhée</text>
+
+  <text x="16" y="174" fill="#46586a">Le célécoxib est</text>
+  <text x="16" y="194" fill="#46586a">interdit pendant toute</text>
+  <text x="16" y="214" fill="#46586a">la grossesse.</text>
+</svg>

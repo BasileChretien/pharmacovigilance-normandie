@@ -164,4 +164,16 @@ légende (dans la page, raccourci `figure-svg`).
 | bon-usage/ecraser-couper | Arbre de décision avant d'écraser (soignants) | Fidèle aux trois recommandations de la liste OMéDIT reprises dans la page |
 | bon-usage/interactions | Associations à éviter avec un anti-inflammatoire, le millepertuis, le pamplemousse, l'alcool | Liste par produit ajouté plutôt que tableau à double entrée (illisible sur téléphone à 4 colonnes) ; 13 exemples choisis parmi ceux de la page ; niveaux Interdit, À éviter, Précaution = contre-indication, association déconseillée, précaution d'emploi |
 | bon-usage/quand-prendre | Frise d'une journée, médicaments du tableau | Oméprazole et hydrochlorothiazide (« le matin ») placés au petit-déjeuner ; la metformine à chaque repas, avec la mention « 2 ou 3 prises par jour » ; l'alendronate « jamais au coucher » ; le furosémide et le pantoprazole, sans moment fixe dans la page, ne figurent pas |
+| medicaments/classes/ains | Semaine : 3 jours pour la fièvre, 5 pour la douleur, puis « Consultez » | Durées « sans avis médical », comme le texte |
+| medicaments/classes/ains | Frise des 9 mois de grossesse | « Seulement si le médecin l'a prescrit » jusqu'à la fin du 5e mois, « interdit, même une seule prise » dès le début du 6e (24 semaines d'aménorrhée) ; le célécoxib, interdit toute la grossesse, est rappelé sous la frise d'après le texte |
+| medicaments/classes/anticoagulants-oraux | Schéma de la coagulation | Simplifié : foie et vitamine K, facteur Xa, thrombine, caillot. Les AOD « bloquent le facteur Xa ou la thrombine », sans dire lequel, la page ne le précisant pas |
+| medicaments/classes/anticoagulants-oraux | Moment de prise | AVK « plutôt le soir » (« de préférence » dans le texte) ; rivaroxaban « au repas », sans dire lequel ; l'édoxaban (une fois par jour) n'est pas dessiné, la consigne ne le citant pas |
+| medicaments/classes/antidepresseurs | Frise du traitement | Durées de la page (2 à 4 semaines, au moins 6 mois après la guérison) ; « effets indésirables possibles, pas encore d'effet » pour les semaines 1 à 2 vient de la consigne |
+| medicaments/classes/antidepresseurs | Deux grilles de 100 personnes (sertraline) | 23 et 12 sur 100, chiffres de la page |
+| medicaments/classes/antidiabetiques | Semaine du sémaglutide | Exemple d'une injection le lundi : rattrapage possible jusqu'au samedi (« dans les 5 jours »), attente le dimanche |
+| medicaments/classes/antidiabetiques | Signes de l'hypoglycémie, que prendre | Signes de la page ; « Oui » au sucre et à la boisson sucrée, « Non » à l'édulcorant |
+| medicaments/classes/antihypertenseurs | Tension mesurée couché, assis, debout | La personne debout se lève en se tenant à une chaise (consigne) |
+| medicaments/classes/antihypertenseurs | Trois médicaments, un rein | « Ensemble, ils peuvent bloquer les reins » (consigne) ; « surtout si vous êtes âgé ou buvez peu » (texte) |
+| medicaments/classes/benzodiazepines-apparentes | Escalier de la baisse des doses | Ni durée ni dose chiffrées ; le palier plus long « en cas de gêne » vient de la consigne et du texte professionnel (« revenir au palier précédent, puis réduire plus lentement ») |
+| medicaments/classes/corticoides-oraux | Frise d'une journée | Une prise le matin, au petit-déjeuner ; la note « forte dose au début : deux prises possibles » reprend le texte |
 

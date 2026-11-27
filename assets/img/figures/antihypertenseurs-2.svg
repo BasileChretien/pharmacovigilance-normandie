@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 352" width="440" height="352" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <defs>
+    <marker id="antihypertenseurs-2-fleche" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#b3261e"/>
+    </marker>
+  </defs>
+
+  <!-- Three medicine boxes -->
+  <g stroke="#46586a" stroke-width="2">
+    <rect x="12" y="12" width="132" height="76" rx="8" fill="#eef6fa"/>
+    <rect x="154" y="12" width="132" height="76" rx="8" fill="#eef6fa"/>
+    <rect x="296" y="12" width="132" height="76" rx="8" fill="#eef6fa"/>
+  </g>
+  <g font-weight="700" text-anchor="middle">
+    <text x="78" y="44">IEC</text>
+    <text x="78" y="66">ou sartan</text>
+    <text x="220" y="56">Diurétique</text>
+    <text x="362" y="44">Anti-</text>
+    <text x="362" y="66">inflammatoire</text>
+  </g>
+
+  <!-- They converge -->
+  <g stroke="#b3261e" stroke-width="3" fill="none" marker-end="url(#antihypertenseurs-2-fleche)">
+    <path d="M78 88 Q90 140 184 168"/>
+    <path d="M220 88 V156"/>
+    <path d="M362 88 Q350 140 256 168"/>
+  </g>
+
+  <!-- The kidney, turning grey -->
+  <path d="M196 170 C170 170 160 196 162 220 C164 248 186 264 210 262 C228 260 232 246 226 236 C220 226 222 214 232 208 C244 200 248 186 238 176 C230 168 214 168 196 170 Z" fill="#46586a" stroke="#10283a" stroke-width="2.5"/>
+  <path d="M232 214 C246 216 258 214 270 208" fill="none" stroke="#10283a" stroke-width="2.5"/>
+  <text x="290" y="222" font-weight="700">Rein</text>
+
+  <rect x="12" y="282" width="416" height="58" rx="10" fill="#fdeceb"/>
+  <text x="28" y="306" font-weight="700" fill="#b3261e">Ensemble, ils peuvent bloquer les reins,</text>
+  <text x="28" y="328">surtout si vous êtes âgé ou buvez peu.</text>
+</svg>

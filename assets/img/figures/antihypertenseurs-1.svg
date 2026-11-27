@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 304" width="440" height="304" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <defs>
+    <g id="antihypertenseurs-1-cadran">
+      <circle r="10" fill="#ffffff" stroke="#10283a" stroke-width="2"/>
+      <path d="M0 0 L5 -6" stroke="#b3261e" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </defs>
+  <text x="16" y="22" fill="#46586a">Le médecin mesure la tension :</text>
+
+  <!-- Lying -->
+  <rect x="12" y="36" width="136" height="164" rx="10" fill="#eef6fa"/>
+  <rect x="22" y="150" width="116" height="12" rx="3" fill="#ffffff" stroke="#46586a" stroke-width="2"/>
+  <path d="M22 162 V176 M138 162 V176" stroke="#46586a" stroke-width="3"/>
+  <circle cx="38" cy="134" r="9" fill="#073f6e"/>
+  <g stroke="#073f6e" stroke-width="9" stroke-linecap="round" fill="none">
+    <path d="M52 138 H100 L128 140"/>
+    <path d="M60 136 L84 130"/>
+  </g>
+  <rect x="62" y="126" width="12" height="10" rx="2" fill="#e7b03b" stroke="#10283a" stroke-width="1.5" transform="rotate(-14 68 131)"/>
+  <path d="M68 126 Q72 100 92 96" fill="none" stroke="#46586a" stroke-width="1.5"/>
+  <use href="#antihypertenseurs-1-cadran" x="100" y="94"/>
+  <text x="80" y="226" text-anchor="middle" font-size="17" font-weight="700">Couché</text>
+
+  <!-- Sitting -->
+  <rect x="152" y="36" width="136" height="164" rx="10" fill="#eef6fa"/>
+  <path d="M178 112 V184 M178 140 H232 M232 140 V184" fill="none" stroke="#46586a" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="196" cy="74" r="9" fill="#073f6e"/>
+  <g stroke="#073f6e" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M196 90 V132 H234 V178"/>
+    <path d="M196 98 L214 118 L236 112"/>
+  </g>
+  <rect x="200" y="98" width="12" height="10" rx="2" fill="#e7b03b" stroke="#10283a" stroke-width="1.5" transform="rotate(48 206 103)"/>
+  <path d="M212 104 Q240 86 254 78" fill="none" stroke="#46586a" stroke-width="1.5"/>
+  <use href="#antihypertenseurs-1-cadran" x="262" y="72"/>
+  <text x="220" y="226" text-anchor="middle" font-size="17" font-weight="700">Assis</text>
+
+  <!-- Standing, holding a chair -->
+  <rect x="292" y="36" width="136" height="164" rx="10" fill="#eef6fa"/>
+  <path d="M398 92 V186 M366 140 H398 M366 140 V186" fill="none" stroke="#46586a" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="330" cy="58" r="9" fill="#073f6e"/>
+  <g stroke="#073f6e" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M330 74 V128"/>
+    <path d="M330 128 L322 182 M330 128 L340 182"/>
+    <path d="M330 84 L364 96 L394 96"/>
+  </g>
+  <rect x="338" y="84" width="12" height="10" rx="2" fill="#e7b03b" stroke="#10283a" stroke-width="1.5" transform="rotate(20 344 89)"/>
+  <path d="M344 84 Q350 62 366 58" fill="none" stroke="#46586a" stroke-width="1.5"/>
+  <use href="#antihypertenseurs-1-cadran" x="378" y="56"/>
+  <text x="360" y="226" text-anchor="middle" font-size="17" font-weight="700">Debout</text>
+  <text x="360" y="248" text-anchor="middle">se lever</text>
+  <text x="360" y="268" text-anchor="middle">doucement,</text>
+  <text x="360" y="288" text-anchor="middle">en se tenant</text>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 340" width="440" height="340" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <!-- Time line -->
+  <line x1="116" y1="44" x2="116" y2="292" stroke="#d5e2ea" stroke-width="4"/>
+  <g fill="#ffffff" stroke="#073f6e" stroke-width="3">
+    <circle cx="116" cy="44" r="8"/><circle cx="116" cy="124" r="8"/><circle cx="116" cy="204" r="8"/><circle cx="116" cy="292" r="8"/>
+  </g>
+
+  <!-- Weeks 1 to 2 -->
+  <text x="16" y="38" font-weight="700">Semaines</text>
+  <text x="16" y="58" font-weight="700">1 à 2</text>
+  <rect x="136" y="12" width="288" height="64" rx="10" fill="#ffffff" stroke="#46586a" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="150" y="38">Effets indésirables possibles,</text>
+  <text x="150" y="60">pas encore d'effet</text>
+
+  <!-- Weeks 2 to 4 -->
+  <text x="16" y="118" font-weight="700">Semaines</text>
+  <text x="16" y="138" font-weight="700">2 à 4</text>
+  <rect x="136" y="92" width="288" height="64" rx="10" fill="#eef6fa"/>
+  <text x="150" y="130" font-size="17" font-weight="700">L'effet commence</text>
+
+  <!-- After recovery -->
+  <text x="16" y="198" font-weight="700">Après la</text>
+  <text x="16" y="218" font-weight="700">guérison</text>
+  <rect x="136" y="172" width="288" height="64" rx="10" fill="#e6f7ef" stroke="#0b6b45" stroke-width="2"/>
+  <text x="150" y="198" font-size="17" font-weight="700" fill="#0b6b45">Au moins 6 mois encore,</text>
+  <text x="150" y="220">pour éviter une rechute</text>
+
+  <!-- Then -->
+  <text x="16" y="298" font-weight="700">Ensuite</text>
+  <rect x="136" y="252" width="288" height="76" rx="10" fill="#eef6fa"/>
+  <text x="150" y="282">Baisse progressive de la</text>
+  <text x="150" y="304">dose, avec le médecin</text>
+  <path d="M352 272 H368 V284 H384 V296 H400 V308 H412" fill="none" stroke="#073f6e" stroke-width="3" stroke-linejoin="round"/>
+</svg>

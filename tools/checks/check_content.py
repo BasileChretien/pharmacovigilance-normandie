@@ -120,18 +120,22 @@ def clean_inline(text: str) -> str:
     return text.strip()
 
 
-def _shortcode_text(match: re.Match) -> str:
-    """A figure is read as its alternative text and its caption (both are read by the
-    patient); any other shortcode is not prose."""
+def _shortcode_text(match: re.Match, keys: tuple[str, ...] = ("alt", "legende")) -> str:
+    """A figure is read as its alternative text and its caption (both reach the patient);
+    any other shortcode is not prose."""
     if match.group(1) != "figure-svg":
         return ""
     kwargs = dict(_KWARG.findall(match.group(2)))
-    return "\n\n".join(kwargs[k] for k in ("alt", "legende") if kwargs.get(k))
+    return "\n\n".join(kwargs[k] for k in keys if kwargs.get(k))
 
 
-def strip_markup(text: str) -> str:
-    """Remove comments and code blocks, and replace shortcodes by the text they show."""
-    return _SHORTCODE.sub(_shortcode_text, _FENCED_CODE.sub("", _COMMENT.sub("", text)))
+def strip_markup(text: str, visible_only: bool = False) -> str:
+    """Remove comments and code blocks, and replace shortcodes by the text they carry.
+    With visible_only, a figure keeps only its caption: its alternative text is read by
+    screen readers but takes no room on the page."""
+    keys = ("legende",) if visible_only else ("alt", "legende")
+    text = _FENCED_CODE.sub("", _COMMENT.sub("", text))
+    return _SHORTCODE.sub(lambda m: _shortcode_text(m, keys), text)
 
 
 def split_sentences(text: str) -> list[str]:
@@ -299,7 +303,7 @@ def patient_rules(patient: str, posix: str, level: str, jargon: dict[str, str]) 
             findings.append(Finding(level, "PAT-SIGLE", f"sigle « {acronym} » non développé à sa première apparition"))
 
     words_since_heading = 0
-    for line in strip_markup(patient).splitlines():
+    for line in strip_markup(patient, visible_only=True).splitlines():
         stripped = line.strip()
         if stripped.startswith("#"):
             words_since_heading = 0

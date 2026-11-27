@@ -86,7 +86,7 @@ L'hydrochlorothiazide rend la peau sensible au soleil. Il augmente aussi le risq
 
 Avec l'âge, la tension peut chuter quand on se lève, et faire tomber. Votre médecin mesure donc aussi votre tension debout. Après 80 ans, il limite en général le traitement à trois médicaments.
 
-<!-- FIGURE À FAIRE : trois vignettes « couché », « assis », « debout » avec un tensiomètre ; la troisième montre une personne qui se tient à une chaise pour se lever doucement. -->
+{{< figure-svg antihypertenseurs-1 alt="Trois dessins : la tension mesurée couché, assis, puis debout. Debout, la personne se lève doucement en se tenant à une chaise." legende="Avec l'âge, la tension peut chuter quand on se lève : le médecin la mesure aussi debout." >}}
 
 ::: {.quand-consulter}
 - Gonflement du visage, des lèvres, de la langue ou de la gorge, gêne pour avaler ou respirer : appelez le 15.
@@ -101,7 +101,7 @@ Avec l'âge, la tension peut chuter quand on se lève, et faire tomber. Votre m�
 
 Le plus grand danger vient des anti-inflammatoires non stéroïdiens (AINS) : ibuprofène, kétoprofène, naproxène, diclofénac. Certains sont vendus sans ordonnance. Pris avec un IEC ou un sartan et un diurétique, ils peuvent abîmer brutalement les reins. Le risque est plus grand si vous êtes âgé ou si vous buvez peu.
 
-<!-- FIGURE À FAIRE : schéma « trois médicaments, un rein » : une boîte d'IEC ou de sartan, une boîte de diurétique et une boîte d'anti-inflammatoire convergent vers un rein qui devient gris ; légende « ensemble, ils peuvent bloquer les reins ». -->
+{{< figure-svg antihypertenseurs-2 alt="Trois boîtes de médicaments convergent vers un rein grisé : un IEC ou un sartan, un diurétique, un anti-inflammatoire. Ensemble, ils peuvent bloquer les reins, surtout chez une personne âgée ou qui boit peu." legende="Un anti-inflammatoire pris avec un IEC ou un sartan et un diurétique peut abîmer brutalement les reins." >}}
 
 Demandez aussi conseil avant de prendre :
 

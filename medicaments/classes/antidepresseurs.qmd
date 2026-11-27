@@ -68,7 +68,7 @@ Prenez votre comprimé une fois par jour, à heure fixe. La sertraline se prend 
 
 Vous vous sentirez mieux après 2 à 4 semaines en général. Continuez même si vous ne sentez encore rien. Après la guérison, le traitement dure en général encore au moins 6 mois. Cela évite une rechute.
 
-<!-- FIGURE À FAIRE : frise du temps de traitement : semaines 1 à 2 « effets indésirables possibles, pas encore d'effet », semaines 2 à 4 « l'effet commence », puis « au moins 6 mois après la guérison », puis « baisse progressive de la dose avec le médecin ». -->
+{{< figure-svg antidepresseurs-1 alt="Frise du traitement. Semaines 1 à 2 : effets indésirables possibles, pas encore d'effet. Semaines 2 à 4 : l'effet commence. Après la guérison : au moins 6 mois encore, pour éviter une rechute. Ensuite : baisse progressive de la dose, avec le médecin." legende="L'effet arrive en 2 à 4 semaines. Le traitement continue au moins 6 mois après la guérison." >}}
 
 En cas d'oubli, ne prenez pas de dose double. Prenez la dose suivante à l'heure habituelle.
 
@@ -120,7 +120,7 @@ Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre ph
 
 Un arrêt brutal peut donner des vertiges, des fourmillements, une anxiété, des nausées ou des troubles du sommeil. Dans une étude sur la sertraline, 23 personnes sur 100 qui arrêtaient ont eu ces signes. C'était 12 sur 100 chez celles qui continuaient. Ils passent souvent en 2 semaines, parfois en plusieurs mois. Votre médecin baisse donc la dose peu à peu.
 
-<!-- FIGURE À FAIRE : deux grilles de 100 personnages côte à côte, même échelle : « ont arrêté la sertraline » (23 colorés) et « ont continué » (12 colorés), légende « personnes ayant eu des symptômes à l'arrêt ». -->
+{{< figure-svg antidepresseurs-2 alt="Deux grilles de 100 personnes. Parmi celles qui ont arrêté la sertraline, 23 sur 100 ont eu des symptômes à l'arrêt. Parmi celles qui ont continué, 12 sur 100." legende="Personnes ayant eu des symptômes à l'arrêt, dans une étude sur la sertraline." >}}
 
 ### Signaler un effet indésirable
 

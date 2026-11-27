@@ -80,7 +80,7 @@ Prenez la metformine au cours ou à la fin du repas. Le gliclazide se prend en u
 
 Le sémaglutide s'injecte une fois par semaine, le même jour, à l'heure de votre choix. En cas d'oubli, faites l'injection dans les 5 jours. Après 5 jours, attendez le jour habituel.
 
-<!-- FIGURE À FAIRE : frise d'une semaine (lundi à dimanche) avec une seringue le même jour chaque semaine ; une zone colorée « oubli : injection possible jusqu'à 5 jours après » puis une zone « au-delà : attendre le jour habituel ». -->
+{{< figure-svg antidiabetiques-1 alt="Semaine d'une personne qui fait son injection de sémaglutide le lundi. En cas d'oubli, l'injection reste possible jusqu'à 5 jours après, donc jusqu'au samedi. Le dimanche, elle attend le lundi suivant." legende="Une injection oubliée se rattrape dans les 5 jours." >}}
 
 Pour les comprimés oubliés, ne prenez jamais de dose double. Prenez la dose suivante à l'heure habituelle.
 
@@ -96,7 +96,7 @@ Avec la dapagliflozine, jusqu'à 1 personne sur 10 a une mycose (champignon) des
 
 Les sulfamides peuvent provoquer une hypoglycémie (baisse du sucre dans le sang). Le risque augmente si l'on ajoute un autre médicament du diabète à un sulfamide ou à l'insuline. Les signes sont : sueurs, tremblements, faim, cœur qui bat vite, confusion. Prenez alors du sucre ou une boisson sucrée. Les édulcorants (sucres de régime) ne marchent pas.
 
-<!-- FIGURE À FAIRE : silhouette entourée des signes de l'hypoglycémie (sueurs, tremblements, faim, palpitations, confusion), avec à côté un morceau de sucre et un verre de boisson sucrée, et un édulcorant barré. -->
+{{< figure-svg antidiabetiques-2 alt="Les signes d'une baisse du sucre dans le sang : sueurs, tremblements, faim, cœur qui bat vite, confusion. Que prendre : du sucre ou une boisson sucrée, pas d'édulcorant." legende="Face à ces signes : du sucre, pas d'édulcorant." >}}
 
 ::: {.quand-consulter}
 - Malaise avec sueurs ou confusion qui ne passe pas après avoir pris du sucre, ou perte de connaissance : appelez le 15.

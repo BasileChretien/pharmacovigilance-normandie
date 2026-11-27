@@ -92,6 +92,16 @@ def test_other_shortcodes_are_not_prose():
     assert cc.split_sentences(text) == ["Avant.", "Après."]
 
 
+def test_heading_spacing_counts_a_figure_caption_but_not_its_hidden_alternative_text():
+    alt = ". ".join(["Un mot de plus dans le texte alternatif"] * 20) + "."
+    figure = f'{{{{< figure-svg essai-1 alt="{alt}" legende="Une légende courte." >}}}}'
+    body = GOOD_PATIENT.replace("Prenez un comprimé chaque matin avec un verre d'eau.", figure)
+    assert "PAT-INTERTITRES" not in rules(check(page(body)))
+    long_caption = figure.replace('legende="Une légende courte."', f'legende="{alt}"')
+    body = GOOD_PATIENT.replace("Prenez un comprimé chaque matin avec un verre d'eau.", long_caption)
+    assert "PAT-INTERTITRES" in rules(check(page(body)))
+
+
 # --- rules -----------------------------------------------------------------
 
 def test_good_page_has_no_errors():

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 244" width="440" height="244" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <!-- The morning: sunrise and breakfast, the tablet -->
+  <rect x="12" y="12" width="128" height="176" rx="10" fill="#e6f7ef" stroke="#0b6b45" stroke-width="2"/>
+  <path d="M40 58 a14 14 0 0 1 28 0 Z" fill="#e7b03b" stroke="#10283a" stroke-width="1.5"/>
+  <path d="M34 58 H74 M54 34 V38 M40 40 l3 3 M68 40 l-3 3" stroke="#10283a" stroke-width="2" stroke-linecap="round"/>
+  <path d="M86 44 H106 V54 a8 8 0 0 1 -8 8 H94 a8 8 0 0 1 -8 -8 Z" fill="#ffffff" stroke="#10283a" stroke-width="2"/>
+  <path d="M106 47 h3 a4 4 0 0 1 0 8 h-3" fill="none" stroke="#10283a" stroke-width="2"/>
+  <text x="76" y="94" text-anchor="middle" font-size="17" font-weight="700">Matin</text>
+  <text x="76" y="114" text-anchor="middle">petit-déjeuner</text>
+  <circle cx="76" cy="146" r="18" fill="#073f6e"/>
+  <rect x="66" y="141" width="20" height="10" rx="5" fill="#ffffff" transform="rotate(-35 76 146)"/>
+  <text x="76" y="178" text-anchor="middle" font-weight="700" fill="#0b6b45">1 prise</text>
+
+  <!-- The rest of the day: nothing -->
+  <g fill="none" stroke="#46586a" stroke-width="2" stroke-dasharray="5 4">
+    <rect x="150" y="13" width="86" height="174" rx="10"/>
+    <rect x="246" y="13" width="86" height="174" rx="10"/>
+    <rect x="342" y="13" width="86" height="174" rx="10"/>
+  </g>
+  <circle cx="193" cy="50" r="11" fill="#e7b03b" stroke="#10283a" stroke-width="1.5"/>
+  <path d="M193 32 V35 M193 65 V68 M175 50 H178 M208 50 H211" stroke="#10283a" stroke-width="2" stroke-linecap="round"/>
+  <path d="M276 50 H302" stroke="#10283a" stroke-width="2"/>
+  <path d="M280 50 a9 9 0 0 1 18 0" fill="#e7b03b" stroke="#10283a" stroke-width="1.5"/>
+  <path d="M380 38 a12 12 0 1 0 10 18 a9 9 0 1 1 -10 -18 Z" fill="#e7b03b" stroke="#10283a" stroke-width="1.5"/>
+  <g text-anchor="middle" font-size="17" font-weight="700">
+    <text x="193" y="94">Midi</text><text x="289" y="94">Soir</text><text x="385" y="94">Nuit</text>
+  </g>
+  <g fill="none" stroke="#46586a" stroke-width="2" stroke-dasharray="4 3">
+    <circle cx="193" cy="146" r="16"/><circle cx="289" cy="146" r="16"/><circle cx="385" cy="146" r="16"/>
+  </g>
+  <g text-anchor="middle" fill="#46586a">
+    <text x="193" y="178">rien</text><text x="289" y="178">rien</text><text x="385" y="178">rien</text>
+  </g>
+
+  <text x="16" y="212" fill="#46586a">Forte dose au début : le médecin peut</text>
+  <text x="16" y="232" fill="#46586a">répartir la dose en deux prises.</text>
+</svg>

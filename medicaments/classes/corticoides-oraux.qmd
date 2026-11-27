@@ -44,7 +44,7 @@ Les corticoïdes (médicaments proches d'une hormone fabriquée par le corps, le
 
 Avalez les comprimés avec un peu d'eau, pendant le repas, en une prise le matin. Au début d'un traitement à forte dose, votre médecin peut répartir la dose en deux prises.
 
-<!-- FIGURE À FAIRE : frise d'une journée avec un soleil levant et un petit-déjeuner, le comprimé placé à ce moment ; le reste de la journée sans prise. Lisible en niveaux de gris. -->
+{{< figure-svg corticoides-oraux-1 alt="Frise d'une journée. Le matin, au petit-déjeuner, une prise. Midi, soir et nuit : aucune prise." legende="Prenez les comprimés en une fois, le matin, pendant le repas." >}}
 
 Si vous oubliez une prise, continuez le traitement normalement le lendemain.
 
