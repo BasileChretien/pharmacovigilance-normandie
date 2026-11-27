@@ -17,6 +17,7 @@ reviews it.
 - `uv run python tools/build/fetch_crpv.py` then `make_crpv_page.py` — refresh the list of the French CRPV (ANSM) for crpv/trouver-mon-crpv.qmd.
 - `uv run python tools/build/fetch_bdpm.py` then `make_bdpm_liens.py` and `make_bdpm_recherche.py` (index of medicaments/chercher.qmd, `assets/data/medicaments.json`) — monthly: official notice/SmPC links of the class sheets (front matter `substances:`) and marketing status of cited BDPM products (cache `data/bdpm/`, gitignored).
 - `uv run python tools/build/fetch_openmedic.py` then `make_openmedic.py` — yearly: reimbursed medicines in Normandy vs France (Open Medic + INSEE, cache `data/openmedic/`, gitignored) for normandie/medicaments-rembourses.qmd.
+- `uv run python tools/build/fetch_vigiking.py` then `make_vigiking_page.py` — at each new issue: archive of Vigiking issues (links to rfcrpv.fr) for vigiking/archives.qmd.
 - `uv run python tools/build/fetch_alertes.py` then `make_alertes_page.py` — refresh the official alerts feed (ANSM, EMA); the Pages build also runs both every Monday, stdlib only (runner's python3).
 
 Status and open tasks: `docs/STATUS.md`. Points for medical reviewers: `docs/relecture.md`.

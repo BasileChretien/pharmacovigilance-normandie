@@ -20,6 +20,6 @@ pour_aller_plus_loin:
 
 Vigiking est le bulletin des centres régionaux de pharmacovigilance de Caen et de Rouen. Chaque numéro est publié ici, article par article, et envoyé par courriel aux abonnés. Une version PDF reste disponible pour l'affichage dans les services et les officines.
 
-[Recevoir Vigiking](inscription.qmd) · Les anciens numéros en PDF sont sur le [site du réseau des CRPV](https://www.rfcrpv.fr) [lien vers l'archive à préciser].
+[Recevoir Vigiking](inscription.qmd) · [Les anciens numéros](archives.qmd), depuis 2017, à filtrer par sujet.
 
 ## Numéros

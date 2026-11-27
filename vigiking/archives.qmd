@@ -1,0 +1,28 @@
+---
+title: "Les anciens numéros de Vigiking"
+description: "Tous les numéros de Vigiking depuis 2017, avec leur sommaire, à filtrer par sujet ou par médicament. Les PDF sont sur le site du réseau des CRPV."
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "Réseau français des centres régionaux de pharmacovigilance, Vigiking (CRPV de Rouen et de Caen)"
+    url: "https://www.rfcrpv.fr/bulletins-des-crpv/vigiking-rouen-caen/"
+pour_aller_plus_loin:
+  - titre: "CRPVue : un outil de recherche qui change l'accès aux bulletins de pharmacovigilance !"
+    url: "https://www.rfcrpv.fr/crpvue-un-outil-de-recherche-qui-change-lacces-aux-bulletins-de-pharmacovigilance/"
+    site: rfcrpv
+---
+
+Tapez un mot pour retrouver les numéros qui en parlent, par exemple *benzodiazépines*, *opioïdes* ou *vaccin*. Chaque numéro s'ouvre en PDF sur le site du réseau des CRPV. Pour chercher dans les bulletins de tous les centres de France, utilisez CRPVue (lien plus bas).
+
+{{< include ../_includes/vigiking-releve.md >}}
+
+::: {.tableau-filtrable libelle="Filtrer les numéros par sujet ou par médicament"}
+{{< include ../_includes/vigiking-archives.md >}}
+:::
+
+Les sommaires sont ceux que le réseau des CRPV publie ; les plus anciens numéros n'en ont pas sur son site. [à compléter : sommaires des numéros de 2017 à 2019, à fournir par les CRPV]
+
+<script src="../assets/js/table-filter.js" defer></script>
