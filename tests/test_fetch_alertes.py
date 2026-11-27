@@ -266,3 +266,19 @@ def test_optional_fields_left_empty_keep_the_previous_list(tmp_path):
     path = tmp_path / "alertes.json"
     path.write_text(json.dumps({"ansm": bloc}), encoding="utf-8")
     assert fa.precedent(path) == {"ansm": bloc}
+
+
+def test_what_refresh_writes_for_both_sites_is_kept_as_the_next_previous_list(
+    tmp_path,
+):
+    import json
+
+    pages = {fa.SOURCES["ansm"]["url"]: ANSM * 3, fa.SOURCES["ema"]["url"]: EMA}
+    data, errors = fa.refresh({}, _fetcher(pages), "2026-11-30")
+    assert errors == []
+    # Each site's alerts lack the other site's fields (no "resume" at the ANSM).
+    assert "resume" not in data["ansm"]["alertes"][0]
+    assert "produit" not in data["ema"]["alertes"][0]
+    path = tmp_path / "alertes.json"
+    path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+    assert fa.precedent(path) == data
