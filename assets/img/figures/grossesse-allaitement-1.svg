@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 220" width="440" height="220" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <defs>
+    <pattern id="grossesse-allaitement-1-hachures" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="10" height="10" fill="#fdeceb"/>
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#b3261e" stroke-width="3"/>
+    </pattern>
+  </defs>
+
+  <text x="16" y="22" font-size="17" font-weight="700">Anti-inflammatoires et grossesse</text>
+  <text x="424" y="22" text-anchor="end" fill="#46586a">mois</text>
+  <g font-weight="700" text-anchor="middle">
+    <text x="38" y="48">1</text><text x="82" y="48">2</text><text x="126" y="48">3</text><text x="170" y="48">4</text>
+    <text x="214" y="48">5</text><text x="258" y="48">6</text><text x="302" y="48">7</text><text x="346" y="48">8</text><text x="390" y="48">9</text>
+  </g>
+
+  <!-- The whole pregnancy: never without medical advice -->
+  <rect x="17" y="60" width="395" height="40" rx="8" fill="#fdf1d8" stroke="#7a4f00" stroke-width="2"/>
+  <text x="32" y="86" font-weight="700" fill="#7a4f00">Jamais sans avis médical</text>
+
+  <!-- From month 6: forbidden, even one dose -->
+  <rect x="237" y="108" width="175" height="80" rx="8" fill="url(#grossesse-allaitement-1-hachures)" stroke="#b3261e" stroke-width="2"/>
+  <rect x="264" y="120" width="120" height="30" rx="6" fill="#b3261e"/>
+  <text x="324" y="141" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">Interdits</text>
+  <rect x="239" y="156" width="172" height="26" rx="4" fill="#ffffff"/>
+  <text x="325" y="174" text-anchor="middle" fill="#b3261e">même une seule prise</text>
+  <line x1="236" y1="100" x2="236" y2="210" stroke="#10283a" stroke-width="2"/>
+  <text x="228" y="140" text-anchor="end">À partir du</text>
+  <text x="228" y="160" text-anchor="end">début du 6e mois</text>
+</svg>

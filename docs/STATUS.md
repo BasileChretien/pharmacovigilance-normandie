@@ -41,6 +41,10 @@ par page (`docs/relecture.md`).
       formations, liens d'intérêts.
 - [ ] Réponse des centres en anglais (page *Medicines safety in Normandy*).
 - [ ] Usage du DSFR ou de la charte des CHU.
+- [ ] Figures qui attendent des documents des centres : pictogrammes officiels de conduite
+      (fichiers et droits de reproduction de l'ANSM, medicaments/situations/conduite) ;
+      déclarations par département et par année (rapports d'activité, normandie/chiffres) ;
+      plan d'accès de chaque centre (image libre de droits ou plan du CHU autorisé, crpv/acces).
 
 ## À faire côté technique
 
@@ -85,12 +89,12 @@ Prochaines pull requests, dans l'ordre (décidé le 27/11/2026) :
 - [ ] Index de Vigiking par thème et hébergement des PDF sur le site : inventaire des numéros et
       accord des CRPV à obtenir ; sommaires de juillet 2017 à février 2019 à fournir.
 - [ ] Liste des publications générée depuis ORCID et OpenAlex.
-- [ ] Les 52 figures marquées `FIGURE À FAIRE` : style fixé (`docs/regles-redaction.md`,
-      section 5 ; contrôle `tools/checks/check_figures.py`). Dessinées le 28/11/2026 :
-      comprendre (5), bon usage (5), fiches de classe (23), maux courants (11). Restent les
-      situations, En Normandie et Les CRPV.
-      Gardé : le RCP annoté interactif (comprendre/lire-un-rcp), car le tableau « Où chercher
-      quoi ? » donne déjà ce contenu et un RCP réel annoté demande de choisir un médicament
-      avec les relecteurs.
+- [x] Les 52 figures marquées `FIGURE À FAIRE` (28/11/2026) : 48 dessinées (comprendre 5, bon
+      usage 5, fiches de classe 23, maux courants 11, situations 3, carte des départements
+      générée depuis les contours officiels), style et contrôle dans `docs/regles-redaction.md`
+      section 5 et `tools/checks/check_figures.py`. Quatre repères restent, inscrits plus haut
+      (À faire par les CRPV) ou ci-dessous.
+- [ ] RCP annoté interactif (comprendre/lire-un-rcp) : le tableau « Où chercher quoi ? » en donne
+      déjà le contenu ; choisir avec les relecteurs un médicament dont annoter le RCP réel.
 - [ ] Contrôles automatiques : mode « site » dans manuscript-guard ou script séparé (décision).
 - [ ] Refaire le test avec de vrais utilisateurs normands après la relecture.

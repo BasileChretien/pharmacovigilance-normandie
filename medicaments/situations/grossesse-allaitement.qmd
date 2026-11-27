@@ -81,7 +81,7 @@ Certains médicaments peuvent être dangereux pour le bébé à naître. Ils peu
 
 Si besoin, le paracétamol peut être utilisé pendant la grossesse. Prenez la dose la plus faible qui soulage, le moins longtemps possible. Ne prenez jamais d'anti-inflammatoire de vous-même. À partir du 6e mois, une seule prise peut mettre en danger votre bébé. Cela vaut aussi pour une crème ou un gel [à compléter : source ANSM].
 
-<!-- FIGURE À FAIRE : frise des 9 mois de grossesse indiquant « anti-inflammatoires : jamais sans avis médical » sur toute la durée et « interdits, même une seule prise » à partir du 6e mois. Couleurs lisibles par les personnes daltoniennes et en niveaux de gris. -->
+{{< figure-svg grossesse-allaitement-1 alt="Frise des 9 mois de grossesse. Pendant toute la grossesse : anti-inflammatoires jamais sans avis médical. À partir du début du 6e mois : interdits, même une seule prise." legende="Ne prenez jamais d'anti-inflammatoire de vous-même pendant la grossesse." >}}
 
 ### Que signifie le pictogramme « femme enceinte » sur une boîte ?
 

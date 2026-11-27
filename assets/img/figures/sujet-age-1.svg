@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 388" width="440" height="388" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <defs>
+    <marker id="sujet-age-1-fleche" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#073f6e"/>
+    </marker>
+  </defs>
+  <text x="16" y="24" font-size="17" font-weight="700">Ce que certains médicaments peuvent donner</text>
+
+  <!-- Four effects -->
+  <g fill="#eef6fa" stroke="#46586a" stroke-width="1.5">
+    <rect x="16" y="40" width="200" height="52" rx="10"/><rect x="224" y="40" width="200" height="52" rx="10"/>
+    <rect x="16" y="100" width="200" height="52" rx="10"/><rect x="224" y="100" width="200" height="52" rx="10"/>
+  </g>
+  <text x="32" y="72" font-weight="700">Somnolence</text>
+  <text x="240" y="72" font-weight="700">Vertiges</text>
+  <text x="32" y="122" font-weight="700">Baisse de tension</text>
+  <text x="32" y="142">en se levant</text>
+  <text x="240" y="132" font-weight="700">Confusion</text>
+
+  <!-- They lead to a fall -->
+  <g stroke="#073f6e" stroke-width="2.5" fill="none" marker-end="url(#sujet-age-1-fleche)">
+    <path d="M116 152 Q130 176 196 190"/>
+    <path d="M324 152 Q310 176 244 190"/>
+  </g>
+  <rect x="120" y="194" width="200" height="56" rx="10" fill="#ffffff" stroke="#073f6e" stroke-width="2"/>
+  <path d="M146 236 l10 -18 l8 6 l6 -12" fill="none" stroke="#073f6e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="172" cy="206" r="4" fill="#073f6e"/>
+  <text x="194" y="229" font-size="18" font-weight="700">Chute</text>
+
+  <line x1="220" y1="250" x2="220" y2="286" stroke="#073f6e" stroke-width="2.5" marker-end="url(#sujet-age-1-fleche)"/>
+  <rect x="80" y="290" width="280" height="78" rx="10" fill="#fdeceb" stroke="#b3261e" stroke-width="2"/>
+  <path d="M110 306 l-6 12 l8 4 l-6 14" fill="none" stroke="#b3261e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="134" y="322" font-size="18" font-weight="700" fill="#b3261e">Fracture</text>
+  <text x="134" y="348">et perte d'autonomie</text>
+</svg>

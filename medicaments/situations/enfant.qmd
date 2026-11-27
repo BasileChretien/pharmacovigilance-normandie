@@ -62,7 +62,7 @@ Un enfant n'est pas un adulte en plus petit. Son corps transforme et élimine le
 
 Prenons l'exemple du paracétamol en sirop pour enfant. La seringue doseuse est graduée en kilos. Vous la remplissez jusqu'au poids de votre enfant. Vous pouvez redonner une dose 6 heures plus tard si besoin, sans dépasser 4 doses par jour.
 
-<!-- FIGURE À FAIRE : dessin d'une seringue doseuse graduée en kilos, remplie jusqu'au trait correspondant au poids de l'enfant, avec une horloge indiquant « 6 heures entre deux doses » et « 4 doses par jour au plus ». Couleurs lisibles par les personnes daltoniennes. -->
+{{< figure-svg enfant-1 alt="Une seringue doseuse graduée en kilos, remplie jusqu'au trait du poids de l'enfant. Une horloge : 6 heures entre deux doses, 4 doses par jour au plus." legende="La dose suit le poids de l'enfant, pas son âge." >}}
 
 ### Quelle forme choisir ?
 

@@ -199,4 +199,8 @@ légende (dans la page, raccourci `figure-svg`).
 | medicaments/maux-courants/migraine | Les 30 jours d'un mois, repères 8, 10 et 15 | Les 6 jours traités sont un exemple ; « depuis plus de 3 mois » vient de la page |
 | medicaments/maux-courants/rhinite-allergique | Geste du spray nasal, de face et de côté | La tête penchée en avant et l'embout vers l'extérieur viennent de la consigne ; la page ne dit que « main droite pour la narine gauche » |
 | medicaments/maux-courants/rhume-toux | Quatre gestes contre le rhume | « aérer » ajouté d'après la page (« aérez souvent ») |
+| medicaments/situations/enfant | Seringue graduée en kilos, horloge | Remplie « jusqu'au poids de l'enfant », sans chiffre (la page n'en donne pas) |
+| medicaments/situations/grossesse-allaitement | Frise des 9 mois | « Jamais sans avis médical » toute la grossesse, « interdits, même une seule prise » dès le début du 6e mois ; la phrase sur les crèmes et gels n'est pas reprise, la page attendant encore sa source |
+| medicaments/situations/sujet-age | Du médicament à la chute | « Confusion » vient de la consigne ; « perte d'autonomie » vient du texte |
+| normandie/carte | Carte des cinq départements | Contours officiels (Etalab, d'après IGN Admin Express, Licence Ouverte 2.0), générée par `tools/design/make_carte_departements.py` ; Caen en aplat, Rouen en hachures ; la source est ajoutée à l'en-tête de la page |
 
