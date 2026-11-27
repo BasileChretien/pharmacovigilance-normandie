@@ -10,6 +10,8 @@ prochaine_relecture: null
 
 Cette page présentera chaque année une infographie de l'activité des deux centres. Elle sera remplie à partir des rapports d'activité des CRPV. Les règles de publication des données issues de la base nationale de pharmacovigilance sont à vérifier avec l'ANSM avant toute mise en ligne.
 
+Pour la consommation de médicaments dans la région, voir [les médicaments remboursés en Normandie](medicaments-rembourses.qmd).
+
 ## Ce que l'infographie montrera
 
 - le nombre de déclarations reçues, par département et par année ;

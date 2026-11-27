@@ -15,3 +15,6 @@ node_modules/
 
 # BDPM files downloaded by tools/build/fetch_bdpm.py (about 7 MB, refreshed monthly)
 data/bdpm/
+
+# Open Medic and INSEE files downloaded by tools/build/fetch_openmedic.py
+data/openmedic/
