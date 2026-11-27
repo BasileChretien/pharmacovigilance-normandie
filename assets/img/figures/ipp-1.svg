@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 280" width="440" height="280" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <defs><g id="ipp-1-plein"><circle cx="9.5" cy="4.6" r="3.4" fill="#073f6e"/><path d="M4 19 v-5.2 a5.5 5.5 0 0 1 11 0 v5.2 Z" fill="#073f6e"/></g><g id="ipp-1-vide"><circle cx="9.5" cy="4.6" r="3" fill="#ffffff" stroke="#46586a" stroke-width="1.2"/><path d="M4.6 18.4 v-4.6 a4.9 4.9 0 0 1 9.8 0 v4.6 Z" fill="#ffffff" stroke="#46586a" stroke-width="1.2"/></g></defs>
+  <use href="#ipp-1-plein" transform="translate(16 16) scale(2)"/>
+  <use href="#ipp-1-vide" transform="translate(60 16) scale(2)"/>
+  <use href="#ipp-1-vide" transform="translate(104 16) scale(2)"/>
+  <use href="#ipp-1-vide" transform="translate(148 16) scale(2)"/>
+  <text x="208" y="38" font-size="17" font-weight="700">Environ 1 Français sur 4</text>
+  <text x="208" y="60">traité en 2019</text>
+  <line x1="16" y1="108" x2="424" y2="108" stroke="#d5e2ea" stroke-width="2"/>
+  <text x="16" y="138" font-size="17" font-weight="700">Ces traitements :</text>
+  <rect x="16" y="156" width="186" height="44" rx="6" fill="#ffffff" stroke="#46586a" stroke-width="2"/>
+  <rect x="202" y="156" width="222" height="44" rx="6" fill="#073f6e"/>
+  <text x="30" y="184" font-weight="700">justifiés</text>
+  <text x="232" y="184" font-weight="700" fill="#ffffff">pas justifiés</text>
+  <line x1="220" y1="146" x2="220" y2="212" stroke="#10283a" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="220" y="232" text-anchor="middle" fill="#46586a">la moitié</text>
+  <text x="16" y="264" font-weight="700">Plus de la moitié n'étaient pas justifiés.</text>
+</svg>

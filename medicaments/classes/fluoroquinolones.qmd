@@ -68,7 +68,7 @@ Avalez le comprimé avec de l'eau, pendant ou en dehors des repas.
 
 Le fer, le zinc, le calcium et les médicaments contre l'acidité de l'estomac empêchent l'antibiotique de passer dans le sang. Prenez-les au moins 2 heures avant ou après la lévofloxacine. Pour la ciprofloxacine, évitez aussi le lait ou un yaourt pris seuls, en dehors d'un repas.
 
-<!-- FIGURE À FAIRE : frise d'une journée avec l'heure de prise de l'antibiotique, et deux zones grisées de 2 heures avant et après, où sont dessinés un comprimé de fer, un sachet d'antiacide et un verre de lait barrés. -->
+{{< figure-svg fluoroquinolones-1 alt="Au milieu, la prise de lévofloxacine. Dans les 2 heures avant et les 2 heures après : pas de fer, de zinc, de calcium ni de médicament contre l'acidité de l'estomac. Avec la ciprofloxacine, pas de lait ni de yaourt pris seuls, en dehors d'un repas." legende="Avec la lévofloxacine, gardez au moins 2 heures avant et après pour le fer, le zinc, le calcium ou un médicament contre l'acidité." >}}
 
 Évitez le soleil fort et les lampes à bronzer pendant le traitement et les 2 jours suivants.
 
@@ -84,7 +84,7 @@ Le risque est plus grand après 60 ans, après une greffe d'organe, si vos reins
 
 Des effets qui durent des mois ou des années touchent jusqu'à 1 personne sur 10 000. Ils atteignent les tendons, les articulations, les muscles ou les nerfs (neuropathie). Ils peuvent aussi gêner la marche, le sommeil, l'humeur, la mémoire, la vue ou l'audition.
 
-<!-- FIGURE À FAIRE : grille de 10 000 points (100 × 100) avec 1 point coloré pour les effets durables, et à côté une grille de 1 000 points avec 1 point coloré pour l'atteinte des tendons ; légende indiquant le dénominateur de chaque grille. -->
+{{< figure-svg fluoroquinolones-2 alt="Une grille de 10 000 points, dont 1 cerclé : des effets qui durent touchent jusqu'à 1 personne sur 10 000. Une grille de 1 000 points, dont 1 cerclé : une atteinte d'un tendon avec la lévofloxacine touche jusqu'à 1 personne sur 1 000." legende="Deux risques rares, chacun sur son nombre de personnes : 10 000 pour les effets qui durent, 1 000 pour les tendons." >}}
 
 Très rarement, l'aorte (la grosse artère du ventre et de la poitrine) se dilate ou se déchire. Les valves du cœur peuvent aussi fuir.
 

@@ -52,7 +52,7 @@ Prenez votre dose une fois par semaine, en une seule fois, le jour choisi avec v
 
 Une carte patient se trouve dans la boîte. Notez-y votre jour et votre dose. Notez aussi chaque prise avec sa date. Avant de prendre une dose, vérifiez la date de la dernière prise.
 
-<!-- FIGURE À FAIRE : calendrier d'une semaine (lundi à dimanche) avec une seule case cochée « méthotrexate » le jour choisi, et une autre case « acide folique » un jour différent. Les cinq ou six autres jours restent vides. Couleurs lisibles par les personnes daltoniennes. -->
+{{< figure-svg methotrexate-1 alt="Calendrier d'une semaine, par exemple. Lundi : méthotrexate, une seule prise. Jeudi : acide folique, un autre jour. Les autres jours : rien." legende="Le méthotrexate se prend un seul jour par semaine ; l'acide folique, jamais le même jour." >}}
 
 Votre médecin peut prescrire de l'acide folique (une vitamine qui réduit certains effets indésirables). Ne le prenez jamais le même jour que le méthotrexate.
 

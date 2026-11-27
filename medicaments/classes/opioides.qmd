@@ -57,7 +57,7 @@ Les opioïdes sont des antidouleurs puissants. Ils agissent sur le cerveau et la
 
 Ils sont tous délivrés sur ordonnance. Depuis le 1er mars 2025, le tramadol et la codéine demandent une ordonnance sécurisée. Elle est valable 3 mois au plus.
 
-<!-- FIGURE À FAIRE : schéma du trajet du message de la douleur (blessure, nerf, moelle épinière, cerveau) avec l'endroit où l'opioïde le bloque. -->
+{{< figure-svg opioides-1 alt="Le message de la douleur part de la blessure, suit un nerf, puis monte dans la moelle épinière jusqu'au cerveau. L'opioïde bloque le message dans la moelle épinière et dans le cerveau." legende="Les opioïdes bloquent le message de la douleur dans la moelle épinière et le cerveau." >}}
 
 ### Comment le prendre ?
 

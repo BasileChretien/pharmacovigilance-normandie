@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 344" width="440" height="344" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <text x="16" y="22" fill="#46586a">Exemple : méthotrexate le lundi</text>
+  <g font-weight="700">
+    <text x="16" y="62">Lundi</text><text x="16" y="102">Mardi</text><text x="16" y="142">Mercredi</text><text x="16" y="182">Jeudi</text>
+    <text x="16" y="222">Vendredi</text><text x="16" y="262">Samedi</text><text x="16" y="302">Dimanche</text>
+  </g>
+
+  <!-- Methotrexate: one day a week -->
+  <rect x="112" y="38" width="312" height="34" rx="8" fill="#dcebf3" stroke="#073f6e" stroke-width="2"/>
+  <rect x="122" y="45" width="20" height="20" rx="3" fill="#073f6e"/>
+  <path d="M126 55 l4 4 l8 -9" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="154" y="61" font-weight="700">Méthotrexate : une seule prise</text>
+
+  <!-- Empty days -->
+  <g fill="#ffffff" stroke="#46586a" stroke-width="1.5" stroke-dasharray="5 4">
+    <rect x="112" y="78" width="312" height="34" rx="8"/>
+    <rect x="112" y="118" width="312" height="34" rx="8"/>
+    <rect x="112" y="198" width="312" height="34" rx="8"/>
+    <rect x="112" y="238" width="312" height="34" rx="8"/>
+    <rect x="112" y="278" width="312" height="34" rx="8"/>
+  </g>
+
+  <!-- Folic acid: another day -->
+  <rect x="113" y="159" width="310" height="32" rx="8" fill="#e6f7ef" stroke="#0b6b45" stroke-width="2"/>
+  <circle cx="132" cy="175" r="10" fill="#ffffff" stroke="#0b6b45" stroke-width="2"/>
+  <path d="M127 175 l3 3 l6 -6" fill="none" stroke="#0b6b45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="154" y="181" font-weight="700" fill="#0b6b45">Acide folique, un autre jour</text>
+  <text x="16" y="334" fill="#46586a">Les autres jours : rien.</text>
+</svg>

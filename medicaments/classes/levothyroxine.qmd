@@ -49,7 +49,7 @@ L'hypothyroïdie dure le plus souvent toute la vie. Le traitement se poursuit do
 
 Prenez le comprimé en une fois, le matin à jeun. Avalez-le une demi-heure avant le petit-déjeuner, avec un demi-verre d'eau. Gardez la même habitude chaque jour.
 
-<!-- FIGURE À FAIRE : frise d'une matinée. Réveil → comprimé de lévothyroxine avec un demi-verre d'eau → attente de 30 minutes → petit-déjeuner → fer ou calcium au moins 2 heures après le comprimé. Pictogrammes simples, lisibles en niveaux de gris. -->
+{{< figure-svg levothyroxine-1 alt="Frise d'une matinée. Au réveil, à jeun, le comprimé avec un demi-verre d'eau. Attendre 30 minutes, puis le petit-déjeuner. Le fer ou le calcium au moins 2 heures après le comprimé." legende="Le comprimé à jeun, une demi-heure avant le petit-déjeuner ; le fer ou le calcium 2 heures après." >}}
 
 Si vous avez oublié plusieurs doses, contactez votre médecin.
 

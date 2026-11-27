@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 470" width="440" height="470" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <defs>
+    <marker id="ipp-2-fleche" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#073f6e"/>
+    </marker>
+  </defs>
+
+  <rect x="16" y="12" width="408" height="56" rx="10" fill="#073f6e"/>
+  <text x="32" y="36" font-size="17" font-weight="700" fill="#ffffff">Un IPP depuis plus de 4 semaines,</text>
+  <text x="32" y="58" font-size="17" font-weight="700" fill="#ffffff">pour un reflux</text>
+  <line x1="60" y1="68" x2="60" y2="92" stroke="#073f6e" stroke-width="2.5" marker-end="url(#ipp-2-fleche)"/>
+
+  <rect x="16" y="96" width="408" height="56" rx="10" fill="#eef6fa"/>
+  <text x="32" y="120">Demandez à votre médecin</text>
+  <text x="32" y="142">s'il est encore utile</text>
+  <line x1="60" y1="152" x2="60" y2="176" stroke="#073f6e" stroke-width="2.5" marker-end="url(#ipp-2-fleche)"/>
+
+  <rect x="16" y="180" width="408" height="48" rx="10" fill="#eef6fa" stroke="#073f6e" stroke-width="2"/>
+  <text x="32" y="210" font-size="17" font-weight="700">Avez-vous encore des brûlures ?</text>
+
+  <!-- No -->
+  <line x1="60" y1="228" x2="60" y2="264" stroke="#073f6e" stroke-width="2.5" marker-end="url(#ipp-2-fleche)"/>
+  <text x="70" y="252" font-weight="700" fill="#073f6e">Non</text>
+  <rect x="16" y="268" width="196" height="188" rx="10" fill="#e6f7ef" stroke="#0b6b45" stroke-width="2"/>
+  <text x="30" y="294">Arrêt souvent</text>
+  <text x="30" y="316">possible, avec</text>
+  <text x="30" y="338">le médecin.</text>
+  <text x="30" y="366">Les brûlures peuvent</text>
+  <text x="30" y="388">revenir juste après :</text>
+  <text x="30" y="410">c'est un effet</text>
+  <text x="30" y="432">rebond.</text>
+
+  <!-- Yes -->
+  <line x1="320" y1="228" x2="320" y2="264" stroke="#073f6e" stroke-width="2.5" marker-end="url(#ipp-2-fleche)"/>
+  <text x="330" y="252" font-weight="700" fill="#073f6e">Oui</text>
+  <rect x="228" y="268" width="196" height="112" rx="10" fill="#ffffff" stroke="#073f6e" stroke-width="2"/>
+  <text x="242" y="294" font-weight="700">Avis du médecin :</text>
+  <text x="242" y="318">examen, plus petite</text>
+  <text x="242" y="340">dose efficace</text>
+</svg>

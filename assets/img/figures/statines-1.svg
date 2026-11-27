@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 420" width="440" height="420" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <defs>
+    <marker id="statines-1-fleche" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#073f6e"/>
+    </marker>
+  </defs>
+
+  <!-- The liver makes less cholesterol -->
+  <path d="M24 70 C20 40 50 22 92 24 C132 26 170 30 176 50 C182 72 150 92 112 108 C80 122 34 118 24 70 Z" fill="#dcebf3" stroke="#10283a" stroke-width="2"/>
+  <text x="70" y="74" font-size="17" font-weight="700">Foie</text>
+  <path d="M196 62 H236" stroke="#073f6e" stroke-width="3" marker-end="url(#statines-1-fleche)"/>
+  <g fill="#e7b03b" stroke="#10283a" stroke-width="1.5">
+    <circle cx="262" cy="56" r="7"/><circle cx="284" cy="70" r="7"/>
+  </g>
+  <text x="304" y="54" font-weight="700">moins de</text>
+  <text x="304" y="74" font-weight="700">cholestérol</text>
+  <text x="196" y="112">La statine freine sa fabrication.</text>
+
+  <!-- Arteries -->
+  <line x1="16" y1="138" x2="424" y2="138" stroke="#d5e2ea" stroke-width="2"/>
+  <text x="16" y="168" font-size="17" font-weight="700">Beaucoup de cholestérol dans le sang</text>
+  <rect x="16" y="182" width="408" height="64" fill="#fdeceb"/>
+  <line x1="16" y1="182" x2="424" y2="182" stroke="#10283a" stroke-width="3"/>
+  <line x1="16" y1="246" x2="424" y2="246" stroke="#10283a" stroke-width="3"/>
+  <path d="M90 183 C110 206 170 210 200 183 Z M260 245 C280 220 340 218 370 245 Z" fill="#e7b03b" stroke="#7a4f00" stroke-width="2"/>
+  <text x="16" y="270" fill="#46586a">dépôts de graisse dans l'artère</text>
+
+  <text x="16" y="312" font-size="17" font-weight="700">Moins de cholestérol dans le sang</text>
+  <rect x="16" y="326" width="408" height="64" fill="#fdeceb"/>
+  <line x1="16" y1="326" x2="424" y2="326" stroke="#10283a" stroke-width="3"/>
+  <line x1="16" y1="390" x2="424" y2="390" stroke="#10283a" stroke-width="3"/>
+  <path d="M120 327 C130 336 160 336 170 327 Z" fill="#e7b03b" stroke="#7a4f00" stroke-width="2"/>
+  <text x="16" y="414" fill="#46586a">moins de dépôts, l'artère reste plus libre</text>
+</svg>

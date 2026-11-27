@@ -70,7 +70,7 @@ Prenons 100 enfants exposés au valproate pendant la grossesse. Environ 11 naiss
 
 Jusqu'à 30 à 40 enfants sur 100 exposés ont des troubles du développement. Par exemple, ils parlent ou marchent plus tard, ou ont des difficultés de mémoire et de langage.
 
-<!-- FIGURE À FAIRE : deux grilles de 100 personnages côte à côte. Grille 1 « sans valproate » : 2 à 3 personnages colorés (malformation). Grille 2 « valproate pendant la grossesse » : 11 personnages colorés (malformation) et, dans une troisième grille, 30 à 40 personnages colorés (troubles du développement). Couleurs lisibles par les personnes daltoniennes. -->
+{{< figure-svg valproate-teratogenes-1 alt="Trois grilles de 100 enfants. Sans valproate, 2 à 3 ont une malformation grave. Avec le valproate pendant la grossesse, environ 11 ont une malformation grave, et jusqu'à 30 à 40 des troubles du développement." legende="Sur 100 enfants exposés au valproate pendant la grossesse, environ 11 ont une malformation grave." >}}
 
 Avec le topiramate, près de 10 bébés sur 100 exposés en début de grossesse ont une malformation grave. Dans le groupe de comparaison, c'est 1 à 3 bébés sur 100. Les bébés exposés naissent aussi plus souvent avec un petit poids.
 

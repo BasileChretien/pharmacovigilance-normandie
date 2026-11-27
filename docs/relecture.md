@@ -176,4 +176,15 @@ légende (dans la page, raccourci `figure-svg`).
 | medicaments/classes/antihypertenseurs | Trois médicaments, un rein | « Ensemble, ils peuvent bloquer les reins » (consigne) ; « surtout si vous êtes âgé ou buvez peu » (texte) |
 | medicaments/classes/benzodiazepines-apparentes | Escalier de la baisse des doses | Ni durée ni dose chiffrées ; le palier plus long « en cas de gêne » vient de la consigne et du texte professionnel (« revenir au palier précédent, puis réduire plus lentement ») |
 | medicaments/classes/corticoides-oraux | Frise d'une journée | Une prise le matin, au petit-déjeuner ; la note « forte dose au début : deux prises possibles » reprend le texte |
+| medicaments/classes/fluoroquinolones | Prise de la lévofloxacine, 2 heures avant et après | La règle des 2 heures est donnée pour la lévofloxacine seule, comme dans la page (le RCP de la ciprofloxacine donne 1 à 2 heures avant ou au moins 4 heures après). Le lait n'est pas dans les zones de 2 heures, où la consigne le plaçait : la page dit seulement d'éviter le lait ou le yaourt pris seuls, en dehors d'un repas, avec la ciprofloxacine. Il est donc à part, sous la frise |
+| medicaments/classes/fluoroquinolones | Grilles de 10 000 et de 1 000 points | Même taille de point pour les deux grilles ; « jusqu'à » 1 sur 10 000 (effets qui durent) et 1 sur 1 000 (tendons, lévofloxacine) |
+| medicaments/classes/ipp | 1 Français sur 4, et plus de la moitié | La partie « pas justifiés » dépasse un repère « la moitié », sans proportion chiffrée : la page dit « plus de la moitié » |
+| medicaments/classes/ipp | Arbre de décision après 4 semaines | « Demandez à votre médecin » avant tout arrêt (texte patient) ; « examen, plus petite dose efficace » vient de la consigne et du texte professionnel |
+| medicaments/classes/isotretinoine | Prévention des grossesses en trois temps | La délivrance dans les 7 jours n'est pas dessinée (absente de la consigne) |
+| medicaments/classes/levothyroxine | Frise d'une matinée | « 30 minutes » (consigne) pour « une demi-heure » (texte) ; fer ou calcium au moins 2 heures après le comprimé |
+| medicaments/classes/methotrexate | Calendrier d'une semaine | Exemple : méthotrexate le lundi, acide folique le jeudi. La page ne fixe pas le jour de l'acide folique, seulement « jamais le même jour » |
+| medicaments/classes/opioides | Trajet du message de la douleur | L'opioïde bloque le message dans la moelle épinière et dans le cerveau, comme le dit le texte |
+| medicaments/classes/statines | Foie et artères | Deux artères comparées (beaucoup ou moins de cholestérol dans le sang) pour dire « moins encombrée » (consigne) ; « l'artère reste plus libre » est à relire |
+| medicaments/classes/statines | Étude SAMSON, trois barres | Scores 8,0, 15,4 et 16,3 sur 100 du texte professionnel ; axe coupé à 20, signalé ; « 49 personnes jusqu'au bout » |
+| medicaments/classes/valproate-teratogenes | Trois grilles de 100 enfants | Les fourchettes (2 à 3, 30 à 40) : personnages pleins jusqu'au bas de la fourchette, rayés jusqu'au haut |
 

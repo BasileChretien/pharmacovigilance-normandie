@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 594" width="440" height="594" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <defs><pattern id="fluoroquinolones-2-point" x="36" y="57.6" width="3.6" height="3.6" patternUnits="userSpaceOnUse"><circle cx="1.8" cy="1.8" r="1.05" fill="#46586a"/></pattern></defs>
+  <text x="16" y="24" font-size="17" font-weight="700">Effets qui durent des mois ou des années</text>
+  <text x="16" y="46">jusqu'à 1 personne sur 10 000 (100 × 100 points)</text>
+  <rect x="36" y="57.6" width="360" height="360" fill="url(#fluoroquinolones-2-point)"/>
+  <circle cx="261" cy="203.4" r="2.2" fill="#b3261e"/><circle cx="261" cy="203.4" r="9" fill="none" stroke="#b3261e" stroke-width="3"/>
+  <text x="16" y="451.6" font-size="17" font-weight="700">Atteinte d'un tendon (lévofloxacine)</text>
+  <text x="16" y="473.6">jusqu'à 1 personne sur 1 000 (40 × 25 points)</text>
+  <rect x="36" y="489.6" width="144" height="90" fill="url(#fluoroquinolones-2-point)"/>
+  <circle cx="145.8" cy="534.6" r="2.2" fill="#b3261e"/><circle cx="145.8" cy="534.6" r="9" fill="none" stroke="#b3261e" stroke-width="3"/>
+  <text x="200" y="513.6">Chaque point :</text>
+  <text x="200" y="533.6">une personne traitée.</text>
+  <text x="200" y="557.6">Le point cerclé :</text>
+  <text x="200" y="577.6">la personne atteinte.</text>
+</svg>
