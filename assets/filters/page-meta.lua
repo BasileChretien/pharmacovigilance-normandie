@@ -164,8 +164,18 @@ local NOTICES = {
   association = " (en association)",
   autre = "Votre médicament n’est pas dans cette liste ? ",
   chercher = "Cherchez-le par son nom",
-  source = "Base de données publique des médicaments (ANSM), fichiers du %s ; exemples choisis parmi les médicaments commercialisés : la substance seule, une forme orale, puis le médicament de référence.",
+  source = "Base de données publique des médicaments (ANSM), fichiers du %s ; exemples choisis parmi les médicaments commercialisés : celui que la page cite dans ses sources, sinon la substance seule, une forme orale, puis le médicament de référence.",
 }
+
+-- The page's path from the project root, as make_bdpm_liens.py writes it ("a/b.qmd").
+local function page_relative()
+  local input = quarto and quarto.doc and quarto.doc.input_file
+  local root = quarto and quarto.project and quarto.project.directory
+  if type(input) ~= "string" or type(root) ~= "string" then
+    return nil
+  end
+  return (pandoc.path.make_relative(input, root):gsub("\\", "/"))
+end
 local bdpm_cache = nil
 
 local function bdpm_data()
@@ -190,10 +200,12 @@ local function notices_block(meta)
   if type(liste) ~= "table" or #liste == 0 or not data then
     return nil
   end
+  -- Examples of this page's own (a product it cites), before the site-wide ones.
+  local propres = type(data.pages) == "table" and data.pages[page_relative() or ""] or nil
   local items = {}
   for _, s in ipairs(liste) do
     local nom = stringify(s)
-    local choix = data.substances[nom]
+    local choix = (type(propres) == "table" and type(propres[nom]) == "table") and propres[nom] or data.substances[nom]
     if type(choix) == "table" and type(choix.cis) == "string" and type(choix.nom) == "string" then
       local libelle = pandoc.text.upper(pandoc.text.sub(nom, 1, 1)) .. pandoc.text.sub(nom, 2)
       local inlines = pandoc.Inlines({ pandoc.Strong(pandoc.Inlines(libelle)), pandoc.Str(" :"), pandoc.Space() })

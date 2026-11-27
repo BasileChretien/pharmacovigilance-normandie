@@ -535,6 +535,112 @@
    "nb": 6
   }
  },
+ "pages": {
+  "medicaments/classes/ains.qmd": {
+   "célécoxib": {
+    "cis": "66150367",
+    "nom": "CELEBREX 200 mg, gélule",
+    "princeps": true,
+    "association": false
+   }
+  },
+  "medicaments/classes/antidepresseurs.qmd": {
+   "sertraline": {
+    "cis": "60683198",
+    "nom": "ZOLOFT 50 mg, gélule",
+    "princeps": true,
+    "association": false
+   },
+   "venlafaxine": {
+    "cis": "61403425",
+    "nom": "EFFEXOR L.P. 75 mg, gélule à libération prolongée",
+    "princeps": true,
+    "association": false
+   },
+   "amitriptyline": {
+    "cis": "65892928",
+    "nom": "LAROXYL 25 mg, comprimé pelliculé",
+    "princeps": false,
+    "association": false
+   }
+  },
+  "medicaments/classes/antihypertenseurs.qmd": {
+   "amlodipine": {
+    "cis": "63458349",
+    "nom": "AMLOR 5 mg, gélule",
+    "princeps": true,
+    "association": false
+   },
+   "bisoprolol": {
+    "cis": "60747455",
+    "nom": "DETENSIEL 10 mg, comprimé pelliculé sécable",
+    "princeps": true,
+    "association": false
+   }
+  },
+  "medicaments/classes/corticoides-oraux.qmd": {
+   "prednisone": {
+    "cis": "62390849",
+    "nom": "CORTANCYL 20 mg, comprimé sécable",
+    "princeps": true,
+    "association": false
+   }
+  },
+  "medicaments/classes/ipp.qmd": {
+   "oméprazole": {
+    "cis": "64103828",
+    "nom": "MOPRAL 20 mg, gélule gastro-résistante",
+    "princeps": true,
+    "association": false
+   }
+  },
+  "medicaments/classes/isotretinoine.qmd": {
+   "isotrétinoïne": {
+    "cis": "69164379",
+    "nom": "CURACNE 20 mg, capsule molle",
+    "princeps": false,
+    "association": false
+   }
+  },
+  "medicaments/classes/levothyroxine.qmd": {
+   "lévothyroxine": {
+    "cis": "68588503",
+    "nom": "LEVOTHYROX 25 microgrammes, comprimé sécable",
+    "princeps": true,
+    "association": false
+   }
+  },
+  "medicaments/classes/opioides.qmd": {
+   "tramadol": {
+    "cis": "63435884",
+    "nom": "TOPALGIC 50 mg, gélule",
+    "princeps": true,
+    "association": false
+   }
+  },
+  "medicaments/maux-courants/angine-mal-de-gorge.qmd": {
+   "amoxicilline": {
+    "cis": "67707794",
+    "nom": "CLAMOXYL 500 mg, gélule",
+    "princeps": true,
+    "association": false
+   },
+   "clarithromycine": {
+    "cis": "63671347",
+    "nom": "ZECLAR 250 mg, comprimé pelliculé",
+    "princeps": true,
+    "association": false
+   }
+  },
+  "medicaments/maux-courants/fievre-douleur-enfant.qmd": {
+   "paracétamol": {
+    "cis": "66477582",
+    "nom": "DOLIPRANE 2,4 POUR CENT, suspension buvable",
+    "princeps": false,
+    "association": false
+   }
+  }
+ },
  "cites": {
   "60161143": {
    "nom": "TRIATEC 10 mg, comprimé sécable",

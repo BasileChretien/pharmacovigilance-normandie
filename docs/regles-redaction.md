@@ -37,7 +37,9 @@ pour_aller_plus_loin:                # facultatif : lectures complémentaires
   parlent de familles de médicaments. Le filtre
   ajoute « Notices et RCP officiels » : pour chacune, la page de la base de données publique
   des médicaments d'un médicament commercialisé qui la contient seule (forme orale, puis
-  médicament de référence en premier), choisi par `tools/build/make_bdpm_liens.py`. Après
+  médicament de référence en premier), choisi par `tools/build/make_bdpm_liens.py`. Si la
+  page cite dans ses sources un médicament commercialisé qui contient la substance seule,
+  c'est lui l'exemple de cette page (la fiche enfant cite une suspension buvable). Après
   avoir ajouté une substance, relancer ce script ; `check_content.py` signale une substance
   sans lien.
 - Un médicament de la base de données publique cité en source doit être encore

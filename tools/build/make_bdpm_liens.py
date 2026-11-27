@@ -2,7 +2,9 @@
 
 For each substance listed in a page's front matter (substances: [...]), picks one
 marketed product as an example of its official notice and SmPC: a product with that
-substance alone, the princeps (reference medicine) first, an oral form first. It also
+substance alone, an oral form first, then the princeps (reference medicine). A page that
+cites in its sources a marketed product with that substance alone gets that product as
+its own example instead ("pages" in the output). It also
 records the marketing status of every BDPM product the pages cite, so that
 tools/checks/check_content.py can flag a product no longer marketed.
 
@@ -157,38 +159,50 @@ class Base:
             groups.setdefault(link, {}).setdefault(nature, set()).add(name)
         return sum(len(g.get("FT") or g.get("SA") or ()) for g in groups.values())
 
-    def choisir(self, substance: str) -> dict | None:
-        """The example product for a substance, or None if no marketed product has it."""
+    def _candidats(self, substance: str, cis_list) -> list[tuple[str, bool]]:
+        """Marketed products of cis_list holding the substance, each with 'alone'."""
         wanted = normalise(substance)
         candidates = []
-        for cis, comps in self.compositions.items():
+        for cis in cis_list:
+            comps = self.compositions.get(cis, [])
             if self.commercialise(cis) and any(
                 _matches(name, wanted) for _, _, name in comps
             ):
                 candidates.append((cis, self._active_parts(comps) == 1))
-        if not candidates:
-            return None
+        return candidates
 
-        # Substance alone first, then an oral form (the sheets are read by patients), then
-        # the princeps (reference medicine), then by name.
-        def rank(candidate: tuple[str, bool]) -> tuple:
-            cis, alone = candidate
-            spec = self.specialites[cis]
-            return (
-                not alone,
-                "orale" not in spec["voies"],
-                cis not in self.princeps,
-                spec["nom"],
-            )
+    def _rang(self, candidate: tuple[str, bool]) -> tuple:
+        """Substance alone first, then an oral form (the sheets are read by patients), then
+        the princeps (reference medicine), then by name."""
+        cis, alone = candidate
+        spec = self.specialites[cis]
+        return (
+            not alone,
+            "orale" not in spec["voies"],
+            cis not in self.princeps,
+            spec["nom"],
+        )
 
-        cis, alone = min(candidates, key=rank)
+    def _fiche(self, cis: str, alone: bool) -> dict:
         return {
             "cis": cis,
             "nom": self.specialites[cis]["nom"],
             "princeps": cis in self.princeps,
             "association": not alone,
-            "nb": len(candidates),
         }
+
+    def choisir(self, substance: str) -> dict | None:
+        """The example product for a substance, or None if no marketed product has it."""
+        candidates = self._candidats(substance, self.compositions)
+        if not candidates:
+            return None
+        return {**self._fiche(*min(candidates, key=self._rang)), "nb": len(candidates)}
+
+    def exemple_cite(self, substance: str, cites: list[str]) -> dict | None:
+        """Among the products a page cites, the marketed one holding the substance alone
+        (a combination cited for another substance is no example of this one)."""
+        alone = [c for c in self._candidats(substance, cites) if c[1]]
+        return self._fiche(*min(alone, key=self._rang)) if alone else None
 
     def statut(self, cis: str) -> dict | None:
         spec = self.specialites.get(cis)
@@ -237,6 +251,18 @@ def construire(
             found = base.choisir(substance)
             if found:
                 choix[substance] = found
+    # A page's own example: a product it cites in its sources, when it differs from the
+    # site-wide one (the children's sheet cites a suspension, not an adult tablet).
+    par_page: dict[str, list[str]] = {}
+    for cis, pages_citant in cites.items():
+        for page in pages_citant:
+            par_page.setdefault(page, []).append(cis)
+    pages: dict[str, dict] = {}
+    for page, listed in substances.items():
+        for substance in listed:
+            exemple = base.exemple_cite(substance, par_page.get(page, []))
+            if exemple and exemple["cis"] != (choix.get(substance) or {}).get("cis"):
+                pages.setdefault(page, {})[substance] = exemple
     statuts = {
         cis: base.statut(cis) or {"nom": None, "etat": "absent de la base"}
         for cis in sorted(cites)
@@ -245,6 +271,7 @@ def construire(
         "source": SOURCE,
         "mis_a_jour": mis_a_jour,
         "substances": choix,
+        "pages": pages,
         "cites": statuts,
     }
 
@@ -288,6 +315,7 @@ def main() -> int:
     )
     print(
         f"{OUT.relative_to(ROOT)} : {len(data['substances'])} substances, "
+        f"{sum(len(v) for v in data['pages'].values())} exemples propres à une page, "
         f"{len(data['cites'])} médicaments cités (BDPM du {mis_a_jour})."
     )
     problemes = rapport(data, substances, cites)

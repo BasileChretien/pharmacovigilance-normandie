@@ -438,3 +438,48 @@ def test_an_inverted_salt_reads_as_the_usual_name():
         mb.normalise("SODIUM (VALPROATE DE)"), mb.normalise("valproate de sodium")
     )
     assert mb.normalise("AMMONIUM (CHLORURE D')") == "chlorure d'ammonium"
+
+
+def _pages(listed: list[str], cited: list[str]) -> dict:
+    data = mb.construire(
+        _base(),
+        {"medicaments/p.qmd": listed},
+        {cis: ["medicaments/p.qmd"] for cis in cited},
+        "2026-11-20",
+    )
+    return data["pages"]
+
+
+def test_a_page_citing_a_marketed_product_of_the_substance_alone_gets_it_as_example():
+    pages = _pages(["ibuprofène"], ["60000001"])  # IBUPROFENE ARROW, cited in sources
+    assert pages == {
+        "medicaments/p.qmd": {
+            "ibuprofène": {
+                "cis": "60000001",
+                "nom": "IBUPROFENE ARROW 200 mg, comprimé pelliculé",
+                "princeps": False,
+                "association": False,
+            }
+        }
+    }
+    # The site-wide example is unchanged.
+    data = mb.construire(
+        _base(), {"medicaments/p.qmd": ["ibuprofène"]}, {"60000001": ["p"]}, None
+    )
+    assert data["substances"]["ibuprofène"]["cis"] == "68634000"
+
+
+def test_a_cited_product_withdrawn_or_in_combination_is_not_an_example():
+    assert _pages(["ibuprofène"], ["60000002"]) == {}  # ADVILCAPS, not marketed
+    # ENTRESTO: valsartan in combination.
+    assert _pages(["valsartan"], ["60000008"]) == {}
+
+
+def test_a_cited_product_that_is_already_the_example_adds_nothing():
+    assert _pages(["ibuprofène"], ["68634000"]) == {}
+
+
+def test_among_several_cited_products_the_usual_order_decides():
+    # Oral before skin gel, whatever the citing order.
+    pages = _pages(["ibuprofène"], ["60000003", "60000001"])
+    assert pages["medicaments/p.qmd"]["ibuprofène"]["cis"] == "60000001"
