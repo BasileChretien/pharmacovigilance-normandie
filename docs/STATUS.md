@@ -52,6 +52,8 @@ Prochaines pull requests, dans l'ordre (décidé le 27/11/2026) :
       choisir et vérifier les pages dans un navigateur avant de les lier.
 - [ ] GPR (adaptation des doses au rein) : le domaine sitegpr.com héberge désormais un casino
       en ligne (27/11/2026). Ne pas le lier ; trouver l'adresse officielle actuelle du GPR.
+- [x] Trouver son CRPV par code postal (crpv/trouver-mon-crpv.qmd) : liste ANSM mise à jour le
+      14/09/2026, 30 centres ; à rafraîchir avec `tools/build/fetch_crpv.py` quand l'ANSM la change.
 - [ ] Fil des alertes officielles : flux RSS de l'ANSM (filtrables par domaine médical) et de
       l'EMA, récupérés à la construction (titre, date, lien, sans réécriture), reconstruit
       chaque semaine ; date de mise à jour visible et responsable nommé.

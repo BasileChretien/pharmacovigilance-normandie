@@ -79,6 +79,8 @@ Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre ph
 | Calvados (14), Manche (50), Orne (61) | CRPV de Caen | 02 31 06 46 72 | pharmacovigilance@chu-caen.fr |
 | Eure (27), Seine-Maritime (76) | CRPV de Rouen | 02 32 88 90 79 | pharmacovigilance@chu-rouen.fr |
 
+Hors Normandie : [trouver le centre de votre lieu d'exercice](crpv/trouver-mon-crpv.qmd) avec son code postal.
+
 :::
 
 Pour comprendre à quoi servent les déclarations, lisez [Pourquoi déclarer un effet indésirable ?](comprendre/pourquoi-declarer.qmd)

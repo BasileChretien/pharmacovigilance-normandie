@@ -28,6 +28,11 @@ Les centres régionaux de pharmacovigilance (CRPV) font partie du réseau nation
 ::: {.cartes}
 
 ::: {.carte}
+### [Trouver votre centre](trouver-mon-crpv.qmd)
+Vous n'habitez pas en Normandie : votre code postal donne le centre de votre département.
+:::
+
+::: {.carte}
 ### [L'équipe de Caen](equipe-caen.qmd)
 :::
 

@@ -1,0 +1,901 @@
+{
+ "source": "https://ansm.sante.fr/page/liste-des-centres-regionaux-de-pharmacovigilance",
+ "mis_a_jour": "2026-09-14",
+ "consulte_le": "2026-11-27",
+ "centres": [
+  {
+   "nom": "Centre d'Amiens",
+   "departements": [
+    {
+     "code": "02",
+     "nom": "Aisne",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "60",
+     "nom": "Oise",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "80",
+     "nom": "Somme",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "03 22 08 70 96",
+   "courriel": "pharmacovigilance@chu-amiens.fr%20",
+   "site": "http://www.chu-amiens.fr/professionnels/professionnels-de-sante/centre-regional-de-pharmacovigilance-amiens/"
+  },
+  {
+   "nom": "Centre d'Angers",
+   "departements": [
+    {
+     "code": "49",
+     "nom": "Maine-et-Loire",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "53",
+     "nom": "Mayenne",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "72",
+     "nom": "Sarthe",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "02 41 35 45 54",
+   "courriel": "pharmacovigilance@chu-angers.fr",
+   "site": "https://www.chu-angers.fr/offre-de-soins/centre-regional-de-pharmacovigilance-57923.kjsp?sousMenu=ds_presentation_activite"
+  },
+  {
+   "nom": "Centre de Besançon",
+   "departements": [
+    {
+     "code": "25",
+     "nom": "Doubs",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "39",
+     "nom": "Jura",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "70",
+     "nom": "Haute-Saône",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "90",
+     "nom": "Territoire de Belfort",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "03 81 66 84 74",
+   "courriel": "pharmacovigilance@chu-besancon.fr",
+   "site": "http://www.pharmacovigilance-bfc.fr/"
+  },
+  {
+   "nom": "Centre de Bordeaux",
+   "departements": [
+    {
+     "code": "24",
+     "nom": "Dordogne",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "33",
+     "nom": "Gironde",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "40",
+     "nom": "Landes",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "47",
+     "nom": "Lot-et-Garonne",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "64",
+     "nom": "Pyrénées-Atlantiques",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "971",
+     "nom": "Guadeloupe",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "972",
+     "nom": "Martinique",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "973",
+     "nom": "Guyane",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "974",
+     "nom": "Réunion",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "976",
+     "nom": "Mayotte",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "05 56 79 55 08",
+   "courriel": "pharmacovigilance@u-bordeaux.fr",
+   "site": "http://www.pharmacologie.u-bordeaux2.fr/fr/pharmacovigilance/index.htm"
+  },
+  {
+   "nom": "Centre de Brest",
+   "departements": [
+    {
+     "code": "29",
+     "nom": "Finistère",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "56",
+     "nom": "Morbihan",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "02 98 34 79 75",
+   "courriel": "crpv.brest@chu-brest.fr",
+   "site": "https://www.chu-brest.fr/"
+  },
+  {
+   "nom": "Centre de Caen",
+   "departements": [
+    {
+     "code": "14",
+     "nom": "Calvados",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "50",
+     "nom": "Manche",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "61",
+     "nom": "Orne",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "02 31 06 46 72",
+   "courriel": "pharmacovigilance@chu-caen.fr",
+   "site": "http://www.chu-caen.fr/pharmacologie.html"
+  },
+  {
+   "nom": "Centre de Clermont-Ferrand",
+   "departements": [
+    {
+     "code": "03",
+     "nom": "Allier",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "15",
+     "nom": "Cantal",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "43",
+     "nom": "Haute-Loire",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "63",
+     "nom": "Puy-de-Dome",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "04 73 75 48 31",
+   "courriel": "pharmacovigilance@chu-clermontferrand.fr",
+   "site": "https://www.chu-clermontferrand.fr/"
+  },
+  {
+   "nom": "Centre de Dijon",
+   "departements": [
+    {
+     "code": "21",
+     "nom": "Côte-d'Or",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "58",
+     "nom": "Nièvre",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "71",
+     "nom": "Saône-et-Loire",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "89",
+     "nom": "Yonne",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "03 80 29 37 42",
+   "courriel": "pharmacovigilance@chu-dijon.fr",
+   "site": "http://www.pharmacovigilance-bfc.fr/"
+  },
+  {
+   "nom": "Centre de Grenoble",
+   "departements": [
+    {
+     "code": "38",
+     "nom": "Isère",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "04 76 76 51 45",
+   "courriel": "pharmacovigilance@chu-grenoble.fr",
+   "site": "https://www.chu-grenoble.fr/"
+  },
+  {
+   "nom": "Centre de Lille",
+   "departements": [
+    {
+     "code": "59",
+     "nom": "Nord",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "62",
+     "nom": "Pas-de-Calais",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "03 20 96 18 18",
+   "courriel": "pharmacovigilance@chru-lille.fr",
+   "site": "https://www.chu-lille.fr/"
+  },
+  {
+   "nom": "Centre de Limoges",
+   "departements": [
+    {
+     "code": "19",
+     "nom": "Corrèze",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "23",
+     "nom": "Creuse",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "87",
+     "nom": "Haute-Vienne",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "05 55 05 67 43",
+   "courriel": "pharmacovigilance@chu-limoges.fr",
+   "site": "http://www.pharmacovigilance-limoges.fr/"
+  },
+  {
+   "nom": "Centre de Lyon",
+   "departements": [
+    {
+     "code": "01",
+     "nom": "Ain",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "07",
+     "nom": "Ardèche",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "26",
+     "nom": "Drôme",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "69",
+     "nom": "Rhône",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "73",
+     "nom": "Savoie",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "74",
+     "nom": "Haute-Savoie",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "04 72 11 69 97",
+   "courriel": "centre.pharmacovigilance@chu-lyon.fr",
+   "site": "https://shupt.univ-lyon1.fr/pharmacovigilance/"
+  },
+  {
+   "nom": "Centre de Marseille",
+   "departements": [
+    {
+     "code": "04",
+     "nom": "Alpes-de-Haute-Provence",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "2A",
+     "nom": "Corse-du-Sud",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "2B",
+     "nom": "Haute-Corse",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "13",
+     "nom": "Bouches-du-Rhône",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "84",
+     "nom": "Vaucluse",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "04 91 74 75 60",
+   "courriel": "pharmacovigilance@ap-hm.fr",
+   "site": "http://crpv.ap-hm.fr/"
+  },
+  {
+   "nom": "Centre de Montpellier",
+   "departements": [
+    {
+     "code": "11",
+     "nom": "Aude",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "30",
+     "nom": "Gard",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "34",
+     "nom": "Hérault",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "48",
+     "nom": "Lozère",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "66",
+     "nom": "Pyrénées-Orientales",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "04 67 33 67 57",
+   "courriel": "pharmacovigilance@chu-montpellier.fr",
+   "site": "http://www.chu-montpellier.fr/fr/crpv"
+  },
+  {
+   "nom": "Centre de Nancy",
+   "departements": [
+    {
+     "code": "54",
+     "nom": "Meurthe-et-Moselle",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "55",
+     "nom": "Meuse",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "57",
+     "nom": "Moselle",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "88",
+     "nom": "Vosges",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "03 83 65 60 85",
+   "courriel": "crpv@chru-nancy.fr",
+   "site": "https://www.rfcrpv.fr/"
+  },
+  {
+   "nom": "Centre de Nantes",
+   "departements": [
+    {
+     "code": "44",
+     "nom": "Loire-Atlantique",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "85",
+     "nom": "Vendée",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "02 40 08 40 96",
+   "courriel": "pharmacovigilance@chu-nantes.fr",
+   "site": "https://www.chu-nantes.fr/centre-hospitalier-universitaire-chu-de-nantes-1.kjsp"
+  },
+  {
+   "nom": "Centre de Nice",
+   "departements": [
+    {
+     "code": "06",
+     "nom": "Alpes-Maritimes",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "05",
+     "nom": "Hautes-Alpes",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "83",
+     "nom": "Var",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "04 92 03 47 08",
+   "courriel": "pharmacovigilance@chu-nice.fr",
+   "site": "http://pharmacovigilance-nice.fr/"
+  },
+  {
+   "nom": "Centre de Paris Cochin - Port Royal",
+   "departements": [
+    {
+     "code": "75",
+     "nom": "Paris",
+     "precision": null,
+     "arrondissements": [
+      1,
+      6,
+      7,
+      8
+     ]
+    },
+    {
+     "code": "78",
+     "nom": "Yvelines",
+     "precision": "Sud",
+     "arrondissements": null
+    },
+    {
+     "code": "91",
+     "nom": "Essonne",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "01 58 41 34 79",
+   "courriel": "pharmacovigilance.hupc@aphp.fr",
+   "site": "http://www.pharmacovigilance-iledefrance.fr/"
+  },
+  {
+   "nom": "Centre de Paris Saint Louis (ex-Fernand Widal)",
+   "departements": [
+    {
+     "code": "75",
+     "nom": "Paris",
+     "precision": null,
+     "arrondissements": [
+      2,
+      9,
+      10,
+      17,
+      18,
+      19
+     ]
+    },
+    {
+     "code": "78",
+     "nom": "Yvelines",
+     "precision": "Nord",
+     "arrondissements": null
+    },
+    {
+     "code": "95",
+     "nom": "Val d'Oise",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "01 40 05 43 34",
+   "courriel": "pharmacovigilance.fwd.lrb@aphp.fr",
+   "site": "http://www.pharmacovigilance-iledefrance.fr/"
+  },
+  {
+   "nom": "Centre de Paris HEGP",
+   "departements": [
+    {
+     "code": "75",
+     "nom": "Paris",
+     "precision": null,
+     "arrondissements": [
+      14,
+      15,
+      16
+     ]
+    },
+    {
+     "code": "92",
+     "nom": "Hauts-de-Seine",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "01 56 09 39 88",
+   "courriel": "crpv.hegp.egp@aphp.fr",
+   "site": "http://www.pharmacovigilance-iledefrance.fr/"
+  },
+  {
+   "nom": "Centre de Paris Henri Mondor",
+   "departements": [
+    {
+     "code": "77",
+     "nom": "Seine-et-Marne",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "94",
+     "nom": "Val-de-Marne",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "01 49 81 47 00",
+   "courriel": "hmn-pharmacovigilance@aphp.fr",
+   "site": "http://www.pharmacovigilance-iledefrance.fr/"
+  },
+  {
+   "nom": "Centre de Paris Pitié Salpêtrière - Saint Antoine",
+   "departements": [
+    {
+     "code": "75",
+     "nom": "Paris",
+     "precision": null,
+     "arrondissements": [
+      3,
+      4,
+      5,
+      11,
+      12,
+      13,
+      20
+     ]
+    },
+    {
+     "code": "93",
+     "nom": "Seine Saint-Denis",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "01 42 16 16 79",
+   "courriel": "pharmaco.vigilance.psl@aphp.fr",
+   "site": "http://www.pharmacovigilance-iledefrance.fr/"
+  },
+  {
+   "nom": "Centre de Poitiers",
+   "departements": [
+    {
+     "code": "16",
+     "nom": "Charente",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "17",
+     "nom": "Charente-Maritime",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "79",
+     "nom": "Deux-Sèvres",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "86",
+     "nom": "Vienne",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "05 49 44 38 36",
+   "courriel": "pharmaco.clin@chu-poitiers.fr",
+   "site": "http://www.chu-poitiers.fr/"
+  },
+  {
+   "nom": "Centre de Reims",
+   "departements": [
+    {
+     "code": "08",
+     "nom": "Ardennes",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "10",
+     "nom": "Aube",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "51",
+     "nom": "Marne",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "52",
+     "nom": "Haute-Marne",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "03 26 78 77 80",
+   "courriel": "pharmacovigilance@chu-reims.fr",
+   "site": "https://www.pharmacovigilance-reims.fr/"
+  },
+  {
+   "nom": "Centre de Rennes",
+   "departements": [
+    {
+     "code": "22",
+     "nom": "Côtes-d'Armor",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "35",
+     "nom": "Ille-et-Vilaine",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "02 99 28 43 63",
+   "courriel": "pharmacovigilance@chu-rennes.fr",
+   "site": "https://www.chu-rennes.fr/"
+  },
+  {
+   "nom": "Centre de Rouen",
+   "departements": [
+    {
+     "code": "27",
+     "nom": "Eure",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "76",
+     "nom": "Seine-Maritime",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "02 32 88 90 79",
+   "courriel": "pharmacovigilance@chu-rouen.fr",
+   "site": "https://www.chu-rouen.fr/service/pharmacovigilance/"
+  },
+  {
+   "nom": "Centre de Saint-Etienne",
+   "departements": [
+    {
+     "code": "42",
+     "nom": "Loire",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "04 77 12 77 37",
+   "courriel": "pharmacovigilance@chu-st-etienne.fr",
+   "site": "http://www.chu-st-etienne.fr/"
+  },
+  {
+   "nom": "Centre de Strasbourg",
+   "departements": [
+    {
+     "code": "67",
+     "nom": "Bas-Rhin",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "68",
+     "nom": "Haut-Rhin",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "03 88 11 64 80",
+   "courriel": "pharmacovigilance@chru-strasbourg.fr",
+   "site": "http://www.chru-strasbourg.fr/Hopital-civil"
+  },
+  {
+   "nom": "Centre de Toulouse",
+   "departements": [
+    {
+     "code": "09",
+     "nom": "Ariège",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "12",
+     "nom": "Aveyron",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "31",
+     "nom": "Haute-Garonne",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "32",
+     "nom": "Gers",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "46",
+     "nom": "Lot",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "65",
+     "nom": "Hautes-Pyrénées",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "81",
+     "nom": "Tarn",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "82",
+     "nom": "Tarn-et-Garonne",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "05 61 25 51 12",
+   "courriel": "pharmacovigilance@chu-toulouse.fr",
+   "site": "http://www.bip31.fr/"
+  },
+  {
+   "nom": "Centre de Tours",
+   "departements": [
+    {
+     "code": "18",
+     "nom": "Cher",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "28",
+     "nom": "Eure-et-Loire",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "36",
+     "nom": "Indre",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "37",
+     "nom": "Indre-et-Loire",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "41",
+     "nom": "Loir-et-Cher",
+     "precision": null,
+     "arrondissements": null
+    },
+    {
+     "code": "45",
+     "nom": "Loiret",
+     "precision": null,
+     "arrondissements": null
+    }
+   ],
+   "telephone": "02 47 47 37 37",
+   "courriel": "crpv@chu-tours.fr",
+   "site": "http://www.pharmacovigilance-tours.fr/"
+  }
+ ]
+}

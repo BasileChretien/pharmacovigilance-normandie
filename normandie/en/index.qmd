@@ -47,7 +47,7 @@ Anyone can report a suspected side effect of a medicine in France, including pat
 
 The French page [[Déclarer un effet indésirable]{lang="fr"}](../../declarer.qmd) explains the same steps in more detail.
 
-Your report goes to the regional pharmacovigilance centre: Caen for Calvados, Manche and Orne; Rouen for Eure and Seine-Maritime. It is recorded without your name in the national database.
+Your report goes to the regional pharmacovigilance centre: Caen for Calvados, Manche and Orne; Rouen for Eure and Seine-Maritime. It is recorded without your name in the national database. Living elsewhere in France? [Find your regional centre](../../crpv/trouver-mon-crpv.qmd) by typing your postal code (the page is in French).
 
 ## The regional pharmacovigilance centres
 
