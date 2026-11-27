@@ -87,7 +87,8 @@ Prochaines pull requests, dans l'ordre (décidé le 27/11/2026) :
 - [ ] Liste des publications générée depuis ORCID et OpenAlex.
 - [ ] Les 52 figures marquées `FIGURE À FAIRE` : style fixé (`docs/regles-redaction.md`,
       section 5 ; contrôle `tools/checks/check_figures.py`). Dessinées le 28/11/2026 :
-      comprendre (5) et bon usage (5). Restent les fiches médicaments, En Normandie et Les CRPV.
+      comprendre (5), bon usage (5), fiches de classe (12 sur 23). Restent les autres fiches
+      médicaments, En Normandie et Les CRPV.
       Gardé : le RCP annoté interactif (comprendre/lire-un-rcp), car le tableau « Où chercher
       quoi ? » donne déjà ce contenu et un RCP réel annoté demande de choisir un médicament
       avec les relecteurs.

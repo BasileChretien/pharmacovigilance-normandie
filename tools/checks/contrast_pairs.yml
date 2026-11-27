@@ -29,3 +29,4 @@ paires:
   - { texte: pv-ink, fond: pv-amber-tint, minimum: 4.5, usage: "figures : texte d'une zone « à éviter » ou « avis »" }
   - { texte: pv-paper, fond: pv-ink, minimum: 4.5, usage: "figures : numéros des étapes" }
   - { texte: pv-paper, fond: pv-alert, minimum: 4.5, usage: "figures : étiquette « Interdit »" }
+  - { texte: pv-amber, fond: pv-paper, minimum: 4.5, usage: "figures : « Consultez », « attendre » (bord pointillé)" }

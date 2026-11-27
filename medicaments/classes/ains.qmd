@@ -70,7 +70,7 @@ Certains sont vendus sans ordonnance. Depuis janvier 2020, ils sont rangés derr
 - Sans avis médical, ne dépassez pas 3 jours pour la fièvre et 5 jours pour la douleur.
 - Avec un gel ou un patch, protégez la peau traitée du soleil. Faites-le pendant le traitement et 2 semaines après.
 
-<!-- FIGURE À FAIRE : calendrier simple sur une semaine montrant la limite de 3 jours pour la fièvre et de 5 jours pour la douleur, avec un pictogramme « consultez » au-delà. -->
+{{< figure-svg ains-1 alt="Calendrier d'une semaine. Fièvre : un anti-inflammatoire pendant 3 jours au plus, puis consultez. Douleur : 5 jours au plus, puis consultez." legende="Sans avis médical, pas plus de 3 jours pour la fièvre et 5 jours pour la douleur. Arrêtez dès que les symptômes disparaissent." >}}
 
 ### Pourquoi éviter les AINS en cas d'infection ?
 
@@ -111,7 +111,7 @@ Ne prenez jamais deux anti-inflammatoires en même temps. Demandez l'avis de vot
 - Votre médecin peut consulter le CRAT (Centre de référence sur les agents tératogènes) : [lecrat.fr](https://www.lecrat.fr).
 - Rarement, des vertiges ou des troubles de la vue gênent la conduite.
 
-<!-- FIGURE À FAIRE : frise de la grossesse en mois, avec une zone « sur prescription seulement » jusqu'à la fin du 5e mois, puis une zone rouge « interdit » à partir du 6e mois. -->
+{{< figure-svg ains-2 alt="Frise des 9 mois de grossesse. Jusqu'à la fin du 5e mois : un anti-inflammatoire seulement si le médecin l'a prescrit. À partir du 6e mois : interdit, même une seule prise. Le célécoxib est interdit pendant toute la grossesse." legende="À partir du début du 6e mois de grossesse, tout anti-inflammatoire est interdit, même une seule prise." >}}
 
 ### Puis-je arrêter mon traitement ?
 

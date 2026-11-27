@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 304" width="440" height="304" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <defs>
+    <g id="anticoagulants-oraux-2-prise">
+      <circle r="13" fill="#073f6e"/>
+      <rect x="-7" y="-3.5" width="14" height="7" rx="3.5" fill="#ffffff" transform="rotate(-35)"/>
+    </g>
+  </defs>
+
+  <!-- Morning and evening -->
+  <path d="M164 34 a12 12 0 0 1 24 0 Z" fill="#e7b03b" stroke="#10283a" stroke-width="1.5"/>
+  <path d="M160 34 H192" stroke="#10283a" stroke-width="2"/>
+  <text x="176" y="56" text-anchor="middle" fill="#46586a">matin</text>
+  <path d="M400 18 a12 12 0 1 0 10 18 a9 9 0 1 1 -10 -18 Z" fill="#e7b03b" stroke="#10283a" stroke-width="1.5"/>
+  <text x="404" y="56" text-anchor="middle" fill="#46586a">soir</text>
+
+  <!-- AVK: once a day, in the evening -->
+  <line x1="16" y1="68" x2="424" y2="68" stroke="#d5e2ea" stroke-width="2"/>
+  <text x="16" y="100" font-size="17" font-weight="700">AVK</text>
+  <text x="16" y="122">warfarine…</text>
+  <line x1="176" y1="96" x2="404" y2="96" stroke="#d5e2ea" stroke-width="4" stroke-linecap="round"/>
+  <use href="#anticoagulants-oraux-2-prise" x="404" y="96"/>
+  <text x="176" y="130">1 fois par jour, plutôt le soir</text>
+
+  <!-- Apixaban, dabigatran: morning and evening -->
+  <line x1="16" y1="148" x2="424" y2="148" stroke="#d5e2ea" stroke-width="2"/>
+  <text x="16" y="180" font-size="17" font-weight="700">Apixaban,</text>
+  <text x="16" y="202" font-size="17" font-weight="700">dabigatran</text>
+  <line x1="176" y1="176" x2="404" y2="176" stroke="#d5e2ea" stroke-width="4" stroke-linecap="round"/>
+  <use href="#anticoagulants-oraux-2-prise" x="176" y="176"/>
+  <use href="#anticoagulants-oraux-2-prise" x="404" y="176"/>
+  <text x="176" y="210">2 fois par jour, matin et soir</text>
+
+  <!-- Rivaroxaban: once a day, with a meal -->
+  <line x1="16" y1="228" x2="424" y2="228" stroke="#d5e2ea" stroke-width="2"/>
+  <text x="16" y="260" font-size="17" font-weight="700">Rivaroxaban</text>
+  <line x1="176" y1="256" x2="404" y2="256" stroke="#d5e2ea" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="276" cy="256" r="13" fill="#ffffff" stroke="#10283a" stroke-width="2"/>
+  <circle cx="276" cy="256" r="6" fill="none" stroke="#46586a" stroke-width="1.5"/>
+  <use href="#anticoagulants-oraux-2-prise" x="306" y="256"/>
+  <text x="176" y="290">1 fois par jour, au repas</text>
+</svg>

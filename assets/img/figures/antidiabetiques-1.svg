@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 356" width="440" height="356" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <defs>
+    <g id="antidiabetiques-1-seringue" fill="none" stroke="#10283a" stroke-width="2" stroke-linejoin="round" transform="rotate(-40)">
+      <rect x="-10" y="-5" width="18" height="10" rx="1.5" fill="#ffffff"/>
+      <path d="M-10 -5 V5" stroke-width="3"/>
+      <path d="M8 0 H15 M-10 0 H-15 M-15 -5 V5"/>
+      <path d="M-6 -5 V-1 M-2 -5 V-1 M2 -5 V-1" stroke-width="1.2"/>
+    </g>
+  </defs>
+
+  <text x="16" y="22" fill="#46586a">Exemple : injection le lundi</text>
+
+  <g font-weight="700">
+    <text x="16" y="60">Lundi</text>
+    <text x="16" y="100">Mardi</text>
+    <text x="16" y="136">Mercredi</text>
+    <text x="16" y="172">Jeudi</text>
+    <text x="16" y="208">Vendredi</text>
+    <text x="16" y="244">Samedi</text>
+    <text x="16" y="284">Dimanche</text>
+    <text x="16" y="324">Lundi</text>
+  </g>
+
+  <!-- Usual day -->
+  <rect x="112" y="36" width="312" height="36" rx="8" fill="#dcebf3"/>
+  <use href="#antidiabetiques-1-seringue" x="134" y="54"/>
+  <text x="158" y="60" font-weight="700">Jour de l'injection</text>
+
+  <!-- Forgotten: possible for 5 days -->
+  <rect x="113" y="77" width="310" height="178" rx="8" fill="#e6f7ef" stroke="#0b6b45" stroke-width="2"/>
+  <text x="130" y="144" font-weight="700" fill="#0b6b45">Oubli : injection possible</text>
+  <text x="130" y="166">jusqu'à 5 jours après</text>
+  <text x="130" y="188">le jour habituel</text>
+
+  <!-- Beyond: wait -->
+  <rect x="113" y="261" width="310" height="34" rx="8" fill="#ffffff" stroke="#7a4f00" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="128" y="284" font-weight="700" fill="#7a4f00">Au-delà : attendre lundi</text>
+
+  <!-- Next usual day -->
+  <rect x="112" y="300" width="312" height="36" rx="8" fill="#dcebf3"/>
+  <use href="#antidiabetiques-1-seringue" x="134" y="318"/>
+  <text x="158" y="324" font-weight="700">Jour habituel : injection</text>
+</svg>

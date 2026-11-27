@@ -63,7 +63,7 @@ Au-delà de quelques semaines, leur effet diminue. Les risques, eux, augmentent 
 - Le zolpidem est prescrit sur une ordonnance sécurisée, pour 28 jours au plus.
 - En cas d'oubli, prenez la dose suivante à l'heure habituelle, le lendemain. Ne doublez jamais la dose.
 
-<!-- FIGURE À FAIRE : escalier descendant montrant la baisse progressive des doses sur plusieurs semaines, avec un palier où l'on peut rester plus longtemps en cas de gêne. -->
+{{< figure-svg benzodiazepines-apparentes-1 alt="Escalier qui descend : la dose baisse par étapes, sur plusieurs semaines, jusqu'à l'arrêt. Une marche est plus longue : en cas de gêne, on peut rester plus longtemps à la même dose." legende="Ne les arrêtez jamais d'un coup : la baisse se fait peu à peu, avec votre médecin." >}}
 
 ### Quels effets indésirables ?
 
