@@ -41,3 +41,13 @@ def test_the_cystitis_tree_sends_risk_situations_and_warning_signs_to_a_doctor()
         assert words in text, words
         assert words in code["description"], words
     assert "situation à risque" in code["alt"]
+
+
+def test_the_cystitis_same_day_signs_include_pain_on_one_side():
+    # Page: « Fièvre, frissons, douleur dans le bas du dos ou sur un côté, vomissements :
+    # [...] Consultez le jour même ». The same-day list must keep the pain on one side.
+    code = shortcode("medicaments/maux-courants/cystite.qmd", "cystite-1")
+    assert "sur un côté" in code["description"].split("le jour même")[1]
+    svg = (ROOT / "assets" / "img" / "figures" / "cystite-1.svg").read_text(encoding="utf-8")
+    leaf = svg[svg.index("Consultez un médecin"):svg.index("No: urine dipstick")]
+    assert "sur un côté" in " ".join(re.findall(r">([^<]+)</text>", leaf))
