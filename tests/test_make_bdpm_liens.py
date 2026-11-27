@@ -423,3 +423,10 @@ def test_update_date_of_the_products_file_is_read_from_the_download_page():
         "Fichier des spécialités (Date de mise à jour : 20/11/2026, 3093 Ko) </a>"
     )
     assert mb.date_specialites(page) == "2026-11-20"
+
+
+def test_a_missing_files_date_is_reported():
+    data = mb.construire(_base(), {}, {}, None)
+    assert any("date" in p for p in mb.rapport(data, {}, {}))
+    dated = mb.construire(_base(), {}, {}, "2026-11-20")
+    assert mb.rapport(dated, {}, {}) == []

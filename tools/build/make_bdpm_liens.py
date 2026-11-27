@@ -212,6 +212,11 @@ def construire(
 
 def rapport(data: dict, substances: dict, cites: dict) -> list[str]:
     problemes = []
+    if not data.get("mis_a_jour"):
+        # The licence asks for the files' date: the download page has changed shape.
+        problemes.append(
+            "date des fichiers introuvable sur la page de téléchargement (data/bdpm/telechargement.html)"
+        )
     for page, listed in substances.items():
         for substance in listed:
             if substance not in data["substances"]:

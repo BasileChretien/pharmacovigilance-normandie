@@ -192,7 +192,7 @@ local function notices_block(meta)
   for _, s in ipairs(liste) do
     local nom = stringify(s)
     local choix = data.substances[nom]
-    if type(choix) == "table" and choix.cis and choix.nom then
+    if type(choix) == "table" and type(choix.cis) == "string" and type(choix.nom) == "string" then
       local libelle = pandoc.text.upper(pandoc.text.sub(nom, 1, 1)) .. pandoc.text.sub(nom, 2)
       local inlines = pandoc.Inlines({ pandoc.Strong(pandoc.Inlines(libelle)), pandoc.Str(" :"), pandoc.Space() })
       inlines:insert(pandoc.Link(pandoc.Inlines(choix.nom), string.format(BDPM_URL, choix.cis)))
@@ -205,7 +205,8 @@ local function notices_block(meta)
   if #items == 0 then
     return nil
   end
-  local date = data.mis_a_jour and date_fr(data.mis_a_jour) or "?"
+  -- A JSON null decodes to pandoc.json.null, which is truthy: check the type.
+  local date = type(data.mis_a_jour) == "string" and date_fr(data.mis_a_jour) or "?"
   return pandoc.Div({
     pandoc.Header(2, pandoc.Inlines(NOTICES.titre), pandoc.Attr("notices-et-rcp-officiels")),
     pandoc.Para(pandoc.Inlines(NOTICES.intro)),
