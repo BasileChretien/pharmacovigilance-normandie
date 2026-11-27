@@ -1,0 +1,245 @@
+{
+ "annee": 2025,
+ "sources": {
+  "openmedic": "https://www.data.gouv.fr/fr/datasets/open-medic-base-complete-sur-les-depenses-de-medicaments-interregimes/",
+  "insee": "https://catalogue-donnees.insee.fr/fr/catalogue/recherche/DS_ESTIMATION_POPULATION"
+ },
+ "population": {
+  "normandie": 3352354,
+  "france": 68633288
+ },
+ "groupes": [
+  {
+   "cle": "benzodiazepines",
+   "libelle": "Benzodiazépines et apparentés",
+   "atc": [
+    "N05BA",
+    "N05CD",
+    "N05CF"
+   ],
+   "fiche": "medicaments/classes/benzodiazepines-apparentes.qmd",
+   "normandie": {
+    "boites": 4844371,
+    "taux_brut": 1445.1,
+    "taux_standardise": 1416.3
+   },
+   "france": {
+    "boites": 87299407,
+    "taux_brut": 1272.0,
+    "taux_standardise": 1271.8
+   },
+   "ecart_pct": 11
+  },
+  {
+   "cle": "opioides",
+   "libelle": "Antalgiques opioïdes",
+   "atc": [
+    "N02A"
+   ],
+   "fiche": "medicaments/classes/opioides.qmd",
+   "normandie": {
+    "boites": 4271089,
+    "taux_brut": 1274.1,
+    "taux_standardise": 1248.6
+   },
+   "france": {
+    "boites": 61067836,
+    "taux_brut": 889.8,
+    "taux_standardise": 889.3
+   },
+   "ecart_pct": 40
+  },
+  {
+   "cle": "antidepresseurs",
+   "libelle": "Antidépresseurs",
+   "atc": [
+    "N06A"
+   ],
+   "fiche": "medicaments/classes/antidepresseurs.qmd",
+   "normandie": {
+    "boites": 5495399,
+    "taux_brut": 1639.3,
+    "taux_standardise": 1621.7
+   },
+   "france": {
+    "boites": 87353146,
+    "taux_brut": 1272.8,
+    "taux_standardise": 1272.6
+   },
+   "ecart_pct": 27
+  },
+  {
+   "cle": "ipp",
+   "libelle": "Inhibiteurs de la pompe à protons (IPP)",
+   "atc": [
+    "A02BC"
+   ],
+   "fiche": "medicaments/classes/ipp.qmd",
+   "normandie": {
+    "boites": 4280335,
+    "taux_brut": 1276.8,
+    "taux_standardise": 1234.3
+   },
+   "france": {
+    "boites": 78572574,
+    "taux_brut": 1144.8,
+    "taux_standardise": 1144.1
+   },
+   "ecart_pct": 8
+  },
+  {
+   "cle": "ains",
+   "libelle": "Anti-inflammatoires non stéroïdiens (AINS)",
+   "atc": [
+    "M01A"
+   ],
+   "fiche": "medicaments/classes/ains.qmd",
+   "normandie": {
+    "boites": 2031148,
+    "taux_brut": 605.9,
+    "taux_standardise": 609.6
+   },
+   "france": {
+    "boites": 42725352,
+    "taux_brut": 622.5,
+    "taux_standardise": 622.4
+   },
+   "ecart_pct": -2
+  },
+  {
+   "cle": "corticoides",
+   "libelle": "Corticoïdes par voie générale",
+   "atc": [
+    "H02AB"
+   ],
+   "fiche": "medicaments/classes/corticoides-oraux.qmd",
+   "normandie": {
+    "boites": 1633930,
+    "taux_brut": 487.4,
+    "taux_standardise": 479.5
+   },
+   "france": {
+    "boites": 33060369,
+    "taux_brut": 481.7,
+    "taux_standardise": 481.6
+   },
+   "ecart_pct": 0
+  },
+  {
+   "cle": "statines",
+   "libelle": "Statines",
+   "atc": [
+    "C10AA"
+   ],
+   "fiche": "medicaments/classes/statines.qmd",
+   "normandie": {
+    "boites": 2201191,
+    "taux_brut": 656.6,
+    "taux_standardise": 624.0
+   },
+   "france": {
+    "boites": 38863498,
+    "taux_brut": 566.2,
+    "taux_standardise": 566.0
+   },
+   "ecart_pct": 10
+  },
+  {
+   "cle": "anticoagulants",
+   "libelle": "Anticoagulants oraux",
+   "atc": [
+    "B01AA",
+    "B01AF",
+    "B01AE07"
+   ],
+   "fiche": "medicaments/classes/anticoagulants-oraux.qmd",
+   "normandie": {
+    "boites": 1529027,
+    "taux_brut": 456.1,
+    "taux_standardise": 431.0
+   },
+   "france": {
+    "boites": 28054417,
+    "taux_brut": 408.8,
+    "taux_standardise": 408.6
+   },
+   "ecart_pct": 5
+  },
+  {
+   "cle": "antidiabetiques",
+   "libelle": "Antidiabétiques",
+   "atc": [
+    "A10"
+   ],
+   "fiche": "medicaments/classes/antidiabetiques.qmd",
+   "normandie": {
+    "boites": 4518218,
+    "taux_brut": 1347.8,
+    "taux_standardise": 1292.4
+   },
+   "france": {
+    "boites": 90049944,
+    "taux_brut": 1312.0,
+    "taux_standardise": 1310.7
+   },
+   "ecart_pct": -1
+  },
+  {
+   "cle": "levothyroxine",
+   "libelle": "Lévothyroxine",
+   "atc": [
+    "H03AA01"
+   ],
+   "fiche": "medicaments/classes/levothyroxine.qmd",
+   "normandie": {
+    "boites": 988742,
+    "taux_brut": 294.9,
+    "taux_standardise": 283.7
+   },
+   "france": {
+    "boites": 20489210,
+    "taux_brut": 298.5,
+    "taux_standardise": 298.4
+   },
+   "ecart_pct": -5
+  },
+  {
+   "cle": "fluoroquinolones",
+   "libelle": "Fluoroquinolones",
+   "atc": [
+    "J01MA"
+   ],
+   "fiche": "medicaments/classes/fluoroquinolones.qmd",
+   "normandie": {
+    "boites": 172635,
+    "taux_brut": 51.5,
+    "taux_standardise": 50.5
+   },
+   "france": {
+    "boites": 3611313,
+    "taux_brut": 52.6,
+    "taux_standardise": 52.6
+   },
+   "ecart_pct": -4
+  },
+  {
+   "cle": "antibiotiques",
+   "libelle": "Antibiotiques, toutes familles",
+   "atc": [
+    "J01"
+   ],
+   "fiche": null,
+   "normandie": {
+    "boites": 5281570,
+    "taux_brut": 1575.5,
+    "taux_standardise": 1562.6
+   },
+   "france": {
+    "boites": 104637698,
+    "taux_brut": 1524.6,
+    "taux_standardise": 1524.3
+   },
+   "ecart_pct": 3
+  }
+ ]
+}

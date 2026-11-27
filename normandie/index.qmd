@@ -29,6 +29,11 @@ Les déclarations reçues chaque année, et ce qu'elles ont permis.
 :::
 
 ::: {.carte}
+### [Les médicaments remboursés en Normandie](medicaments-rembourses.qmd)
+Combien de boîtes, comparé à la moyenne française, à âge et sexe comparables.
+:::
+
+::: {.carte}
 ### [Cas marquants](cas-marquants.qmd)
 Des cas anonymisés et ce qu'ils nous apprennent.
 :::

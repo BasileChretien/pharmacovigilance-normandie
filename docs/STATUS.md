@@ -70,6 +70,9 @@ Prochaines pull requests, dans l'ordre (décidé le 27/11/2026) :
       vers sa page officielle, et vers la fiche du site quand elle existe ; la recherche reste
       dans le navigateur. Index : `tools/build/make_bdpm_recherche.py`, à relancer chaque mois.
 - [ ] Lien « Signaler une correction » : adresse retenue pharmacovigilance@chu-caen.fr (fait).
+- [x] Médicaments remboursés en Normandie (normandie/medicaments-rembourses.qmd) : Open Medic 2025
+      et estimations INSEE, 12 familles liées aux fiches, standardisation directe sur l'âge
+      (3 tranches) et le sexe ; à faire valider par les CRPV (méthode et commentaire).
 - [ ] Liste des publications générée depuis ORCID et OpenAlex.
 - [ ] Les 52 figures marquées `FIGURE À FAIRE`.
 - [ ] Contrôles automatiques : mode « site » dans manuscript-guard ou script séparé (décision).

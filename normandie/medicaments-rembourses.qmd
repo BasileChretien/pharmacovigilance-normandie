@@ -1,0 +1,47 @@
+---
+title: "Les médicaments remboursés en Normandie"
+description: "Combien de boîtes de médicaments sont remboursées en Normandie, comparé à la moyenne française, à âge et sexe comparables : anxiolytiques, antalgiques opioïdes, antidépresseurs et autres familles."
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "Assurance Maladie, Open Medic : base complète sur les dépenses de médicaments interrégimes, année 2025 (Licence Ouverte)"
+    url: "https://www.data.gouv.fr/fr/datasets/open-medic-base-complete-sur-les-depenses-de-medicaments-interregimes/"
+  - titre: "INSEE, Estimations localisées de population au 1er janvier 2025 et 2026"
+    url: "https://catalogue-donnees.insee.fr/fr/catalogue/recherche/DS_ESTIMATION_POPULATION"
+---
+
+Cette page compare le nombre de boîtes de médicaments remboursées aux habitants de la Normandie à la moyenne française. Les chiffres tiennent compte de l'âge et du sexe des habitants : la Normandie compte un peu plus de personnes âgées que la moyenne, qui prennent plus de médicaments.
+
+Un écart ne dit pas si les médicaments sont bien ou mal utilisés. Il signale une famille à regarder de plus près, avec les professionnels de santé de la région.
+
+[à compléter : validation de la méthode et du commentaire par les CRPV de Caen et de Rouen]
+
+{{< include ../_includes/openmedic-resume.md >}}
+
+## L'écart avec la moyenne française
+
+{{< include ../_includes/openmedic-graphique.md >}}
+
+## Les chiffres en détail
+
+{{< include ../_includes/openmedic-tableau.md >}}
+
+Lecture : en Normandie, à âge et sexe comparables à ceux de la France, on rembourse chaque année ce nombre de boîtes pour 1&nbsp;000 habitants. Le chiffre brut est le nombre réel, sans tenir compte de l'âge et du sexe.
+
+## Ce que ces chiffres ne disent pas
+
+- **Une boîte n'est pas une dose.** Une boîte de 28 comprimés et une boîte de 90 comptent chacune pour une boîte.
+- **Seuls les médicaments remboursés en pharmacie de ville sont comptés.** Les médicaments donnés à l'hôpital, et ceux achetés sans ordonnance et non remboursés, n'y sont pas.
+- **La région est celle où habite la personne**, pas celle de la pharmacie.
+- **L'âge est connu par grandes tranches** (moins de 20 ans, 20 à 59 ans, 60 ans et plus). La comparaison corrige donc l'âge à grands traits seulement.
+- **La France comprend les départements d'outre-mer**, sauf Mayotte, qui a sa propre caisse d'assurance maladie.
+- **Une boîte remboursée n'est pas forcément prise.**
+
+## Comment ces chiffres sont calculés
+
+Pour chaque famille de médicaments, on compte les boîtes remboursées en 2025 par tranche d'âge et par sexe, en Normandie et en France. On les divise par le nombre d'habitants de chaque tranche, au milieu de l'année 2025. On applique enfin ces taux à la population française : c'est la standardisation directe. Les familles sont définies par leur code ATC, la classification internationale des médicaments.
+
+Les données sont mises à jour une fois par an, quand l'Assurance Maladie publie une nouvelle année.
