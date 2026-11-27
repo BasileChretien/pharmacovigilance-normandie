@@ -104,7 +104,7 @@ La dose dépend du poids de l'enfant, pas de son âge. Pesez-le si vous n'êtes 
 
 Utilisez la pipette fournie dans la boîte du médicament. Ne la mélangez pas avec celle d'un autre flacon.
 
-<!-- FIGURE À FAIRE : dessin d'une pipette doseuse graduée en kilos, avec le piston tiré jusqu'à la graduation « 12 kg ». À côté, une frise de 24 heures montrant 4 prises espacées de 6 heures (par exemple 8 h, 14 h, 20 h, 2 h). Texte alternatif : « Remplir la pipette jusqu'au poids de l'enfant ; 4 prises par jour au plus, espacées de 6 heures. » -->
+{{< figure-svg fievre-douleur-enfant-1 alt="Remplir la pipette jusqu'au poids de l'enfant ; 4 prises par jour au plus, espacées de 6 heures." legende="Le paracétamol en sirop, avec sa pipette graduée en kilos." >}}
 
 Vérifiez qu'aucun autre médicament ne contient déjà du paracétamol. Lisez la composition sur la boîte ou demandez au pharmacien.
 

@@ -81,7 +81,7 @@ Pour être plus à l'aise :
 
 Le paracétamol soulage la fièvre, le mal de gorge et le mal de tête. Chez l'enfant, la dose dépend du poids. Pour une toux sèche, le miel peut adoucir la gorge à partir de 1 an.
 
-<!-- FIGURE À FAIRE : quatre pictogrammes simples côte à côte : lavage du nez au sérum physiologique, verre d'eau, oreiller surélevé, thermomètre de pièce à 18-20 °C. Titre : « Ce qui aide contre le rhume ». Texte alternatif : « Contre le rhume : laver le nez, boire, dormir la tête surélevée, garder la pièce fraîche. » -->
+{{< figure-svg rhume-toux-1 alt="Contre le rhume : laver le nez, boire, dormir la tête surélevée, garder la pièce fraîche." legende="Quatre gestes simples contre le rhume." >}}
 
 ### Pourquoi éviter les comprimés contre le nez bouché ?
 

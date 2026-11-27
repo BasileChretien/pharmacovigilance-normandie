@@ -110,7 +110,7 @@ Les triptans ne conviennent pas à tout le monde. Signalez à votre médecin une
 - Avec un triptan, si la douleur revient après un soulagement, une deuxième prise est possible. Attendez au moins 2 heures entre les deux prises.
 - Notez vos crises et vos médicaments dans un calendrier. Votre médecin pourra mieux adapter votre traitement.
 
-<!-- FIGURE À FAIRE : calendrier d'un mois (grille de 30 cases). Les jours de crise traités sont colorés. Un repère montre la limite de 8 jours de traitement par mois conseillée. Deux autres repères montrent les seuils de 10 jours (triptans) et 15 jours (paracétamol, anti-inflammatoires) au-delà desquels un mal de tête par excès de médicaments peut s'installer. Couleurs lisibles en niveaux de gris. -->
+{{< figure-svg migraine-1 alt="Une rangée de 30 cases pour les jours d'un mois, dont 6 jours traités en exemple. Des repères marquent 8 jours, la limite conseillée, puis 10 jours avec un triptan et 15 jours avec le paracétamol ou un anti-inflammatoire. Ces seuils atteints depuis plus de 3 mois exposent à un mal de tête par abus de médicaments." legende="Visez 8 jours de traitement par mois au plus." >}}
 
 ### Quels effets surveiller ?
 

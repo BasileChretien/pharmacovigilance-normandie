@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 352" width="440" height="352" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <defs>
+    <pattern id="migraine-1-jours" x="25" y="88" width="13" height="22" patternUnits="userSpaceOnUse">
+      <rect x="1" y="1" width="11" height="20" rx="2" fill="#ffffff" stroke="#46586a" stroke-width="1.2"/>
+    </pattern>
+  </defs>
+  <text x="16" y="24" font-size="17" font-weight="700">Jours avec un traitement de crise, sur un mois</text>
+  <text x="16" y="46" fill="#46586a">Exemple : 6 jours traités (cases pleines)</text>
+
+  <!-- 30 days -->
+  <rect x="25" y="88" width="390" height="22" fill="url(#migraine-1-jours)"/>
+  <g fill="#073f6e">
+    <rect x="26" y="89" width="11" height="20" rx="2"/><rect x="39" y="89" width="11" height="20" rx="2"/><rect x="52" y="89" width="11" height="20" rx="2"/>
+    <rect x="65" y="89" width="11" height="20" rx="2"/><rect x="78" y="89" width="11" height="20" rx="2"/><rect x="91" y="89" width="11" height="20" rx="2"/>
+  </g>
+  <text x="31" y="130" text-anchor="middle" fill="#46586a">1</text>
+  <text x="408" y="130" text-anchor="middle" fill="#46586a">30</text>
+
+  <!-- Marks after day 8, 10 and 15 -->
+  <g stroke="#10283a" stroke-width="2.5">
+    <line x1="129" y1="78" x2="129" y2="118"/><line x1="155" y1="78" x2="155" y2="118"/><line x1="220" y1="78" x2="220" y2="118"/>
+  </g>
+  <g font-weight="700" text-anchor="middle">
+    <text x="125" y="72">8</text><text x="159" y="72">10</text><text x="220" y="72">15</text>
+  </g>
+
+  <!-- What the marks mean -->
+  <line x1="16" y1="148" x2="424" y2="148" stroke="#d5e2ea" stroke-width="2"/>
+  <rect x="16" y="162" width="36" height="26" rx="6" fill="#e6f7ef" stroke="#0b6b45" stroke-width="2"/>
+  <text x="34" y="181" text-anchor="middle" font-weight="700">8</text>
+  <text x="62" y="181">jours au plus : ce qui est conseillé</text>
+
+  <rect x="16" y="200" width="36" height="26" rx="6" fill="#ffffff" stroke="#46586a" stroke-width="2"/>
+  <text x="34" y="219" text-anchor="middle" font-weight="700">10</text>
+  <text x="62" y="219">jours ou plus avec un triptan</text>
+
+  <rect x="16" y="238" width="36" height="26" rx="6" fill="#ffffff" stroke="#46586a" stroke-width="2"/>
+  <text x="34" y="257" text-anchor="middle" font-weight="700">15</text>
+  <text x="62" y="257">jours ou plus avec le paracétamol</text>
+  <text x="62" y="277">ou un anti-inflammatoire</text>
+
+  <rect x="16" y="292" width="408" height="52" rx="10" fill="#fdeceb"/>
+  <text x="28" y="314" font-weight="700" fill="#b3261e">Ces seuils atteints depuis plus de 3 mois :</text>
+  <text x="28" y="334">risque de mal de tête par abus de médicaments</text>
+</svg>

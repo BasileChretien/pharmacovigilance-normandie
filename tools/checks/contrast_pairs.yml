@@ -30,3 +30,5 @@ paires:
   - { texte: pv-paper, fond: pv-ink, minimum: 4.5, usage: "figures : numéros des étapes" }
   - { texte: pv-paper, fond: pv-alert, minimum: 4.5, usage: "figures : étiquette « Interdit »" }
   - { texte: pv-amber, fond: pv-paper, minimum: 4.5, usage: "figures : « Consultez », « attendre » (bord pointillé)" }
+  - { texte: pv-paper, fond: pv-green-ink, minimum: 4.5, usage: "figures : numéro d'une étape (vert)" }
+  - { texte: pv-paper, fond: pv-amber, minimum: 4.5, usage: "figures : numéro d'une étape (ambre)" }

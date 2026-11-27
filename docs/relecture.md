@@ -187,4 +187,16 @@ légende (dans la page, raccourci `figure-svg`).
 | medicaments/classes/statines | Foie et artères | Deux artères comparées (beaucoup ou moins de cholestérol dans le sang) pour dire « moins encombrée » (consigne) ; « l'artère reste plus libre » est à relire |
 | medicaments/classes/statines | Étude SAMSON, trois barres | Scores 8,0, 15,4 et 16,3 sur 100 du texte professionnel ; axe coupé à 20, signalé ; « 49 personnes jusqu'au bout » |
 | medicaments/classes/valproate-teratogenes | Trois grilles de 100 enfants | Les fourchettes (2 à 3, 30 à 40) : personnages pleins jusqu'au bas de la fourchette, rayés jusqu'au haut |
+| medicaments/classes/fluoroquinolones | Ligne de la ciprofloxacine (revue de #26) | La figure, comme le texte patient, ne donne pour la ciprofloxacine que le lait ou le yaourt pris seuls ; le délai avec le fer, le zinc, le calcium et les antiacides n'y est pas (RCP : 1 à 2 heures avant, au moins 4 heures après). À ajouter ? |
+| medicaments/maux-courants/angine-mal-de-gorge | Test rapide en trois étapes | « avec un coton-tige » vient de la consigne ; « paracétamol si besoin » reprend le conseil de la page |
+| medicaments/maux-courants/brulures-estomac | Œsophage et estomac, trois familles | Schéma sans échelle : grains d'antiacide dans l'acide, couche d'alginate qui flotte, « pompes » de la paroi pour les IPP |
+| medicaments/maux-courants/constipation | Quatre marches | Ordre de la page ; la quatrième, « Puis consultez », vient de la consigne |
+| medicaments/maux-courants/cystite | Arbre de décision | « Fièvre, douleur dans le dos, ou grossesse » (consigne) mène à « Consultez un médecin » ; « le jour même » est gardé pour la fièvre et la douleur dans le dos, la page disant pour la grossesse « consultez toujours un médecin » |
+| medicaments/maux-courants/diarrhee-aigue | Préparer un soluté de réhydratation orale | Biberon gradué rempli jusqu'à 200 ml (consigne) |
+| medicaments/maux-courants/fievre-douleur-enfant | Pipette graduée en kilos, et 24 heures | Graduations sans chiffre sauf 12 kg (exemple de la page) ; horaires 8 h, 14 h, 20 h et 2 h donnés en exemple par la consigne ; « jamais de moins de 4 heures » d'après la page |
+| medicaments/maux-courants/insomnie | Frise d'une journée | « Sieste de moins d'une heure, avant 16 heures » et « écrans à limiter » suivent la page (la consigne disait « écrans éteints ») |
+| medicaments/maux-courants/lombalgie | 10 personnages, 9 pleins | Le dixième « ne va pas mieux dans ce délai » : la page n'en dit pas plus |
+| medicaments/maux-courants/migraine | Les 30 jours d'un mois, repères 8, 10 et 15 | Les 6 jours traités sont un exemple ; « depuis plus de 3 mois » vient de la page |
+| medicaments/maux-courants/rhinite-allergique | Geste du spray nasal, de face et de côté | La tête penchée en avant et l'embout vers l'extérieur viennent de la consigne ; la page ne dit que « main droite pour la narine gauche » |
+| medicaments/maux-courants/rhume-toux | Quatre gestes contre le rhume | « aérer » ajouté d'après la page (« aérez souvent ») |
 

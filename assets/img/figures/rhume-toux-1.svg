@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 364" width="440" height="364" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <text x="16" y="26" font-size="18" font-weight="700">Ce qui aide contre le rhume</text>
+  <g fill="#eef6fa">
+    <rect x="16" y="42" width="200" height="150" rx="10"/><rect x="224" y="42" width="200" height="150" rx="10"/>
+    <rect x="16" y="200" width="200" height="150" rx="10"/><rect x="224" y="200" width="200" height="150" rx="10"/>
+  </g>
+
+  <!-- Wash the nose -->
+  <path d="M100 64 C84 80 80 98 76 112 C74 120 84 124 96 122" fill="none" stroke="#10283a" stroke-width="2.5" stroke-linecap="round"/>
+  <g transform="rotate(-30 120 112)">
+    <rect x="104" y="104" width="34" height="16" rx="6" fill="#ffffff" stroke="#10283a" stroke-width="2"/>
+    <path d="M104 112 H96" stroke="#10283a" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g fill="#19a6e3"><circle cx="90" cy="134" r="2.5"/><circle cx="84" cy="142" r="2"/></g>
+  <text x="116" y="164" text-anchor="middle" font-weight="700">Laver le nez</text>
+  <text x="116" y="182" text-anchor="middle" fill="#46586a">sérum physiologique</text>
+
+  <!-- Drink -->
+  <path d="M308 64 H340 L336 128 H312 Z" fill="#ffffff" stroke="#10283a" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M309.3 84 H338.7 L336 128 H312 Z" fill="#bfe3ee"/>
+  <path d="M308 64 H340 L336 128 H312 Z" fill="none" stroke="#10283a" stroke-width="2" stroke-linejoin="round"/>
+  <text x="324" y="164" text-anchor="middle" font-weight="700">Boire</text>
+  <text x="324" y="182" text-anchor="middle" fill="#46586a">suffisamment</text>
+
+  <!-- Sleep with the head raised -->
+  <path d="M40 300 V264 M40 286 H192 V300" fill="none" stroke="#10283a" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M48 284 L52 252 Q60 246 92 262 L94 284 Z" fill="#ffffff" stroke="#10283a" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="74" cy="248" r="10" fill="#073f6e"/>
+  <path d="M84 258 L180 280" stroke="#073f6e" stroke-width="10" stroke-linecap="round"/>
+  <text x="116" y="322" text-anchor="middle" font-weight="700">Dormir la tête</text>
+  <text x="116" y="340" text-anchor="middle" font-weight="700">surélevée</text>
+
+  <!-- Keep the room cool -->
+  <rect x="314" y="218" width="20" height="70" rx="10" fill="#ffffff" stroke="#10283a" stroke-width="2"/>
+  <circle cx="324" cy="292" r="12" fill="#ffffff" stroke="#10283a" stroke-width="2"/>
+  <rect x="320" y="250" width="8" height="40" fill="#19a6e3"/>
+  <circle cx="324" cy="292" r="8" fill="#19a6e3"/>
+  <path d="M334 236 H342 M334 250 H342 M334 264 H342" stroke="#10283a" stroke-width="1.5"/>
+  <text x="324" y="322" text-anchor="middle" font-weight="700">Pièce fraîche</text>
+  <text x="324" y="340" text-anchor="middle" fill="#46586a">18 à 20 °C, aérer</text>
+</svg>
