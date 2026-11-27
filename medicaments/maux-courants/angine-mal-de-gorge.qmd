@@ -81,7 +81,7 @@ Chez l'adulte, le médecin ou le pharmacien pose d'abord quelques questions. Ell
 
 En pharmacie, le test est possible dès 10 ans, sans ordonnance. S'il est positif, le pharmacien formé peut vous remettre l'antibiotique.
 
-<!-- FIGURE À FAIRE : schéma en trois étapes. 1) Prélèvement avec un coton-tige au fond de la gorge. 2) Lecture du test en quelques minutes. 3) Deux flèches : « positif → antibiotique » et « négatif → pas d'antibiotique, paracétamol si besoin ». Texte alternatif : « Le test rapide de l'angine : un prélèvement de gorge, un résultat en quelques minutes, un antibiotique seulement si le test est positif. » -->
+{{< figure-svg angine-mal-de-gorge-1 alt="Le test rapide de l'angine : un prélèvement de gorge, un résultat en quelques minutes, un antibiotique seulement si le test est positif." legende="Test positif : un antibiotique. Test négatif : pas d'antibiotique, du paracétamol si besoin." >}}
 
 ### Comment agissent les antibiotiques ?
 

@@ -62,7 +62,7 @@ Si les symptômes sont légers, un antihistaminique récent suffit souvent. S'il
 
 Pour un spray nasal, tenez le flacon de la main opposée à la narine : main droite pour la narine gauche. Ce geste limite les saignements de nez. Utilisez le spray régulièrement, comme indiqué sur l'ordonnance ou la notice. Demandez au pharmacien de vous montrer le bon geste.
 
-<!-- FIGURE À FAIRE : schéma du bon geste pour un spray nasal (tête légèrement penchée en avant, main droite pour la narine gauche, embout orienté vers l'extérieur et non vers la cloison). Texte alternatif décrivant le geste. -->
+{{< figure-svg rhinite-allergique-1 alt="Le geste pour un spray nasal. De face : la main droite tient le flacon dans la narine gauche, l'embout tourné vers l'extérieur, pas vers la cloison du nez. De côté : la tête un peu penchée en avant." legende="Main droite pour la narine gauche : ce geste limite les saignements de nez." >}}
 
 ### Quels effets surveiller ?
 

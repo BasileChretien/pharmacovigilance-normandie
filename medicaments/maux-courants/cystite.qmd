@@ -77,7 +77,7 @@ Pour une cystite simple, une analyse d'urine au laboratoire n'est pas nécessair
 
 En pharmacie, le test est possible pour les femmes de 16 à 65 ans, sans fièvre. S'il est positif, le pharmacien formé peut remettre l'antibiotique sans ordonnance.
 
-<!-- FIGURE À FAIRE : arbre de décision simple. En haut : « brûlures en urinant, envies fréquentes ». Question 1 : « fièvre, douleur dans le dos, grossesse ? » → oui : « consultez le jour même ». → non : « bandelette urinaire ». Bandelette positive → « antibiotique (fosfomycine en une prise) » ; négative → « avis médical ». Texte alternatif : « Que faire devant une cystite : vérifier l'absence de signes de gravité, faire une bandelette, un antibiotique seulement si elle est positive. » -->
+{{< figure-svg cystite-1 alt="Que faire devant une cystite. Vérifier l'absence de signes de gravité et de situation à risque. Faire une bandelette, puis un antibiotique seulement si elle est positive." legende="Une bandelette positive mène à un antibiotique ; une bandelette négative, à un avis médical." description="Grande faiblesse, confusion ou peau marbrée : appelez le 15. Femme avec des brûlures en urinant et des envies fréquentes. Fièvre, frissons, douleur dans le dos ou sur un côté, vomissements, signes revenus dans les 2 semaines, ou situation à risque (grossesse, anomalie des voies urinaires, reins qui fonctionnent très mal, défenses immunitaires très affaiblies, plus de 75 ans, ou plus de 65 ans et fragile) : consultez un médecin, le jour même en cas de fièvre, frissons, douleur dans le dos ou sur un côté, ou vomissements. Sinon, bandelette urinaire. Positive : antibiotique, la fosfomycine en une prise. Négative : avis médical pour chercher une autre cause." >}}
 
 ### Quels médicaments sont utilisés ?
 

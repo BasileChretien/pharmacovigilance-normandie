@@ -59,7 +59,7 @@ Trois familles de médicaments existent :
 - les **alginates** : ils forment une couche qui flotte sur le contenu de l'estomac et protège l'œsophage ;
 - les **inhibiteurs de la pompe à protons**, souvent appelés IPP : ils diminuent la fabrication d'acide par l'estomac.
 
-<!-- FIGURE À FAIRE : schéma simple de l'estomac et de l'œsophage montrant où agit chaque famille (antiacide dans l'estomac, alginate en couche flottante, IPP sur la paroi de l'estomac qui fabrique l'acide). Couleurs lisibles par les personnes daltoniennes. -->
+{{< figure-svg brulures-estomac-1 alt="Schéma de l'œsophage et de l'estomac. L'alginate forme une couche qui flotte et protège l'œsophage. L'antiacide neutralise l'acide déjà dans l'estomac. Avec un IPP, l'estomac fabrique moins d'acide." legende="Trois familles de médicaments, trois façons d'agir contre l'acide." >}}
 
 ### Comment choisir ?
 

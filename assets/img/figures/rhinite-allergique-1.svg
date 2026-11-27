@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 372" width="440" height="372" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <defs>
+    <marker id="rhinite-allergique-1-fleche" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0b6b45"/>
+    </marker>
+    <marker id="rhinite-allergique-1-fleche-non" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#b3261e"/>
+    </marker>
+  </defs>
+
+  <!-- Front view: right hand, left nostril, nozzle pointing outwards -->
+  <rect x="12" y="12" width="212" height="264" rx="10" fill="#eef6fa"/>
+  <text x="24" y="36" fill="#46586a">Vue de face</text>
+  <ellipse cx="118" cy="128" rx="58" ry="74" fill="#ffffff" stroke="#10283a" stroke-width="2"/>
+  <circle cx="98" cy="108" r="3.5" fill="#10283a"/><circle cx="138" cy="108" r="3.5" fill="#10283a"/>
+  <path d="M118 112 L108 146 Q118 152 128 146 Z" fill="#dcebf3" stroke="#10283a" stroke-width="1.8" stroke-linejoin="round"/>
+  <ellipse cx="111" cy="146" rx="3.5" ry="2.5" fill="#10283a"/>
+  <path d="M104 172 Q118 180 132 172" fill="none" stroke="#10283a" stroke-width="2" stroke-linecap="round"/>
+  <!-- Spray bottle in the left nostril (on the right of the drawing), tilted outwards -->
+  <g transform="rotate(14 126 150)">
+    <rect x="123" y="134" width="6" height="22" rx="2" fill="#ffffff" stroke="#10283a" stroke-width="1.8"/>
+    <rect x="114" y="156" width="24" height="12" rx="3" fill="#dcebf3" stroke="#10283a" stroke-width="1.8"/>
+    <rect x="112" y="168" width="28" height="58" rx="6" fill="#ffffff" stroke="#10283a" stroke-width="2"/>
+  </g>
+  <!-- The right hand comes from the left of the drawing -->
+  <path d="M20 262 Q60 236 108 218" fill="none" stroke="#073f6e" stroke-width="12" stroke-linecap="round"/>
+  <rect x="98" y="204" width="34" height="24" rx="10" fill="#073f6e" transform="rotate(14 115 216)"/>
+  <!-- Direction of the nozzle -->
+  <path d="M136 132 L162 106" stroke="#0b6b45" stroke-width="2.5" marker-end="url(#rhinite-allergique-1-fleche)"/>
+  <path d="M120 130 L104 118" stroke="#b3261e" stroke-width="2.5" marker-end="url(#rhinite-allergique-1-fleche-non)"/>
+  <line x1="104" y1="132" x2="118" y2="116" stroke="#b3261e" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="132" y="262" fill="#46586a">main droite</text>
+
+  <!-- Side view: head bent slightly forward -->
+  <rect x="232" y="12" width="196" height="264" rx="10" fill="#eef6fa"/>
+  <text x="244" y="36" fill="#46586a">Vue de côté</text>
+  <g transform="rotate(16 330 150)">
+    <path d="M330 72 C292 72 280 104 284 132 C286 150 296 160 300 176 L304 214 H344 L346 186 C356 184 372 182 376 170 C378 162 372 156 376 150 C382 146 386 142 380 136 L370 116 C366 92 352 72 330 72 Z" fill="#ffffff" stroke="#10283a" stroke-width="2" stroke-linejoin="round"/>
+    <circle cx="352" cy="112" r="3.5" fill="#10283a"/>
+  </g>
+  <path d="M300 54 Q350 40 392 70" fill="none" stroke="#073f6e" stroke-width="2.5" marker-end="url(#rhinite-allergique-1-fleche)"/>
+  <text x="244" y="246">tête un peu</text>
+  <text x="244" y="266">penchée en avant</text>
+
+  <!-- The gesture in words -->
+  <text x="16" y="306" font-weight="700">Main droite pour la narine gauche,</text>
+  <text x="16" y="326" font-weight="700">et inversement.</text>
+  <text x="16" y="352"><tspan fill="#0b6b45" font-weight="700">Oui</tspan> : embout vers l'extérieur ; <tspan fill="#b3261e" font-weight="700">non</tspan> : vers la cloison.</text>
+</svg>

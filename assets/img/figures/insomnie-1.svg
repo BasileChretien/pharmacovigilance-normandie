@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <line x1="40" y1="30" x2="40" y2="388" stroke="#d5e2ea" stroke-width="4"/>
+  <g fill="#eef6fa" stroke="#46586a" stroke-width="1.5">
+    <circle cx="40" cy="30" r="20"/><circle cx="40" cy="100" r="20"/><circle cx="40" cy="170" r="20"/>
+    <circle cx="40" cy="240" r="20"/><circle cx="40" cy="310" r="20"/><circle cx="40" cy="388" r="20"/>
+  </g>
+
+  <!-- Getting up -->
+  <path d="M30 36 a10 10 0 0 1 20 0 Z" fill="#e7b03b" stroke="#10283a" stroke-width="1.5"/>
+  <path d="M27 36 H53 M40 19 V22" stroke="#10283a" stroke-width="2" stroke-linecap="round"/>
+  <text x="76" y="28" font-size="17" font-weight="700">Lever</text>
+  <text x="76" y="50">à heure régulière</text>
+
+  <!-- Nap -->
+  <path d="M28 106 V96 h24 v10 M28 102 h24" fill="none" stroke="#10283a" stroke-width="2" stroke-linecap="round"/>
+  <text x="44" y="92" font-size="16" font-weight="700" fill="#073f6e">z</text>
+  <text x="76" y="98" font-size="17" font-weight="700">Sieste courte</text>
+  <text x="76" y="120">moins d'une heure, avant 16 heures</text>
+
+  <!-- Exercise -->
+  <path d="M28 176 l6 -10 h10 l4 6 h6 v4 Z" fill="#ffffff" stroke="#10283a" stroke-width="1.8" stroke-linejoin="round"/>
+  <text x="76" y="168" font-size="17" font-weight="700">Exercice</text>
+  <text x="76" y="190">dans la journée, plutôt avant 17 heures</text>
+
+  <!-- Light dinner -->
+  <circle cx="40" cy="240" r="9" fill="#ffffff" stroke="#10283a" stroke-width="2"/>
+  <path d="M27 231 V250 M53 231 V250" stroke="#10283a" stroke-width="2" stroke-linecap="round"/>
+  <text x="76" y="238" font-size="17" font-weight="700">Dîner léger</text>
+  <text x="76" y="260">ni trop gras ni trop copieux</text>
+
+  <!-- Screens -->
+  <rect x="32" y="298" width="16" height="24" rx="3" fill="#ffffff" stroke="#10283a" stroke-width="2"/>
+  <line x1="37" y1="317" x2="43" y2="317" stroke="#10283a" stroke-width="1.5"/>
+  <text x="76" y="308" font-size="17" font-weight="700">Écrans</text>
+  <text x="76" y="330">à limiter avant le coucher</text>
+
+  <!-- Bedtime -->
+  <path d="M38 376 a11 11 0 1 0 10 18 a8.5 8.5 0 1 1 -10 -18 Z" fill="#e7b03b" stroke="#10283a" stroke-width="1.5"/>
+  <text x="76" y="384" font-size="17" font-weight="700">Coucher à heure régulière</text>
+  <text x="76" y="406">chambre calme, sombre,</text>
+  <text x="76" y="426">pas trop chaude</text>
+</svg>

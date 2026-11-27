@@ -56,7 +56,7 @@ Les laxatifs sont des médicaments qui aident à aller à la selle. Il en existe
 
 Les fibres retiennent l'eau et augmentent le volume des selles. Les osmotiques attirent l'eau dans l'intestin et ramollissent les selles. Les lubrifiants graissent les selles pour faciliter leur passage. Les stimulants accélèrent les mouvements de l'intestin. Les suppositoires déclenchent l'envie d'aller à la selle.
 
-<!-- FIGURE À FAIRE : frise « par quoi commencer » en quatre marches : 1) eau, fibres, activité ; 2) laxatif de lest ou osmotique ; 3) en cas d'échec, lubrifiant ou stimulant sur une courte durée ; 4) consulter. Couleurs lisibles par les personnes daltoniennes et en niveaux de gris. -->
+{{< figure-svg constipation-1 alt="Quatre marches. 1, d'abord : eau, fibres, activité. 2, si cela ne suffit pas : laxatif de lest ou osmotique. 3, en cas d'échec : lubrifiant ou stimulant, peu de temps. 4, puis consultez." legende="Par quoi commencer contre la constipation, marche après marche." >}}
 
 ### Comment choisir ?
 

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 356" width="440" height="356" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <defs>
+    <g id="fievre-douleur-enfant-1-prise">
+      <circle r="12" fill="#073f6e"/>
+      <path d="M-5 -2 h10 v4 h-10 Z" fill="#ffffff"/>
+    </g>
+  </defs>
+
+  <!-- The dosing pipette, graduated in kilos, filled up to 12 kg -->
+  <text x="16" y="22" font-size="17" font-weight="700">Remplir jusqu'au poids de l'enfant</text>
+  <path d="M24 66 L44 58 V74 Z" fill="#ffffff" stroke="#10283a" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="44" y="54" width="280" height="24" rx="4" fill="#ffffff" stroke="#10283a" stroke-width="2"/>
+  <rect x="46" y="56" width="168" height="20" fill="#e7b03b"/>
+  <rect x="214" y="52" width="10" height="28" rx="2" fill="#46586a"/>
+  <rect x="224" y="62" width="128" height="8" fill="#d5e2ea" stroke="#46586a" stroke-width="1.5"/>
+  <rect x="352" y="48" width="12" height="36" rx="3" fill="#ffffff" stroke="#10283a" stroke-width="2"/>
+  <g stroke="#10283a" stroke-width="1.5">
+    <line x1="74" y1="78" x2="74" y2="88"/><line x1="102" y1="78" x2="102" y2="88"/><line x1="130" y1="78" x2="130" y2="88"/>
+    <line x1="158" y1="78" x2="158" y2="88"/><line x1="186" y1="78" x2="186" y2="88"/><line x1="242" y1="78" x2="242" y2="88"/>
+    <line x1="270" y1="78" x2="270" y2="88"/><line x1="298" y1="78" x2="298" y2="88"/>
+  </g>
+  <line x1="214" y1="78" x2="214" y2="96" stroke="#073f6e" stroke-width="3"/>
+  <text x="214" y="116" text-anchor="middle" font-size="17" font-weight="700" fill="#073f6e">12 kg</text>
+  <text x="16" y="144" fill="#46586a">Exemple : un enfant de 12 kilos</text>
+
+  <!-- 24 hours, 4 doses 6 hours apart -->
+  <line x1="16" y1="164" x2="424" y2="164" stroke="#d5e2ea" stroke-width="2"/>
+  <text x="16" y="194" font-size="17" font-weight="700">4 prises au plus en 24 heures</text>
+  <line x1="40" y1="250" x2="400" y2="250" stroke="#46586a" stroke-width="3" stroke-linecap="round"/>
+  <g fill="none" stroke="#073f6e" stroke-width="2">
+    <path d="M40 232 Q85 208 130 232"/><path d="M130 232 Q175 208 220 232"/><path d="M220 232 Q265 208 310 232"/>
+  </g>
+  <g text-anchor="middle" fill="#073f6e" font-weight="700">
+    <text x="85" y="214">6 h</text><text x="175" y="214">6 h</text><text x="265" y="214">6 h</text>
+  </g>
+  <use href="#fievre-douleur-enfant-1-prise" x="40" y="250"/>
+  <use href="#fievre-douleur-enfant-1-prise" x="130" y="250"/>
+  <use href="#fievre-douleur-enfant-1-prise" x="220" y="250"/>
+  <use href="#fievre-douleur-enfant-1-prise" x="310" y="250"/>
+  <g text-anchor="middle">
+    <text x="40" y="282">8 h</text><text x="130" y="282">14 h</text><text x="220" y="282">20 h</text><text x="310" y="282">2 h</text>
+    <text x="400" y="282" fill="#46586a">8 h</text>
+  </g>
+  <text x="16" y="316">Espacez les prises de 6 heures si possible,</text>
+  <text x="16" y="338">jamais de moins de 4 heures.</text>
+</svg>

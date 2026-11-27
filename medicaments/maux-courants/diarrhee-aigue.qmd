@@ -71,7 +71,7 @@ Le soluté de réhydratation orale est une poudre à mélanger à de l'eau. Il a
 - Si l'enfant vomit, commencez par une cuillère à café, puis augmentez peu à peu.
 - Si vous allaitez, continuez l'allaitement et donnez le soluté en plus.
 
-<!-- FIGURE À FAIRE : trois vignettes. 1) Un sachet versé dans un biberon gradué rempli d'eau jusqu'à 200 ml. 2) Une cuillère à café donnée à un enfant qui vomit, avec une flèche « augmenter peu à peu ». 3) Le biberon au réfrigérateur avec la mention « 24 heures au plus ». Texte alternatif : « Préparer un soluté de réhydratation orale : un sachet dans 200 ml d'eau, donné par petites quantités, conservé 24 heures au froid. » -->
+{{< figure-svg diarrhee-aigue-1 alt="Préparer un soluté de réhydratation orale : un sachet dans 200 ml d'eau, donné par petites quantités, conservé 24 heures au froid." legende="Un sachet dans 200 ml d'eau, par petites quantités, et 24 heures au plus au réfrigérateur." >}}
 
 Les adultes boivent régulièrement, par petites gorgées. Les sodas et jus de fruits ne remplacent pas le soluté chez l'enfant. [à compléter : source]
 

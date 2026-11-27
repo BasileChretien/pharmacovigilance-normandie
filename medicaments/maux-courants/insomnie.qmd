@@ -65,7 +65,7 @@ Une mauvaise nuit de temps en temps est normale. Avant tout médicament, quelque
 
 Si l'insomnie dure, une thérapie cognitive et comportementale (TCC) est le traitement conseillé en premier. C'est un accompagnement qui aide à changer les habitudes et les pensées qui gênent le sommeil.
 
-<!-- FIGURE À FAIRE : frise d'une journée type (lever, journée, sieste courte avant 16 h, sport avant 17 h, dîner léger, écrans éteints, coucher) avec les bons moments repérés. Couleurs lisibles par les personnes daltoniennes. -->
+{{< figure-svg insomnie-1 alt="Frise d'une journée. Lever à heure régulière. Sieste de moins d'une heure, avant 16 heures. Exercice plutôt avant 17 heures. Dîner léger. Écrans à limiter avant le coucher. Coucher à heure régulière, dans une chambre calme, sombre, pas trop chaude." legende="Les bons moments de la journée pour mieux dormir." >}}
 
 ### Que font les somnifères ?
 

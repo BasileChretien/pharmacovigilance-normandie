@@ -26,3 +26,28 @@ def test_the_two_hour_rule_is_given_for_levofloxacin_only():
     assert "lévofloxacine" in figure_text("fluoroquinolones-1")
     assert "lévofloxacine" in code["alt"]
     assert "lévofloxacine" in code["legende"]
+
+
+def test_the_cystitis_tree_sends_risk_situations_and_warning_signs_to_a_doctor():
+    # Page: « On parle de cystite simple quand il n'y a pas de fièvre ni de situation à
+    # risque »; the single dose of fosfomycin is for a simple cystitis only. The « Quand
+    # consulter » box adds signs that come back within 2 weeks (« consultez ») and great
+    # weakness, confusion or mottled skin (« appelez le 15 »).
+    text = figure_text("cystite-1")
+    code = shortcode("medicaments/maux-courants/cystite.qmd", "cystite-1")
+    for words in ("situation à risque", "grossesse", "anomalie des voies urinaires",
+                  "reins qui fonctionnent très mal", "défenses immunitaires très affaiblies",
+                  "75 ans", "2 semaines", "appelez le 15", "douleur dans le dos"):
+        assert words in text, words
+        assert words in code["description"], words
+    assert "situation à risque" in code["alt"]
+
+
+def test_the_cystitis_same_day_signs_include_pain_on_one_side():
+    # Page: « Fièvre, frissons, douleur dans le bas du dos ou sur un côté, vomissements :
+    # [...] Consultez le jour même ». The same-day list must keep the pain on one side.
+    code = shortcode("medicaments/maux-courants/cystite.qmd", "cystite-1")
+    assert "sur un côté" in code["description"].split("le jour même")[1]
+    svg = (ROOT / "assets" / "img" / "figures" / "cystite-1.svg").read_text(encoding="utf-8")
+    leaf = svg[svg.index("Consultez un médecin"):svg.index("No: urine dipstick")]
+    assert "sur un côté" in " ".join(re.findall(r">([^<]+)</text>", leaf))

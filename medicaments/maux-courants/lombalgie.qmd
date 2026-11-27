@@ -56,7 +56,7 @@ pour_aller_plus_loin:
 
 La lombalgie commune est une douleur du bas du dos sans signe de maladie grave. Elle fait peur, mais elle guérit le plus souvent seule. Reprendre peu à peu vos activités aide à guérir. Si possible, reprenez aussi le travail tôt. Le repos au lit prolongé ne fait pas guérir plus vite. Une radio ou une imagerie par résonance magnétique (IRM) est en général inutile au début.
 
-<!-- FIGURE À FAIRE : grille de 10 personnages dont 9 colorés (« vont mieux en moins de 4 à 6 semaines ») et 1 non coloré. Texte alternatif : « Sur 10 personnes ayant une lombalgie commune, 9 vont mieux en moins de 4 à 6 semaines. » -->
+{{< figure-svg lombalgie-1 alt="Sur 10 personnes ayant une lombalgie commune, 9 vont mieux en moins de 4 à 6 semaines." legende="La lombalgie commune guérit le plus souvent seule." >}}
 
 ### Quels médicaments peuvent aider ?
 
