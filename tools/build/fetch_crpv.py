@@ -17,6 +17,7 @@ import json
 import re
 import urllib.request
 from pathlib import Path
+from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "data" / "crpv-france.json"
@@ -107,7 +108,7 @@ def parse_centres(page: str) -> list[dict]:
                     parse_departement(li) for li in _LI.findall(depts.group(1))
                 ],
                 "telephone": _phone(item),
-                "courriel": mail.group(1).strip() if mail else None,
+                "courriel": unquote(mail.group(1)).strip() if mail else None,
                 "site": site.group(1) if site else None,
             }
         )

@@ -71,5 +71,12 @@ def test_singular_heading_and_codes_of_every_shape():
     assert fc.parse_departement("Val d'Oise (95)")["nom"] == "Val d'Oise"
 
 
+def test_email_href_is_decoded_so_an_encoded_trailing_space_is_dropped():
+    page = FIXTURE.replace(
+        'href="mailto:crpv.hegp@aphp.fr"', 'href="mailto:crpv.hegp@aphp.fr%20"'
+    )
+    assert fc.parse_centres(page)[1]["courriel"] == "crpv.hegp@aphp.fr"
+
+
 def test_missing_site_is_none():
     assert fc.parse_centres(FIXTURE)[1]["site"] is None
