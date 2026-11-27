@@ -109,3 +109,12 @@ le Collège national de pharmacologie médicale (pharmacomedicale.org), dans
 | comprendre/pourquoi-declarer | Uppsala Monitoring Centre : fondation indépendante, centre collaborateur de l'OMS ; site en anglais |
 | bon-usage/interactions-ville, bon-usage/cytochromes | Thériaque (CNHIM) : l'inscription est-elle toujours gratuite pour les professionnels ? |
 | normandie/index, normandie/qui-contacter | ARS et CPIAS de Normandie : sites et intitulés ; coordonnées téléphoniques du CPIAS à compléter |
+
+## Notices et RCP officiels (27/11/2026)
+
+| Page | À vérifier |
+|---|---|
+| Fiches de classe | Les substances listées (`substances:`) : six au plus, celles dont parle la fiche. L'exemple de notice est choisi automatiquement (substance seule, forme orale, médicament de référence) : le garder, ou demander une autre spécialité |
+| antidiabetiques | Sémaglutide : l'exemple est WEGOVY 1,5 mg comprimé (amaigrissement), pas un médicament du diabète |
+| opioides | Codéine : l'exemple est PADERYL, un sirop contre la toux (codéine seule), alors que la fiche parle surtout de la codéine contre la douleur, associée au paracétamol |
+| maux-courants/diarrhee-aigue | IMODIUM 2 mg n'est plus commercialisé (BDPM du 20/11/2026). Le texte professionnel suit désormais le RCP d'IMODIUMCAPS 2 mg (sans ordonnance) : à partir de 15 ans, 6 gélules par jour au plus, 2 jours au plus. À confirmer, ainsi que la phrase patient « de 6 à 8 ans ou plus » |

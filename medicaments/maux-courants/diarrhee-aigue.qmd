@@ -17,9 +17,9 @@ sources:
   - titre: "ANSM. Médicaments à base d'argile dans le traitement symptomatique de la diarrhée aiguë chez l'enfant, 25/03/2019, mis à jour le 15/04/2021"
     url: "https://ansm.sante.fr/informations-de-securite/medicaments-a-base-dargile-dans-le-traitement-symptomatique-de-la-diarrhee-aigue-chez-lenfant"
     consulte_le: 2026-11-25
-  - titre: "Base de données publique des médicaments. IMODIUM 2 mg, gélule (lopéramide), RCP mis à jour le 02/09/2026"
-    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/61651634/extrait"
-    consulte_le: 2026-11-25
+  - titre: "Base de données publique des médicaments. IMODIUMCAPS 2 mg, gélule (lopéramide), RCP et notice"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/61203061/extrait"
+    consulte_le: 2026-11-27
   - titre: "ANSM, Répertoire des spécialités. LOPERAMIDE RPG 2 mg, gélule, RCP mis à jour le 01/12/2016"
     url: "https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0288170.htm"
     consulte_le: 2026-11-25
@@ -146,7 +146,7 @@ Adulte : réhydratation orale ; traitement symptomatique éventuel. Antibiotique
 
 ### Précautions et effets indésirables
 
-- Lopéramide (RCP Imodium 2 mg, 2026) : réservé à l'adulte et à l'enfant de plus de 8 ans ; posologie initiale 2 gélules (adulte) ou 1 gélule (enfant), maximum 8 gélules par 24 heures chez l'adulte et 6 chez l'enfant. Contre-indications : enfant de moins de 8 ans, dysenterie aiguë avec sang dans les selles et fièvre élevée, poussée aiguë de rectocolite hémorragique ; colite pseudomembraneuse post-antibiotique (RCP Lopéramide RPG). L'âge minimum diffère selon les spécialités (6 ans pour Lopéramide RPG 2 mg). Effets cardiaques avec allongement du QT rapportés en cas de surdosage. Arrêt si absence d'amélioration en 48 heures (RCP Lopéramide RPG). Imodium 2 mg est signalé comme n'étant plus ou bientôt plus disponible.
+- Lopéramide (RCP Imodiumcaps 2 mg, spécialité sans ordonnance) : réservé à l'adulte et à l'enfant à partir de 15 ans ; posologie initiale 2 gélules, puis 1 gélule après chaque selle non moulée, sans dépasser 6 gélules par jour ni 2 jours de traitement. Contre-indications : enfant de moins de 15 ans ; en première intention, dysenterie aiguë avec sang dans les selles et fièvre importante, poussée aiguë de rectocolite hémorragique, entérocolite à bactérie invasive ; colite pseudomembraneuse post-antibiotique (RCP Imodiumcaps et Lopéramide RPG). L'âge minimum diffère selon les spécialités (6 ans pour Lopéramide RPG 2 mg). Effets cardiaques avec allongement du QT rapportés en cas de surdosage. Arrêt si absence d'amélioration en 48 heures (RCP Lopéramide RPG). Imodium 2 mg n'est plus commercialisé (base de données publique des médicaments, fichiers du 20/11/2026).
 - Racécadotril (RCP Tiorfan 10 mg nourrissons) : adjuvant de la réhydratation orale, à partir d'un mois et moins de 13 kg ; 1,5 mg/kg par prise, 3 prises par jour au plus, sans dépasser 7 jours. Pas d'utilisation dans les diarrhées associées aux antibiotiques ; fièvre avec sang ou pus dans les selles : évoquer une diarrhée invasive. Arrêt en cas de réaction cutanée sévère ou d'angio-œdème ; prudence avec les IEC (risque d'angio-œdème).
 - Argiles (ANSM, 2021) : ne plus utiliser avant 2 ans, même brièvement, en raison de traces possibles de plomb. [à compléter : position ANSM chez la femme enceinte ou allaitante, à vérifier dans le RCP actuel de la diosmectite]
 

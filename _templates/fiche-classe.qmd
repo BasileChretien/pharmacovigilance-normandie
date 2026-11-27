@@ -3,6 +3,7 @@ title: "Les [classe de médicaments]"
 description: "[Une phrase : ce que la fiche apporte au patient et au professionnel.]"
 public: [patients, professionnels]
 classe: "[nom court de la classe]"
+substances: [substance 1, substance 2]   # liens « Notices et RCP officiels » (make_bdpm_liens.py)
 statut: brouillon
 relu_par: null
 relu_le: null

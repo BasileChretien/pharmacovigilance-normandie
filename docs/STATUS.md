@@ -59,9 +59,12 @@ Prochaines pull requests, dans l'ordre (décidé le 27/11/2026) :
       (titre, date, lien, sans réécriture), date de relevé visible. Les flux RSS de l'ANSM ne
       contiennent que les actualités du jour : la liste est lue sur la page elle-même.
 - [ ] Nommer le responsable du fil des alertes (CRPV et personne qui le vérifie chaque semaine).
-- [ ] Liens « notice officielle » et « RCP » sur chaque fiche, générés depuis les fichiers
-      ouverts de la base de données publique des médicaments, avec contrôle des noms encore
-      commercialisés.
+- [x] Liens « notice officielle » et « RCP » sur les 15 fiches de classe (`substances:`),
+      générés depuis les fichiers ouverts de la base de données publique des médicaments
+      (fichiers du 20/11/2026), avec contrôle des médicaments cités encore commercialisés
+      (`FM-BDPM`). Premier contrôle : IMODIUM 2 mg n'est plus commercialisé, remplacé par
+      IMODIUMCAPS 2 mg sur la fiche diarrhée (à relire).
+- [ ] Étendre `substances:` aux fiches « maux courants » et « situations ».
 - [ ] Recherche par nom de médicament (marque et DCI) depuis la même base, présentée comme
       pages officielles externes.
 - [ ] Lien « Signaler une correction » : adresse retenue pharmacovigilance@chu-caen.fr (fait).

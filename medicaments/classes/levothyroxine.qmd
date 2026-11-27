@@ -3,6 +3,7 @@ title: "La lévothyroxine"
 description: "Lévothyroxine : un médicament à dose précise, à prendre le matin à jeun, à surveiller lors d'un changement de spécialité et avec le fer, le calcium et d'autres médicaments."
 public: [patients, professionnels]
 classe: "hormones thyroïdiennes"
+substances: [lévothyroxine]
 statut: brouillon
 relu_par: null
 relu_le: null

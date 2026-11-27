@@ -210,3 +210,56 @@ def test_command_line_fails_on_error_and_passes_on_clean_page(tmp_path, capsys):
 def test_readability_score_is_reported():
     score = cc.kandel_moles("Prenez un comprimé le matin. Buvez un verre d'eau.")
     assert 0 < score <= 130
+
+
+# --- official notice and SmPC links (data/bdpm-liens.json) ---------------------
+
+BDPM = {
+    "mis_a_jour": "2026-11-20",
+    "substances": {"ibuprofène": {"cis": "68634000", "nom": "ADVIL 200 mg, comprimé enrobé"}},
+    "cites": {
+        "68634000": {"nom": "ADVIL 200 mg, comprimé enrobé", "etat": "Commercialisée"},
+        "60000006": {"nom": "ANCIEN 10 mg, comprimé", "etat": "Non commercialisée"},
+    },
+}
+
+
+def _bdpm_page(cis, substances="[ibuprofène]"):
+    return (
+        "---\ntitle: T\ndescription: D\nstatut: brouillon\n"
+        f"substances: {substances}\nsources:\n"
+        '  - titre: "BDPM"\n'
+        f'    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/{cis}/extrait"\n'
+        "---\n\nTexte.\n"
+    )
+
+
+def _bdpm_findings(text):
+    return [f for f in cc.check_text(text, Path("medicaments/classes/x.qmd"), {}, bdpm=BDPM) if f.rule == "FM-BDPM"]
+
+
+def test_a_cited_product_still_marketed_passes():
+    assert _bdpm_findings(_bdpm_page("68634000")) == []
+
+
+def test_a_cited_product_no_longer_marketed_is_an_error():
+    findings = _bdpm_findings(_bdpm_page("60000006"))
+    assert [f.level for f in findings] == ["error"]
+    assert "Non commercialisée" in findings[0].message
+
+
+def test_a_cited_product_not_yet_checked_is_a_warning():
+    findings = _bdpm_findings(_bdpm_page("61111111"))
+    assert [f.level for f in findings] == ["warning"]
+    assert "make_bdpm_liens.py" in findings[0].message
+
+
+def test_a_substance_without_an_official_link_is_a_warning():
+    findings = _bdpm_findings(_bdpm_page("68634000", substances="[ibuprofène, inconnue]"))
+    assert [f.level for f in findings] == ["warning"]
+    assert "inconnue" in findings[0].message
+
+
+def test_without_bdpm_data_the_rule_is_skipped():
+    findings = cc.check_text(_bdpm_page("60000006"), Path("medicaments/classes/x.qmd"), {})
+    assert not [f for f in findings if f.rule == "FM-BDPM"]

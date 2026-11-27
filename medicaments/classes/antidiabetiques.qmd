@@ -3,6 +3,7 @@ title: "Les médicaments du diabète de type 2"
 description: "Metformine, sulfamides, gliptines, gliflozines et analogues du GLP-1 : bien les prendre, reconnaître une hypoglycémie et connaître les risques du sémaglutide utilisé pour maigrir."
 public: [patients, professionnels]
 classe: "antidiabétiques oraux et injectables non insuliniques"
+substances: [metformine, gliclazide, sitagliptine, dapagliflozine, sémaglutide]
 statut: brouillon
 relu_par: null
 relu_le: null

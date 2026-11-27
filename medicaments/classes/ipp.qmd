@@ -3,6 +3,7 @@ title: "Les inhibiteurs de la pompe à protons (IPP)"
 description: "Oméprazole, ésoméprazole, pantoprazole et apparentés : quand ils sont utiles, pourquoi un traitement au long cours est rarement justifié et comment les arrêter."
 public: [patients, professionnels]
 classe: "inhibiteurs de la pompe à protons"
+substances: [oméprazole, ésoméprazole, pantoprazole]
 statut: brouillon
 relu_par: null
 relu_le: null

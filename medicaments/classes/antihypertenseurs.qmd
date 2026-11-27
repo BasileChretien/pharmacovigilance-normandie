@@ -3,6 +3,7 @@ title: "Les médicaments de l'hypertension artérielle"
 description: "IEC, sartans, inhibiteurs calciques, diurétiques thiazidiques et bêtabloquants : effets indésirables fréquents, précautions chez la personne âgée et danger de l'association avec les anti-inflammatoires."
 public: [patients, professionnels]
 classe: "antihypertenseurs"
+substances: [ramipril, valsartan, amlodipine, hydrochlorothiazide, bisoprolol]
 statut: brouillon
 relu_par: null
 relu_le: null

@@ -3,6 +3,7 @@ title: "Les anticoagulants oraux"
 description: "Antivitamines K et anticoagulants oraux directs : comment les prendre, quels signes de saignement surveiller, quelles associations éviter."
 public: [patients, professionnels]
 classe: "anticoagulants oraux"
+substances: [warfarine, fluindione, acénocoumarol, apixaban, rivaroxaban, dabigatran]
 statut: brouillon
 relu_par: null
 relu_le: null

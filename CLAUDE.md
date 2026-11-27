@@ -15,6 +15,7 @@ reviews it.
 
 - `uv run python tools/build/make_cyp_index.py` — regenerate the per-drug index of the cytochrome table.
 - `uv run python tools/build/fetch_crpv.py` then `make_crpv_page.py` — refresh the list of the French CRPV (ANSM) for crpv/trouver-mon-crpv.qmd.
+- `uv run python tools/build/fetch_bdpm.py` then `make_bdpm_liens.py` — monthly: official notice/SmPC links of the class sheets (front matter `substances:`) and marketing status of cited BDPM products (cache `data/bdpm/`, gitignored).
 - `uv run python tools/build/fetch_alertes.py` then `make_alertes_page.py` — refresh the official alerts feed (ANSM, EMA); the Pages build also runs both every Monday, stdlib only (runner's python3).
 
 Status and open tasks: `docs/STATUS.md`. Points for medical reviewers: `docs/relecture.md`.

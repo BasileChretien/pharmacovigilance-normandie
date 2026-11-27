@@ -12,3 +12,6 @@ node_modules/
 **/*.quarto_ipynb
 .coverage
 .claude/
+
+# BDPM files downloaded by tools/build/fetch_bdpm.py (about 7 MB, refreshed monthly)
+data/bdpm/
