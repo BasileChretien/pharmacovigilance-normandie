@@ -132,3 +132,9 @@ le Collège national de pharmacologie médicale (pharmacomedicale.org), dans
 | normandie/medicaments-rembourses | Méthode : boîtes remboursées (pas de doses), standardisation directe sur 3 tranches d'âge et le sexe, France sans Mayotte, population au milieu de 2025 (moyenne des 1er janvier 2025 et 2026, INSEE provisoire) |
 | normandie/medicaments-rembourses | Familles (codes ATC) : benzodiazépines N05BA + N05CD + N05CF, opioïdes N02A, antidépresseurs N06A, IPP A02BC, AINS M01A, corticoïdes H02AB, statines C10AA, anticoagulants oraux B01AA + B01AF + B01AE07, antidiabétiques A10, lévothyroxine H03AA01, fluoroquinolones J01MA, antibiotiques J01 |
 | normandie/medicaments-rembourses | Commentaire : la phrase sur les trois plus grands écarts est générée ; faut-il un commentaire des CRPV sur les opioïdes, les antidépresseurs et les benzodiazépines ? |
+
+## Archive de Vigiking (27/11/2026)
+
+| Page | À vérifier |
+|---|---|
+| vigiking/archives | Sommaires repris tels que le réseau des CRPV les publie (quelques fautes de frappe d'origine, par exemple « EBNTRESTO ») ; numéros de 2017 à 2019 sans sommaire ; accord pour héberger les PDF sur le site |
