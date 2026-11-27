@@ -1,6 +1,6 @@
 # État du projet
 
-Mis à jour le 26/11/2026. Prototype non officiel, branche `feat/prototype-site`.
+Mis à jour le 27/11/2026. Prototype non officiel, publié depuis la branche `main`.
 
 ## Où on en est
 
@@ -64,7 +64,9 @@ Prochaines pull requests, dans l'ordre (décidé le 27/11/2026) :
       (fichiers du 20/11/2026), avec contrôle des médicaments cités encore commercialisés
       (`FM-BDPM`). Premier contrôle : IMODIUM 2 mg n'est plus commercialisé, remplacé par
       IMODIUMCAPS 2 mg sur la fiche diarrhée (à relire).
-- [ ] Étendre `substances:` aux fiches « maux courants » et « situations ».
+- [x] `substances:` sur 10 fiches « maux courants » (27/11/2026) : 76 substances avec une
+      notice officielle. Pas sur la rhinite allergique ni sur les fiches « situations », qui
+      parlent de familles de médicaments.
 - [x] Recherche par nom de médicament (marque ou substance) : medicaments/chercher.qmd,
       12 175 médicaments commercialisés (BDPM du 20/11/2026, hors homéopathie : enregistrements homéopathiques et substances « pour préparations homéopathiques » ou « dynamisées »), chacun
       vers sa page officielle, et vers la fiche du site quand elle existe ; la recherche reste

@@ -7,6 +7,7 @@ statut: brouillon
 relu_par: null
 relu_le: null
 prochaine_relecture: null
+substances: [oméprazole, ésoméprazole, lansoprazole, pantoprazole, rabéprazole]
 sources:
   - titre: "HAS, Fiche bon usage des inhibiteurs de la pompe à protons (IPP), validée le 8 septembre 2022 (page de présentation)"
     url: "https://www.has-sante.fr/jcms/p_3372966/fr/fiche-bon-usage-des-inhibiteurs-de-la-pompe-a-protons-ipp"

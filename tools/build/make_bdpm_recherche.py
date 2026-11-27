@@ -25,10 +25,18 @@ import make_bdpm_liens as mb
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "assets" / "data" / "medicaments.json"
 OUT_SOURCE = ROOT / "_includes" / "chercher-medicament-source.md"
+# Title ending of the "maux courants" sheets (_templates/maux-courants.qmd).
+SUFFIXE_MAUX_COURANTS = " : quels médicaments ?"
+
+
+def _titre_court(titre: str) -> str:
+    """'Migraine et maux de tête : quels médicaments ?' -> 'Migraine et maux de tête'."""
+    return titre.removesuffix(SUFFIXE_MAUX_COURANTS)
 
 
 def lire_fiches(root: Path) -> dict[str, tuple[str, list[str]]]:
-    """Title and substances of every page that lists substances."""
+    """Title (without the common-ailment ending) and substances of every page that lists
+    substances."""
     fiches = {}
     for path in sorted(root.rglob("*.qmd")):
         rel = path.relative_to(root)
@@ -40,7 +48,7 @@ def lire_fiches(root: Path) -> dict[str, tuple[str, list[str]]]:
             listed = [listed]
         if listed:
             fiches[rel.as_posix()] = (
-                str(meta.get("title") or rel.stem),
+                _titre_court(str(meta.get("title") or rel.stem)),
                 [str(s) for s in listed],
             )
     return fiches

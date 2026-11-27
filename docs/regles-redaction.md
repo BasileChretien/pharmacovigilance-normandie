@@ -15,7 +15,7 @@ statut: brouillon                    # brouillon | relu | publie
 relu_par: null                       # nom du relecteur, une fois relu
 relu_le: null                        # AAAA-MM-JJ
 prochaine_relecture: null            # AAAA-MM-JJ
-substances: [warfarine, apixaban]    # fiches de classe : substances, telles qu'écrites sur la page
+substances: [warfarine, apixaban]    # fiches de classe et « maux courants » : substances, telles qu'écrites sur la page
 sources:
   - titre: "ANSM, Thésaurus des interactions médicamenteuses"
     url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
@@ -32,7 +32,9 @@ pour_aller_plus_loin:                # facultatif : lectures complémentaires
   savante, article publié). Pas de source secondaire quand la source primaire existe.
 - Le filtre `assets/filters/page-meta.lua` affiche automatiquement le bandeau
   « Brouillon », les sources et les dates de relecture : ne pas les réécrire à la main.
-- `substances` (fiches de classe) : les substances dont parle la fiche, six au plus. Le filtre
+- `substances` (fiches de classe et « maux courants ») : les substances dont parle la fiche, six
+  au plus ; pour un mal courant, celles du traitement. Pas sur les fiches « situations », qui
+  parlent de familles de médicaments. Le filtre
   ajoute « Notices et RCP officiels » : pour chacune, la page de la base de données publique
   des médicaments d'un médicament commercialisé qui la contient seule (forme orale, puis
   médicament de référence en premier), choisi par `tools/build/make_bdpm_liens.py`. Après

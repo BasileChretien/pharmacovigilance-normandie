@@ -386,6 +386,153 @@
    "princeps": true,
    "association": false,
    "nb": 14
+  },
+  "amoxicilline": {
+   "cis": "64539416",
+   "nom": "CLAMOXYL 1 g, comprimé dispersible",
+   "princeps": true,
+   "association": false,
+   "nb": 113
+  },
+  "céfuroxime": {
+   "cis": "69634836",
+   "nom": "ZINNAT 250 mg, comprimé pelliculé",
+   "princeps": true,
+   "association": false,
+   "nb": 19
+  },
+  "cefpodoxime": {
+   "cis": "65528337",
+   "nom": "ORELOX 100 mg, comprimé pelliculé",
+   "princeps": true,
+   "association": false,
+   "nb": 18
+  },
+  "clarithromycine": {
+   "cis": "62901197",
+   "nom": "ZECLAR 25 mg/ml, granulés pour suspension buvable",
+   "princeps": true,
+   "association": false,
+   "nb": 36
+  },
+  "paracétamol": {
+   "cis": "67458001",
+   "nom": "CLARADOL 500 mg, comprimé sécable",
+   "princeps": false,
+   "association": false,
+   "nb": 163
+  },
+  "lansoprazole": {
+   "cis": "69966450",
+   "nom": "LANSOPRAZOLE ALMUS PHARMA 15 mg, gélule gastro-résistante",
+   "princeps": false,
+   "association": false,
+   "nb": 32
+  },
+  "rabéprazole": {
+   "cis": "66035518",
+   "nom": "PARIET 10 mg, comprimé gastro-résistant",
+   "princeps": true,
+   "association": false,
+   "nb": 21
+  },
+  "macrogol": {
+   "cis": "69298346",
+   "nom": "FORLAX 10 g, poudre pour solution buvable en sachet",
+   "princeps": true,
+   "association": false,
+   "nb": 29
+  },
+  "lactulose": {
+   "cis": "60155329",
+   "nom": "DUPHALAC 10 g/15 ml, solution buvable en sachet",
+   "princeps": true,
+   "association": false,
+   "nb": 16
+  },
+  "ispaghul": {
+   "cis": "68520477",
+   "nom": "PSYLIA, poudre effervescente pour suspension buvable en sachet",
+   "princeps": false,
+   "association": false,
+   "nb": 7
+  },
+  "bisacodyl": {
+   "cis": "67064661",
+   "nom": "CONTALAX, comprimé gastro-résistant",
+   "princeps": true,
+   "association": false,
+   "nb": 11
+  },
+  "fosfomycine": {
+   "cis": "67951706",
+   "nom": "MONURIL 3 g, granulés pour solution buvable en sachet",
+   "princeps": true,
+   "association": false,
+   "nb": 16
+  },
+  "pivmécillinam": {
+   "cis": "60670489",
+   "nom": "SELEXID 200 mg, comprimé pelliculé",
+   "princeps": false,
+   "association": false,
+   "nb": 1
+  },
+  "nitrofurantoïne": {
+   "cis": "62013296",
+   "nom": "FURADANTINE 50 mg, gélule",
+   "princeps": false,
+   "association": false,
+   "nb": 1
+  },
+  "lopéramide": {
+   "cis": "61203061",
+   "nom": "IMODIUMCAPS 2 mg, gélule",
+   "princeps": true,
+   "association": false,
+   "nb": 28
+  },
+  "racécadotril": {
+   "cis": "62804360",
+   "nom": "TIORFAN 10 mg NOURRISSONS, poudre orale en sachet-dose",
+   "princeps": true,
+   "association": false,
+   "nb": 12
+  },
+  "diosmectite": {
+   "cis": "69584073",
+   "nom": "SMECTA 3 g ORANGE-VANILLE, poudre pour suspension buvable en sachet",
+   "princeps": true,
+   "association": false,
+   "nb": 6
+  },
+  "mélatonine": {
+   "cis": "68578854",
+   "nom": "CIRCADIN 2 mg, comprimé à libération prolongée",
+   "princeps": true,
+   "association": false,
+   "nb": 11
+  },
+  "daridorexant": {
+   "cis": "67801165",
+   "nom": "QUVIVIQ 25 mg, comprimé pelliculé",
+   "princeps": false,
+   "association": false,
+   "nb": 2
+  },
+  "sumatriptan": {
+   "cis": "64676030",
+   "nom": "IMIGRANE 50 mg, comprimé pelliculé",
+   "princeps": true,
+   "association": false,
+   "nb": 9
+  },
+  "dextrométhorphane": {
+   "cis": "66819541",
+   "nom": "TUSSIDANE 1,5 mg/ml SANS SUCRE, solution buvable édulcorée au maltitol liquide et à la saccharine sodique",
+   "princeps": true,
+   "association": false,
+   "nb": 6
   }
  },
  "cites": {

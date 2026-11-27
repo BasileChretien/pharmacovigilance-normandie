@@ -7,6 +7,7 @@ statut: brouillon
 relu_par: null
 relu_le: null
 prochaine_relecture: null
+substances: [ibuprofène, sumatriptan, paracétamol]
 sources:
   - titre: "SFEMC. Donnet A, Demarquay G, Ducros A. Recommandations 2021 pour le diagnostic et la prise en charge de la migraine chez l'adulte : traitement des crises. Presse Med Form. 2022;3(5):404-11 (résumé)"
     url: "https://www.em-consulte.com/it/article/1561290/recommandations-2021-pour-le-diagnostic-et-la-pris"

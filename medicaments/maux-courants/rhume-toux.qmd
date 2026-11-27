@@ -7,6 +7,7 @@ statut: brouillon
 relu_par: null
 relu_le: null
 prochaine_relecture: null
+substances: [dextrométhorphane, codéine, paracétamol]
 sources:
   - titre: "ANSM. En cas de rhume, ne pas utiliser de médicaments à base de pseudoéphédrine (vasoconstricteurs par voie orale), 08/04/2024"
     url: "https://ansm.sante.fr/informations-de-securite/en-cas-de-rhume-ne-pas-utiliser-de-medicaments-a-base-de-pseudoephedrine-vasoconstricteurs-par-voie-orale"
