@@ -23,7 +23,9 @@ listing:
     grid-columns: 2
 ---
 
-Chaque fiche a deux onglets : **Pour les patients**, en langage courant, et **Pour les professionnels**. Toutes les fiches sont des brouillons en cours de relecture.
+Chaque fiche a deux parties : **Pour les patients**, en langage courant, et **Pour les professionnels**. Toutes les fiches sont des brouillons en cours de relecture.
+
+Vous cherchez un médicament précis ? [Cherchez-le par son nom](chercher.qmd) pour trouver sa notice et son RCP officiels.
 
 ## Par classe de médicaments
 

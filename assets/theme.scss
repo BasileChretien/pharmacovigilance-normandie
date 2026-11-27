@@ -500,6 +500,30 @@ main table tbody tr:nth-child(even) td { background: rgba(238, 246, 250, 0.6); }
 }
 .sources-relecture a { word-break: break-word; }
 
+// Drug-name search (medicaments/chercher.qmd, assets/js/chercher-medicament.js).
+.chercher-medicament { margin: 1.5rem 0 0.5rem; }
+.chercher-medicament label { display: block; font-weight: 600; margin-bottom: 0.35rem; }
+.chercher-medicament-champ { display: flex; flex-wrap: wrap; gap: 0.5rem; max-width: 40rem; }
+.chercher-medicament input {
+  flex: 1 1 16rem;
+  min-width: 0;
+  padding: 0.6rem 0.8rem;
+  font-size: 1.1rem;
+  border: 2px solid $pv-ink-quiet;
+  border-radius: $border-radius;
+}
+.chercher-medicament-aide, .chercher-medicament-source { color: $pv-ink-quiet; font-size: 0.92rem; }
+.chercher-medicament-aide { margin: 0.4rem 0 0; }
+.chercher-medicament-statut { font-weight: 600; margin: 1rem 0 0.5rem; }
+.chercher-medicament-liste { list-style: none; padding: 0; margin: 0 0 1.5rem; border-top: 1px solid $pv-rule; }
+.medicament {
+  padding: 0.7rem 0 0.55rem;
+  border-bottom: 1px solid $pv-rule;
+  p { margin: 0 0 0.2rem; }
+}
+.medicament-nom { font-weight: 600; }
+.medicament-substances, .medicament-fiche { color: $pv-ink-quiet; font-size: 0.92rem; }
+
 // Official notice and SmPC links (front matter substances, built by the page-meta filter).
 .notices-officielles {
   margin-top: 3.5rem;

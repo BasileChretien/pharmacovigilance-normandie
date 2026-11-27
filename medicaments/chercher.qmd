@@ -1,0 +1,33 @@
+---
+title: "Chercher un médicament"
+description: "Le nom inscrit sur la boîte, ou celui de la substance, suffit pour trouver la notice et le résumé des caractéristiques du produit officiels d'un médicament vendu en France."
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "Base de données publique des médicaments (ANSM), fichiers téléchargeables, Licence Ouverte"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/telechargement"
+---
+
+Tapez le nom inscrit sur la boîte, ou celui de la substance, par exemple paracétamol. Chaque résultat mène à la page officielle du médicament. Vous y trouvez sa notice, pour les patients, et son résumé des caractéristiques du produit (RCP), pour les professionnels.
+
+```{=html}
+<form id="chercher-medicament" class="chercher-medicament" role="search" data-donnees="../assets/data/medicaments.json" data-racine="../" hidden>
+  <label for="nom-medicament">Nom du médicament ou de la substance</label>
+  <div class="chercher-medicament-champ">
+    <input id="nom-medicament" name="nom-medicament" type="search" autocomplete="off" spellcheck="false" aria-describedby="chercher-medicament-aide">
+    <button type="submit" class="btn btn-primary">Chercher</button>
+  </div>
+  <p id="chercher-medicament-aide" class="chercher-medicament-aide">Votre recherche reste sur votre appareil : elle n'est envoyée nulle part.</p>
+</form>
+<p id="chercher-medicament-statut" class="chercher-medicament-statut" role="status" aria-live="polite"></p>
+<ul id="chercher-medicament-liste" class="chercher-medicament-liste"></ul>
+```
+
+{{< include ../_includes/chercher-medicament-source.md >}}
+
+La base de données publique des médicaments a aussi [sa propre recherche](https://base-donnees-publique.medicaments.gouv.fr/). En cas de doute sur votre traitement, demandez à votre pharmacien.
+
+<script src="../assets/js/chercher-medicament.js" defer></script>

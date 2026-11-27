@@ -66,30 +66,60 @@ def _matches(name: str, substance: str) -> bool:
 class Base:
     """The three BDPM files needed: products, compositions, generic groups."""
 
-    def __init__(self, specialites: dict, compositions: dict, princeps: set):
+    def __init__(
+        self,
+        specialites: dict,
+        compositions: dict,
+        princeps: set,
+        noms: dict | None = None,
+    ):
         self.specialites = specialites
         self.compositions = compositions
         self.princeps = princeps
+        # Per product, its substances as the BDPM writes them: the active part (FT) when
+        # given, else the substance (SA). Used by make_bdpm_recherche.py.
+        self.noms = noms or {}
 
     @classmethod
     def from_texts(cls, specialites: str, compositions: str, generiques: str) -> Base:
         specs = {
-            r[0]: {"nom": r[1].strip(), "voies": r[3], "statut": r[4], "etat": r[6]}
+            r[0]: {
+                "nom": r[1].strip(),
+                "voies": r[3],
+                "statut": r[4],
+                "procedure": r[5],
+                "etat": r[6],
+            }
             for r in _rows(specialites)
             if len(r) >= 7
         }
         # Per product: (link number, SA or FT, substance name). A substance (SA) and its
         # therapeutic fraction (FT) share a link number.
         compos: dict[str, list[tuple[str, str, str]]] = {}
+        groupes: dict[str, dict[str, dict[str, list[str]]]] = {}
         for r in _rows(compositions):
             if len(r) >= 8:
-                compos.setdefault(r[0], []).append(
-                    (r[7].strip(), r[6].strip(), normalise(r[3]))
+                link, nature, name = r[7].strip(), r[6].strip(), r[3].strip()
+                compos.setdefault(r[0], []).append((link, nature, normalise(name)))
+                noms = (
+                    groupes.setdefault(r[0], {})
+                    .setdefault(link, {})
+                    .setdefault(nature, [])
                 )
+                if name not in noms:
+                    noms.append(name)
+        noms = {}
+        for cis, groups in groupes.items():
+            names: list[str] = []
+            for group in groups.values():
+                for name in group.get("FT") or group.get("SA") or []:
+                    if name not in names:
+                        names.append(name)
+            noms[cis] = names
         princeps = {
             r[2] for r in _rows(generiques) if len(r) >= 4 and r[3].strip() == "0"
         }
-        return cls(specs, compos, princeps)
+        return cls(specs, compos, princeps, noms)
 
     @classmethod
     def from_cache(cls, cache: Path) -> Base:
@@ -101,7 +131,7 @@ class Base:
             read("CIS_bdpm.txt"), read("CIS_COMPO_bdpm.txt"), read("CIS_GENER_bdpm.txt")
         )
 
-    def _marketed(self, cis: str) -> bool:
+    def commercialise(self, cis: str) -> bool:
         spec = self.specialites.get(cis)
         return (
             bool(spec)
@@ -123,7 +153,7 @@ class Base:
         wanted = normalise(substance)
         candidates = []
         for cis, comps in self.compositions.items():
-            if self._marketed(cis) and any(
+            if self.commercialise(cis) and any(
                 _matches(name, wanted) for _, _, name in comps
             ):
                 candidates.append((cis, self._active_parts(comps) == 1))
