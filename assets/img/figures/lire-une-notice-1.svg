@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 512" width="440" height="512" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="18" fill="#10283a">
+  <!-- The sheet, with a folded corner -->
+  <path d="M8 8 H404 L432 36 V504 H8 Z" fill="#ffffff" stroke="#46586a" stroke-width="1.5"/>
+  <path d="M404 8 V36 H432" fill="#dcebf3" stroke="#46586a" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <rect x="24" y="24" width="364" height="64" rx="8" fill="#eef6fa"/>
+  <text x="40" y="50" font-weight="700">En-tête</text>
+  <text x="40" y="74" font-size="16" fill="#46586a">nom, substance active, rappels</text>
+
+  <!-- 1. What it is for -->
+  <line x1="24" y1="152" x2="416" y2="152" stroke="#d5e2ea" stroke-width="1.5"/>
+  <circle cx="48" cy="126" r="14" fill="#10283a"/>
+  <text x="48" y="132" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">1</text>
+  <g fill="none" stroke="#10283a" stroke-width="2">
+    <circle cx="88" cy="126" r="12"/><circle cx="88" cy="126" r="6.5"/>
+  </g>
+  <circle cx="88" cy="126" r="2.5" fill="#10283a"/>
+  <text x="116" y="132">À quoi il sert</text>
+
+  <!-- 2. Before taking it (to read first) -->
+  <rect x="24" y="158" width="392" height="80" rx="8" fill="#dcebf3"/>
+  <circle cx="48" cy="184" r="14" fill="#10283a"/>
+  <text x="48" y="190" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">2</text>
+  <g fill="none" stroke="#10283a" stroke-width="2" stroke-linejoin="round">
+    <rect x="78" y="171" width="20" height="26" rx="2"/>
+    <path d="M83 171 V167 H93 V171"/>
+    <path d="M82 180 l2.5 2.5 l4 -4.5 M82 189 l2.5 2.5 l4 -4.5"/>
+    <path d="M91 181 H95 M91 190 H95"/>
+  </g>
+  <text x="116" y="190">Avant de le prendre</text>
+  <rect x="116" y="202" width="164" height="26" rx="13" fill="#073f6e"/>
+  <text x="130" y="220" font-size="16" font-weight="700" fill="#ffffff">À lire en priorité</text>
+
+  <!-- 3. How to take it -->
+  <line x1="24" y1="296" x2="416" y2="296" stroke="#d5e2ea" stroke-width="1.5"/>
+  <circle cx="48" cy="270" r="14" fill="#10283a"/>
+  <text x="48" y="276" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">3</text>
+  <g transform="rotate(-35 88 270)">
+    <path d="M88 262 H80 a8 8 0 0 0 0 16 H88 Z" fill="#19a6e3"/>
+    <rect x="72" y="262" width="32" height="16" rx="8" fill="none" stroke="#10283a" stroke-width="2"/>
+    <line x1="88" y1="262" x2="88" y2="278" stroke="#10283a" stroke-width="2"/>
+  </g>
+  <text x="116" y="276">Comment le prendre</text>
+
+  <!-- 4. Side effects (to read first) -->
+  <rect x="24" y="302" width="392" height="80" rx="8" fill="#dcebf3"/>
+  <circle cx="48" cy="328" r="14" fill="#10283a"/>
+  <text x="48" y="334" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">4</text>
+  <path d="M88 315 L102 340 H74 Z" fill="#ffffff" stroke="#b3261e" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M88 323 V332" stroke="#b3261e" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="88" cy="336.5" r="1.6" fill="#b3261e"/>
+  <text x="116" y="334">Effets indésirables</text>
+  <rect x="116" y="346" width="164" height="26" rx="13" fill="#073f6e"/>
+  <text x="130" y="364" font-size="16" font-weight="700" fill="#ffffff">À lire en priorité</text>
+
+  <!-- 5. Storage -->
+  <line x1="24" y1="440" x2="416" y2="440" stroke="#d5e2ea" stroke-width="1.5"/>
+  <circle cx="48" cy="414" r="14" fill="#10283a"/>
+  <text x="48" y="420" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">5</text>
+  <g fill="none" stroke="#10283a" stroke-width="2">
+    <path d="M84 418 V401 a4 4 0 0 1 8 0 V418"/>
+    <circle cx="88" cy="422" r="6"/>
+  </g>
+  <circle cx="88" cy="422" r="3" fill="#46586a"/>
+  <line x1="88" y1="407" x2="88" y2="419" stroke="#46586a" stroke-width="2"/>
+  <text x="116" y="420">Conservation</text>
+
+  <!-- 6. Contents of the pack -->
+  <circle cx="48" cy="472" r="14" fill="#10283a"/>
+  <text x="48" y="478" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">6</text>
+  <g fill="none" stroke="#10283a" stroke-width="2" stroke-linejoin="round">
+    <path d="M76 466 L88 460 L100 466 L88 472 Z"/>
+    <path d="M76 466 V480 L88 486 L100 480 V466 M88 472 V486"/>
+  </g>
+  <text x="116" y="478">Composition</text>
+</svg>

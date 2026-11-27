@@ -128,5 +128,47 @@ que le médicament est en cause.
 
 - Au moins une figure par page patient quand elle aide à comprendre (schéma, grille de
   personnages, frise du moment de prise).
-- SVG de préférence, avec un texte alternatif (`fig-alt`) qui dit ce que la figure montre.
-- Couleurs lisibles par les personnes daltoniennes et en niveaux de gris.
+- **Ce qu'on dessine** : seulement ce que dit le texte de la page (ou la consigne de la
+  figure), sans nouvelle affirmation médicale ni chiffre absent de la page ; un chiffre sans
+  source devient « [à compléter : source] » dans la page, pas dans la figure. Personnes,
+  organes et objets sont des schémas sans échelle. Une figure qui demanderait de
+  l'interaction (un clic) devient statique, ou son repère reste, inscrit dans `docs/STATUS.md`.
+- **Fichier** : SVG écrit à la main, `assets/img/figures/<page>-<n>.svg`, placé dans la page
+  par le raccourci
+  `{{< figure-svg <page>-<n> alt="…" legende="…" >}}` (`assets/filters/figure-svg.lua`).
+  Le SVG est inséré dans la page, ce qui lui donne les polices du site (une image `<img>` ne
+  le peut pas). `alt` dit ce que la figure montre ; `legende` est la phrase visible sous la
+  figure ; `description="…"` (facultatif) détaille, pour les lecteurs d'écran, un schéma
+  que le texte alternatif ne peut pas résumer (arbre de décision, frise). Dans un bloc
+  patient, `check_content.py` relit `alt` et `legende` comme le reste du texte.
+- **Format** : 440 unités de large au plus, dessiné à 1 unité = 1 px (`width` et `height`
+  égaux au `viewBox`) : la figure garde sa taille sur ordinateur et rétrécit sur téléphone.
+  Texte de 16 unités au moins, 17 ou 18 pour les libellés principaux (12 px au moins sur un
+  téléphone de 375 px). Mise en page en hauteur : les frises et les parcours se lisent de
+  haut en bas.
+- **Police et texte** : Atkinson Hyperlegible Next (`font-family` sur `<svg>`), libellés en
+  français, courts, sans sigle qui n'ait pas été développé dans la page avant la figure.
+  Pas de flèche « → » dans le texte (absente des polices du site) : la dessiner.
+- **Couleurs** : seulement les jetons de `assets/theme.scss`, écrits en hexadécimal ; ni
+  `style`, ni opacité.
+  - Texte : `pv-ink` ; `pv-ink-quiet` (secondaire, sur `pv-paper` ou `pv-mist`) ;
+    `pv-signal-dark`, `pv-alert`, `pv-green-ink`, `pv-amber` (libellés de niveau, sur
+    `pv-paper` ou sur leur teinte) ; `pv-paper` sur un fond foncé (`pv-ink`,
+    `pv-signal-dark`, `pv-alert`).
+  - Fonds de zones : `pv-paper`, `pv-mist`, `pv-mist-deep`, `pv-green-tint`,
+    `pv-alert-tint`, `pv-amber-tint`.
+  - Décor seulement, jamais du texte ni seul porteur d'un sens : `pv-cyan`, `pv-green`,
+    `pv-or`, `pv-rule`.
+  - Toute nouvelle paire texte/fond va dans `tools/checks/contrast_pairs.yml`
+    (`check_contrast.py`).
+- **Jamais la couleur seule** : `pv-signal`, `pv-signal-dark`, `pv-alert`, `pv-green-ink` et
+  `pv-amber` ont presque la même clarté et se confondent en niveaux de gris ; leurs teintes
+  aussi. Un niveau se lit à son mot (« Interdit », « À éviter », « Précaution ») et à sa
+  forme : fond foncé plein pour « interdit », fond clair à bord plein pour « à éviter »,
+  bord pointillé pour « précaution ». Deux courbes se distinguent par leur trait (plein,
+  pointillé) ; dans une grille de personnages, les personnes concernées sont pleines,
+  les autres vides.
+- **Accessibilité** : le raccourci ajoute `role="img"`, le titre (`alt`) et la description ;
+  les `id` du SVG commencent par son nom (plusieurs figures par page).
+- `tools/checks/check_figures.py` vérifie les règles mesurables (taille, couleurs, police,
+  `id`, raccourcis).

@@ -17,6 +17,10 @@ project:
 
 lang: fr
 
+# {{< figure-svg nom alt="…" legende="…" >}}: inlines assets/img/figures/nom.svg (docs/regles-redaction.md §5).
+shortcodes:
+  - assets/filters/figure-svg.lua
+
 website:
   title: "Pharmacovigilance Normandie"
   # Needed for the 404 page, whose links Quarto makes absolute (it is served at any address).

@@ -20,6 +20,8 @@ jobs:
         run: uv run python tools/checks/check_content.py --quiet
       - name: Colour contrast
         run: uv run python tools/checks/check_contrast.py
+      - name: Figures (SVG files and their placement)
+        run: uv run python tools/checks/check_figures.py
 
       - uses: quarto-dev/quarto-actions/setup@v2
         with:

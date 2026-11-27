@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 930" width="440" height="930" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <text x="16" y="26" fill="#46586a">Dans chaque bandeau : ce que je veux ajouter.</text>
+  <text x="16" y="48" fill="#46586a">Dessous : ce que je prends déjà.</text>
+  <rect x="8" y="66" width="424" height="46" rx="8" fill="#eef6fa"/>
+  <g transform="translate(0 89)"><g transform="rotate(-35 36 0)"><path d="M36 -8 H28 a8 8 0 0 0 0 16 H36 Z" fill="#19a6e3"/><rect x="20" y="-8" width="32" height="16" rx="8" fill="none" stroke="#10283a" stroke-width="2"/><line x1="36" y1="-8" x2="36" y2="8" stroke="#10283a" stroke-width="2"/></g></g>
+  <text x="72" y="95" font-size="18" font-weight="700">Un anti-inflammatoire</text>
+  <rect x="17" y="121" width="106" height="26" rx="6" fill="#fdf1d8" stroke="#7a4f00" stroke-width="2"/><text x="70" y="139" text-anchor="middle" font-weight="700" fill="#7a4f00">À éviter</text>
+  <text x="136" y="139">un médicament qui rend</text>
+  <text x="136" y="161">le sang plus fluide</text>
+  <rect x="17" y="175" width="106" height="26" rx="6" fill="#fdf1d8" stroke="#7a4f00" stroke-width="2"/><text x="70" y="193" text-anchor="middle" font-weight="700" fill="#7a4f00">À éviter</text>
+  <text x="136" y="193">un autre anti-inflammatoire</text>
+  <rect x="17" y="209" width="106" height="26" rx="6" fill="#ffffff" stroke="#073f6e" stroke-width="2" stroke-dasharray="5 3"/><text x="70" y="227" text-anchor="middle" font-weight="700" fill="#073f6e">Précaution</text>
+  <text x="136" y="227">un médicament en -pril ou -sartan,</text>
+  <text x="136" y="249">ou un diurétique</text>
+  <rect x="8" y="272" width="424" height="46" rx="8" fill="#eef6fa"/>
+  <g transform="translate(0 295)"><path d="M36 16 V-4" stroke="#10283a" stroke-width="2"/><path d="M36 8 q-12 -2 -14 -12 q12 0 14 12 M36 4 q12 -2 14 -12 q-12 0 -14 12" fill="#2bcf8c" stroke="#10283a" stroke-width="1.5"/><g fill="#e7b03b" stroke="#10283a" stroke-width="1.2"><circle cx="36" cy="-12" r="4"/><circle cx="30" cy="-8" r="4"/><circle cx="42" cy="-8" r="4"/><circle cx="32" cy="-15" r="4"/><circle cx="40" cy="-15" r="4"/></g><circle cx="36" cy="-11" r="2.5" fill="#10283a"/></g>
+  <text x="72" y="301" font-size="18" font-weight="700">Du millepertuis (plante)</text>
+  <rect x="16" y="326" width="108" height="28" rx="6" fill="#b3261e"/><text x="70" y="345" text-anchor="middle" font-weight="700" fill="#ffffff">Interdit</text>
+  <text x="136" y="345">la pilule contraceptive</text>
+  <rect x="16" y="360" width="108" height="28" rx="6" fill="#b3261e"/><text x="70" y="379" text-anchor="middle" font-weight="700" fill="#ffffff">Interdit</text>
+  <text x="136" y="379">la warfarine ou la fluindione</text>
+  <rect x="17" y="395" width="106" height="26" rx="6" fill="#fdf1d8" stroke="#7a4f00" stroke-width="2"/><text x="70" y="413" text-anchor="middle" font-weight="700" fill="#7a4f00">À éviter</text>
+  <text x="136" y="413">la lévothyroxine</text>
+  <rect x="17" y="429" width="106" height="26" rx="6" fill="#ffffff" stroke="#073f6e" stroke-width="2" stroke-dasharray="5 3"/><text x="70" y="447" text-anchor="middle" font-weight="700" fill="#073f6e">Précaution</text>
+  <text x="136" y="447">certains antidépresseurs</text>
+  <rect x="8" y="472" width="424" height="46" rx="8" fill="#eef6fa"/>
+  <g transform="translate(0 495)"><path d="M22 -14 H40 L37 16 H25 Z" fill="#ffffff" stroke="#10283a" stroke-width="2" stroke-linejoin="round"/><path d="M23.5 -4 H38.5 L37 16 H25 Z" fill="#e7b03b"/><path d="M22 -14 H40 L37 16 H25 Z" fill="none" stroke="#10283a" stroke-width="2" stroke-linejoin="round"/><circle cx="46" cy="-8" r="9" fill="#e7b03b" stroke="#10283a" stroke-width="2"/><path d="M46 -17 V1 M37 -8 H55 M40 -14 L52 -2 M52 -14 L40 -2" stroke="#10283a" stroke-width="1"/></g>
+  <text x="72" y="501" font-size="18" font-weight="700">Du pamplemousse (jus ou fruit)</text>
+  <rect x="17" y="527" width="106" height="26" rx="6" fill="#fdf1d8" stroke="#7a4f00" stroke-width="2"/><text x="70" y="545" text-anchor="middle" font-weight="700" fill="#7a4f00">À éviter</text>
+  <text x="136" y="545">la simvastatine</text>
+  <rect x="17" y="561" width="106" height="26" rx="6" fill="#fdf1d8" stroke="#7a4f00" stroke-width="2"/><text x="70" y="579" text-anchor="middle" font-weight="700" fill="#7a4f00">À éviter</text>
+  <text x="136" y="579">un médicament contre</text>
+  <text x="136" y="601">le rejet de greffe</text>
+  <rect x="17" y="615" width="106" height="26" rx="6" fill="#fdf1d8" stroke="#7a4f00" stroke-width="2"/><text x="70" y="633" text-anchor="middle" font-weight="700" fill="#7a4f00">À éviter</text>
+  <text x="136" y="633">le ticagrélor</text>
+  <rect x="8" y="658" width="424" height="46" rx="8" fill="#eef6fa"/>
+  <g transform="translate(0 681)"><path d="M26 -16 H46 Q46 2 36 4 Q26 2 26 -16 Z" fill="#fdeceb" stroke="#10283a" stroke-width="2"/><path d="M27 -8 H45" stroke="#10283a" stroke-width="1.5"/><path d="M36 4 V14 M28 16 H44" stroke="#10283a" stroke-width="2" stroke-linecap="round"/></g>
+  <text x="72" y="687" font-size="18" font-weight="700">De l'alcool</text>
+  <rect x="17" y="713" width="106" height="26" rx="6" fill="#fdf1d8" stroke="#7a4f00" stroke-width="2"/><text x="70" y="731" text-anchor="middle" font-weight="700" fill="#7a4f00">À éviter</text>
+  <text x="136" y="731">un médicament qui fait dormir</text>
+  <text x="136" y="753">ou calme l'anxiété</text>
+  <rect x="17" y="767" width="106" height="26" rx="6" fill="#fdf1d8" stroke="#7a4f00" stroke-width="2"/><text x="70" y="785" text-anchor="middle" font-weight="700" fill="#7a4f00">À éviter</text>
+  <text x="136" y="785">l'insuline, la metformine</text>
+  <rect x="17" y="801" width="106" height="26" rx="6" fill="#fdf1d8" stroke="#7a4f00" stroke-width="2"/><text x="70" y="819" text-anchor="middle" font-weight="700" fill="#7a4f00">À éviter</text>
+  <text x="136" y="819">le métronidazole (antibiotique)</text>
+  <line x1="8" y1="844" x2="432" y2="844" stroke="#d5e2ea" stroke-width="2"/>
+  <text x="16" y="870"><tspan font-weight="700">Interdit</tspan> : contre-indication</text>
+  <text x="16" y="892"><tspan font-weight="700">À éviter</tspan> : association déconseillée</text>
+  <text x="16" y="914"><tspan font-weight="700">Précaution</tspan> : précaution d'emploi</text>
+</svg>

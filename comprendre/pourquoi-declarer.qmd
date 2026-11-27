@@ -84,7 +84,7 @@ Gardez la boîte du médicament à portée de main. Le nom exact et le numéro d
 
 Voir aussi la page [Déclarer](../declarer.qmd).
 
-<!-- FIGURE À FAIRE : parcours d'une déclaration en 5 étapes, de gauche à droite : 1) vous ou votre soignant déclarez ; 2) le CRPV analyse et vous recontacte si besoin ; 3) le cas est enregistré dans la base nationale ; 4) l'ANSM surveille les signaux ; 5) les cas graves partent dans la base européenne. Une flèche de retour vers « mesures : notice modifiée, restriction, retrait ». -->
+{{< figure-svg pourquoi-declarer-1 alt="Parcours d'une déclaration en cinq étapes. 1, vous ou votre soignant déclarez l'effet. 2, le CRPV de votre région analyse et vous recontacte si besoin. 3, le CRPV enregistre le cas dans la base nationale. 4, l'Agence du médicament recherche des signaux. 5, les cas graves partent dans la base européenne. En retour, des mesures sont possibles : notice modifiée, restriction, retrait du marché." legende="Le parcours d'une déclaration, de vous jusqu'aux mesures qui peuvent changer la notice ou l'usage du médicament." >}}
 
 ### Que devient votre déclaration ?
 

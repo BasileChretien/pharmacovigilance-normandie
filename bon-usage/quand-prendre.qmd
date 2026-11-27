@@ -62,7 +62,7 @@ sources:
 - Si l'horaire vous gêne, parlez-en à votre médecin ou à votre pharmacien.
 :::
 
-<!-- FIGURE À FAIRE : frise d'une journée (lever, petit-déjeuner, déjeuner, dîner, coucher). Sous chaque moment, un pictogramme des médicaments du tableau ci-dessous qui s'y rattachent (lévothyroxine et alendronate au lever, metformine aux repas, simvastatine le soir…). Texte alternatif : « Frise d'une journée montrant à quel moment prendre plusieurs médicaments courants ». -->
+{{< figure-svg quand-prendre-1 alt="Frise d'une journée montrant à quel moment prendre plusieurs médicaments courants." legende="Le moment de prise de quelques médicaments du tableau ci-dessous. Votre notice dit ce qui vaut pour le vôtre." description="Au lever, à jeun, une demi-heure avant de manger : lévothyroxine et alendronate. Le matin, au petit-déjeuner : oméprazole, hydrochlorothiazide, prednisone au cours du repas, metformine au cours du repas. Au déjeuner : metformine. Au dîner, le soir : metformine, simvastatine. Au coucher : jamais l'alendronate. La metformine se prend en 2 ou 3 prises par jour, aux repas. L'atorvastatine se prend à n'importe quel moment." >}}
 
 ### Pourquoi le moment de prise compte-t-il ?
 
