@@ -26,6 +26,9 @@ pour_aller_plus_loin:
   - titre: "Variabilités pharmacocinétiques"
     url: "https://pharmacomedicale.org/pharmacologie/les-sources-de-variabilite-de-la-reponse-au-medicament/45-variabilites-pharmacocinetiques"
     site: cnpm
+  - titre: "GPR (Guide de prescription et rein) : adapter les doses à la fonction rénale, sur connexion"
+    url: "https://www.vidal.fr/gpr.html"
+    site: VIDAL
 ---
 
 ::: {.deux-versions}

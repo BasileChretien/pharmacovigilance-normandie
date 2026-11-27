@@ -108,6 +108,7 @@ le Collège national de pharmacologie médicale (pharmacomedicale.org), dans
 | comprendre/frequences | EudraVigilance (adrreports.eu) : la mise en garde « un nombre de cas n'est ni une fréquence ni un risque » suffit-elle pour un lecteur patient ? |
 | comprendre/pourquoi-declarer | Uppsala Monitoring Centre : fondation indépendante, centre collaborateur de l'OMS ; site en anglais |
 | bon-usage/interactions-ville, bon-usage/cytochromes | Thériaque (CNHIM) : l'inscription est-elle toujours gratuite pour les professionnels ? |
+| situations/sujet-age, classes/methotrexate | GPR : l'ancien site (sitegpr.com) héberge un casino en ligne ; le lien pointe vers vidal.fr/gpr.html, distribué par VIDAL depuis mai 2023. Outils sur connexion : gratuits pour les professionnels libéraux, abonnement annuel pour les établissements depuis le 01/09/2023. Financé en partie par des partenariats avec des entreprises du médicament (bannières affichées) : garder ce lien sur un site de CRPV ? |
 | normandie/index, normandie/qui-contacter | ARS et CPIAS de Normandie : sites et intitulés ; coordonnées téléphoniques du CPIAS à compléter |
 
 ## Notices et RCP officiels (27/11/2026)

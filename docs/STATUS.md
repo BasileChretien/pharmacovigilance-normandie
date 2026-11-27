@@ -48,10 +48,15 @@ Prochaines pull requests, dans l'ordre (décidé le 27/11/2026) :
 
 - [x] Liens simples : EudraVigilance (fréquences), OMS–UMC (pourquoi déclarer), Thériaque
       (interactions, cytochromes), ARS et CPias Normandie (En Normandie).
-- [ ] ameli.fr et vaccination-info-service.fr : répondent par une vérification anti-robot ;
-      choisir et vérifier les pages dans un navigateur avant de les lier.
-- [ ] GPR (adaptation des doses au rein) : le domaine sitegpr.com héberge désormais un casino
-      en ligne (27/11/2026). Ne pas le lier ; trouver l'adresse officielle actuelle du GPR.
+- [ ] ameli.fr et vaccination-info-service.fr : répondent par une vérification anti-robot, y
+      compris dans Chrome (27/11/2026) ; à vérifier à la main avant de les lier. Pages
+      candidates : ameli, « Quel est le rôle du pharmacien dans la délivrance d'un médicament
+      générique ? » (comprendre/generiques-biosimilaires) ; vaccination-info-service
+      (professionnels), « Patient traité par immunosuppresseurs » (corticoïdes oraux,
+      méthotrexate).
+- [x] GPR (adaptation des doses au rein) : sitegpr.com héberge un casino en ligne ; le GPR est
+      désormais sur vidal.fr/gpr.html (outils sur connexion), lié depuis les fiches sujet âgé
+      et méthotrexate (27/11/2026).
 - [x] Trouver son CRPV par code postal (crpv/trouver-mon-crpv.qmd) : liste ANSM mise à jour le
       14/09/2026, 30 centres ; à rafraîchir avec `tools/build/fetch_crpv.py` quand l'ANSM la change.
 - [x] Fil des alertes officielles : informations de sécurité de l'ANSM (« risques
