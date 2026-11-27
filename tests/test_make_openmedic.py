@@ -240,3 +240,42 @@ def test_the_summary_names_the_largest_gaps_above_france():
     assert "antalgiques opioïdes (+40&nbsp;%)" in texte
     assert "antidépresseurs (+27&nbsp;%)" in texte
     assert "AINS" not in texte
+
+
+def _ligne(libelle, ecart, ratio):
+    return {
+        "cle": libelle,
+        "libelle": libelle,
+        "atc": [],
+        "fiche": None,
+        "ecart_pct": ecart,
+        "ratio": ratio,
+        "normandie": {"boites": 1, "taux_brut": 1.0, "taux_standardise": 1.0},
+        "france": {"boites": 1, "taux_brut": 1.0, "taux_standardise": 1.0},
+    }
+
+
+def test_groups_are_ranked_by_the_unrounded_ratio():
+    # Both round to +11 %: the larger true gap (zinc) is named first, whatever the list order.
+    texte = mo.resume([_ligne("Xénon", 11, 1.106), _ligne("Zinc", 11, 1.114)])
+    assert texte.index("zinc") < texte.index("xénon")
+
+
+def test_resultats_keep_the_unrounded_ratio():
+    boites = {("g", "28", "2", "20"): 111, ("g", "FR", "2", "20"): 1000}
+    pop = {("28", "2", "20"): 100, ("FR", "2", "20"): 1000}
+    ligne = mo.resultats(
+        boites, pop, [{"cle": "g", "libelle": "G", "atc": ["X"], "fiche": None}]
+    )[0]
+    assert ligne["ratio"] == 1.11 and ligne["ecart_pct"] == 11
+
+
+def test_a_group_with_no_french_box_shows_a_dash_not_a_false_zero():
+    pop = {(geo, "2", "20"): 1000.0 for geo in ("28", "FR")}
+    ligne = mo.resultats(
+        {}, pop, [{"cle": "vide", "libelle": "Vide", "atc": ["Z99"], "fiche": None}]
+    )[0]
+    assert ligne["ecart_pct"] is None
+    assert mo.fr_ecart(None) == "&mdash;"
+    assert '<span class="ecart-valeur">&mdash;</span>' in mo.graphique([ligne], 2025)
+    assert "<td>&mdash;</td>" in mo.tableau([ligne], 2025)

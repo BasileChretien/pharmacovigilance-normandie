@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import datetime as dt
 import html
+import http.client
 import json
 import re
 import sys
@@ -120,11 +121,14 @@ def parse_ema(page: str) -> list[dict]:
         date = _EMA_DATE.search(item)
         if not (link and date and date.group(2) in _MOIS_EN):
             continue
+        titre = _text(link.group(2))
+        if not titre:
+            continue  # a card whose link holds only an image: nothing to show
         summary = _EMA_SUMMARY.search(item)
         day, month, year = date.groups()
         items.append(
             {
-                "titre": _text(link.group(2)),
+                "titre": titre,
                 "resume": _text(summary.group(1)) if summary else None,
                 "url": "https://www.ema.europa.eu" + link.group(1),
                 "publie_le": _iso(day, str(_MOIS_EN[month]), year),
@@ -162,7 +166,8 @@ def refresh(
                 raise ValueError(
                     f"{len(items)} alertes lues ; la page a-t-elle changé ?"
                 )
-        except (OSError, ValueError) as exc:
+        # HTTPException: a connection cut mid-read (IncompleteRead), a bad status line.
+        except (OSError, ValueError, http.client.HTTPException) as exc:
             errors.append(f"{key} : {exc}")
             if key in previous:
                 data[key] = previous[key]
@@ -182,8 +187,17 @@ def _fetch(url: str) -> str:
         return response.read().decode("utf-8")
 
 
+def precedent(path: Path) -> dict:
+    """The lists of the previous run; none if the file is missing or damaged."""
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
 def main() -> int:
-    previous = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
+    previous = precedent(OUT)
     # Local date of the machine that ran the fetch (timezone-aware).
     today = dt.datetime.now(dt.timezone.utc).astimezone().date().isoformat()
     data, errors = refresh(previous, _fetch, today)

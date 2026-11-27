@@ -76,7 +76,7 @@ Prochaines pull requests, dans l'ordre (décidé le 27/11/2026) :
 - [x] Archive des numéros de Vigiking (vigiking/archives.qmd) : 25 numéros depuis 2017, sommaires
       du site du réseau, filtrables ; liens seulement vers les PDF de rfcrpv.fr.
 - [ ] Index de Vigiking par thème et hébergement des PDF sur le site : inventaire des numéros et
-      accord des CRPV à obtenir ; sommaires de 2017 à 2019 à fournir.
+      accord des CRPV à obtenir ; sommaires de juillet 2017 à février 2019 à fournir.
 - [ ] Liste des publications générée depuis ORCID et OpenAlex.
 - [ ] Les 52 figures marquées `FIGURE À FAIRE`.
 - [ ] Contrôles automatiques : mode « site » dans manuscript-guard ou script séparé (décision).

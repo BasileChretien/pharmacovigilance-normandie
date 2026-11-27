@@ -154,3 +154,38 @@ def test_lists_are_capped():
     data, _ = fa.refresh({}, _fetcher(pages), "2026-11-30")
     assert len(data["ansm"]["alertes"]) == fa.SOURCES["ansm"]["garder"]
     assert len(data["ema"]["alertes"]) == fa.SOURCES["ema"]["garder"]
+
+
+def test_an_ema_card_with_an_empty_title_is_dropped():
+    vide = (
+        '<article class="node ema-news listing-item card"><h3 class="teaser-title card-title">'
+        '<a class="standalone" href="/en/news/meeting-highlights-prac-1-4-june-2026"> <img src="x.png" alt=""/> </a></h3>'
+        '<div class="metadata-item text-muted me-3">5 June 2026</div></article>'
+    )
+    assert len(fa.parse_ema(EMA + vide)) == 2
+
+
+def test_a_connection_cut_mid_read_keeps_the_previous_list():
+    import http.client
+
+    previous = {
+        "ansm": {
+            "source": "s",
+            "releve_le": "2026-11-23",
+            "alertes": [{"titre": "ancienne"}],
+        }
+    }
+    pages = {
+        fa.SOURCES["ansm"]["url"]: http.client.IncompleteRead(b""),
+        fa.SOURCES["ema"]["url"]: EMA,
+    }
+    data, errors = fa.refresh(previous, _fetcher(pages), "2026-11-30")
+    assert data["ansm"] == previous["ansm"]
+    assert errors and errors[0].startswith("ansm")
+
+
+def test_a_corrupt_previous_file_counts_as_empty(tmp_path):
+    abime = tmp_path / "alertes.json"
+    abime.write_text('{"ansm": ', encoding="utf-8")
+    assert fa.precedent(abime) == {}
+    assert fa.precedent(tmp_path / "absent.json") == {}

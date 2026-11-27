@@ -12,10 +12,11 @@ const DATA = {
   source: "https://base-donnees-publique.medicaments.gouv.fr/telechargement",
   mis_a_jour: "2026-11-20",
   substances: ["ibuprofène", "paracétamol", "codéine", "rivaroxaban", "ibuprofène lysine"],
+  // Each substance points to every sheet that lists it (codeine: two sheets).
   fiches: {
-    "0": ["medicaments/classes/ains.html", "Les AINS"],
-    "2": ["medicaments/classes/opioides.html", "Les opioïdes"],
-    "4": ["medicaments/classes/ains.html", "Les AINS"],
+    "0": [["medicaments/classes/ains.html", "Les AINS"]],
+    "2": [["medicaments/classes/opioides.html", "Les opioïdes"], ["medicaments/maux-courants/toux.html", "La toux"]],
+    "4": [["medicaments/classes/ains.html", "Les AINS"]],
   },
   medicaments: [
     ["68634000", "ADVIL 200 mg, comprimé enrobé", [0]],
@@ -73,7 +74,10 @@ test("each medicine carries its official page, substances and the site's sheets"
   const combo = ENTREES.find((e) => e.cis === "60000004");
   assert.equal(combo.url, "https://base-donnees-publique.medicaments.gouv.fr/medicament/60000004/extrait");
   assert.deepEqual(combo.substances, ["paracétamol", "codéine"]);
-  assert.deepEqual(combo.fiches, [["medicaments/classes/opioides.html", "Les opioïdes"]]);
+  assert.deepEqual(combo.fiches, [
+    ["medicaments/classes/opioides.html", "Les opioïdes"],
+    ["medicaments/maux-courants/toux.html", "La toux"],
+  ]);
   assert.deepEqual(ENTREES.find((e) => e.cis === "60000012").fiches, []);
 });
 

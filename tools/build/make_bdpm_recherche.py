@@ -76,12 +76,16 @@ def index(base: mb.Base, fiches: dict, mis_a_jour: str | None) -> dict:
         ]
         rows.append([cis, base.specialites[cis]["nom"], idx])
 
+    # Every sheet that lists the substance (codeine can be on two sheets), in page order.
     liens = {}
     for name, i in substances.items():
-        for page, (titre, listed) in fiches.items():
-            if any(mb._matches(mb.normalise(name), mb.normalise(s)) for s in listed):
-                liens[str(i)] = [page.removesuffix(".qmd") + ".html", titre]
-                break
+        pages = [
+            [page.removesuffix(".qmd") + ".html", titre]
+            for page, (titre, listed) in fiches.items()
+            if any(mb._matches(mb.normalise(name), mb.normalise(s)) for s in listed)
+        ]
+        if pages:
+            liens[str(i)] = pages
     return {
         "source": mb.SOURCE,
         "mis_a_jour": mis_a_jour,

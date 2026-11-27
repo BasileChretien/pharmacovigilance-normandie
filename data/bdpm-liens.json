@@ -360,11 +360,25 @@
    "nb": 34
   },
   "valproate de sodium": {
-   "cis": "62410472",
-   "nom": "DEPAKINE 200 mg/ml, solution buvable",
+   "cis": "67623734",
+   "nom": "DEPAKINE 200 mg, comprimé gastro-résistant",
+   "princeps": true,
+   "association": false,
+   "nb": 19
+  },
+  "acide valproïque": {
+   "cis": "66508736",
+   "nom": "DEPAKOTE 250 mg, comprimé gastro-résistant",
    "princeps": true,
    "association": false,
    "nb": 13
+  },
+  "valpromide": {
+   "cis": "63737879",
+   "nom": "DEPAMIDE 300 mg, comprimé pelliculé gastro-résistant",
+   "princeps": false,
+   "association": false,
+   "nb": 1
   },
   "topiramate": {
    "cis": "61913385",

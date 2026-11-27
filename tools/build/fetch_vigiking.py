@@ -46,9 +46,15 @@ MOIS = {
 }
 _ARTICLE = re.compile(r"<article\b.*?</article>", re.DOTALL)
 _TITRE = re.compile(r'<h2[^>]*>\s*<a href="([^"]+)"[^>]*>(.*?)</a>', re.DOTALL)
-_CONTENU = re.compile(r'<div class="content">(.*?)</div>', re.DOTALL)
+# The topics: everything from the content block to the footer, whatever its other classes
+# or nested blocks. The PDF: the link of the footer's download button only.
+_CONTENU = re.compile(
+    r'<div class="[^"]*\bcontent\b[^"]*">(.*?)(?=<footer\b|</article>)', re.DOTALL
+)
+_PIED = re.compile(r"<footer\b.*?</footer>", re.DOTALL)
 _PDF = re.compile(r'<a href="([^"]+\.pdf)"', re.IGNORECASE)
-_BREAK = re.compile(r"<br\s*/?>", re.IGNORECASE)
+# A topic ends at a line break, a paragraph, a list item or a block.
+_BREAK = re.compile(r"<br\s*/?>|</p>|</li>|</div>", re.IGNORECASE)
 SEPARATEUR = "\x1f"
 
 
@@ -71,7 +77,8 @@ def parse_numeros(page: str) -> list[dict]:
     numeros = []
     for article in _ARTICLE.findall(page):
         titre = _TITRE.search(article)
-        pdf = _PDF.search(article)
+        pied = _PIED.search(article)
+        pdf = _PDF.search(pied.group(0)) if pied else None
         if not (
             titre
             and pdf
@@ -81,7 +88,8 @@ def parse_numeros(page: str) -> list[dict]:
             continue  # not an issue, or a link off the network's site: never shown
         contenu = _CONTENU.search(article)
         # Entities are decoded first ("d&rsquo;un" holds a ";"), then topics are split on
-        # ";" and on <br> (marked with a unit separator, as source newlines are just spaces).
+        # ";" and on the breaks above (marked with a unit separator, as source newlines are
+        # just spaces).
         brut = _BREAK.sub(SEPARATEUR, contenu.group(1)) if contenu else ""
         texte = html.unescape(re.sub(r"<[^>]+>", " ", brut))
         parts = re.split(f"[;{SEPARATEUR}]", texte)

@@ -31,15 +31,17 @@
   function preparer(data) {
     return data.medicaments.map(function (m) {
       var substances = m[2].map(function (i) { return data.substances[i]; });
-      // One link per sheet, even when two of its substances (two salts) point to it.
+      // Every sheet of every substance (a substance can be on two sheets), one link per
+      // sheet even when two of its substances (two salts) point to it.
       var vues = {};
-      var fiches = m[2]
-        .map(function (i) { return data.fiches[String(i)]; })
-        .filter(function (f) {
-          if (!f || vues[f[0]]) return false;
+      var fiches = [];
+      m[2].forEach(function (i) {
+        (data.fiches[String(i)] || []).forEach(function (f) {
+          if (vues[f[0]]) return;
           vues[f[0]] = true;
-          return true;
+          fiches.push(f);
         });
+      });
       var nom = normalise(m[1]);
       return {
         cis: m[0],
