@@ -68,7 +68,7 @@ Avalez le comprimé avec de l'eau, pendant ou en dehors des repas.
 
 Le fer, le zinc, le calcium et les médicaments contre l'acidité de l'estomac empêchent l'antibiotique de passer dans le sang. Prenez-les au moins 2 heures avant ou après la lévofloxacine. Pour la ciprofloxacine, évitez aussi le lait ou un yaourt pris seuls, en dehors d'un repas.
 
-{{< figure-svg fluoroquinolones-1 alt="Au milieu, la prise de l'antibiotique. Dans les 2 heures avant et les 2 heures après : pas de fer, de zinc, de calcium ni de médicament contre l'acidité de l'estomac. Avec la ciprofloxacine, pas de lait ni de yaourt pris seuls, en dehors d'un repas." legende="Gardez au moins 2 heures entre l'antibiotique et le fer, le zinc, le calcium ou un médicament contre l'acidité." >}}
+{{< figure-svg fluoroquinolones-1 alt="Au milieu, la prise de lévofloxacine. Dans les 2 heures avant et les 2 heures après : pas de fer, de zinc, de calcium ni de médicament contre l'acidité de l'estomac. Avec la ciprofloxacine, pas de lait ni de yaourt pris seuls, en dehors d'un repas." legende="Avec la lévofloxacine, gardez au moins 2 heures avant et après pour le fer, le zinc, le calcium ou un médicament contre l'acidité." >}}
 
 Évitez le soleil fort et les lampes à bronzer pendant le traitement et les 2 jours suivants.
 

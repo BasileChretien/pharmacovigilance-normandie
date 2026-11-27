@@ -13,8 +13,8 @@
     </g>
   </defs>
 
-  <!-- The intake, in the middle -->
-  <text x="220" y="22" text-anchor="middle" font-weight="700">Prise de l'antibiotique</text>
+  <!-- The levofloxacin intake, in the middle (the page gives 2 hours for it only) -->
+  <text x="220" y="22" text-anchor="middle" font-weight="700">Prise de la lévofloxacine</text>
   <line x1="220" y1="30" x2="220" y2="168" stroke="#073f6e" stroke-width="2"/>
   <circle cx="220" cy="100" r="20" fill="#073f6e"/>
   <rect x="208" y="94" width="24" height="12" rx="6" fill="#ffffff" transform="rotate(-35 220 100)"/>
