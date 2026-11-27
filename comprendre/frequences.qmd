@@ -20,9 +20,9 @@ pour_aller_plus_loin:
   - titre: "Effets indésirables"
     url: "https://pharmacomedicale.org/pharmacologie/risque-des-medicaments/47-effets-indesirables"
     site: cnpm
-  - titre: "EudraVigilance : les cas d'effets indésirables suspectés déclarés en Europe"
+  - titre: "EudraVigilance : les cas d'effets indésirables suspectés déclarés en Europe (un nombre de cas n'est ni une fréquence ni un risque)"
     url: "https://www.adrreports.eu/fr/index.html"
-    site: "Agence européenne des médicaments ; un nombre de cas n'est ni une fréquence ni un risque"
+    site: "Agence européenne des médicaments"
 ---
 
 ::: {.texte-patient}

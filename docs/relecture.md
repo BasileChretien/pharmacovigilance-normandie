@@ -100,3 +100,12 @@ le Collège national de pharmacologie médicale (pharmacomedicale.org), dans
 | Actualité de chaque article du réseau | Beaucoup affichent « modifié le 04/05/2024 » dans le plan du site, sans date de publication visible : cette date semble être celle de la migration du site, pas celle de l'article |
 | Fiches du Collège | Pas de date de mise à jour visible ; elles sont écrites pour les professionnels et les étudiants |
 | Choix des liens | Un lien par sujet évident ; certaines pages (conduite, quand prendre, lire une notice) n'en ont pas, faute de contenu correspondant |
+
+## Liens vers d'autres sites (27/11/2026)
+
+| Page | À vérifier |
+|---|---|
+| comprendre/frequences | EudraVigilance (adrreports.eu) : la mise en garde « un nombre de cas n'est ni une fréquence ni un risque » suffit-elle pour un lecteur patient ? |
+| comprendre/pourquoi-declarer | Uppsala Monitoring Centre : fondation indépendante, centre collaborateur de l'OMS ; site en anglais |
+| bon-usage/interactions-ville, bon-usage/cytochromes | Thériaque (CNHIM) : l'inscription est-elle toujours gratuite pour les professionnels ? |
+| normandie/index, normandie/qui-contacter | ARS et CPIAS de Normandie : sites et intitulés ; coordonnées téléphoniques du CPIAS à compléter |
