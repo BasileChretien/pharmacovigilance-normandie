@@ -172,3 +172,8 @@ def test_a_block_whose_class_only_starts_with_content_is_not_the_content():
         '<div class="entry-content-meta"><p>Méta</p></div><div class="content">',
     )
     assert fv.parse_numeros(article)[0]["sujets"] == ["Sujet"]
+
+
+def test_content_among_other_classes_is_the_content():
+    article = _article("<p>Sujet</p>", classe="entry content wp-block")
+    assert fv.parse_numeros(article)[0]["sujets"] == ["Sujet"]

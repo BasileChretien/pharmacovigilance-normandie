@@ -187,21 +187,33 @@ def _fetch(url: str) -> str:
         return response.read().decode("utf-8")
 
 
-_ISO = re.compile(r"\d{4}-\d{2}-\d{2}")
+# ASCII digits only: \d would also take other scripts' digits.
+_ISO = re.compile(r"[0-9]{4}-[0-9]{2}-[0-9]{2}")
+# Printed when present; refresh() writes None when the site gives none.
+_FACULTATIFS = ("produit", "public", "resume")
 
 
 def _date_iso(value: object) -> bool:
-    return isinstance(value, str) and _ISO.fullmatch(value) is not None
+    """A real date written YYYY-MM-DD: '2026-99-99' is refused."""
+    if not (isinstance(value, str) and _ISO.fullmatch(value)):
+        return False
+    try:
+        dt.date.fromisoformat(value)
+    except ValueError:
+        return False
+    return True
 
 
 def _alerte_saine(alerte: object) -> bool:
-    """An alert with what the page prints: a title, a link, ISO dates."""
+    """An alert with what the page prints: a title, a link, ISO dates, and text or
+    nothing in the other fields."""
     return (
         isinstance(alerte, dict)
         and isinstance(alerte.get("titre"), str)
         and isinstance(alerte.get("url"), str)
         and _date_iso(alerte.get("publie_le"))
         and (alerte.get("mis_a_jour_le") is None or _date_iso(alerte["mis_a_jour_le"]))
+        and all(isinstance(alerte.get(k), (str, type(None))) for k in _FACULTATIFS)
     )
 
 

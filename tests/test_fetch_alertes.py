@@ -232,3 +232,37 @@ def test_a_site_that_fails_after_a_damaged_previous_list_is_left_unread(tmp_path
     }
     data, errors = fa.refresh(fa.precedent(path), _fetcher(pages), "2026-11-30")
     assert "ansm" not in data and errors
+
+
+def test_a_previous_alert_with_a_printed_field_of_the_wrong_type_is_dropped(tmp_path):
+    import json
+
+    sain = _bloc()
+    for abime in (_bloc(produit=3), _bloc(public=["x"]), _bloc(resume={})):
+        path = tmp_path / "alertes.json"
+        path.write_text(json.dumps({"ansm": abime, "ema": sain}), encoding="utf-8")
+        assert fa.precedent(path) == {"ema": sain}, abime
+
+
+def test_a_previous_list_with_an_impossible_date_is_dropped(tmp_path):
+    import json
+
+    sain = _bloc()
+    for abime in (
+        {**sain, "releve_le": "2026-99-99"},
+        _bloc(publie_le="2026-02-30"),
+        _bloc(mis_a_jour_le="2026-13-01"),
+        _bloc(publie_le="２０２６-11-20"),  # full-width digits
+    ):
+        path = tmp_path / "alertes.json"
+        path.write_text(json.dumps({"ansm": abime, "ema": sain}), encoding="utf-8")
+        assert fa.precedent(path) == {"ema": sain}, abime
+
+
+def test_optional_fields_left_empty_keep_the_previous_list(tmp_path):
+    import json
+
+    bloc = _bloc(produit=None, public=None, resume=None, mis_a_jour_le=None)
+    path = tmp_path / "alertes.json"
+    path.write_text(json.dumps({"ansm": bloc}), encoding="utf-8")
+    assert fa.precedent(path) == {"ansm": bloc}
