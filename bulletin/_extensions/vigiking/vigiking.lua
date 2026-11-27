@@ -1,19 +1,19 @@
 -- vigiking.lua: maps an issue's Markdown onto the bulletin's layout (bulletin/README.md).
 --
---   ## Titre {auteur="…"}                 an article, on its own page in the PDF, in two
---                                          columns split by ::: {.saut-colonne} (15 pt)
---   ## Titre {auteur="…" .une-colonne}    one column, text sized to fill the page;
---                                          taille=14 sets the size by hand
+--   ## Titre {auteur="…"}                 an article, on its own page in the PDF: one column,
+--                                          or two when ::: {.saut-colonne} splits it; the
+--                                          text is sized to fill the page (taille=14 sets it)
 --   ## Titre {.liste}                     left-aligned (lists of drug names), not justified
 --   ## Titre {.dos}                        the back cover; its ### headings become blue bands
 --   ::: {.encadre}  ::: {.legende}  ::: {.saut-colonne}  ::: {.pastille couleur=rouge}
---   ::: {.references} (small print, two columns)  ::: {.deux-colonnes}
+--   ::: {.references} (small print)  ::: {.deux-colonnes}
 --   [texte]{.ci}  contraindicated (red, bold)    [texte]{.cm}  CredibleMeds (orange, italic)
 --
 -- The PDF (Typst) gets the template's functions (typst-template.typ); the web version keeps
 -- the classes for vigiking.css.
 
 local TYPST = FORMAT:match("typst") ~= nil
+local COLBREAK = "#colbreak()"
 
 local function raw_block(s)
   return pandoc.RawBlock("typst", s)
@@ -58,7 +58,7 @@ end
 
 local function Div(el)
   if el.classes:includes("saut-colonne") then
-    return TYPST and raw_block("#colbreak()") or {}
+    return TYPST and raw_block(COLBREAK) or {}
   end
   if not TYPST then
     return nil
@@ -90,7 +90,7 @@ local function articles(doc)
         if au_dos then
           out:insert(raw_block("#dos([" .. titre .. "])["))
         else
-          local args = { "colonnes: " .. (b.classes:includes("une-colonne") and 1 or 2) }
+          local args = {}
           if auteur then
             table.insert(args, "auteur: " .. chaine(auteur))
           end
@@ -112,6 +112,9 @@ local function articles(doc)
       end
     elseif TYPST and au_dos and b.t == "Header" and b.level == 3 then
       out:insert(raw_block("#bande[" .. en_typst(b.content) .. "]"))
+    elseif TYPST and ouvert and not au_dos and b.t == "RawBlock" and b.text == COLBREAK then
+      -- The article's column break: end of the first column's block, start of the second.
+      out:insert(raw_block("]["))
     else
       out:insert(b)
     end

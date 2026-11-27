@@ -13,6 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      # Quarto first: its pandoc runs the tests of the Word import (bulletin/word/).
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.10.18"
+
       - uses: astral-sh/setup-uv@v10.4.0
       - name: Tests of the checks
         run: uv run pytest -q
@@ -23,9 +28,6 @@ jobs:
       - name: Figures (SVG files and their placement)
         run: uv run python tools/checks/check_figures.py
 
-      - uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          version: "1.10.18"
       - name: Render the site
         run: quarto render
       - name: Every section listed in its table of contents

@@ -35,7 +35,7 @@ Une liste :
 - deuxième point ;
 - troisième point.
 
-## Un article sur une colonne {auteur="[auteur]" .une-colonne}
+## Un article sur une colonne {auteur="[auteur]"}
 
 Sur une colonne, la taille du texte s'adapte pour remplir la page : un article court s'écrit plus gros, un article long plus petit, sans rien régler à la main.
 
@@ -47,7 +47,7 @@ Sur une colonne, la taille du texte s'adapte pour remplir la page : un article c
 **À retenir :** le texte reste le seul travail des auteurs ; la mise en page est celle du modèle.
 :::
 
-## Une liste de médicaments classés {auteur="[auteur]" .liste taille=18}
+## Une liste de médicaments classés {auteur="[auteur]" .liste}
 
 ::: {.pastille couleur=rouge}
 Cardiologie

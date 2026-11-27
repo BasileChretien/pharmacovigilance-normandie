@@ -21,7 +21,7 @@ reviews it.
 - `uv run python tools/build/fetch_openmedic.py` then `make_openmedic.py` — yearly: reimbursed medicines in Normandy vs France (Open Medic + INSEE, cache `data/openmedic/`, gitignored) for normandie/medicaments-rembourses.qmd.
 - `uv run python tools/build/fetch_vigiking.py` then `make_vigiking_page.py` — at each new issue: archive of Vigiking issues (links to rfcrpv.fr) for vigiking/archives.qmd.
 - `uv run python tools/build/fetch_alertes.py` then `make_alertes_page.py` — refresh the official alerts feed (ANSM, EMA); the Pages build also runs both every Monday, stdlib only (runner's python3).
-- `cd bulletin && quarto render numeros/<AAAA-MM>/vigiking-<AAAA-MM>.qmd` — Vigiking bulletin, PDF (16:9) and web page from one file; its own Quarto project, out of the site build; issues stay local (gitignored) until the CRPV agree to host them (`bulletin/README.md`).
+- `uv run python bulletin/word/importer.py numero.docx <AAAA-MM>` then `cd bulletin && quarto render numeros/<AAAA-MM>/vigiking-<AAAA-MM>.qmd` — Vigiking bulletin (from Word, template `bulletin/word/modele-vigiking.docx`), PDF (16:9) and web page from one file; its own Quarto project, out of the site build; issues stay local (gitignored) until the CRPV agree to host them (`bulletin/README.md`).
 
 Status and open tasks: `docs/STATUS.md`. Points for medical reviewers: `docs/relecture.md`.
 

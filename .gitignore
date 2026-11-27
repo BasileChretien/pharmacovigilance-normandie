@@ -22,3 +22,5 @@ data/openmedic/
 # Vigiking bulletin: issues stay local until the CRPV agree to host them (bulletin/README.md)
 bulletin/numeros/
 bulletin/_output/
+# Logos, Vigiking banner and standard back cover used by bulletin/word/importer.py
+bulletin/commun/

@@ -60,31 +60,39 @@
   v(10pt)
 }
 
-#let mise-en-forme(taille, colonnes, contenu, justifier: true) = {
+#let mise-en-forme(taille, contenu, justifier: true) = {
   set text(size: taille)
   set par(justify: justifier, leading: 0.5em, spacing: 0.9em)
   set list(spacing: 0.7em)
-  if colonnes > 1 { columns(colonnes, gutter: 1cm, contenu) } else { contenu }
+  contenu
 }
 
-// Text sizes tried, largest first, to fill a one-column article's page.
-#let tailles = (20pt, 19pt, 18pt, 17pt, 16pt, 15pt, 14pt, 13pt, 12pt)
+// Text sizes tried, largest first, to fill an article's page.
+#let tailles = (20pt, 19pt, 18pt, 17pt, 16pt, 15pt, 14pt, 13pt, 12pt, 11pt)
+#let gouttiere = 1cm
 
-// An article on its own page. One column: the largest text size that fits the page,
-// so nobody resizes text by hand. Two columns (split with a column break): 15 pt, or the
-// size the issue sets, as Typst does not balance columns.
-#let article(auteur: none, colonnes: 2, taille: auto, justifier: true, titre, contenu) = {
+// An article on its own page, in one column or two (the issue's column break splits it;
+// vigiking.lua passes each column as its own block). The text gets the largest size at
+// which every column fits the page, so nobody resizes text by hand; taille: sets it.
+#let article(auteur: none, taille: auto, justifier: true, titre, ..colonnes) = {
   pagebreak(weak: true)
   entete(auteur, titre)
-  if taille != auto or colonnes > 1 {
-    mise-en-forme(if taille == auto { 15pt } else { taille }, colonnes, contenu, justifier: justifier)
+  let blocs = colonnes.pos()
+  let n = calc.max(blocs.len(), 1)
+  let rendu(t) = grid(
+    columns: (1fr,) * n, column-gutter: gouttiere,
+    ..blocs.map(c => mise-en-forme(t, c, justifier: justifier)),
+  )
+  if taille != auto {
+    rendu(taille)
   } else {
     layout(zone => {
-      let dispo = zone.height - measure(width: zone.width, entete(auteur, titre)).height - 1.5cm
-      let qui-tient = tailles.filter(t => {
-        measure(width: zone.width, mise-en-forme(t, 1, contenu, justifier: justifier)).height <= dispo
-      })
-      mise-en-forme(qui-tient.at(0, default: tailles.last()), 1, contenu, justifier: justifier)
+      let dispo = zone.height - measure(width: zone.width, entete(auteur, titre)).height - 1cm
+      let largeur = (zone.width - gouttiere * (n - 1)) / n
+      let qui-tient = tailles.filter(t => blocs.all(c => {
+        measure(width: largeur, mise-en-forme(t, c, justifier: justifier)).height <= dispo
+      }))
+      rendu(qui-tient.at(0, default: tailles.last()))
     })
   }
 }
