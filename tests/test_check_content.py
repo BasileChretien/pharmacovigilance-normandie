@@ -283,3 +283,12 @@ def test_a_substance_without_an_official_link_is_a_warning():
 def test_without_bdpm_data_the_rule_is_skipped():
     findings = cc.check_text(_bdpm_page("60000006"), Path("medicaments/classes/x.qmd"), {})
     assert not [f for f in findings if f.rule == "FM-BDPM"]
+
+
+def test_the_bulletin_folder_is_not_a_site_page(tmp_path, monkeypatch):
+    # bulletin/ is its own Quarto project (Vigiking), outside the website's rules.
+    (tmp_path / "bulletin" / "exemple").mkdir(parents=True)
+    (tmp_path / "bulletin" / "exemple" / "exemple.qmd").write_text("---\ntitle: X\n---\n", encoding="utf-8")
+    (tmp_path / "page.qmd").write_text("---\ntitle: Y\n---\n", encoding="utf-8")
+    monkeypatch.setattr(cc, "ROOT", tmp_path)
+    assert cc.site_pages() == [tmp_path / "page.qmd"]

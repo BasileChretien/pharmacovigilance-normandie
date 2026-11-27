@@ -86,6 +86,10 @@ Prochaines pull requests, dans l'ordre (décidé le 27/11/2026) :
       (3 tranches) et le sexe ; à faire valider par les CRPV (méthode et commentaire).
 - [x] Archive des numéros de Vigiking (vigiking/archives.qmd) : 25 numéros depuis 2017, sommaires
       du site du réseau, filtrables ; liens seulement vers les PDF de rfcrpv.fr.
+- [ ] Bulletin Vigiking produit depuis le site (prototype du 28/11/2026, `bulletin/`) : un
+      fichier texte donne le PDF 16:9 à joindre au courriel et la page web ; numéro d'octobre 2025
+      refait en local pour comparaison. À décider avec les CRPV : adoption, hébergement des
+      numéros, accord des auteurs pour leur nom.
 - [ ] Index de Vigiking par thème et hébergement des PDF sur le site : inventaire des numéros et
       accord des CRPV à obtenir ; sommaires de juillet 2017 à février 2019 à fournir.
 - [ ] Liste des publications générée depuis ORCID et OpenAlex.

@@ -1,0 +1,97 @@
+---
+title: "Titre du dossier du numéro"
+subtitle: "Vigiking Normand, numéro d'exemple"
+numero: "Mois Année"
+pdf: exemple.pdf
+format:
+  vigiking-typst:
+    output-file: exemple.pdf
+  vigiking-html:
+    output-file: exemple.html
+---
+
+<!-- Sample issue: every building block of the bulletin, with placeholder text.
+A real issue also gives, in its front matter: couverture (cover image) and couverture-alt,
+logo-gauche, logo-droite and bandeau (images of the logos and of the Vigiking banner). -->
+
+## Un article sur deux colonnes {auteur="[auteur]"}
+
+Le texte de l'article s'écrit comme un courriel : des paragraphes séparés par une ligne vide. Les mots importants se mettent **en gras**, les titres d'ouvrages *en italique*, et un appel de référence en exposant^1^.
+
+La mise en page se fait toute seule : colonnes justifiées, polices, couleurs et marges viennent du modèle, identiques à chaque numéro.
+
+::: {.encadre}
+**Un encadré** met en avant un message clé, comme dans les numéros PowerPoint.
+:::
+
+::: {.saut-colonne}
+:::
+
+La deuxième colonne commence après la ligne `::: {.saut-colonne}`. Une figure s'insère avec sa légende et son texte alternatif, pour les lecteurs d'écran.
+
+Une liste :
+
+- premier point ;
+- deuxième point ;
+- troisième point.
+
+## Un article sur une colonne {auteur="[auteur]" .une-colonne}
+
+Sur une colonne, la taille du texte s'adapte pour remplir la page : un article court s'écrit plus gros, un article long plus petit, sans rien régler à la main.
+
+1. Première étape.
+2. Deuxième étape.
+3. Troisième étape.
+
+::: {.encadre}
+**À retenir :** le texte reste le seul travail des auteurs ; la mise en page est celle du modèle.
+:::
+
+## Une liste de médicaments classés {auteur="[auteur]" .liste taille=18}
+
+::: {.pastille couleur=rouge}
+Cardiologie
+:::
+
+**Classe A :** [médicament contre-indiqué]{.ci}, [médicament signalé par CredibleMeds]{.cm}
+
+::: {.pastille couleur=vert}
+Infectiologie
+:::
+
+**Classe B :** [médicament contre-indiqué]{.ci}
+
+::: {.saut-colonne}
+:::
+
+::: {.pastille couleur=bleu}
+Neuropsychiatrie
+:::
+
+**Classe C :** [médicament signalé par CredibleMeds]{.cm}
+
+::: {.legende}
+[**En rouge et en gras**]{.ci} = contre-indication mentionnée dans le RCP.\
+[*En orange et en italique*]{.cm} = risque mentionné dans CredibleMeds.
+:::
+
+## Pour nous joindre {.dos}
+
+**Texte d'appel à la déclaration**, repris d'un numéro à l'autre.
+
+### Comment poser une question ou déclarer un effet indésirable ?
+
+[Texte du dos du bulletin.]
+
+### Vos centres régionaux de pharmacovigilance en Normandie
+
+::: {.deux-colonnes}
+**Rouen**\
+[Coordonnées du centre]
+
+::: {.saut-colonne}
+:::
+
+**Caen**\
+[Coordonnées du centre]
+:::

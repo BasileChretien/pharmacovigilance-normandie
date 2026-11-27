@@ -30,7 +30,8 @@ import yaml
 ROOT = Path(__file__).resolve().parents[2]
 JARGON_FILE = ROOT / "data" / "jargon.yml"
 BDPM_FILE = ROOT / "data" / "bdpm-liens.json"  # tools/build/make_bdpm_liens.py
-EXCLUDED_DIRS = {"_site", "_templates", "docs", "node_modules", ".quarto", ".venv", "tests", "tools"}
+# bulletin/: the Vigiking bulletin, its own Quarto project (bulletin/README.md).
+EXCLUDED_DIRS = {"_site", "_templates", "bulletin", "docs", "node_modules", ".quarto", ".venv", "tests", "tools"}
 
 STATUTS = {"brouillon", "relu", "publie"}
 STRICT_STATUTS = {"relu", "publie"}
