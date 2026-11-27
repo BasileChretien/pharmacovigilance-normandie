@@ -178,12 +178,13 @@ def test_a_substance_with_a_sheet_on_the_site_points_to_it():
     data = _index()
     fiches = {data["substances"][int(i)]: f for i, f in data["fiches"].items()}
     assert fiches["ibuprofène"] == [
-        "medicaments/classes/ains.html",
-        "Les anti-inflammatoires non stéroïdiens (AINS)",
+        [
+            "medicaments/classes/ains.html",
+            "Les anti-inflammatoires non stéroïdiens (AINS)",
+        ]
     ]
     assert fiches["codéine"] == [
-        "medicaments/classes/opioides.html",
-        "Les médicaments opioïdes",
+        ["medicaments/classes/opioides.html", "Les médicaments opioïdes"]
     ]
     assert "rivaroxaban" not in fiches
 
@@ -220,3 +221,45 @@ def test_the_page_states_the_files_date_and_the_count():
     assert "fichiers du 20/11/2026" in html
     assert "12&nbsp;312 médicaments" in html
     assert f'href="{mb.SOURCE}"' in html
+
+
+def test_an_inverted_salt_and_every_sheet_of_a_substance_are_linked():
+    specialites = "\n".join(
+        [
+            _row("60000020", "DEPAKINE 200 mg, comprimé gastro-résistant"),
+            _row("60000021", "CODOLIPRANE, comprimé"),
+        ]
+    )
+    lignes = [
+        [
+            "60000020",
+            "comprimé",
+            "20",
+            "SODIUM (VALPROATE DE)",
+            "200 mg",
+            "un comprimé",
+            "SA",
+            "1",
+        ],
+        ["60000021", "comprimé", "21", "CODÉINE", "20 mg", "un comprimé", "SA", "1"],
+    ]
+    compositions = "\n".join("\t".join(colonnes) for colonnes in lignes)
+    fiches = {
+        "medicaments/classes/valproate-teratogenes.qmd": (
+            "Le valproate",
+            ["valproate de sodium"],
+        ),
+        "medicaments/classes/opioides.qmd": ("Les opioïdes", ["codéine"]),
+        "medicaments/maux-courants/toux.qmd": ("La toux", ["codéine"]),
+    }
+    data = mr.index(
+        mb.Base.from_texts(specialites, compositions, ""), fiches, "2026-11-20"
+    )
+    liens = {data["substances"][int(i)]: f for i, f in data["fiches"].items()}
+    assert liens["sodium (valproate de)"] == [
+        ["medicaments/classes/valproate-teratogenes.html", "Le valproate"]
+    ]
+    assert liens["codéine"] == [
+        ["medicaments/classes/opioides.html", "Les opioïdes"],
+        ["medicaments/maux-courants/toux.html", "La toux"],
+    ]

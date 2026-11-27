@@ -430,3 +430,11 @@ def test_a_missing_files_date_is_reported():
     assert any("date" in p for p in mb.rapport(data, {}, {}))
     dated = mb.construire(_base(), {}, {}, "2026-11-20")
     assert mb.rapport(dated, {}, {}) == []
+
+
+def test_an_inverted_salt_reads_as_the_usual_name():
+    assert mb.normalise("SODIUM (VALPROATE DE)") == "valproate de sodium"
+    assert mb._matches(
+        mb.normalise("SODIUM (VALPROATE DE)"), mb.normalise("valproate de sodium")
+    )
+    assert mb.normalise("AMMONIUM (CHLORURE D')") == "chlorure d'ammonium"

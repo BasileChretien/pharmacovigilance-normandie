@@ -120,3 +120,45 @@ def test_the_page_says_when_and_where_the_list_was_read():
 def test_the_month_is_found_when_the_title_goes_on_after_the_year():
     assert fv._mois("Janvier – Février 2020 – N°38") == "2020-01"
     assert fv._mois("Sans date") is None
+
+
+def _article(contenu, classe="content"):
+    return (
+        '<article><header><h2><a href="https://www.rfcrpv.fr/bulletins-des-crpv/vigiking-rouen-caen/mai-2024/">'
+        f'Mai 2024</a></h2></header><div class="{classe}">{contenu}</div>'
+        '<footer><div class="wp-block-button"><a href="https://www.rfcrpv.fr/wp-content/uploads/2024/06/Vigiking-2024-05.pdf" '
+        'class="wp-block-button__link">Télécharger le fichier</a></div></footer></article>'
+    )
+
+
+def test_topics_in_separate_paragraphs_stay_separate():
+    numero = fv.parse_numeros(
+        _article("<p>Troubles de la pigmentation</p>\n<p>Neuropathie périphérique</p>")
+    )[0]
+    assert numero["sujets"] == [
+        "Troubles de la pigmentation",
+        "Neuropathie périphérique",
+    ]
+
+
+def test_the_pdf_is_the_download_button_not_a_link_inside_the_topics():
+    contenu = '<p>Voir <a href="https://ansm.sante.fr/document.pdf">la lettre de l’ANSM</a> ; Autre sujet</p>'
+    numero = fv.parse_numeros(_article(contenu))[0]
+    assert (
+        numero["pdf"]
+        == "https://www.rfcrpv.fr/wp-content/uploads/2024/06/Vigiking-2024-05.pdf"
+    )
+    assert numero["sujets"] == ["Voir la lettre de l’ANSM", "Autre sujet"]
+
+
+def test_a_content_block_with_another_class_or_a_nested_block_keeps_its_topics():
+    contenu = '<div class="extrait"><p>Premier sujet</p></div><p>Second sujet</p>'
+    assert fv.parse_numeros(_article(contenu, "content entry"))[0]["sujets"] == [
+        "Premier sujet",
+        "Second sujet",
+    ]
+
+
+def test_no_elision_before_h():
+    assert mp._de("Hors-série 2021") == "de hors-série 2021"
+    assert mp._de("Avril 2025") == "d’avril 2025"

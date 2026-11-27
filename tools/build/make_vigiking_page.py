@@ -32,9 +32,10 @@ MOIS = [
 
 
 def _de(titre: str) -> str:
-    """'Avril 2025' -> 'd’avril 2025'; 'Mai 2024' -> 'de mai 2024'."""
+    """'Avril 2025' -> 'd’avril 2025'; 'Mai 2024' -> 'de mai 2024'. No elision before "h"
+    (h aspiré: 'de hors-série')."""
     t = titre.lower()
-    return ("d’" if t[:1] in "aeiouéèêàâîïôûh" else "de ") + t
+    return ("d’" if t[:1] in "aeiouéèêàâîïôû" else "de ") + t
 
 
 def _mois(iso: str | None) -> str:

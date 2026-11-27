@@ -45,11 +45,20 @@ _DATE_SPECIALITES = re.compile(
 )
 
 
+_INVERSE = re.compile(r"^(.+) \((.+) (de|d')\)$")
+
+
 def normalise(name: str) -> str:
-    """Lower case, no accents, single spaces: 'IBUPROFÈNE' -> 'ibuprofene'."""
+    """Lower case, no accents, single spaces: 'IBUPROFÈNE' -> 'ibuprofene'. A salt written
+    the inverted way reads the usual way: 'SODIUM (VALPROATE DE)' -> 'valproate de sodium'."""
     decomposed = unicodedata.normalize("NFKD", name)
     plain = "".join(c for c in decomposed if not unicodedata.combining(c))
-    return " ".join(plain.replace("’", "'").lower().split())
+    text = " ".join(plain.replace("’", "'").lower().split())
+    inverse = _INVERSE.match(text)
+    if inverse:
+        sel, substance, de = inverse.groups()
+        text = f"{substance} {de}{'' if de.endswith(chr(39)) else ' '}{sel}"
+    return text
 
 
 def _rows(text: str) -> list[list[str]]:

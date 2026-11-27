@@ -9,7 +9,8 @@ inhabitants in Normandy (region 28) and in France, crude and standardised on age
 (direct method, France as the standard population, 3 age groups x 2 sexes).
 
 Reads the cache written by tools/build/fetch_openmedic.py (data/openmedic/) and writes
-data/openmedic-normandie.json and _includes/openmedic-normandie.md (chart and table).
+data/openmedic-normandie.json and three includes: _includes/openmedic-resume.md (the
+largest gaps, as a sentence), openmedic-graphique.md (chart) and openmedic-tableau.md (table).
 
 Usage: python tools/build/make_openmedic.py
 """
@@ -195,21 +196,26 @@ def resultats(boites: dict, pop: dict, groupes: list[dict]) -> list[dict]:
     lignes = []
     for g in groupes:
         cle = g["cle"]
-        valeurs = {}
+        valeurs, standardises = {}, {}
         for nom, place in (("normandie", NORMANDIE), ("france", FRANCE)):
+            standardises[nom] = taux_standardise(boites, pop, cle, place)
             valeurs[nom] = {
                 "boites": sum(
                     v for (c, p, _s, _a), v in boites.items() if c == cle and p == place
                 ),
                 "taux_brut": round(taux_brut(boites, pop, cle, place), 1),
-                "taux_standardise": round(taux_standardise(boites, pop, cle, place), 1),
+                "taux_standardise": round(standardises[nom], 1),
             }
-        n, f = (
-            valeurs["normandie"]["taux_standardise"],
-            valeurs["france"]["taux_standardise"],
-        )
+        # The gap and the ranking use the unrounded rates; no French box, no gap.
+        f = standardises["france"]
+        ratio = standardises["normandie"] / f if f else None
         lignes.append(
-            {**g, **valeurs, "ecart_pct": round(100 * (n / f - 1)) if f else None}
+            {
+                **g,
+                **valeurs,
+                "ratio": round(ratio, 4) if ratio is not None else None,
+                "ecart_pct": round(100 * (ratio - 1)) if ratio is not None else None,
+            }
         )
     return lignes
 
@@ -223,7 +229,9 @@ def fr_nombre(x: float, decimales: int = 1) -> str:
     return texte.replace(",", "#").replace(".", ",").replace("#", "&nbsp;")
 
 
-def fr_ecart(pct: int) -> str:
+def fr_ecart(pct: int | None) -> str:
+    if pct is None:
+        return "&mdash;"  # no French box: no gap to show
     if pct > 0:
         return f"+{pct}&nbsp;%"
     if pct < 0:
@@ -232,7 +240,14 @@ def fr_ecart(pct: int) -> str:
 
 
 def _classees(lignes: list[dict]) -> list[dict]:
-    return sorted(lignes, key=lambda ligne: -(ligne["ecart_pct"] or 0))
+    """Largest gap first, by the unrounded ratio (two groups can both round to +11 %)."""
+
+    def ratio(ligne: dict) -> float:
+        if ligne.get("ratio") is not None:
+            return ligne["ratio"]
+        return 1 + (ligne.get("ecart_pct") or 0) / 100
+
+    return sorted(lignes, key=lambda ligne: -ratio(ligne))
 
 
 def graphique(lignes: list[dict], annee: int) -> str:
@@ -241,9 +256,9 @@ def graphique(lignes: list[dict], annee: int) -> str:
     plus_grand = max(abs(ligne["ecart_pct"] or 0) for ligne in lignes) or 1
     rows = []
     for ligne in _classees(lignes):
-        pct = ligne["ecart_pct"] or 0
-        sens = "plus" if pct > 0 else "moins" if pct < 0 else "nul"
-        longueur = round(100 * abs(pct) / plus_grand, 1)
+        pct = ligne["ecart_pct"]
+        sens = "plus" if (pct or 0) > 0 else "moins" if (pct or 0) < 0 else "nul"
+        longueur = round(100 * abs(pct or 0) / plus_grand, 1)
         rows.append(
             '<li class="ecart">'
             f'<span class="ecart-nom">{html.escape(ligne["libelle"])}</span>'
@@ -271,7 +286,7 @@ def tableau(lignes: list[dict], annee: int) -> str:
         n, f = ligne["normandie"], ligne["france"]
         rows.append(
             f'<tr><th scope="row">{nom}</th><td>{fr_nombre(n["taux_standardise"])}</td>'
-            f"<td>{fr_nombre(f['taux_standardise'])}</td><td>{fr_ecart(ligne['ecart_pct'] or 0)}</td>"
+            f"<td>{fr_nombre(f['taux_standardise'])}</td><td>{fr_ecart(ligne['ecart_pct'])}</td>"
             f"<td>{fr_nombre(n['taux_brut'])}</td></tr>"
         )
     # Scrolls sideways on a phone; focusable so the keyboard can scroll it too.
@@ -347,7 +362,8 @@ def main() -> int:
         f"{OUT_DATA.relative_to(ROOT)} : {len(lignes)} groupes de médicaments ({ANNEE})."
     )
     for ligne in _classees(lignes):
-        print(f"  {ligne['libelle']} : {ligne['ecart_pct']:+d} %")
+        ecart = ligne["ecart_pct"]
+        print(f"  {ligne['libelle']} : {'n/a' if ecart is None else f'{ecart:+d} %'}")
     return 0
 
 

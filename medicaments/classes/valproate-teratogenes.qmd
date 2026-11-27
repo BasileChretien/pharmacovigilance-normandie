@@ -3,7 +3,7 @@ title: "Le valproate et les autres médicaments tératogènes"
 description: "Valproate, topiramate et grossesse : les risques pour l'enfant à naître, la contraception, les règles françaises de prescription et de délivrance."
 public: [patients, professionnels]
 classe: "valproate et tératogènes"
-substances: [valproate de sodium, topiramate]
+substances: [valproate de sodium, acide valproïque, valpromide, topiramate]
 statut: brouillon
 relu_par: null
 relu_le: null

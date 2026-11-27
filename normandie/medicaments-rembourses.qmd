@@ -29,7 +29,7 @@ Un écart ne dit pas si les médicaments sont bien ou mal utilisés. Il signale 
 
 {{< include ../_includes/openmedic-tableau.md >}}
 
-Lecture : en Normandie, à âge et sexe comparables à ceux de la France, on rembourse chaque année ce nombre de boîtes pour 1&nbsp;000 habitants. Le chiffre brut est le nombre réel, sans tenir compte de l'âge et du sexe.
+Lecture : en Normandie, à âge et sexe comparables à ceux de la France, on a remboursé en 2025 ce nombre de boîtes pour 1&nbsp;000 habitants. Le chiffre brut est le nombre réel, sans tenir compte de l'âge et du sexe.
 
 ## Ce que ces chiffres ne disent pas
 

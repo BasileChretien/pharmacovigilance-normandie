@@ -1,6 +1,6 @@
 ---
 title: "Les anciens numéros de Vigiking"
-description: "Tous les numéros de Vigiking depuis 2017, avec leur sommaire, à filtrer par sujet ou par médicament. Les PDF sont sur le site du réseau des CRPV."
+description: "Les numéros de Vigiking publiés sur le site du réseau des CRPV depuis 2017, avec leur sommaire, à filtrer par sujet ou par médicament."
 type: institutionnel
 statut: brouillon
 relu_par: null
@@ -23,6 +23,6 @@ Tapez un mot pour retrouver les numéros qui en parlent, par exemple *benzodiaz�
 {{< include ../_includes/vigiking-archives.md >}}
 :::
 
-Les sommaires sont ceux que le réseau des CRPV publie ; les plus anciens numéros n'en ont pas sur son site. [à compléter : sommaires des numéros de 2017 à 2019, à fournir par les CRPV]
+Les sommaires sont repris tels que le réseau des CRPV les publie : certains réunissent plusieurs sujets sur une même ligne, et les numéros de juillet 2017 à février 2019 n'en ont pas. [à compléter : sommaires des numéros de juillet 2017 à février 2019, et liste complète des numéros, à fournir par les CRPV]
 
 <script src="../assets/js/table-filter.js" defer></script>
