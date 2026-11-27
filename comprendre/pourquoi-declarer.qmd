@@ -41,6 +41,9 @@ pour_aller_plus_loin:
   - titre: "Pharmacovigilance"
     url: "https://pharmacomedicale.org/pharmacologie/risque-des-medicaments/30-pharmacovigilance"
     site: cnpm
+  - titre: "Centre collaborateur de l'OMS pour la surveillance internationale des médicaments"
+    url: "https://who-umc.org/"
+    site: "Uppsala Monitoring Centre (fondation indépendante), en anglais"
 ---
 
 ::: {.deux-versions}

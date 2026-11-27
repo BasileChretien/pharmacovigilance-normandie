@@ -2,6 +2,13 @@
 title: "En Normandie"
 description: "Ce qui est propre à la région : qui contacter, les chiffres de la pharmacovigilance normande, les sujets régionaux."
 toc: false
+pour_aller_plus_loin:
+  - titre: "Politique de santé et actualités sanitaires de la région"
+    url: "https://www.normandie.ars.sante.fr/"
+    site: "Agence régionale de santé (ARS) de Normandie"
+  - titre: "Prévention des infections associées aux soins dans la région"
+    url: "https://www.cpias-normandie.org/"
+    site: "Centre d'appui pour la prévention des infections associées aux soins (CPIAS) de Normandie"
 ---
 
 ::: {.cartes}

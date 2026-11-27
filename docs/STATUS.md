@@ -46,9 +46,12 @@ par page (`docs/relecture.md`).
 
 Prochaines pull requests, dans l'ordre (décidé le 27/11/2026) :
 
-- [ ] Liens simples : EudraVigilance (adrreports.eu, avec l'avertissement « un nombre de
-      déclarations n'est pas un risque »), Thériaque (lien seulement), OMS–UMC, ARS et CPias
-      Normandie, ameli.fr et vaccination-info-service.fr, GPR (après vérification du site).
+- [x] Liens simples : EudraVigilance (fréquences), OMS–UMC (pourquoi déclarer), Thériaque
+      (interactions, cytochromes), ARS et CPias Normandie (En Normandie).
+- [ ] ameli.fr et vaccination-info-service.fr : répondent par une vérification anti-robot ;
+      choisir et vérifier les pages dans un navigateur avant de les lier.
+- [ ] GPR (adaptation des doses au rein) : le domaine sitegpr.com héberge désormais un casino
+      en ligne (27/11/2026). Ne pas le lier ; trouver l'adresse officielle actuelle du GPR.
 - [ ] Fil des alertes officielles : flux RSS de l'ANSM (filtrables par domaine médical) et de
       l'EMA, récupérés à la construction (titre, date, lien, sans réécriture), reconstruit
       chaque semaine ; date de mise à jour visible et responsable nommé.
