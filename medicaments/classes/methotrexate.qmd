@@ -25,6 +25,9 @@ pour_aller_plus_loin:
   - titre: "Immunosuppresseurs antimétabolite/antifolate"
     url: "https://pharmacomedicale.org/medicaments/par-specialites/item/immunosuppresseurs-antimetabolite-antifolate"
     site: cnpm
+  - titre: "GPR (Guide de prescription et rein) : adapter les doses à la fonction rénale, sur connexion"
+    url: "https://www.vidal.fr/gpr.html"
+    site: VIDAL
 ---
 
 ::: {.deux-versions}
