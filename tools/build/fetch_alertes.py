@@ -189,7 +189,9 @@ def _fetch(url: str) -> str:
 
 # ASCII digits only: \d would also take other scripts' digits.
 _ISO = re.compile(r"[0-9]{4}-[0-9]{2}-[0-9]{2}")
-# Printed when present; refresh() writes None when the site gives none.
+# Printed when given. Each parser writes only its own site's fields, None when the site
+# gives none: an ANSM alert has no "resume" key, an EMA alert no "produit" nor "public".
+# So a field may be text, None or absent.
 _FACULTATIFS = ("produit", "public", "resume")
 
 
