@@ -6,6 +6,11 @@ name: pages
 on:
   push:
     branches: [main]
+  # Mondays: rebuilds the site so the official alerts feed is read again
+  # (actualites/posts/alertes-officielles.qmd). GitHub pauses schedules after 60 days
+  # without activity on the repository: re-enable it from the Actions tab.
+  schedule:
+    - cron: "17 5 * * 1"
   workflow_dispatch:
 
 permissions:
@@ -26,6 +31,12 @@ jobs:
       - uses: quarto-dev/quarto-actions/setup@v2
         with:
           version: "1.10.18"
+      # Reads the ANSM and EMA pages again. A site that does not answer keeps the list
+      # committed in data/alertes.json, with its own date, and the run shows a warning.
+      - name: Refresh the official alerts feed
+        run: |
+          python3 tools/build/fetch_alertes.py || echo "::warning::Official alerts feed: a site did not answer; its previous list is kept."
+          python3 tools/build/make_alertes_page.py
       # The post-render script (tools/build/search_postprocess.py) uses the runner's python3.
       - name: Render the site
         run: quarto render

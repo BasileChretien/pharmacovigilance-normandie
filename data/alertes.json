@@ -1,0 +1,134 @@
+{
+ "ansm": {
+  "source": "https://ansm.sante.fr/informations-de-securite/?safety_news_filter%5BsafetyNewsModels%5D%5B%5D=2",
+  "releve_le": "2026-11-27",
+  "alertes": [
+   {
+    "titre": "Respreeza (alpha-1-antitrypsine humaine) : risque d’impossibilité d’administration et d’infection potentielle en raison d’une altération de l’intégrité du flacon",
+    "url": "https://ansm.sante.fr/informations-de-securite/respreeza-alpha-1-antitrypsine-humaine-risque-dimpossibilite-dadministration-et-dinfection-potentielle-en-raison-dune-alteration-de-lintegrite-du-flacon",
+    "publie_le": "2026-11-09",
+    "mis_a_jour_le": null,
+    "produit": "Médicaments",
+    "public": "Information destinée aux pharmaciens hospitaliers"
+   },
+   {
+    "titre": "Caelyx Pegylated Liposomal 2 mg/ml, solution à diluer pour perfusion : le bouchon et la bague de sertissage peuvent se détacher lors de l’ouverture du flacon",
+    "url": "https://ansm.sante.fr/informations-de-securite/caelyx-pegylated-liposomal-2-mg-ml-solution-a-diluer-pour-perfusion-le-bouchon-et-la-bague-de-sertissage-peuvent-se-detacher-lors-de-louverture-du-flacon",
+    "publie_le": "2026-11-03",
+    "mis_a_jour_le": null,
+    "produit": "Médicaments",
+    "public": "Information destinée aux médecins prescripteurs, pharmaciens hospitaliers et infirmiers/ières"
+   },
+   {
+    "titre": "Ocrevus (ocrelizumab) : risque nouveau d'atteinte hépatique d'origine médicamenteuse et recommandations sur la surveillance hépatique avant et pendant le traitement",
+    "url": "https://ansm.sante.fr/informations-de-securite/ocrevus-ocrelizumab-risque-nouveau-datteinte-hepatique-dorigine-medicamenteuse-et-recommandations-sur-la-surveillance-hepatique-avant-et-pendant-le-traitement",
+    "publie_le": "2026-10-08",
+    "mis_a_jour_le": null,
+    "produit": "Médicaments",
+    "public": "Information destinée aux neurologues, neuropédiatres, hépato-gastroentérologues et médecins généralistes"
+   },
+   {
+    "titre": "Contraceptifs à base de désogestrel et d'étonogestrel : risque de méningiome et mesures pour minimiser le risque",
+    "url": "https://ansm.sante.fr/informations-de-securite/contraceptifs-a-base-de-desogestrel-et-detonogestrel-risque-de-meningiome-et-mesures-pour-minimiser-le-risque",
+    "publie_le": "2026-08-11",
+    "mis_a_jour_le": null,
+    "produit": "Médicaments",
+    "public": "Information destinée aux gynécologues, médecins généralistes, sages-femmes et infirmiers des centres de planning familial."
+   },
+   {
+    "titre": "Litfulo (ritlécitinib) : mise à jour des recommandations visant à réduire le risque d’événements indésirables cardiovasculaires majeurs, de tumeurs malignes, d’événements thromboemboliques veineux, d’infections graves et de mortalité",
+    "url": "https://ansm.sante.fr/informations-de-securite/litfulo-ritlecitinib-mise-a-jour-des-recommandations-visant-a-reduire-le-risque-devenements-indesirables-cardiovasculaires-majeurs-de-tumeurs-malignes-devenements-thromboemboliques-veineux-dinfections-graves-et-de-mortalite",
+    "publie_le": "2026-08-10",
+    "mis_a_jour_le": null,
+    "produit": "Médicaments",
+    "public": "Information destinée aux spécialistes en dermatologie, en médecine interne et en pédiatrie"
+   },
+   {
+    "titre": "Tavneos 10 mg, gélule (avacopan) – Recommandation de retrait de l’autorisation de mise sur le marché dans l’Union européenne en raison d’un rapport bénéfice/risque défavorable",
+    "url": "https://ansm.sante.fr/informations-de-securite/tavneos-10-mg-gelule-avacopan-recommandation-de-retrait-de-lautorisation-de-mise-sur-le-marche-dans-lunion-europeenne-en-raison-dun-rapport-benefice-risque-defavorable",
+    "publie_le": "2026-07-16",
+    "mis_a_jour_le": null,
+    "produit": "Médicaments",
+    "public": "Information destinée aux professionnels de santé (spécialistes en médecine interne, néphrologie, rhumatologie, pneumologie et dermatologie, pharmaciens d’officine et de PUI)"
+   },
+   {
+    "titre": "Vaccin Ixchiq contre le chikungunya : utilisation réservée aux personnes présentant un risque élevé d'être infectées par le virus du chikungunya",
+    "url": "https://ansm.sante.fr/informations-de-securite/vaccin-ixchiq-contre-le-chikungunya-utilisation-reservee-aux-personnes-presentant-un-risque-eleve-detre-infectees-par-le-virus-du-chikungunya",
+    "publie_le": "2026-07-15",
+    "mis_a_jour_le": null,
+    "produit": "Vaccins",
+    "public": "Information destinée aux spécialistes en médecine du voyage, aux centres de médecine du voyage, aux médecins généralistes, aux infectiologues, aux gériatres, aux pharmaciens de Guyane et aux infirmier(e)s diplômés d’Etat de Guyane"
+   },
+   {
+    "titre": "Evrysdi 0,75 mg/mL, poudre pour solution buvable (risdiplam) : rechercher la présence de particules après reconstitution",
+    "url": "https://ansm.sante.fr/informations-de-securite/evrysdi-0-75-mg-ml-poudre-pour-solution-buvable-risdiplam-rechercher-la-presence-de-particules-apres-reconstitution",
+    "publie_le": "2026-06-15",
+    "mis_a_jour_le": null,
+    "produit": "Médicaments",
+    "public": "Information destinée aux pharmacies d’officine et pharmacies hospitalières"
+   },
+   {
+    "titre": "Pluvicto 1 000 MBq/mL, solution injectable/pour perfusion : invalidation du test de stérilité non conforme sur le lot LPS260415A-03 ayant fait l’objet d’une communication le 20 mai 2026",
+    "url": "https://ansm.sante.fr/informations-de-securite/pluvicto-1-000-mbq-ml-solution-injectable-pour-perfusion-invalidation-du-test-de-sterilite-non-conforme-sur-le-lot-lps260415a-03-ayant-fait-lobjet-dune-communication-le-20-mai-2026",
+    "publie_le": "2026-06-03",
+    "mis_a_jour_le": null,
+    "produit": "Médicaments",
+    "public": "Information destinée aux professionnels de santé (médecins nucléaires, oncologues, pharmaciens hospitaliers, équipes de soins) ayant reçu et administré à leurs patients le lot concerné"
+   },
+   {
+    "titre": "Pluvicto 1 000 MBq/mL, solution injectable/pour perfusion – Test de stérilité positif : actions à mener pour les patients exposés au lot LPS260415A-03 (périmé le 20/04/2026)",
+    "url": "https://ansm.sante.fr/informations-de-securite/pluvicto-1-000-mbq-ml-solution-injectable-pour-perfusion-test-de-sterilite-positif-actions-a-mener-pour-les-patients-exposes-au-lot-lps260415a-03-perime-le-20-04-2026",
+    "publie_le": "2026-05-20",
+    "mis_a_jour_le": null,
+    "produit": "Médicaments",
+    "public": "Information destinée aux professionnels de santé (médecins nucléaires, oncologues, pharmaciens hospitaliers, équipes de soins) ayant reçu et administré à leurs patients le lot concerné."
+   },
+   {
+    "titre": "Ontozry (cénobamate) : nouvelles conditions de surveillance hépatique suite à des cas d’atteintes hépatiques sévères",
+    "url": "https://ansm.sante.fr/informations-de-securite/ontozry-cenobamate-nouvelles-conditions-de-surveillance-hepatique-suite-a-des-cas-datteintes-hepatiques-severes",
+    "publie_le": "2026-05-12",
+    "mis_a_jour_le": null,
+    "produit": "Médicaments",
+    "public": "Information destinée aux neurologues, hépato-gastroentérologues, médecins généralistes et pharmaciens (hospitaliers et d’officine)"
+   },
+   {
+    "titre": "Tecovirimat Siga (técovirimat monohydraté) : restriction d'indication due à l'inefficacité observée lors d'essais cliniques randomisés chez des patients atteints de l’infection à virus mpox (orthopoxvirose simienne)",
+    "url": "https://ansm.sante.fr/informations-de-securite/tecovirimat-siga-tecovirimat-monohydrate-restriction-dindication-due-a-linefficacite-observee-lors-dessais-cliniques-randomises-chez-des-patients-atteints-de-linfection-a-virus-mpox-orthopoxvirose-simienne",
+    "publie_le": "2026-05-12",
+    "mis_a_jour_le": null,
+    "produit": "Médicaments",
+    "public": "Information destinée aux infectiologues hospitaliers, aux internistes hospitaliers, aux dermatologues hospitaliers, aux urgentistes et aux pharmaciens hospitaliers"
+   }
+  ]
+ },
+ "ema": {
+  "source": "https://www.ema.europa.eu/en/committees/pharmacovigilance-risk-assessment-committee-prac",
+  "releve_le": "2026-11-27",
+  "alertes": [
+   {
+    "titre": "Meeting highlights from the Pharmacovigilance Risk Assessment Committee (PRAC) 26 - 29 October 2026",
+    "resume": "PRAC starts review of depression and anxiety medicine Deanxit and a safety signal related to human normal immunoglobulin medicines",
+    "url": "https://www.ema.europa.eu/en/news/meeting-highlights-pharmacovigilance-risk-assessment-committee-prac-26-29-october-2026",
+    "publie_le": "2026-10-30"
+   },
+   {
+    "titre": "Meeting highlights from the Pharmacovigilance Risk Assessment Committee (PRAC) 28 September - 1 October",
+    "resume": "PRAC carried out its broad range of responsibilities for managing the safety of medicines",
+    "url": "https://www.ema.europa.eu/en/news/meeting-highlights-pharmacovigilance-risk-assessment-committee-prac-28-september-1-october",
+    "publie_le": "2026-10-02"
+   },
+   {
+    "titre": "Meeting highlights from the Pharmacovigilance Risk Assessment Committee (PRAC) 31 August - 3 September 2026",
+    "resume": "PRAC starts safety review of injectable iron-containing medicines",
+    "url": "https://www.ema.europa.eu/en/news/meeting-highlights-pharmacovigilance-risk-assessment-committee-prac-31-august-3-september-2026",
+    "publie_le": "2026-09-04"
+   },
+   {
+    "titre": "Meeting highlights from the Pharmacovigilance Risk Assessment Committee (PRAC) 6-9 July 2026",
+    "resume": "PRAC agrees new safety information on desogestrel- and etonogestrel-containing contraceptives and Litfulo, a medicine to treat alopecia areata",
+    "url": "https://www.ema.europa.eu/en/news/meeting-highlights-pharmacovigilance-risk-assessment-committee-prac-6-9-july-2026",
+    "publie_le": "2026-07-10"
+   }
+  ]
+ }
+}
