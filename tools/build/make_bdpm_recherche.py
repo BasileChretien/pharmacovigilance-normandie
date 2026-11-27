@@ -46,16 +46,24 @@ def lire_fiches(root: Path) -> dict[str, tuple[str, list[str]]]:
     return fiches
 
 
-def _homeopathique(spec: dict) -> bool:
-    return "homeo" in mb.normalise(spec.get("procedure", ""))
+def _homeopathique(base: mb.Base, cis: str) -> bool:
+    """A homeopathic registration ("Enreg homéo"), or a homeopathic medicine with a full
+    marketing authorisation: one of its substances is "... pour préparations homéopathiques"
+    or "... dynamisé" (a homeopathic dilution, as for Oscillococcinum)."""
+    if "homeo" in mb.normalise(base.specialites[cis].get("procedure", "")):
+        return True
+    return any(
+        "homeopathique" in name or "dynamise" in name
+        for name in (mb.normalise(n) for n in base.noms.get(cis, []))
+    )
 
 
 def index(base: mb.Base, fiches: dict, mis_a_jour: str | None) -> dict:
     medicaments = sorted(
         (
             cis
-            for cis, spec in base.specialites.items()
-            if base.commercialise(cis) and not _homeopathique(spec)
+            for cis in base.specialites
+            if base.commercialise(cis) and not _homeopathique(base, cis)
         ),
         key=lambda cis: base.specialites[cis]["nom"],
     )
@@ -91,7 +99,7 @@ def source_html(data: dict) -> str:
         '<p class="chercher-medicament-source">Liste établie d\'après la '
         f'<a href="{html.escape(data["source"])}">base de données publique des médicaments</a> '
         f"(ANSM), fichiers du {day}/{month}/{year} : {count} médicaments commercialisés, "
-        "homéopathie exceptée.</p>"
+        "hors homéopathie (d'après la composition déclarée dans la base).</p>"
     )
 
 

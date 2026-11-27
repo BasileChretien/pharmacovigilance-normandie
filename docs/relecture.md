@@ -123,4 +123,4 @@ le Collège national de pharmacologie médicale (pharmacomedicale.org), dans
 
 | Page | À vérifier |
 |---|---|
-| medicaments/chercher | Texte d'introduction et messages (aucun résultat, trop de résultats) ; homéopathie exclue de la liste : à confirmer |
+| medicaments/chercher | Texte d'introduction et messages (aucun résultat, trop de résultats) ; homéopathie exclue de la liste : à confirmer. Le tri repose sur la composition déclarée : HOMEOPLASMINE (teintures et acide borique, sans mention homéopathique dans la base) reste dans la liste |

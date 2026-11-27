@@ -50,11 +50,34 @@ SPECIALITES = "\n".join(
             "XARELTO 10 mg, comprimé pelliculé",
             procedure="Procédure centralisée",
         ),
+        # Homeopathic medicines with a full marketing authorisation, not a registration.
+        _row("60000014", "OSCILLO TEST, granules en récipient unidose"),
+        _row("60000015", "SOUCHE TEST 9 CH, granules"),
     ]
 )
 COMPOSITIONS = "\n".join(
     "\t".join(r)
     for r in [
+        [
+            "60000014",
+            "granules",
+            "09",
+            "EXTRAIT FLUIDE PEPTONÉ DE FOIE ET DE COEUR D'ANAS BARBARIAE DYNAMISÉ À LA 200E K",
+            "1 g",
+            "un récipient",
+            "SA",
+            "1",
+        ],
+        [
+            "60000015",
+            "granules",
+            "10",
+            "ARNICA MONTANA POUR PRÉPARATIONS HOMÉOPATHIQUES",
+            "9CH",
+            "un granule",
+            "SA",
+            "1",
+        ],
         [
             "68634000",
             "comprimé",

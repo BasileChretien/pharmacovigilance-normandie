@@ -66,7 +66,7 @@ Prochaines pull requests, dans l'ordre (décidé le 27/11/2026) :
       IMODIUMCAPS 2 mg sur la fiche diarrhée (à relire).
 - [ ] Étendre `substances:` aux fiches « maux courants » et « situations ».
 - [x] Recherche par nom de médicament (marque ou substance) : medicaments/chercher.qmd,
-      12 312 médicaments commercialisés (BDPM du 20/11/2026, homéopathie exceptée), chacun
+      12 175 médicaments commercialisés (BDPM du 20/11/2026, hors homéopathie : enregistrements homéopathiques et substances « pour préparations homéopathiques » ou « dynamisées »), chacun
       vers sa page officielle, et vers la fiche du site quand elle existe ; la recherche reste
       dans le navigateur. Index : `tools/build/make_bdpm_recherche.py`, à relancer chaque mois.
 - [ ] Lien « Signaler une correction » : adresse retenue pharmacovigilance@chu-caen.fr (fait).
