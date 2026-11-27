@@ -47,19 +47,22 @@ _DATE_SPECIALITES = re.compile(
 )
 
 
-_INVERSE = re.compile(r"^(.+) \((.+) (de|d')\)$")
+# An inverted salt, maybe followed by words without brackets ('hemihydrate'); a second
+# bracket (plant extracts: 'aubepine (extrait d') (fluide)') stays as written.
+_INVERSE = re.compile(r"^(.+) \((.+) (de|d')\)((?: [^()]+)?)$")
 
 
 def normalise(name: str) -> str:
     """Lower case, no accents, single spaces: 'IBUPROFÈNE' -> 'ibuprofene'. A salt written
-    the inverted way reads the usual way: 'SODIUM (VALPROATE DE)' -> 'valproate de sodium'."""
+    the inverted way reads the usual way: 'SODIUM (VALPROATE DE)' -> 'valproate de sodium',
+    'CODÉINE (PHOSPHATE DE) HÉMIHYDRATÉ' -> 'phosphate de codeine hemihydrate'."""
     decomposed = unicodedata.normalize("NFKD", name)
     plain = "".join(c for c in decomposed if not unicodedata.combining(c))
     text = " ".join(plain.replace("’", "'").lower().split())
     inverse = _INVERSE.match(text)
     if inverse:
-        sel, substance, de = inverse.groups()
-        text = f"{substance} {de}{'' if de.endswith(chr(39)) else ' '}{sel}"
+        sel, substance, de, suite = inverse.groups()
+        text = f"{substance} {de}{'' if de.endswith(chr(39)) else ' '}{sel}{suite}"
     return text
 
 

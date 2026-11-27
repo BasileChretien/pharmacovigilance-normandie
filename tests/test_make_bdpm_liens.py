@@ -483,3 +483,22 @@ def test_among_several_cited_products_the_usual_order_decides():
     # Oral before skin gel, whatever the citing order.
     pages = _pages(["ibuprofène"], ["60000003", "60000001"])
     assert pages["medicaments/p.qmd"]["ibuprofène"]["cis"] == "60000001"
+
+
+def test_an_inverted_salt_followed_by_another_word_reads_the_usual_way_too():
+    assert (
+        mb.normalise("CODÉINE (PHOSPHATE DE) HÉMIHYDRATÉ")
+        == "phosphate de codeine hemihydrate"
+    )
+    assert (
+        mb.normalise("BENDAMUSTINE (CHLORHYDRATE DE) MONOHYDRATÉ")
+        == "chlorhydrate de bendamustine monohydrate"
+    )
+    assert mb._matches(mb.normalise("CODÉINE (PHOSPHATE DE) HÉMIHYDRATÉ"), "codeine")
+
+
+def test_a_plant_extract_with_a_second_parenthesis_is_left_as_written():
+    assert (
+        mb.normalise("AUBÉPINE (EXTRAIT D') (FLUIDE)")
+        == "aubepine (extrait d') (fluide)"
+    )

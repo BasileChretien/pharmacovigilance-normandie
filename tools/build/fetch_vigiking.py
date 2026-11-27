@@ -47,9 +47,11 @@ MOIS = {
 _ARTICLE = re.compile(r"<article\b.*?</article>", re.DOTALL)
 _TITRE = re.compile(r'<h2[^>]*>\s*<a href="([^"]+)"[^>]*>(.*?)</a>', re.DOTALL)
 # The topics: everything from the content block to the footer, whatever its other classes
-# or nested blocks. The PDF: the link of the footer's download button only.
+# or nested blocks ("content" as a whole class: not "content-header" nor "entry-content").
+# The PDF: the link of the footer's download button only.
 _CONTENU = re.compile(
-    r'<div class="[^"]*\bcontent\b[^"]*">(.*?)(?=<footer\b|</article>)', re.DOTALL
+    r'<div class="(?:[^"]*\s)?content(?:\s[^"]*)?">(.*?)(?=<footer\b|</article>)',
+    re.DOTALL,
 )
 _PIED = re.compile(r"<footer\b.*?</footer>", re.DOTALL)
 _PDF = re.compile(r'<a href="([^"]+\.pdf)"', re.IGNORECASE)

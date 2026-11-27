@@ -187,13 +187,46 @@ def _fetch(url: str) -> str:
         return response.read().decode("utf-8")
 
 
+_ISO = re.compile(r"\d{4}-\d{2}-\d{2}")
+
+
+def _date_iso(value: object) -> bool:
+    return isinstance(value, str) and _ISO.fullmatch(value) is not None
+
+
+def _alerte_saine(alerte: object) -> bool:
+    """An alert with what the page prints: a title, a link, ISO dates."""
+    return (
+        isinstance(alerte, dict)
+        and isinstance(alerte.get("titre"), str)
+        and isinstance(alerte.get("url"), str)
+        and _date_iso(alerte.get("publie_le"))
+        and (alerte.get("mis_a_jour_le") is None or _date_iso(alerte["mis_a_jour_le"]))
+    )
+
+
+def _bloc_sain(block: object) -> bool:
+    """A site's list as refresh() writes it: its address, the date read, its alerts."""
+    return (
+        isinstance(block, dict)
+        and isinstance(block.get("source"), str)
+        and _date_iso(block.get("releve_le"))
+        and isinstance(block.get("alertes"), list)
+        and all(_alerte_saine(a) for a in block["alertes"])
+    )
+
+
 def precedent(path: Path) -> dict:
-    """The lists of the previous run; none if the file is missing or damaged."""
+    """The lists of the previous run, site by site; none if the file is missing or
+    damaged, and none for a site whose list has the wrong shape (if that site fails too,
+    the page says its list has not been read yet)."""
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, ValueError):
         return {}
-    return data if isinstance(data, dict) else {}
+    if not isinstance(data, dict):
+        return {}
+    return {k: b for k, b in data.items() if k in SOURCES and _bloc_sain(b)}
 
 
 def main() -> int:
