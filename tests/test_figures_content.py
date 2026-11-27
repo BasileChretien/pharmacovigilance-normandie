@@ -26,3 +26,15 @@ def test_the_two_hour_rule_is_given_for_levofloxacin_only():
     assert "lévofloxacine" in figure_text("fluoroquinolones-1")
     assert "lévofloxacine" in code["alt"]
     assert "lévofloxacine" in code["legende"]
+
+
+def test_the_cystitis_tree_sends_risk_situations_to_a_doctor():
+    # Page: « On parle de cystite simple quand il n'y a pas de fièvre ni de situation à
+    # risque » (pregnancy, urinary anomaly, kidneys, weakened immunity, age); the single
+    # dose of fosfomycin is for a simple cystitis only.
+    text = figure_text("cystite-1")
+    assert "situation à risque" in text
+    for situation in ("grossesse", "75 ans", "défenses"):
+        assert situation in text
+    code = shortcode("medicaments/maux-courants/cystite.qmd", "cystite-1")
+    assert "situation à risque" in code["description"]
