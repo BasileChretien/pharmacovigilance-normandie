@@ -1,0 +1,142 @@
+"""Index of the drug-name search page (medicaments/chercher.qmd).
+
+Every medicine marketed in France according to the public medicines database (BDPM),
+homeopathic registrations left out: its BDPM code, its name and its substances. A
+substance that has a sheet on this site (front matter substances: [...]) points to it.
+Read by assets/js/chercher-medicament.js, in the browser: a search is sent nowhere.
+
+Reads the cache written by tools/build/fetch_bdpm.py (data/bdpm/) and writes
+assets/data/medicaments.json (compact JSON, about 1 MB, 0.25 MB once compressed) and
+_includes/chercher-medicament-source.md (the files' date and the count, shown on the
+page: the Licence Ouverte asks for the date).
+
+Usage: python tools/build/make_bdpm_recherche.py   (after fetch_bdpm.py, monthly)
+"""
+
+from __future__ import annotations
+
+import html
+import json
+import sys
+from pathlib import Path
+
+import make_bdpm_liens as mb
+
+ROOT = Path(__file__).resolve().parents[2]
+OUT = ROOT / "assets" / "data" / "medicaments.json"
+OUT_SOURCE = ROOT / "_includes" / "chercher-medicament-source.md"
+
+
+def lire_fiches(root: Path) -> dict[str, tuple[str, list[str]]]:
+    """Title and substances of every page that lists substances."""
+    fiches = {}
+    for path in sorted(root.rglob("*.qmd")):
+        rel = path.relative_to(root)
+        if any(part in mb.EXCLUDED_DIRS for part in rel.parts):
+            continue
+        meta = mb._front_matter(path.read_text(encoding="utf-8"))
+        listed = meta.get("substances") or []
+        if isinstance(listed, str):
+            listed = [listed]
+        if listed:
+            fiches[rel.as_posix()] = (
+                str(meta.get("title") or rel.stem),
+                [str(s) for s in listed],
+            )
+    return fiches
+
+
+def _homeopathique(base: mb.Base, cis: str) -> bool:
+    """A homeopathic registration ("Enreg homéo"), or a homeopathic medicine with a full
+    marketing authorisation: one of its substances is "... pour préparations homéopathiques"
+    or "... dynamisé" (a homeopathic dilution, as for Oscillococcinum)."""
+    if "homeo" in mb.normalise(base.specialites[cis].get("procedure", "")):
+        return True
+    return any(
+        "homeopathique" in name or "dynamise" in name
+        for name in (mb.normalise(n) for n in base.noms.get(cis, []))
+    )
+
+
+def index(base: mb.Base, fiches: dict, mis_a_jour: str | None) -> dict:
+    medicaments = sorted(
+        (
+            cis
+            for cis in base.specialites
+            if base.commercialise(cis) and not _homeopathique(base, cis)
+        ),
+        key=lambda cis: base.specialites[cis]["nom"],
+    )
+    substances: dict[str, int] = {}
+    rows = []
+    for cis in medicaments:
+        idx = [
+            substances.setdefault(name.lower(), len(substances))
+            for name in base.noms.get(cis, [])
+        ]
+        rows.append([cis, base.specialites[cis]["nom"], idx])
+
+    liens = {}
+    for name, i in substances.items():
+        for page, (titre, listed) in fiches.items():
+            if any(mb._matches(mb.normalise(name), mb.normalise(s)) for s in listed):
+                liens[str(i)] = [page.removesuffix(".qmd") + ".html", titre]
+                break
+    return {
+        "source": mb.SOURCE,
+        "mis_a_jour": mis_a_jour,
+        "substances": list(substances),
+        "fiches": liens,
+        "medicaments": rows,
+    }
+
+
+def source_html(data: dict) -> str:
+    """Where the list comes from, with the files' date and the number of medicines."""
+    year, month, day = data["mis_a_jour"].split("-")
+    count = f"{len(data['medicaments']):,}".replace(",", "&nbsp;")
+    return (
+        '<p class="chercher-medicament-source">Liste établie d\'après la '
+        f'<a href="{html.escape(data["source"])}">base de données publique des médicaments</a> '
+        f"(ANSM), fichiers du {day}/{month}/{year} : {count} médicaments commercialisés, "
+        "hors homéopathie (d'après la composition déclarée dans la base).</p>"
+    )
+
+
+def main() -> int:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
+    if not (mb.CACHE / "CIS_bdpm.txt").exists():
+        raise SystemExit(
+            "make_bdpm_recherche : lancez d'abord tools/build/fetch_bdpm.py."
+        )
+    base = mb.Base.from_cache(mb.CACHE)
+    page = mb.CACHE / "telechargement.html"
+    mis_a_jour = (
+        mb.date_specialites(page.read_text(encoding="utf-8")) if page.exists() else None
+    )
+    if not mis_a_jour:
+        raise SystemExit(
+            "make_bdpm_recherche : date des fichiers introuvable (licence : la citer)."
+        )
+    data = index(base, lire_fiches(ROOT), mis_a_jour)
+    OUT.parent.mkdir(parents=True, exist_ok=True)
+    OUT.write_text(
+        json.dumps(data, ensure_ascii=False, separators=(",", ":")) + "\n",
+        encoding="utf-8",
+    )
+    OUT_SOURCE.write_text(
+        "<!-- Generated by tools/build/make_bdpm_recherche.py: edit the script, not this file. -->\n"
+        "```{=html}\n" + source_html(data) + "\n```\n",
+        encoding="utf-8",
+    )
+    print(
+        f"{OUT.relative_to(ROOT)} : {len(data['medicaments'])} médicaments, "
+        f"{len(data['substances'])} substances, {len(data['fiches'])} avec une fiche "
+        f"(BDPM du {mis_a_jour}, {OUT.stat().st_size // 1024} Ko)."
+    )
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

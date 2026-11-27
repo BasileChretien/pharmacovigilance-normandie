@@ -162,6 +162,8 @@ local NOTICES = {
     .. "Voici un exemple par substance, sur la base de données publique des médicaments. "
     .. "Chaque page donne la notice, pour les patients, et le résumé des caractéristiques du produit (RCP), pour les professionnels.",
   association = " (en association)",
+  autre = "Votre médicament n’est pas dans cette liste ? ",
+  chercher = "Cherchez-le par son nom",
   source = "Base de données publique des médicaments (ANSM), fichiers du %s ; exemples choisis parmi les médicaments commercialisés : la substance seule, une forme orale, puis le médicament de référence.",
 }
 local bdpm_cache = nil
@@ -207,12 +209,21 @@ local function notices_block(meta)
   end
   -- A JSON null decodes to pandoc.json.null, which is truthy: check the type.
   local date = type(data.mis_a_jour) == "string" and date_fr(data.mis_a_jour) or "?"
-  return pandoc.Div({
+  local blocks = pandoc.Blocks({
     pandoc.Header(2, pandoc.Inlines(NOTICES.titre), pandoc.Attr("notices-et-rcp-officiels")),
     pandoc.Para(pandoc.Inlines(NOTICES.intro)),
     pandoc.BulletList(items),
-    pandoc.Para({ pandoc.Span(pandoc.Inlines(string.format(NOTICES.source, date)), pandoc.Attr("", { "notices-source" })) }),
-  }, pandoc.Attr("", { "notices-officielles" }))
+  })
+  -- Link to the drug-name search, relative to the page (the site lives under a subpath).
+  local offset = quarto and quarto.project and quarto.project.offset
+  if type(offset) == "string" then
+    local inlines = pandoc.Inlines(NOTICES.autre)
+    inlines:insert(pandoc.Link(pandoc.Inlines(NOTICES.chercher), offset .. "/medicaments/chercher.html"))
+    inlines:insert(pandoc.Str("."))
+    blocks:insert(pandoc.Para(inlines))
+  end
+  blocks:insert(pandoc.Para({ pandoc.Span(pandoc.Inlines(string.format(NOTICES.source, date)), pandoc.Attr("", { "notices-source" })) }))
+  return pandoc.Div(blocks, pandoc.Attr("", { "notices-officielles" }))
 end
 
 local function plus_loin_list(meta)

@@ -5,6 +5,7 @@ project:
     - assets/js/
     - assets/img/
     - assets/fonts/
+    - assets/data/
   post-render:
     - tools/build/search_postprocess.py
   render:

@@ -65,8 +65,10 @@ Prochaines pull requests, dans l'ordre (décidé le 27/11/2026) :
       (`FM-BDPM`). Premier contrôle : IMODIUM 2 mg n'est plus commercialisé, remplacé par
       IMODIUMCAPS 2 mg sur la fiche diarrhée (à relire).
 - [ ] Étendre `substances:` aux fiches « maux courants » et « situations ».
-- [ ] Recherche par nom de médicament (marque et DCI) depuis la même base, présentée comme
-      pages officielles externes.
+- [x] Recherche par nom de médicament (marque ou substance) : medicaments/chercher.qmd,
+      12 175 médicaments commercialisés (BDPM du 20/11/2026, hors homéopathie : enregistrements homéopathiques et substances « pour préparations homéopathiques » ou « dynamisées »), chacun
+      vers sa page officielle, et vers la fiche du site quand elle existe ; la recherche reste
+      dans le navigateur. Index : `tools/build/make_bdpm_recherche.py`, à relancer chaque mois.
 - [ ] Lien « Signaler une correction » : adresse retenue pharmacovigilance@chu-caen.fr (fait).
 - [ ] Liste des publications générée depuis ORCID et OpenAlex.
 - [ ] Les 52 figures marquées `FIGURE À FAIRE`.

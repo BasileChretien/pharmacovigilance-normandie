@@ -118,3 +118,9 @@ le Collège national de pharmacologie médicale (pharmacomedicale.org), dans
 | antidiabetiques | Sémaglutide : l'exemple est WEGOVY 1,5 mg comprimé (amaigrissement), pas un médicament du diabète |
 | opioides | Codéine : l'exemple est PADERYL, un sirop contre la toux (codéine seule), alors que la fiche parle surtout de la codéine contre la douleur, associée au paracétamol |
 | maux-courants/diarrhee-aigue | IMODIUM 2 mg n'est plus commercialisé (BDPM du 20/11/2026). Le texte professionnel suit désormais le RCP d'IMODIUMCAPS 2 mg (sans ordonnance) : à partir de 15 ans, 6 gélules par jour au plus, 2 jours au plus. À confirmer, ainsi que la phrase patient « de 6 à 8 ans ou plus » |
+
+## Chercher un médicament (27/11/2026)
+
+| Page | À vérifier |
+|---|---|
+| medicaments/chercher | Texte d'introduction et messages (aucun résultat, trop de résultats) ; homéopathie exclue de la liste : à confirmer. Le tri repose sur la composition déclarée : HOMEOPLASMINE (teintures et acide borique, sans mention homéopathique dans la base) reste dans la liste |
