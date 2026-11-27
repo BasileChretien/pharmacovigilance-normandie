@@ -61,7 +61,7 @@ Les médicaments les plus souvent en cause sont des traitements utiles et couran
 
 Certains médicaments donnent des vertiges, une baisse de tension en se levant, ou de la somnolence. Les somnifères et les médicaments contre l'anxiété exposent tout particulièrement aux chutes. Une chute peut entraîner une fracture et une perte d'autonomie.
 
-<!-- FIGURE À FAIRE : schéma « du médicament à la chute » : somnolence, vertiges, baisse de tension en se levant, confusion → chute → fracture. Pictogrammes simples, couleurs lisibles par les personnes daltoniennes. -->
+{{< figure-svg sujet-age-1 alt="Du médicament à la chute. Somnolence, vertiges, baisse de tension en se levant ou confusion peuvent faire tomber. La chute peut entraîner une fracture et une perte d'autonomie." legende="Les somnifères et les médicaments contre l'anxiété exposent tout particulièrement aux chutes." >}}
 
 ### Que sont les médicaments anticholinergiques ?
 

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300" width="440" height="300" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <!-- Dosing syringe, graduated in kilos, filled up to the child's weight -->
+  <text x="16" y="24" font-size="17" font-weight="700">La seringue est graduée en kilos</text>
+  <path d="M24 72 L44 64 V80 Z" fill="#ffffff" stroke="#10283a" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="44" y="60" width="280" height="24" rx="4" fill="#ffffff" stroke="#10283a" stroke-width="2"/>
+  <rect x="46" y="62" width="186" height="20" fill="#e7b03b"/>
+  <rect x="232" y="58" width="10" height="28" rx="2" fill="#46586a"/>
+  <rect x="242" y="68" width="110" height="8" fill="#d5e2ea" stroke="#46586a" stroke-width="1.5"/>
+  <rect x="352" y="54" width="12" height="36" rx="3" fill="#ffffff" stroke="#10283a" stroke-width="2"/>
+  <g stroke="#10283a" stroke-width="1.5">
+    <line x1="72" y1="84" x2="72" y2="94"/><line x1="100" y1="84" x2="100" y2="94"/><line x1="128" y1="84" x2="128" y2="94"/>
+    <line x1="156" y1="84" x2="156" y2="94"/><line x1="184" y1="84" x2="184" y2="94"/><line x1="212" y1="84" x2="212" y2="94"/>
+    <line x1="268" y1="84" x2="268" y2="94"/><line x1="296" y1="84" x2="296" y2="94"/>
+  </g>
+  <line x1="232" y1="84" x2="232" y2="102" stroke="#073f6e" stroke-width="3"/>
+  <text x="232" y="122" text-anchor="middle" font-weight="700" fill="#073f6e">poids de l'enfant</text>
+  <text x="16" y="150" fill="#46586a">Pesez l'enfant avant de lui donner le médicament.</text>
+
+  <!-- Clock: 6 hours between two doses -->
+  <line x1="16" y1="170" x2="424" y2="170" stroke="#d5e2ea" stroke-width="2"/>
+  <circle cx="72" cy="232" r="44" fill="#ffffff" stroke="#10283a" stroke-width="2.5"/>
+  <path d="M72 232 V188 A44 44 0 0 1 72 276 Z" fill="#dcebf3"/>
+  <circle cx="72" cy="232" r="44" fill="none" stroke="#10283a" stroke-width="2.5"/>
+  <g stroke="#10283a" stroke-width="2" stroke-linecap="round">
+    <line x1="72" y1="192" x2="72" y2="198"/><line x1="112" y1="232" x2="106" y2="232"/>
+    <line x1="72" y1="272" x2="72" y2="266"/><line x1="32" y1="232" x2="38" y2="232"/>
+  </g>
+  <path d="M72 232 V204 M72 232 L72 258" stroke="#073f6e" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="72" cy="232" r="3" fill="#073f6e"/>
+  <text x="136" y="220" font-size="17" font-weight="700">6 heures entre deux doses</text>
+  <text x="136" y="246" font-size="17" font-weight="700">4 doses par jour au plus</text>
+</svg>
