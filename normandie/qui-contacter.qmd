@@ -58,7 +58,7 @@ Du plus urgent au moins urgent :
 
 | Situation | Interlocuteur |
 |---|---|
-| Infection associée aux soins | Centre d'appui pour la prévention des infections associées aux soins (CPIAS) de Normandie [coordonnées à compléter] |
+| Infection associée aux soins | Centre d'appui pour la prévention des infections associées aux soins (CPIAS) de Normandie, [cpias-normandie.org](https://www.cpias-normandie.org/) [coordonnées à compléter] |
 | Antibiothérapie | Centre régional en antibiothérapie de Normandie [coordonnées à compléter] |
 | Bon usage du médicament en établissement | OMéDIT Normandie [coordonnées à compléter] |
 | Hémovigilance | Correspondant d'hémovigilance de l'établissement ; coordonnateur régional d'hémovigilance et de sécurité transfusionnelle (ARS Normandie) |
