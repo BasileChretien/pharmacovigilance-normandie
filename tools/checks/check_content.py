@@ -55,6 +55,8 @@ _OPEN = re.compile(r"^(:{3,})\s*(\{[^}]*\}|[\w-]+)\s*$")
 _CLOSE = re.compile(r"^:{3,}\s*$")
 _COMMENT = re.compile(r"<!--.*?-->", re.DOTALL)
 _FENCED_CODE = re.compile(r"^\s*(```|~~~).*?^\s*\1\s*$", re.DOTALL | re.MULTILINE)
+_SHORTCODE = re.compile(r"\{\{<\s*([\w-]+)(.*?)>\}\}", re.DOTALL)
+_KWARG = re.compile(r'([\w-]+)="([^"]*)"')
 _BULLET = re.compile(r"^([-*+]|\d+[.)])\s+(.*)$")
 _SENTENCE_END = re.compile(r"(?<=[.!?…])\s+(?=[«\"(A-ZÀ-ÖØ-Ý0-9])")
 _WORD = re.compile(r"[\wÀ-ÿœŒ'’-]+")
@@ -118,10 +120,24 @@ def clean_inline(text: str) -> str:
     return text.strip()
 
 
+def _shortcode_text(match: re.Match) -> str:
+    """A figure is read as its alternative text and its caption (both are read by the
+    patient); any other shortcode is not prose."""
+    if match.group(1) != "figure-svg":
+        return ""
+    kwargs = dict(_KWARG.findall(match.group(2)))
+    return "\n\n".join(kwargs[k] for k in ("alt", "legende") if kwargs.get(k))
+
+
+def strip_markup(text: str) -> str:
+    """Remove comments and code blocks, and replace shortcodes by the text they show."""
+    return _SHORTCODE.sub(_shortcode_text, _FENCED_CODE.sub("", _COMMENT.sub("", text)))
+
+
 def split_sentences(text: str) -> list[str]:
     """Sentences of the prose: headings, tables, comments and div fences are skipped;
     each list item counts as one sentence or more."""
-    text = _FENCED_CODE.sub("", _COMMENT.sub("", text))
+    text = strip_markup(text)
     sentences: list[str] = []
     paragraph: list[str] = []
 
@@ -283,7 +299,7 @@ def patient_rules(patient: str, posix: str, level: str, jargon: dict[str, str]) 
             findings.append(Finding(level, "PAT-SIGLE", f"sigle « {acronym} » non développé à sa première apparition"))
 
     words_since_heading = 0
-    for line in _FENCED_CODE.sub("", _COMMENT.sub("", patient)).splitlines():
+    for line in strip_markup(patient).splitlines():
         stripped = line.strip()
         if stripped.startswith("#"):
             words_since_heading = 0

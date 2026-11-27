@@ -145,3 +145,23 @@ le Collège national de pharmacologie médicale (pharmacomedicale.org), dans
 | Page | À vérifier |
 |---|---|
 | vigiking/archives | Sommaires repris tels que le réseau des CRPV les publie (quelques fautes de frappe d'origine, par exemple « EBNTRESTO ») ; numéros de juillet 2017 à février 2019 sans sommaire ; quelques sommaires réunissent plusieurs sujets sur une ligne (janvier–février 2020, juillet 2025) ; accord pour héberger les PDF sur le site |
+
+## Figures (28/11/2026)
+
+Schémas dessinés d'après le texte de chaque page (`assets/img/figures/`, règles en section 5 de
+`docs/regles-redaction.md`). À relire comme le texte : le dessin, le texte alternatif et la
+légende (dans la page, raccourci `figure-svg`).
+
+| Page | Figure | À vérifier |
+|---|---|---|
+| comprendre/benefice-risque | Balance bénéfices/risques, puis avant et après l'autorisation | La balance penche du côté des bénéfices (« autorisé quand ses bénéfices dépassent ses risques ») ; « interactions » côté risques vient de la consigne de la figure, pas du texte patient |
+| comprendre/generiques-biosimilaires | Deux boîtes, ce qui est identique et ce qui peut changer, deux courbes superposées | Les courbes sont exactement superposées, comme le dit le texte (« en même quantité et à la même vitesse ») ; faut-il montrer que la bioéquivalence admet un écart ? |
+| comprendre/lire-une-notice | Notice dépliée, six rubriques | Les rubriques 2 et 4 sont marquées « à lire en priorité » (consigne de la figure) ; le texte ne le dit que de la rubrique 2. Libellé « Composition » pour la rubrique 6 |
+| comprendre/pourquoi-declarer | Parcours d'une déclaration en cinq étapes, retour vers les mesures | « Le CRPV enregistre le cas » (étape 3) ; mesures citées : notice modifiée, restriction, retrait du marché |
+| comprendre/triangle-noir | Haut d'une notice inventée (« Médicament X ») et boîte sans triangle | Seule la première phrase de la mention est reproduite |
+| bon-usage/cytochromes | Entérocyte et hépatocyte, CYP3A4 et P-gp ; inhibiteur, inducteur, prodrogue | La P-gp n'est dessinée que dans l'entérocyte ; la prodrogue reprend l'exemple de la page (codéine, CYP2D6, fluoxétine) |
+| bon-usage/ecraser-couper | Trois comprimés en coupe, entier et écrasé | Le schéma de la gélule à grains enrobés (ouverte, grains à ne pas écraser) |
+| bon-usage/ecraser-couper | Arbre de décision avant d'écraser (soignants) | Fidèle aux trois recommandations de la liste OMéDIT reprises dans la page |
+| bon-usage/interactions | Associations à éviter avec un anti-inflammatoire, le millepertuis, le pamplemousse, l'alcool | Liste par produit ajouté plutôt que tableau à double entrée (illisible sur téléphone à 4 colonnes) ; 13 exemples choisis parmi ceux de la page ; niveaux Interdit, À éviter, Précaution = contre-indication, association déconseillée, précaution d'emploi |
+| bon-usage/quand-prendre | Frise d'une journée, médicaments du tableau | Oméprazole et hydrochlorothiazide (« le matin ») placés au petit-déjeuner ; la metformine à chaque repas, avec la mention « 2 ou 3 prises par jour » ; l'alendronate « jamais au coucher » ; le furosémide et le pantoprazole, sans moment fixe dans la page, ne figurent pas |
+

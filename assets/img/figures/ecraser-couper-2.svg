@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 596" width="440" height="596" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <defs>
+    <marker id="ecraser-couper-2-fleche" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#073f6e"/>
+    </marker>
+  </defs>
+
+  <!-- Start -->
+  <rect x="16" y="12" width="408" height="56" rx="10" fill="#073f6e"/>
+  <text x="32" y="36" font-size="17" font-weight="700" fill="#ffffff">Le patient ne peut pas avaler</text>
+  <text x="32" y="58" font-size="17" font-weight="700" fill="#ffffff">la forme prescrite</text>
+  <line x1="60" y1="68" x2="60" y2="92" stroke="#073f6e" stroke-width="2.5" marker-end="url(#ecraser-couper-2-fleche)"/>
+
+  <!-- Question 1 -->
+  <rect x="16" y="96" width="408" height="84" rx="10" fill="#eef6fa" stroke="#073f6e" stroke-width="2"/>
+  <text x="32" y="122" font-size="17" font-weight="700">Existe-t-il une autre forme ?</text>
+  <text x="32" y="146">solution buvable, forme orodispersible,</text>
+  <text x="32" y="168">autre voie d'administration</text>
+
+  <!-- Q1 yes: change the prescription -->
+  <line x1="320" y1="180" x2="320" y2="216" stroke="#073f6e" stroke-width="2.5" marker-end="url(#ecraser-couper-2-fleche)"/>
+  <text x="330" y="204" font-weight="700" fill="#073f6e">Oui</text>
+  <rect x="232" y="220" width="192" height="80" rx="10" fill="#e6f7ef" stroke="#0b6b45" stroke-width="2"/>
+  <text x="246" y="246">Demander la</text>
+  <text x="246" y="268">modification de</text>
+  <text x="246" y="290">la prescription</text>
+
+  <!-- Q1 no: go on -->
+  <line x1="60" y1="180" x2="60" y2="324" stroke="#073f6e" stroke-width="2.5" marker-end="url(#ecraser-couper-2-fleche)"/>
+  <text x="70" y="256" font-weight="700" fill="#073f6e">Non</text>
+
+  <!-- Question 2 -->
+  <rect x="16" y="328" width="408" height="62" rx="10" fill="#eef6fa" stroke="#073f6e" stroke-width="2"/>
+  <text x="32" y="354" font-size="17" font-weight="700">La liste OMéDIT autorise-t-elle</text>
+  <text x="32" y="377" font-size="17" font-weight="700">l'écrasement ou l'ouverture ?</text>
+
+  <!-- Q2 no -->
+  <line x1="60" y1="390" x2="60" y2="426" stroke="#073f6e" stroke-width="2.5" marker-end="url(#ecraser-couper-2-fleche)"/>
+  <text x="70" y="414" font-weight="700" fill="#073f6e">Non</text>
+  <rect x="16" y="430" width="188" height="80" rx="10" fill="#fdf1d8" stroke="#7a4f00" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="30" y="456">Avis du pharmacien</text>
+  <text x="30" y="478">et du prescripteur</text>
+
+  <!-- Q2 yes -->
+  <line x1="320" y1="390" x2="320" y2="426" stroke="#073f6e" stroke-width="2.5" marker-end="url(#ecraser-couper-2-fleche)"/>
+  <text x="330" y="414" font-weight="700" fill="#073f6e">Oui</text>
+  <rect x="216" y="430" width="208" height="154" rx="10" fill="#e6f7ef" stroke="#0b6b45" stroke-width="2"/>
+  <text x="230" y="456">Prescription</text>
+  <text x="230" y="478">« à écraser » et</text>
+  <text x="230" y="500">modalités de la liste :</text>
+  <text x="230" y="522">véhicule, prise</text>
+  <text x="230" y="544">immédiate, protection</text>
+  <text x="230" y="566">si CMR</text>
+</svg>

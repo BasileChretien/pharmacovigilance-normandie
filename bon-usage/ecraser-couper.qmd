@@ -53,7 +53,7 @@ Pour les personnes qui avalent mal (troubles de la déglutition, risque de fauss
 - Si avaler est difficile, demandez s'il existe une autre forme : sirop, comprimé qui fond dans la bouche.
 :::
 
-<!-- FIGURE À FAIRE : schéma en coupe de trois comprimés. 1) Comprimé à libération prolongée : le médicament sort petit à petit sur plusieurs heures ; écrasé, il sort d'un coup. 2) Comprimé gastro-résistant : une enveloppe le protège de l'acide de l'estomac ; écrasé, l'enveloppe est détruite. 3) Gélule contenant des petits grains enrobés : on peut parfois l'ouvrir, mais les grains ne doivent pas être écrasés. Texte alternatif : « Trois comprimés en coupe montrant ce que l'écrasement détruit ». -->
+{{< figure-svg ecraser-couper-1 alt="Trois comprimés en coupe montrant ce que l'écrasement détruit. Libération prolongée : entier, le médicament sort petit à petit ; écrasé, toute la dose sort d'un coup. Gastro-résistant : écrasé, l'enveloppe qui le protège de l'acide de l'estomac est détruite. Gélule à petits grains enrobés : on peut parfois l'ouvrir, mais les grains ne doivent pas être écrasés." legende="Écraser un comprimé peut détruire ce qui règle sa façon d'agir." >}}
 
 ### Pourquoi ne pas écraser n'importe quel comprimé ?
 
@@ -152,7 +152,7 @@ Le tableau des HUG donne, spécialité par spécialité, des consignes pour l'ad
 
 La pharmacie des Hôpitaux universitaires de Genève publie le tableau [« Comprimés : couper ou écraser ? »](https://hug.ch/pharmacie/recommandations/document/tab_couper_ecraser) (dernière révision lue : 27 mars 2023). Il indique pour chaque spécialité si elle peut être coupée en deux, écrasée ou ouverte, avec des remarques sur les sondes et des alternatives. Deux limites : il ne vaut que pour les noms de marque suisses cités, et la sécabilité y est définie au sens pharmaceutique (un comprimé sans rainure peut être déclaré sécable, et la sécabilité en pratique n'est pas garantie).
 
-<!-- FIGURE À FAIRE : arbre de décision pour le soignant. « Le patient ne peut pas avaler la forme prescrite » → existe-t-il une alternative (solution buvable, orodispersible, autre voie) ? oui → demander la modification de prescription ; non → la liste OMéDIT autorise-t-elle l'écrasement ou l'ouverture ? oui → prescription « à écraser » + modalités de la liste (véhicule, prise immédiate, protection si CMR) ; non → avis du pharmacien et du prescripteur. Texte alternatif : « Arbre de décision avant d'écraser un comprimé ». -->
+{{< figure-svg ecraser-couper-2 alt="Arbre de décision avant d'écraser un comprimé." legende="Avant d'écraser : chercher une autre forme, puis vérifier la liste de l'OMéDIT Normandie et de la SFPC." description="Le patient ne peut pas avaler la forme prescrite. Première question : existe-t-il une autre forme, solution buvable, forme orodispersible ou autre voie d'administration ? Si oui, demander la modification de la prescription. Si non, deuxième question : la liste OMéDIT autorise-t-elle l'écrasement ou l'ouverture ? Si oui, prescription « à écraser » et modalités de la liste : véhicule, prise immédiate, protection si CMR. Si non, avis du pharmacien et du prescripteur." >}}
 
 :::
 

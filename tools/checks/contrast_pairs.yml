@@ -23,3 +23,9 @@ paires:
   - { texte: pv-ecume, fond: pv-manche, minimum: 4.5, usage: "texte secondaire du pied de page" }
   - { texte: pv-ink, fond: pv-or, minimum: 4.5, usage: "mot surligné en or du titre d'accueil" }
   - { texte: pv-ink, fond: pv-mist-deep, minimum: 4.5, usage: "titres des parties patients et professionnels" }
+  # Figures (assets/img/figures/, docs/regles-redaction.md section 5)
+  - { texte: pv-signal-dark, fond: pv-paper, minimum: 4.5, usage: "figures : libellés et flèches" }
+  - { texte: pv-alert, fond: pv-paper, minimum: 4.5, usage: "figures : libellés « écrasé », « pas sur la boîte »" }
+  - { texte: pv-ink, fond: pv-amber-tint, minimum: 4.5, usage: "figures : texte d'une zone « à éviter » ou « avis »" }
+  - { texte: pv-paper, fond: pv-ink, minimum: 4.5, usage: "figures : numéros des étapes" }
+  - { texte: pv-paper, fond: pv-alert, minimum: 4.5, usage: "figures : étiquette « Interdit »" }

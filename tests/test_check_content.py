@@ -82,6 +82,16 @@ def test_list_items_are_sentences():
     assert cc.split_sentences("- premier point\n- second point") == ["premier point", "second point"]
 
 
+def test_a_figure_is_read_as_its_alternative_text_and_caption():
+    text = 'Avant.\n\n{{< figure-svg notice-1 alt="Une notice dépliée" legende="Les six rubriques de la notice." >}}\n\nAprès.'
+    assert cc.split_sentences(text) == ["Avant.", "Une notice dépliée", "Les six rubriques de la notice.", "Après."]
+
+
+def test_other_shortcodes_are_not_prose():
+    text = "Avant.\n\n{{< include _includes/signal.md >}}\n\nAprès."
+    assert cc.split_sentences(text) == ["Avant.", "Après."]
+
+
 # --- rules -----------------------------------------------------------------
 
 def test_good_page_has_no_errors():

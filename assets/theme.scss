@@ -1239,6 +1239,48 @@ a[href^="tel:"]::after {
 }
 .page-404 li a:hover { border-color: $pv-signal; background: $pv-mist; }
 
+// ---------- Figures (assets/img/figures/, figure-svg shortcode) -----------
+// Hand-authored SVG, inlined so that they use the site's fonts (docs/regles-redaction.md §5).
+// Drawn at 1 unit = 1 px, 440 px wide at most: they shrink on a phone, never grow.
+
+.figure-pv {
+  width: fit-content;
+  max-width: 100%;
+  margin: 1.75rem 0 2rem;
+  padding: 0.75rem;
+  border: 1px solid $pv-rule;
+  border-radius: $border-radius-lg;
+  background: $pv-paper;
+}
+.figure-pv svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  font-family: $font-family-sans-serif;
+}
+.figure-pv figcaption {
+  max-width: 440px;
+  margin: 0.6rem 0.25rem 0.1rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: $pv-ink-quiet;
+}
+// On a phone the figure takes nearly the whole screen width, so that its text keeps
+// about 12 px: 16 units on 440 drawn on some 340 px.
+@media (max-width: 575.98px) {
+  .figure-pv {
+    max-width: calc(100% + 2.5rem);
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    padding: 0.25rem;
+    border-radius: $border-radius;
+  }
+  .figure-pv figcaption { margin: 0.5rem 0.6rem 0.4rem; }
+}
+@media print {
+  .figure-pv { break-inside: avoid; }
+}
+
 // ---------- Interactive frequency grids (comprendre/frequences) -----------
 
 .frequences-outil {

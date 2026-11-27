@@ -47,7 +47,7 @@ pour_aller_plus_loin:
 
 Le triangle est noir et pointe vers le bas : ▼. Il est imprimé en haut de la notice, près du nom du médicament. Une phrase l'accompagne : « Ce médicament fait l'objet d'une surveillance supplémentaire. » Vous ne le verrez pas sur la boîte.
 
-<!-- FIGURE À FAIRE : haut d'une notice fictive, avec le nom inventé « Médicament X », le triangle noir ▼ à côté du nom et la phrase « Ce médicament fait l'objet d'une surveillance supplémentaire ». Une flèche montre le triangle. Une boîte barrée à côté rappelle que le triangle n'est pas sur l'emballage. -->
+{{< figure-svg triangle-noir-1 alt="Haut d'une notice inventée. À côté du nom « Médicament X », un triangle noir pointe vers le bas. Dessous, la phrase : « Ce médicament fait l'objet d'une surveillance supplémentaire. » Sur la boîte du médicament, pas de triangle." legende="Le triangle noir se trouve en haut de la notice, près du nom du médicament. Il n'est pas sur la boîte." >}}
 
 ### Pourquoi certains médicaments sont-ils surveillés de plus près ?
 

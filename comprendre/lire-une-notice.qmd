@@ -33,7 +33,7 @@ sources:
 
 La notice est le papier plié dans la boîte du médicament. Elle est écrite pour vous, pas pour les professionnels. Son plan suit un modèle européen. Il est le même pour tous les médicaments. Une fois ce plan connu, vous trouvez plus vite ce que vous cherchez.
 
-<!-- FIGURE À FAIRE : schéma d'une notice dépliée, avec l'en-tête puis les six rubriques numérotées. Pour chaque rubrique, une icône simple et 3 à 5 mots (« à quoi il sert », « avant de le prendre », « comment le prendre », « effets indésirables », « conservation », « composition »). Rubriques 2 et 4 mises en avant comme « à lire en priorité ». -->
+{{< figure-svg lire-une-notice-1 alt="Schéma d'une notice dépliée : l'en-tête, puis six rubriques numérotées. 1, à quoi il sert. 2, avant de le prendre, à lire en priorité. 3, comment le prendre. 4, effets indésirables, à lire en priorité. 5, conservation. 6, composition." legende="Les six rubriques de la notice, toujours dans le même ordre. Lisez d'abord les rubriques 2 et 4." >}}
 
 ### Que trouve-t-on en haut de la notice ?
 

@@ -1,6 +1,6 @@
 # État du projet
 
-Mis à jour le 27/11/2026. Prototype non officiel, publié depuis la branche `main`.
+Mis à jour le 28/11/2026. Prototype non officiel, publié depuis la branche `main`.
 
 ## Où on en est
 
@@ -85,6 +85,11 @@ Prochaines pull requests, dans l'ordre (décidé le 27/11/2026) :
 - [ ] Index de Vigiking par thème et hébergement des PDF sur le site : inventaire des numéros et
       accord des CRPV à obtenir ; sommaires de juillet 2017 à février 2019 à fournir.
 - [ ] Liste des publications générée depuis ORCID et OpenAlex.
-- [ ] Les 52 figures marquées `FIGURE À FAIRE`.
+- [ ] Les 52 figures marquées `FIGURE À FAIRE` : style fixé (`docs/regles-redaction.md`,
+      section 5 ; contrôle `tools/checks/check_figures.py`). Dessinées le 28/11/2026 :
+      comprendre (5) et bon usage (5). Restent les fiches médicaments, En Normandie et Les CRPV.
+      Gardé : le RCP annoté interactif (comprendre/lire-un-rcp), car le tableau « Où chercher
+      quoi ? » donne déjà ce contenu et un RCP réel annoté demande de choisir un médicament
+      avec les relecteurs.
 - [ ] Contrôles automatiques : mode « site » dans manuscript-guard ou script séparé (décision).
 - [ ] Refaire le test avec de vrais utilisateurs normands après la relecture.

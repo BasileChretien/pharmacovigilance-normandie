@@ -45,7 +45,7 @@ pour_aller_plus_loin:
 - Le paracétamol se cache dans de nombreux médicaments : vérifiez la composition avant d'en prendre un autre.
 :::
 
-<!-- FIGURE À FAIRE : tableau illustré à double entrée « Ce que je prends / Ce que je veux ajouter », avec des pictogrammes (pilule, plante, verre de jus de pamplemousse, verre d'alcool) et un code de couleur lisible en niveaux de gris (interdit, à éviter, avec précaution). Texte alternatif : « Grille des associations à éviter entre médicaments, plantes, aliments et alcool ». -->
+{{< figure-svg interactions-1 alt="Associations à éviter entre médicaments, plantes, aliments et alcool, sur trois niveaux : interdit, à éviter, précaution." legende="Quelques associations à éviter, classées en trois niveaux. Ce ne sont que des exemples : lisez la suite de la page." description="Avec un anti-inflammatoire : à éviter avec un médicament qui rend le sang plus fluide ou avec un autre anti-inflammatoire ; précaution avec un médicament en -pril ou -sartan, ou un diurétique. Avec le millepertuis, une plante : interdit avec la pilule contraceptive, avec la warfarine ou la fluindione ; à éviter avec la lévothyroxine ; précaution avec certains antidépresseurs. Avec le pamplemousse, en jus ou en fruit : à éviter avec la simvastatine, avec un médicament contre le rejet de greffe, avec le ticagrélor. Avec l'alcool : à éviter avec un médicament qui fait dormir ou calme l'anxiété, avec l'insuline ou la metformine, avec le métronidazole. Interdit veut dire contre-indication ; à éviter, association déconseillée ; précaution, précaution d'emploi." >}}
 
 ### Qu'est-ce qu'une interaction ?
 

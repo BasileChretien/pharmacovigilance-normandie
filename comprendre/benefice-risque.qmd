@@ -56,7 +56,7 @@ pour_aller_plus_loin:
 
 Le bénéfice, c'est ce que le médicament vous apporte. Il peut guérir, soulager ou éviter une maladie. Le risque, ce sont les effets indésirables possibles. Aucun médicament n'est sans risque. La question est donc : le bénéfice vaut-il le risque ?
 
-<!-- FIGURE À FAIRE : une balance à deux plateaux. Plateau « bénéfices » : guérir, soulager, prévenir. Plateau « risques » : effets indésirables, interactions. Sous la balance, une frise « avant l'autorisation → après la mise sur le marché », avec une loupe sur la seconde partie pour montrer que la pesée continue. -->
+{{< figure-svg benefice-risque-1 alt="Une balance. D'un côté, les bénéfices : guérir, soulager, éviter une maladie. De l'autre, les risques : effets indésirables, interactions. Les bénéfices pèsent plus. Dessous, avant l'autorisation, des essais chez un nombre limité de personnes. Après la mise sur le marché, une loupe : la pesée continue." legende="Les autorités autorisent un médicament quand ses bénéfices dépassent ses risques. Elles revoient cet équilibre après sa mise sur le marché." >}}
 
 ### Pourquoi accepte-t-on plus de risques pour certains médicaments ?
 
