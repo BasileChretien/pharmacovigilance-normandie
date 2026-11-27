@@ -105,7 +105,7 @@ Vous suivez un programme de prévention des grossesses :
 - chaque ordonnance couvre 30 jours au plus ;
 - la pharmacie délivre le médicament dans les 7 jours qui suivent l'ordonnance.
 
-<!-- FIGURE À FAIRE : frise du temps en trois blocs. « 1 mois avant » (contraception, test de grossesse), « pendant le traitement » (contraception, test chaque mois, ordonnance de 30 jours), « 1 mois après » (contraception, dernier test). Pictogrammes simples, couleurs lisibles en niveaux de gris. -->
+{{< figure-svg isotretinoine-1 alt="Frise en trois temps. 1 mois avant : contraception, test de grossesse sanguin. Pendant le traitement : contraception, test chaque mois, ordonnance de 30 jours au plus. 1 mois après l'arrêt : contraception, dernier test." legende="Le programme de prévention des grossesses, avant, pendant et après le traitement." >}}
 
 ### Allaitement et conduite
 

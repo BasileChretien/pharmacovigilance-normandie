@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 468" width="440" height="468" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <defs>
+    <marker id="isotretinoine-1-fleche" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#073f6e"/>
+    </marker>
+    <!-- Contraception: a shield -->
+    <g id="isotretinoine-1-contraception">
+      <path d="M0 -12 L11 -8 V0 C11 7 6 11 0 13 C-6 11 -11 7 -11 0 V-8 Z" fill="#ffffff" stroke="#10283a" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M-5 0 L-1 4 L6 -4" fill="none" stroke="#10283a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <!-- Pregnancy test: a tube -->
+    <g id="isotretinoine-1-test">
+      <rect x="-5" y="-13" width="10" height="26" rx="5" fill="#ffffff" stroke="#10283a" stroke-width="2"/>
+      <path d="M-3.5 2 H3.5 V8 a3.5 3.5 0 0 1 -7 0 Z" fill="#b3261e"/>
+      <path d="M-8 -13 H8" stroke="#10283a" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <!-- Prescription: a sheet -->
+    <g id="isotretinoine-1-ordonnance">
+      <path d="M-9 -13 H4 L9 -8 V13 H-9 Z" fill="#ffffff" stroke="#10283a" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M-5 -4 H5 M-5 1 H5 M-5 6 H2" stroke="#46586a" stroke-width="1.5"/>
+    </g>
+  </defs>
+
+  <!-- 1 month before -->
+  <rect x="16" y="12" width="408" height="118" rx="10" fill="#ffffff" stroke="#46586a" stroke-width="2"/>
+  <text x="32" y="40" font-size="18" font-weight="700">1 mois avant</text>
+  <use href="#isotretinoine-1-contraception" x="44" y="70"/>
+  <text x="68" y="76">Contraception, au moins 1 mois avant</text>
+  <use href="#isotretinoine-1-test" x="44" y="106"/>
+  <text x="68" y="112">Test de grossesse sanguin</text>
+  <line x1="60" y1="130" x2="60" y2="152" stroke="#073f6e" stroke-width="2.5" marker-end="url(#isotretinoine-1-fleche)"/>
+
+  <!-- During the treatment -->
+  <rect x="16" y="156" width="408" height="156" rx="10" fill="#dcebf3"/>
+  <text x="32" y="184" font-size="18" font-weight="700">Pendant le traitement</text>
+  <use href="#isotretinoine-1-contraception" x="44" y="214"/>
+  <text x="68" y="220">Contraception</text>
+  <use href="#isotretinoine-1-test" x="44" y="250"/>
+  <text x="68" y="256">Test de grossesse chaque mois</text>
+  <use href="#isotretinoine-1-ordonnance" x="44" y="286"/>
+  <text x="68" y="292">Ordonnance de 30 jours au plus</text>
+  <line x1="60" y1="312" x2="60" y2="334" stroke="#073f6e" stroke-width="2.5" marker-end="url(#isotretinoine-1-fleche)"/>
+
+  <!-- 1 month after -->
+  <rect x="16" y="338" width="408" height="118" rx="10" fill="#ffffff" stroke="#46586a" stroke-width="2"/>
+  <text x="32" y="366" font-size="18" font-weight="700">1 mois après l'arrêt</text>
+  <use href="#isotretinoine-1-contraception" x="44" y="396"/>
+  <text x="68" y="402">Contraception encore 1 mois</text>
+  <use href="#isotretinoine-1-test" x="44" y="432"/>
+  <text x="68" y="438">Dernier test de grossesse</text>
+</svg>

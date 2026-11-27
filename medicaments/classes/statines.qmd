@@ -49,7 +49,7 @@ pour_aller_plus_loin:
 
 Les statines (atorvastatine, rosuvastatine, simvastatine, pravastatine…) freinent la fabrication du cholestérol par le foie. Elles aident à prévenir les maladies du cœur et des artères chez les personnes à risque élevé. Elles complètent un régime alimentaire adapté, sans le remplacer.
 
-<!-- FIGURE À FAIRE : schéma du foie qui fabrique moins de cholestérol, et d'une artère moins encombrée par les dépôts de graisse. -->
+{{< figure-svg statines-1 alt="Le foie fabrique moins de cholestérol : la statine freine sa fabrication. Dessous, deux artères. Avec beaucoup de cholestérol dans le sang, des dépôts de graisse. Avec moins de cholestérol, moins de dépôts." legende="Les statines freinent la fabrication du cholestérol par le foie." >}}
 
 ### Comment le prendre ?
 
@@ -74,7 +74,7 @@ Les gênes étaient presque aussi fortes avec le placebo qu'avec la statine. Ell
 
 Ces douleurs ne sont pas imaginaires. Mais elles ne prouvent pas que la statine en est la cause. Parlez-en à votre médecin avant de décider.
 
-<!-- FIGURE À FAIRE : trois barres côte à côte (mois sans comprimé, mois placebo, mois statine) montrant l'intensité moyenne des gênes dans l'étude SAMSON, avec un texte alternatif. -->
+{{< figure-svg statines-2 alt="Trois barres. Gêne moyenne, sur un score de 0 à 100 : 8,0 les mois sans comprimé, 15,4 les mois placebo, 16,3 les mois statine." legende="Étude SAMSON : les gênes étaient presque aussi fortes avec le placebo qu'avec la statine, et deux fois moins fortes sans comprimé." >}}
 
 ::: {.quand-consulter}
 - Douleurs, crampes ou faiblesse musculaire inexpliquées : prévenez votre médecin. Il peut demander une prise de sang.

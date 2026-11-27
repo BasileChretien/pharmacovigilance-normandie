@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 352" width="440" height="352" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <defs>
+    <g id="fluoroquinolones-1-mineral">
+      <circle r="14" fill="#ffffff" stroke="#10283a" stroke-width="2"/>
+      <line x1="-8" y1="0" x2="8" y2="0" stroke="#10283a" stroke-width="2"/>
+    </g>
+    <g id="fluoroquinolones-1-sachet">
+      <path d="M-12 -14 l4 -3 l4 3 l4 -3 l4 3 l4 -3 l4 3 V14 H-12 Z" fill="#ffffff" stroke="#10283a" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M-6 0 H6 M-6 6 H6" stroke="#46586a" stroke-width="1.5"/>
+    </g>
+    <g id="fluoroquinolones-1-barre">
+      <line x1="-18" y1="16" x2="18" y2="-16" stroke="#b3261e" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <!-- The intake, in the middle -->
+  <text x="220" y="22" text-anchor="middle" font-weight="700">Prise de l'antibiotique</text>
+  <line x1="220" y1="30" x2="220" y2="168" stroke="#073f6e" stroke-width="2"/>
+  <circle cx="220" cy="100" r="20" fill="#073f6e"/>
+  <rect x="208" y="94" width="24" height="12" rx="6" fill="#ffffff" transform="rotate(-35 220 100)"/>
+
+  <!-- 2 hours before, 2 hours after: greyed -->
+  <rect x="16" y="40" width="178" height="128" rx="10" fill="#dcebf3"/>
+  <rect x="246" y="40" width="178" height="128" rx="10" fill="#dcebf3"/>
+  <text x="105" y="64" text-anchor="middle" font-weight="700">2 heures avant</text>
+  <text x="335" y="64" text-anchor="middle" font-weight="700">2 heures après</text>
+  <use href="#fluoroquinolones-1-mineral" x="72" y="114"/><use href="#fluoroquinolones-1-barre" x="72" y="114"/>
+  <use href="#fluoroquinolones-1-sachet" x="138" y="114"/><use href="#fluoroquinolones-1-barre" x="138" y="114"/>
+  <use href="#fluoroquinolones-1-mineral" x="302" y="114"/><use href="#fluoroquinolones-1-barre" x="302" y="114"/>
+  <use href="#fluoroquinolones-1-sachet" x="368" y="114"/><use href="#fluoroquinolones-1-barre" x="368" y="114"/>
+
+  <!-- Legend -->
+  <use href="#fluoroquinolones-1-mineral" x="34" y="206"/>
+  <text x="60" y="202">Fer, zinc, calcium</text>
+  <use href="#fluoroquinolones-1-sachet" x="34" y="248"/>
+  <text x="60" y="244">Médicament contre l'acidité</text>
+  <text x="60" y="264" fill="#46586a">de l'estomac</text>
+  <line x1="16" y1="284" x2="424" y2="284" stroke="#d5e2ea" stroke-width="2"/>
+  <path d="M22 298 H44 L41 334 H25 Z" fill="#ffffff" stroke="#10283a" stroke-width="2" stroke-linejoin="round"/>
+  <use href="#fluoroquinolones-1-barre" x="33" y="316"/>
+  <text x="60" y="312" font-weight="700">Ciprofloxacine : ni lait ni yaourt</text>
+  <text x="60" y="332">pris seuls, en dehors d'un repas</text>
+</svg>

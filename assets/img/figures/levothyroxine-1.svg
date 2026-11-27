@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 352" width="440" height="352" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+  <line x1="40" y1="34" x2="40" y2="290" stroke="#d5e2ea" stroke-width="4"/>
+  <g fill="#eef6fa" stroke="#46586a" stroke-width="1.5">
+    <circle cx="40" cy="34" r="20"/><circle cx="40" cy="98" r="20"/><circle cx="40" cy="162" r="20"/><circle cx="40" cy="226" r="20"/><circle cx="40" cy="290" r="20"/>
+  </g>
+
+  <!-- Waking up: alarm clock -->
+  <circle cx="40" cy="36" r="9" fill="#ffffff" stroke="#10283a" stroke-width="2"/>
+  <path d="M40 31 V36 L44 38" fill="none" stroke="#10283a" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M31 27 a5 5 0 0 1 6 -4 M49 27 a5 5 0 0 0 -6 -4" fill="none" stroke="#10283a" stroke-width="2" stroke-linecap="round"/>
+  <text x="76" y="40" font-size="18" font-weight="700">Au réveil, à jeun</text>
+
+  <!-- The tablet with half a glass of water -->
+  <path d="M30 88 H42 L40 110 H32 Z" fill="#ffffff" stroke="#10283a" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M30.9 99 H41.1 L40 110 H32 Z" fill="#bfe3ee"/>
+  <path d="M30 88 H42 L40 110 H32 Z" fill="none" stroke="#10283a" stroke-width="1.8" stroke-linejoin="round"/>
+  <circle cx="50" cy="102" r="5" fill="#073f6e"/>
+  <text x="76" y="94" font-size="18" font-weight="700">Le comprimé de lévothyroxine</text>
+  <text x="76" y="116">avec un demi-verre d'eau</text>
+
+  <!-- Wait 30 minutes: hourglass -->
+  <path d="M33 151 H47 L40 162 L47 173 H33 L40 162 Z" fill="#ffffff" stroke="#10283a" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M36 170 H44 L40 166 Z" fill="#e7b03b"/>
+  <text x="76" y="168" font-size="18" font-weight="700">Attendre 30 minutes</text>
+
+  <!-- Breakfast -->
+  <path d="M31 221 H46 V228 a6 6 0 0 1 -6 6 H37 a6 6 0 0 1 -6 -6 Z" fill="#ffffff" stroke="#10283a" stroke-width="1.8"/>
+  <path d="M46 223 h2 a3 3 0 0 1 0 6 h-2" fill="none" stroke="#10283a" stroke-width="1.8"/>
+  <text x="76" y="232" font-size="18" font-weight="700">Petit-déjeuner</text>
+
+  <!-- Iron or calcium: at least 2 hours after the tablet -->
+  <circle cx="40" cy="290" r="9" fill="#ffffff" stroke="#10283a" stroke-width="2"/>
+  <line x1="34" y1="290" x2="46" y2="290" stroke="#10283a" stroke-width="2"/>
+  <text x="76" y="286" font-size="18" font-weight="700">Fer ou calcium</text>
+  <text x="76" y="308">au moins 2 heures après</text>
+  <text x="76" y="328">le comprimé de lévothyroxine</text>
+</svg>

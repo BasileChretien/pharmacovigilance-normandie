@@ -55,7 +55,7 @@ Ils soignent le reflux (remontées acides de l'estomac) et les ulcères (plaies 
 
 En 2019, environ 1 Français sur 4 a pris un de ces médicaments. Selon la Haute Autorité de santé, plus de la moitié de ces traitements n'étaient pas justifiés.
 
-<!-- FIGURE À FAIRE : grille de 4 personnages dont 1 coloré (« 1 Français sur 4 traité en 2019 ») ; à côté, une barre coupée en deux « justifié / pas justifié », la partie « pas justifié » un peu plus grande. -->
+{{< figure-svg ipp-1 alt="Quatre personnages, dont un coloré : environ 1 Français sur 4 a pris un de ces médicaments en 2019. Dessous, une barre : plus de la moitié de ces traitements n'étaient pas justifiés." legende="Selon la Haute Autorité de santé, plus de la moitié de ces traitements n'étaient pas justifiés." >}}
 
 ### Quand ne sont-ils pas utiles ?
 
@@ -112,7 +112,7 @@ Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre ph
 
 Si vous prenez un IPP depuis plus de 4 semaines pour un reflux, demandez à votre médecin s'il est encore utile. Souvent, il peut être arrêté. Les brûlures peuvent revenir juste après l'arrêt : c'est un effet rebond. Si elles reviennent de temps en temps, d'autres solutions existent : antiacides, alginates (gels qui protègent l'œsophage), IPP seulement les jours de gêne. Les conseils sur l'alimentation restent utiles.
 
-<!-- FIGURE À FAIRE : arbre de décision simplifié pour le patient : « IPP depuis plus de 4 semaines ? » puis « encore des brûlures ? » ; « non » mène à « arrêt, avec un effet rebond possible » ; « oui » mène à « avis du médecin : examen, plus petite dose efficace ». -->
+{{< figure-svg ipp-2 alt="Arbre de décision. Vous prenez un IPP depuis plus de 4 semaines pour un reflux : demandez à votre médecin s'il est encore utile. Plus de brûlures : l'arrêt est souvent possible, avec le médecin ; les brûlures peuvent revenir juste après, c'est un effet rebond. Encore des brûlures : avis du médecin, pour un examen et la plus petite dose efficace." legende="Après 4 semaines d'IPP pour un reflux, faites le point avec votre médecin." >}}
 
 ### Signaler un effet indésirable
 
