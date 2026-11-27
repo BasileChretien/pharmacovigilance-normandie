@@ -126,6 +126,13 @@ def test_institutional_page_needs_no_source():
     assert "FM-SOURCES" not in rules(check(text, path="a-propos/mentions-legales.qmd"))
 
 
+def test_last_update_must_be_a_date():
+    bad = page(GOOD_PATIENT).replace("prochaine_relecture: null", "prochaine_relecture: null\nmise_a_jour: hier")
+    good = page(GOOD_PATIENT).replace("prochaine_relecture: null", "prochaine_relecture: null\nmise_a_jour: 2026-11-25")
+    assert "FM-DATE" in rules(check(bad))
+    assert "FM-DATE" not in rules(check(good))
+
+
 def test_reviewed_page_needs_reviewer_and_date():
     findings = check(page(GOOD_PATIENT, statut="relu"))
     assert "FM-RELECTURE" in rules(findings)

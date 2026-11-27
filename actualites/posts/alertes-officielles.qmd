@@ -8,9 +8,10 @@ statut: brouillon
 relu_par: null
 relu_le: null
 prochaine_relecture: null
+mise_a_jour: 2026-11-25
 ---
 
-Ce fil sera alimenté automatiquement : titre, date et lien de chaque communication, sans réécriture. En attendant, voici les sources qu'il reprendra.
+Ce fil sera alimenté automatiquement : titre, date et lien de chaque communication, sans réécriture. Responsable du fil : [à compléter : CRPV et personne chargée de vérifier le fil chaque semaine]. En attendant, voici les sources qu'il reprendra.
 
 | Source | Contenu |
 |---|---|

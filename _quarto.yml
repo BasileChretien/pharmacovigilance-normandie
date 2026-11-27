@@ -27,7 +27,7 @@ website:
     type: overlay
     keyboard-shortcut: []
   announcement:
-    content: "**Prototype non officiel** : brouillons en cours de relecture, à ne pas utiliser pour une décision de soin."
+    content: "**Prototype non officiel** : brouillons en cours de relecture, à ne pas utiliser pour une décision de soin. [Signaler une correction](mailto:pharmacovigilance@chu-caen.fr?subject=Prototype%20Pharmacovigilance%20Normandie%20%3A%20correction){.signaler-correction}"
     type: warning
     dismissable: false
     position: below-navbar
@@ -50,17 +50,19 @@ website:
       - text: "En Normandie"
         href: normandie/index.qmd
     right:
-      - text: "English"
-        href: normandie/en/index.qmd
       - text: "Les CRPV"
         href: crpv/index.qmd
       - text: "Déclarer"
         href: declarer.qmd
       - text: "Poser une question"
         href: poser-une-question.qmd
+      # One page for English-speaking visitors, not a translated site: said in the label.
+      - text: "In English"
+        href: normandie/en/index.qmd
   page-footer:
     left: |
       **Pharmacovigilance Normandie**, de la Hague au pays de Bray.  
+      **Urgence vitale** : [15](tel:15) ou [112](tel:112). **Intoxication** : centre antipoison d'Angers, [02 41 48 21 21](tel:+33241482121)  
       **CRPV de Caen** (Calvados, Manche, Orne) : [02 31 06 46 72](tel:+33231064672)  
       **CRPV de Rouen** (Eure, Seine-Maritime) : [02 32 88 90 79](tel:+33232889079)  
       Prototype non officiel.
@@ -73,7 +75,7 @@ website:
         href: a-propos/mentions-legales.qmd
       - text: "Accessibilité"
         href: a-propos/accessibilite.qmd
-      - text: "English"
+      - text: "In English (visitors)"
         href: normandie/en/index.qmd
   back-to-top-navigation: false
   page-navigation: false
@@ -101,6 +103,14 @@ format:
           <script>
           // The navbar toggle opens a disclosure, not an ARIA menu (user panel, round 2).
           document.querySelectorAll(".navbar-toggler[role='menu']").forEach(function (b) { b.removeAttribute("role"); });
+          // "In English" is English text in a French page (RGAA 8.7).
+          document.querySelectorAll("a[href*='normandie/en/']").forEach(function (a) {
+            if (/^In English/.test(a.textContent.trim())) { a.setAttribute("lang", "en"); }
+          });
+          // The correction email carries the address of the page being read.
+          document.querySelectorAll("a.signaler-correction").forEach(function (a) {
+            a.href += "&body=" + encodeURIComponent("Page : " + window.location.href + "\n\nCorrection proposée :\n");
+          });
           </script>
     include-before-body:
       - text: |
