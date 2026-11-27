@@ -1244,6 +1244,25 @@ a[href^="tel:"]::after {
 .crpv-resultat-titre { font-weight: 700; margin: 0.5rem 0 0; }
 .centres-ailleurs { margin: 1.25rem 0 0; font-weight: 600; }
 
+// Official alerts feed (actualites/posts/alertes-officielles.qmd): one entry per
+// communication, date and product first, then the official title as the link.
+.fil-releve { color: $pv-ink-quiet; font-size: 0.95rem; }
+.fil-alertes {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  border-top: 1px solid $pv-rule;
+}
+.fil-alerte {
+  padding: 0.85rem 0 0.7rem;
+  border-bottom: 1px solid $pv-rule;
+  p { margin: 0 0 0.25rem; }
+}
+.fil-meta, .fil-public { color: $pv-ink-quiet; font-size: 0.9rem; }
+.fil-meta { font-variant-numeric: tabular-nums; }
+.fil-titre { font-weight: 600; line-height: 1.4; }
+.fil-resume { line-height: 1.45; }
+
 // Editorial placeholders, marked by the page-meta filter.
 .a-completer {
   display: inline;

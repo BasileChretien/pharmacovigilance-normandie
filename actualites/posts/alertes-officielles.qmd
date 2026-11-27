@@ -1,6 +1,6 @@
 ---
 title: "Le fil des alertes officielles"
-description: "Les dernières communications de sécurité de l'ANSM et de l'Agence européenne des médicaments, avec un lien vers chaque source."
+description: "Les dernières communications de l'ANSM sur les risques des médicaments et les résumés du comité européen de pharmacovigilance, avec un lien vers chaque source."
 date: 2026-11-25
 categories: [alertes officielles]
 type: institutionnel
@@ -8,14 +8,25 @@ statut: brouillon
 relu_par: null
 relu_le: null
 prochaine_relecture: null
-mise_a_jour: 2026-11-25
+sources:
+  - titre: "ANSM, Informations de sécurité : risques médicamenteux"
+    url: "https://ansm.sante.fr/informations-de-securite"
+  - titre: "Agence européenne des médicaments, Pharmacovigilance Risk Assessment Committee (PRAC)"
+    url: "https://www.ema.europa.eu/en/committees/pharmacovigilance-risk-assessment-committee-prac"
 ---
 
-Ce fil sera alimenté automatiquement : titre, date et lien de chaque communication, sans réécriture. Responsable du fil : [à compléter : CRPV et personne chargée de vérifier le fil chaque semaine]. En attendant, voici les sources qu'il reprendra.
+Les titres, dates et liens sont repris tels quels des sites officiels, sans réécriture, et relevés chaque semaine. Pour savoir ce qu'une alerte change pour vous, lisez la communication officielle ou demandez à votre médecin ou à votre pharmacien. N'arrêtez jamais un traitement de vous-même.
 
-| Source | Contenu |
-|---|---|
-| [ANSM, actualités](https://ansm.sante.fr/actualites) | Informations de sécurité, lettres aux professionnels de santé |
-| [Agence européenne des médicaments, PRAC](https://www.ema.europa.eu/en/committees/pharmacovigilance-risk-assessment-committee-prac) | Résumés mensuels du comité européen de pharmacovigilance |
+Responsable du fil : [à compléter : CRPV et personne chargée de vérifier le fil chaque semaine].
 
-[Branchement automatique à faire : script de collecte, voir le README.]
+## En France : les risques médicamenteux signalés par l'ANSM
+
+Lettres aux professionnels de santé, restrictions d'utilisation, risques nouveaux : les communications de l'Agence nationale de sécurité du médicament classées « risques médicamenteux ».
+
+{{< include ../../_includes/alertes-ansm.md >}}
+
+## En Europe : les résumés du comité de pharmacovigilance
+
+Chaque mois, le comité de l'Agence européenne des médicaments chargé de la sécurité des médicaments (PRAC) publie un résumé de ses décisions. Ces résumés sont en anglais.
+
+{{< include ../../_includes/alertes-ema.md >}}

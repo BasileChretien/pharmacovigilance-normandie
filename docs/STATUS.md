@@ -54,9 +54,11 @@ Prochaines pull requests, dans l'ordre (décidé le 27/11/2026) :
       en ligne (27/11/2026). Ne pas le lier ; trouver l'adresse officielle actuelle du GPR.
 - [x] Trouver son CRPV par code postal (crpv/trouver-mon-crpv.qmd) : liste ANSM mise à jour le
       14/09/2026, 30 centres ; à rafraîchir avec `tools/build/fetch_crpv.py` quand l'ANSM la change.
-- [ ] Fil des alertes officielles : flux RSS de l'ANSM (filtrables par domaine médical) et de
-      l'EMA, récupérés à la construction (titre, date, lien, sans réécriture), reconstruit
-      chaque semaine ; date de mise à jour visible et responsable nommé.
+- [x] Fil des alertes officielles : informations de sécurité de l'ANSM (« risques
+      médicamenteux ») et résumés du PRAC de l'EMA, relevés à la construction et chaque lundi
+      (titre, date, lien, sans réécriture), date de relevé visible. Les flux RSS de l'ANSM ne
+      contiennent que les actualités du jour : la liste est lue sur la page elle-même.
+- [ ] Nommer le responsable du fil des alertes (CRPV et personne qui le vérifie chaque semaine).
 - [ ] Liens « notice officielle » et « RCP » sur chaque fiche, générés depuis les fichiers
       ouverts de la base de données publique des médicaments, avec contrôle des noms encore
       commercialisés.

@@ -80,4 +80,4 @@ téléchargé.
 
 Voir la liste des décisions du plan : accord des deux CRPV, hébergement et nom de
 domaine, relecture de chaque page, audit RGAA, consentement des membres des équipes,
-outil d'envoi de Vigiking validé par les DPO, branchement du fil des alertes officielles.
+outil d'envoi de Vigiking validé par les DPO, responsable du fil des alertes officielles.
