@@ -162,3 +162,13 @@ def test_a_content_block_with_another_class_or_a_nested_block_keeps_its_topics()
 def test_no_elision_before_h():
     assert mp._de("Hors-série 2021") == "de hors-série 2021"
     assert mp._de("Avril 2025") == "d’avril 2025"
+
+
+def test_a_block_whose_class_only_starts_with_content_is_not_the_content():
+    contenu = "<p>Sujet</p>"
+    article = _article(contenu).replace(
+        '<div class="content">',
+        '<div class="content-header"><p>En-tête</p></div>'
+        '<div class="entry-content-meta"><p>Méta</p></div><div class="content">',
+    )
+    assert fv.parse_numeros(article)[0]["sujets"] == ["Sujet"]

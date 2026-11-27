@@ -189,3 +189,46 @@ def test_a_corrupt_previous_file_counts_as_empty(tmp_path):
     abime.write_text('{"ansm": ', encoding="utf-8")
     assert fa.precedent(abime) == {}
     assert fa.precedent(tmp_path / "absent.json") == {}
+
+
+def _bloc(**alerte):
+    return {
+        "source": "s",
+        "releve_le": "2026-11-23",
+        "alertes": [{"titre": "t", "url": "u", "publie_le": "2026-11-20", **alerte}],
+    }
+
+
+def test_a_previous_list_with_the_wrong_shape_is_dropped_but_a_sound_one_is_kept(
+    tmp_path,
+):
+    import json
+
+    sain = _bloc()
+    for abime in (
+        {},
+        {"alertes": "pas une liste"},
+        {**sain, "releve_le": None},
+        {**sain, "releve_le": "23/11/2026"},
+        _bloc(titre=None),
+        _bloc(publie_le="hier"),
+        _bloc(mis_a_jour_le=3),
+        {**sain, "alertes": ["pas un dict"]},
+        [],
+    ):
+        path = tmp_path / "alertes.json"
+        path.write_text(json.dumps({"ansm": abime, "ema": sain}), encoding="utf-8")
+        assert fa.precedent(path) == {"ema": sain}, abime
+
+
+def test_a_site_that_fails_after_a_damaged_previous_list_is_left_unread(tmp_path):
+    import json
+
+    path = tmp_path / "alertes.json"
+    path.write_text(json.dumps({"ansm": {}}), encoding="utf-8")
+    pages = {
+        fa.SOURCES["ansm"]["url"]: OSError("timeout"),
+        fa.SOURCES["ema"]["url"]: EMA,
+    }
+    data, errors = fa.refresh(fa.precedent(path), _fetcher(pages), "2026-11-30")
+    assert "ansm" not in data and errors
