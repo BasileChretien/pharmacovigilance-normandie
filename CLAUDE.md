@@ -14,6 +14,7 @@ reviews it.
 - `uv run python tools/checks/check_toc.py` — every section heading is in its page's table of contents (after `quarto render`).
 
 - `uv run python tools/build/make_cyp_index.py` — regenerate the per-drug index of the cytochrome table.
+- `uv run python tools/build/fetch_crpv.py` then `make_crpv_page.py` — refresh the list of the French CRPV (ANSM) for crpv/trouver-mon-crpv.qmd.
 
 Status and open tasks: `docs/STATUS.md`. Points for medical reviewers: `docs/relecture.md`.
 

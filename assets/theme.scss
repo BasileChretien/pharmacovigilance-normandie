@@ -1208,6 +1208,42 @@ a[href^="tel:"]::after {
   color: $pv-ink-quiet;
 }
 
+// "Trouver votre centre" (crpv/trouver-mon-crpv.qmd, assets/js/trouver-crpv.js).
+.trouver-crpv {
+  max-width: 34rem;
+  margin: 1.5rem 0 1rem;
+  padding: 1.25rem 1.4rem 0.75rem;
+  background: $pv-mist;
+  border: 1px solid $pv-rule;
+  border-radius: $border-radius-lg;
+}
+.trouver-crpv label { display: block; font-weight: 700; margin-bottom: 0.4rem; }
+.trouver-crpv-champ { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.trouver-crpv input {
+  flex: 0 1 10rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid $pv-ink-quiet;
+  border-radius: $border-radius;
+  font-family: $font-family-monospace;
+  font-size: 1.15rem;
+}
+.trouver-crpv-aide { font-size: 0.9rem; color: $pv-ink-quiet; margin: 0.6rem 0 0; }
+.trouver-crpv-sortie:empty { display: none; }
+.trouver-crpv-sortie { max-width: 34rem; margin-bottom: 2rem; }
+.crpv-resultat {
+  margin-top: 0.75rem;
+  padding: 1rem 1.25rem 0.4rem;
+  background: $pv-paper;
+  border: 1px solid $pv-rule;
+  border-left: 5px solid $pv-signal;
+  border-radius: $border-radius-lg;
+  box-shadow: $ombre-carte;
+}
+.crpv-resultat-nom { font-family: $headings-font-family; font-size: 1.25rem; font-weight: 700; margin-bottom: 0.3rem; }
+.crpv-resultat-precision { color: $pv-ink-quiet; margin-bottom: 0.4rem; }
+.crpv-resultat-titre { font-weight: 700; margin: 0.5rem 0 0; }
+.centres-ailleurs { margin: 1.25rem 0 0; font-weight: 600; }
+
 // Editorial placeholders, marked by the page-meta filter.
 .a-completer {
   display: inline;
