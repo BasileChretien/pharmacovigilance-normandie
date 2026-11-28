@@ -495,10 +495,6 @@ main table td, main table th {
 }
 main table tbody tr:first-child td { border-top: none; }
 main table tbody tr:nth-child(even) td { background: rgba($pv-mist, 0.6); }
-// A long word breaks at a hyphen on a narrow screen rather than widening its column.
-@media (max-width: 767.98px) {
-  main table td, main table th { hyphens: auto; }
-}
 // A link in a table is at least 24 px high (WCAG 2.2, 2.5.8): the padding enlarges the
 // target without moving the lines.
 main table a { padding-block: 0.125rem; }
@@ -559,11 +555,14 @@ main table a { padding-block: 0.125rem; }
   .tableau-large thead tr > :first-child { z-index: 3; }
 }
 
-// Cards (.tableau-cartes): one card per row on phones. The first cell is the card's title;
-// each other cell shows its column header (data-label, written by the filter) above its
-// value. The header row stays in the table for screen readers, out of sight, and
-// assets/js/tableaux.js gives the rows and cells their table roles back.
-@media (max-width: 575.98px) {
+// Cards (.tableau-cartes): one card per row when the box is narrower than 36rem (576 px):
+// on phones, and on a tablet where the text column is about 500 px wide. The first cell is
+// the card's title; each other cell shows its column header (data-label, written by the
+// filter) above its value. The header row stays in the table for screen readers, out of
+// sight, and assets/js/tableaux.js gives the rows and cells their table roles back.
+// The box is a size container; browsers without container queries use the screen width.
+.tableau-defile { container-type: inline-size; }
+@mixin tableau-en-cartes {
   .tableau-cartes table, .tableau-cartes caption, .tableau-cartes tbody, .tableau-cartes tr,
   .tableau-cartes td, .tableau-cartes tbody th { display: block; }
   .tableau-cartes table { border: none; border-radius: 0; overflow: visible; }
@@ -616,6 +615,17 @@ main table a { padding-block: 0.125rem; }
     text-align: right;
   }
   .tableau-cartes table.cartes-en-ligne td[data-label]::before { text-align: left; }
+}
+@media (max-width: 575.98px) { @include tableau-en-cartes; }
+@container (max-width: 35.98rem) { @include tableau-en-cartes; }
+// A table that stays a table in a narrow box (two columns): a word too long for its column
+// breaks, at a hyphen where it can, rather than widening the table.
+@container (max-width: 35.98rem) {
+  .tableau-defile:not(.tableau-large, .tableau-cartes) :is(td, th) {
+    padding: 0.55rem 0.6rem !important;
+    hyphens: auto;
+    overflow-wrap: anywhere;
+  }
 }
 // On paper every table is whole: no box that scrolls, no cue, nothing sticky.
 @media print {
