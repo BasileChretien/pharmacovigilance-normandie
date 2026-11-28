@@ -11,22 +11,37 @@ prochaine_relecture: null
 sources:
   - titre: "EMA, Eliquis (apixaban) : informations sur le produit (RCP et notice, version française)"
     url: "https://www.ema.europa.eu/fr/documents/product-information/eliquis-epar-product-information_fr.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "EMA, Xarelto (rivaroxaban) : informations sur le produit (RCP et notice, version française)"
+    url: "https://www.ema.europa.eu/fr/documents/product-information/xarelto-epar-product-information_fr.pdf"
+    consulte_le: 2026-11-28
+  - titre: "EMA, Pradaxa (dabigatran étexilate) : informations sur le produit (RCP et notice, version française)"
+    url: "https://www.ema.europa.eu/fr/documents/product-information/pradaxa-epar-product-information_fr.pdf"
+    consulte_le: 2026-11-28
+  - titre: "EMA, Lixiana (édoxaban) : informations sur le produit (RCP et notice, version française)"
+    url: "https://www.ema.europa.eu/fr/documents/product-information/lixiana-epar-product-information_fr.pdf"
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments, COUMADINE 2 mg (warfarine) : RCP et notice"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/64631925/extrait"
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments, MINI-SINTROM 1 mg (acénocoumarol) : RCP et notice"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/62148714/extrait"
+    consulte_le: 2026-11-28
   - titre: "Base de données publique des médicaments, PREVISCAN 20 mg (fluindione) : RCP et notice"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/68133651/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "HAS, Fiche bon usage du médicament : Fibrillation auriculaire non valvulaire, quelle place pour les anticoagulants oraux ? (mise à jour mai 2018)"
     url: "https://www.has-sante.fr/upload/docs/application/pdf/2018-05/fiche_bon_usage_anticoagulants_oraux.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Bon usage des médicaments antivitamine K (AVK), actualisation juillet 2012"
     url: "https://ansm.sante.fr/uploads/2021/01/13/bon-usage-avk-actualisee-juillet-2012.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Quoi de neuf concernant les antivitamines K ? (2018, mis à jour 2021)"
     url: "https://ansm.sante.fr/actualites/quoi-de-neuf-concernant-les-antivitamines-k"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
     url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Je prends un anticoagulant oral, quels sont les risques ?"
     url: "https://www.rfcrpv.fr/prends-anticoagulant-oral-risques/"
@@ -47,7 +62,7 @@ pour_aller_plus_loin:
 
 ::: {.a-retenir}
 - Ce médicament ralentit la coagulation du sang : il protège des caillots, mais augmente le risque de saignement.
-- Prenez-le chaque jour à la même heure, et ne doublez jamais une dose oubliée.
+- Prenez-le chaque jour à la même heure. En cas d'oubli, suivez la règle de votre médicament : ne doublez jamais une dose de vous-même.
 - Avant tout autre médicament, même sans ordonnance, demandez l'avis de votre pharmacien.
 :::
 
@@ -58,7 +73,7 @@ Un anticoagulant évite qu'un caillot bouche une veine ou une artère. Il est pr
 Il existe deux familles :
 
 - les AVK (antivitamines K) : warfarine (Coumadine), fluindione (Previscan), acénocoumarol (Sintrom, Minisintrom). Leur dose s'ajuste selon une prise de sang, l'INR (test qui mesure le temps de coagulation) ;
-- les AOD (anticoagulants oraux directs) : apixaban (Eliquis), rivaroxaban (Xarelto), dabigatran (Pradaxa), édoxaban (Lixiana). Leur dose est fixe, sans INR.
+- les AOD (anticoagulants oraux directs) : apixaban (Eliquis), rivaroxaban (Xarelto), dabigatran (Pradaxa). Leur dose est fixe, sans INR. Un quatrième, l'édoxaban (Lixiana), est autorisé en Europe mais n'est pas vendu en France.
 
 Le nom écrit en gros sur votre boîte est souvent le nom de marque, entre parenthèses ci-dessus. Les génériques portent le nom de la molécule.
 
@@ -68,17 +83,24 @@ Le nom écrit en gros sur votre boîte est souvent le nom de marque, entre paren
 
 - Prenez-le chaque jour à la même heure. Un pilulier aide à ne pas oublier.
 - Un AVK se prend une fois par jour, de préférence le soir. Faites l'INR aux dates prévues, au moins une fois par mois, et notez-le dans votre carnet.
-- L'apixaban et le dabigatran se prennent deux fois par jour. Le rivaroxaban et l'édoxaban, une fois par jour. Le rivaroxaban se prend au repas.
+- L'apixaban et le dabigatran se prennent deux fois par jour.
+- Le rivaroxaban se prend en général une fois par jour. Au début du traitement d'une phlébite ou d'une embolie (caillot qui bouche une artère du poumon), c'est deux fois par jour pendant 3 semaines.
+- Les comprimés de rivaroxaban à 15 et 20 milligrammes se prennent pendant un repas.
 - Gardez sur vous la carte qui signale votre anticoagulant.
 
-{{< figure-svg anticoagulants-oraux-2 alt="Moment de prise selon le médicament. AVK : une fois par jour, plutôt le soir. Apixaban et dabigatran : deux fois par jour, matin et soir. Rivaroxaban : une fois par jour, au repas." legende="Prenez votre anticoagulant chaque jour à la même heure." >}}
+{{< figure-svg anticoagulants-oraux-2 alt="Moment de prise selon le médicament. AVK : une fois par jour, plutôt le soir. Apixaban et dabigatran : deux fois par jour, matin et soir. Rivaroxaban : en général une fois par jour, au repas." legende="Prenez votre anticoagulant chaque jour à la même heure, au rythme de votre ordonnance." >}}
 
 ### Que faire en cas d'oubli ?
 
 - AVK : prenez la dose oubliée dans les 8 heures. Après, sautez-la et notez l'oubli dans votre carnet.
-- Apixaban (Eliquis) : prenez la dose oubliée dès que vous y pensez, puis reprenez vos deux prises par jour comme d'habitude.
-- Autres AOD : la règle dépend du médicament. Lisez la notice ou demandez à votre pharmacien. [à compléter : règle de chaque AOD d'après son RCP]
-- Ne prenez jamais deux doses pour rattraper un oubli.
+
+### Et si j'oublie un AOD ?
+
+- Apixaban (Eliquis) : une dose du matin oubliée se prend dès que vous y pensez, au besoin avec celle du soir. Une dose du soir oubliée se prend seulement le soir même. Le lendemain matin, ne prenez pas deux doses.
+- Rivaroxaban (Xarelto) une fois par jour : prenez le comprimé oublié dès que vous y pensez, le jour même. Ne prenez jamais deux doses le même jour.
+- Rivaroxaban pendant les 3 semaines à deux prises par jour : prenez tout de suite le comprimé oublié, au besoin avec le suivant. La dose de la journée doit être complète.
+- Dabigatran (Pradaxa), deux prises par jour : prenez la dose oubliée si la suivante est dans plus de 6 heures. Sinon, sautez-la.
+- En dehors de ces règles, ne doublez jamais une dose pour rattraper un oubli. En cas de doute, demandez à votre pharmacien.
 
 ### Quels effets indésirables ?
 
@@ -98,13 +120,14 @@ La fluindione peut, rarement, donner une allergie grave de la peau, du foie ou d
 - Les anti-inflammatoires (ibuprofène, par exemple Advil ou Nurofen ; kétoprofène…) et l'aspirine augmentent le risque de saignement. Évitez-les, y compris en automédication.
 - Avec un AVK, le paracétamol à 4 grammes par jour pendant 4 jours ou plus peut augmenter l'INR.
 - Avec un AVK, le miconazole (contre les champignons) est interdit, même en gel pour la bouche.
-- Le millepertuis (une plante utilisée contre la déprime) diminue l'effet des AVK et du rivaroxaban.
+- Le millepertuis (une plante utilisée contre la déprime) diminue l'effet des anticoagulants. Il est interdit avec un AVK et à éviter avec un AOD.
 - Sous AVK, un antibiotique peut déséquilibrer l'INR.
 - Sous AVK, gardez une alimentation régulière : choux, épinards, brocolis et certaines salades sont riches en vitamine K.
 
 ### Grossesse, allaitement, conduite
 
-- Les AVK sont contre-indiqués pendant la grossesse, sauf situation exceptionnelle. Les AOD ne doivent pas être utilisés pendant la grossesse.
+- Les AVK sont contre-indiqués pendant la grossesse, sauf chez certaines femmes qui ont une valve cardiaque mécanique. Sous AVK, une contraception efficace est nécessaire.
+- Les AOD ne doivent pas être utilisés pendant la grossesse.
 - Si vous envisagez une grossesse, parlez-en d'abord à votre médecin.
 - Pendant l'allaitement, la warfarine et l'acénocoumarol sont possibles. La fluindione et les AOD ne le sont pas.
 - Votre médecin peut consulter le CRAT (Centre de référence sur les agents tératogènes) : [lecrat.fr](https://www.lecrat.fr).
@@ -114,7 +137,7 @@ La fluindione peut, rarement, donner une allergie grave de la peau, du foie ou d
 
 Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
 
-Un arrêt, même bref, expose au risque de caillot. Avant une opération ou un soin dentaire, signalez votre traitement.
+N'arrêtez jamais votre anticoagulant sans avis médical : un arrêt peut avoir des conséquences graves, car le risque de caillot revient. Avant une opération ou un soin dentaire, signalez votre traitement.
 
 ### Signaler un effet indésirable
 
@@ -130,10 +153,11 @@ Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-s
 
 - Les anticoagulants, AVK en tête, sont au premier rang des médicaments responsables d'accidents iatrogènes graves (ENEIS 2004 et 2009, cité par l'ANSM en 2012).
 - Instauration : AVK ou AOD peuvent être prescrits en première intention (HAS 2018). Si un AVK est choisi, privilégier un coumarinique ; la warfarine est l'AVK le mieux évalué.
+- Édoxaban (Lixiana) : AMM européenne, mais non commercialisé en France (HAS 2018 ; absent de la base de données publique des médicaments au 20/11/2026).
 - Fluindione : ne plus initier de traitement (ANSM 2018), en raison d'atteintes immuno-allergiques (cutanées, hépatiques, rénales, hématologiques), surtout dans les 6 premiers mois. Patient traité depuis plus de 6 mois et équilibré : pas de raison de changer.
 - Aucun argument pour remplacer un anticoagulant efficace et bien toléré par un autre (HAS 2018).
 - Mésusages identifiés par la HAS : sous-dosage intentionnel des AOD, prescription hors indication (CHA2DS2-VASc = 0, valvulopathie pour les AOD).
-- Antagonisation : vitamine K et concentrés de complexes prothrombiniques pour les AVK ; idarucizumab pour le dabigatran ; andexanet alfa disponible chez l'adulte pour l'apixaban (RCP Eliquis).
+- Antagonisation : vitamine K et concentrés de complexes prothrombiniques pour les AVK ; idarucizumab pour le dabigatran ; andexanet alfa disponible chez l'adulte pour l'apixaban et le rivaroxaban (RCP Eliquis, Xarelto).
 
 ### Surveillance
 
@@ -153,9 +177,10 @@ Niveaux du Thésaurus de l'ANSM (dernière version : 15 septembre 2023 ; l'ANSM 
 | Anticoagulant oral + antiagrégants, ISRS, tramadol | À prendre en compte |
 | AVK + miconazole (toutes formes et voies) | Contre-indication |
 | AVK + millepertuis | Contre-indication |
+| AVK + sulfaméthoxazole (cotrimoxazole), fluorouracile | Association déconseillée |
 | AVK + amiodarone, fluconazole, fluoroquinolones, statines, allopurinol, inducteurs enzymatiques, paracétamol 4 g/j ≥ 4 jours | Précaution d'emploi (INR rapproché) |
 | Apixaban ou rivaroxaban + inhibiteurs puissants du CYP3A4, fluconazole, inducteurs puissants, rifampicine | Association déconseillée |
-| Rivaroxaban + millepertuis | Contre-indication |
+| AOD + millepertuis | Pas d'entrée au Thésaurus ; à éviter (RCP Xarelto, Pradaxa), avec précaution (RCP Eliquis, Lixiana) |
 | Dabigatran + ciclosporine, dronédarone, itraconazole, kétoconazole, glécaprévir/pibrentasvir | Contre-indication |
 | Dabigatran + amiodarone, quinidine | Précaution d'emploi |
 
@@ -164,9 +189,10 @@ Niveaux du Thésaurus de l'ANSM (dernière version : 15 septembre 2023 ; l'ANSM 
 - Apixaban (FANV) : 5 mg × 2/j ; 2,5 mg × 2/j si au moins deux critères parmi âge ≥ 80 ans, poids ≤ 60 kg, créatinine ≥ 133 µmol/L, ou si ClCr 15-29 mL/min. Non recommandé si ClCr < 15 mL/min ou dialyse.
 - Rivaroxaban (FANV) : 20 mg/j, 15 mg/j si ClCr 15-49 mL/min ; à prendre avec des aliments.
 - Dabigatran (FANV) : 150 mg × 2/j ; 110 mg × 2/j à 80 ans ou plus ou avec le vérapamil ; contre-indiqué si ClCr < 30 mL/min.
-- Édoxaban (FANV) : 60 mg/j ; 30 mg/j si ClCr 15-49 mL/min, poids ≤ 60 kg, ou association à ciclosporine, dronédarone, érythromycine ou kétoconazole.
+- Édoxaban (FANV, non commercialisé en France) : 60 mg/j ; 30 mg/j si ClCr 15-50 mL/min (RCP ; 15-49 dans la fiche HAS 2018), poids ≤ 60 kg, ou association à ciclosporine, dronédarone, érythromycine ou kétoconazole.
 - AVK : dose initiale réduite de moitié chez le sujet âgé ; jamais de dose de charge (ANSM 2012).
-- Relais AVK vers AOD : débuter l'AOD quand l'INR est < 2 (apixaban, dabigatran), < 3 (rivaroxaban), ≤ 2,5 (édoxaban).
+- Rivaroxaban (traitement des TVP et EP) : 15 mg × 2/j pendant 21 jours, puis 20 mg/j.
+- Relais AVK vers AOD : débuter l'AOD quand l'INR est < 2 (apixaban, dabigatran), ≤ 3,0 (rivaroxaban en FANV ; ≤ 2,5 en traitement des TVP et EP), ≤ 2,5 (édoxaban).
 
 ### Pièges fréquents
 
@@ -175,7 +201,8 @@ Niveaux du Thésaurus de l'ANSM (dernière version : 15 septembre 2023 ; l'ANSM 
 ### Mesures de réduction du risque
 
 - Carnet d'information et de suivi pour tout patient sous AVK ; carte de porteur d'un anticoagulant pour les AOD.
-- Éducation thérapeutique dès l'instauration : prise à heure fixe, conduite à tenir en cas d'oubli, signes de saignement, automédication à éviter, alimentation stable sous AVK.
+- Éducation thérapeutique dès l'instauration : prise à heure fixe, conduite à tenir en cas d'oubli (propre à chaque AOD : RCP, rubrique 4.2), signes de saignement, automédication à éviter, alimentation stable sous AVK.
+- Femme en âge de procréer sous AVK : contraception efficace pendant le traitement et après l'arrêt (10 jours pour la warfarine, 7 pour la fluindione, 3 pour l'acénocoumarol, RCP) ; grossesse : AVK contre-indiqués sauf valve cardiaque mécanique à haut risque thrombotique, relais par héparine à partir de 36 SA si l'anticoagulation est poursuivie (ANSM 2018). AOD : à ne pas utiliser pendant la grossesse ni l'allaitement (HAS 2018) ; allaitement possible sous warfarine ou acénocoumarol, avec vitamine K1 si allaitement exclusif (RCP).
 - Informer le biologiste de l'indication et de l'INR cible.
 
 :::
