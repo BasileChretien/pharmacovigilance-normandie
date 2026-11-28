@@ -28,6 +28,9 @@ sources:
   - titre: "Règlement (UE) n° 1027/2012 modifiant le règlement (CE) n° 726/2004 en ce qui concerne la pharmacovigilance (article 23 : liste des médicaments faisant l'objet d'une surveillance supplémentaire)"
     url: "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32012R1027"
     consulte_le: 2026-11-28
+  - titre: "Règlement (CE) n° 726/2004, version consolidée au 28 janvier 2022 (article 14, paragraphe 3 ; article 14 -bis, numéroté 14-a dans la version anglaise : AMM conditionnelle ; article 23 : liste des médicaments faisant l'objet d'une surveillance supplémentaire)"
+    url: "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:02004R0726-20220128"
+    consulte_le: 2026-11-28
   - titre: "Règlement d'exécution (UE) n° 198/2013 de la Commission du 7 mars 2013 relatif au choix du symbole désignant les médicaments à usage humain qui font l'objet d'une surveillance supplémentaire"
     url: "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32013R0198"
     consulte_le: 2026-11-28
@@ -64,10 +67,10 @@ Tous les médicaments sont surveillés après leur mise sur le marché. Mais pou
 
 Avant d'être autorisé, un médicament est testé dans des essais cliniques (des études chez des volontaires ou des malades). Ces essais portent sur un nombre limité de personnes, pendant un temps limité. Ensuite, beaucoup plus de personnes prennent le médicament. Elles ont parfois d'autres maladies et d'autres traitements. Certains effets rares n'apparaissent qu'à ce moment-là.
 
-Le triangle concerne par exemple :
+Le triangle concerne par exemple, pour une durée limitée :
 
 - les médicaments avec une nouvelle substance active, autorisés dans l'Union européenne depuis 2011 ;
-- les médicaments biologiques (fabriqués à partir d'un organisme vivant, comme un vaccin), autorisés depuis 2011 ;
+- les médicaments biologiques (fabriqués à partir d'un organisme vivant, comme un vaccin), autorisés dans l'Union européenne depuis 2011 ;
 - les médicaments pour lesquels les autorités demandent d'autres études, par exemple sur un usage de longue durée.
 
 ### Combien de temps dure cette surveillance ?

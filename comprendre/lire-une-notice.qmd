@@ -98,7 +98,7 @@ Il peut quand même venir du médicament. Parlez-en à votre médecin ou à votr
 
 La notice change quand on apprend du nouveau sur un médicament. Celle de votre boîte peut donc être plus ancienne. La version à jour est sur la [base de données publique des médicaments](https://base-donnees-publique.medicaments.gouv.fr/). Ce site public est tenu par l'Agence nationale de sécurité du médicament et des produits de santé (ANSM). La Haute Autorité de santé et l'Assurance maladie y participent. Tapez le nom du médicament, puis ouvrez sa notice.
 
-Depuis l'automne 2025, un essai de deux ans est en cours sur certaines boîtes vendues en pharmacie. Elles portent un QR code (un carré à photographier avec un téléphone). Ce code ouvre directement la notice en ligne. La notice en papier reste dans la boîte.
+Depuis l'automne 2025, un essai de deux ans est en cours sur certaines boîtes vendues en pharmacie de ville. Elles portent un QR code (un carré à photographier avec un téléphone). Ce code ouvre directement la notice en ligne. La notice en papier reste dans la boîte.
 
 Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
 
