@@ -1426,6 +1426,8 @@ a[href^="tel:"]::after {
 .page-404 .mascotte-404 { float: right; width: 150px; margin: 0 0 1rem 1.5rem; }
 .vigiking-entete, .etat-vide { display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.25rem; }
 .vigiking-entete > p, .etat-vide > p { margin: 0; }
+// Pandoc wraps the <img> of .vigiking-entete in a paragraph: that paragraph keeps its width.
+.vigiking-entete > p:first-child { flex: none; }
 .vigiking-entete .mascotte { width: 84px; }
 .etat-vide .mascotte { width: 60px; }
 // Quarto's "no results" box is 60 px high: room for the mascot above the words.
