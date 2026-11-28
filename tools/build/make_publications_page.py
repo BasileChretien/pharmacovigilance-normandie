@@ -22,11 +22,22 @@ DATA = ROOT / "data" / "publications.json"
 OUT = ROOT / "_includes" / "publications.md"
 SOURCES = '<a href="https://orcid.org/">ORCID</a> et <a href="https://openalex.org/">OpenAlex</a>'
 EQUIPES = {"caen": "Caen", "rouen": "Rouen"}
+# The mascot in the list's empty states (docs/mascotte/README.md), decorative. The path is
+# relative to crpv/recherche.qmd, the only page that includes this list.
+MASCOTTE = (
+    '<img class="mascotte" src="../assets/img/mascotte.svg" alt="" aria-hidden="true" '
+    'width="60" height="70">'
+)
 
 
 def _p(cls: str, content: str, lang: str | None = None) -> str:
     attr = f' lang="{lang}"' if lang else ""
     return f'<p class="{cls}"{attr}>{content}</p>'
+
+
+def _vide(content: str) -> str:
+    """An empty state: the mascot beside its message."""
+    return f'<div class="etat-vide">{MASCOTTE}{content}</div>'
 
 
 def _date(iso: str) -> str:
@@ -72,15 +83,20 @@ def liste(data: dict | None) -> str:
     """HTML of the list, preceded by the date and sources it was read from."""
     data = data or {}
     if not data.get("membres"):
-        return _p(
-            "fil-releve",
-            "La liste se remplira d'elle-même quand des membres des équipes auront publié "
-            "leur carte, avec leur accord écrit et leur identifiant ORCID.",
+        return _vide(
+            _p(
+                "fil-releve",
+                "La liste se remplira d'elle-même quand des membres des équipes auront "
+                "publié leur carte, avec leur accord écrit et leur identifiant ORCID.",
+            )
         )
     non_lus = set(data.get("non_lus") or [])
     if not data.get("releve_le") or non_lus >= set(data["membres"]):
-        return _p(
-            "fil-releve", f"Cette liste n'a pas encore pu être relevée sur {SOURCES}."
+        return _vide(
+            _p(
+                "fil-releve",
+                f"Cette liste n'a pas encore pu être relevée sur {SOURCES}.",
+            )
         )
     releve = _p(
         "fil-releve",
@@ -96,7 +112,7 @@ def liste(data: dict | None) -> str:
             "liste.",
         )
     if not data["publications"]:
-        return releve + "\n" + _p("fil-releve", "Aucune publication relevée.")
+        return releve + "\n" + _vide(_p("fil-releve", "Aucune publication relevée."))
     items = "\n".join(_item(p) for p in data["publications"])
     return releve + '\n<ul class="fil-alertes">\n' + items + "\n</ul>"
 

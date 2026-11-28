@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280" width="240" height="280" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" fill="currentColor" stroke-linejoin="round" stroke-linecap="round">
+  <!-- Mascot sketch 3: the Norman with the pill shield holds a long vial as a sword, in salute.
+       Fixed colours (tokens of assets/theme.scss) with a white sticker edge: placed as an <img>,
+       it reads the same on the light page, the dark theme and under Dark Reader (docs/mascotte/README.md). -->
+  <defs>
+    <clipPath id="mascotte-fiole-tunique"><path d="M92 134 Q120 128 148 134 L156 150 L164 214 Q120 222 76 214 L84 150 Z"/></clipPath>
+    <clipPath id="mascotte-fiole-barbe"><path d="M90 104 Q90 134 120 141 Q150 134 150 104 Q147 117 137 120 Q128 115 120 117 Q112 115 103 120 Q93 117 90 104 Z"/></clipPath>
+  </defs>
+
+  <!-- Sticker edge: the silhouette, drawn wide in white behind everything -->
+  <g fill="#ffffff" stroke="#ffffff" stroke-width="13">
+    <path d="M88 136 L66 236 Q120 246 178 236 L152 136 Z"/>
+    <path d="M82 92 C82 62 100 42 120 30 C140 42 158 62 158 92 Z"/>
+    <rect x="81" y="80" width="78" height="13"/>
+    <circle cx="89" cy="106" r="6.5"/><circle cx="151" cy="106" r="6.5"/>
+    <path d="M90 88 V104 Q90 130 120 132 Q150 130 150 104 V88 Z"/>
+    <path d="M90 104 Q90 134 120 141 Q150 134 150 104 Z"/>
+    <path d="M92 134 Q120 128 148 134 L156 150 L164 214 Q120 222 76 214 L84 150 Z"/>
+    <rect x="100" y="206" width="16" height="48"/><rect x="124" y="206" width="16" height="48"/>
+    <path d="M96 263 Q95 252 104 252 H118 V263 Z"/><path d="M122 252 H136 Q145 252 144 263 H122 Z"/>
+    <circle cx="168" cy="189" r="44"/><circle cx="168" cy="182" r="44"/>
+    <path d="M95.4 136.1 L75.4 118.1 A8 8 0 0 0 64.6 129.9 L84.6 147.9 A8 8 0 0 0 95.4 136.1 Z"/>
+    <g transform="rotate(-8 70 124)">
+      <rect x="64" y="113" width="12" height="35" rx="4"/>
+      <path d="M61 107 V28 A9 9 0 0 1 79 28 V107 Z"/>
+      <rect x="54" y="105" width="32" height="9" rx="4.5"/>
+    </g>
+    <path d="M38 25 Q39.5 32.5 47 34 Q39.5 35.5 38 43 Q36.5 35.5 29 34 Q36.5 32.5 38 25 Z"/>
+    <circle cx="70" cy="124" r="9.5"/>
+  </g>
+
+  <ellipse cx="122" cy="266" rx="66" ry="6" fill="#dcebf3"/>
+
+  <!-- Cloak -->
+  <path d="M88 136 L66 236 Q120 246 178 236 L152 136 Z" fill="#0d4a5e" stroke="#10283a" stroke-width="4"/>
+
+  <!-- Legs with criss-cross bindings, as on the Bayeux Tapestry -->
+  <g fill="#d5e2ea" stroke="#10283a" stroke-width="3.5">
+    <rect x="100" y="206" width="16" height="48"/>
+    <rect x="124" y="206" width="16" height="48"/>
+  </g>
+  <path d="M100 216 L116 228 L100 240 L116 252 M116 216 L100 228 L116 240 L100 252 M124 216 L140 228 L124 240 L140 252 M140 216 L124 228 L140 240 L124 252" fill="none" stroke="#10283a" stroke-width="2"/>
+  <g fill="#10283a" stroke="#10283a" stroke-width="3">
+    <path d="M96 263 Q95 252 104 252 H118 V263 Z"/>
+    <path d="M122 252 H136 Q145 252 144 263 H122 Z"/>
+  </g>
+
+  <!-- Tunic: flat colour with laid-work threads, embroidered hem, belt -->
+  <path d="M92 134 Q120 128 148 134 L156 150 L164 214 Q120 222 76 214 L84 150 Z" fill="#0a5c9e"/>
+  <path clip-path="url(#mascotte-fiole-tunique)" d="M80 128 V224 M87 128 V224 M94 128 V224 M101 128 V224 M108 128 V224 M115 128 V224 M122 128 V224 M129 128 V224 M136 128 V224 M143 128 V224 M150 128 V224 M157 128 V224" fill="none" stroke="#073f6e" stroke-width="1.5"/>
+  <path d="M77.5 202 H162.5 L164 214 Q120 222 76 214 Z" fill="#e7b03b"/>
+  <path d="M80 213 L86 204 M88 213 L94 204 M96 213 L102 204 M104 213 L110 204 M112 213 L118 204 M120 213 L126 204 M128 213 L134 204 M136 213 L142 204 M144 213 L150 204 M152 213 L158 204" fill="none" stroke="#7a4f00" stroke-width="2"/>
+  <path d="M77.5 202 H162.5" fill="none" stroke="#10283a" stroke-width="2.5"/>
+  <path d="M92 134 Q120 128 148 134 L156 150 L164 214 Q120 222 76 214 L84 150 Z" fill="none" stroke="#10283a" stroke-width="4"/>
+  <path d="M81.4 171 H158.6 L159.8 180 H80.2 Z" fill="#10283a"/>
+  <rect x="112" y="168.5" width="14" height="14" rx="2" fill="#e7b03b" stroke="#10283a" stroke-width="2.5"/>
+
+  <!-- Head: face left as bare linen (as on the Tapestry), short gold beard -->
+  <g fill="#ffffff" stroke="#10283a" stroke-width="3.5">
+    <circle cx="89" cy="106" r="6.5"/>
+    <circle cx="151" cy="106" r="6.5"/>
+  </g>
+  <path d="M90 88 V104 Q90 130 120 132 Q150 130 150 104 V88 Z" fill="#ffffff" stroke="#10283a" stroke-width="4"/>
+  <path d="M90 104 Q90 134 120 141 Q150 134 150 104 Q147 117 137 120 Q128 115 120 117 Q112 115 103 120 Q93 117 90 104 Z" fill="#e7b03b"/>
+  <path clip-path="url(#mascotte-fiole-barbe)" d="M98 116 Q102 130 112 138 M108 120 Q111 132 117 140 M132 120 Q129 132 123 140 M142 116 Q138 130 128 138" fill="none" stroke="#7a4f00" stroke-width="1.5"/>
+  <path d="M90 104 Q90 134 120 141 Q150 134 150 104 Q147 117 137 120 Q128 115 120 117 Q112 115 103 120 Q93 117 90 104 Z" fill="none" stroke="#10283a" stroke-width="3.5"/>
+  <path d="M113 125 Q120 130 127 125" fill="none" stroke="#10283a" stroke-width="2.5"/>
+
+  <!-- Norman helmet with nose guard: no horns -->
+  <path d="M82 92 C82 62 100 42 120 30 C140 42 158 62 158 92 Z" fill="#dcebf3" stroke="#10283a" stroke-width="4"/>
+  <path d="M95 74 Q97 56 110 45" fill="none" stroke="#ffffff" stroke-width="4"/>
+  <path d="M116.5 37 L120 31 L123.5 37 V80 H116.5 Z" fill="#e7b03b" stroke="#10283a" stroke-width="2.5"/>
+  <rect x="81" y="80" width="78" height="13" rx="4" fill="#e7b03b" stroke="#10283a" stroke-width="3.5"/>
+  <g fill="#10283a">
+    <circle cx="91" cy="86.5" r="2"/><circle cx="104" cy="86.5" r="2"/><circle cx="136" cy="86.5" r="2"/><circle cx="149" cy="86.5" r="2"/>
+  </g>
+  <path d="M116 92 H124 V108 Q124 112 120 112 Q116 112 116 108 Z" fill="#dcebf3" stroke="#10283a" stroke-width="3"/>
+  <circle cx="120" cy="86.5" r="2" fill="#10283a"/>
+  <g fill="#10283a">
+    <circle cx="104" cy="103" r="4.2"/><circle cx="136" cy="103" r="4.2"/>
+  </g>
+  <g fill="#ffffff">
+    <circle cx="105.5" cy="101.5" r="1.4"/><circle cx="137.5" cy="101.5" r="1.4"/>
+  </g>
+
+  <!-- Shield: a scored tablet seen from above; the score line is the join of its boards -->
+  <circle cx="168" cy="189" r="44" fill="#dcebf3" stroke="#10283a" stroke-width="4"/>
+  <circle cx="168" cy="182" r="44" fill="#eef6fa" stroke="#10283a" stroke-width="4"/>
+  <circle cx="168" cy="182" r="36" fill="#ffffff" stroke="#dcebf3" stroke-width="2"/>
+  <path d="M154 148.8 V215.2 M182 148.8 V215.2 M140 159.4 V204.6 M196 159.4 V204.6" fill="none" stroke="#d5e2ea" stroke-width="2"/>
+  <path d="M165 146.1 V217.9 H171 V146.1 Z" fill="#dcebf3" stroke="#10283a" stroke-width="2.5"/>
+  <circle cx="168" cy="182" r="12" fill="#e7b03b" stroke="#10283a" stroke-width="3.5"/>
+  <path d="M161.5 179 Q163 173.5 168.5 172.5" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+
+  <!-- Arm raised, holding a long vial as a sword, in salute -->
+  <path d="M95.4 136.1 L75.4 118.1 A8 8 0 0 0 64.6 129.9 L84.6 147.9 A8 8 0 0 0 95.4 136.1 Z" fill="#0a5c9e" stroke="#10283a" stroke-width="4"/>
+  <g transform="rotate(-8 70 124)">
+    <rect x="64" y="113" width="12" height="35" rx="4" fill="#fdf1d8" stroke="#10283a" stroke-width="3"/>
+    <g fill="#e7b03b"><circle cx="67.5" cy="138" r="1.4"/><circle cx="72.5" cy="141.5" r="1.4"/><circle cx="68.5" cy="144.5" r="1.4"/></g>
+    <path d="M61 107 V28 A9 9 0 0 1 79 28 V107 Z" fill="#eef6fa"/>
+    <path d="M62.5 68 Q70 73 77.5 68 V107 H62.5 Z" fill="#bfe3ee"/>
+    <g fill="#ffffff"><circle cx="66.5" cy="95" r="2"/><circle cx="72" cy="83" r="1.5"/></g>
+    <path d="M72 40 H77.5 M74.5 50 H77.5 M72 60 H77.5 M74.5 70 H77.5 M72 80 H77.5 M74.5 90 H77.5 M72 100 H77.5" fill="none" stroke="#46586a" stroke-width="1.75"/>
+    <path d="M65.5 34 V58" fill="none" stroke="#ffffff" stroke-width="3"/>
+    <path d="M61 107 V28 A9 9 0 0 1 79 28 V107 Z" fill="none" stroke="#10283a" stroke-width="3.5"/>
+    <rect x="54" y="105" width="32" height="9" rx="4.5" fill="#e7b03b" stroke="#10283a" stroke-width="3"/>
+  </g>
+  <path d="M38 25 Q39.5 32.5 47 34 Q39.5 35.5 38 43 Q36.5 35.5 29 34 Q36.5 32.5 38 25 Z" fill="#e7b03b" stroke="#10283a" stroke-width="2"/>
+  <circle cx="70" cy="124" r="9.5" fill="#ffffff" stroke="#10283a" stroke-width="3.5"/>
+  <path d="M64 122.5 Q70 119.5 76 122.5 M64 127 Q70 124 76 127" fill="none" stroke="#10283a" stroke-width="2"/>
+</svg>

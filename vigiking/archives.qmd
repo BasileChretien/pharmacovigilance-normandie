@@ -15,7 +15,11 @@ pour_aller_plus_loin:
     site: rfcrpv
 ---
 
+::: {.vigiking-entete}
+<img class="mascotte" src="../assets/img/mascotte.svg" alt="" aria-hidden="true" width="84" height="98">
+
 Tapez un mot pour retrouver les numéros qui en parlent, par exemple *benzodiazépines*, *opioïdes* ou *vaccin*. Chaque numéro s'ouvre en PDF sur le site du réseau des CRPV. Pour chercher dans les bulletins de tous les centres de France, utilisez CRPVue (lien plus bas).
+:::
 
 {{< include ../_includes/vigiking-releve.md >}}
 

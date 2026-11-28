@@ -1,0 +1,37 @@
+<script>
+// The mascot in the empty state of the site search (docs/mascotte/README.md; tests:
+// tests/js/mascotte-recherche.test.mjs). When a search finds nothing, the mascot stands above
+// Quarto's "no results" text. Decorative: alt="" and aria-hidden. Medicine, alert and
+// serious-harm pages keep a plain empty box (tests/test_mascotte.py).
+(function () {
+  "use strict";
+  // Medicine and class sheets, pregnancy, safety alerts, serious harm.
+  var SANS_MASCOTTE = /\/(medicaments|actualites)\/|\/normandie\/cas-marquants\.html$|\/que-faire-effet-indesirable\.html$/;
+  var VIDE = ".quarto-search-no-results:not(.no-query)";
+
+  // Quarto's offset from the page to the site root ("../", or an absolute path on the 404 page).
+  function source(doc) {
+    var meta = doc.querySelector('meta[name="quarto:offset"]');
+    return (meta ? meta.getAttribute("content") : "./") + "assets/img/mascotte.svg";
+  }
+
+  function orner(doc) {
+    doc.querySelectorAll(VIDE).forEach(function (vide) {
+      if (vide.querySelector(".mascotte")) { return; }
+      var img = doc.createElement("img");
+      img.className = "mascotte";
+      img.setAttribute("src", source(doc));
+      img.setAttribute("alt", "");
+      img.setAttribute("aria-hidden", "true");
+      img.setAttribute("width", "60");
+      img.setAttribute("height", "70");
+      vide.insertBefore(img, vide.firstChild);
+    });
+  }
+
+  if (SANS_MASCOTTE.test(window.location.pathname)) { return; }
+  // The search panel is drawn and redrawn as the reader types.
+  new window.MutationObserver(function () { orner(document); })
+    .observe(document.body, { childList: true, subtree: true });
+})();
+</script>

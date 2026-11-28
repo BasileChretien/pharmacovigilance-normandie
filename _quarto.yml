@@ -130,6 +130,8 @@ format:
             a.href += "&body=" + encodeURIComponent("Page : " + window.location.href + "\n\nCorrection proposée :\n");
           });
           </script>
+      # The mascot in the empty state of the search (docs/mascotte/README.md).
+      - file: _includes/mascotte-recherche.html
     include-before-body:
       - text: |
           <a class="lien-evitement" href="#quarto-document-content">Aller au contenu</a>

@@ -38,6 +38,9 @@ par page (`docs/relecture.md`).
       (`crpv/enseignement.qmd`).
 - [ ] Recevoir Vigiking : confirmer l'adresse provisoire, puis choisir l'outil d'envoi.
 - [ ] Logos : validation, et fichiers officiels (logo propre au CRPV de Rouen s'il existe).
+- [ ] Mascotte (le Normand au bouclier-comprimé qui sonne du cor, `assets/img/mascotte.svg`) :
+      à faire approuver par les équipes des deux CRPV et les services communication des CHU
+      avant la mise en ligne, comme les logos (`docs/mascotte/README.md`).
 - [ ] Membres des équipes : accord écrit, photo, biographie, lien SigmaCV.
 - [ ] Rubriques à remplir : chiffres de la région, cas marquants, priorités régionales,
       formations, liens d'intérêts.
