@@ -11,22 +11,22 @@ prochaine_relecture: null
 sources:
   - titre: "Base de données publique des médicaments, RCP et notice de ZOLOFT 50 mg, gélule (sertraline, CIS 60683198)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/60683198/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Base de données publique des médicaments, RCP et notice de SEROPLEX 10 mg, comprimé pelliculé sécable (escitalopram, CIS 67219535)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67219535/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Base de données publique des médicaments, RCP et notice d'EFFEXOR L.P. 75 mg, gélule à libération prolongée (venlafaxine, CIS 61403425)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/61403425/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Base de données publique des médicaments, RCP et notice de LAROXYL 25 mg, comprimé pelliculé (amitriptyline, CIS 65892928)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/65892928/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Base de données publique des médicaments, RCP et notice de NORSET 15 mg, comprimé pelliculé (mirtazapine, CIS 65124914)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/65124914/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
     url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "3114, numéro national de prévention du suicide"
     url: "https://3114.fr/"
     consulte_le: 2026-11-25
@@ -76,7 +76,7 @@ En cas d'oubli, ne prenez pas de dose double. Prenez la dose suivante à l'heure
 
 Ils sont plus fréquents les premières semaines et diminuent souvent ensuite. Avec la sertraline, plus de 1 personne sur 10 a des nausées, une diarrhée, des vertiges, des maux de tête, une insomnie ou une somnolence.
 
-Les troubles sexuels sont fréquents : baisse du désir, difficulté à éjaculer. Ils durent parfois après l'arrêt. Parlez-en à votre médecin.
+Les troubles sexuels sont fréquents : baisse du désir, difficulté à éjaculer. Des cas de troubles qui ont duré après l'arrêt ont été rapportés. Parlez-en à votre médecin.
 
 Les tricycliques peuvent donner une bouche sèche, une constipation et des vertiges en se levant. La mirtazapine donne souvent envie de dormir et fait prendre du poids.
 
@@ -134,16 +134,16 @@ Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-s
 
 ### Points clés de sécurité
 
-- **Délai d'action** : 2 à 4 semaines ; poursuite au moins 6 mois après la rémission (RCP escitalopram, amitriptyline).
+- **Délai d'action** : 2 à 4 semaines ; poursuite au moins 6 mois après la disparition des symptômes (RCP escitalopram ; « généralement jusqu'à 6 mois après la rémission » pour l'amitriptyline).
 - **Risque suicidaire** : surveillance étroite jusqu'à l'amélioration, le risque pouvant augmenter en début de rétablissement ; vigilance accrue chez l'enfant et l'adolescent.
 - **Symptômes d'arrêt** : fréquents, surtout après arrêt brutal (sertraline : 23 % à l'arrêt contre 12 % en poursuite). Vertiges, paresthésies, troubles du sommeil, anxiété, nausées, tremblements, céphalées ; en général dans les premiers jours, résolutifs en 2 semaines, parfois 2 à 3 mois ou plus. Décroissance sur au moins 1 à 2 semaines, voire plusieurs semaines ou mois selon le patient.
 - **Syndrome sérotoninergique** : signes digestifs, neuropsychiques, moteurs (myoclonies, hyperréflexie) et végétatifs (hyperthermie, tachycardie) ; arrêt immédiat.
 - **Hyponatrémie** par SIADH (ISRS, IRSN, plus rarement mirtazapine) : sujet âgé, diurétiques, déplétion volémique ; natrémies < 110 mmol/L rapportées.
 - **Saignements** (ISRS, IRSN), y compris hémorragie du post-partum.
 - **QT** : escitalopram contre-indiqué en cas d'allongement du QT congénital ou acquis.
-- **Autres** : dysfonction sexuelle parfois persistante après l'arrêt ; glaucome aigu par fermeture de l'angle ; hausse dose-dépendante de la pression artérielle sous venlafaxine.
+- **Autres** : dysfonction sexuelle (des cas persistant après l'arrêt d'un ISRS ont été rapportés) ; glaucome aigu par fermeture de l'angle ; hausse dose-dépendante de la pression artérielle sous venlafaxine.
 - **Tricycliques** : contre-indiqués après un infarctus récent, en cas de trouble de conduction ou de rythme, d'insuffisance coronarienne. Effets atropiniques (rétention urinaire, glaucome, constipation), hypotension orthostatique du sujet âgé. Toxicité grave en surdosage (élargissement du QRS, arythmies) dès 750 mg chez l'adulte ; enfants très sensibles.
-- **Mirtazapine** : agranulocytose très rare, parfois fatale (surtout après 65 ans) ; arrêter et faire une NFS devant fièvre, angine ou stomatite.
+- **Mirtazapine** : agranulocytose très rare, parfois fatale (décès surtout après 65 ans) ; arrêter et faire une NFS devant fièvre, angine ou stomatite.
 
 ### Surveillance
 
