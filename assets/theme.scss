@@ -130,9 +130,14 @@ summary:focus-visible,
 // ---------- Navigation ----------------------------------------------------
 
 // A thin strip of the logo gradient: the one place the gradient appears in the chrome.
+// Drawn in the padding, not as a border: Quarto sizes the page's top margin from the
+// header's clientHeight, which leaves borders out (the strip hid 4 px of the page).
+// The width cap: when a page is wider than a phone's screen, Chrome widens the box of fixed
+// elements to the page, and the search and the menu went past the screen's edge with it.
 #quarto-header {
-  border-top: 4px solid transparent;
-  border-image: linear-gradient(90deg, $pv-cyan, $pv-green) 1;
+  padding-top: 4px;
+  background: linear-gradient(90deg, $pv-cyan, $pv-green) top / 100% 4px no-repeat;
+  max-width: 100vw;
 }
 
 .navbar {
@@ -155,23 +160,84 @@ summary:focus-visible,
   color: $pv-ink;
 }
 
-@media (max-width: 575.98px) {
-  .navbar-brand .navbar-title {
-    white-space: normal;
-    overflow: visible;
-    text-overflow: clip;
-    font-size: 1rem;
-    line-height: 1.1;
-  }
-  .navbar-brand-container { max-width: 58vw; }
-  .navbar > .container-fluid { flex-wrap: nowrap; }
-  .quarto-announcement { font-size: 0.8rem; padding: 0.3rem 0.75rem; }
-}
-
 .navbar-logo {
   width: 34px;
   height: 34px;
   max-height: none;
+}
+
+// Below 1200 px the links sit behind the menu button. First row: the button, the logo and
+// the site name, the theme switch, the search; the opened menu takes a row of its own below
+// (Bootstrap wraps the row; the menu's flex-basis is 100 %). The name gives way, never the
+// logo or the buttons: it was the search that went off the screen at 320 px, and the logo
+// that was squeezed to 18 px.
+@media (max-width: 1199.98px) {
+  // A zero basis: the name shares what the buttons leave, instead of pushing them to a
+  // second row (a wrapping row moves whole items before it shrinks any).
+  .navbar .navbar-brand-container {
+    flex: 1 1 0;
+    max-width: none;
+    min-width: 0;
+  }
+  .navbar-brand-logo,
+  .navbar-toggler,
+  #quarto-search,
+  .quarto-navbar-tools { flex-shrink: 0; }
+  // One scroll area for the opened menu, as tall as the screen allows: on a phone held
+  // sideways the last links stayed below the bottom of the fixed header. The lists' padding
+  // leaves room for the focus ring, which the scrolling box would cut (on the lists, not on
+  // the box, so that Bootstrap's opening animation starts from nothing).
+  .navbar .navbar-collapse {
+    max-height: calc(100vh - 4.5rem);
+    max-height: calc(100dvh - 4.5rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    margin-top: 0.4rem;
+    border-top: 1px solid $pv-rule;
+  }
+  .navbar .navbar-nav-scroll {
+    max-height: none;
+    overflow: visible;
+    padding: 0 0.4rem;
+  }
+  .navbar .navbar-nav-scroll:first-child { padding-top: 0.35rem; }
+  .navbar .navbar-nav-scroll:last-child { padding-bottom: 0.6rem; }
+  // Opened, the bar is opaque: the page's text showed through the menu.
+  .navbar:has(.navbar-collapse.show, .navbar-collapse.collapsing) { background: $pv-paper !important; }
+  // Rows of 44 px or more, easy to tap; the two buttons keep the width of their text.
+  .navbar .navbar-collapse .nav-link { padding: 0.55rem 0.9rem !important; }
+  .navbar .navbar-collapse .nav-link[href$="declarer.html"],
+  .navbar .navbar-collapse .nav-link[href$="poser-une-question.html"] {
+    display: inline-block;
+    margin: 0.35rem 0 0;
+  }
+}
+
+// Phones: a lower bar, and the site name on two lines next to a full-size logo.
+@media (max-width: 575.98px) {
+  .navbar {
+    padding: 0.3rem 0.25rem !important;
+  }
+  .navbar > .container-fluid { padding-left: 0.75rem; padding-right: 0.75rem; }
+  .navbar .navbar-toggler { margin-right: 0.35rem; }
+  .navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .navbar-brand:not(.navbar-brand-logo) { margin-right: 0.5rem; }
+  .navbar-brand .navbar-title {
+    display: block;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    font-size: 1rem;
+    line-height: 1.05;
+  }
+}
+// 320 px: "Pharmacovigilance" needs 133 px at this size.
+@media (max-width: 359.98px) {
+  .navbar > .container-fluid { padding-left: 0.5rem; padding-right: 0.5rem; }
+  .navbar-brand .navbar-title { font-size: 0.8rem; }
 }
 
 .navbar .nav-link {
@@ -230,18 +296,42 @@ summary:focus-visible,
   color: $pv-ink-quiet !important;
 }
 
-// Prototype notice under the navbar: present, but quiet. Quarto renders it as
-// #quarto-announcement.alert-warning: without the id, Bootstrap's yellow showed instead.
-.quarto-announcement,
+// Bootstrap's focus shadow on navigation links was a faint halo, and the menu button kept a
+// thick dark one after a tap: the site's ring instead, for the keyboard only.
+.navbar .nav-link:focus-visible,
+.navbar .navbar-toggler:focus-visible {
+  outline: 3px solid $pv-signal;
+  outline-offset: 2px;
+  box-shadow: none;
+}
+.navbar .navbar-toggler:focus:not(:focus-visible) { box-shadow: none; }
+
+// Prototype notice: present, but quiet. Quarto renders it as #quarto-announcement.alert-warning
+// (without the id, Bootstrap's yellow showed instead). tools/build/entete_postprocess.py
+// moves it out of the fixed header, just after it: it opens every page, then scrolls away.
 #quarto-announcement {
   background: $pv-amber-tint !important;
   color: $pv-amber !important;
   border: none !important;
+  border-bottom: 1px solid rgba($pv-amber, 0.18) !important;
+  border-radius: 0;
   font-size: 0.85rem;
-  padding: 0.4rem 1rem;
+  line-height: 1.45;
+  // Lined up with the logo of the bar above.
+  padding: 0.4rem 1.75rem;
 }
-.quarto-announcement a,
 #quarto-announcement a { color: $pv-amber; }
+// Phones: three lines at 390 px, so that bar and notice keep under 15 % of the screen.
+@media (max-width: 575.98px) {
+  #quarto-announcement {
+    font-size: 0.8rem;
+    line-height: 1.35;
+    padding: 0.3rem 1rem;
+  }
+}
+@media (max-width: 359.98px) {
+  #quarto-announcement { padding-left: 0.75rem; padding-right: 0.75rem; }
+}
 
 // ---------- Title banner of content pages ----------------------------------
 
@@ -1517,7 +1607,6 @@ a[href^="tel:"]::after {
 // round 2: four testers had to scroll to reach them). The intro sentence is dropped there;
 // the surtitle already names the two centres.
 @media (max-width: 575.98px) {
-  .quarto-announcement { font-size: 0.85rem; padding-top: 0.35rem; padding-bottom: 0.35rem; }
   .hero { padding: 1rem 0 1rem; }
   .hero-surtitre { margin-bottom: 0.4rem; }
   .hero h1 { font-size: 2.1rem; margin-bottom: 0; }
@@ -1668,7 +1757,7 @@ a[href^="tel:"]::after {
 }
 
 @media print {
-  #quarto-header, .quarto-announcement, .nav-footer, #quarto-margin-sidebar,
+  #quarto-header, #quarto-announcement, .nav-footer, #quarto-margin-sidebar,
   .lien-evitement, .imprimer, .versions, #quarto-back-to-top, .quarto-title-banner .quarto-title-meta {
     display: none !important;
   }
