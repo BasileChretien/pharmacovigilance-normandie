@@ -6,9 +6,10 @@ name: pages
 on:
   push:
     branches: [main]
-  # Mondays: rebuilds the site so the official alerts feed is read again
-  # (actualites/posts/alertes-officielles.qmd). GitHub pauses schedules after 60 days
-  # without activity on the repository: re-enable it from the Actions tab.
+  # Mondays: rebuilds the site so the official alerts feed
+  # (actualites/posts/alertes-officielles.qmd) and the teams' publications are read again.
+  # GitHub pauses schedules after 60 days without activity on the repository: re-enable
+  # it from the Actions tab.
   schedule:
     - cron: "17 5 * * 1"
   workflow_dispatch:
@@ -37,6 +38,13 @@ jobs:
         run: |
           python3 tools/build/fetch_alertes.py || echo "::warning::Official alerts feed: a site did not answer; its previous list is kept."
           python3 tools/build/make_alertes_page.py
+      # Reads ORCID and OpenAlex again for the members whose card gives an ORCID iD
+      # (crpv/recherche.qmd). A site that does not answer keeps the list committed in
+      # data/publications.json, without the works of members whose card has gone.
+      - name: Refresh the teams' publications
+        run: |
+          python3 tools/build/fetch_publications.py || echo "::warning::Publications: ORCID or OpenAlex did not answer; the previous list is kept."
+          python3 tools/build/make_publications_page.py
       # The post-render script (tools/build/search_postprocess.py) uses the runner's python3.
       - name: Render the site
         run: quarto render
