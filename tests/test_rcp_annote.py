@@ -90,8 +90,15 @@ def _cle(numero: str) -> tuple[int, ...]:
 def test_the_page_sections_follow_the_smpc_order_and_each_has_both_notes():
     sections = _sections()
     assert len(sections) >= 15, "the annotated SmPC is expected on the page"
-    cles = [_cle(numero) for numero, _, _ in sections]
-    assert cles == sorted(cles), [numero for numero, _, _ in sections]
+    # Numbered sections in order, then what the SmPC prints without a number (the
+    # delivery conditions), marked "—".
+    numeros = [numero for numero, _, _ in sections]
+    sans_numero = [i for i, numero in enumerate(numeros) if numero == "—"]
+    assert sans_numero == list(range(len(numeros) - len(sans_numero), len(numeros))), (
+        numeros
+    )
+    cles = [_cle(numero) for numero in numeros if numero != "—"]
+    assert cles == sorted(cles), numeros
     # Short numbers: they fit the first column of each line (theme.scss, .rcp-ligne).
     assert all(len(numero) <= 5 for numero, _, _ in sections)
     for numero, _, note in sections:
@@ -104,3 +111,10 @@ def test_the_page_cites_the_smpc_it_annotates():
     assert (
         "base-donnees-publique.medicaments.gouv.fr/medicament/68634000/extrait" in texte
     )
+
+
+def test_the_plan_runs_to_the_end_of_the_smpc():
+    numeros = [numero for numero, _, _ in _sections()]
+    titres = [titre for _, titre, _ in _sections()]
+    assert numeros[-2:] == ["11-12", "—"], numeros
+    assert titres[-1].startswith("Conditions de prescription et de délivrance")
