@@ -6,21 +6,39 @@ statut: brouillon
 relu_par: null
 relu_le: null
 prochaine_relecture: null
+sources:
+  - titre: "Loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, article 1-1 (identification de l'éditeur et de l'hébergeur)"
+    url: "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000049568614"
+    consulte_le: 2026-11-28
+  - titre: "Règlement général sur la protection des données, article 13 (informations à fournir), texte publié par la CNIL"
+    url: "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre3"
+    consulte_le: 2026-11-28
+  - titre: "CNIL, Cookies : solutions pour les outils de mesure d'audience (04/07/2025)"
+    url: "https://www.cnil.fr/fr/cookies-solutions-pour-les-outils-de-mesure-daudience"
+    consulte_le: 2026-11-28
 ---
 
 **Prototype non officiel.** Les mentions ci-dessous sont à compléter et à valider par les directions de la communication et des affaires juridiques des CHU de Caen et de Rouen.
 
 ## Éditeur
 
-[À compléter : établissement éditeur, adresse, directeur de la publication.]
+[À compléter : établissement éditeur (dénomination, siège social, numéro de téléphone) et nom du directeur de la publication.]
 
 ## Hébergement
 
-[À compléter : hébergeur, adresse.]
+Le prototype est publié sur GitHub Pages. [À compléter : nom, adresse et numéro de téléphone de l'hébergeur du site.]
+
+Ces informations sont celles que demande l'article 1-1 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique.
 
 ## Données personnelles
 
-Le site ne collecte aucune donnée de santé. Il ne dépose pas de cookie publicitaire. La mesure d'audience utilise Matomo, configuré pour l'exemption de consentement de la CNIL [à mettre en place]. L'inscription à Vigiking demande seulement une adresse électronique, avec double confirmation et désinscription en un clic [à mettre en place].
+Le site ne collecte aucune donnée de santé. Le formulaire « Trouver votre centre » et la page « Chercher un médicament » fonctionnent sur votre appareil : ce que vous y tapez n'est envoyé nulle part. La recherche du site se fait aussi sur votre appareil, mais quand vous ouvrez un résultat, les mots cherchés figurent dans l'adresse de la page ouverte : l'hébergeur les reçoit avec la demande de cette page. Les polices sont hébergées sur le site, sans appel à un service extérieur. Le site ne dépose pas de cookie publicitaire. [À préciser avec l'hébergeur : les données de connexion, comme l'adresse IP, qu'il enregistre.]
+
+La mesure d'audience utilisera Matomo, réglé selon les conditions de la CNIL pour être dispensé de consentement : mesure de l'audience du seul site, statistiques anonymes, aucun recoupement avec d'autres données ni transmission à des tiers, information des visiteurs. Les traceurs auront une durée de vie de 13 mois au plus et les données seront conservées 25 mois au plus, comme le recommande la CNIL. [À mettre en place.]
+
+L'inscription à Vigiking demandera seulement une adresse électronique, avec double confirmation et désinscription en un clic. [À mettre en place.]
+
+Pour chaque traitement (inscription à Vigiking, mesure d'audience, messages reçus), cette page indiquera, comme le prévoit l'article 13 du règlement général sur la protection des données : le responsable du traitement et ses coordonnées, celles du délégué à la protection des données, la finalité et la base légale, les destinataires, la durée de conservation, vos droits (accès, rectification, effacement, limitation, opposition, et portabilité quand elle s'applique) et votre droit d'introduire une réclamation auprès de la CNIL. [À compléter avec les délégués à la protection des données.]
 
 Délégués à la protection des données : [à compléter pour chaque CHU].
 
@@ -28,4 +46,4 @@ Délégués à la protection des données : [à compléter pour chaque CHU].
 
 Les contenus du site sont publiés par les CRPV de Caen et de Rouen. Les sources reprises sont citées sur chaque page.
 
-La carte de la page d'accueil utilise des données publiques sous Licence Ouverte (Etalab) : les contours des départements (IGN Admin Express, contours administratifs Etalab 2024) et les populations légales des communes de l'INSEE, obtenues par [geo.api.gouv.fr](https://geo.api.gouv.fr).
+La carte de la page d'accueil utilise des données publiques sous Licence Ouverte (Etalab) : les contours des départements (IGN Admin Express, contours administratifs Etalab 2024) et les populations légales des communes de l'INSEE, obtenues par [geo.api.gouv.fr](https://geo.api.gouv.fr). La carte de la page [Les CRPV de Normandie](../normandie/carte.qmd) utilise les mêmes contours. La page [Les médicaments remboursés en Normandie](../normandie/medicaments-rembourses.qmd) utilise la base Open Medic de l'Assurance Maladie (Licence Ouverte) et les estimations de population de l'INSEE.

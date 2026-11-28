@@ -16,7 +16,7 @@ pour_aller_plus_loin:
     site: rfcrpv
 ---
 
-Les patients s'adressent au centre de leur domicile ; les professionnels de santé, au centre de leur lieu d'exercice.
+L'ANSM invite les patients à s'adresser au centre dont dépend leur domicile, et les professionnels de santé au centre de leur lieu d'exercice.
 
 ```{=html}
 <form id="trouver-crpv" class="trouver-crpv" hidden>

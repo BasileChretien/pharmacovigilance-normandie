@@ -45,7 +45,7 @@
     <rect x="64" y="328" width="316" height="56" rx="10" fill="#eef6fa"/>
     <circle cx="40" cy="356" r="16" fill="none" stroke="#073f6e" stroke-width="2.5"/>
     <text x="40" y="362" text-anchor="middle" font-weight="700" fill="#073f6e">5</text>
-    <text x="80" y="351" font-weight="700">Les cas graves partent</text>
+    <text x="80" y="351" font-weight="700">Grave ou non, le cas part</text>
     <text x="80" y="373">dans la base européenne</text>
   </g>
 
