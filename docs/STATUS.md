@@ -80,7 +80,7 @@ Prochaines pull requests, dans l'ordre (décidé le 27/11/2026) :
       12 175 médicaments commercialisés (BDPM du 20/11/2026, hors homéopathie : enregistrements homéopathiques et substances « pour préparations homéopathiques » ou « dynamisées »), chacun
       vers sa page officielle, et vers la fiche du site quand elle existe ; la recherche reste
       dans le navigateur. Index : `tools/build/make_bdpm_recherche.py`, à relancer chaque mois.
-- [ ] Lien « Signaler une correction » : adresse retenue pharmacovigilance@chu-caen.fr (fait).
+- [x] Lien « Signaler une correction » : adresse retenue pharmacovigilance@chu-caen.fr.
 - [x] Médicaments remboursés en Normandie (normandie/medicaments-rembourses.qmd) : Open Medic 2025
       et estimations INSEE, 12 familles liées aux fiches, standardisation directe sur l'âge
       (3 tranches) et le sexe ; à faire valider par les CRPV (méthode et commentaire).
@@ -92,7 +92,11 @@ Prochaines pull requests, dans l'ordre (décidé le 27/11/2026) :
       numéros, accord des auteurs pour leur nom.
 - [ ] Index de Vigiking par thème et hébergement des PDF sur le site : inventaire des numéros et
       accord des CRPV à obtenir ; sommaires de juillet 2017 à février 2019 à fournir.
-- [ ] Liste des publications générée depuis ORCID et OpenAlex.
+- [x] Liste des publications générée depuis ORCID et OpenAlex (28/11/2026) : crpv/recherche.qmd,
+      relevée chaque semaine pour les membres dont la carte (pages des équipes) donne
+      l'identifiant ORCID ; trois dernières années, articles, revues, lettres, éditoriaux
+      et chapitres, sans nom d'auteur. Vide tant qu'aucune carte n'est publiée. À décider
+      avec les CRPV : afficher les auteurs, et la période.
 - [x] Les 52 figures marquées `FIGURE À FAIRE` (28/11/2026) : 48 dessinées (comprendre 5, bon
       usage 5, fiches de classe 23, maux courants 11, situations 3, carte des départements
       générée depuis les contours officiels), style et contrôle dans `docs/regles-redaction.md`

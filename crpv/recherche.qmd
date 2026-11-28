@@ -8,7 +8,7 @@ relu_le: null
 prochaine_relecture: null
 ---
 
-Les publications des deux équipes seront listées ici et mises à jour automatiquement à partir d'ORCID et d'OpenAlex. Chaque membre a aussi sa page SigmaCV, liée depuis sa carte sur les pages [Équipe de Caen](equipe-caen.qmd) et [Équipe de Rouen](equipe-rouen.qmd).
+Les publications récentes des deux équipes sont relevées chaque semaine sur ORCID et OpenAlex : celles des membres dont la carte figure, avec leur accord, sur les pages [Équipe de Caen](equipe-caen.qmd) et [Équipe de Rouen](equipe-rouen.qmd). Chaque carte mène aussi à la page SigmaCV du membre.
 
 ## Projets en cours
 
@@ -16,4 +16,4 @@ Les publications des deux équipes seront listées ici et mises à jour automati
 
 ## Publications récentes
 
-[Liste générée automatiquement : à brancher sur ORCID et OpenAlex.]
+{{< include ../_includes/publications.md >}}
