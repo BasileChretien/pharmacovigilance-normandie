@@ -21,6 +21,7 @@ reviews it.
 - `uv run python tools/build/fetch_openmedic.py` then `make_openmedic.py` — yearly: reimbursed medicines in Normandy vs France (Open Medic + INSEE, cache `data/openmedic/`, gitignored) for normandie/medicaments-rembourses.qmd.
 - `uv run python tools/build/fetch_vigiking.py` then `make_vigiking_page.py` — at each new issue: archive of Vigiking issues (links to rfcrpv.fr) for vigiking/archives.qmd.
 - `uv run python tools/build/fetch_alertes.py` then `make_alertes_page.py` — refresh the official alerts feed (ANSM, EMA); the Pages build also runs both every Monday, stdlib only (runner's python3).
+- `uv run python tools/build/fetch_publications.py` then `make_publications_page.py` — teams' recent publications (crpv/recherche.qmd): ORCID iDs of the member cards on crpv/equipe-*.qmd, then ORCID and OpenAlex; also run by the Pages build. No author names on the page.
 
 Status and open tasks: `docs/STATUS.md`. Points for medical reviewers: `docs/relecture.md`.
 
