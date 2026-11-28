@@ -17,6 +17,9 @@ numéro :
    Word : le PDF (qui s'ouvre), la page web, et `vigiking-AAAA-MM - à vérifier.txt`, la
    liste de ce qui reste à corriger.
 
+Le mode d'emploi illustré est dans `guide/index.html` : un double-clic l'ouvre dans le
+navigateur.
+
 ## Ce qui se fait tout seul
 
 - Le mois, lu dans le sous-titre du document (« Octobre 2025 »).
@@ -115,6 +118,9 @@ Options de `fabriquer.py` : `--mois AAAA-MM` (si le sous-titre ne le donne pas),
 - `_extensions/vigiking/` : la mise en page (`typst-template.typ` pour le PDF, `vigiking.css`
   pour le web, `vigiking.lua` commun), les polices (`fonts/`, licence OFL) et la carte
   (`reseau.svg`, `reseau.typ`, générés).
+- `guide/` : le mode d'emploi illustré pour les auteurs (`index.html`, qui reprend les
+  polices de `_extensions/vigiking/fonts/`), avec des pages de `exemple/exemple.qmd` et d'un
+  numéro d'essai fait depuis Word (pages des références et du dos).
 - `commun/` (local, hors du dépôt) : logos, bandeau et dos repris dans chaque numéro.
 
 ## À décider avant d'aller plus loin
