@@ -138,7 +138,7 @@ Rechercher les signes de complication locorégionale (phlegmon péri-amygdalien,
 
 ### Stratégie thérapeutique
 
-Adulte (HAS 2021, actualisation 2024) : score de Mac Isaac (température > 38 °C : 1 ; absence de toux : 1 ; adénopathie cervicale antérieure douloureuse : 1 ; augmentation de volume ou exsudat amygdalien : 1 ; âge 15-44 ans : 0 ; > 45 ans : −1, cotation de la HAS).
+Adulte (HAS 2021, actualisation 2024) : score de Mac Isaac (température > 38 °C : 1 ; absence de toux : 1 ; adénopathie cervicale antérieure douloureuse : 1 ; augmentation de volume ou exsudat amygdalien : 1 ; âge 15-44 ans : 0 ; ≥ 45 ans : −1, d'après la SPILF 2011 ; la fiche HAS écrit « > 45 ans », ce qui laisse 45 ans sans cotation).
 
 - Score < 2, ou score ≥ 2 et TROD négatif : pas d'antibiotique.
 - Score ≥ 2 et TROD positif : amoxicilline 2 g/j en 2 prises pendant 6 jours.
