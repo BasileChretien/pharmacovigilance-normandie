@@ -2,34 +2,49 @@
 title: "Angine et mal de gorge : quels médicaments ?"
 description: "Le test rapide qui dit si un antibiotique est utile, l'amoxicilline quand le test est positif, le paracétamol contre la douleur et les risques des anti-inflammatoires."
 public: [patients, professionnels]
-recommandation_de_reference: "HAS, Choix et durées d'antibiothérapies : Angine aiguë de l'adulte et Angine aiguë de l'enfant (validées en 2021, mises à jour en 2024 et 2025)"
+recommandation_de_reference: "HAS, Choix et durées d'antibiothérapies : Angine aiguë de l'adulte et Angine aiguë de l'enfant (validées en 2021, actualisées en 2024 et, pour le traitement symptomatique de l'enfant, en 2025)"
 statut: brouillon
 relu_par: null
 relu_le: null
 prochaine_relecture: null
 substances: [amoxicilline, céfuroxime, cefpodoxime, clarithromycine, paracétamol]
 sources:
-  - titre: "HAS. Choix et durées d'antibiothérapies : Angine aiguë de l'adulte, mise à jour le 13/05/2025"
+  - titre: "HAS. Choix et durées d'antibiothérapies : Angine aiguë de l'adulte (validée le 15/07/2021, actualisée en 2024, mise à jour le 13/05/2025)"
     url: "https://has-sante.fr/jcms/p_3529230/fr/choix-et-durees-d-antibiotherapies-angine-aigue-de-l-adulte"
-    consulte_le: 2026-11-25
-  - titre: "HAS. Choix et durées d'antibiothérapies : Angine aiguë de l'enfant, mise à jour le 13/05/2025"
+    consulte_le: 2026-11-28
+  - titre: "HAS. Choix et durées d'antibiothérapies : Angine aiguë de l'enfant (validée le 15/07/2021, actualisée en 2024, mise à jour le 13/05/2025)"
     url: "https://has-sante.fr/jcms/p_3529229/fr/choix-et-durees-d-antibiotherapies-angine-aigue-de-l-enfant"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "HAS. Choix et durées d'antibiothérapies : rapport d'élaboration, mise à jour 2024 (suppression de l'azithromycine et de la josamycine dans l'angine)"
+    url: "https://www.has-sante.fr/upload/docs/application/pdf/2021-08/rapport_elaboration__durees_antibiotherapies_coi_2021_07_15_v2.pdf"
+    consulte_le: 2026-11-28
+  - titre: "SPILF, SFP, GPIP. Antibiothérapie par voie générale dans les infections respiratoires hautes de l'adulte et de l'enfant, 2011 (part du streptocoque A dans les angines)"
+    url: "https://www.infectiologie.com/UserFiles/File/medias/Recos/2011-infections-respir-hautes-recommandations.pdf"
+    consulte_le: 2026-11-28
+  - titre: "Arrêté du 17 juin 2024 (délivrance d'antibiotiques sans ordonnance par le pharmacien d'officine après un test rapide de l'angine ou une bandelette urinaire), JORF du 18/06/2024, annexe I (critères d'orientation vers un médecin)"
+    url: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000049734400/"
+    consulte_le: 2026-11-28
   - titre: "Santé.fr (ministère de la Santé), Antibio'Malin. Angine, 13/03/2025"
     url: "https://sante.fr/antibiomalin-pour-savoir-comment-bien-utiliser-les-antibiotiques/angine"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Santé.fr. Angines et cystites : les pharmaciens peuvent délivrer sous certaines conditions des antibiotiques sans ordonnance, 20/06/2024"
     url: "https://www.sante.fr/angines-et-cystites-les-pharmaciens-peuvent-delivrer-sous-certaines-conditions-des-antibiotiques"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "HCSP. Survenue de maladies infectieuses dans une collectivité : conduites à tenir, 28/09/2012 (éviction en cas d'angine à streptocoque)"
+    url: "https://www.hcsp.fr/Explore.cgi/Telecharger?NomFichier=hcspr20120928_maladieinfectieusecollectivite.pdf"
+    consulte_le: 2026-11-28
   - titre: "ANSM. Infections hivernales : il est conseillé d'éviter l'ibuprofène ou le kétoprofène en première intention, 17/12/2025, mis à jour le 18/12/2025"
     url: "https://ansm.sante.fr/actualites/infections-hivernales-il-est-conseille-deviter-libuprofene-ou-le-ketoprofene-en-premiere-intention"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Base de données publique des médicaments. CLAMOXYL 500 mg, gélule (amoxicilline), RCP mis à jour le 18/09/2026"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67707794/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Base de données publique des médicaments. ZECLAR 250 mg, comprimé pelliculé (clarithromycine), RCP mis à jour le 17/06/2024"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/63671347/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "ANSM, Thésaurus des interactions médicamenteuses, version du 15/09/2023 (dernière version, sans mise à jour prévue)"
+    url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
+    consulte_le: 2026-11-28
   - titre: "Antibioclic, outil d'aide à la prescription antibiotique (angine)"
     url: "https://antibioclic.com/"
     consulte_le: 2026-11-25
@@ -60,7 +75,7 @@ pour_aller_plus_loin:
 
 ### Quels médicaments peuvent aider ?
 
-Une angine est une infection de la gorge et des amygdales. Plus de 8 angines sur 10 sont dues à un virus. Elles guérissent seules. La fièvre dure en général 2 à 3 jours, le mal de gorge jusqu'à une semaine.
+Une angine est une infection de la gorge et des amygdales. Chez l'enfant, 6 à 7 angines sur 10 sont dues à un virus. Chez l'adulte, c'est plus de 7 sur 10. Ces angines guérissent seules. La fièvre dure en général 2 à 3 jours, le mal de gorge jusqu'à une semaine.
 
 Pour vous soulager :
 
@@ -95,7 +110,7 @@ L'amoxicilline est l'antibiotique de premier choix. En cas d'allergie aux pénic
 
 - Prenez l'antibiotique pendant toute la durée prescrite, en général 6 jours pour l'amoxicilline.
 - Respectez le nombre de prises par jour.
-- Un enfant traité reste à la maison au moins 2 jours après le début de l'antibiotique.
+- Un enfant traité ne retourne pas à l'école ou à la crèche avant 2 jours d'antibiotique.
 
 ### Quels effets surveiller ?
 
@@ -119,24 +134,24 @@ Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre ph
 
 ### Signes d'alerte
 
-Rechercher les signes de complication locorégionale (phlegmon péri-amygdalien, abcès rétropharyngé) et les diagnostics différentiels graves. [à compléter : liste des signes d'alerte selon la fiche mémo HAS « Angine aiguë » ou la SPILF]. Antibio'Malin conseille de consulter en cas de fièvre de plus de 3 jours ou récurrente, d'aggravation, d'éruption, d'arthralgies, de dyspnée ou de tuméfaction du cou ou du visage.
+Rechercher les signes de complication locorégionale (phlegmon péri-amygdalien, abcès rétropharyngé) et les diagnostics différentiels graves. Les fiches HAS n'en donnent pas la liste. Le protocole de l'officine (arrêté du 17 juin 2024, annexe I) oriente vers un médecin devant des signes évoquant un phlegmon ou une gravité : température mesurée > 39,5 °C, PAS < 90 mmHg, FC > 110/min ou FR > 20/min, difficulté à respirer ou à parler, trismus, hypersalivation, cervicalgie ou torticolis limitant les mouvements de la tête ; aussi en cas de symptômes depuis plus de 8 jours, d'épisode dans les 15 jours précédents, de grossesse ou d'immunodépression. Antibio'Malin conseille de consulter en cas de fièvre de plus de 3 jours ou récurrente, d'aggravation, d'éruption, d'arthralgies, de dyspnée ou de tuméfaction du cou ou du visage.
 
 ### Stratégie thérapeutique
 
-Adulte (HAS, mise à jour 2025) : score de Mac Isaac (température > 38 °C : 1 ; absence de toux : 1 ; adénopathie cervicale antérieure douloureuse : 1 ; augmentation de volume ou exsudat amygdalien : 1 ; âge 15-44 ans : 0 ; ≥ 45 ans : −1).
+Adulte (HAS 2021, actualisation 2024) : score de Mac Isaac (température > 38 °C : 1 ; absence de toux : 1 ; adénopathie cervicale antérieure douloureuse : 1 ; augmentation de volume ou exsudat amygdalien : 1 ; âge 15-44 ans : 0 ; > 45 ans : −1, cotation de la HAS).
 
 - Score < 2, ou score ≥ 2 et TROD négatif : pas d'antibiotique.
 - Score ≥ 2 et TROD positif : amoxicilline 2 g/j en 2 prises pendant 6 jours.
 - Allergie documentée aux pénicillines sans contre-indication aux céphalosporines : céfuroxime axétil 500 mg/j en 2 prises pendant 4 jours, ou cefpodoxime proxétil 200 mg/j en 2 prises pendant 5 jours.
 - Contre-indication aux bêta-lactamines : clarithromycine 500 mg/j en 2 prises pendant 5 jours.
 
-Enfant (HAS, mise à jour 2025) :
+Enfant (HAS 2021, actualisations 2024 et 2025) :
 
 - Moins de 3 ans : ni TROD ni antibiotique.
 - 3 ans et plus : TROD ; si négatif, pas d'antibiotique.
-- TROD positif : amoxicilline 50 mg/kg/j en 2 prises (maximum 2 g/j) pendant 6 jours. Allergie aux pénicillines sans contre-indication aux céphalosporines : cefpodoxime proxétil 8 mg/kg/j en 2 prises (maximum 200 mg/j) pendant 5 jours. Contre-indication aux bêta-lactamines : clarithromycine 15 mg/kg/j en 2 prises (maximum 500 mg/j) pendant 5 jours.
+- TROD positif : amoxicilline 50 mg/kg/j en 2 prises (maximum 2 g/j) pendant 6 jours. Allergie documentée aux pénicillines sans contre-indication aux céphalosporines : cefpodoxime proxétil 8 mg/kg/j en 2 prises (maximum 200 mg/j) pendant 5 jours. Contre-indication aux bêta-lactamines : clarithromycine 15 mg/kg/j en 2 prises (maximum 500 mg/j) pendant 5 jours.
 
-L'azithromycine ne figure plus dans ces recommandations depuis la mise à jour de 2024. Dispensation en officine sans ordonnance possible depuis le 19 juin 2024, après TROD positif réalisé par un pharmacien formé, chez les patients de plus de 10 ans.
+L'azithromycine (antibiotique critique) et la josamycine (plus commercialisée) ne figurent plus dans ces recommandations depuis la mise à jour de 2024 (rapport d'élaboration HAS). Dispensation en officine sans ordonnance possible depuis le 19 juin 2024, après TROD positif réalisé par un pharmacien formé, chez les patients de 10 ans ou plus (arrêté du 17 juin 2024 ; HAS).
 
 Traitement symptomatique (HAS, angine de l'enfant) : paracétamol en première intention (60 mg/kg/j en 4 prises, sans dépasser 80 mg/kg/j, 72 heures au plus). AINS en deuxième intention seulement si la douleur persiste malgré le paracétamol à dose maximale ou en cas de contre-indication : ibuprofène dès 3 mois, 20 à 30 mg/kg/j en 3 ou 4 prises, arrêt dès la disparition de la douleur, 24 heures au plus entre 3 et 6 mois et 72 heures au plus au-delà. Pas d'AINS en cas de varicelle, d'infection ORL bactérienne sévère ou compliquée ; la fièvre seule ne les justifie pas. Corticoïdes systémiques et locaux : intérêt non démontré.
 
@@ -147,9 +162,9 @@ Traitement symptomatique (HAS, angine de l'enfant) : paracétamol en première i
 
 ### Précautions et effets indésirables
 
-- AINS et infections : l'ANSM recense, entre 2019 et mi-2023, 162 cas graves avec l'ibuprofène et 54 avec le kétoprofène, dont 12 décès, souvent après une prise pour une infection ORL. Elle recommande d'éviter les AINS dans les infections ORL sans diagnostic biologique documenté, y compris sous antibiotique.
-- Amoxicilline (RCP Clamoxyl) : contre-indiquée en cas d'hypersensibilité aux pénicillines ou d'antécédent de réaction immédiate sévère à une autre bêta-lactamine ; à éviter en cas de suspicion de mononucléose infectieuse (éruption morbilliforme). Effets fréquents : diarrhée, nausées, éruption cutanée. Interactions : allopurinol (réactions cutanées), méthotrexate (toxicité accrue), AVK (surveillance de l'INR). [à compléter : niveaux du Thésaurus ANSM]
-- Clarithromycine (RCP Zeclar) : inhibiteur puissant du CYP3A4. Associations contre-indiquées notamment avec la colchicine, la simvastatine, les alcaloïdes de l'ergot, le ticagrélor, la dompéridone, la quétiapine, la ranolazine, l'ivabradine ; contre-indiquée en cas d'allongement du QT, d'hypokaliémie ou d'hypomagnésémie. Associations déconseillées notamment avec la ciclosporine, le tacrolimus, l'oxycodone, le rivaroxaban. Vérifier systématiquement les traitements en cours.
+- AINS et infections : l'ANSM recense, du 1^er^ janvier 2019 au 30 juin 2023, 162 cas graves avec l'ibuprofène et 54 avec le kétoprofène, dont 12 décès ; l'ibuprofène avait été pris pour des symptômes grippaux ou une infection ORL (angine, otite), le kétoprofène pour des douleurs. Elle recommande d'éviter les AINS dans les infections ORL sans diagnostic biologique documenté, y compris sous antibiotique.
+- Amoxicilline (RCP Clamoxyl) : contre-indiquée en cas d'hypersensibilité aux pénicillines ou d'antécédent de réaction immédiate sévère à une autre bêta-lactamine ; à éviter en cas de suspicion de mononucléose infectieuse (éruption morbilliforme). Effets fréquents : diarrhée, nausées, éruption cutanée. Interactions : méthotrexate (toxicité accrue ; pénicillines + méthotrexate : association déconseillée, Thésaurus) ; allopurinol (réactions cutanées ; pénicillines A + allopurinol : à prendre en compte, Thésaurus) ; AVK (surveillance de l'INR, RCP ; pas de couple spécifique aux pénicillines dans le Thésaurus) ; probénécide (non recommandé, RCP).
+- Clarithromycine (RCP Zeclar) : inhibiteur puissant du CYP3A4. Associations contre-indiquées notamment avec la colchicine, la simvastatine, les alcaloïdes de l'ergot vasoconstricteurs (dihydroergotamine, ergotamine, méthylergométrine, méthysergide), le ticagrélor, la dompéridone, la quétiapine, la ranolazine, l'ivabradine ; contre-indiquée en cas d'allongement du QT, d'hypokaliémie ou d'hypomagnésémie. Associations déconseillées notamment avec la ciclosporine, le tacrolimus, l'oxycodone, le rivaroxaban et les alcaloïdes de l'ergot dopaminergiques (bromocriptine, cabergoline). Vérifier systématiquement les traitements en cours.
 
 ### Ce qu'il faut éviter
 

@@ -11,10 +11,22 @@ substances: [macrogol, lactulose, ispaghul, bisacodyl]
 sources:
   - titre: "SNFCP, Recommandations pour la pratique clinique de la prise en charge de la constipation (version longue), 2017"
     url: "https://www.snfcp.org/wp-content/uploads/2017/12/livre-RCP-consti2017_long.pdf"
-    consulte_le: 2026-11-25
-  - titre: "ANSM, Résumé des caractéristiques du produit AGIOLAX, granulés (séné et ispaghul)"
-    url: "https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0405189.htm"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. FORLAX 10 g, poudre pour solution buvable en sachet (macrogol), RCP mis à jour le 20/02/2026"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/69298346/extrait"
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. PSYLIA, poudre effervescente pour suspension buvable en sachet (ispaghul), RCP mis à jour le 19/11/2024"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/68520477/extrait"
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. AGIOLAX, granulés (séné et ispaghul), RCP mis à jour le 22/09/2025"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/66768488/extrait"
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. CONTALAX, comprimé gastro-résistant (bisacodyl), RCP mis à jour le 05/02/2025"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67064661/extrait"
+    consulte_le: 2026-11-28
+  - titre: "CRAT (Centre de référence sur les agents tératogènes). Constipation et grossesse, 15/10/2025"
+    url: "https://www.lecrat.fr/8711/"
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Médicaments de la constipation"
     url: "https://pharmacomedicale.org/medicaments/par-specialites/item/medicaments-de-la-constipation"
@@ -64,7 +76,7 @@ Après les conseils de vie, les fibres et les osmotiques sont à essayer en prem
 
 ### Comment bien les utiliser ?
 
-Prenez les fibres avec un grand verre d'eau. Leur effet se juge après plusieurs semaines. Le macrogol agit en un à deux jours en général [à compléter : source]. Un laxatif stimulant ne doit pas dépasser une semaine sans avis. Certains laxatifs se prennent à distance des autres médicaments : lisez la notice.
+Prenez les fibres avec un grand verre d'eau. Elles agissent en général en 12 à 24 heures. Sans amélioration au bout de 3 jours, demandez conseil. Leur plein effet se juge après plusieurs semaines. Le macrogol agit en 24 à 48 heures. Un laxatif stimulant ne doit pas dépasser une semaine sans avis. Certains laxatifs se prennent à distance des autres médicaments : lisez la notice.
 
 ### Quels effets surveiller ?
 
@@ -88,25 +100,25 @@ Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre ph
 
 ### Signes d'alerte
 
-Coloscopie seulement en cas de signe d'alarme ou de suspicion de cause organique recto-colique à l'examen ; elle n'est pas recommandée en première intention (SNFCP 2017). Signes d'alarme cités : rectorragies, perte de poids, anémie, aggravation de la constipation. Signes d'occlusion : arrêt des matières et des gaz, vomissements, douleurs abdominales aiguës violentes, fièvre, tachycardie. Le bilan biologique (NFS, créatininémie, calcémie, glycémie, TSH, CRP) est réservé aux non-répondeurs, aux suspicions de pathologie organique et aux signes d'alarme.
+Coloscopie seulement en cas de signe d'alarme ou de suspicion de cause organique recto-colique à l'examen ; elle n'est pas recommandée en première intention (SNFCP 2017). La SNFCP ne détaille pas ces signes d'alarme ; ceux de la partie patient (sang dans les selles, amaigrissement, fatigue et pâleur, constipation récente qui s'aggrave) [à compléter : source]. Signes de gravité (SNFCP, chapitre grossesse) : rectorragies, glaires, vomissements, arrêt complet des matières et des gaz, douleurs abdominales aiguës violentes, fièvre, tachycardie. Le bilan biologique (NFS, créatininémie, calcémie, glycémie, TSH, CRP) est réservé aux non-répondeurs, aux suspicions de pathologie organique et aux signes d'alarme.
 
 ### Stratégie thérapeutique (SNFCP 2017)
 
 - **Règles hygiéno-diététiques** d'abord, avec **arrêt des médicaments constipants** si possible.
 - **Première intention** : laxatifs osmotiques (niveau de preuve II, grade B) et fibres (grade B). Le PEG est supérieur au lactulose sur la fréquence et la consistance des selles et sur les douleurs abdominales (grade A). Nombre de sujets à traiter de 3 pour un succès (≥ 3 selles par semaine) avec les osmotiques (grade A).
 - **Constipation terminale** : laxatifs locaux (suppositoires, lavements) en première intention, avec réévaluation rapide.
-- **Deuxième intention** : laxatifs stimulants (grade B), ou en recours après plusieurs jours sans selles (grade C) ; laxatifs lubrifiants (grade C). L'association de classes est possible malgré l'absence de données.
-- **Grossesse** : PEG et fibres possibles en première intention.
+- **Deuxième intention** : laxatifs stimulants (grade B), ou en recours après plusieurs jours sans selles (grade C) ; laxatifs lubrifiants (grade C). Un laxatif stimulant peut être associé ponctuellement à un osmotique en cas d'efficacité insuffisante (accord professionnel).
+- **Grossesse** : PEG et fibres possibles en première intention (SNFCP ; RCP de Forlax ; CRAT). Le RCP d'Agiolax contre-indique le séné pendant la grossesse et l'allaitement, et celui de Contalax déconseille le bisacodyl pendant la grossesse ; le CRAT admet un stimulant ponctuel (séné) après échec des laxatifs de lest et osmotiques.
 
 ### Mécanismes d'action
 
-Fibres : polysaccharides qui retiennent l'eau dans la lumière intestinale. Osmotiques (PEG, sels de magnésium, sucres non absorbables) : appel d'eau par effet osmotique ; le PEG n'est pas fermenté par la flore, contrairement au lactulose. Stimulants : action motrice et sécrétoire. Lubrifiants : action mécanique.
+Fibres : polysaccharides qui retiennent l'eau dans la lumière intestinale. Osmotiques (PEG, sels de magnésium, sucres non absorbables) : appel d'eau par effet osmotique ; le PEG n'est pas fermenté par la flore, contrairement au lactulose ; effet du PEG en 24 à 48 heures (RCP de Forlax). Stimulants : action motrice et sécrétoire. Lubrifiants : action mécanique.
 
 ### Précautions et effets indésirables
 
-- **Fibres** : contre-indiquées en cas de sténose, de fécalome ou de colite inflammatoire ; ballonnements les premières semaines.
+- **Fibres** : contre-indiquées en cas de sténose, de fécalome ou de colite inflammatoire ; ballonnements les premières semaines. Effet en 12 à 24 heures en moyenne, avis si les symptômes persistent au-delà de 3 jours (RCP de Psylia) ; efficacité à évaluer après plusieurs semaines (SNFCP).
 - **Lubrifiants** : contre-indiqués en cas de troubles de la déglutition ou de la motricité œsogastrique, notamment chez le sujet âgé (pneumopathie lipoïde).
-- **Stimulants** : diarrhée et douleurs à court terme. La SNFCP juge les complications à long terme longtemps surestimées (niveau IV). Le RCP d'un laxatif anthracénique (séné) maintient pourtant une durée maximale d'une semaine. Il mentionne le risque de dépendance et, très rarement, une « maladie des laxatifs » avec hypokaliémie.
+- **Stimulants** : diarrhée et douleurs à court terme. La SNFCP juge les complications à long terme longtemps surestimées et modestes (niveau de preuve IV, grade C). Le RCP d'Agiolax (séné) maintient pourtant une durée maximale d'une semaine, avec avis si le trouble n'est pas résolu en 3 jours ; il mentionne le risque de dépendance et, très rarement, une « maladie des laxatifs » avec hypokaliémie. Bisacodyl : traitement limité à 8 à 10 jours (RCP de Contalax). La partie patient retient la durée la plus courte, une semaine.
 - **Interactions (RCP séné)** : association déconseillée avec les torsadogènes ; précaution avec les digitaliques et les hypokaliémiants (diurétiques, corticoïdes) ; préférer alors un laxatif non stimulant.
 
 ### Médicaments constipants (SNFCP 2017)
@@ -117,7 +129,7 @@ Opioïdes et autres antalgiques, anticholinergiques, antidépresseurs, antipsych
 
 - Un laxatif stimulant prolongé sans réévaluation.
 - La paraffine chez le patient âgé ayant des troubles de déglutition.
-- Un laxatif anthracénique chez l'enfant de moins de 12 ans (contre-indication du RCP cité).
+- Un laxatif anthracénique chez l'enfant de moins de 12 ans (contre-indication du RCP d'Agiolax ; déconseillé de 12 à 15 ans).
 
 ### Outils et liens
 
