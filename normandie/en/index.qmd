@@ -27,6 +27,9 @@ sources:
   - titre: "French public health code, article R5121-161: who must report, who may report (in French)"
     url: "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047950830"
     consulte_le: 2026-11-28
+  - titre: "Ministry of Health, Santé.fr: reporting the side effects of a medicine (published 16/03/2022, in French)"
+    url: "https://www.sante.fr/signaler-les-effets-indesirables-dun-medicament"
+    consulte_le: 2026-11-28
   - titre: "RésoGardes, pharmacies on duty (3237, in French)"
     url: "https://www.3237.fr/"
     consulte_le: 2026-11-28
@@ -59,7 +62,7 @@ Patients can report a suspected side effect of a medicine in France, and so can 
 
 The French page [[Déclarer un effet indésirable]{lang="fr"}](../../declarer.qmd) explains the same steps in more detail.
 
-Your report goes to the regional pharmacovigilance centre: Caen for Calvados, Manche and Orne; Rouen for Eure and Seine-Maritime. The centre analyses it, may contact you for more details, and records it in the national pharmacovigilance database. Living elsewhere in France? [Find your regional centre](../../crpv/trouver-mon-crpv.qmd) by typing your postal code (the page is in French).
+Your report goes to the regional pharmacovigilance centre: Caen for Calvados, Manche and Orne; Rouen for Eure and Seine-Maritime. The centre analyses it, may contact you for more details, and records it in the national pharmacovigilance database. Your personal data are anonymised to keep them confidential. Living elsewhere in France? [Find your regional centre](../../crpv/trouver-mon-crpv.qmd) by typing your postal code (the page is in French).
 
 ## The regional pharmacovigilance centres
 
