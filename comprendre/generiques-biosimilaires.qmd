@@ -67,13 +67,13 @@ Un générique contient la même substance active que le médicament d'origine, 
 
 ### Passe-t-il dans le sang comme le médicament d'origine ?
 
-Presque. Pour être autorisé, un générique doit être bioéquivalent. Cela veut dire que la substance active passe dans le sang en quantité et à une vitesse très proches de celles du médicament d'origine. Elles ne sont pas forcément identiques. Les règles européennes fixent l'écart accepté. Dans une analyse de plus de 2 000 études américaines, l'écart moyen était d'environ 4 sur 100. Pour les médicaments les plus sensibles à un petit écart (voir plus bas), l'écart accepté est plus faible. Ces essais sont contrôlés par l'Agence nationale de sécurité du médicament et des produits de santé (ANSM) et ses homologues européens.
+Presque. Pour être autorisé, un générique doit être bioéquivalent. Cela veut dire que la substance active passe dans le sang en quantité et à une vitesse très proches de celles du médicament d'origine. Elles ne sont pas forcément identiques. Les règles européennes fixent l'écart accepté. Pour certains médicaments très sensibles à un petit écart, l'écart accepté peut être plus faible. Ces essais sont contrôlés par l'Agence nationale de sécurité du médicament et des produits de santé (ANSM) et ses homologues européens. L'agence américaine du médicament a examiné plus de 2 000 de ces études : la quantité dans le sang différait en moyenne d'environ 4 pour 100.
 
 {{< figure-svg generiques-biosimilaires-1 alt="Deux boîtes d'aspect différent : le médicament d'origine et le générique. Identique : la substance active, en même quantité. Peuvent changer : la taille, la forme, la couleur, le goût, les excipients. Leurs courbes dans le sang sont très proches, sans se confondre." legende="Même substance active, en même quantité ; un passage dans le sang très proche." >}}
 
 ### Le dosage écrit sur la boîte peut-il être différent ?
 
-Oui, parfois. La substance active peut se présenter sous une autre forme chimique (un autre « sel »). Le dosage écrit sur la boîte change alors, pour la même quantité de substance active. Par exemple, des comprimés de périndopril (contre la tension artérielle trop élevée) dosés à 4 mg et à 5 mg font partie du même groupe. Ils apportent la même quantité de périndopril, et le pharmacien peut donner l'un à la place de l'autre.
+Oui, parfois. La substance active peut se présenter sous une autre forme chimique (un autre « sel »). Le plus souvent, le dosage écrit sur la boîte reste le même. Mais il peut aussi changer, pour la même quantité de substance active. Par exemple, des comprimés de périndopril (contre la tension artérielle trop élevée) dosés à 4 mg et à 5 mg font partie du même groupe. Ils apportent la même quantité de périndopril, et le pharmacien peut donner l'un à la place de l'autre.
 
 ### Les autres composants peuvent-ils changer ?
 
@@ -126,11 +126,11 @@ Le dosage affiché peut donc différer au sein d'un groupe générique quand le 
 
 Bioéquivalence (EMA, Guideline on the investigation of bioequivalence, § 4.1.8) : l'intervalle de confiance à 90 % du rapport générique/référence de l'AUC et de la Cmax doit être compris dans l'intervalle d'acceptation de 80,00 à 125,00 %. C'est l'intervalle de confiance entier qui doit y tenir, pas seulement le rapport observé : la règle ne revient pas à tolérer « ± 20 % ».
 
-- Médicaments à marge thérapeutique étroite : intervalle resserré à 90,00–111,11 % pour l'AUC, et pour la Cmax quand elle compte pour la sécurité, l'efficacité ou le suivi des concentrations (§ 4.1.9).
+- Médicaments à marge thérapeutique étroite, dans certains cas : intervalle resserré à 90,00–111,11 % pour l'AUC, et pour la Cmax quand elle compte pour la sécurité, l'efficacité ou le suivi des concentrations. La ligne directrice ne donne pas de critères pour classer un médicament dans cette catégorie : c'est décidé au cas par cas, sur des considérations cliniques (§ 4.1.9). Ce classement européen ne se confond pas avec la liste française des médicaments à marge thérapeutique étroite de la substitution (ci-dessous).
 - Médicaments très variables (variabilité intra-individuelle de la Cmax de la référence supérieure à 30 %, plan croisé répliqué, justification clinique) : intervalle de la Cmax élargi au plus à 69,84–143,19 %, le rapport des moyennes géométriques restant entre 80,00 et 125,00 % ; pas d'élargissement pour l'AUC (§ 4.1.10).
 - La teneur dosée du lot testé ne doit pas différer de plus de 5 % de celle du lot de référence, sauf justification (§ 4.1.2).
 
-Écarts observés : sur 2 070 études de bioéquivalence de génériques oraux approuvés par la FDA de 1996 à 2007, l'écart moyen avec le princeps était de 3,56 % pour l'AUC et de 4,35 % pour la Cmax ; l'AUC différait de moins de 10 % dans près de 98 % des études (Davit et al., 2009). Une méta-analyse d'essais cliniques sur des médicaments cardiovasculaires (47 articles, dont 38 essais randomisés) n'a pas montré de supériorité des princeps sur les génériques (Kesselheim et al., 2008).
+Écarts observés : sur 2 070 études de bioéquivalence de génériques oraux approuvés par l'agence américaine du médicament (FDA) de 1996 à 2007, l'écart moyen avec le princeps était de 3,56 % pour l'AUC et de 4,35 % pour la Cmax ; l'AUC différait de moins de 10 % dans près de 98 % des études (Davit et al., 2009). Une méta-analyse d'essais cliniques sur des médicaments cardiovasculaires (47 articles, dont 38 essais randomisés) n'a pas montré de supériorité des princeps sur les génériques (Kesselheim et al., 2008).
 
 L'ANSM et ses homologues européens inspectent les essais de bioéquivalence. Une inspection défavorable peut conduire à invalider les essais, puis à suspendre ou retirer l'AMM.
 
