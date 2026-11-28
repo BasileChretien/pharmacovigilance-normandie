@@ -14,5 +14,5 @@
   <text x="232" y="184" font-weight="700" fill="#ffffff">pas justifiés</text>
   <line x1="220" y1="146" x2="220" y2="212" stroke="#10283a" stroke-width="2" stroke-dasharray="4 3"/>
   <text x="220" y="232" text-anchor="middle" fill="#46586a">la moitié</text>
-  <text x="16" y="264" font-weight="700">Plus de la moitié n'étaient pas justifiés.</text>
+  <text x="16" y="264" font-weight="700">Plus de la moitié ne seraient pas justifiés.</text>
 </svg>

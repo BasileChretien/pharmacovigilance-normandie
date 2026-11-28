@@ -11,22 +11,31 @@ prochaine_relecture: null
 sources:
   - titre: "Base de données publique des médicaments, RCP et notice de CURACNÉ 20 mg, capsule molle (CIS 69164379)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/69164379/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, dossier thématique « Risques liés à la prise d'isotrétinoïne par voie orale » (mis à jour le 17/07/2025)"
     url: "https://ansm.sante.fr/dossiers-thematiques/isotretinoine-orale-et-traitement-de-lacne-severe/risques-lies-a-la-prise-disotretinoine-par-voie-orale"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, « Les actions mises en œuvre pour réduire les risques associés à l'isotrétinoïne » (mis à jour le 25/08/2023)"
     url: "https://ansm.sante.fr/dossiers-thematiques/isotretinoine-orale-et-traitement-de-lacne-severe/les-actions-mises-en-oeuvre-pour-reduire-les-risques-associes-a-lisotretinoine"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, « Traitement contre l'acné : règles de bon usage de l'isotrétinoïne pour limiter les risques » (21/10/2020, mis à jour le 30/03/2021)"
     url: "https://ansm.sante.fr/actualites/traitement-contre-lacne-regles-de-bon-usage-de-lisotretinoine-pour-limiter-les-risques"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, tableau des médicaments soumis à un programme de prévention des grossesses (2023)"
     url: "https://ansm.sante.fr/uploads/2023/11/29/20231129-prevoyance-grossesse-2023.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
     url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "ANSM, « Traitement contre l'acné sévère avec isotrétinoïne orale : l'ANSM informe d'un risque potentiel de troubles neuro-développementaux en cas d'exposition pendant la grossesse » (18/02/2021, mis à jour le 16/03/2021)"
+    url: "https://ansm.sante.fr/actualites/traitement-contre-lacne-severe-avec-isotretinoine-orale-lansm-informe-dun-risque-potentiel-de-troubles-neuro-developpementaux-en-cas-dexposition-pendant-la-grossesse"
+    consulte_le: 2026-11-28
+  - titre: "ANSM, « Traitement de l'acné sévère : recommandations pour améliorer la sécurité d'utilisation de l'isotrétinoïne » (05/05/2021)"
+    url: "https://ansm.sante.fr/actualites/traitement-de-lacne-severe-premieres-recommandations-pour-ameliorer-la-securite-dutilisation-de-lisotretinoine"
+    consulte_le: 2026-11-28
+  - titre: "ANSM, dossier « Acné sévère et traitement par isotrétinoïne durant la grossesse » (13/11/2020, mis à jour le 06/07/2023)"
+    url: "https://ansm.sante.fr/dossiers-thematiques/acne-severe-et-traitement-par-isotretinoine-durant-la-grossesse"
+    consulte_le: 2026-11-28
   - titre: "3114, numéro national de prévention du suicide"
     url: "https://3114.fr/"
     consulte_le: 2026-11-25
@@ -53,7 +62,7 @@ pour_aller_plus_loin:
 
 ### À quoi sert ce traitement ?
 
-L'isotrétinoïne traite l'acné sévère, quand les autres traitements n'ont pas marché. Elle s'appelle par exemple Curacné, Contracné, Acnetrait ou Procuta. Un dermatologue (médecin de la peau) fait toujours la première ordonnance.
+L'isotrétinoïne traite l'acné sévère, quand les autres traitements n'ont pas marché. Elle s'appelle par exemple Curacné, Contracné, Acnetrait ou Procuta. Un dermatologue (médecin de la peau) fait toujours la première ordonnance. Il vous propose en général deux consultations : une pour vous informer, puis une pour la prescription. Vous avez ainsi le temps de réfléchir.
 
 Une cure dure en général 4 à 6 mois. La plupart des personnes n'ont besoin que d'une cure.
 
@@ -68,6 +77,8 @@ Ne donnez jamais ce médicament à une autre personne. À la fin du traitement, 
 Plus de 1 personne sur 10 a la peau, les lèvres ou les yeux secs. Utilisez une crème hydratante et un baume pour les lèvres dès le début. L'acné peut s'aggraver au début, puis s'améliore en 7 à 10 jours en général.
 
 Évitez le soleil fort et utilisez une crème solaire d'indice 15 ou plus. Évitez l'épilation à la cire pendant le traitement et 6 mois après.
+
+Des troubles sexuels ont aussi été signalés : baisse du désir, troubles de l'érection. Leur fréquence n'est pas connue. Parlez-en à votre médecin, même si c'est difficile.
 
 ### Ce traitement peut-il changer mon humeur ?
 
@@ -93,7 +104,9 @@ Ne prenez pas en même temps :
 
 ### Grossesse, allaitement, conduite
 
-Si vous êtes enceinte, plus de 3 bébés sur 10 exposés ont une malformation. Elle peut toucher le cerveau, le visage ou le cœur. Le médicament peut aussi provoquer une fausse couche.
+Pendant une grossesse, environ 30 bébés exposés sur 100 ont une malformation. Sans ce médicament, c'est 2 à 3 bébés sur 100. La malformation peut toucher le cerveau, le visage ou le cœur. Le médicament peut aussi provoquer une fausse couche, ou la mort du bébé avant ou juste après la naissance.
+
+L'Agence nationale de sécurité du médicament (ANSM) étudie aussi un risque possible de troubles du développement de l'enfant, même sans malformation visible.
 
 ### Quelles règles si vous pouvez être enceinte ?
 
@@ -129,10 +142,11 @@ Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-s
 
 ### Points clés de sécurité
 
-- Tératogène majeur : malformations du système nerveux central, dysmorphie faciale, fente palatine, anomalies de l'oreille externe, microphtalmie, cardiopathies conotroncales, anomalies du thymus et des parathyroïdes (RCP, rubrique 4.6). Risque de malformation chez le fœtus exposé estimé à plus de 30 % ; environ 175 grossesses exposées par an en France sans baisse depuis 2010 (ANSM, 2020). Le risque persiste jusqu'à élimination complète, soit 1 mois après l'arrêt.
-- Contre-indications : grossesse, allaitement, femme en âge de procréer hors programme de prévention des grossesses, insuffisance hépatique, hyperlipidémie, hypervitaminose A, allergie à l'arachide ou au soja (excipient), association aux cyclines, à la vitamine A ou à un autre rétinoïde.
+- Tératogène majeur : malformations du système nerveux central, dysmorphie faciale, fente palatine, anomalies de l'oreille externe, microphtalmie, cardiopathies conotroncales, anomalies du thymus et des parathyroïdes (RCP, rubrique 4.6). Risque de malformation chez le fœtus exposé de plus de 30 % selon l'ANSM (risque de base : 2-3 %) ; risque accru de fausse couche, de mort fœtale et de décès néonatal. Environ 175 grossesses exposées par an en France, sans baisse depuis 2010 (ANSM, 2020). Le risque persiste jusqu'à élimination complète, soit 1 mois après l'arrêt.
+- Troubles neurodéveloppementaux : en 2021, l'ANSM a informé d'un risque potentiel après exposition in utero, avec ou sans malformation ; ce risque est en cours d'évaluation et n'est pas confirmé au niveau européen ([communication de l'ANSM](https://ansm.sante.fr/actualites/traitement-contre-lacne-severe-avec-isotretinoine-orale-lansm-informe-dun-risque-potentiel-de-troubles-neuro-developpementaux-en-cas-dexposition-pendant-la-grossesse)).
+- Contre-indications : grossesse, allaitement, femme en âge de procréer hors programme de prévention des grossesses, insuffisance hépatique, hyperlipidémie, hypervitaminose A, allergie à l'arachide ou au soja (excipient), association aux cyclines, à la vitamine A ou à un autre rétinoïde (le RCP cite l'acitrétine et l'alitrétinoïne).
 - Psychiatrie : dépression, anxiété, agressivité, troubles de l'humeur (rares) ; idées suicidaires, tentatives, suicides, troubles psychotiques (très rares). L'ANSM indique que le lien n'est pas établi. Évaluer l'état psychique à l'instauration, pendant et après le traitement ; l'ANSM cite l'échelle ADRS comme support. Précaution particulière en cas d'antécédent dépressif ; l'arrêt peut ne pas suffire et justifier un avis spécialisé.
-- Autres : hypertension intracrânienne bénigne (arrêt immédiat), réactions cutanées graves (érythème polymorphe, SJS, NET, PEAG : arrêt définitif), pancréatite si triglycérides > 800 mg/dL (9 mmol/L), poussées de maladies inflammatoires digestives, baisse de la vision nocturne, sacro-iliite.
+- Autres : hypertension intracrânienne bénigne (arrêt immédiat), réactions cutanées graves (érythème polymorphe, SJS, NET, PEAG : arrêt définitif), pancréatite si triglycérides > 800 mg/dL (9 mmol/L), poussées de maladies inflammatoires digestives, baisse de la vision nocturne, sacro-iliite ; dysfonctionnement sexuel (dysfonction érectile, baisse de la libido), de fréquence indéterminée (RCP, rubrique 4.8).
 
 ### Surveillance
 
@@ -159,7 +173,8 @@ Début à 0,5 mg/kg/j, puis 0,5 à 1 mg/kg/j ; pas de bénéfice notable au-del�
 
 ### Mesures de réduction du risque
 
-- Prescription initiale réservée aux dermatologues ; renouvellement par tout médecin. Indication limitée à l'acné sévère résistante à un traitement classique bien conduit (antibiotique oral et traitement local).
+- Prescription initiale réservée aux dermatologues ; renouvellement par tout médecin. Indication limitée à l'acné sévère résistante à un traitement classique bien conduit : antibiotique oral et traitement local pendant 3 mois avec une bonne observance (ANSM).
+- Recommandations de l'ANSM (2021) : deux consultations avant toute instauration (information, puis prescription) ; sous contraception orale, prescrire systématiquement une contraception d'urgence et des préservatifs ; suivi médical mensuel de tous les patients, hommes compris.
 - Programme de prévention des grossesses : contraception hautement efficace (DIU, implant) ou deux méthodes complémentaires, de 1 mois avant à 1 mois après le traitement, y compris en cas d'aménorrhée ou sans activité sexuelle ; accord de soins et de contraception signé ; carte patiente présentée à chaque consultation et délivrance ; brochure remise.
 - Prescription limitée à 30 jours chez la femme en âge de procréer ; idéalement test, prescription et délivrance le même jour ; délivrance au plus tard 7 jours après la prescription.
 - Chez l'homme, pas de programme de contraception : l'exposition par le sperme n'est pas jugée suffisante pour un effet tératogène. Rappeler l'interdiction de partager le médicament et de donner son sang pendant le traitement et 1 mois après.

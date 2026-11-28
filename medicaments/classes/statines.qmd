@@ -11,19 +11,22 @@ prochaine_relecture: null
 sources:
   - titre: "Base de données publique des médicaments, TAHOR 10 mg (atorvastatine) : RCP et notice"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67143532/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Base de données publique des médicaments, CRESTOR 10 mg (rosuvastatine) : RCP"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/68479386/extrait"
-    consulte_le: 2026-11-25
-  - titre: "Wood FA et al. N-of-1 Trial of a Statin, Placebo, or No Treatment to Assess Side Effects. N Engl J Med 2020;383:2182-2184 (notice PubMed)"
-    url: "https://pubmed.ncbi.nlm.nih.gov/33196154/"
-    consulte_le: 2026-11-25
-  - titre: "Howard JP et al. Side Effect Patterns in a Crossover Trial of Statin, Placebo, and No Treatment (SAMSON, rapport complet). J Am Coll Cardiol 2021;78:1210-1222"
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8453640/"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "Wood FA et al. N-of-1 Trial of a Statin, Placebo, or No Treatment to Assess Side Effects. N Engl J Med 2020;383:2182-2184. doi:10.1056/NEJMc2031173"
+    url: "https://doi.org/10.1056/NEJMc2031173"
+    consulte_le: 2026-11-28
+  - titre: "Howard JP et al. Side Effect Patterns in a Crossover Trial of Statin, Placebo, and No Treatment (SAMSON, rapport complet). J Am Coll Cardiol 2021;78:1210-1222. doi:10.1016/j.jacc.2021.07.022"
+    url: "https://doi.org/10.1016/j.jacc.2021.07.022"
+    consulte_le: 2026-11-28
+  - titre: "Cholesterol Treatment Trialists' Collaboration. Effect of statin therapy on muscle symptoms: an individual participant data meta-analysis of large-scale, randomised, double-blind trials. Lancet 2022;400:832-845. doi:10.1016/S0140-6736(22)01545-8"
+    url: "https://doi.org/10.1016/S0140-6736(22)01545-8"
+    consulte_le: 2026-11-28
   - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
     url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Statines"
     url: "https://pharmacomedicale.org/medicaments/par-specialites/item/statines"
@@ -70,11 +73,15 @@ Chez les personnes à risque de diabète, une statine peut augmenter le sucre da
 
 Pas toujours. Une étude anglaise, appelée SAMSON, a suivi 60 personnes qui avaient arrêté leur statine à cause d'effets indésirables. Pendant un an, elles ont pris chaque mois soit la statine, soit un comprimé sans médicament (placebo), soit rien. Personne ne savait quel comprimé contenait la statine.
 
-Les gênes étaient presque aussi fortes avec le placebo qu'avec la statine. Elles étaient deux fois moins fortes les mois sans comprimé. C'est l'effet nocebo : attendre un effet indésirable suffit à le ressentir. Après l'étude, 1 personne sur 2 a repris sa statine.
-
-Ces douleurs ne sont pas imaginaires. Mais elles ne prouvent pas que la statine en est la cause. Parlez-en à votre médecin avant de décider.
+Les gênes étaient presque aussi fortes avec le placebo qu'avec la statine. Elles étaient deux fois moins fortes les mois sans comprimé. C'est l'effet nocebo : attendre un effet indésirable suffit à le ressentir. Six mois après l'étude, 1 personne sur 2 avait repris une statine.
 
 {{< figure-svg statines-2 alt="Trois barres. Gêne moyenne, sur un score de 0 à 100 : 8,0 les mois sans comprimé, 15,4 les mois placebo, 16,3 les mois statine." legende="Étude SAMSON : les gênes étaient presque aussi fortes avec le placebo qu'avec la statine, et deux fois moins fortes sans comprimé." >}}
+
+### Que montrent les grands essais ?
+
+De grands essais ont comparé une statine à un placebo. Les participants ne savaient pas ce qu'ils prenaient. Environ 27 personnes sur 100 ont signalé des douleurs ou une faiblesse des muscles, dans les deux groupes. La première année, environ 1 plainte sur 15 venait vraiment de la statine.
+
+Ces douleurs ne sont pas imaginaires. Mais elles ne prouvent pas que la statine en est la cause. Parlez-en à votre médecin avant de décider.
 
 ::: {.quand-consulter}
 - Douleurs, crampes ou faiblesse musculaire inexpliquées : prévenez votre médecin. Il peut demander une prise de sang.
@@ -117,7 +124,8 @@ Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-s
 ### Points clés de sécurité
 
 - Atteinte musculaire : myalgies fréquentes (≥ 1/100, < 1/10) ; myopathie, myosite, rhabdomyolyse rares (RCP Tahor). Très rares myopathies nécrosantes à médiation auto-immune (anticorps anti-HMG-CoA réductase), persistant malgré l'arrêt.
-- Nocebo (essai SAMSON) : 60 patients ayant abandonné une statine pour intolérance, 12 mois en multiples croisements (4 mois atorvastatine 20 mg, 4 mois placebo, 4 mois sans comprimé), 49 ont terminé. Score moyen de symptômes (0-100) : 8,0 sans comprimé, 15,4 sous placebo, 16,3 sous statine (statine vs placebo : p = 0,39). Ratio nocebo : 0,90. Ni l'intensité à l'introduction ni la rapidité du soulagement à l'arrêt ne distinguaient statine et placebo. À 6 mois, 30 patients sur 60 avaient repris une statine. Limite : seuls des patients dont les symptômes apparaissaient dans les 2 semaines ont été inclus ; une seule statine, une seule dose.
+- Nocebo (essai SAMSON) : 60 patients ayant abandonné une statine pour intolérance, 12 mois en multiples croisements (4 mois atorvastatine 20 mg, 4 mois placebo, 4 mois sans comprimé), 49 ont terminé. Score moyen de symptômes (0-100) : 8,0 sans comprimé, 15,4 sous placebo, 16,3 sous statine (statine vs placebo : p = 0,39). Ratio nocebo : 0,90. Ni l'intensité à l'introduction ni la rapidité du soulagement à l'arrêt ne distinguaient statine et placebo. Six mois après la fin de l'essai, 30 patients sur 60 avaient repris une statine. Limite : seuls des patients dont les symptômes apparaissaient dans les 2 semaines ont été inclus ; une seule statine, une seule dose.
+- Méta-analyse du CTT (données individuelles, 19 essais en double aveugle contre placebo, 123 940 participants, suivi médian pondéré 4,3 ans) : douleurs ou faiblesse musculaires chez 27,1 % des patients sous statine contre 26,6 % sous placebo (RR 1,03 ; IC 95 % 1,01-1,06). Excès limité à la première année (RR 1,07 ; 11 événements de plus pour 1 000 personnes-années), soit environ 1 signalement sur 15 sous statine réellement dû à la statine ; plus de 90 % des signalements n'en relevaient pas. Excès un peu plus marqué avec les schémas intensifs (atorvastatine 40-80 mg, rosuvastatine 20-40 mg).
 - Diabète : hausse possible de la glycémie chez les patients à risque ; ne justifie pas l'arrêt.
 - Atorvastatine 80 mg : risque d'AVC hémorragique en cas d'antécédent d'AVC hémorragique ou d'infarctus lacunaire (analyse SPARCL).
 
@@ -125,7 +133,7 @@ Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-s
 
 - Bilan hépatique avant traitement puis régulièrement (atorvastatine).
 - CPK avant traitement en cas d'insuffisance rénale, d'hypothyroïdie, d'antécédent musculaire personnel ou familial, de toxicité musculaire antérieure, d'alcoolisme ; à discuter après 70 ans. Ne pas débuter si CPK > 5 × LSN.
-- Sous traitement, symptômes musculaires : doser les CPK. Arrêt si CPK > 5 × LSN, ou si les symptômes sont sévères quel que soit le taux ; arrêt si CPK > 10 × LSN ou rhabdomyolyse.
+- Sous traitement, symptômes musculaires : doser les CPK. Arrêt si CPK > 5 × LSN ; arrêt à envisager si les symptômes sont sévères et gênent la vie quotidienne, même avec des CPK ≤ 5 × LSN ; arrêt si CPK > 10 × LSN ou si une rhabdomyolyse est diagnostiquée ou suspectée (RCP Tahor).
 
 ### Interactions majeures
 
@@ -138,17 +146,17 @@ Niveaux du Thésaurus de l'ANSM (version du 15 septembre 2023, non mise à jour 
 | Statines + daptomycine | Association déconseillée |
 | Statines + AVK | Précaution d'emploi (INR) |
 | Simvastatine + inhibiteurs puissants du CYP3A4, ciclosporine, danazol | Contre-indication |
-| Simvastatine + jus de pamplemousse, carbamazépine, dronédarone, millepertuis | Association déconseillée |
+| Simvastatine + jus de pamplemousse, carbamazépine, dronédarone, millepertuis, rifampicine | Association déconseillée |
 | Simvastatine + amiodarone, amlodipine, diltiazem | Précaution d'emploi |
 | Atorvastatine + itraconazole, kétoconazole, posaconazole, glécaprévir/pibrentasvir | Contre-indication |
-| Atorvastatine + inhibiteurs de protéase boostés par ritonavir | Association déconseillée |
+| Atorvastatine + inhibiteurs de protéase boostés par ritonavir, rifampicine | Association déconseillée |
 | Atorvastatine + clarithromycine, érythromycine, diltiazem, ciclosporine, fluconazole | Précaution d'emploi |
-| Rosuvastatine + ciclosporine | Contre-indication |
+| Rosuvastatine + ciclosporine, lédipasvir | Contre-indication |
 
 ### Adaptation des doses
 
 - Atorvastatine : 10 mg/j au départ, paliers d'au moins 4 semaines, 80 mg/j au maximum.
-- Rosuvastatine : contre-indiquée si ClCr < 30 mL/min ; 40 mg contre-indiqué si ClCr < 60 mL/min, hypothyroïdie, antécédent musculaire, alcool, association à un fibrate, ou patient d'origine asiatique (dose initiale de 5 mg recommandée chez ces derniers).
+- Rosuvastatine : contre-indiquée si ClCr < 30 mL/min, en cas de myopathie ou d'association à sofosbuvir/velpatasvir/voxilaprévir (RCP Crestor) ; 40 mg contre-indiqué si ClCr < 60 mL/min, hypothyroïdie, antécédent musculaire, alcool, association à un fibrate, ou patient d'origine asiatique (dose initiale de 5 mg recommandée chez ces derniers).
 - Contre-indications communes : affection hépatique évolutive, grossesse, allaitement, femme en âge de procréer sans contraception fiable.
 
 ### Pièges fréquents

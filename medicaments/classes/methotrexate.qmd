@@ -11,13 +11,13 @@ prochaine_relecture: null
 sources:
   - titre: "Base de données publique des médicaments, RCP et notice de NOVATREX 2,5 mg, comprimé (CIS 67853564)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67853564/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, « Risque de surdosage en méthotrexate par voie orale : un médicament à prendre une fois par semaine, toujours le même jour » (20/07/2022, mis à jour le 13/03/2025)"
     url: "https://ansm.sante.fr/actualites/medicaments-a-base-de-methotrexate-par-voie-orale-imeth-novatrex-et-generiques-une-carte-patients-et-une-brochure-professionnels-de-sante-pour-eviter-les-surdosages"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
     url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Centre de référence sur les agents tératogènes (CRAT)"
     url: "https://www.lecrat.fr/"
     consulte_le: 2026-11-25
@@ -74,7 +74,7 @@ Avant le traitement, vous faites une prise de sang et une radiographie des poumo
 - Fièvre, mal de gorge, plaies dans la bouche, diarrhée, vomissements : appelez vite votre médecin et dites que vous prenez du méthotrexate.
 - Boutons sur la peau, saignement, faiblesse inhabituelle : appelez vite votre médecin.
 - Toux sèche, essoufflement, douleur dans la poitrine : consultez rapidement.
-- Vous avez pris du méthotrexate plusieurs jours de suite par erreur : appelez tout de suite votre médecin ou le 15.
+- Vous avez pris du méthotrexate plusieurs jours de suite par erreur : appelez tout de suite votre médecin ou votre pharmacien. Si vous ne pouvez pas les joindre, appelez le 15.
 - Grande difficulté à respirer : appelez le 15.
 :::
 
@@ -113,7 +113,7 @@ Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-s
 - Dans la polyarthrite rhumatoïde, le psoriasis et l'entretien de la leucémie aiguë lymphoblastique, le méthotrexate oral se prend **une fois par semaine**. La prise quotidienne par erreur entraîne des surdosages parfois mortels, en particulier chez le sujet âgé ; ils persistent malgré les mesures en place (ANSM, 2025).
 - Tableau du surdosage : leucopénie, thrombopénie, pancytopénie par aplasie, mucite, stomatite, ulcérations buccales, nausées, vomissements. Décès le plus souvent par sepsis, insuffisance rénale ou aplasie.
 - Prise en charge : **folinate de calcium** le plus tôt possible (pas l'acide folique), posologie guidée par la méthotrexatémie. La toxicité peut devenir irréversible si l'acide folinique n'est pas débuté dans les 42 à 48 heures.
-- Contre-indications (RCP) : clairance de la créatinine < 30 mL/min, grossesse dans les indications non oncologiques, allaitement, association aux vaccins vivants atténués, au probénécide, au triméthoprime, à l'acitrétine, et à l'aspirine à dose antalgique, antipyrétique ou anti-inflammatoire si méthotrexate > 20 mg/semaine.
+- Contre-indications (RCP) : clairance de la créatinine < 30 mL/min, atteinte hépatique sévère ou insuffisance hépatocellulaire, insuffisance respiratoire chronique, syndrome d'immunodéficience acquise, grossesse dans les indications non oncologiques, allaitement, association aux vaccins vivants atténués, au probénécide, au triméthoprime (seul ou associé au sulfaméthoxazole, quelle que soit la dose de méthotrexate), à l'acitrétine, et à l'aspirine à dose antalgique, antipyrétique ou anti-inflammatoire si méthotrexate > 20 mg/semaine.
 - Tératogène : dans les études citées par le RCP, avortements spontanés chez 42,5 % des femmes exposées à faible dose (< 30 mg/semaine) contre 22,5 %, malformations majeures dans 6,6 % des naissances vivantes contre environ 4 %.
 
 ### Surveillance
@@ -136,7 +136,7 @@ Niveaux du Thésaurus de l'ANSM (version du 15 septembre 2023) :
 | Inhibiteurs de la pompe à protons | À prendre en compte | Association déconseillée |
 | Triméthoprime (seul ou associé) | Association déconseillée | Contre-indication |
 
-Quelle que soit la dose : probénécide et acitrétine, **contre-indication** ; pénicillines, ciprofloxacine et tédizolide, **association déconseillée** ; ciclosporine, sulfamides antibactériens et ponatinib, **précaution d'emploi**. Précaution d'emploi type : hémogramme hebdomadaire les premières semaines, surveillance renforcée si altération même légère de la fonction rénale et chez le sujet âgé. Le RCP signale aussi le protoxyde d'azote (myélosuppression, stomatite).
+Quelle que soit la dose : probénécide et acitrétine, **contre-indication** ; pénicillines, ciprofloxacine et tédizolide, **association déconseillée** ; ciclosporine, sulfamides antibactériens et ponatinib, **précaution d'emploi**. Précaution d'emploi type : hémogramme hebdomadaire les premières semaines, surveillance renforcée si altération même légère de la fonction rénale et chez le sujet âgé. Le RCP déconseille aussi la phénytoïne (et la fosphénytoïne), l'olaparib et le protoxyde d'azote (myélosuppression, stomatite) ; il contre-indique le triméthoprime à toute dose, là où le Thésaurus le déconseille pour 20 mg/semaine ou moins.
 
 ### Adaptation des doses
 
