@@ -271,10 +271,14 @@ def construire(
     substances: dict,
     cites: dict,
     mis_a_jour: str | None,
-    en_sources: dict | None = None,
+    en_sources: dict[str, list[str]],
 ) -> dict:
     """The output: site-wide examples, page examples (from en_sources only), and the
-    marketing status of every product in cites."""
+    marketing status of every product in cites.
+
+    en_sources (product -> pages citing it in sources:, the third value of lire_pages)
+    has no default: left out, every page would fall back to the site-wide examples
+    without notice."""
     choix = {}
     for listed in substances.values():
         for substance in listed:
@@ -285,7 +289,7 @@ def construire(
     # site-wide one (the children's sheet cites a suspension, not an adult tablet). A
     # product named in the text (one to avoid, say) is never the example.
     par_page: dict[str, list[str]] = {}
-    for cis, pages_citant in (en_sources or {}).items():
+    for cis, pages_citant in en_sources.items():
         for page in pages_citant:
             par_page.setdefault(page, []).append(cis)
     pages: dict[str, dict] = {}
