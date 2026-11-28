@@ -66,3 +66,11 @@ def test_unknown_theme_name_is_reported():
     themes = {"clair": {"t": "#000000", "f": "#ffffff"}, "sombre": {"t": "#000000", "f": "#ffffff"}}
     failures = ck.check_themes(themes, [{"texte": "t", "fond": "f", "themes": ["nuit"]}])
     assert "nuit" in failures[0]
+
+
+def test_dark_token_the_check_cannot_read_is_reported():
+    # Otherwise the pair would be checked on the light value and pass (review of #43).
+    light = "$pv-ink: #10283a !default;\n$pv-paper: #ffffff !default;"
+    dark = "$pv-ink: #fff;\n$pv-paper: lighten($pv-ink, 10%);\n$pv-figures-sombre: (\n);"
+    assert ck.unread_dark_tokens(light, dark) == ["pv-ink", "pv-paper"]
+    assert ck.unread_dark_tokens(light, "$pv-ink: #e3ecf2;") == []

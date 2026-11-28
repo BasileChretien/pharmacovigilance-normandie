@@ -31,6 +31,15 @@ def parse_scss_tokens(scss: str) -> dict[str, str]:
     return {name: value.lower() for name, value in _TOKEN.findall(scss)}
 
 
+def unread_dark_tokens(light_scss: str, dark_scss: str) -> list[str]:
+    """Light tokens that the dark file sets in a form this check cannot read (#fff, a Sass
+    function): their pairs would be checked on the light value and pass."""
+    light = parse_scss_tokens(light_scss)
+    dark = parse_scss_tokens(dark_scss)
+    assigned = re.findall(r"^\s*\$([\w-]+)\s*:", dark_scss, re.MULTILINE)
+    return sorted({name for name in assigned if name in light and name not in dark})
+
+
 def theme_tokens(light_scss: str, dark_scss: str) -> dict[str, dict[str, str]]:
     """The tokens of each theme: the dark one is the light one, overridden by its file."""
     light = parse_scss_tokens(light_scss)
@@ -91,9 +100,13 @@ def check_themes(themes: dict[str, dict[str, str]], pairs: list[dict]) -> list[s
 def main() -> int:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
-    themes = theme_tokens(THEME.read_text(encoding="utf-8"), THEME_SOMBRE.read_text(encoding="utf-8"))
+    light_scss, dark_scss = THEME.read_text(encoding="utf-8"), THEME_SOMBRE.read_text(encoding="utf-8")
+    themes = theme_tokens(light_scss, dark_scss)
     pairs = yaml.safe_load(PAIRS.read_text(encoding="utf-8"))["paires"]
-    failures = check_themes(themes, pairs)
+    failures = [
+        f"sombre : ${name} illisible dans assets/theme-sombre.scss (écrire #rrggbb)"
+        for name in unread_dark_tokens(light_scss, dark_scss)
+    ] + check_themes(themes, pairs)
     for pair in pairs:
         ratios = []
         for theme in pair_themes(pair):
