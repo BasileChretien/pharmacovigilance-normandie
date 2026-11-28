@@ -361,7 +361,7 @@ def test_the_page_waits_for_member_cards_before_listing_anything():
 
 
 def test_an_empty_list_shows_the_decorative_mascot_and_a_filled_one_does_not():
-    mascotte = '<img class="mascotte" src="../assets/img/mascotte.svg" alt="" aria-hidden="true"'
+    mascotte = '<img class="mascotte" src="../assets/img/mascotte/mascotte-attente.svg" alt="" aria-hidden="true"'
     lu = {"releve_le": "2026-11-28", "depuis": 2024, "membres": [CARBERRY], "non_lus": []}
     vides = [
         None,

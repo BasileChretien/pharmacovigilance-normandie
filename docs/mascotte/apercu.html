@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Mascotte : trois esquisses</title>
+<title>Mascotte : contextes et esquisses</title>
 <!-- Preview of the mascot sketches (docs/mascotte/README.md). Open this file in a browser:
      docs/ is not published by Quarto. Colours below are the tokens of assets/theme.scss
      (light) and assets/theme-sombre.scss (dark). -->
@@ -27,13 +27,39 @@
   .brume .bouton { background: #0a5c9e; color: #ffffff; }
   .sombre { background: #0f1b25; color: #e3ecf2; }
   .sombre .bouton { background: #72b9ee; color: #0f1b25; }
+  .contextes { display: grid; grid-template-columns: repeat(5, minmax(9rem, 1fr)); gap: 1rem; }
+  .contextes img { width: 100%; height: auto; }
+  .intertitre { padding: 0.5rem 2rem 0; margin: 0; }
+  .rejouer { font: inherit; padding: 0.4rem 0.9rem; border-radius: 0.75rem; border: 1px solid #0a5c9e; background: #ffffff; color: #0a5c9e; font-weight: 700; cursor: pointer; margin-bottom: 1rem; }
 </style>
 </head>
 <body>
 <header>
-  <h1>Mascotte : trois esquisses</h1>
+  <h1>Mascotte</h1>
   <p>Un Normand au casque à nasal, avec un bouclier rond qui est un comprimé sécable vu de dessus. Sous chaque esquisse : la petite taille prévue à côté du bouton « Déclarer ».</p>
 </header>
+
+<section class="clair" id="contextes">
+  <h2>Selon la page : la variante retenue de chaque contexte (assets/img/mascotte/)</h2>
+  <button type="button" class="rejouer">Rejouer les animations</button>
+  <div class="contextes">
+    <figure><img src="../../assets/img/mascotte/mascotte-accueil.svg" alt="" width="240" height="280"><figcaption><strong>Accueil</strong><br>Il lève le cor et sonne l'alerte.</figcaption></figure>
+    <figure><img src="../../assets/img/mascotte/mascotte-vigiking.svg" alt="" width="240" height="280"><figcaption><strong>Vigiking</strong><br>Un saut, puis il annonce le numéro.</figcaption></figure>
+    <figure><img src="../../assets/img/mascotte/mascotte-404.svg" alt="" width="240" height="280"><figcaption><strong>404</strong><br>Perdu : il regarde autour de lui.</figcaption></figure>
+    <figure><img src="../../assets/img/mascotte/mascotte-recherche.svg" alt="" width="240" height="280"><figcaption><strong>Recherche vide</strong><br>Il cherche des yeux : « hmm ».</figcaption></figure>
+    <figure><img src="../../assets/img/mascotte/mascotte-attente.svg" alt="" width="240" height="280"><figcaption><strong>Liste en attente</strong><br>Il patiente.</figcaption></figure>
+  </div>
+</section>
+<script>
+  // Reloading the images replays their animations (each plays once, 5 s at most).
+  document.querySelector(".rejouer").addEventListener("click", function () {
+    document.querySelectorAll(".contextes img").forEach(function (img) {
+      img.src = img.src.split("?")[0] + "?" + Date.now();
+    });
+  });
+</script>
+
+<h2 class="intertitre">Les trois esquisses de départ</h2>
 
 <section class="clair">
   <h2>Thème clair</h2>

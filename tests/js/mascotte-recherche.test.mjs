@@ -59,7 +59,7 @@ test("an empty search shows one decorative mascot, found from the page's offset"
   const img = box.children[0];
   assert.equal(img.tag, "img");
   assert.equal(img.className, "mascotte");
-  assert.equal(img.attrs.src, "../assets/img/mascotte.svg");
+  assert.equal(img.attrs.src, "../assets/img/mascotte/mascotte-recherche.svg");
   assert.equal(img.attrs.alt, "");
   assert.equal(img.attrs["aria-hidden"], "true");
 });
@@ -68,7 +68,7 @@ test("the 404 page, served at any address, gives an absolute offset", () => {
   const p = page({ path: "/pharmacovigilance-normandie/nimporte/ou.html", offset: "/pharmacovigilance-normandie/" });
   const box = p.addBox();
   p.observer().fn();
-  assert.equal(box.children[0].attrs.src, "/pharmacovigilance-normandie/assets/img/mascotte.svg");
+  assert.equal(box.children[0].attrs.src, "/pharmacovigilance-normandie/assets/img/mascotte/mascotte-recherche.svg");
 });
 
 test("no mascot on medicine, alert or serious-harm pages", () => {

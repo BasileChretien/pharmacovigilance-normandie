@@ -25,7 +25,7 @@ EQUIPES = {"caen": "Caen", "rouen": "Rouen"}
 # The mascot in the list's empty states (docs/mascotte/README.md), decorative. The path is
 # relative to crpv/recherche.qmd, the only page that includes this list.
 MASCOTTE = (
-    '<img class="mascotte" src="../assets/img/mascotte.svg" alt="" aria-hidden="true" '
+    '<img class="mascotte" src="../assets/img/mascotte/mascotte-attente.svg" alt="" aria-hidden="true" '
     'width="60" height="70">'
 )
 
