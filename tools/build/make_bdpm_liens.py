@@ -35,6 +35,7 @@ SOURCE = "https://base-donnees-publique.medicaments.gouv.fr/telechargement"
 EXCLUDED_DIRS = {
     "_site",
     "_templates",
+    "bulletin",  # the Vigiking bulletin, its own Quarto project
     "docs",
     "node_modules",
     ".quarto",

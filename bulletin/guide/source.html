@@ -1,0 +1,1041 @@
+<title>Écrire et fabriquer le Vigiking</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+@font-face { font-family: "Atkinson Hyperlegible Next"; font-weight: 200 800; font-display: swap; src: url(data:font/woff2;base64,__ATKINSON__) format("woff2"); }
+@font-face { font-family: "Bricolage Grotesque"; font-weight: 200 800; font-display: swap; src: url(data:font/woff2;base64,__BRICOLAGE__) format("woff2"); }
+@font-face { font-family: "Atkinson Hyperlegible Mono"; font-weight: 200 800; font-display: swap; src: url(data:font/woff2;base64,__MONO__) format("woff2"); }
+
+/* Layout: a Channel-blue cover band like the bulletin's, then one reading column; the
+   bulletin's line of dots ties the three steps together. Colours and fonts are the
+   bulletin's own (typst-template.typ). */
+:root {
+  --papier: #ffffff;
+  --encre: #10283a;
+  --encre-douce: #46586a;
+  --brume: #eef6fa;
+  --filet: #d5e2ea;
+  --manche: #0d4a5e;
+  --sur-manche: #ffffff;
+  --ecume: #bfe3ee;
+  --bleu: #0a5c9e;
+  --vert: #0b6b45;
+  --rouge: #b3261e;
+  --orange: #b45309;
+  --cyan: #19a6e3;      /* decoration only */
+  --vert-vif: #2bcf8c;  /* decoration only */
+  --dore: #e7b03b;      /* decoration only */
+  --carte: #ffffff;
+  --ombre: 0 18px 40px -28px rgb(16 40 58 / 0.45);
+  --titres: "Bricolage Grotesque", "Atkinson Hyperlegible Next", system-ui, sans-serif;
+  --texte: "Atkinson Hyperlegible Next", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: "Atkinson Hyperlegible Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --papier: #0a1a24; --encre: #e4eef4; --encre-douce: #a7bbc9; --brume: #10293a; --filet: #22404f;
+    --manche: #0b3d4e; --sur-manche: #ffffff; --ecume: #bfe3ee; --bleu: #7fc1f3; --vert: #63d4a2;
+    --rouge: #ff8f86; --orange: #f4a964; --carte: #0f2331; --ombre: 0 18px 40px -26px rgb(0 0 0 / 0.7);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --papier: #0a1a24; --encre: #e4eef4; --encre-douce: #a7bbc9; --brume: #10293a; --filet: #22404f;
+  --manche: #0b3d4e; --sur-manche: #ffffff; --ecume: #bfe3ee; --bleu: #7fc1f3; --vert: #63d4a2;
+  --rouge: #ff8f86; --orange: #f4a964; --carte: #0f2331; --ombre: 0 18px 40px -26px rgb(0 0 0 / 0.7);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--papier); color: var(--encre);
+  font-family: var(--texte); font-size: 1.0625rem; line-height: 1.6;
+}
+.wrap {
+  max-width: 70rem; margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+h1, h2, h3 { font-family: var(--titres); line-height: 1.1; letter-spacing: -0.015em; text-wrap: balance; margin: 0; }
+h2 { font-size: clamp(1.7rem, 3.2vw, 2.35rem); font-weight: 800; }
+h3 { font-size: 1.2rem; font-weight: 700; }
+p { margin: 0; }
+a { color: var(--bleu); text-underline-offset: 3px; }
+a:focus-visible, summary:focus-visible { outline: 3px solid var(--bleu); outline-offset: 3px; border-radius: 4px; }
+code, .fichier { font-family: var(--mono); font-size: 0.9em; }
+code { background: var(--brume); border: 1px solid var(--filet); border-radius: 6px; padding: 0.05em 0.4em; white-space: nowrap; }
+kbd { font: 600 0.85em/1 var(--mono); padding: 0.15em 0.45em; border-radius: 5px; border: 1px solid var(--filet); border-bottom-width: 2px; background: var(--carte); color: var(--encre); }
+.surtitre {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  font-size: 0.78rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--encre-douce);
+}
+.surtitre::before { content: ""; width: 26px; height: 3px; background: var(--dore); border-radius: 2px; }
+.section { padding-block: clamp(3.5rem, 7vw, 5.5rem); }
+.section + .section { border-top: 1px solid var(--filet); }
+.entete { display: grid; gap: 0.8rem; max-width: 46rem; margin-bottom: 2.4rem; }
+.entete p { color: var(--encre-douce); font-size: 1.1rem; }
+
+/* ---------- Cover band -------------------------------------------------------------- */
+.une {
+  background: var(--manche); color: var(--sur-manche); position: relative; overflow: hidden;
+  margin-top: calc(-1 * env(safe-area-inset-top, 0px));
+  padding-top: calc(env(safe-area-inset-top, 0px) + clamp(2.5rem, 6vw, 4.5rem));
+  padding-bottom: clamp(3rem, 6vw, 4.5rem);
+}
+.une::after {
+  content: ""; position: absolute; inset: auto 0 0 0; height: 5px;
+  background: linear-gradient(90deg, var(--cyan), var(--vert-vif));
+}
+.une .wrap { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.une .surtitre { color: var(--ecume); }
+.une h1 { font-size: clamp(2.4rem, 5.6vw, 4.1rem); font-weight: 800; margin: 1rem 0 1.2rem; }
+.une h1 em { font-style: normal; background: linear-gradient(90deg, var(--cyan), var(--vert-vif)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.une .chapeau { font-size: 1.2rem; color: var(--ecume); max-width: 34rem; }
+.une .chapeau strong { color: var(--sur-manche); }
+.reperes { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.8rem; }
+.repere {
+  font-size: 0.9rem; font-weight: 600; color: var(--sur-manche);
+  border: 1px solid rgb(255 255 255 / 0.3); background: rgb(255 255 255 / 0.08);
+  border-radius: 999px; padding: 0.35rem 0.85rem;
+}
+
+/* The gesture: a Word file dropped on the icon gives three files. */
+.geste { display: grid; grid-template-columns: repeat(5, auto); align-items: center; justify-content: center; gap: 0.9rem; }
+.doc {
+  position: relative; width: 6.6rem; aspect-ratio: 4 / 5; border-radius: 0.6rem; padding: 0.7rem;
+  background: #ffffff; color: #10283a; box-shadow: 0 16px 30px -18px rgb(0 0 0 / 0.6);
+  clip-path: polygon(0 0, 74% 0, 100% 20%, 100% 100%, 0 100%);
+  display: flex; flex-direction: column; justify-content: flex-end; gap: 0.3rem;
+}
+.doc::before {
+  content: ""; position: absolute; inset: 0.7rem 0.7rem auto;
+  height: 2.6rem;
+  background: repeating-linear-gradient(#d5e2ea 0 3px, transparent 3px 9px);
+}
+.doc .format { align-self: flex-start; font: 700 0.68rem/1 var(--mono); letter-spacing: 0.06em; color: #fff; background: #0a5c9e; padding: 0.25rem 0.4rem; border-radius: 4px; }
+.doc .nom { font: 600 0.68rem/1.2 var(--texte); color: #46586a; overflow-wrap: anywhere; }
+.fleche { width: 2.2rem; height: 2px; background: rgb(255 255 255 / 0.5); position: relative; }
+.fleche::after { content: ""; position: absolute; right: -2px; top: -4px; border: 5px solid transparent; border-left: 7px solid rgb(255 255 255 / 0.7); }
+.icone { display: grid; justify-items: center; gap: 0.5rem; }
+.icone .tuile {
+  width: 6.2rem; aspect-ratio: 1; border-radius: 1.4rem; display: grid; place-items: center;
+  background: #0a2f3c; border: 2px solid transparent;
+  background-image: linear-gradient(#0a2f3c, #0a2f3c), linear-gradient(135deg, var(--cyan), var(--vert-vif));
+  background-origin: border-box; background-clip: padding-box, border-box;
+  box-shadow: 0 0 0 0 rgb(43 207 140 / 0.5);
+}
+.icone .tuile svg { width: 72%; height: auto; }
+.icone span { font-size: 0.82rem; font-weight: 600; color: var(--sur-manche); text-align: center; max-width: 8rem; line-height: 1.25; }
+.sorties { display: grid; gap: 0.55rem; }
+.sortie {
+  display: flex; align-items: center; gap: 0.55rem; padding: 0.45rem 0.7rem 0.45rem 0.45rem;
+  background: rgb(255 255 255 / 0.1); border: 1px solid rgb(255 255 255 / 0.22); border-radius: 0.6rem;
+  font: 600 0.78rem/1.2 var(--mono); color: var(--sur-manche); white-space: nowrap;
+}
+.sortie b { font: 700 0.62rem/1 var(--mono); letter-spacing: 0.05em; padding: 0.3rem 0.35rem; border-radius: 4px; color: #10283a; background: var(--ecume); min-width: 2.6rem; text-align: center; }
+.sortie:nth-child(1) b { background: #ffffff; }
+.sortie:nth-child(3) b { background: var(--dore); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .doc { animation: deposer 1.4s cubic-bezier(.2,.7,.2,1) 0.3s both; }
+  .icone .tuile { animation: accueillir 1s ease-out 1.5s both; }
+  .sortie { animation: sortir 0.6s ease-out both; }
+  .sortie:nth-child(1) { animation-delay: 1.9s; }
+  .sortie:nth-child(2) { animation-delay: 2.05s; }
+  .sortie:nth-child(3) { animation-delay: 2.2s; }
+}
+@keyframes deposer { from { transform: translate(-1.2rem, -1.6rem) rotate(-8deg); } to { transform: none; } }
+@keyframes accueillir { 0% { box-shadow: 0 0 0 0 rgb(43 207 140 / 0.55); } 100% { box-shadow: 0 0 0 18px rgb(43 207 140 / 0); } }
+@keyframes sortir { from { transform: translateX(-0.8rem); } to { transform: none; } }
+
+/* ---------- Three steps on the bulletin's line of dots ------------------------------ */
+.etapes { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; position: relative; }
+.etapes::before {
+  content: ""; position: absolute; left: 0.55rem; right: 0.55rem; top: 0.55rem; height: 2px;
+  background: linear-gradient(90deg, var(--cyan), var(--vert-vif));
+}
+.etape { position: relative; display: grid; gap: 0.7rem; align-content: start; padding-top: 2.4rem; }
+.etape::before {
+  content: ""; position: absolute; top: 0; left: 0; width: 1.1rem; height: 1.1rem; border-radius: 50%;
+  background: var(--papier); border: 3px solid var(--point);
+}
+.etape:nth-child(1) { --point: #0a5c9e; }
+.etape:nth-child(2) { --point: #0b6472; }
+.etape:nth-child(3) { --point: #0b6b45; }
+.etape .num { font: 800 2.6rem/0.9 var(--titres); color: var(--point); }
+:root[data-theme="dark"] .etape:nth-child(1) { --point: #7fc1f3; }
+:root[data-theme="dark"] .etape:nth-child(2) { --point: #6fcfd0; }
+:root[data-theme="dark"] .etape:nth-child(3) { --point: #63d4a2; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .etape:nth-child(1) { --point: #7fc1f3; }
+  :root:not([data-theme="light"]) .etape:nth-child(2) { --point: #6fcfd0; }
+  :root:not([data-theme="light"]) .etape:nth-child(3) { --point: #63d4a2; }
+}
+.etape p { color: var(--encre-douce); }
+.etape .note { font-size: 0.92rem; padding: 0.7rem 0.85rem; border-radius: 0.6rem; background: var(--brume); color: var(--encre); }
+
+.premiere-fois {
+  margin-top: 2.6rem; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 1.2rem; align-items: center;
+  padding: 1.2rem 1.4rem; border-radius: 1rem; border: 1px dashed var(--filet); background: var(--carte);
+}
+.premiere-fois .badge { font: 700 0.72rem/1 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; padding: 0.5rem 0.6rem; border-radius: 6px; background: var(--dore); color: #10283a; }
+.premiere-fois p { color: var(--encre-douce); }
+.premiere-fois strong { color: var(--encre); }
+
+/* ---------- Word styles, side by side with what they give ---------------------------- */
+.styles { display: grid; gap: 0.75rem; }
+.ligne {
+  display: grid; grid-template-columns: minmax(0, 15rem) 2rem minmax(0, 1fr); align-items: center; gap: 1rem;
+  padding: 0.9rem 1rem; border-radius: 0.9rem; background: var(--carte); border: 1px solid var(--filet);
+}
+.ligne > * { min-width: 0; }
+.style-word {
+  display: grid; gap: 0.2rem; padding: 0.55rem 0.75rem; border-radius: 0.5rem;
+  background: var(--brume); border: 1px solid var(--filet);
+}
+.style-word .apercu { font: 600 1rem/1.2 "Segoe UI", system-ui, sans-serif; color: var(--encre); }
+.style-word .nom { font-size: 0.78rem; color: var(--encre-douce); }
+.vers { color: var(--encre-douce); font-size: 1.2rem; text-align: center; }
+.rendu { display: grid; gap: 0.35rem; }
+.rendu .explication { font-size: 0.92rem; color: var(--encre-douce); }
+
+/* Miniatures in the bulletin's own look (always on paper, as the PDF). */
+.mini { background: #ffffff; color: #10283a; border-radius: 0.5rem; padding: 0.6rem 0.8rem; border: 1px solid #d5e2ea; font-size: 0.95rem; }
+.mini .art { display: flex; align-items: baseline; gap: 0.6rem; }
+.mini .art b { font: 800 1.6rem/0.9 var(--titres); color: #0a5c9e; }
+.mini .art span { font: 700 1.05rem/1.2 var(--titres); }
+.mini .par { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #46586a; margin-left: 2.4rem; }
+.mini .titre-une { background: #0d4a5e; color: #fff; border-radius: 0.4rem; padding: 0.55rem 0.7rem; font: 800 1.1rem/1.15 var(--titres); }
+.mini .mois { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #46586a; }
+.mini .encadre { display: grid; grid-template-columns: 4px 1fr; background: #eef6fa; border-radius: 0 0.4rem 0.4rem 0; overflow: hidden; }
+.mini .encadre::before { content: ""; background: #0a5c9e; }
+.mini .encadre p { padding: 0.45rem 0.7rem; }
+.mini .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+.mini .cols i { display: block; height: 0.4rem; border-radius: 2px; background: #d5e2ea; margin-block: 0.3rem; }
+.mini.pastilles { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.pastille { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #fff; border-radius: 999px; padding: 0.18rem 0.6rem; }
+.pastille.r { background: #b3261e; } .pastille.v { background: #0b6b45; } .pastille.b { background: #0a5c9e; } .pastille.j { background: #e7b03b; color: #10283a; }
+.ci { color: #b3261e; font-weight: 700; }
+.cm { color: #b45309; font-style: italic; }
+.mini .petit { font-size: 0.75rem; color: #46586a; border-top: 1px solid #d5e2ea; padding-top: 0.35rem; }
+.mini .figure { display: grid; gap: 0.3rem; justify-items: center; }
+.mini .figure i { width: 70%; height: 2.2rem; border-radius: 0.3rem; background: linear-gradient(135deg, #dcebf3, #bfe3ee); }
+.mini .figure small { font-size: 0.72rem; color: #46586a; }
+
+/* ---------- Contents bar ------------------------------------------------------------ */
+.sommaire { border-bottom: 1px solid var(--filet); }
+.sommaire ul { list-style: none; margin: 0; padding: 0; padding-block: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; }
+.sommaire a { color: var(--encre); text-decoration: none; font-weight: 600; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 0.5rem; }
+.sommaire a::before { content: ""; width: 0.55rem; height: 0.55rem; border-radius: 50%; border: 2px solid var(--bleu); }
+.sommaire a:hover { color: var(--bleu); }
+.cta { display: inline-flex; margin-top: 1.6rem; color: var(--sur-manche); font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--vert-vif); padding-bottom: 0.15rem; }
+.cta:hover { border-bottom-color: var(--cyan); }
+
+/* ---------- Numbered how-to steps (installation, Word) ------------------------------ */
+.pas { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.3rem; counter-reset: pas; }
+.pas > li { counter-increment: pas; display: grid; grid-template-columns: 2.4rem minmax(0, 1fr); gap: 0.9rem; }
+.pas > li::before {
+  content: counter(pas); width: 2.4rem; height: 2.4rem; border-radius: 50%; display: grid; place-items: center;
+  font: 800 1.1rem/1 var(--titres); color: var(--bleu); background: var(--brume); border: 1px solid var(--filet);
+}
+.pas > li > div { display: grid; gap: 0.35rem; min-width: 0; }
+.pas p { color: var(--encre-douce); }
+.pas .astuce { font-size: 0.92rem; padding: 0.6rem 0.85rem; border-radius: 0.6rem; background: var(--brume); color: var(--encre); }
+.menu { font-weight: 600; color: var(--encre); white-space: nowrap; }
+.prerequis { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: -1rem 0 2rem; }
+.prerequis span { font-size: 0.88rem; font-weight: 600; padding: 0.35rem 0.85rem; border-radius: 999px; border: 1px solid var(--filet); background: var(--carte); }
+.installer { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 2.2rem; align-items: start; }
+.installer aside { display: grid; gap: 1.2rem; }
+.arbo { margin: 0; padding: 1rem 1.1rem; border-radius: 0.8rem; background: var(--carte); border: 1px solid var(--filet); overflow-x: auto; font: 0.82rem/1.75 var(--mono); white-space: pre; }
+.arbo b { color: var(--bleu); font-weight: 700; }
+.arbo i { color: var(--encre-douce); font-style: normal; }
+.legende-arbo { font-size: 0.9rem; color: var(--encre-douce); }
+
+/* ---------- An issue in Word, paragraph by paragraph -------------------------------- */
+.document { margin-top: 2.6rem; border-radius: 0.9rem; overflow: hidden; border: 1px solid var(--filet); background: var(--carte); box-shadow: var(--ombre); }
+.document .ruban { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; padding: 0.65rem 0.9rem; background: var(--brume); border-bottom: 1px solid var(--filet); font-size: 0.8rem; color: var(--encre-douce); }
+.document .ruban b { font-weight: 600; margin-right: 0.3rem; }
+.document .ruban span { padding: 0.22rem 0.55rem; border-radius: 0.35rem; border: 1px solid var(--filet); background: var(--carte); color: var(--encre); font-family: "Segoe UI", system-ui, sans-serif; }
+.document .entetes, .document li { display: grid; grid-template-columns: 10rem minmax(0, 1fr) minmax(0, 15rem); }
+.document .entetes { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--encre-douce); border-bottom: 1px solid var(--filet); }
+.document .entetes span { padding: 0.5rem 0.9rem; }
+.document ol { list-style: none; margin: 0; padding: 0; }
+.document li { border-bottom: 1px solid var(--filet); }
+.document li:last-child { border-bottom: 0; }
+.document .zone { padding: 0.65rem 0.9rem; font: 0.8rem/1.4 "Segoe UI", system-ui, sans-serif; color: var(--encre-douce); background: var(--brume); border-right: 1px solid var(--filet); }
+.document .texte { padding: 0.65rem 0.9rem; font-family: "Segoe UI", system-ui, sans-serif; min-width: 0; }
+.document .effet { padding: 0.65rem 0.9rem; font-size: 0.86rem; color: var(--encre-douce); border-left: 1px dashed var(--filet); }
+.document .effet::before { content: "→ "; color: var(--vert); font-weight: 700; }
+.t-titre { font-size: 1.45rem; font-weight: 300; line-height: 1.2; }
+.t-sous { color: var(--encre-douce); }
+.t-titre1 { font-size: 1.15rem; font-weight: 600; color: var(--bleu); }
+.t-image { height: 3.2rem; width: min(100%, 14rem); border-radius: 0.35rem; background: linear-gradient(135deg, var(--brume), var(--filet)); display: grid; place-items: center; font-size: 0.75rem; color: var(--encre-douce); }
+.t-encadre { padding: 0.35rem 0.6rem; border-radius: 0.3rem; background: var(--brume); }
+.t-saut, .t-ident { font-family: var(--mono); font-size: 0.86rem; }
+.t-ident { background: rgb(231 176 59 / 0.22); border-radius: 4px; padding: 0.05em 0.3em; }
+.t-cat { display: inline-block; font-weight: 700; padding: 0.05rem 0.5rem; border-radius: 0.3rem; background: rgb(179 38 30 / 0.12); }
+.t-ci { color: var(--rouge); font-weight: 700; }
+.t-cm { color: var(--orange); font-style: italic; }
+.t-legende { font-size: 0.85rem; color: var(--encre-douce); font-style: italic; }
+
+.faire { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
+.faire > div { padding: 1.1rem 1.3rem 1.2rem; border-radius: 0.9rem; background: var(--carte); border: 1px solid var(--filet); }
+.faire h3 { display: flex; align-items: center; gap: 0.55rem; margin-bottom: 0.7rem; }
+.faire h3::before { font: 800 1.1rem/1 var(--titres); }
+.faire .oui h3::before { content: "✓"; color: var(--vert); }
+.faire .non h3::before { content: "✕"; color: var(--rouge); }
+.faire ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.5rem; color: var(--encre-douce); }
+.faire li strong { color: var(--encre); }
+
+/* ---------- Two readers: who writes, who builds ------------------------------------ */
+.choix { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.8rem; margin-top: 1.6rem; }
+.choix a { display: grid; gap: 0.25rem; padding: 0.95rem 1.1rem; border-radius: 0.8rem; text-decoration: none; color: var(--sur-manche); background: rgb(255 255 255 / 0.08); border: 1px solid rgb(255 255 255 / 0.3); }
+.choix a:hover { background: rgb(255 255 255 / 0.16); }
+.choix a:focus-visible { outline: 3px solid var(--cyan); outline-offset: 3px; }
+.choix b { font: 700 1.1rem/1.2 var(--titres); }
+.choix span { font-size: 0.92rem; color: var(--ecume); }
+.sommaire li.separation { padding-left: 1.5rem; border-left: 1px solid var(--filet); }
+.bande-fabrication { background: var(--manche); color: var(--sur-manche); padding-block: 2.4rem; }
+.bande-fabrication .wrap { display: grid; gap: 0.6rem; }
+.bande-fabrication .surtitre { color: var(--ecume); }
+.bande-fabrication h2 { color: var(--sur-manche); }
+.bande-fabrication p { color: var(--ecume); max-width: 46rem; }
+.informatique { border: 1px dashed var(--filet); border-radius: 0.8rem; padding: 0.9rem 1rem; background: var(--carte); font-size: 0.9rem; color: var(--encre-douce); display: grid; gap: 0.4rem; }
+.informatique strong { color: var(--encre); }
+@media (max-width: 44rem) { .choix { grid-template-columns: minmax(0, 1fr); } .sommaire li.separation { padding-left: 0; border-left: 0; } }
+
+/* ---------- Download buttons -------------------------------------------------------- */
+.telecharger { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.5rem; }
+.bouton { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.6rem 1rem 0.6rem 0.6rem; border-radius: 0.6rem; font-weight: 600; text-decoration: none; }
+.bouton b { font: 700 0.66rem/1 var(--mono); letter-spacing: 0.06em; padding: 0.32rem 0.4rem; border-radius: 4px; }
+.bouton:focus-visible { outline: 3px solid var(--cyan); outline-offset: 3px; }
+.une .bouton { background: #ffffff; color: #0d4a5e; }
+.une .bouton b { background: #0d4a5e; color: #ffffff; }
+.une .bouton.secondaire { background: rgb(255 255 255 / 0.1); color: #ffffff; border: 1px solid rgb(255 255 255 / 0.35); }
+.une .bouton.secondaire b { background: var(--ecume); color: #10283a; }
+.bouton.plein { background: var(--manche); color: #ffffff; }
+.bouton.plein b { background: #ffffff; color: #0d4a5e; }
+
+/* ---------- Types of blocks (always on paper, as in the PDF) ------------------------ */
+.types { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); gap: 0.9rem; }
+.type { background: var(--f); color: #10283a; border-top: 3px solid var(--t); border-radius: 0 0 0.6rem 0.6rem; padding: 0.75rem 0.95rem 0.85rem; display: grid; gap: 0.3rem; align-content: start; }
+.type > span { font-size: 0.74rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--t); }
+.type p { font-size: 0.92rem; }
+.type small { font: 0.75rem/1.3 "Segoe UI", system-ui, sans-serif; color: #46586a; }
+.creer { margin-top: 2.6rem; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 2rem; align-items: start; }
+.creer h3 { font-size: 1.35rem; margin-bottom: 1rem; }
+.dialogue { border-radius: 0.6rem; overflow: hidden; border: 1px solid #c7d3dc; background: #f3f3f3; color: #1f1f1f; box-shadow: var(--ombre); font: 0.88rem/1.4 "Segoe UI", system-ui, sans-serif; }
+.dialogue .barre { padding: 0.5rem 0.8rem; background: #ffffff; border-bottom: 1px solid #dddddd; font-weight: 600; }
+.dialogue .champs { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0.55rem 0.8rem; padding: 0.9rem 0.9rem 0.5rem; align-items: center; }
+.dialogue .champ { background: #ffffff; border: 1px solid #b8b8b8; border-radius: 3px; padding: 0.2rem 0.5rem; }
+.dialogue .champ.saisi { border-color: #0a5c9e; box-shadow: 0 0 0 1px #0a5c9e; }
+.dialogue .pastille-couleur { display: inline-block; width: 0.9rem; height: 0.9rem; border-radius: 2px; vertical-align: -0.15em; margin-right: 0.4rem; background: #1f7a4d; }
+.dialogue .boutons { display: flex; justify-content: flex-end; gap: 0.5rem; padding: 0.6rem 0.9rem 0.9rem; }
+.dialogue .boutons span { padding: 0.25rem 1.1rem; border: 1px solid #b8b8b8; border-radius: 3px; background: #ffffff; }
+.dialogue .boutons .ok { border-color: #0a5c9e; box-shadow: 0 0 0 1px #0a5c9e; }
+.resultat { margin-top: 1rem; display: grid; gap: 0.4rem; }
+.resultat .etiquette { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--encre-douce); }
+
+/* More miniatures in the bulletin's look. */
+.mini .rubrique { font-size: 0.62rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #0a5c9e; margin-left: 2.4rem; }
+.mini .edito { background: #0d4a5e; color: #ffffff; border-radius: 0.4rem; padding: 0.45rem 0.65rem; font-size: 0.82rem; }
+.mini .tuiles { display: flex; gap: 0.5rem; }
+.mini .tuile { flex: 1; background: #eef6fa; border-radius: 0.35rem; padding: 0.35rem 0.55rem; }
+.mini .tuile b { display: block; font: 800 1.3rem/1.05 var(--titres); color: #0a5c9e; }
+.mini .tuile span { font-size: 0.72rem; }
+.mini table { border-collapse: collapse; font-size: 0.75rem; width: 100%; }
+.mini th { background: #0d4a5e; color: #ffffff; text-align: left; }
+.mini th, .mini td { padding: 0.2rem 0.45rem; }
+.mini tbody tr:nth-child(even) td { background: #eef6fa; }
+.mini .source { font-size: 0.74rem; font-style: italic; color: #46586a; }
+.mini .intertitre { font-family: var(--titres); font-weight: 700; color: #0a5c9e; }
+.mini .breve { font: 700 0.95rem/1.2 var(--titres); }
+
+/* ---------- Citations: before and after --------------------------------------------- */
+.citer { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 1.2rem; align-items: stretch; }
+.panneau { border-radius: 1rem; padding: 1.2rem 1.3rem; display: grid; gap: 0.8rem; align-content: start; }
+.panneau .etiquette { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--encre-douce); }
+.panneau.word { background: var(--carte); border: 1px solid var(--filet); }
+.panneau.word p { font-family: "Segoe UI", system-ui, sans-serif; }
+.ident { font-family: var(--mono); font-size: 0.86em; background: rgb(231 176 59 / 0.22); border-radius: 4px; padding: 0.05em 0.3em; white-space: nowrap; }
+.panneau.bulletin { background: #ffffff; color: #10283a; border: 1px solid #d5e2ea; box-shadow: var(--ombre); }
+.panneau.bulletin .etiquette { color: #46586a; }
+.panneau.bulletin sup { color: #0a5c9e; font-weight: 700; }
+.panneau.bulletin .refs { border-top: 1px solid #d5e2ea; padding-top: 0.7rem; font-size: 0.8rem; color: #46586a; }
+.panneau.bulletin .refs b { color: #10283a; }
+.passe { align-self: center; font: 800 1.6rem/1 var(--titres); color: var(--vert); }
+.syntaxes { margin-top: 1.6rem; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.8rem; }
+.syntaxe { padding: 0.9rem 1rem; border-radius: 0.8rem; border: 1px solid var(--filet); display: grid; gap: 0.35rem; align-content: start; }
+.syntaxe code { justify-self: start; white-space: normal; overflow-wrap: anywhere; }
+.syntaxe p { font-size: 0.92rem; color: var(--encre-douce); }
+
+/* ---------- What comes out ---------------------------------------------------------- */
+.trois { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-bottom: 2.6rem; }
+.fichier-carte { padding: 1.2rem 1.3rem; border-radius: 1rem; background: var(--carte); border: 1px solid var(--filet); display: grid; gap: 0.5rem; align-content: start; }
+.fichier-carte .format { justify-self: start; font: 700 0.7rem/1 var(--mono); letter-spacing: 0.06em; padding: 0.3rem 0.45rem; border-radius: 4px; background: var(--manche); color: #fff; }
+.fichier-carte .fichier { color: var(--encre-douce); overflow-wrap: anywhere; }
+.fichier-carte p { color: var(--encre-douce); font-size: 0.95rem; }
+.galerie { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.4rem 1.2rem; margin: 0; padding: 0; list-style: none; }
+.galerie figure { margin: 0; display: grid; gap: 0.55rem; }
+.galerie img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 0.6rem; border: 1px solid var(--filet); box-shadow: var(--ombre); background: #fff; }
+.galerie figcaption { font-size: 0.92rem; color: var(--encre-douce); }
+.galerie figcaption b { color: var(--encre); font-weight: 600; }
+
+/* ---------- The list to check ------------------------------------------------------- */
+.verifier { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 1.8rem; align-items: start; }
+.fenetre { border-radius: 0.9rem; overflow: hidden; border: 1px solid var(--filet); background: var(--carte); box-shadow: var(--ombre); }
+.fenetre .barre { display: flex; align-items: center; gap: 0.6rem; padding: 0.6rem 0.9rem; background: var(--brume); border-bottom: 1px solid var(--filet); font-size: 0.82rem; font-weight: 600; color: var(--encre-douce); }
+.fenetre .barre::before { content: ""; width: 0.8rem; height: 0.8rem; border-radius: 3px; background: linear-gradient(135deg, var(--cyan), var(--vert-vif)); }
+.fenetre pre { margin: 0; padding: 1rem 1.1rem 1.2rem; font: 0.82rem/1.55 var(--mono); white-space: pre-wrap; overflow-wrap: anywhere; color: var(--encre); }
+.fenetre .t { font-weight: 700; }
+.fenetre .x { color: var(--rouge); font-weight: 700; }
+.fenetre .w { color: var(--orange); font-weight: 700; }
+.fenetre .i { color: var(--bleu); font-weight: 700; }
+.fenetre .ok { color: var(--vert); font-weight: 700; }
+.niveaux { display: grid; gap: 0.8rem; }
+.niveau { display: grid; grid-template-columns: 2.4rem minmax(0, 1fr); gap: 0.8rem; align-items: start; padding: 0.9rem 1rem; border-radius: 0.8rem; background: var(--brume); }
+.niveau .signe { font: 700 1.5rem/1 var(--mono); text-align: center; }
+.niveau.x .signe { color: var(--rouge); } .niveau.w .signe { color: var(--orange); } .niveau.i .signe { color: var(--bleu); }
+.niveau p { color: var(--encre-douce); font-size: 0.95rem; }
+.que-faire { margin-top: 2.4rem; overflow-x: auto; border: 1px solid var(--filet); border-radius: 0.9rem; }
+.que-faire table { width: 100%; border-collapse: collapse; min-width: 36rem; }
+.que-faire th, .que-faire td { text-align: left; padding: 0.8rem 1rem; vertical-align: top; border-bottom: 1px solid var(--filet); }
+.que-faire tr:last-child td { border-bottom: 0; }
+.que-faire th { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--encre-douce); background: var(--brume); }
+.que-faire td:first-child { font-weight: 600; width: 38%; }
+
+/* ---------- Done for you ------------------------------------------------------------ */
+.auto { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
+.auto div { padding: 1.1rem 1.1rem 1.2rem; border-radius: 0.9rem; border-top: 3px solid var(--teinte, var(--bleu)); background: var(--carte); box-shadow: var(--ombre); display: grid; gap: 0.4rem; align-content: start; }
+.auto p { font-size: 0.92rem; color: var(--encre-douce); }
+
+/* ---------- Troubleshooting --------------------------------------------------------- */
+.faq { display: grid; gap: 0.7rem; max-width: 52rem; }
+.faq details { border: 1px solid var(--filet); border-radius: 0.8rem; background: var(--carte); }
+.faq summary { cursor: pointer; list-style: none; padding: 1rem 1.2rem; font-weight: 600; display: flex; justify-content: space-between; gap: 1rem; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; font: 700 1.3rem/1 var(--titres); color: var(--bleu); }
+.faq details[open] summary::after { content: "–"; }
+.faq details > div { padding: 0 1.2rem 1.1rem; color: var(--encre-douce); display: grid; gap: 0.6rem; }
+
+.pied { padding-block: 2.2rem 2.8rem; border-top: 1px solid var(--filet); color: var(--encre-douce); font-size: 0.9rem; }
+.pied .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.8rem 2rem; }
+
+/* ---------- Narrow screens ---------------------------------------------------------- */
+@media (max-width: 60rem) {
+  .une .wrap, .verifier { grid-template-columns: minmax(0, 1fr); }
+  .auto { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .galerie { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 44rem) {
+  .etapes { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  .etapes::before { left: 0.5rem; right: auto; top: 0.6rem; bottom: 0.6rem; width: 2px; height: auto; background: linear-gradient(180deg, var(--cyan), var(--vert-vif)); }
+  .etape { padding-top: 0; padding-left: 2.2rem; }
+  .ligne { grid-template-columns: minmax(0, 1fr); gap: 0.6rem; }
+  .vers { transform: rotate(90deg); justify-self: start; }
+  .citer, .syntaxes, .trois, .galerie, .auto { grid-template-columns: minmax(0, 1fr); }
+  .passe { transform: rotate(90deg); justify-self: center; }
+  .geste { grid-template-columns: repeat(3, auto); row-gap: 1.4rem; }
+  .geste .icone + .fleche { display: none; }
+  .geste .sorties { grid-column: 1 / -1; justify-self: center; }
+  .premiere-fois { grid-template-columns: minmax(0, 1fr); }
+  .faire, .creer { grid-template-columns: minmax(0, 1fr); }
+  .document .entetes { display: none; }
+  .document li { grid-template-columns: minmax(0, 1fr); }
+  .document .zone { border-right: 0; padding-block: 0.4rem; }
+  .document .effet { border-left: 0; padding-top: 0; }
+}
+@media (max-width: 60rem) {
+  .installer { grid-template-columns: minmax(0, 1fr); }
+}
+</style>
+
+<header class="une">
+  <div class="wrap">
+    <div>
+      <span class="surtitre">Vigiking Normand · mode d'emploi</span>
+      <h1>Du fichier Word au bulletin, <em>en un seul geste</em></h1>
+      <p class="chapeau">Vous écrivez le numéro dans Word, sur le modèle. Vous déposez le fichier sur l'icône. <strong>Le PDF, la page web et la liste à vérifier</strong> arrivent à côté du fichier, en une à deux minutes.</p>
+      <div class="reperes">
+        <span class="repere">Mise en page automatique</span>
+        <span class="repere">Références depuis PMID et DOI</span>
+        <span class="repere">Vérifications avant envoi</span>
+      </div>
+      <div class="telecharger">
+        <a class="bouton" href="__ZIP__"><b>ZIP</b>Télécharger le dossier du bulletin</a>
+        <a class="bouton secondaire" href="__MODELE__"><b>DOCX</b>Télécharger le modèle Word</a>
+      </div>
+      <nav class="choix" aria-label="Par où commencer">
+        <a href="#word"><b>J'écris un article</b><span>Le modèle Word et ses styles. Rien à installer.</span></a>
+        <a href="#fabriquer-le-numero"><b>Je fabrique le numéro</b><span>Une installation, puis le fichier Word déposé sur une icône.</span></a>
+      </nav>
+    </div>
+    <div class="geste" role="img" aria-label="Un fichier Word déposé sur l'icône Fabriquer le Vigiking donne un PDF, une page web et une liste à vérifier.">
+      <div class="doc"><span class="format">DOCX</span><span class="nom">Vigiking octobre.docx</span></div>
+      <div class="fleche"></div>
+      <div class="icone">
+        <div class="tuile">
+          <svg viewBox="0 0 64 40" aria-hidden="true">
+            <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#19a6e3"/><stop offset="1" stop-color="#2bcf8c"/></linearGradient></defs>
+            <path d="M4 20H60" stroke="url(#g)" stroke-width="2"/>
+            <circle cx="6" cy="20" r="3.5" fill="#0a2f3c" stroke="#19a6e3" stroke-width="2"/>
+            <circle cx="32" cy="20" r="7" fill="#2bcf8c" stroke="#fff" stroke-width="2.5"/>
+            <circle cx="58" cy="20" r="3.5" fill="#0a2f3c" stroke="#2bcf8c" stroke-width="2"/>
+          </svg>
+        </div>
+        <span>Fabriquer le Vigiking</span>
+      </div>
+      <div class="fleche"></div>
+      <div class="sorties">
+        <div class="sortie"><b>PDF</b>vigiking-2025-10.pdf</div>
+        <div class="sortie"><b>HTML</b>vigiking-2025-10.html</div>
+        <div class="sortie"><b>TXT</b>… - à vérifier.txt</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="sommaire" aria-label="Sommaire">
+  <div class="wrap">
+    <ul>
+      <li><a href="#word">Écrire dans Word</a></li>
+      <li><a href="#styles">Les styles</a></li>
+      <li><a href="#blocs">Les types de blocs</a></li>
+      <li><a href="#citer">Citer</a></li>
+      <li class="separation"><a href="#installer">Installer</a></li>
+      <li><a href="#etapes">Fabriquer</a></li>
+      <li><a href="#obtenez">Le résultat</a></li>
+      <li><a href="#liste">La liste à vérifier</a></li>
+      <li><a href="#souci">Dépannage</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <section class="section" aria-labelledby="word">
+    <div class="wrap">
+      <div class="entete">
+        <span class="surtitre">Écrire</span>
+        <h2 id="word">Écrire le numéro dans Word, pas à pas</h2>
+        <p>Vous écrivez comme d'habitude. Seule règle : chaque élément du bulletin a son style dans le modèle, et c'est le style qui décide de la mise en page.</p>
+      </div>
+      <ol class="pas">
+        <li><div>
+          <h3>Partir du modèle</h3>
+          <p>Double-cliquez sur <code>word/modele-vigiking.docx</code> : il contient un petit numéro d'exemple qui explique chaque style. Faites tout de suite <span class="menu">Fichier › Enregistrer sous</span>, au format <span class="menu">Document Word (*.docx)</span>, avec un nom parlant comme <code>Vigiking octobre 2025.docx</code>, dans le dossier de votre choix.</p>
+          <p class="astuce">Vous écrivez seulement ? Le modèle suffit, rien à installer : téléchargez-le ci-dessous, et, une fois votre texte écrit, envoyez le fichier Word à la personne qui fabrique le bulletin.</p>
+          <p><a class="bouton plein" href="__MODELE__"><b>DOCX</b>Télécharger le modèle Word</a></p>
+        </div></li>
+        <li><div>
+          <h3>Afficher la liste des styles</h3>
+          <p>Onglet <span class="menu">Accueil</span>, dans la barre du haut de Word : la rangée des styles montre Normal, Titre 1… Pour les voir tous, cliquez sur la petite flèche en bas à droite de cette rangée : la liste complète s'ouvre à droite de l'écran (le « volet Styles »), avec Encadré, les Bloc…, Contre-indication, CredibleMeds. Gardez-la ouverte pendant que vous écrivez.</p>
+        </div></li>
+        <li><div>
+          <h3>Remplir l'en-tête</h3>
+          <p>Remplacez le titre (style <strong>Titre</strong>) par le thème du numéro, et le sous-titre (style <strong>Sous-titre</strong>) par le mois, écrit en toutes lettres : « Octobre 2025 ». Placez la photo de couverture juste en dessous, avant le premier article.</p>
+          <p class="astuce">Sans photo, la couverture montre la carte du réseau normand. Pour une photo, prenez-la en paysage et assez grande (au moins 800 pixels de large).</p>
+        </div></li>
+        <li><div>
+          <h3>Écrire les articles</h3>
+          <p>Chaque article commence par son titre au style <strong>Titre 1</strong>. Juste en dessous, avant tout le reste, une ligne <code>Auteur : A. Nom</code> (ou <code>Auteurs : A. Nom, B. Nom</code>, ou <code>Par A. Nom</code>) ; si besoin, une ligne <code>Rubrique : …</code>, une des trois rubriques du bulletin (Cas d'ici et d'ailleurs, Littérature, Infos des Autorités de Santé : le sommaire les regroupe), et une ligne <code>Relecture : B. Nom</code>. Le texte s'écrit ensuite en style <strong>Normal</strong> : gras, italique, exposants, listes à puces ou numérotées sont gardés.</p>
+          <p class="astuce">Un article tient sur une page. Pour le passer sur deux colonnes, tapez un paragraphe <code>[saut de colonne]</code> à l'endroit de la coupure. Pour plusieurs informations courtes sous un même titre (des brèves), donnez à chacune un intertitre au style <strong>Titre 2</strong>.</p>
+        </div></li>
+        <li><div>
+          <h3>Mettre en forme par les styles</h3>
+          <p>Pour un paragraphe entier (Encadré, un des <a href="#blocs">types de blocs</a>, Chiffre clé, Source, Catégorie, Légende) : placez le curseur dans le paragraphe, puis cliquez sur le style. Pour quelques mots (Contre-indication, CredibleMeds, Intertitre en ligne) : sélectionnez-les d'abord, puis cliquez sur le style.</p>
+          <p class="astuce">Un éditorial ? Écrivez-le avant le premier article, au style <strong>Éditorial</strong> : il s'affiche sur la page du sommaire. Un tableau ? <span class="menu">Insertion › Tableau</span>, avec une ligne d'en-tête ; ne collez pas d'image de tableau.</p>
+        </div></li>
+        <li><div>
+          <h3>Ajouter les images</h3>
+          <p><span class="menu">Insertion › Images</span>. La largeur que vous donnez à l'image est gardée : sur la moitié de la page Word, elle occupe la moitié de la colonne. Juste sous l'image, écrivez sa légende dans un paragraphe au style <strong>Légende de figure</strong>, puis ajoutez son texte de remplacement (clic droit › <span class="menu">Modifier le texte de remplacement</span>) : une phrase qui décrit l'image pour les personnes aveugles, dont l'ordinateur lit l'écran à voix haute.</p>
+          <p class="astuce">Utilisez des images dont vous avez le droit, et citez leur source dans la légende.</p>
+        </div></li>
+        <li><div>
+          <h3>Citer vos sources</h3>
+          <p>Tapez le PMID ou le DOI entre crochets, là où vous citez : <code>[PMID 14999113]</code> (voir <a href="#citer">Citer</a>).</p>
+        </div></li>
+        <li><div>
+          <h3>Enregistrer, puis envoyer ou déposer</h3>
+          <p>Enregistrez (<kbd>Ctrl</kbd> + <kbd>S</kbd>). Envoyez le fichier Word à la personne qui fabrique le bulletin, ou, si c'est vous, déposez-le sur l'icône (voir <a href="#fabriquer-le-numero">Fabriquer le numéro</a>). Le sommaire, la page Références et la dernière page du bulletin s'ajoutent à la fabrication : ne les écrivez pas.</p>
+        </div></li>
+      </ol>
+
+      <div class="document" role="group" aria-label="Exemple : un numéro dans Word, paragraphe par paragraphe">
+        <div class="ruban"><b>Volet Styles</b><span>Titre</span><span>Sous-titre</span><span>Titre 1</span><span>Titre 2</span><span>Normal</span><span>Encadré</span><span>Bloc Cas clinique</span><span>Catégorie rouge</span><span>Contre-indication</span><span>CredibleMeds</span><span>Légende de figure</span></div>
+        <div class="entetes" aria-hidden="true"><span>Style</span><span>Ce que vous tapez</span><span>Ce que ça devient</span></div>
+        <ol>
+          <li><span class="zone">Titre</span><div class="texte t-titre">Allongement du QTc et torsades de pointe</div><span class="effet">Le thème, en grand sur la couverture</span></li>
+          <li><span class="zone">Sous-titre</span><div class="texte t-sous">Octobre 2025</div><span class="effet">Le mois ; il nomme les fichiers</span></li>
+          <li><span class="zone">Image</span><div class="texte"><div class="t-image">photo de couverture</div></div><span class="effet">La photo de couverture</span></li>
+          <li><span class="zone">Titre 1</span><div class="texte t-titre1">Quand parle-t-on de QT allongé ?</div><span class="effet">Un nouvel article, sur sa page, numéroté</span></li>
+          <li><span class="zone">Normal</span><div class="texte">Auteur : A. Nom</div><span class="effet">« Par A. Nom » sous le titre</span></li>
+          <li><span class="zone">Normal</span><div class="texte">Rubrique : Cas d'ici et d'ailleurs</div><span class="effet">La rubrique au-dessus du titre ; le sommaire regroupe les articles par rubrique</span></li>
+          <li><span class="zone">Normal</span><div class="texte">L'intervalle QT correspond au temps de <strong>dépolarisation et de repolarisation</strong> des ventricules <span class="t-ident">[PMID 14999113]</span>.</div><span class="effet">Le texte, avec l'appel de référence numéroté</span></li>
+          <li><span class="zone">Encadré</span><div class="texte"><div class="t-encadre"><strong>QTc allongé :</strong> homme &gt; 470 ms ; femme &gt; 480 ms</div></div><span class="effet">Un encadré, avec un trait de la couleur de l'article</span></li>
+          <li><span class="zone">Bloc Cas clinique</span><div class="texte"><div class="t-encadre">Une patiente de 68 ans, traitée par citalopram, présente une syncope…</div></div><span class="effet">Un bloc titré « Cas clinique », dans sa couleur</span></li>
+          <li><span class="zone">Titre 2</span><div class="texte t-titre1">Les facteurs de risque</div><span class="effet">Un intertitre dans l'article</span></li>
+          <li><span class="zone">Normal</span><div class="texte t-saut">[saut de colonne]</div><span class="effet">La suite passe dans la seconde colonne</span></li>
+          <li><span class="zone">Image</span><div class="texte"><div class="t-image">électrocardiogramme</div></div><span class="effet">Une figure, réduite avec le texte si besoin</span></li>
+          <li><span class="zone">Légende de figure</span><div class="texte t-legende">Électrocardiogramme (source : …)</div><span class="effet">La légende sous la figure</span></li>
+          <li><span class="zone">Titre 1</span><div class="texte t-titre1">Quels sont les médicaments à risque ?</div><span class="effet">L'article suivant, sur une nouvelle page</span></li>
+          <li><span class="zone">Catégorie rouge</span><div class="texte"><span class="t-cat">Cardiologie</span></div><span class="effet">Une étiquette rouge ; l'article devient une liste</span></li>
+          <li><span class="zone">Normal + caractères</span><div class="texte"><strong>Antiarythmiques :</strong> <span class="t-ci">sotalol, amiodarone</span>, <span class="t-cm">flécaïnide</span></div><span class="effet">Rouge et gras (Contre-indication), orange et italique (CredibleMeds)</span></li>
+        </ol>
+      </div>
+
+      <div class="faire">
+        <div class="oui">
+          <h3>À faire</h3>
+          <ul>
+            <li><strong>Un style par élément</strong> : Titre 1 pour chaque article, Encadré pour un message clé.</li>
+            <li><strong>Le mois en toutes lettres</strong> dans le sous-titre : « Octobre 2025 ».</li>
+            <li><strong>Une ligne « Auteur : »</strong> juste sous chaque titre (un nom ne s'affiche qu'avec l'accord de la personne nommée).</li>
+            <li><strong>Un texte de remplacement</strong> pour chaque image.</li>
+            <li><strong>Un type de bloc</strong> pour un cas clinique, des messages à retenir, une conduite à tenir.</li>
+            <li><strong>Des corrections dans Word</strong>, puis un nouveau dépôt sur l'icône.</li>
+          </ul>
+        </div>
+        <div class="non">
+          <h3>À éviter</h3>
+          <ul>
+            <li><strong>Les couleurs, surlignages et fonds mis à la main</strong> : ils sont perdus. Passez par les styles, ou créez votre propre type de bloc.</li>
+            <li><strong>Les images de tableaux</strong> : floues et illisibles pour les lecteurs d'écran. Insérez un vrai tableau.</li>
+            <li><strong>Les tailles et polices réglées à la main</strong> : la mise en page les choisit elle-même.</li>
+            <li><strong>Écrire le sommaire, les références ou le dos</strong> : ils s'ajoutent seuls.</li>
+            <li><strong>Modifier le PDF</strong> : il est refait à chaque dépôt ; l'original, c'est le fichier Word.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="styles">
+    <div class="wrap">
+      <div class="entete">
+        <span class="surtitre">Les styles</span>
+        <h2 id="styles">Chaque style, et ce qu'il donne dans le bulletin</h2>
+        <p>Vous ne réglez ni police, ni taille, ni couleur. Vous choisissez un style dans le ruban de Word, et le bulletin en fait l'élément correspondant.</p>
+      </div>
+      <div class="styles">
+        <div class="ligne">
+          <div class="style-word"><span class="apercu">Titre · Sous-titre</span><span class="nom">en tête du document</span></div>
+          <span class="vers" aria-hidden="true">→</span>
+          <div class="rendu"><div class="mini"><div class="mois">Octobre 2025</div><div class="titre-une">Allongement du QTc et torsades de pointe</div></div><p class="explication">Le thème du numéro sur la couverture, et son mois.</p></div>
+        </div>
+        <div class="ligne">
+          <div class="style-word"><span class="apercu">Une image</span><span class="nom">avant le premier article</span></div>
+          <span class="vers" aria-hidden="true">→</span>
+          <div class="rendu"><p class="explication">La photo de couverture, à côté du titre. Sans image, la couverture montre la carte du réseau normand.</p></div>
+        </div>
+        <div class="ligne">
+          <div class="style-word"><span class="apercu">Titre 1</span><span class="nom">puis une ligne « Auteur : A. Nom »</span></div>
+          <span class="vers" aria-hidden="true">→</span>
+          <div class="rendu"><div class="mini"><div class="art"><b>03</b><span>Quels sont les facteurs de risque ?</span></div><div class="par">Par A. Nom</div></div><p class="explication">Un article sur sa page, numéroté, dans sa couleur. Le texte grandit ou rétrécit pour remplir la page.</p></div>
+        </div>
+        <div class="ligne">
+          <div class="style-word"><span class="apercu">Rubrique : …</span><span class="nom">une ligne sous le titre</span></div>
+          <span class="vers" aria-hidden="true">→</span>
+          <div class="rendu"><div class="mini"><div class="rubrique">Littérature</div><div class="art"><b>04</b><span>Inhibiteurs de SGLT2 et acidocétose</span></div></div><p class="explication">La rubrique au-dessus du titre. Le sommaire regroupe les articles sous Cas d'ici et d'ailleurs, Littérature, Infos des Autorités de Santé.</p></div>
+        </div>
+        <div class="ligne">
+          <div class="style-word"><span class="apercu">Éditorial</span><span class="nom">avant le premier article</span></div>
+          <span class="vers" aria-hidden="true">→</span>
+          <div class="rendu"><div class="mini"><div class="edito">Chères lectrices, chers lecteurs, ce numéro est consacré…</div></div><p class="explication">Il s'affiche sur la page du sommaire, à côté de la liste des articles.</p></div>
+        </div>
+        <div class="ligne">
+          <div class="style-word"><span class="apercu">Titre 2</span><span class="nom">dans un article</span></div>
+          <span class="vers" aria-hidden="true">→</span>
+          <div class="rendu"><div class="mini"><div class="breve">Une première brève</div><p>Le texte de l'information…</p></div><p class="explication">Un intertitre. Plusieurs brèves tiennent ainsi sous un même titre.</p></div>
+        </div>
+        <div class="ligne">
+          <div class="style-word"><span class="apercu">[saut de colonne]</span><span class="nom">un paragraphe, tapé tel quel</span></div>
+          <span class="vers" aria-hidden="true">→</span>
+          <div class="rendu"><div class="mini"><div class="cols"><div><i></i><i></i><i style="width:70%"></i></div><div><i></i><i style="width:85%"></i><i></i></div></div></div><p class="explication">L'article passe sur deux colonnes, coupées à cet endroit.</p></div>
+        </div>
+        <div class="ligne">
+          <div class="style-word"><span class="apercu">Encadré</span><span class="nom">style de paragraphe</span></div>
+          <span class="vers" aria-hidden="true">→</span>
+          <div class="rendu"><div class="mini"><div class="encadre"><p><strong>QTc allongé :</strong> homme &gt; 470 ms ; femme &gt; 480 ms</p></div></div><p class="explication">Un message clé mis en avant. Plusieurs paragraphes à la suite forment un seul encadré.</p></div>
+        </div>
+        <div class="ligne">
+          <div class="style-word"><span class="apercu">Chiffre clé</span><span class="nom">un paragraphe par chiffre</span></div>
+          <span class="vers" aria-hidden="true">→</span>
+          <div class="rendu"><div class="mini tuiles"><div class="tuile"><b>66 %</b><span>des cas étaient graves</span></div><div class="tuile"><b>20</b><span>jours de délai médian</span></div></div><p class="explication">Une tuile par paragraphe : le nombre en grand, puis ce qu'il compte.</p></div>
+        </div>
+        <div class="ligne">
+          <div class="style-word"><span class="apercu">Insertion › Tableau</span><span class="nom">avec une ligne d'en-tête</span></div>
+          <span class="vers" aria-hidden="true">→</span>
+          <div class="rendu"><div class="mini"><table><thead><tr><th>Médicament</th><th>Surveillance</th></tr></thead><tbody><tr><td>Amiodarone</td><td>ECG</td></tr><tr><td>Lithium</td><td>Lithémie</td></tr></tbody></table></div><p class="explication">L'en-tête sur fond bleu, une ligne sur deux teintée.</p></div>
+        </div>
+        <div class="ligne">
+          <div class="style-word"><span class="apercu">Intertitre en ligne · Source</span><span class="nom">caractères · paragraphe</span></div>
+          <span class="vers" aria-hidden="true">→</span>
+          <div class="rendu"><div class="mini"><p><span class="intertitre">En pratique</span> réaliser un ECG avant l'introduction.</p><p class="source">Source : courrier de l'ANSM, 12 mars 2025.</p></div><p class="explication">Quelques mots en couleur qui ouvrent un paragraphe ; la source officielle d'un article, en petits caractères.</p></div>
+        </div>
+        <div class="ligne">
+          <div class="style-word"><span class="apercu">Catégorie rouge…</span><span class="nom">verte, bleue, jaune</span></div>
+          <span class="vers" aria-hidden="true">→</span>
+          <div class="rendu"><div class="mini pastilles"><span class="pastille r">Cardiologie</span><span class="pastille v">Infectiologie</span><span class="pastille b">Neuropsychiatrie</span><span class="pastille j">Oncologie</span></div><p class="explication">Une étiquette de catégorie ; l'article devient une liste de médicaments.</p></div>
+        </div>
+        <div class="ligne">
+          <div class="style-word"><span class="apercu">Contre-indication · CredibleMeds</span><span class="nom">styles de caractères</span></div>
+          <span class="vers" aria-hidden="true">→</span>
+          <div class="rendu"><div class="mini"><strong>Antiarythmiques :</strong> <span class="ci">sotalol, amiodarone</span>, <span class="cm">flécaïnide</span></div><p class="explication">Rouge et gras, orange et italique : le code se lit aussi sans les couleurs.</p></div>
+        </div>
+        <div class="ligne">
+          <div class="style-word"><span class="apercu">Légende · Références</span><span class="nom">styles de paragraphe</span></div>
+          <span class="vers" aria-hidden="true">→</span>
+          <div class="rendu"><div class="mini"><p class="petit"><span class="ci">En rouge et en gras</span> = contre-indication mentionnée dans le RCP.</p></div><p class="explication">Petits caractères, pour un code couleur ou une liste tapée à la main.</p></div>
+        </div>
+        <div class="ligne">
+          <div class="style-word"><span class="apercu">Légende de figure</span><span class="nom">juste sous une image</span></div>
+          <span class="vers" aria-hidden="true">→</span>
+          <div class="rendu"><div class="mini figure"><i></i><small>Électrocardiogramme</small></div><p class="explication">Une figure et sa légende. Ajoutez aussi le texte de remplacement : clic droit sur l'image, puis « Modifier le texte de remplacement ».</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="blocs">
+    <div class="wrap">
+      <div class="entete">
+        <span class="surtitre">Types de contenu</span>
+        <h2 id="blocs">Les types de blocs</h2>
+        <p>Un cas clinique, des messages à retenir, une conduite à tenir : chaque type de contenu des numéros passés a son style « Bloc … » dans le modèle. Le bulletin en fait un bloc titré, dans sa couleur ; plusieurs paragraphes à la suite dans le même style forment un seul bloc.</p>
+      </div>
+      <div class="types">
+        <div class="type" style="--t: #0d4a5e; --f: #e7edef"><span>Cas clinique</span><p>Le récit d'un cas (âge, traitement, évolution), séparé du commentaire.</p><small>Bloc Cas clinique</small></div>
+        <div class="type" style="--t: #0b6b45; --f: #e7f0ec"><span>À retenir</span><p>Les messages à retenir de l'article.</p><small>Bloc À retenir</small></div>
+        <div class="type" style="--t: #0a5c9e; --f: #e7eff5"><span>En pratique</span><p>La conduite à tenir, les recommandations.</p><small>Bloc En pratique</small></div>
+        <div class="type" style="--t: #227096; --f: #eaf4f8"><span>Le saviez-vous ?</span><p>Une information à côté du sujet, un rappel.</p><small>Bloc Le saviez-vous ?</small></div>
+        <div class="type" style="--t: #46586a; --f: #edeef0"><span>Mécanisme</span><p>Le mécanisme d'action ou de l'effet indésirable.</p><small>Bloc Mécanisme</small></div>
+        <div class="type" style="--t: #b3261e; --f: #f7e9e9"><span>Attention</span><p>Une mise en garde, une erreur à éviter, un « never event ».</p><small>Bloc Attention</small></div>
+        <div class="type" style="--t: #8a3c6b; --f: #f3ecf0"><span>Pour les patients</span><p>Les conseils à donner aux patients.</p><small>Bloc Pour les patients</small></div>
+        <div class="type" style="--t: #0b6472; --f: #e7f0f1"><span>Pour les pharmaciens</span><p>Ce que doivent faire les pharmaciens.</p><small>Bloc Pour les pharmaciens</small></div>
+        <div class="type" style="--t: #3b5ba9; --f: #ebeff6"><span>Pour les prescripteurs</span><p>Ce que doivent faire les prescripteurs.</p><small>Bloc Pour les prescripteurs</small></div>
+        <div class="type" style="--t: #856127; --f: #f8f2e9"><span>Annonce</span><p>Un webinaire, une enquête, une nouveauté du réseau.</p><small>Bloc Annonce</small></div>
+      </div>
+
+      <div class="creer">
+        <div>
+          <h3>Créer votre propre type de bloc</h3>
+          <ol class="pas">
+            <li><div><p>Dans le volet <span class="menu">Styles</span>, cliquez sur le bouton <span class="menu">Nouveau style</span>, le premier des trois boutons en bas du volet.</p></div></li>
+            <li><div><p><strong>Nom</strong> : « Bloc » suivi du titre du bloc, par exemple <code>Bloc Interaction</code>. Ce titre s'affichera en tête du bloc.</p></div></li>
+            <li><div><p><strong>Type de style</strong> : Paragraphe ; <strong>Style basé sur</strong> : Normal.</p></div></li>
+            <li><div><p>Choisissez une <strong>couleur de police</strong> (dans la zone Mise en forme, le bouton A souligné de couleur) : ce sera la couleur du bloc. Sans couleur, le bloc prend celle de l'article.</p></div></li>
+            <li><div><p>Cliquez sur <span class="menu">OK</span>, puis appliquez le nouveau style comme les autres.</p><p class="astuce">Une couleur trop claire est assombrie automatiquement, pour que le titre du bloc reste lisible. Pour retrouver ce type dans les prochains numéros, demandez à la personne qui gère le bulletin de l'ajouter au modèle.</p></div></li>
+          </ol>
+        </div>
+        <div>
+          <div class="dialogue" role="img" aria-label="La fenêtre Créer un style de Word, remplie pour un bloc Interaction en vert.">
+            <div class="barre">Créer un style à partir de la mise en forme</div>
+            <div class="champs">
+              <span>Nom :</span><span class="champ saisi">Bloc Interaction</span>
+              <span>Type de style :</span><span class="champ">Paragraphe</span>
+              <span>Style basé sur :</span><span class="champ">Normal</span>
+              <span>Couleur de police :</span><span class="champ"><i class="pastille-couleur"></i>Vert</span>
+            </div>
+            <div class="boutons"><span class="ok">OK</span><span>Annuler</span></div>
+          </div>
+          <div class="resultat">
+            <span class="etiquette">Dans le bulletin</span>
+            <div class="type" style="--t: #1f7a4d; --f: #e9f2ed"><span>Interaction</span><p>L'association de la clarithromycine et de la colchicine expose à un surdosage en colchicine.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="citer">
+    <div class="wrap">
+      <div class="entete">
+        <span class="surtitre">Sources</span>
+        <h2 id="citer">Citer un article : son PMID ou son DOI suffit</h2>
+        <p>Tapez l'identifiant entre crochets, là où vous citez. Le numéro d'appel, la référence complète et la page « Références » se font seuls, dans l'ordre de citation.</p>
+      </div>
+      <div class="citer">
+        <div class="panneau word">
+          <span class="etiquette">Vous écrivez dans Word</span>
+          <p>L'allongement du QT expose aux torsades de pointe <span class="ident">[PMID 14999113]</span>. Les facteurs de risque se cumulent <span class="ident">[DOI 10.1136/postgradmedj-2020-138661]</span>.</p>
+        </div>
+        <span class="passe" aria-hidden="true">→</span>
+        <div class="panneau bulletin">
+          <span class="etiquette">Le bulletin affiche</span>
+          <p>L'allongement du QT expose aux torsades de pointe<sup>1</sup>. Les facteurs de risque se cumulent<sup>2</sup>.</p>
+          <div class="refs">
+            <p><b>1.</b> Roden DM. Drug-induced prolongation of the QT interval. N Engl J Med. 2004;350(10):1013-22. doi:10.1056/NEJMra032426</p>
+            <p><b>2.</b> Khatib R, Sabir FRN, Omari C, Pepper C, Tayebjee MH. Managing drug-induced QT prolongation in clinical practice. Postgraduate Medical Journal. 2021;97(1149):452-8.</p>
+          </div>
+        </div>
+      </div>
+      <div class="syntaxes">
+        <div class="syntaxe"><code>[PMID 14999113]</code><p>Un article indexé dans PubMed (« (PMID 14999113) » marche aussi).</p></div>
+        <div class="syntaxe"><code>[DOI 10.1136/postgradmedj-2020-138661]</code><p>Tout article qui a un DOI : son code, qui commence par 10., sur le site de la revue.</p></div>
+        <div class="syntaxe"><code>[Réf : CredibleMeds. https://www.crediblemeds.org]</code><p>Une source sans identifiant : site, document interne. Le texte est repris tel quel.</p></div>
+      </div>
+      <div class="faire">
+        <div class="non">
+          <h3>À éviter</h3>
+          <ul>
+            <li><strong>« PMID:14999113 » ou « doi: 10.1136/… » sans crochets</strong> : la référence reste telle quelle, sans numéro (la liste à vérifier le signale).</li>
+            <li><strong>Mélanger les deux façons de faire</strong> : si vous tapez vous-même les numéros en exposant et la liste au style « Références », n'utilisez pas les crochets dans le même numéro.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="bande-fabrication" id="fabriquer-le-numero">
+    <div class="wrap">
+      <span class="surtitre">Pour la personne qui fabrique le bulletin</span>
+      <h2>Fabriquer le numéro</h2>
+      <p>Une installation, une fois par ordinateur ; puis, à chaque numéro, le fichier Word déposé sur l'icône. Vous écrivez seulement ? Cette partie n'est pas pour vous : envoyez votre fichier Word à la personne qui fabrique le bulletin.</p>
+    </div>
+  </div>
+
+  <section class="section" aria-labelledby="installer">
+    <div class="wrap">
+      <div class="entete">
+        <span class="surtitre">Une seule fois par ordinateur</span>
+        <h2 id="installer">Installer</h2>
+        <p>L'installation met en place deux petits logiciels gratuits, pour votre compte seulement, et l'icône du bureau. Prévoyez quelques minutes et une connexion Internet ; sur un poste du CHU, le service informatique devra peut-être intervenir.</p>
+      </div>
+      <div class="prerequis">
+        <span>Windows 10 ou 11</span>
+        <span>Une connexion Internet</span>
+        <span>Le dossier du bulletin</span>
+      </div>
+      <div class="installer">
+        <ol class="pas">
+          <li><div>
+            <h3>Récupérer le dossier du bulletin</h3>
+            <p>Téléchargez le dossier compressé (ZIP), puis faites un clic droit dessus et choisissez <span class="menu">Extraire tout</span>, vers vos Documents. Le dossier extrait peut avoir un long nom : c'est normal.</p>
+            <p><a class="bouton plein" href="__ZIP__"><b>ZIP</b>Télécharger le dossier du bulletin</a></p>
+            <p>La personne qui gère le bulletin vous donne aussi le dossier <code>commun</code> (logos, bandeau Vigiking, dernière page du bulletin), qui n'est pas en ligne : placez-le dans le dossier <code>bulletin</code>, à côté du fichier Installer.</p>
+            <p class="astuce">N'ouvrez pas le fichier Installer depuis le ZIP sans l'avoir extrait : l'installation s'arrêterait en vous le disant. Gardez le dossier entier.</p>
+          </div></li>
+          <li><div>
+            <h3>Double-cliquer sur le fichier Installer</h3>
+            <p>Il est dans le dossier <code>bulletin</code> (son nom complet est <code>Installer.bat</code>, mais Windows cache souvent la fin). Une fenêtre s'ouvre et installe l'outil de mise en page (Quarto) et l'outil qui lance la fabrication (uv).</p>
+            <p class="astuce">Si Windows affiche « Windows a protégé votre ordinateur » (c'est normal pour un fichier téléchargé), cliquez sur <span class="menu">Informations complémentaires</span>, puis <span class="menu">Exécuter quand même</span>. En cas de doute, demandez au service informatique.</p>
+          </div></li>
+          <li><div>
+            <h3>Laisser faire, répondre si besoin</h3>
+            <p>Des lignes en anglais et des barres de progression défilent : c'est normal, ne fermez pas la fenêtre. Si elle demande d'accepter des conditions (« [Y] Oui [N] Non »), tapez la lettre <kbd>Y</kbd> puis <kbd>Entrée</kbd>. Si Windows demande un mot de passe administrateur, appelez le service informatique.</p>
+          </div></li>
+          <li><div>
+            <h3>Attendre « Prêt »</h3>
+            <p>Chaque étape réussie s'affiche avec <strong>OK</strong>. À la fin, la fenêtre annonce « Prêt » : appuyez sur une touche pour la fermer. L'icône <strong>Fabriquer le Vigiking</strong> est sur le bureau. Une ligne <strong>!!</strong> dit ce qui n'a pas marché et quoi faire.</p>
+          </div></li>
+          <li><div>
+            <h3>Faire un essai</h3>
+            <p>Ouvrez le modèle Word (dossier <code>bulletin</code>, puis <code>word</code>, ou le bouton DOCX en haut de cette page), enregistrez-le sous le nom <code>essai.docx</code>, remplacez le sous-titre « Mois Année » par « Janvier 2099 », enregistrez, puis déposez le fichier sur l'icône. Le PDF d'essai s'ouvre une à deux minutes plus tard.</p>
+          </div></li>
+        </ol>
+        <aside>
+          <div class="fenetre">
+            <div class="barre">Vigiking : installation</div>
+<pre><span class="t">Bulletin Vigiking : installation</span>
+
+  ... installation de l'outil de mise en page (Quarto) (quelques minutes).
+      Des lignes en anglais et des barres de progression vont défiler : c'est normal…
+  <span class="ok">OK</span>  l'outil de mise en page (Quarto) est installé.
+  <span class="ok">OK</span>  l'outil qui lance la fabrication (uv) est installé.
+  ... préparation de Python (la première fois seulement).
+  <span class="ok">OK</span>  Python est prêt.
+  <span class="ok">OK</span>  icône « Fabriquer le Vigiking » posée sur le bureau.
+  <span class="ok">OK</span>  le dossier commun (logos, dos du bulletin) est là.
+
+<span class="t">Prêt.</span> Pour fabriquer un numéro : faites glisser son fichier Word sur l'icône
+« Fabriquer le Vigiking » du bureau, et lâchez-le.
+
+Appuyez sur une touche pour continuer...</pre>
+          </div>
+<pre class="arbo"><b>le dossier du bulletin/</b>
+└─ <b>bulletin/</b>
+   ├─ Installer                   <i>une fois par ordinateur</i>
+   ├─ Fabriquer le Vigiking       <i>l'icône du bureau y mène</i>
+   ├─ word/modele-vigiking.docx   <i>le modèle Word</i>
+   ├─ guide/                      <i>ce mode d'emploi</i>
+   └─ commun/                     <i>logos, bandeau, dernière page (fourni à part)</i></pre>
+          <p class="legende-arbo">Après l'installation, ne déplacez plus le dossier : l'icône du bureau y mène. S'il faut le déplacer, relancez le fichier Installer.</p>
+          <div class="informatique">
+            <strong>Pour le service informatique</strong>
+            <p>Installation pour l'utilisateur, sans droits d'administrateur en principe : <code>winget install --id Posit.Quarto --scope user</code> et <code>winget install --id astral-sh.uv --scope user</code>. Au premier lancement, uv télécharge Python ; il faut donc un accès Internet sortant (GitHub, PyPI).</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="etapes">
+    <div class="wrap">
+      <div class="entete">
+        <span class="surtitre">À chaque numéro</span>
+        <h2 id="etapes">Fabriquer un numéro, en trois étapes</h2>
+      </div>
+      <ol class="etapes">
+        <li class="etape">
+          <span class="num">1</span>
+          <h3>Recevoir le fichier Word</h3>
+          <p>L'auteur l'écrit sur le modèle (voir <a href="#word">Écrire dans Word</a>). Enregistrez-le dans un dossier à vous : les fichiers fabriqués arriveront à côté.</p>
+          <p class="note">Le sous-titre du document donne le mois, par exemple « Octobre 2025 » : il donne son nom au numéro.</p>
+        </li>
+        <li class="etape">
+          <span class="num">2</span>
+          <h3>Déposer sur l'icône</h3>
+          <p>Fermez le document dans Word. Maintenez le clic sur le fichier, faites-le glisser sur l'icône <strong>Fabriquer le Vigiking</strong> du bureau, et lâchez. Une fenêtre montre l'avancement.</p>
+          <p class="note">Comptez une à deux minutes. Le PDF s'ouvre tout seul à la fin. Un fichier à la fois.</p>
+        </li>
+        <li class="etape">
+          <span class="num">3</span>
+          <h3>Relire et envoyer</h3>
+          <p>La dernière ligne de la fenêtre dit si le numéro peut partir. Tant qu'il reste une ligne ✖ À corriger, envoyez la liste à vérifier à l'auteur, puis déposez sa version corrigée. Quand la fenêtre dit « Prêt à envoyer », joignez le PDF au courriel de diffusion du bulletin.</p>
+          <p class="note">Redéposer le fichier refait tout : rien n'est à effacer avant.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="obtenez">
+    <div class="wrap">
+      <div class="entete">
+        <span class="surtitre">Résultat</span>
+        <h2 id="obtenez">Ce que vous obtenez</h2>
+        <p>Trois fichiers, à côté de votre fichier Word, qui portent le mois du numéro.</p>
+      </div>
+      <div class="trois">
+        <div class="fichier-carte"><span class="format">PDF</span><h3>À joindre au courriel</h3><span class="fichier">vigiking-2025-10.pdf</span><p>Des pages en largeur, comme un écran, avec un sommaire cliquable.</p></div>
+        <div class="fichier-carte"><span class="format">HTML</span><h3>La page web</h3><span class="fichier">vigiking-2025-10.html</span><p>Le même numéro, lisible sur téléphone. À garder : il servira quand le bulletin sera en ligne sur le site.</p></div>
+        <div class="fichier-carte"><span class="format">TXT</span><h3>La liste à vérifier</h3><span class="fichier">vigiking-2025-10 - à vérifier.txt</span><p>Ce qui reste à corriger avant l'envoi. Elle s'affiche aussi dans la fenêtre.</p></div>
+      </div>
+      <ul class="galerie">
+        <li><figure><img src="img/exemple-1.png" alt="Couverture : le thème du numéro sur fond bleu, à côté de la carte du réseau normand." loading="lazy" width="1013" height="570"><figcaption><b>La couverture.</b> Avec une photo, elle prend la place de la carte.</figcaption></figure></li>
+        <li><figure><img src="img/exemple-2.png" alt="Sommaire : l'éditorial à gauche, les articles regroupés par rubrique à droite, avec leur numéro en couleur et leur page." loading="lazy" width="1013" height="570"><figcaption><b>Le sommaire.</b> L'éditorial, et les articles par rubrique ; chaque ligne mène à son article.</figcaption></figure></li>
+        <li><figure><img src="img/exemple-3.png" alt="Article sur deux colonnes : rubrique au-dessus du titre, auteur et relecteur, encadré et liste à puces." loading="lazy" width="1013" height="570"><figcaption><b>Un article.</b> Sa rubrique, son numéro, sa couleur, et la ligne de points qui le situe dans le numéro.</figcaption></figure></li>
+        <li><figure><img src="img/exemple-5.png" alt="Page de blocs titrés : cas clinique, à retenir, le saviez-vous, attention, et un type créé par l'auteur." loading="lazy" width="1013" height="570"><figcaption><b>Les types de blocs.</b> Chacun dans sa couleur, y compris un type créé par l'auteur.</figcaption></figure></li>
+        <li><figure><img src="img/exemple-6.png" alt="Trois tuiles de chiffres clés, un tableau à en-tête bleu et une ligne de source." loading="lazy" width="1013" height="570"><figcaption><b>Chiffres clés et tableau.</b> Les tuiles, le tableau, la source officielle.</figcaption></figure></li>
+        <li><figure><img src="img/exemple-8.png" alt="Liste de médicaments classés par catégorie, en rouge gras et en orange italique." loading="lazy" width="1013" height="570"><figcaption><b>Une liste de médicaments.</b> Étiquettes de catégorie et code rouge et orange.</figcaption></figure></li>
+        <li><figure><img src="img/word-5.png" alt="Page Références : deux références au format Vancouver, numérotées." loading="lazy" width="1013" height="570"><figcaption><b>Les références.</b> Trouvées depuis leur PMID ou leur DOI.</figcaption></figure></li>
+        <li><figure><img src="img/word-6.png" alt="Dos du bulletin sur fond bleu : coordonnées des deux centres et carte du réseau." loading="lazy" width="1013" height="570"><figcaption><b>La dernière page.</b> Les coordonnées des deux centres, ajoutées à chaque numéro.</figcaption></figure></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="liste">
+    <div class="wrap">
+      <div class="entete">
+        <span class="surtitre">Avant l'envoi</span>
+        <h2 id="liste">La liste à vérifier</h2>
+        <p>Elle s'affiche dans la fenêtre et arrive à côté du fichier Word. Chaque ligne dit où regarder et quoi faire, dans le fichier Word ; la dernière ligne de la fenêtre dit si le numéro peut partir.</p>
+      </div>
+      <div class="verifier">
+        <div class="fenetre">
+          <div class="barre">Fabriquer le Vigiking</div>
+<pre><span class="t">Vigiking 2025-10 : points à vérifier (fichier « Vigiking octobre.docx », fabriqué le 28/11/2026 à 14:05)</span>
+
+<span class="t">À corriger (1)</span>
+<span class="x">✖</span> Article « Par quels mécanismes… ? » (page 4) : trop long pour sa page, même en petits caractères (les images comptent aussi). Raccourcissez-le, réduisez une image, ou coupez-le en deux articles (un nouveau « Titre 1 »).
+
+<span class="t">À vérifier (1)</span>
+<span class="w">⚠</span> Couverture : l'image n'a pas de texte de remplacement, lu par les lecteurs d'écran (dans Word : clic droit sur l'image → Modifier le texte de remplacement).
+
+<span class="x">✖</span> À ne pas envoyer encore : 1 point à corriger dans le fichier Word. Envoyez « vigiking-2025-10 - à vérifier.txt » à l'auteur, puis déposez ici sa version corrigée.</pre>
+        </div>
+        <div class="niveaux">
+          <div class="niveau x"><span class="signe" aria-hidden="true">✖</span><div><h3>À corriger</h3><p>Le bulletin est faux ou abîmé tant que ce n'est pas réglé : un article déborde, une image manque, une référence est introuvable.</p></div></div>
+          <div class="niveau w"><span class="signe" aria-hidden="true">⚠</span><div><h3>À vérifier</h3><p>À regarder, puis à corriger ou à laisser en connaissance de cause : texte de remplacement, nom d'auteur, image un peu petite, lien qui refuse les vérifications.</p></div></div>
+          <div class="niveau i"><span class="signe" aria-hidden="true">ℹ</span><div><h3>Pour information</h3><p>Rien à faire : la fabrication vous dit ce qu'elle a fait à votre place.</p></div></div>
+        </div>
+      </div>
+      <div class="que-faire">
+        <table>
+          <thead><tr><th scope="col">La liste dit</th><th scope="col">Faites ceci dans Word</th></tr></thead>
+          <tbody>
+            <tr><td>trop long pour sa page</td><td>Raccourcissez l'article, réduisez une image, ou coupez-le en deux avec un nouveau « Titre 1 ».</td></tr>
+            <tr><td>couleur mise à la main</td><td>Retirez la couleur ; pour une mise en garde, utilisez « Bloc Attention » ; pour un médicament dans une liste, « Contre-indication » ou « CredibleMeds ».</td></tr>
+            <tr><td>pas de texte de remplacement</td><td>Clic droit sur l'image, « Modifier le texte de remplacement », puis décrivez ce qu'elle montre en une phrase.</td></tr>
+            <tr><td>l'image est petite</td><td>Demandez une version plus grande, au moins 800 pixels de large, et remplacez-la.</td></tr>
+            <tr><td>au format EMF (ou WMF, TIFF)</td><td>Remplacez l'image par une image PNG ou JPEG.</td></tr>
+            <tr><td>le style « … » ne fait pas partie du modèle</td><td>Appliquez un style du modèle, ou renommez votre style « Bloc » suivi de son titre.</td></tr>
+            <tr><td>n'est pas entre crochets</td><td>Écrivez la référence entre crochets, par exemple [PMID 14999113].</td></tr>
+            <tr><td>Référence introuvable</td><td>Vérifiez le numéro PMID ou le DOI : un chiffre manque ou s'est inversé.</td></tr>
+            <tr><td>Pas de connexion internet</td><td>Rien dans Word : refaites le bulletin depuis un ordinateur connecté.</td></tr>
+            <tr><td>Lien mort</td><td>Corrigez l'adresse, ou retirez le lien.</td></tr>
+            <tr><td>il reste « [à compléter] »</td><td>Complétez le passage, ou retirez-le.</td></tr>
+            <tr><td>le nom de l'auteur est à compléter, ou encore celui du modèle</td><td>Écrivez « Auteur : » et le vrai nom, juste sous le titre.</td></tr>
+            <tr><td>la ligne « Rubrique : … » s'affiche dans le texte</td><td>Remontez-la juste sous le « Titre 1 », avant tout « Titre 2 ».</td></tr>
+            <tr><td>la rubrique « … » n'est pas une des trois habituelles</td><td>Écrivez Cas d'ici et d'ailleurs, Littérature ou Infos des Autorités de Santé.</td></tr>
+            <tr><td>le document est encore ouvert dans Word</td><td>Enregistrez-le, fermez-le, puis déposez-le à nouveau.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="souci">
+    <div class="wrap">
+      <div class="entete">
+        <span class="surtitre">Dépannage</span>
+        <h2 id="souci">En cas de souci</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Windows a bloqué le fichier Installer</summary>
+          <div><p>C'est normal pour un fichier téléchargé : cliquez sur <span class="menu">Informations complémentaires</span>, puis <span class="menu">Exécuter quand même</span>. Si le bouton n'apparaît pas, l'ordinateur est verrouillé : montrez l'encadré « Pour le service informatique » de la partie <a href="#installer">Installer</a> au service informatique.</p></div>
+        </details>
+        <details>
+          <summary>La fenêtre d'installation affiche une ligne « !! »</summary>
+          <div><p>Ce n'est pas une erreur de votre part : l'ordinateur n'a pas permis l'installation. Appelez le service informatique et montrez-lui la fenêtre ; elle donne ce qu'il faut installer.</p></div>
+        </details>
+        <details>
+          <summary>Il n'y a pas d'icône sur le bureau</summary>
+          <div><p>L'installation ne s'est pas terminée. Relancez le fichier Installer et lisez ses lignes <strong>!!</strong> ; elles disent quoi faire.</p></div>
+        </details>
+        <details>
+          <summary>L'icône dit « L'installation n'est pas faite sur cet ordinateur »</summary>
+          <div><p>Si vous venez d'installer, fermez votre session Windows et rouvrez-la, puis recommencez. Sinon, double-cliquez sur le fichier Installer, dans le dossier du bulletin.</p></div>
+        </details>
+        <details>
+          <summary>« Le fichier … est ouvert dans un autre programme »</summary>
+          <div><p>Le PDF de la fabrication précédente est encore ouvert, dans un lecteur de PDF ou le navigateur. Fermez-le, puis déposez à nouveau le fichier Word.</p></div>
+        </details>
+        <details>
+          <summary>J'ai déposé un PDF ou un ancien fichier Word (.doc)</summary>
+          <div><p>Seul le fichier Word du numéro (.docx) se dépose sur l'icône. Un ancien .doc : ouvrez-le dans Word, faites <span class="menu">Fichier › Enregistrer sous › Document Word (*.docx)</span>, et déposez ce nouveau fichier.</p></div>
+        </details>
+        <details>
+          <summary>« Le mois du numéro » n'est pas reconnu</summary>
+          <div><p>Le sous-titre manque ou ne contient pas de mois. Écrivez par exemple « Octobre 2025 » sur une ligne au style « Sous-titre », sous le titre, puis redéposez le fichier.</p></div>
+        </details>
+        <details>
+          <summary>« La mise en page a échoué » ou « Un problème inattendu est survenu »</summary>
+          <div><p>Rien n'est abîmé. Un fichier <code>Vigiking - journal technique.txt</code> est à côté du fichier Word : envoyez-le à la personne qui gère le bulletin. L'ancien PDF est renommé « (ancienne version) » : ne l'envoyez pas.</p></div>
+        </details>
+        <details>
+          <summary>Je n'ai pas de connexion Internet</summary>
+          <div><p>La fabrication marche quand même, mais n'envoyez pas ce PDF si la liste dit « Pas de connexion internet » : les nouvelles références y sont marquées « (référence non trouvée) ». Les références déjà trouvées une fois sont gardées sur l'ordinateur ; refaites le bulletin depuis un ordinateur connecté pour les autres.</p></div>
+        </details>
+        <details>
+          <summary>Le type de bloc dont j'ai besoin n'existe pas</summary>
+          <div><p>Créez-le dans Word : un nouveau style de paragraphe dont le nom commence par « Bloc », avec la couleur de votre choix (voir <a href="#blocs">Les types de blocs</a>). Le bulletin le met en forme tout seul.</p></div>
+        </details>
+        <details>
+          <summary>Mon article déborde de sa page</summary>
+          <div><p>Raccourcissez-le, ou coupez-le en deux articles avec un nouveau « Titre 1 ». Les images rétrécissent déjà avec le texte ; au-delà, c'est la longueur du texte qui compte.</p></div>
+        </details>
+        <details>
+          <summary>Puis-je modifier le PDF directement ?</summary>
+          <div><p>Non : il serait écrasé à la prochaine fabrication. Corrigez toujours le fichier Word, puis redéposez-le. C'est lui l'original.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pied">
+  <div class="wrap">
+    <span>Vigiking Normand · CRPV de Caen et de Rouen</span>
+    <span>Prototype du 28 novembre 2026, à valider par les deux centres avant diffusion.</span>
+  </div>
+</footer>

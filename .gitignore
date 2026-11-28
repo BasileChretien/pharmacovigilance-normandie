@@ -18,3 +18,11 @@ data/bdpm/
 
 # Open Medic and INSEE files downloaded by tools/build/fetch_openmedic.py
 data/openmedic/
+
+# Vigiking bulletin: issues stay local until the CRPV agree to host them (bulletin/README.md)
+bulletin/numeros/
+bulletin/_output/
+# Logos, Vigiking banner and standard back cover used by bulletin/word/importer.py
+bulletin/commun/
+# Vigiking issues downloaded from rfcrpv.fr for the survey of block types: local only
+data/vigiking-pdf/

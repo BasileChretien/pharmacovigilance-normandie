@@ -1,0 +1,7 @@
+/.quarto/
+**/*.quarto_ipynb
+# References found from their DOI or PMID (fabriquer.py): kept for offline rebuilds
+/.cache/
+# Typst source kept for the checks (keep-typ), and the log of a failed render
+/exemple/*.typ
+**/journal-quarto.txt

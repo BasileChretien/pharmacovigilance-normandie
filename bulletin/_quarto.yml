@@ -1,0 +1,10 @@
+# The Vigiking bulletin: its own Quarto project, left out of the website's build
+# (see "!bulletin/" in ../_quarto.yml). Render an issue from this folder:
+#   quarto render numeros/2025-10/vigiking-2025-10.qmd
+project:
+  type: default
+  output-dir: _output
+  render:
+    - exemple/
+    - numeros/   # local only (gitignored)
+lang: fr

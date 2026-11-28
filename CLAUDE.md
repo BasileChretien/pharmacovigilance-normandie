@@ -23,6 +23,7 @@ reviews it.
 - `uv run python tools/build/fetch_vigiking.py` then `make_vigiking_page.py` — at each new issue: archive of Vigiking issues (links to rfcrpv.fr) for vigiking/archives.qmd.
 - `uv run python tools/build/fetch_alertes.py` then `make_alertes_page.py` — refresh the official alerts feed (ANSM, EMA); the Pages build also runs both every Monday, stdlib only (runner's python3).
 - `uv run python tools/build/fetch_publications.py` then `make_publications_page.py` — teams' recent publications (crpv/recherche.qmd): ORCID iDs of the member cards on crpv/equipe-*.qmd, then ORCID and OpenAlex; also run by the Pages build. No author names on the page.
+- `uv run python bulletin/fabriquer.py numero.docx` (authors drop the file on `bulletin/Fabriquer le Vigiking.bat`) — Vigiking bulletin in one step: Word import (template `bulletin/word/modele-vigiking.docx`), `[PMID …]`/`[DOI …]` references, PDF (16:9) and web page, checks report next to the Word file; its own Quarto project, out of the site build; issues stay local (gitignored) until the CRPV agree to host them (`bulletin/README.md`). Its colours: `bulletin/_extensions/vigiking/typst-template.typ`, mirrored in `vigiking.css`/`vigiking.lua` (`tests/test_bulletin_couleurs.py`); its map: `tools/design/make_bulletin_reseau.py`.
 
 Status and open tasks: `docs/STATUS.md`. Points for medical reviewers: `docs/relecture.md`.
 

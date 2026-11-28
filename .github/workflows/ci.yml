@@ -13,6 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      # Quarto first: its pandoc runs the tests of the Word import (bulletin/word/).
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.10.18"
+
       - uses: astral-sh/setup-uv@v10.4.0
       # Before pytest: tests/test_page_meta_filter.py runs the filter through Quarto, and
       # fails rather than skips when Quarto is missing in CI.

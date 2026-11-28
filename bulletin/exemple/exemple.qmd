@@ -1,0 +1,161 @@
+---
+title: "Titre du dossier du numéro"
+subtitle: "Vigiking Normand, numéro d'exemple"
+numero: "Mois Année"
+pdf: exemple.pdf
+format:
+  vigiking-typst:
+    output-file: exemple.pdf
+  vigiking-html:
+    output-file: exemple.html
+---
+
+<!-- Sample issue: every building block of the bulletin, with placeholder text.
+A real issue also gives, in its front matter: couverture (cover image) and couverture-alt,
+logo-gauche, logo-droite and bandeau (images of the logos and of the Vigiking banner). -->
+
+::: {.editorial}
+**Un éditorial**, écrit avant le premier article, s'affiche sur la page du sommaire. Il présente le numéro en quelques lignes et se signe à la fin.
+
+*Les équipes des CRPV de Caen et de Rouen*
+:::
+
+## Un article sur deux colonnes {auteur="[auteur]" rubrique="Cas d'ici et d'ailleurs" relecture="[relecteur]"}
+
+Le texte de l'article s'écrit comme un courriel : des paragraphes séparés par une ligne vide. Les mots importants se mettent **en gras**, les titres d'ouvrages *en italique*, et un appel de référence en exposant^1^.
+
+La mise en page se fait toute seule : colonnes, polices, couleurs, taille du texte et marges viennent du modèle, identiques à chaque numéro.
+
+::: {.encadre}
+**Un encadré** met en avant un message clé, comme dans les numéros PowerPoint.
+:::
+
+::: {.saut-colonne}
+:::
+
+La deuxième colonne commence après la ligne `::: {.saut-colonne}`. Une figure s'insère avec sa légende et son texte alternatif, pour les lecteurs d'écran.
+
+Une liste :
+
+- premier point ;
+- deuxième point ;
+- troisième point.
+
+## Un article sur une colonne {auteur="[auteur]"}
+
+Sur une colonne, la taille du texte s'adapte pour remplir la page : un article court s'écrit plus gros, un article long plus petit, sans rien régler à la main.
+
+1. Première étape.
+2. Deuxième étape.
+3. Troisième étape.
+
+::: {.encadre}
+**À retenir :** le texte reste le seul travail des auteurs ; la mise en page est celle du modèle.
+:::
+
+## Les types de blocs {auteur="[auteur]" rubrique="Littérature"}
+
+::: {.bloc titre="Cas clinique" couleur="#0d4a5e"}
+Une patiente de 68 ans, traitée par [médicament], présente au cinquième jour [effet indésirable].
+:::
+
+[En pratique]{.intertitre} un intertitre en ligne ouvre un paragraphe, dans la couleur de l'article.
+
+::: {.bloc titre="À retenir" couleur="#0b6b45"}
+- premier message clé ;
+- deuxième message clé.
+:::
+
+::: {.saut-colonne}
+:::
+
+::: {.bloc titre="Le saviez-vous ?" couleur="#2a8fbd"}
+Un bloc prend la couleur de son style Word ; trop claire, elle est assombrie pour rester lisible.
+:::
+
+::: {.bloc titre="Attention" couleur="#b3261e"}
+Une mise en garde, en rouge.
+:::
+
+::: {.bloc titre="Un type créé par l'auteur"}
+Sans couleur choisie, un bloc prend la couleur de l'article.
+:::
+
+## Chiffres clés, tableau et source {auteur="[auteur]" rubrique="Infos des Autorités de Santé"}
+
+::: {.chiffres}
+66 % des cas étaient graves.
+
+20 jours de délai médian d'apparition.
+
+1 200 déclarations analysées.
+:::
+
+| Médicament | Surveillance | Fréquence |
+|---|---|---|
+| [médicament A] | ECG | à l'instauration |
+| [médicament B] | Ionogramme | tous les mois |
+| [médicament C] | Fonction rénale | tous les trois mois |
+
+::: {.source}
+Source : [titre du courrier de l'ANSM], ANSM, [date].
+:::
+
+## Brèves {auteur="[auteur]" rubrique="Infos des Autorités de Santé"}
+
+### Une première brève
+
+Plusieurs informations courtes tiennent sous un même titre, chacune avec son intertitre (style « Titre 2 » dans Word).
+
+### Une deuxième brève
+
+Le texte de la deuxième information.
+
+## Une liste de médicaments classés {auteur="[auteur]" .liste}
+
+::: {.pastille couleur=rouge}
+Cardiologie
+:::
+
+**Classe A :** [médicament contre-indiqué]{.ci}, [médicament signalé par CredibleMeds]{.cm}
+
+::: {.pastille couleur=vert}
+Infectiologie
+:::
+
+**Classe B :** [médicament contre-indiqué]{.ci}
+
+::: {.saut-colonne}
+:::
+
+::: {.pastille couleur=bleu}
+Neuropsychiatrie
+:::
+
+**Classe C :** [médicament signalé par CredibleMeds]{.cm}
+
+::: {.legende}
+[**En rouge et en gras**]{.ci} = contre-indication mentionnée dans le RCP.\
+[*En orange et en italique*]{.cm} = risque mentionné dans CredibleMeds.
+:::
+
+## Pour nous joindre {.dos}
+
+**Texte d'appel à la déclaration**, repris d'un numéro à l'autre.
+
+### Comment poser une question ou déclarer un effet indésirable ?
+
+[Texte du dos du bulletin.]
+
+### Vos centres régionaux de pharmacovigilance en Normandie
+
+::: {.deux-colonnes}
+**Rouen**\
+[Coordonnées du centre]
+
+::: {.saut-colonne}
+:::
+
+**Caen**\
+[Coordonnées du centre]
+:::

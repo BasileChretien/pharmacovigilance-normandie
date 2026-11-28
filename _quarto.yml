@@ -16,6 +16,7 @@ project:
     - "!docs/"
     - "!README.md"
     - "!CLAUDE.md"
+    - "!bulletin/"
 
 lang: fr
 
