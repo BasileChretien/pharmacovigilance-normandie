@@ -15,6 +15,7 @@ from __future__ import annotations
 import html
 import json
 from pathlib import Path
+from urllib.parse import quote, unquote
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data" / "publications.json"
@@ -40,17 +41,22 @@ def _equipes(cles: list[str]) -> str:
     return f"Équipe de {noms[0]}" if noms else ""
 
 
+def _lien_doi(doi: str) -> str:
+    """The DOI's address, percent-encoded: a #, ? or % in a DOI would break the link."""
+    return "https://doi.org/" + quote(doi, safe="/:;()")
+
+
 def _item(p: dict) -> str:
     annee = html.escape(p["publie_le"][:4])
     meta = [f'<time datetime="{annee}">{annee}</time>']
     if p.get("revue"):
         meta.append(f"<em>{html.escape(p['revue'])}</em>")
-    lien = f'<a href="https://doi.org/{html.escape(p["doi"])}">{html.escape(p["titre"])}</a>'
+    lien = f'<a href="{html.escape(_lien_doi(p["doi"]))}">{html.escape(p["titre"])}</a>'
     langue = p.get("langue") if p.get("langue") not in (None, "fr") else None
     parts = [_p("fil-meta", " · ".join(meta)), _p("fil-titre", lien, langue)]
     details = [_equipes(p.get("equipes") or [])]
     libre = p.get("acces_libre")
-    if libre and libre.lower().rstrip("/") == f"https://doi.org/{p['doi']}":
+    if libre and unquote(libre).lower().rstrip("/") == f"https://doi.org/{p['doi']}":
         details.append("en accès libre")  # the title's link already leads there
     elif libre:
         details.append(
@@ -71,7 +77,8 @@ def liste(data: dict | None) -> str:
             "La liste se remplira d'elle-même quand des membres des équipes auront publié "
             "leur carte, avec leur accord écrit et leur identifiant ORCID.",
         )
-    if not data.get("releve_le"):
+    non_lus = set(data.get("non_lus") or [])
+    if not data.get("releve_le") or non_lus >= set(data["membres"]):
         return _p(
             "fil-releve", f"Cette liste n'a pas encore pu être relevée sur {SOURCES}."
         )
@@ -81,6 +88,13 @@ def liste(data: dict | None) -> str:
         f"{data['depuis']} des membres dont la carte figure sur les pages des équipes. Le "
         "lien de chaque titre donne la référence complète.",
     )
+    if non_lus:
+        qui = "d'un membre" if len(non_lus) == 1 else f"de {len(non_lus)} membres"
+        releve += "\n" + _p(
+            "fil-releve",
+            f"Les publications {qui} n'ont pas pu être relevées : elles manquent à cette "
+            "liste.",
+        )
     if not data["publications"]:
         return releve + "\n" + _p("fil-releve", "Aucune publication relevée.")
     items = "\n".join(_item(p) for p in data["publications"])

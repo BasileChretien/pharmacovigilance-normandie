@@ -9,9 +9,13 @@ DOI); OpenAlex gives, by DOI, the title, the journal, the date, the language, fr
 and retraction. Works of the current year and the ANNEES - 1 before, of the types in
 TYPES, are kept; a work two members list appears once, under both teams.
 
-Writes data/publications.json. When ORCID or OpenAlex does not answer, the previous list
-is kept (without the works of members whose card has gone) and the script exits with 1,
-so the build (.github/workflows/pages.yml) shows a warning. Standard library only: the
+Writes data/publications.json, with the members whose works could not be read
+("non_lus"): a member whose ORCID record is missing, locked or deactivated, or whose card
+links to orcid.org without a valid iD (the log names the page). The others are listed.
+When ORCID or OpenAlex does not answer at all, the previous list is kept, without the
+works of members whose card has gone, and a member it never read counts as not read.
+Either way the script exits with 1, so the build (.github/workflows/pages.yml) shows a
+warning; the page says how many members' works are missing. Standard library only: the
 build runs it with the runner's python3. An OpenAlex API key in the environment variable
 OPENALEX_API_KEY is used if set; without one, requests share OpenAlex's free daily budget,
 which is enough for a few members.
@@ -29,6 +33,7 @@ import json
 import os
 import re
 import sys
+import urllib.error
 import urllib.parse
 import urllib.request
 from collections.abc import Callable
@@ -46,9 +51,15 @@ TYPES = {"article", "review", "letter", "editorial", "book-chapter"}
 PAR_REQUETE = 50  # DOIs per OpenAlex request
 SELECT = "doi,display_name,publication_date,type,language,primary_location,open_access,is_retracted"
 
-_ORCID = re.compile(
-    r"https?://(?:www\.)?orcid\.org/([0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X])\b"
-)
+# ORCID answers these for a record that is missing, locked or deactivated: that member is
+# not read, the others are. Any other failure is an outage and fails the whole run.
+FICHE_ABSENTE = {404, 409, 410}
+
+# What follows orcid.org/ in a card's link, read loosely so that a mistyped iD is reported
+# rather than skipped; then checked against _ID and the check digit.
+_ORCID = re.compile(r"https?://(?:www\.)?orcid\.org/([^\s/)\]\"'<>?#]+)")
+_ID = re.compile(r"[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]")
+_PREFIXE_DOI = re.compile(r"(?:https?://)?(?:dx\.)?doi\.org/|doi:\s*", re.IGNORECASE)
 _COMMENTAIRE = re.compile(r"<!--.*?-->", re.DOTALL)
 _DOI = re.compile(r"10\.[0-9]{4,9}/\S+")
 _TAG = re.compile(r"<[^>]+>")
@@ -68,59 +79,78 @@ def orcid_valide(orcid: str) -> bool:
     return chiffres[-1] == ("X" if reste == 10 else str(reste))
 
 
-def membres(root: Path = ROOT) -> dict[str, list[str]]:
+def membres(
+    root: Path = ROOT,
+) -> tuple[dict[str, list[str]], list[tuple[str, str]]]:
     """ORCID iD -> its teams, from the member cards of the two team pages (a card left in
-    an HTML comment does not count)."""
+    an HTML comment does not count); and the orcid.org links that give no valid iD, with
+    their page. A lower-case check digit x is read as X."""
     trouves: dict[str, list[str]] = {}
+    illisibles: list[tuple[str, str]] = []
     for equipe, chemin in EQUIPES.items():
         texte = _COMMENTAIRE.sub("", (root / chemin).read_text(encoding="utf-8"))
-        for orcid in _ORCID.findall(texte):
-            if not orcid_valide(orcid):
-                raise SystemExit(
-                    f"fetch_publications : identifiant ORCID invalide dans {chemin} : {orcid}"
-                )
+        for brut in _ORCID.findall(texte):
+            orcid = brut.upper()
+            if not (_ID.fullmatch(orcid) and orcid_valide(orcid)):
+                if (chemin, brut) not in illisibles:
+                    illisibles.append((chemin, brut))
+                continue
             equipes = trouves.setdefault(orcid, [])
             if equipe not in equipes:
                 equipes.append(equipe)
-    return trouves
+    return trouves, illisibles
 
 
 def normaliser_doi(valeur: str) -> str | None:
     """A DOI in lower case without its prefix, or None. A DOI holding a comma or a bar is
     left out: OpenAlex's filter would read it as two."""
-    doi = valeur.strip().lower()
-    for prefixe in (
-        "https://doi.org/",
-        "http://doi.org/",
-        "https://dx.doi.org/",
-        "doi:",
-    ):
-        doi = doi.removeprefix(prefixe)
+    doi = valeur.strip()
+    prefixe = _PREFIXE_DOI.match(doi)
+    if prefixe:
+        doi = doi[prefixe.end() :]
+        if "doi.org" in prefixe.group(0).lower():
+            # A link may encode the slash: 10.1002%2Fpds.
+            doi = urllib.parse.unquote(doi)
+    doi = doi.strip().lower()
     if not _DOI.fullmatch(doi) or "," in doi or "|" in doi:
         return None
     return doi
 
 
+def _annee(resume: object) -> int | None:
+    if not isinstance(resume, dict):
+        return None
+    valeur = ((resume.get("publication-date") or {}).get("year") or {}).get("value")
+    return int(valeur) if isinstance(valeur, str) and valeur.isdigit() else None
+
+
+def _doi_du_groupe(groupe: dict) -> str | None:
+    """A group's first usable DOI of its own, ORCID's normalised form first."""
+    for eid in (groupe.get("external-ids") or {}).get("external-id") or []:
+        if (
+            eid.get("external-id-type") != "doi"
+            or eid.get("external-id-relationship") != "self"
+        ):
+            continue
+        normalise = (eid.get("external-id-normalized") or {}).get("value")
+        for valeur in (normalise, eid.get("external-id-value")):
+            doi = normaliser_doi(valeur) if isinstance(valeur, str) else None
+            if doi:
+                return doi
+    return None
+
+
 def dois_orcid(reponse: dict, depuis: int) -> list[str]:
-    """The DOIs of the works an ORCID record lists (one per group of duplicates), but
-    those ORCID dates before the year depuis."""
+    """The DOIs of the works an ORCID record lists (one per group of versions of a work),
+    but those whose latest ORCID date is before the year depuis (undated ones are kept)."""
     dois = []
     for groupe in reponse.get("group") or []:
-        resumes = groupe.get("work-summary") or [{}]
-        annee = ((resumes[0].get("publication-date") or {}).get("year") or {}).get(
-            "value"
-        )
-        if annee and annee.isdigit() and int(annee) < depuis:
+        annees = [a for a in map(_annee, groupe.get("work-summary") or []) if a]
+        if annees and max(annees) < depuis:
             continue
-        for eid in (groupe.get("external-ids") or {}).get("external-id") or []:
-            if (
-                eid.get("external-id-type") == "doi"
-                and eid.get("external-id-relationship") == "self"
-            ):
-                doi = normaliser_doi(eid.get("external-id-value") or "")
-                if doi and doi not in dois:
-                    dois.append(doi)
-                break
+        doi = _doi_du_groupe(groupe)
+        if doi and doi not in dois:
+            dois.append(doi)
     return dois
 
 
@@ -192,12 +222,21 @@ def releve(
     aujourd_hui: dt.date,
     cle: str | None = None,
 ) -> dict:
-    """The list read now from ORCID then OpenAlex. Raises OSError, ValueError,
+    """The list read now from ORCID then OpenAlex; a member whose ORCID record is
+    missing, locked or deactivated is not read (non_lus). Raises OSError, ValueError,
     TypeError, AttributeError or HTTPException when a site does not answer as expected."""
     depuis = aujourd_hui.year - ANNEES + 1
     par_doi: dict[str, dict[str, list[str]]] = {}
+    non_lus = []
     for orcid, siennes in equipes.items():
-        for doi in dois_orcid(fetch(ORCID_API.format(orcid)), depuis):
+        try:
+            reponse = fetch(ORCID_API.format(orcid))
+        except urllib.error.HTTPError as exc:
+            if exc.code not in FICHE_ABSENTE:
+                raise
+            non_lus.append(orcid)
+            continue
+        for doi in dois_orcid(reponse, depuis):
             par_doi.setdefault(doi, {})[orcid] = siennes
     publications: dict[str, dict] = {}
     dois = sorted(par_doi)
@@ -212,6 +251,7 @@ def releve(
         "releve_le": aujourd_hui.isoformat(),
         "depuis": depuis,
         "membres": sorted(equipes),
+        "non_lus": sorted(non_lus),
         "publications": sorted(
             publications.values(),
             key=lambda p: (p["publie_le"], p["titre"]),
@@ -234,10 +274,14 @@ def _notice_saine(p: object) -> bool:
     )
 
 
+def _textes(valeur: object) -> bool:
+    return isinstance(valeur, list) and all(isinstance(v, str) for v in valeur)
+
+
 def precedent(path: Path, equipes: dict[str, list[str]]) -> dict | None:
-    """The previous list, without the works of members whose card has gone; None if the
-    file is missing or damaged, or if it was read before a member now on the cards had
-    one (it would claim to have read works it never read)."""
+    """The previous list, without the works of members whose card has gone; a member it
+    did not read (not on the cards then, or not read then) counts as not read. None if
+    the file is missing or damaged."""
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, ValueError):
@@ -246,20 +290,25 @@ def precedent(path: Path, equipes: dict[str, list[str]]) -> dict | None:
         isinstance(data, dict)
         and _date_iso(data.get("releve_le"))
         and isinstance(data.get("depuis"), int)
-        and isinstance(data.get("membres"), list)
+        and _textes(data.get("membres"))
+        and _textes(data.get("non_lus", []))
         and isinstance(data.get("publications"), list)
         and all(_notice_saine(p) for p in data["publications"])
     ):
         return None
-    if set(equipes) - set(data["membres"]):
-        return None
+    lus = set(data["membres"]) - set(data.get("non_lus", []))
     gardees = []
     for p in data["publications"]:
         restants = sorted(set(p["membres"]) & set(equipes))
         if restants:
             teams = sorted({e for m in restants for e in equipes[m]})
             gardees.append({**p, "membres": restants, "equipes": teams})
-    return {**data, "membres": sorted(equipes), "publications": gardees}
+    return {
+        **data,
+        "membres": sorted(equipes),
+        "non_lus": sorted(set(equipes) - lus),
+        "publications": gardees,
+    }
 
 
 def non_releve(equipes: dict[str, list[str]]) -> dict:
@@ -268,6 +317,7 @@ def non_releve(equipes: dict[str, list[str]]) -> dict:
         "releve_le": None,
         "depuis": None,
         "membres": sorted(equipes),
+        "non_lus": sorted(equipes),
         "publications": [],
     }
 
@@ -291,10 +341,27 @@ def _fetch(url: str) -> dict:
     return data
 
 
+def avec_illisibles(data: dict, illisibles: list[tuple[str, str]]) -> dict:
+    """A card whose orcid.org link gives no valid iD counts as a member not read."""
+    bruts = {brut for _, brut in illisibles}
+    return {
+        **data,
+        "membres": sorted(set(data["membres"]) | bruts),
+        "non_lus": sorted(set(data["non_lus"]) | bruts),
+    }
+
+
 def main() -> int:
-    equipes = membres()
+    equipes, illisibles = membres()
+    for chemin, brut in illisibles:
+        print(
+            f"fetch_publications : lien ORCID sans identifiant valide dans {chemin} : "
+            f"{brut} ; ce membre n'est pas relevé.",
+            file=sys.stderr,
+        )
     # Local date of the machine that ran the fetch (timezone-aware).
     today = dt.datetime.now(dt.timezone.utc).astimezone().date()
+    panne = False
     try:
         data = releve(equipes, _fetch, today, os.environ.get("OPENALEX_API_KEY"))
     # HTTPException: a connection cut mid-read (IncompleteRead), a bad status line;
@@ -307,20 +374,29 @@ def main() -> int:
         AttributeError,
         http.client.HTTPException,
     ) as exc:
+        panne = True
         code = getattr(exc, "code", None)
         print(
             f"fetch_publications : ORCID ou OpenAlex n'a pas répondu "
             f"({type(exc).__name__}{f' {code}' if code else ''}) ; liste précédente gardée.",
             file=sys.stderr,
         )
-        _ecrire(precedent(OUT, equipes) or non_releve(equipes))
-        return 1
+        data = precedent(OUT, equipes) or non_releve(equipes)
+    sans_fiche = sorted(set(data["non_lus"]) & set(equipes))
+    if sans_fiche and not panne:
+        print(
+            "fetch_publications : fiche ORCID introuvable, verrouillée ou non publique : "
+            + ", ".join(sans_fiche),
+            file=sys.stderr,
+        )
+    data = avec_illisibles(data, illisibles)
     _ecrire(data)
     print(
-        f"{OUT.relative_to(ROOT)} : {len(data['publications'])} publications "
-        f"de {len(equipes)} membres (depuis {data['depuis']})."
+        f"{OUT.name} : {len(data['publications'])} publications ; "
+        f"{len(data['membres']) - len(data['non_lus'])} membres relevés sur "
+        f"{len(data['membres'])} (depuis {data['depuis']})."
     )
-    return 0
+    return 1 if panne or data["non_lus"] else 0
 
 
 if __name__ == "__main__":

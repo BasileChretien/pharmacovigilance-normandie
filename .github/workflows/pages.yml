@@ -40,10 +40,11 @@ jobs:
           python3 tools/build/make_alertes_page.py
       # Reads ORCID and OpenAlex again for the members whose card gives an ORCID iD
       # (crpv/recherche.qmd). A site that does not answer keeps the list committed in
-      # data/publications.json, without the works of members whose card has gone.
+      # data/publications.json, without the works of members whose card has gone; a
+      # member that cannot be read is named in this step's log and counted on the page.
       - name: Refresh the teams' publications
         run: |
-          python3 tools/build/fetch_publications.py || echo "::warning::Publications: ORCID or OpenAlex did not answer; the previous list is kept."
+          python3 tools/build/fetch_publications.py || echo "::warning::Publications: not every member's works could be read; the reason is in this step's log."
           python3 tools/build/make_publications_page.py
       # The post-render script (tools/build/search_postprocess.py) uses the runner's python3.
       - name: Render the site
