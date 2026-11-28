@@ -93,13 +93,13 @@ Le plan d'un RCP réel, celui d'un médicament courant : l'ADVIL 200 mg, comprim
 ::: {.rcp-section numero="4.1" titre="Indications thérapeutiques"}
 **À y chercher.** Pour quoi le médicament est autorisé, chez qui (âge, poids) et pour quelle durée. Un usage en dehors de ce cadre est hors autorisation de mise sur le marché (AMM).
 
-**Dans ce RCP.** Chez l'adulte et l'enfant de plus de 20 kg (environ 6 ans), le traitement de courte durée de la fièvre et des douleurs : maux de tête, états grippaux, douleurs dentaires, courbatures, règles douloureuses.
+**Dans ce RCP.** Chez l'adulte et l'enfant de plus de 20 kg (environ 6 ans), le traitement de courte durée de la fièvre et/ou des douleurs telles que maux de tête, états grippaux, douleurs dentaires, courbatures, règles douloureuses.
 :::
 
 ::: {.rcp-section numero="4.2" titre="Posologie et mode d'administration"}
 **À y chercher.** La dose, l'intervalle entre les prises, la durée, l'adaptation à l'âge, au poids, au rein ou au foie, et la façon de prendre le médicament.
 
-**Dans ce RCP.** Chez l'adulte et l'enfant de plus de 30 kg, 1 à 2 comprimés, à renouveler si besoin au bout de 6 heures, sans dépasser 6 comprimés (1 200 mg) par jour, à la dose efficace la plus faible et pendant la durée la plus courte. Chez l'adulte, avis médical si la douleur dure plus de 5 jours ou la fièvre plus de 3 jours.
+**Dans ce RCP.** Chez l'enfant de 20 à 30 kg (environ 6 à 11 ans), 1 comprimé, à renouveler si besoin au bout de 6 heures, sans dépasser 3 comprimés (600 mg) par jour. Chez l'adulte et l'enfant de plus de 30 kg, 1 à 2 comprimés, à renouveler si besoin au bout de 6 heures, sans dépasser 6 comprimés (1 200 mg) par jour. Toujours la dose efficace la plus faible, pendant la durée la plus courte. Chez l'adulte, avis médical si la douleur dure plus de 5 jours ou la fièvre plus de 3 jours.
 :::
 
 ::: {.rcp-section numero="4.3" titre="Contre-indications"}
@@ -111,7 +111,7 @@ Le plan d'un RCP réel, celui d'un médicament courant : l'ADVIL 200 mg, comprim
 ::: {.rcp-section numero="4.4" titre="Mises en garde spéciales et précautions d'emploi"}
 **À y chercher.** Les risques graves, les patients les plus exposés, et la surveillance à prévoir. Les effets graves y sont décrits plus en détail qu'en 4.8.
 
-**Dans ce RCP.** La section s'ouvre sur le risque de mort fœtale, « même après une seule prise ». Suivent les sujets âgés, les effets digestifs, cardiovasculaires et cutanés, le rein, et les symptômes d'une infection que le médicament peut masquer.
+**Dans ce RCP.** La section s'ouvre sur le risque de mort fœtale, « même après une seule prise », et les effets chez l'enfant à naître. Suivent, entre autres, l'association avec un autre AINS (à éviter), l'asthme, les enfants déshydratés, les sujets âgés, les effets digestifs, cardiovasculaires et cutanés, le rein, et les symptômes d'une infection que le médicament peut masquer.
 :::
 
 ::: {.rcp-section numero="4.5" titre="Interactions avec d'autres médicaments et autres formes d'interactions"}
@@ -141,7 +141,7 @@ Le plan d'un RCP réel, celui d'un médicament courant : l'ADVIL 200 mg, comprim
 ::: {.rcp-section numero="4.9" titre="Surdosage"}
 **À y chercher.** Les signes d'un surdosage et la conduite à tenir.
 
-**Dans ce RCP.** Les signes (digestifs, neurologiques, rénaux, respiratoires, hypotension), puis la conduite à tenir, qui commence par le transfert immédiat à l'hôpital.
+**Dans ce RCP.** Les signes, digestifs, neurologiques, hépatiques (anomalies du bilan), métaboliques (hyperkaliémie, acidose), rénaux et respiratoires, et l'hypotension ; puis la conduite à tenir, qui commence par le transfert immédiat à l'hôpital.
 :::
 
 ::: {.rcp-section numero="5.1" titre="Propriétés pharmacodynamiques"}
@@ -178,6 +178,18 @@ Le plan d'un RCP réel, celui d'un médicament courant : l'ADVIL 200 mg, comprim
 **À y chercher.** La date de la dernière mise à jour : un texte ancien peut manquer d'informations de sécurité récentes.
 
 **Dans ce RCP.** Cette section aussi reste à compléter par le titulaire. La base indique, en tête du RCP, une mise à jour par l'ANSM le 13/02/2025.
+:::
+
+::: {.rcp-section numero="11-12" titre="Dosimétrie, préparation des radiopharmaceutiques"}
+**À y chercher.** Des informations propres aux médicaments radiopharmaceutiques.
+
+**Dans ce RCP.** « Sans objet. », pour les deux sections.
+:::
+
+::: {.rcp-section numero="—" titre="Conditions de prescription et de délivrance (sans numéro)"}
+**À y chercher.** Si le médicament est délivré avec ou sans ordonnance, et les éventuelles restrictions de prescription.
+
+**Dans ce RCP.** « Médicament non soumis à prescription médicale. »
 :::
 
 :::
