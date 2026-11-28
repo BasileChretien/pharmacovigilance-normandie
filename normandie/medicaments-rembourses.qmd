@@ -9,8 +9,10 @@ prochaine_relecture: null
 sources:
   - titre: "Assurance Maladie, Open Medic : base complète sur les dépenses de médicaments interrégimes, année 2025 (Licence Ouverte)"
     url: "https://www.data.gouv.fr/fr/datasets/open-medic-base-complete-sur-les-depenses-de-medicaments-interregimes/"
+    consulte_le: 2026-11-27
   - titre: "INSEE, Estimations localisées de population au 1er janvier 2025 et 2026"
     url: "https://catalogue-donnees.insee.fr/fr/catalogue/recherche/DS_ESTIMATION_POPULATION"
+    consulte_le: 2026-11-27
 ---
 
 Cette page compare le nombre de boîtes de médicaments remboursées aux habitants de la Normandie à la moyenne française. Les chiffres tiennent compte de l'âge et du sexe des habitants : la Normandie compte un peu plus de personnes âgées que la moyenne, qui prennent plus de médicaments.
@@ -37,11 +39,11 @@ Lecture : en Normandie, à âge et sexe comparables à ceux de la France, on a r
 - **Seuls les médicaments remboursés en pharmacie de ville sont comptés.** Les médicaments donnés à l'hôpital, et ceux achetés sans ordonnance et non remboursés, n'y sont pas.
 - **La région est celle où habite la personne**, pas celle de la pharmacie.
 - **L'âge est connu par grandes tranches** (moins de 20 ans, 20 à 59 ans, 60 ans et plus). La comparaison corrige donc l'âge à grands traits seulement.
-- **La France comprend les départements d'outre-mer**, sauf Mayotte, qui a sa propre caisse d'assurance maladie.
+- **La France comprend les départements d'outre-mer**, sauf Mayotte, qui a sa propre caisse d'assurance maladie. [à vérifier : absence de Mayotte dans Open Medic, d'après le descriptif des variables de l'Assurance Maladie]
 - **Une boîte remboursée n'est pas forcément prise.**
 
 ## Comment ces chiffres sont calculés
 
-Pour chaque famille de médicaments, on compte les boîtes remboursées en 2025 par tranche d'âge et par sexe, en Normandie et en France. On les divise par le nombre d'habitants de chaque tranche, au milieu de l'année 2025. On applique enfin ces taux à la population française : c'est la standardisation directe. Les familles sont définies par leur code ATC, la classification internationale des médicaments.
+Pour chaque famille de médicaments, on compte les boîtes remboursées en 2025 par tranche d'âge et par sexe, en Normandie et en France. On les divise par le nombre d'habitants de chaque tranche, au milieu de l'année 2025. On applique enfin ces taux à la population française : c'est la standardisation directe. Les familles sont définies par leur code ATC, la classification anatomique, thérapeutique et chimique des médicaments de l'Organisation mondiale de la santé.
 
 Les données sont mises à jour une fois par an, quand l'Assurance Maladie publie une nouvelle année.

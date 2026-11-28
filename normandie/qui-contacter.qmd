@@ -16,6 +16,30 @@ sources:
   - titre: "Portail de signalement des événements sanitaires indésirables"
     url: "https://signalement.social-sante.gouv.fr"
     consulte_le: 2026-11-25
+  - titre: "ANSM, liste des centres d'évaluation et d'information sur la pharmacodépendance-addictovigilance (CEIP-A), mise à jour du 16/09/2026"
+    url: "https://ansm.sante.fr/page/liste-des-centres-devaluation-et-dinformation-sur-la-pharmacodependance-addictovigilance-ceip-a"
+    consulte_le: 2026-11-28
+  - titre: "Tabac Info Service, le 39 89"
+    url: "https://www.tabac-info-service.fr/je-me-fais-accompagner/le-39-89"
+    consulte_le: 2026-11-28
+  - titre: "Alcool Info Service"
+    url: "https://www.alcool-info-service.fr/"
+    consulte_le: 2026-11-28
+  - titre: "Drogues Info Service"
+    url: "https://www.drogues-info-service.fr/"
+    consulte_le: 2026-11-28
+  - titre: "Joueurs Info Service"
+    url: "https://www.joueurs-info-service.fr/"
+    consulte_le: 2026-11-28
+  - titre: "3114, numéro national de prévention du suicide"
+    url: "https://3114.fr/"
+    consulte_le: 2026-11-28
+  - titre: "Code de la santé publique, article R. 1413-62 (réseau régional de vigilances et d'appui)"
+    url: "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046581336"
+    consulte_le: 2026-11-28
+  - titre: "Code de la santé publique, articles R. 1413-90 et R. 1413-91 (observatoires du médicament, des dispositifs médicaux et de l'innovation thérapeutique)"
+    url: "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000039659018"
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Votre CRPV : trouver le centre de sa région"
     url: "https://www.rfcrpv.fr/votre-crpv/"
@@ -40,15 +64,15 @@ Du plus urgent au moins urgent :
 | Urgence vitale : malaise grave, gêne pour respirer, perte de connaissance | SAMU | 15, ou 112 |
 | Intoxication, ou question sur un produit toxique | Centre antipoison d'Angers, compétent pour la Normandie | 02 41 48 21 21, 24 heures sur 24 |
 | Effet indésirable d'un médicament | Votre médecin ou votre pharmacien ; le CRPV de Caen (Calvados, Manche, Orne) ou de Rouen (Eure, Seine-Maritime) | Caen : [02 31 06 46 72](tel:+33231064672) ; Rouen : [02 32 88 90 79](tel:+33232889079) ; [déclarer en ligne](../declarer.qmd) ; [accès et horaires des CRPV](../crpv/acces.qmd) ; hors Normandie : [trouver votre centre](../crpv/trouver-mon-crpv.qmd) |
-| Abus, dépendance ou usage détourné d'un médicament ou d'une substance | CEIP-A de Caen (centre d'addictovigilance) | Coordonnées [à vérifier] ; déclaration sur signalement.social-sante.gouv.fr |
+| Abus, dépendance ou usage détourné d'un médicament ou d'une substance | CEIP-A de Caen (centre d'addictovigilance), compétent pour la Normandie et la Bretagne | [02 31 06 44 60](tel:+33231064460) ; [addictovigilance@chu-caen.fr](mailto:addictovigilance@chu-caen.fr) ; déclaration sur signalement.social-sante.gouv.fr |
 | Effet indésirable lié à une transfusion | L'équipe soignante, qui prévient le correspondant d'hémovigilance de l'hôpital. Donneur de sang : l'Établissement français du sang (EFS) | Par l'équipe soignante, ou le site de don |
 | Incident avec un dispositif médical (pompe, prothèse, test…) | L'équipe soignante ; le correspondant de matériovigilance de l'établissement | Déclaration sur signalement.social-sante.gouv.fr |
-| Tabac | Tabac Info Service | 39 89 [à vérifier] |
-| Alcool | Alcool Info Service | 0 980 980 930 [à vérifier] |
-| Drogues | Drogues Info Service | 0 800 23 13 13 [à vérifier] |
-| Jeux d'argent et de hasard | Joueurs Info Service | 09 74 75 13 13 [à vérifier] |
+| Tabac | Tabac Info Service | [39 89](tel:3989), service gratuit |
+| Alcool | Alcool Info Service | [0 980 980 930](tel:+33980980930), de 8 heures à 23 heures, 7 jours sur 7 |
+| Drogues | Drogues Info Service | [0 800 23 13 13](tel:+33800231313) |
+| Jeux d'argent et de hasard | Joueurs Info Service | [09 74 75 13 13](tel:+33974751313) |
 | Être accompagné pour une addiction près de chez soi | Les centres de soins en addictologie (CSAPA), les consultations jeunes consommateurs, les équipes d'addictologie des hôpitaux | Annuaire normand [à construire avec l'ARS] |
-| Idées suicidaires, détresse | Numéro national de prévention du suicide | 3114, 24 heures sur 24 |
+| Idées suicidaires, détresse | Numéro national de prévention du suicide | [3114](tel:3114), gratuit, 24 heures sur 24 |
 
 :::
 
@@ -60,10 +84,10 @@ Du plus urgent au moins urgent :
 |---|---|
 | Infection associée aux soins | Centre d'appui pour la prévention des infections associées aux soins (CPIAS) de Normandie, [cpias-normandie.org](https://www.cpias-normandie.org/) [coordonnées à compléter] |
 | Antibiothérapie | Centre régional en antibiothérapie de Normandie [coordonnées à compléter] |
-| Bon usage du médicament en établissement | OMéDIT Normandie [coordonnées à compléter] |
+| Bon usage des médicaments et des dispositifs médicaux, en établissement, en EHPAD ou en ville | Observatoire du médicament, des dispositifs médicaux et de l'innovation thérapeutique (OMéDIT) de Normandie [coordonnées à compléter] |
 | Hémovigilance | Correspondant d'hémovigilance de l'établissement ; coordonnateur régional d'hémovigilance et de sécurité transfusionnelle (ARS Normandie) |
 
-Ces structures font partie du réseau régional de vigilances et d'appui (RREVA), animé par l'ARS Normandie.
+Ces structures font partie, avec les CRPV, du réseau régional de vigilances et d'appui (RREVA), que l'ARS Normandie constitue et anime (article R. 1413-62 du code de la santé publique).
 
 :::
 
