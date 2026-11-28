@@ -303,6 +303,7 @@
 
     return {
       input: input,
+      fermer: fermer,
       choisi: function () { return choisi; },
       lire: function () {
         if (choisi && input.value === choisi.nom) return { statut: "trouve", medicament: choisi };
@@ -319,7 +320,7 @@
     titre.appendChild(el(doc, "span", { class: "cyp-mecanisme-enzyme" }, m.enzyme.id));
     li.appendChild(titre);
     li.appendChild(el(doc, "p", null, consequence(m)));
-    li.appendChild(el(doc, "p", { class: "cyp-mecanisme-cause" }, "Mécanisme : " + cause(m)));
+    li.appendChild(el(doc, "p", { class: "cyp-mecanisme-cause" }, cause(m)));
     var n = notes(m, toutes, data);
     if (n.length) {
       var ul = el(doc, "ul", { class: "cyp-mecanisme-notes" });
@@ -335,16 +336,21 @@
 
   function tableauRoles(doc, a, b, liste, enzymes) {
     var table = el(doc, "table", { class: "cyp-roles" });
-    table.appendChild(el(doc, "caption", null, "Rôles de " + lowerFirst(a.nom) + " et de " + lowerFirst(b.nom) + ", enzyme par enzyme"));
+    table.appendChild(el(doc, "caption", null, "Rôles " + deNom(a.nom) + " et " + deNom(b.nom) + ", enzyme par enzyme"));
     var tete = el(doc, "tr");
-    ["Enzyme", a.nom, b.nom, "Mécanisme possible"].forEach(function (t) { tete.appendChild(el(doc, "th", { scope: "col" }, t)); });
+    ["Enzyme", a.nom, b.nom].forEach(function (t) { tete.appendChild(el(doc, "th", { scope: "col" }, t)); });
     table.appendChild(el(doc, "thead")).appendChild(tete);
     var corps = table.appendChild(el(doc, "tbody"));
     enzymes.forEach(function (enzyme) {
       var tr = el(doc, "tr");
       var concerne = liste.some(function (m) { return m.enzyme === enzyme; });
-      if (concerne) tr.setAttribute("class", "cyp-roles-concerne");
-      tr.appendChild(el(doc, "th", { scope: "row" }, enzyme.id));
+      var th = el(doc, "th", { scope: "row" }, enzyme.id);
+      // The row of a mechanism says so in words, not only by its tint.
+      if (concerne) {
+        tr.setAttribute("class", "cyp-roles-concerne");
+        th.appendChild(el(doc, "span", { class: "cyp-roles-marque" }, "mécanisme possible"));
+      }
+      tr.appendChild(th);
       [a, b].forEach(function (m) {
         var td = el(doc, "td");
         var texte = roleLabel(m.roles[enzyme.id]);
@@ -356,7 +362,6 @@
         }
         tr.appendChild(td);
       });
-      tr.appendChild(el(doc, "td", null, concerne ? "Oui" : ""));
       corps.appendChild(tr);
     });
     return table;
@@ -388,7 +393,7 @@
     function signaler(label, r) {
       resultat.textContent = "";
       statut.textContent = problem(label, r);
-      if (label === "A" || label === "B") champs[label].input.setAttribute("aria-invalid", "true");
+      champs[label].input.setAttribute("aria-invalid", "true");
     }
 
     function verifier() {
@@ -399,8 +404,11 @@
       if (ra.medicament === rb.medicament) return signaler("B", { statut: "meme" });
       var a = ra.medicament;
       var b = rb.medicament;
-      champs.A.input.value = a.nom;
-      champs.B.input.value = b.nom;
+      [champs.A, champs.B].forEach(function (champ, i) {
+        champ.input.value = (i ? b : a).nom;
+        champ.input.removeAttribute("aria-invalid");
+        champ.fermer();
+      });
       var liste = mechanisms(a, b, data.enzymes);
       statut.textContent = summary(a, b, liste);
       resultat.textContent = "";

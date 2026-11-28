@@ -134,11 +134,18 @@ def tables(md):
     return re.findall(r"<table class=\"cyp-grille\">.*?</table>", md, re.DOTALL)
 
 
-def test_grid_has_three_tables_substrates_inhibitors_inducers_under_headings():
+def test_grid_has_three_tables_substrates_inhibitors_inducers_with_captions():
     md = mk.to_grid(data())
-    headings = re.findall(r"^### (.+?) \{#(grille-[a-z]+)\}$", md, re.MULTILINE)
-    assert [h[1] for h in headings] == ["grille-substrats", "grille-inhibiteurs", "grille-inducteurs"]
+    ids = re.findall(r'<div id="(grille-[a-z]+)" class="cyp-grille-cadre"', md)
+    assert ids == ["grille-substrats", "grille-inhibiteurs", "grille-inducteurs"]
+    captions = re.findall(r"<caption>(Tableau \d\. \w+)", md)
+    assert captions == ["Tableau 1. Substrats", "Tableau 2. Inhibiteurs", "Tableau 3. Inducteurs"]
     assert len(tables(md)) == 3
+
+
+def test_grid_has_no_heading_inside_the_filter_box():
+    """A heading inside a div drops out of the table of contents (tools/checks/check_toc.py)."""
+    assert not re.search(r"^#", mk.to_grid(data()), re.MULTILINE)
 
 
 def test_grid_columns_are_the_enzymes():
@@ -195,7 +202,7 @@ def test_precision_is_shown_beside_the_name():
 
 def test_scrolling_box_is_a_named_focusable_region():
     md = mk.to_grid(data())
-    boxes = re.findall(r'<div class="cyp-grille-cadre" role="region" aria-label="([^"]+)" tabindex="0">', md)
+    boxes = re.findall(r'<div id="grille-[a-z]+" class="cyp-grille-cadre" role="region" aria-label="([^"]+)" tabindex="0">', md)
     assert len(boxes) == 3 and all(boxes)
 
 

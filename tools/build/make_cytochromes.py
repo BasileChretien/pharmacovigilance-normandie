@@ -170,13 +170,13 @@ def _row(drug: dict, role: str, sources: dict, default: str) -> str:
     return f'<tr><th scope="row">{name}</th>' + "".join(cells) + "</tr>"
 
 
-def _table(data: dict, role: str, caption: str, title: str, number: int) -> str:
+def _table(data: dict, role: str, ident: str, caption: str, title: str, number: int) -> str:
     sources, default = data["sources"], data["source_par_defaut"]
     heads = "".join(f'<th scope="col">{html.escape(e)}</th>' for e in ENZYMES)
     rows = [_row(d, role, sources, default) for d in data["medicaments"]
             if any(role in r for r in d["roles"].values())]
     return "\n".join([
-        f'<div class="cyp-grille-cadre" role="region" aria-label="Tableau {number} : {title.lower()}" tabindex="0">',
+        f'<div id="{ident}" class="cyp-grille-cadre" role="region" aria-label="Tableau {number} : {title.lower()}" tabindex="0">',
         '<table class="cyp-grille">',
         f"<caption>{html.escape(caption)}</caption>",
         f'<thead><tr><th scope="col">Médicament</th>{heads}</tr></thead>',
@@ -189,11 +189,10 @@ def _table(data: dict, role: str, caption: str, title: str, number: int) -> str:
 
 
 def to_grid(data: dict) -> str:
-    parts = [HEADER]
-    for number, (role, ident, title, caption) in enumerate(TABLES, start=1):
-        parts.append(f"### {title} {{#{ident}}}\n")
-        parts.append("```{=html}\n" + _table(data, role, caption, title, number) + "\n```\n")
-    return "\n".join(parts)
+    # No heading: inside the filter box (a div) it would drop out of the table of contents.
+    tables = [_table(data, role, ident, caption, title, number)
+              for number, (role, ident, title, caption) in enumerate(TABLES, start=1)]
+    return HEADER + "\n```{=html}\n" + "\n".join(tables) + "\n```\n"
 
 
 def main() -> int:
