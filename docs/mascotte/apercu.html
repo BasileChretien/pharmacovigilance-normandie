@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Mascotte : trois esquisses</title>
+<!-- Preview of the mascot sketches (docs/mascotte/README.md). Open this file in a browser:
+     docs/ is not published by Quarto. Colours below are the tokens of assets/theme.scss
+     (light) and assets/theme-sombre.scss (dark). -->
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<style>
+  body { margin: 0; font-family: "Atkinson Hyperlegible Next Variable", system-ui, sans-serif; color: #10283a; background: #ffffff; }
+  header { padding: 1.25rem 2rem 0.25rem; }
+  h1 { font-family: "Bricolage Grotesque Variable", sans-serif; margin: 0 0 0.25rem; font-size: 1.6rem; }
+  header p { margin: 0; color: #46586a; max-width: 48rem; }
+  section { padding: 1rem 2rem 1.5rem; }
+  h2 { font-size: 1.1rem; margin: 0 0 0.75rem; }
+  .rangee { display: grid; grid-template-columns: repeat(3, minmax(15rem, 1fr)); gap: 1.5rem; }
+  figure { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+  figcaption { text-align: center; font-size: 0.95rem; max-width: 17rem; }
+  .petit { display: flex; align-items: center; gap: 0.6rem; margin-top: 0.5rem; }
+  .bouton { display: inline-block; padding: 0.55rem 1rem; border-radius: 0.75rem; font-weight: 700; }
+  .clair { background: #ffffff; color: #10283a; }
+  .clair .bouton { background: #0a5c9e; color: #ffffff; }
+  .brume { background: #eef6fa; color: #10283a; }
+  .brume .bouton { background: #0a5c9e; color: #ffffff; }
+  .sombre { background: #0f1b25; color: #e3ecf2; }
+  .sombre .bouton { background: #72b9ee; color: #0f1b25; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Mascotte : trois esquisses</h1>
+  <p>Un Normand au casque à nasal, avec un bouclier rond qui est un comprimé sécable vu de dessus. Sous chaque esquisse : la petite taille prévue à côté du bouton « Déclarer ».</p>
+</header>
+
+<section class="clair">
+  <h2>Thème clair</h2>
+  <div class="rangee">
+    <figure>
+      <img src="mascotte-cor.svg" alt="" width="240" height="280">
+      <figcaption><strong>1. Le cor (recommandé)</strong><br>Il sonne l'alerte.</figcaption>
+      <div class="petit"><img src="mascotte-cor.svg" alt="" width="82" height="96"><span class="bouton">Déclarer un effet indésirable</span></div>
+    </figure>
+    <figure>
+      <img src="mascotte-plume.svg" alt="" width="240" height="280">
+      <figcaption><strong>2. La plume</strong><br>Il déclare un effet indésirable.</figcaption>
+      <div class="petit"><img src="mascotte-plume.svg" alt="" width="82" height="96"><span class="bouton">Déclarer un effet indésirable</span></div>
+    </figure>
+    <figure>
+      <img src="mascotte-fiole.svg" alt="" width="240" height="280">
+      <figcaption><strong>3. La fiole-épée</strong><br>Il salue, une longue fiole tenue comme une épée.</figcaption>
+      <div class="petit"><img src="mascotte-fiole.svg" alt="" width="82" height="96"><span class="bouton">Déclarer un effet indésirable</span></div>
+    </figure>
+  </div>
+</section>
+
+<section class="brume">
+  <h2>Sur un bandeau bleu clair (bannière de titre, pied de page)</h2>
+  <div class="rangee">
+    <figure><img src="mascotte-cor.svg" alt="" width="120" height="140"></figure>
+    <figure><img src="mascotte-plume.svg" alt="" width="120" height="140"></figure>
+    <figure><img src="mascotte-fiole.svg" alt="" width="120" height="140"></figure>
+  </div>
+</section>
+
+<section class="sombre">
+  <h2>Thème sombre du site</h2>
+  <div class="rangee">
+    <figure>
+      <img src="mascotte-cor.svg" alt="" width="240" height="280">
+      <figcaption><strong>1. Le cor (recommandé)</strong><br>Il sonne l'alerte.</figcaption>
+      <div class="petit"><img src="mascotte-cor.svg" alt="" width="82" height="96"><span class="bouton">Déclarer un effet indésirable</span></div>
+    </figure>
+    <figure>
+      <img src="mascotte-plume.svg" alt="" width="240" height="280">
+      <figcaption><strong>2. La plume</strong><br>Il déclare un effet indésirable.</figcaption>
+      <div class="petit"><img src="mascotte-plume.svg" alt="" width="82" height="96"><span class="bouton">Déclarer un effet indésirable</span></div>
+    </figure>
+    <figure>
+      <img src="mascotte-fiole.svg" alt="" width="240" height="280">
+      <figcaption><strong>3. La fiole-épée</strong><br>Il salue, une longue fiole tenue comme une épée.</figcaption>
+      <div class="petit"><img src="mascotte-fiole.svg" alt="" width="82" height="96"><span class="bouton">Déclarer un effet indésirable</span></div>
+    </figure>
+  </div>
+</section>
+</body>
+</html>
