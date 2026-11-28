@@ -17,9 +17,36 @@ from check_contrast import parse_scss_tokens
 
 ROOT = Path(__file__).resolve().parents[1]
 DOSSIER = ROOT / "assets" / "img" / "mascotte"
-CONTEXTES = {"accueil", "vigiking", "404", "recherche", "attente"}
+CONTEXTES = {
+    "accueil",
+    "vigiking",
+    "404",
+    "recherche",
+    "attente",
+    "comprendre",
+    "bon-usage",
+    "normandie",
+    "crpv",
+    "actualites",
+    "question",
+    "medicaments",
+    "sobre",
+}
 # The horn sounds (its waves show) only where the mascot announces something.
-ALERTE = {"mascotte-accueil", "mascotte-vigiking"}
+ALERTE = {"mascotte-accueil", "mascotte-vigiking", "mascotte-actualites"}
+# What a variant shown beside risks, dosages or serious harm may do: blink, breathe, nod,
+# look, lift its shield, raise the horn and sound it once. No hop, no rocking, nothing
+# popping up.
+MOUVEMENTS_DOUX = {
+    "m-cligne",
+    "m-souffle",
+    "m-hoche",
+    "m-presente",
+    "m-cherche",
+    "m-penche-doux",
+    "m-lever",
+    "m-onde",
+}
 MAX_SECONDES = 5.0
 
 _MOTION_OK = re.compile(r"@media\s*\(prefers-reduced-motion:\s*no-preference\)\s*\{")
@@ -54,18 +81,28 @@ def sans_mouvement_permis(css: str) -> str:
     return "".join(out)
 
 
+def _sans_fonctions(animation: str) -> str:
+    return re.sub(r"\w[\w-]*\([^)]*\)", " ", animation)  # cubic-bezier(…), steps(…)
+
+
+def repetitions(animation: str) -> float:
+    """How many times one `animation` shorthand value plays."""
+    plain = _sans_fonctions(animation)
+    assert "infinite" not in plain, animation
+    rest = _TIME.sub(" ", plain)
+    counts = [float(t) for t in rest.split() if re.fullmatch(r"\d*\.?\d+", t)]
+    return counts[0] if counts else 1.0
+
+
 def duree(animation: str) -> float:
     """Seconds until one `animation` shorthand value has played out."""
-    plain = re.sub(r"\w[\w-]*\([^)]*\)", " ", animation)  # cubic-bezier(…), steps(…)
-    assert "infinite" not in plain, animation
+    plain = _sans_fonctions(animation)
     times = [
         float(v) / (1000 if unit == "ms" else 1) for v, unit in _TIME.findall(plain)
     ]
     assert times, animation
-    rest = _TIME.sub(" ", plain)
-    counts = [float(t) for t in rest.split() if re.fullmatch(r"\d*\.?\d+", t)]
     delay = times[1] if len(times) > 1 else 0.0
-    return delay + times[0] * (counts[0] if counts else 1.0)
+    return delay + times[0] * repetitions(animation)
 
 
 def test_one_variant_per_context_each_regenerated_from_the_drawing():
@@ -107,6 +144,29 @@ def test_the_duration_reader():
     assert duree("m-onde 1s ease-out 0.7s 3 both") == 3.7
     assert duree("m-saut 600ms cubic-bezier(.3,.7,.4,1) 0.2s 2 both") == 1.4
     assert duree("m-cligne 0.25s") == 0.25
+    assert repetitions("m-onde 1s ease-out 0.7s 3 both") == 3
+    assert repetitions("m-cligne 0.25s") == 1
+
+
+def test_the_variants_of_serious_pages_stay_gentle():
+    """Medicine sheets, alerts and serious harm (tests/test_mascotte.py SERIEUX) take one of
+    these variants: gentle motions only, and the horn sounds once at most."""
+    assert mm.DOUX <= CONTEXTES
+    for contexte in mm.DOUX:
+        css = style(fichiers()[f"mascotte-{contexte}"])
+        noms = set(re.findall(r"@keyframes\s+([\w-]+)", css))
+        assert noms <= MOUVEMENTS_DOUX, f"{contexte} : {sorted(noms - MOUVEMENTS_DOUX)}"
+        for valeur in re.findall(r"\banimation\s*:\s*([^;}]+)", css):
+            for une in valeur.split(","):
+                if une.split()[0] == "m-onde":
+                    assert repetitions(une) == 1, f"{contexte} : {une.strip()}"
+
+
+def test_each_quiet_variant_has_a_mouth():
+    """Once the horn leaves his lips, the face needs a mouth."""
+    for nom, svg in fichiers().items():
+        if nom not in ALERTE:
+            assert 'class="m-bouche"' in svg, nom
 
 
 def test_only_the_eyes_blink_and_look_around():

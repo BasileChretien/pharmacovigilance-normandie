@@ -30,6 +30,12 @@
   .contextes { display: grid; grid-template-columns: repeat(5, minmax(9rem, 1fr)); gap: 1rem; }
   .contextes img { width: 100%; height: auto; }
   .intertitre { padding: 0.5rem 2rem 0; margin: 0; }
+  .bandeaux { display: grid; grid-template-columns: repeat(3, minmax(16rem, 1fr)); gap: 1rem; }
+  .bandeau { padding: 1.25rem 1.25rem 1rem; border-radius: 0.5rem; background: #eef6fa; border-bottom: 3px solid #19a6e3; }
+  .sombre .bandeau { background: #152634; }
+  .bandeau img { float: right; width: 82px; height: auto; margin: -0.25rem 0 0.25rem 1rem; }
+  .bandeau .titre { font-family: "Bricolage Grotesque Variable", sans-serif; font-size: 1.6rem; font-weight: 750; margin: 0 0 0.4rem; line-height: 1.15; }
+  .bandeau p { margin: 0; }
   .rejouer { font: inherit; padding: 0.4rem 0.9rem; border-radius: 0.75rem; border: 1px solid #0a5c9e; background: #ffffff; color: #0a5c9e; font-weight: 700; cursor: pointer; margin-bottom: 1rem; }
 </style>
 </head>
@@ -48,12 +54,37 @@
     <figure><img src="../../assets/img/mascotte/mascotte-404.svg" alt="" width="240" height="280"><figcaption><strong>404</strong><br>Perdu : il regarde autour de lui.</figcaption></figure>
     <figure><img src="../../assets/img/mascotte/mascotte-recherche.svg" alt="" width="240" height="280"><figcaption><strong>Recherche vide</strong><br>Il cherche des yeux : « hmm ».</figcaption></figure>
     <figure><img src="../../assets/img/mascotte/mascotte-attente.svg" alt="" width="240" height="280"><figcaption><strong>Liste en attente</strong><br>Il patiente.</figcaption></figure>
+    <figure><img src="../../assets/img/mascotte/mascotte-comprendre.svg" alt="" width="240" height="280"><figcaption><strong>Comprendre</strong><br>Il réfléchit, une ampoule s'allume.</figcaption></figure>
+    <figure><img src="../../assets/img/mascotte/mascotte-bon-usage.svg" alt="" width="240" height="280"><figcaption><strong>Bon usage</strong><br>Une coche se trace, il approuve.</figcaption></figure>
+    <figure><img src="../../assets/img/mascotte/mascotte-normandie.svg" alt="" width="240" height="280"><figcaption><strong>En Normandie</strong><br>Il tangue sur les vagues de la Manche.</figcaption></figure>
+    <figure><img src="../../assets/img/mascotte/mascotte-crpv.svg" alt="" width="240" height="280"><figcaption><strong>Les CRPV</strong><br>Il salue avec son cor.</figcaption></figure>
+    <figure><img src="../../assets/img/mascotte/mascotte-question.svg" alt="" width="240" height="280"><figcaption><strong>Poser une question</strong><br>Tête penchée, un point d'interrogation.</figcaption></figure>
+    <figure><img src="../../assets/img/mascotte/mascotte-actualites.svg" alt="" width="240" height="280"><figcaption><strong>Actualités (doux)</strong><br>Le cor sonne une fois.</figcaption></figure>
+    <figure><img src="../../assets/img/mascotte/mascotte-medicaments.svg" alt="" width="240" height="280"><figcaption><strong>Médicaments (doux)</strong><br>Il lève un peu son bouclier-comprimé.</figcaption></figure>
+    <figure><img src="../../assets/img/mascotte/mascotte-sobre.svg" alt="" width="240" height="280"><figcaption><strong>Sobre (doux)</strong><br>Effets graves : une respiration, un clignement.</figcaption></figure>
+  </div>
+</section>
+
+<section class="brume" id="bandeau">
+  <h2>Dans le bandeau de titre (taille du site)</h2>
+  <div class="bandeaux">
+    <div class="bandeau"><img src="../../assets/img/mascotte/mascotte-comprendre.svg" alt="" width="82" height="96"><p class="titre">Que veulent dire « fréquent » et « rare » ?</p><p>Les mots de fréquence de la notice et du RCP.</p></div>
+    <div class="bandeau"><img src="../../assets/img/mascotte/mascotte-medicaments.svg" alt="" width="82" height="96"><p class="titre">Anti-inflammatoires (AINS)</p><p>Ce qu'il faut savoir avant d'en prendre.</p></div>
+    <div class="bandeau"><img src="../../assets/img/mascotte/mascotte-normandie.svg" alt="" width="82" height="96"><p class="titre">Les chiffres de la région</p><p>Les déclarations reçues en Normandie.</p></div>
+  </div>
+</section>
+<section class="sombre">
+  <h2>Bandeau, thème sombre</h2>
+  <div class="bandeaux">
+    <div class="bandeau"><img src="../../assets/img/mascotte/mascotte-bon-usage.svg" alt="" width="82" height="96"><p class="titre">Écraser ou couper un comprimé ?</p><p>Ce qui se coupe, ce qui ne s'écrase pas.</p></div>
+    <div class="bandeau"><img src="../../assets/img/mascotte/mascotte-crpv.svg" alt="" width="82" height="96"><p class="titre">L'équipe de Caen</p><p>Qui répond à vos questions.</p></div>
+    <div class="bandeau"><img src="../../assets/img/mascotte/mascotte-sobre.svg" alt="" width="82" height="96"><p class="titre">Cas marquants normands</p><p>Des effets graves, racontés pour en tirer les leçons.</p></div>
   </div>
 </section>
 <script>
   // Reloading the images replays their animations (each plays once, 5 s at most).
   document.querySelector(".rejouer").addEventListener("click", function () {
-    document.querySelectorAll(".contextes img").forEach(function (img) {
+    document.querySelectorAll("#contextes img, .bandeau img").forEach(function (img) {
       img.src = img.src.split("?")[0] + "?" + Date.now();
     });
   });

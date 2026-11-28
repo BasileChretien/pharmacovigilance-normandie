@@ -103,6 +103,9 @@ format:
     respect-user-color-scheme: true
     css: assets/fonts/fonts.css
     title-block-banner: true
+    # Quarto's banner with the mascot of the page's section (assets/filters/mascotte.lua).
+    template-partials:
+      - _includes/title-block.html
     toc: true
     toc-title: "Sur cette page"
     toc-location: right
@@ -139,3 +142,5 @@ format:
       - assets/filters/page-meta.lua
       # The annotated SmPC of comprendre/lire-un-rcp.qmd: sections as disclosures.
       - assets/filters/rcp-annote.lua
+      # The mascot in the title banner: `mascotte:` of the section's _metadata.yml or the page.
+      - assets/filters/mascotte.lua

@@ -1,0 +1,34 @@
+$-- Quarto 1.10's banner title block (share/formats/html/templates/banner/title-block.html) with
+$-- the mascot of the page's section added (assets/filters/mascotte.lua, docs/mascotte/README.md).
+$-- tests/test_mascotte.py fails when Quarto changes its own copy: copy it again, keep the mascot.
+
+<header id="title-block-header" class="quarto-title-block default$if(quarto-template-params.banner-header-class)$ $quarto-template-params.banner-header-class$$endif$">
+  <div class="quarto-title-banner">
+    <div class="quarto-title column-body">
+      $if(mascotte-titre)$<img class="mascotte mascotte-titre" src="$mascotte-titre$" alt="" aria-hidden="true" width="82" height="96">$endif$
+      $if(title)$<h1 class="title">$title$</h1>$endif$
+      $if(subtitle)$
+      <p class="subtitle lead">$subtitle$</p>
+      $endif$
+      $if(description)$
+      <div>
+        <div class="description">
+          $description$
+        </div>
+      </div>
+      $endif$
+      $if(categories)$
+        $if(quarto-template-params.title-block-categories)$
+      <div class="quarto-categories">
+        $for(categories)$
+        <div class="quarto-category">$categories$</div>
+        $endfor$
+      </div>
+        $endif$
+      $endif$
+    </div>
+  </div>
+    
+  $title-metadata.html()$
+  
+  </header>

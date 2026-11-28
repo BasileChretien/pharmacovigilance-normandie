@@ -71,18 +71,15 @@ test("the 404 page, served at any address, gives an absolute offset", () => {
   assert.equal(box.children[0].attrs.src, "/pharmacovigilance-normandie/assets/img/mascotte/mascotte-recherche.svg");
 });
 
-test("no mascot on medicine, alert or serious-harm pages", () => {
+test("every page shows it, medicine and alert pages included (gentle variant)", () => {
   for (const path of [
-    "/pharmacovigilance-normandie/medicaments/",
     "/pharmacovigilance-normandie/medicaments/classes/ains.html",
-    "/pharmacovigilance-normandie/medicaments/situations/grossesse-allaitement.html",
     "/pharmacovigilance-normandie/actualites/posts/alertes-officielles.html",
-    "/pharmacovigilance-normandie/normandie/cas-marquants.html",
-    "/pharmacovigilance-normandie/que-faire-effet-indesirable.html",
-    // GitHub Pages also serves a page at its address without ".html".
-    "/pharmacovigilance-normandie/normandie/cas-marquants",
     "/pharmacovigilance-normandie/que-faire-effet-indesirable",
   ]) {
-    assert.equal(page({ path }).observer(), null, path);
+    const p = page({ path });
+    const box = p.addBox();
+    p.observer().fn();
+    assert.equal(box.children[0].attrs.src, "../assets/img/mascotte/mascotte-recherche.svg", path);
   }
 });

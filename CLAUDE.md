@@ -47,3 +47,4 @@ Status and open tasks: `docs/STATUS.md`. Points for medical reviewers: `docs/rel
 - No real person's name or photo without written consent; keep `noindex` until launch.
 - Logos in `assets/img/logos/` come from the CHU websites; communication departments must approve them before release.
 - Medical terms to explain for patients: `data/jargon.yml`.
+- Every page shows the mascot in its title banner: `mascotte:` in the section's `_metadata.yml` (a new section needs one) or in a page's front matter; pages about risks take a gentle variant (docs/mascotte/README.md).

@@ -1,6 +1,7 @@
 ---
 title: "Poser une question au CRPV"
 description: "Comment joindre les centres de pharmacovigilance de Caen et de Rouen, et ce qu'il faut préparer avant d'appeler."
+mascotte: question
 type: institutionnel
 statut: brouillon
 relu_par: null

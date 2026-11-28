@@ -2,18 +2,28 @@
 
 Reads the hand-drawn assets/img/mascotte.svg and writes one variant per context in
 assets/img/mascotte/: the same drawing, its parts grouped (whole body, head, eyes, arm and
-horn, the horn's waves), with a pose and a short CSS animation of its own:
+horn, shield, the horn's waves), with a pose and a short CSS animation of its own:
 
-- accueil: beside « Déclarer », he raises the horn and sounds the alert, three pulses.
-- vigiking: the bulletin's masthead: a hop, then the horn announces the issue.
+- accueil (home, Déclarer): he raises the horn and sounds the alert, three pulses.
+- vigiking: the bulletin: a hop, then the horn announces the issue.
 - 404: lost: the horn leaves his lips, he looks left and right, a question mark pops up.
-- recherche: a search found nothing: he scans, head tilted, his mouth says « hmm ».
+- recherche: a search: he scans, head tilted, his mouth says « hmm ».
 - attente: the publications list is not filled yet: he waits, breathing, beside three dots.
+- comprendre: he thinks, head tilted, then a light bulb lights up and he nods.
+- bon-usage: a check mark draws itself beside him and he nods: that is the right way.
+- normandie: he rocks as on a longship, over the waves of the Channel.
+- crpv: the teams of the centres: he waves hello with his horn.
+- question: asking the centre a question: head tilted, a question mark pops up.
+- actualites (gentle): the horn sounds once, for the news and the official alerts.
+- medicaments (gentle): he lifts his pill shield a little, nods and blinks.
+- sobre (gentle): serious harm, and what to do after an adverse effect: one breath, a blink.
 
-Placed as an <img>, a variant cannot be paused from the page: every animation plays once and
-ends within 5 s (WCAG 2.2.2), and only when the reader has not asked for reduced motion.
-Without motion, each variant shows its context's pose. The waves of the horn show only where
-he announces something. Checks: tests/test_mascotte_animations.py. Deterministic.
+The contexts in DOUX are the ones pages about risks, dosages and serious harm may take
+(tests/test_mascotte.py): no hop, no rocking, nothing popping up. Placed as an <img>, a
+variant cannot be paused from the page: every animation plays once and ends within 5 s
+(WCAG 2.2.2), and only when the reader has not asked for reduced motion. Without motion, each
+variant shows its context's pose. The waves of the horn show only where he announces
+something (SONNE). Checks: tests/test_mascotte_animations.py. Deterministic.
 
 Usage: python tools/design/make_mascotte.py
 """
@@ -28,13 +38,21 @@ ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / "assets" / "img" / "mascotte.svg"
 OUT = ROOT / "assets" / "img" / "mascotte"
 NS = "http://www.w3.org/2000/svg"
-INK, WHITE = "#10283a", "#ffffff"
+# Theme tokens (assets/theme.scss): ink, white, gold, mist, Channel, logo cyan and green.
+INK, WHITE, GOLD, MIST = "#10283a", "#ffffff", "#e7b03b", "#dcebf3"
+MANCHE, CYAN, GREEN = "#0d4a5e", "#19a6e3", "#2bcf8c"
 
 ET.register_namespace("", NS)
 
+# The horn at his lips: its waves show. Elsewhere it has left his lips and he has a mouth.
+SONNE = frozenset({"accueil", "vigiking", "actualites"})
+# The gentle contexts: the only ones for pages about risks, dosages and serious harm.
+DOUX = frozenset({"medicaments", "recherche", "actualites", "sobre"})
+
 # Where each part turns or scales from (user units of the 240 x 280 drawing).
 BASE_CSS = """
-.m-corps, .m-ombre, .m-tete, .m-yeux, .m-bras, .m-onde, .m-extra, .m-point {
+.m-corps, .m-ombre, .m-tete, .m-yeux, .m-bras, .m-onde, .m-extra, .m-point,
+.m-bouclier, .m-rayons, .m-mer {
   transform-box: view-box;
 }
 .m-corps { transform-origin: 120px 262px; }
@@ -44,6 +62,9 @@ BASE_CSS = """
 .m-bras { transform-origin: 90px 142px; }
 .m-onde { transform-origin: 48px 64px; }
 .m-extra { transform-origin: 180px 66px; }
+.m-bouclier { transform-origin: 168px 182px; }
+.m-rayons { transform-origin: 184px 44px; }
+.m-mer { transform-origin: 128px 270px; }
 """
 
 # The horn away from the lips: the pose of the quiet contexts.
@@ -69,6 +90,19 @@ KEYFRAMES = {
     "m-penche-doux": "0%, 100% { transform: none; } 50% { transform: rotate(-5deg); }",
     "m-point": "0% { opacity: 0.2; } 35% { opacity: 1; } 100% { opacity: 1; }",
     "m-souffle": "0%, 100% { transform: none; } 50% { transform: scale(1, 1.015); }",
+    "m-hoche": "0%, 50%, 100% { transform: none; } 25%, 75% { transform: translateY(6px); }",
+    "m-rayonne": "0% { opacity: 0; transform: scale(0.6); } "
+    "50% { opacity: 1; transform: scale(1.12); } 100% { opacity: 1; transform: none; }",
+    "m-trace": "0% { stroke-dashoffset: 1; opacity: 0; } 5% { opacity: 1; } "
+    "100% { stroke-dashoffset: 0; opacity: 1; }",
+    "m-tangue": "0%, 100% { transform: none; } 25% { transform: rotate(-3deg); } "
+    "75% { transform: rotate(3deg); }",
+    "m-houle": "0%, 100% { transform: none; } 25% { transform: translateX(5px); } "
+    "75% { transform: translateX(-5px); }",
+    "m-salut": "0%, 50%, 100% { transform: rotate(-12deg); } "
+    "25%, 75% { transform: rotate(-30deg); }",
+    "m-presente": "0%, 100% { transform: none; } "
+    "35%, 65% { transform: translateY(-8px) rotate(-4deg); }",
 }
 
 # Context -> (pose, motion rules: each one `animation` shorthand, or two for the eyes).
@@ -125,10 +159,83 @@ CONTEXTES: dict[str, tuple[str, tuple[str, ...]]] = {
             ),
         ),
     ),
+    "comprendre": (
+        POSE_CALME,
+        (
+            (
+                ".m-tete { animation: m-penche-doux 1.4s ease-in-out 0.2s 1 both, "
+                "m-hoche 0.8s ease-in-out 2.4s 1; }"
+            ),
+            ".m-extra { animation: m-surgit 0.6s ease-out 1.2s 1 both; }",
+            ".m-rayons { animation: m-rayonne 0.6s ease-out 1.8s 2 both; }",
+            ".m-yeux { animation: m-cligne 0.3s ease-in-out 3.6s 1; }",
+        ),
+    ),
+    "bon-usage": (
+        POSE_CALME,
+        (
+            ".m-trace { stroke-dasharray: 1 1; animation: m-trace 0.6s ease-out 0.5s 1 both; }",
+            ".m-tete { animation: m-hoche 1.2s ease-in-out 1.3s 1 both; }",
+            ".m-yeux { animation: m-cligne 0.3s ease-in-out 3.2s 1; }",
+        ),
+    ),
+    "normandie": (
+        POSE_CALME,
+        (
+            ".m-corps { animation: m-tangue 2.2s ease-in-out 0.2s 2 both; }",
+            ".m-mer { animation: m-houle 2.2s ease-in-out 0.2s 2 both; }",
+            ".m-yeux { animation: m-cligne 0.3s ease-in-out 2.4s 1; }",
+        ),
+    ),
+    "crpv": (
+        POSE_CALME,
+        (
+            ".m-bras { animation: m-salut 1.4s ease-in-out 0.3s 2 both; }",
+            ".m-tete { animation: m-penche-doux 1.4s ease-in-out 0.3s 1 both; }",
+            ".m-yeux { animation: m-cligne 0.3s ease-in-out 3.6s 1; }",
+        ),
+    ),
+    "question": (
+        POSE_CALME,
+        (
+            ".m-tete { animation: m-penche-doux 2s ease-in-out 0.2s 1 both; }",
+            ".m-extra { animation: m-surgit 0.6s ease-out 0.9s 1 both; }",
+            ".m-yeux { animation: m-cligne 0.3s ease-in-out 2.8s 1; }",
+        ),
+    ),
+    "actualites": (
+        "",
+        (
+            ".m-bras { animation: m-lever 0.8s ease-out 0.2s 1 both; }",
+            ".m-onde-1 { animation: m-onde 1.2s ease-out 1s 1 both; }",
+            ".m-onde-2 { animation: m-onde 1.2s ease-out 1.2s 1 both; }",
+            ".m-onde-3 { animation: m-onde 1.2s ease-out 1.4s 1 both; }",
+            ".m-yeux { animation: m-cligne 0.3s ease-in-out 3.4s 1; }",
+        ),
+    ),
+    "medicaments": (
+        POSE_CALME,
+        (
+            ".m-bouclier { animation: m-presente 1.8s ease-in-out 0.4s 1 both; }",
+            ".m-tete { animation: m-hoche 1.2s ease-in-out 2.4s 1 both; }",
+            (
+                ".m-yeux { animation: m-cligne 0.3s ease-in-out 1.2s 1, "
+                "m-cligne 0.3s ease-in-out 4s 1; }"
+            ),
+        ),
+    ),
+    "sobre": (
+        POSE_CALME,
+        (
+            ".m-corps { animation: m-souffle 2.4s ease-in-out 0.3s 1 both; }",
+            ".m-yeux { animation: m-cligne 0.4s ease-in-out 1.8s 1; }",
+        ),
+    ),
 }
 
 # The mouth, once the horn has left the lips (drawn on the beard, under the horn).
 _TRAIT = {"fill": "none", "stroke": INK, "stroke-width": "2.5"}
+_SOURIRE = ("path", {"d": "M114 125 Q120 129.5 126 125", **_TRAIT})
 BOUCHES = {
     "404": (
         "ellipse",
@@ -138,12 +245,28 @@ BOUCHES = {
         "path",
         {"d": "M113.5 126.5 Q116.75 124 120 126.5 T126.5 126.5", **_TRAIT},
     ),
-    "attente": ("path", {"d": "M114 125 Q120 129.5 126 125", **_TRAIT}),
+    "attente": _SOURIRE,
+    "comprendre": _SOURIRE,
+    "bon-usage": _SOURIRE,
+    "normandie": _SOURIRE,
+    "crpv": _SOURIRE,
+    "question": _SOURIRE,
+    "medicaments": _SOURIRE,
+    # Serious harm: a calm, closed mouth, no smile.
+    "sobre": ("path", {"d": "M115 126 Q120 127.5 125 126", **_TRAIT}),
 }
 
-# A question mark (404) and three dots (attente), each with its white sticker edge.
+# A question mark (404, question), three dots (attente), a light bulb (comprendre) and a
+# check mark (bon-usage), each with its white sticker edge, above his shield.
 _INTERROGATION = (
     "M171 40 Q171 30 180 30 Q189 30 189 39 Q189 45 182.5 48.5 Q180 50 180 56"
+)
+_RAYONS = "M184 24 V14 M169.9 29.9 L162.8 22.8 M198.1 29.9 L205.2 22.8 M164 44 H154 M204 44 H214"
+_COCHE = "M168 50 L181 63 L206 34"
+# The Channel under his feet (normandie), in place of his shadow.
+_VAGUES = (
+    ("M44 267 q12 -6 24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0", CYAN, "4.5"),
+    ("M56 274.5 q12 -5 24 0 t24 0 t24 0 t24 0 t24 0 t24 0", MANCHE, "4"),
 )
 
 
@@ -195,6 +318,7 @@ def _grouper(root: ET.Element) -> None:
                       or _cercle(c, "89") or _cercle(c, "151")], "m-tete")  # fmt: skip
     envelopper(halo, [c for c in halo if _chemin(c, "M96.9 138") or _chemin(c, "M114 125")
                       or c.tag == q("ellipse") or _cercle(c, "74")], "m-bras")  # fmt: skip
+    envelopper(halo, [c for c in halo if _cercle(c, "168")], "m-bouclier")
     ondes_halo = next(c for c in halo if c.get("stroke-width") == "15.5")
     ondes = next(c for c in root if c.tag == q("g") and c.get("stroke") == "#19a6e3")
     for groupe in (ondes_halo, ondes):
@@ -213,9 +337,20 @@ def _grouper(root: ET.Element) -> None:
     ]
     envelopper(tete, yeux, "m-yeux")
     enfants = list(root)
-    bras = next(i for i, c in enumerate(enfants)
-                if c.tag is ET.Comment and "Arm raised" in (c.text or ""))  # fmt: skip
-    envelopper(root, enfants[bras + 1 :], "m-bras")
+    bouclier = _commentaire(enfants, "Shield:")
+    bras = _commentaire(enfants, "Arm raised")
+    envelopper(root, enfants[bouclier + 1 : bras], "m-bouclier")
+    enfants = list(root)
+    envelopper(root, enfants[_commentaire(enfants, "Arm raised") + 1 :], "m-bras")
+
+
+def _commentaire(enfants: list[ET.Element], debut: str) -> int:
+    """The index of the comment of the drawing that starts with `debut`."""
+    return next(
+        i
+        for i, c in enumerate(enfants)
+        if c.tag is ET.Comment and (c.text or "").strip().startswith(debut)
+    )
 
 
 def _taire(root: ET.Element) -> None:
@@ -234,29 +369,86 @@ def _bouche(root: ET.Element, contexte: str) -> None:
     tete = next(c for c in root if c.get("class") == "m-tete")
     barbe = next(c for c in tete if _chemin(c, "M90 104") and c.get("fill") == "none")
     tag, attrs = BOUCHES[contexte]
-    tete.insert(list(tete).index(barbe) + 1, _el(tag, attrs))
+    tete.insert(list(tete).index(barbe) + 1, _el(tag, {"class": "m-bouche", **attrs}))
+
+
+def _interrogation() -> ET.Element:
+    g = _el("g", {"class": "m-extra"})
+    trait = {"d": _INTERROGATION, "fill": "none", "stroke-linecap": "round"}
+    g.append(_el("path", {**trait, "stroke": WHITE, "stroke-width": "14.5"}))
+    g.append(_el("circle", {"cx": "180", "cy": "66", "r": "7.7", "fill": WHITE}))
+    g.append(_el("path", {**trait, "stroke": INK, "stroke-width": "5.5"}))
+    g.append(_el("circle", {"cx": "180", "cy": "66", "r": "3.4", "fill": INK}))
+    return g
+
+
+def _points() -> ET.Element:
+    g = _el("g", {"class": "m-extra"})
+    for i, x in enumerate(("170", "182", "194"), start=1):
+        point = _el("g", {"class": f"m-point m-point-{i}"})
+        point.append(_el("circle", {"cx": x, "cy": "62", "r": "7.7", "fill": WHITE}))
+        point.append(_el("circle", {"cx": x, "cy": "62", "r": "3.4", "fill": INK}))
+        g.append(point)
+    return g
+
+
+def _ampoule() -> ET.Element:
+    """A lit bulb, gold, with five rays."""
+    g = _el("g", {"class": "m-extra"})
+    rayons = _el("g", {"class": "m-rayons", "fill": "none", "stroke-linecap": "round"})
+    rayons.append(_el("path", {"d": _RAYONS, "stroke": WHITE, "stroke-width": "11"}))
+    rayons.append(_el("path", {"d": _RAYONS, "stroke": INK, "stroke-width": "4"}))
+    g.append(rayons)
+    g.append(_el("circle", {"cx": "184", "cy": "44", "r": "20.5", "fill": WHITE}))
+    bord = {"x": "169.5", "y": "50", "width": "29", "height": "24.5", "rx": "8"}
+    g.append(_el("rect", {**bord, "fill": WHITE}))
+    verre = {"cx": "184", "cy": "44", "r": "14", "fill": GOLD}
+    g.append(_el("circle", {**verre, "stroke": INK, "stroke-width": "3.5"}))
+    culot = {"x": "176", "y": "56.5", "width": "16", "height": "11.5", "rx": "3"}
+    g.append(_el("rect", {**culot, "fill": MIST, "stroke": INK, "stroke-width": "3"}))
+    trait = {"fill": "none", "stroke-linecap": "round"}
+    g.append(
+        _el(
+            "path",
+            {"d": "M177 62.25 H191", **trait, "stroke": INK, "stroke-width": "2"},
+        )
+    )
+    reflet = {"d": "M176.5 42 Q177 35.5 183 34", **trait, "stroke": WHITE}
+    g.append(_el("path", {**reflet, "stroke-width": "3"}))
+    return g
+
+
+def _coche() -> ET.Element:
+    """A green check mark, drawn as one stroke (pathLength 1, for m-trace)."""
+    g = _el("g", {"class": "m-extra", "fill": "none", "stroke-linecap": "round"})
+    for couleur, largeur in ((WHITE, "18"), (INK, "11.5"), (GREEN, "6")):
+        trait = {"d": _COCHE, "pathLength": "1", "stroke": couleur}
+        g.append(_el("path", {"class": "m-trace", **trait, "stroke-width": largeur}))
+    return g
+
+
+def _mer() -> ET.Element:
+    """Two waves of the Channel, with their white edge."""
+    g = _el("g", {"class": "m-mer", "fill": "none"})
+    for d, _couleur, _largeur in _VAGUES:
+        g.append(_el("path", {"d": d, "stroke": WHITE, "stroke-width": "11"}))
+    for d, couleur, largeur in _VAGUES:
+        g.append(_el("path", {"d": d, "stroke": couleur, "stroke-width": largeur}))
+    return g
+
+
+EXTRAS = {
+    "404": _interrogation,
+    "question": _interrogation,
+    "attente": _points,
+    "comprendre": _ampoule,
+    "bon-usage": _coche,
+}
 
 
 def _extra(contexte: str) -> ET.Element | None:
-    if contexte == "404":
-        g = _el("g", {"class": "m-extra"})
-        trait = {"d": _INTERROGATION, "fill": "none", "stroke-linecap": "round"}
-        g.append(_el("path", {**trait, "stroke": WHITE, "stroke-width": "14.5"}))
-        g.append(_el("circle", {"cx": "180", "cy": "66", "r": "7.7", "fill": WHITE}))
-        g.append(_el("path", {**trait, "stroke": INK, "stroke-width": "5.5"}))
-        g.append(_el("circle", {"cx": "180", "cy": "66", "r": "3.4", "fill": INK}))
-        return g
-    if contexte == "attente":
-        g = _el("g", {"class": "m-extra"})
-        for i, x in enumerate(("170", "182", "194"), start=1):
-            point = _el("g", {"class": f"m-point m-point-{i}"})
-            point.append(
-                _el("circle", {"cx": x, "cy": "62", "r": "7.7", "fill": WHITE})
-            )
-            point.append(_el("circle", {"cx": x, "cy": "62", "r": "3.4", "fill": INK}))
-            g.append(point)
-        return g
-    return None
+    fabrique = EXTRAS.get(contexte)
+    return fabrique() if fabrique else None
 
 
 def _css(contexte: str) -> str:
@@ -285,12 +477,14 @@ def variante(contexte: str) -> str:
         f"« {contexte} » (docs/mascotte/README.md): edit the drawing or the script, not this file. "
     )
     _grouper(root)
-    if contexte not in ("accueil", "vigiking"):
+    if contexte not in SONNE:
         _taire(root)
         _bouche(root, contexte)
     ombre = next(c for c in root if c.tag == q("ellipse") and c.get("cx") == "122")
     ombre.set("class", "m-ombre")
     root.remove(ombre)
+    if contexte == "normandie":
+        ombre = _mer()  # at sea: waves instead of a shadow
     defs = next(c for c in root if c.tag == q("defs"))
     root.insert(list(root).index(defs) + 1, ombre)
     corps = envelopper(root, list(root)[list(root).index(ombre) + 1 :], "m-corps")
