@@ -314,3 +314,32 @@ def test_an_answer_of_an_unexpected_shape_keeps_the_previous_list(
     monkeypatch.setattr(fp, "_fetch", lambda url: {"group": ["pas un groupe"]})
     assert fp.main() == 1
     assert json.loads(sortie.read_text(encoding="utf-8"))["releve_le"] is None
+
+
+def test_a_previous_list_that_did_not_read_a_new_member_is_not_kept(
+    tmp_path, monkeypatch
+):
+    # The committed seed: read on a date, but before any card gave an iD.
+    sortie = tmp_path / "publications.json"
+    sortie.write_text(
+        json.dumps(
+            {
+                "releve_le": "2026-11-28",
+                "depuis": 2024,
+                "membres": [],
+                "publications": [],
+            }
+        ),
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(fp, "OUT", sortie)
+    monkeypatch.setattr(fp, "membres", lambda: {CARBERRY: ["caen"]})
+
+    def panne(url):
+        raise OSError("hors ligne")
+
+    monkeypatch.setattr(fp, "_fetch", panne)
+    assert fp.main() == 1
+    data = json.loads(sortie.read_text(encoding="utf-8"))
+    assert "pas encore pu être relevée" in mp.liste(data)
+    assert "Aucune publication" not in mp.liste(data)

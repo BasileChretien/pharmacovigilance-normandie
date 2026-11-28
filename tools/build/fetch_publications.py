@@ -236,7 +236,8 @@ def _notice_saine(p: object) -> bool:
 
 def precedent(path: Path, equipes: dict[str, list[str]]) -> dict | None:
     """The previous list, without the works of members whose card has gone; None if the
-    file is missing or damaged."""
+    file is missing or damaged, or if it was read before a member now on the cards had
+    one (it would claim to have read works it never read)."""
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, ValueError):
@@ -245,9 +246,12 @@ def precedent(path: Path, equipes: dict[str, list[str]]) -> dict | None:
         isinstance(data, dict)
         and _date_iso(data.get("releve_le"))
         and isinstance(data.get("depuis"), int)
+        and isinstance(data.get("membres"), list)
         and isinstance(data.get("publications"), list)
         and all(_notice_saine(p) for p in data["publications"])
     ):
+        return None
+    if set(equipes) - set(data["membres"]):
         return None
     gardees = []
     for p in data["publications"]:
