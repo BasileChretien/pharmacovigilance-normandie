@@ -181,18 +181,19 @@
     } else if (m.voie === "mineure") {
       liste.push(s + " : voie mineure de son élimination ; l'effet dépend de la part de cette voie.");
     }
-    if (m.actif) liste.push(s + " : métabolite actif ; l'effet dépend aussi de ce métabolite.");
-    // A source's "long" carries its own article: "la liste du Thésaurus…" (data/cytochromes.yml).
+    if (m.actif) liste.push(s + " : l'effet dépend aussi de son métabolite actif.");
+    // No participle ("classé" would not agree with a feminine drug). A source's "long" carries
+    // its own article: "la liste du Thésaurus…" (data/cytochromes.yml).
     [["effecteur", m.sources.effecteur], ["substrat", m.sources.substrat]].forEach(function (p) {
       if (p[1] && p[1] !== defaut && sources[p[1]]) {
-        liste.push(m[p[0]].nom + " : classé d'après " + sources[p[1]].long + ".");
+        liste.push(m[p[0]].nom + " : classement d'après " + sources[p[1]].long + ".");
       }
     });
     var oppose = (toutes || []).some(function (o) {
       return o !== m && o.enzyme === m.enzyme && o.substrat === m.substrat && o.effecteur === m.effecteur && o.type !== m.type;
     });
     if (oppose) {
-      liste.push(m.effecteur.nom + " : classé à la fois inhibiteur et inducteur " + m.enzyme.de + " ; l'effet global ne se déduit pas du tableau.");
+      liste.push(m.effecteur.nom + " : à la fois inhibiteur et inducteur " + m.enzyme.de + " ; l'effet global ne se déduit pas du tableau.");
     }
     return liste;
   }

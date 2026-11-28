@@ -113,7 +113,7 @@ test("two inhibitors, or two drugs on different enzymes, give nothing", () => {
 test("a drug that both inhibits and induces the enzyme gives two opposite mechanisms", () => {
   const found = cv.mechanisms(byName(FIXTURE, "Sertraline"), byName(FIXTURE, "Éfavirenz"), FIXTURE.enzymes);
   assert.deepEqual(found.map((m) => [m.type, m.sens]), [["inhibiteur", "hausse"], ["inducteur", "baisse"]]);
-  assert.ok(cv.notes(found[0], found).includes("Éfavirenz : classé à la fois inhibiteur et inducteur du CYP2B6 ; l'effet global ne se déduit pas du tableau."));
+  assert.ok(cv.notes(found[0], found).includes("Éfavirenz : à la fois inhibiteur et inducteur du CYP2B6 ; l'effet global ne se déduit pas du tableau."));
 });
 
 test("real data: warfarin and fluconazole, CYP2C9, warfarin up", () => {
@@ -168,10 +168,24 @@ test("notes flag a minor pathway, an active metabolite and a source other than t
   const notes = cv.notes(minor, [minor]);
   assert.deepEqual(notes, [
     "Sertraline : voie mineure de son élimination ; l'effet dépend de la part de cette voie.",
-    "Sertraline : métabolite actif ; l'effet dépend aussi de ce métabolite.",
+    "Sertraline : l'effet dépend aussi de son métabolite actif.",
   ]);
   const thesaurus = one("Warfarine", "Silibinine", FIXTURE);
-  assert.deepEqual(cv.notes(thesaurus, [thesaurus], FIXTURE), ["Silibinine : classé d'après la liste du Thésaurus de l'ANSM (septembre 2023)."]);
+  assert.deepEqual(cv.notes(thesaurus, [thesaurus], FIXTURE), ["Silibinine : classement d'après la liste du Thésaurus de l'ANSM (septembre 2023)."]);
+});
+
+test("no note needs the drug's gender, nor reads as if the drug were a metabolite", () => {
+  // Silibinine is feminine, éfavirenz masculine: a participle ("classé") would agree with one only.
+  const found = [
+    one("Warfarine", "Silibinine", FIXTURE),
+    ...cv.mechanisms(byName(FIXTURE, "Sertraline"), byName(FIXTURE, "Éfavirenz"), FIXTURE.enzymes),
+  ];
+  for (const m of found) {
+    for (const n of cv.notes(m, found, FIXTURE)) {
+      assert.ok(!n.includes("classé"), n); // "classement" is fine: no participle
+      assert.ok(!/^\S+ : métabolite actif/.test(n), n);
+    }
+  }
 });
 
 test("no note puts a bare preposition before a drug name", () => {
