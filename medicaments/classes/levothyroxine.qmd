@@ -27,6 +27,12 @@ sources:
   - titre: "Ordre national des pharmaciens, « Médicaments à marge thérapeutique étroite : conditions d'exclusion de la substitution par le pharmacien » (20/02/2020), d'après les arrêtés du 12 novembre 2019 et du 30 janvier 2020"
     url: "https://www.ordre.pharmacien.fr/les-communications/focus-sur/les-actualites/medicaments-a-marge-therapeutique-etroite-conditions-d-exclusion-de-la-substitution-par-le-pharmacien"
     consulte_le: 2026-11-28
+  - titre: "Bach-Huynh TG et al. Timing of levothyroxine administration affects serum thyrotropin concentration. J Clin Endocrinol Metab 2009;94:3905-12. doi:10.1210/jc.2009-0860 (essai randomisé croisé)"
+    url: "https://doi.org/10.1210/jc.2009-0860"
+    consulte_le: 2026-11-28
+  - titre: "Bolk N et al. Effects of evening vs morning levothyroxine intake: a randomized double-blind crossover trial. Arch Intern Med 2010;170:1996-2003. doi:10.1001/archinternmed.2010.436"
+    url: "https://doi.org/10.1001/archinternmed.2010.436"
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Hormones thyroïdiennes de synthèse"
     url: "https://pharmacomedicale.org/medicaments/par-specialites/item/medicaments-et-thyroide"
@@ -53,7 +59,7 @@ L'hypothyroïdie dure le plus souvent toute la vie. Le traitement se poursuit do
 
 ### Comment le prendre ?
 
-Prenez le comprimé en une fois, le matin à jeun. Avalez-le une demi-heure avant le petit-déjeuner, avec un demi-verre d'eau. Gardez la même habitude chaque jour.
+Prenez le comprimé en une fois, le matin à jeun. Avalez-le une demi-heure avant le petit-déjeuner, avec un demi-verre d'eau. Gardez la même habitude chaque jour. Si cet horaire vous gêne, parlez-en à votre médecin : ne le changez pas seul.
 
 {{< figure-svg levothyroxine-1 alt="Frise d'une matinée. Au réveil, à jeun, le comprimé avec un demi-verre d'eau. Attendre 30 minutes, puis le petit-déjeuner. Le fer ou le calcium au moins 2 heures après le comprimé." legende="Le comprimé à jeun, une demi-heure avant le petit-déjeuner ; le fer ou le calcium 2 heures après." >}}
 
@@ -157,6 +163,7 @@ Adulte : début à 25 ou 50 µg/j, paliers de 12 à 50 µg toutes les 2 à 4 sem
 ### Mesures de réduction du risque
 
 - Rappeler la prise le matin à jeun, 30 minutes avant le petit-déjeuner, avec un peu d'eau.
+- Moment de prise : le matin à jeun est la consigne du RCP (rubrique 4.2), qui n'en donne pas la raison. Sur la prise au coucher, deux essais randomisés croisés divergent : l'un a observé une TSH plus élevée et plus variable avec une prise au petit-déjeuner ou au coucher qu'avec une prise à jeun (Bach-Huynh et al., J Clin Endocrinol Metab 2009, 65 patients, doi:10.1210/jc.2009-0860) ; l'autre, en double aveugle, une TSH plus basse et une T4 libre plus élevée avec la prise au coucher qu'avec la prise du matin (Bolk et al., Arch Intern Med 2010, 90 patients analysés, doi:10.1001/archinternmed.2010.436). Un changement d'horaire relève du prescripteur.
 - Tracer toute substitution d'une spécialité par une autre et programmer la TSH de contrôle.
 - Interroger sur l'automédication : fer, calcium, antiacides, millepertuis, biotine, soja.
 - Formes buvables (gouttes) pour les jeunes enfants et les troubles de la déglutition : vérifier la disponibilité sur la liste ANSM à jour.

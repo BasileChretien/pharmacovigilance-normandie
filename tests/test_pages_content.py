@@ -53,6 +53,18 @@ def test_four_cystitis_episodes_in_a_year_already_send_to_a_doctor():
     assert "Plus de 4 cystites" not in consulter
 
 
+def test_the_levothyroxine_sheet_gives_both_bedtime_trials():
+    # Same two trials as on quand-prendre: Bach-Huynh 2009 (fasting better than breakfast or
+    # bedtime) and Bolk 2010 (bedtime better than morning). The sheet keeps the SmPC's morning
+    # dose for patients and states the disagreement, in one bullet, for professionals.
+    text = page("medicaments/classes/levothyroxine.qmd")
+    patients = text[text.index("## Pour les patients"):text.index("## Pour les professionnels")]
+    evening = re.search(r"\b(coucher|soir|nuit)|dormir", patients.lower())
+    assert not evening, f"patient text mentions an evening dose: {evening.group(0) if evening else ''}"
+    trials = line_with(text[text.index("## Pour les professionnels"):], "Bolk")
+    assert "Bach-Huynh" in trials and "divergent" in trials
+
+
 def test_st_johns_wort_is_to_avoid_with_every_doac():
     # RCP Eliquis, rubrique 4.4: with strong CYP3A4 and P-gp inducers (millepertuis), apixaban
     # « ne doit pas être utilisé » to treat a DVT or a PE, « avec précaution » otherwise.
