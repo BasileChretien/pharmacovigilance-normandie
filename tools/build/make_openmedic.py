@@ -289,16 +289,16 @@ def tableau(lignes: list[dict], annee: int) -> str:
             f"<td>{fr_nombre(f['taux_standardise'])}</td><td>{fr_ecart(ligne['ecart_pct'])}</td>"
             f"<td>{fr_nombre(n['taux_brut'])}</td></tr>"
         )
-    # Scrolls sideways on a phone; focusable so the keyboard can scroll it too.
+    # On a phone each group is a card, each figure on one line beside its label (cartes-en-ligne);
+    # the box around the table comes from assets/filters/tableaux.lua (docs/tableaux.md).
     return (
-        '<div class="table-responsive" role="region" aria-label="Chiffres en détail" tabindex="0">\n'
-        '<table class="table openmedic-table">\n'
+        '<table class="table openmedic-table cartes-en-ligne">\n'
         f"<caption>Boîtes remboursées pour 1&nbsp;000 habitants en {annee}</caption>\n"
         '<thead><tr><th scope="col">Médicaments</th>'
         '<th scope="col">Normandie, à âge et sexe comparables</th>'
         '<th scope="col">France</th><th scope="col">Écart</th>'
         '<th scope="col">Normandie, chiffre brut</th></tr></thead>\n'
-        "<tbody>\n" + "\n".join(rows) + "\n</tbody>\n</table>\n</div>"
+        "<tbody>\n" + "\n".join(rows) + "\n</tbody>\n</table>"
     )
 
 

@@ -65,8 +65,12 @@ def table(data: dict) -> str:
             f"{html.escape(_de(n['titre']))}</span></a></td></tr>"
         )
     head, body = rows[0], rows[1:]
+    # Without widths Quarto shares the columns out evenly; the topics need most of the room.
+    # On a phone each issue is a card instead (assets/filters/tableaux.lua, docs/tableaux.md).
     return (
-        '<table class="table vigiking-table">\n<thead>'
+        '<table class="table vigiking-table">\n'
+        '<colgroup><col style="width: 20%"><col style="width: 68%"><col style="width: 12%"></colgroup>\n'
+        "<thead>"
         + head
         + "</thead>\n<tbody>\n"
         + "\n".join(body)

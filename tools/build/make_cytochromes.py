@@ -216,15 +216,20 @@ def _table(data: dict, role: str, ident: str, caption: str, title: str, number: 
     heads = "".join(f'<th scope="col">{html.escape(e)}</th>' for e in ENZYMES)
     rows = [_row(d, role, sources, default) for d in data["medicaments"]
             if any(role in r for r in d["roles"].values())]
+    # The box of a grid (docs/tableaux.md): written here rather than by assets/filters/tableaux.lua
+    # (class tableau-encadre), so that the region is named and reachable with the keyboard
+    # even without JavaScript. The first column and the header row stay in view (theme.scss).
     return "\n".join([
-        f'<div id="{ident}" class="cyp-grille-cadre" role="region" aria-label="Tableau {number} : {title.lower()}" tabindex="0">',
-        '<table class="cyp-grille">',
+        f'<div id="{ident}" class="tableau-defile tableau-large">',
+        f'<div class="tableau-defile-cadre" role="region" aria-label="Tableau {number} : {title.lower()}" tabindex="0">',
+        '<table class="cyp-grille tableau-encadre">',
         f"<caption>{html.escape(caption)}</caption>",
         f'<thead><tr><th scope="col">Médicament</th>{heads}</tr></thead>',
         "<tbody>",
         *rows,
         "</tbody>",
         "</table>",
+        "</div>",
         "</div>",
     ])
 

@@ -235,6 +235,13 @@ def test_the_table_gives_every_number_and_links_to_the_sheets():
     assert "AINS &lt;test&gt;" in html
 
 
+def test_the_table_becomes_cards_with_figures_on_one_line_on_phones():
+    """No box of its own: assets/filters/tableaux.lua boxes every table (docs/tableaux.md)."""
+    html = mo.tableau(LIGNES, 2025)
+    assert html.startswith('<table class="table openmedic-table cartes-en-ligne">')
+    assert "<div" not in html and "tabindex" not in html
+
+
 def test_the_summary_names_the_largest_gaps_above_france():
     texte = mo.resume(LIGNES)
     assert "antalgiques opioïdes (+40&nbsp;%)" in texte

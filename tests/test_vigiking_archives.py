@@ -1,5 +1,7 @@
 """Tests for tools/build/fetch_vigiking.py and make_vigiking_page.py (archive of Vigiking)."""
 
+import re
+
 import fetch_vigiking as fv
 import make_vigiking_page as mp
 
@@ -87,6 +89,13 @@ def test_the_table_links_each_issue_and_says_when_topics_are_missing():
     )  # unique link names
     assert "<li>Rappel sur les benzodiazépines et leurs risques</li>" in html
     assert "Sommaire non indiqué sur le site du réseau" in html
+
+
+def test_the_topics_column_gets_most_of_the_width():
+    """Quarto shares out columns without widths evenly (33 % each)."""
+    data = {"source": fv.SOURCE, "consulte_le": "2026-11-27", "numeros": fv.parse_numeros(PAGE)}
+    widths = [int(w) for w in re.findall(r'<col style="width: (\d+)%">', mp.table(data))]
+    assert len(widths) == 3 and sum(widths) == 100 and widths[1] == max(widths)
 
 
 def test_issue_text_from_the_network_is_escaped():

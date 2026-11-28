@@ -400,15 +400,6 @@ summary:focus-visible,
   top: 0.75rem;
 }
 
-// Wide tables (cytochromes): scroll inside their own box on small screens.
-@media (max-width: 767.98px) {
-  main table {
-    display: block;
-    max-width: 100%;
-    overflow-x: auto;
-  }
-}
-
 // ---------- Boxes built by the page-meta filter ---------------------------
 
 $icon-check: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='m8 12.5 2.8 2.8L16.5 9.5'/%3E%3C/svg%3E");
@@ -474,6 +465,10 @@ $icon-alert: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' v
 }
 
 // ---------- Tables ---------------------------------------------------------
+// assets/filters/tableaux.lua puts every table in a box (docs/tableaux.md):
+// .tableau-defile > .tableau-defile-cadre > table. On a phone a table of two columns wraps,
+// one of three columns or more becomes one card per row (.tableau-cartes), and a grid
+// (.tableau-large) keeps its columns and scrolls inside its box. Never the whole page.
 
 main table, .table {
   font-size: 0.95rem;
@@ -481,7 +476,10 @@ main table, .table {
   border-spacing: 0;
   border: 1px solid $pv-rule;
   border-radius: $border-radius;
+  // clip rounds the corners without making the table a scroll container, which would stop
+  // a sticky column or header from sticking. Browsers without clip keep hidden.
   overflow: hidden;
+  overflow: clip;
 }
 main table thead th, .table thead th {
   background: $pv-mist;
@@ -493,9 +491,138 @@ main table thead th, .table thead th {
 main table td, main table th {
   padding: 0.65rem 0.85rem !important;
   border-top: 1px solid $pv-rule;
+  overflow-wrap: break-word;
 }
 main table tbody tr:first-child td { border-top: none; }
 main table tbody tr:nth-child(even) td { background: rgba($pv-mist, 0.6); }
+// A long word breaks at a hyphen on a narrow screen rather than widening its column.
+@media (max-width: 767.98px) {
+  main table td, main table th { hyphens: auto; }
+}
+// A link in a table is at least 24 px high (WCAG 2.2, 2.5.8): the padding enlarges the
+// target without moving the lines.
+main table a { padding-block: 0.125rem; }
+
+.tableau-defile { position: relative; margin: 0 0 1rem; }
+.tableau-defile-cadre { overflow-x: auto; }
+.tableau-defile-cadre > table { margin-bottom: 0; }
+// The cue: an edge that hides columns fades into the page, with a shadow. Shown by
+// assets/js/tableaux.js (peut-gauche, peut-droite) only while there is more to see on that
+// side. The fade is in the page colour, so it shows in both themes.
+.tableau-defile::before, .tableau-defile::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 4;
+  width: 2.25rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+.tableau-defile::before {
+  left: 0;
+  background:
+    linear-gradient(to right, rgba($pv-ombre, 0.3), rgba($pv-ombre, 0) 0.5rem),
+    linear-gradient(to right, $pv-paper, rgba($pv-paper, 0));
+}
+.tableau-defile::after {
+  right: 0;
+  background:
+    linear-gradient(to left, rgba($pv-ombre, 0.3), rgba($pv-ombre, 0) 0.5rem),
+    linear-gradient(to left, $pv-paper, rgba($pv-paper, 0));
+}
+.tableau-defile.peut-gauche::before, .tableau-defile.peut-droite::after { opacity: 1; }
+
+// Grids (.tableau-large): the first column stays in view while the box scrolls sideways;
+// on phones and tablets the box also scrolls down under a header row that stays in view.
+.tableau-large table { overflow: visible; }
+.tableau-large tr > :first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: $pv-paper;
+  border-right: 1px solid $pv-rule;
+}
+.tableau-large thead tr > :first-child { background: $pv-mist; }
+// Columns hidden on the left: the shadow falls from the sticky column, not from the edge.
+.tableau-large.peut-gauche::before { opacity: 0; }
+.tableau-large.peut-gauche tr > :first-child { box-shadow: 0.4rem 0 0.4rem -0.25rem rgba($pv-ombre, 0.35); }
+@media (max-width: 991.98px) {
+  .tableau-large .tableau-defile-cadre {
+    max-height: 75vh;
+    max-height: 75svh;
+    overflow-y: auto;
+    border-bottom: 1px solid $pv-rule;
+  }
+  .tableau-large thead th { position: sticky; top: 0; z-index: 2; }
+  .tableau-large thead tr > :first-child { z-index: 3; }
+}
+
+// Cards (.tableau-cartes): one card per row on phones. The first cell is the card's title;
+// each other cell shows its column header (data-label, written by the filter) above its
+// value. The header row stays in the table for screen readers, out of sight, and
+// assets/js/tableaux.js gives the rows and cells their table roles back.
+@media (max-width: 575.98px) {
+  .tableau-cartes table, .tableau-cartes caption, .tableau-cartes tbody, .tableau-cartes tr,
+  .tableau-cartes td, .tableau-cartes tbody th { display: block; }
+  .tableau-cartes table { border: none; border-radius: 0; overflow: visible; }
+  .tableau-cartes thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .tableau-cartes tr {
+    margin: 0 0 0.75rem;
+    border: 1px solid $pv-rule;
+    border-radius: $border-radius;
+    overflow: hidden;
+    overflow: clip;
+    background: $pv-paper;
+  }
+  // The filter field (assets/js/table-filter.js) hides rows; display: block would show them.
+  .tableau-cartes tr[hidden] { display: none; }
+  .tableau-cartes td, .tableau-cartes tbody th {
+    border-top: none;
+    padding: 0.45rem 0.85rem !important;
+    text-align: left;
+  }
+  .tableau-cartes tbody tr:nth-child(even) > * { background: none; }
+  .tableau-cartes tbody tr > :first-child {
+    background: $pv-mist;
+    border-bottom: 1px solid $pv-rule;
+    font-weight: 700;
+  }
+  .tableau-cartes td[data-label]::before {
+    content: attr(data-label);
+    // Read once: screen readers already give the column header.
+    content: attr(data-label) / "";
+    display: block;
+    color: $pv-ink-quiet;
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+  .tableau-cartes tbody tr > :first-child::before { display: none; }
+  .tableau-cartes td:empty { display: none; }
+  // Short values (figures): the label on the left, the value on the right, on one line.
+  .tableau-cartes table.cartes-en-ligne td[data-label] {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.75rem;
+    text-align: right;
+  }
+  .tableau-cartes table.cartes-en-ligne td[data-label]::before { text-align: left; }
+}
+// On paper every table is whole: no box that scrolls, no cue, nothing sticky.
+@media print {
+  .tableau-defile::before, .tableau-defile::after { display: none; }
+  .tableau-defile-cadre, .tableau-large .tableau-defile-cadre { max-height: none; overflow: visible; }
+  .tableau-large tr > :first-child, .tableau-large thead th { position: static; box-shadow: none; }
+}
 
 // ---------- Sources and review block --------------------------------------
 
@@ -557,9 +684,12 @@ main table tbody tr:nth-child(even) td { background: rgba($pv-mist, 0.6); }
 
 // Vigiking archive (vigiking/archives.qmd, tools/build/make_vigiking_page.py).
 .vigiking-releve, .vigiking-sans-sommaire { color: $pv-ink-quiet; font-size: 0.92rem; }
+// Column widths: the generator's colgroup. On a phone each issue is a card ("Tables").
 .vigiking-table td { vertical-align: top; }
-.vigiking-table td:first-child { min-width: 7.5rem; font-weight: 600; }
-.vigiking-table td:nth-child(2) { width: 70%; }
+.vigiking-table td:first-child { font-weight: 600; }
+.vigiking-table td:first-child, .vigiking-table td:last-child { white-space: nowrap; }
+// "PDF" names itself: its card needs no label.
+.vigiking-table td:last-child::before { display: none !important; }
 .vigiking-table ul { margin: 0; padding-left: 1.1rem; }
 
 // Drug-name search (medicaments/chercher.qmd, assets/js/chercher-medicament.js).
@@ -693,28 +823,19 @@ main table.cyp-roles th[scope="row"] { white-space: nowrap; }
   margin: 1.25rem 0 1.75rem;
 }
 
-.cyp-grille-cadre { max-width: 100%; overflow-x: auto; margin: 0 0 1.5rem; }
-main .cyp-grille-cadre table.cyp-grille {
-  display: table;
-  width: 100%;
-  overflow: visible;
-  font-size: 0.84rem;
-}
+// The grids are .tableau-large boxes written by make_cytochromes.py ("Tables" above): the
+// drug column and the enzyme row stay in view while the box scrolls on a phone.
+.tableau-large:has(> .tableau-defile-cadre > table.cyp-grille) { margin-bottom: 1.5rem; }
+main table.cyp-grille { width: 100%; font-size: 0.84rem; }
 // Sized so that the nine columns fit the 796 px text column of a desktop page: the word
 // "Puissant" with its square sets a column's width; flags go under the word.
 main table.cyp-grille th, main table.cyp-grille td { padding: 0.35rem 0.3rem !important; }
 main table.cyp-grille thead th { white-space: nowrap; }
-// The drug column stays in view while the table scrolls sideways on a phone.
 main table.cyp-grille th[scope="row"] {
-  position: sticky;
-  left: 0;
-  z-index: 1;
   min-width: 8rem;
   padding-left: 0.5rem !important;
   hyphens: auto;
-  background: $pv-paper;
   font-weight: 600;
-  border-right: 1px solid $pv-rule;
 }
 main .cyp-grille td.cyp-fort { background: $pv-mist-deep; }
 main .cyp-grille td.cyp-moyen { background: $pv-mist; }
@@ -743,8 +864,6 @@ main .cyp-grille td.cyp-moyen { background: $pv-mist; }
 
 @media print {
   .cyp-verificateur, .cyp-statut, .cyp-resultat { display: none; }
-  .cyp-grille-cadre { overflow: visible; }
-  main table.cyp-grille th[scope="row"] { position: static; }
 }
 
 // Official notice and SmPC links (front matter substances, built by the page-meta filter).
@@ -1569,8 +1688,12 @@ a[href^="tel:"]::after {
 }
 .trouver-crpv label { display: block; font-weight: 700; margin-bottom: 0.4rem; }
 .trouver-crpv-champ { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+// min-width: 0 lets the field shrink below the width the browser gives a text field
+// (about 20 characters), which overflowed a 320 px screen.
 .trouver-crpv input {
   flex: 0 1 10rem;
+  min-width: 0;
+  max-width: 100%;
   padding: 0.55rem 0.8rem;
   border: 1px solid $pv-ink-quiet;
   border-radius: $border-radius;
