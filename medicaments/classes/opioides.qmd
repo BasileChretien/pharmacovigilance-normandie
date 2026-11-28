@@ -11,22 +11,25 @@ prochaine_relecture: null
 sources:
   - titre: "Base de données publique des médicaments, TOPALGIC 50 mg (tramadol) : RCP et notice"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/63435884/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Base de données publique des médicaments, DAFALGAN CODEINE, comprimé pelliculé (paracétamol, codéine) : RCP"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/66003374/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Tramadol et codéine : les nouvelles règles de prescription et délivrance entrent en vigueur le 1er mars 2025"
     url: "https://ansm.sante.fr/actualites/tramadol-et-codeine-les-nouvelles-regles-de-prescription-et-delivrance-entrent-en-vigueur-le-1er-mars-2025"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "HAS, Opioïdes : éviter leur banalisation pour limiter les risques (communiqué, 24 mars 2022)"
     url: "https://has-sante.fr/jcms/p_3326113/fr/opioides-eviter-leur-banalisation-pour-limiter-les-risques"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Liste des centres d'évaluation et d'information sur la pharmacodépendance-addictovigilance (CEIP-A)"
     url: "https://ansm.sante.fr/page/liste-des-centres-devaluation-et-dinformation-sur-la-pharmacodependance-addictovigilance-ceip-a"
     consulte_le: 2026-11-25
+  - titre: "ANSM, Durée maximale de prescription des médicaments classés stupéfiants ou soumis à une partie de la réglementation des stupéfiants (tableau de 2015)"
+    url: "https://ansm.sante.fr/uploads/2021/02/12/duree-max-prescription-stups-2015.pdf"
+    consulte_le: 2026-11-28
   - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
     url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Opiacés : les points essentiels"
     url: "https://pharmacomedicale.org/medicaments/par-specialites/item/opiaces-les-points-essentiels"
@@ -55,7 +58,7 @@ pour_aller_plus_loin:
 
 Les opioïdes sont des antidouleurs puissants. Ils agissent sur le cerveau et la moelle épinière pour bloquer le message de la douleur. Les plus utilisés sont le tramadol, la codéine (souvent associée au paracétamol), la morphine et l'oxycodone.
 
-Ils sont tous délivrés sur ordonnance. Depuis le 1er mars 2025, le tramadol et la codéine demandent une ordonnance sécurisée. Elle est valable 3 mois au plus.
+Ils sont tous délivrés sur ordonnance. Depuis le 1er mars 2025, le tramadol et la codéine demandent une ordonnance sécurisée. Elle couvre 3 mois de traitement au plus. La morphine et l'oxycodone demandent aussi une ordonnance sécurisée, pour 28 jours au plus.
 
 {{< figure-svg opioides-1 alt="Le message de la douleur part de la blessure, suit un nerf, puis monte dans la moelle épinière jusqu'au cerveau. L'opioïde bloque le message dans la moelle épinière et dans le cerveau." legende="Les opioïdes bloquent le message de la douleur dans la moelle épinière et le cerveau." >}}
 
@@ -66,6 +69,7 @@ Ils sont tous délivrés sur ordonnance. Depuis le 1er mars 2025, le tramadol et
 - Ne reprenez jamais un ancien traitement sans avis médical.
 - Ne donnez jamais votre médicament à une autre personne.
 - La codéine est interdite avant 12 ans.
+- Le paracétamol associé à la codéine se prend 3 jours au plus. Si la douleur continue, demandez l'avis de votre médecin.
 
 ### Quels effets indésirables ?
 
@@ -125,8 +129,8 @@ Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-s
 - Tous les opioïdes, dits « faibles » ou « forts », exposent à la tolérance, à la dépendance physique, au trouble de l'usage d'opioïdes (TUO) et au surdosage. Le risque dépend surtout de la durée et de la quantité prescrites (HAS 2022).
 - Douleur chronique non cancéreuse : opioïdes en dernier recours ; non recommandés dans les douleurs pelviennes ou musculosquelettiques chroniques ni dans la migraine. Au-delà de 6 mois de traitement continu, envisager une réduction ou un arrêt progressif (HAS 2022).
 - Avant l'instauration : définir avec le patient les objectifs, la durée et un plan d'arrêt ; l'informer des signes du TUO (RCP tramadol).
-- Tramadol : convulsions (risque accru au-delà de 400 mg/j ou avec un médicament abaissant le seuil épileptogène), syndrome sérotoninergique, hypoglycémie, chute chez le sujet âgé. Métabolisme par le CYP2D6 : moindre efficacité chez les métaboliseurs lents ; toxicité possible chez les métaboliseurs ultrarapides.
-- Codéine : contre-indiquée avant 12 ans, pendant l'allaitement, chez les métaboliseurs ultrarapides du CYP2D6, chez l'asthmatique et l'insuffisant respiratoire, et avant 18 ans après amygdalectomie ou adénoïdectomie pour apnée obstructive du sommeil.
+- Tramadol : convulsions (risque accru au-delà de 400 mg/j ou avec un médicament abaissant le seuil épileptogène), syndrome sérotoninergique, hypoglycémie, chute et perte de connaissance chez le sujet âgé. Grossesse : « ne doit pas être utilisé chez les femmes enceintes », faute de données suffisantes chez l'humain (RCP Topalgic, rubrique 4.6) ; la rubrique 4.3 le range hors des contre-indications (« ne doit généralement pas être utilisé »). Métabolisme par le CYP2D6 : moindre efficacité chez les métaboliseurs lents ; toxicité possible chez les métaboliseurs ultrarapides.
+- Codéine : contre-indiquée avant 12 ans, pendant l'allaitement, chez les métaboliseurs ultrarapides du CYP2D6, chez l'asthmatique et l'insuffisant respiratoire, et avant 18 ans après amygdalectomie ou adénoïdectomie pour apnée obstructive du sommeil. Paracétamol-codéine : douleurs aiguës d'intensité modérée non soulagées par le paracétamol ou l'ibuprofène seuls, après 12 ans ; durée aussi courte que possible, 3 jours au plus (RCP Dafalgan Codéine).
 
 ### Surveillance
 
@@ -145,13 +149,16 @@ Niveaux du Thésaurus de l'ANSM (version du 15 septembre 2023, non mise à jour 
 | Tramadol + IMAO-A réversibles (dont linézolide, bleu de méthylène) | Association déconseillée |
 | Tramadol ou codéine + fluoxétine, paroxétine, duloxétine, bupropion, terbinafine, quinidine, cinacalcet | Association déconseillée (inefficacité par inhibition du CYP2D6) |
 | Tramadol + ISRS, venlafaxine | À prendre en compte (convulsions, syndrome sérotoninergique) |
-| Tramadol + anticoagulants oraux | À prendre en compte |
+| Tramadol + anticoagulants oraux | À prendre en compte (le RCP classe les antivitamines K en précaution d'emploi : contrôle de l'INR) |
 | Agonistes-antagonistes morphiniques (buprénorphine, nalbuphine) + antalgiques de palier II | Association déconseillée |
+| Agonistes-antagonistes morphiniques + antalgiques de palier III (morphine, oxycodone) | Contre-indication |
+| Naltrexone, nalméfène + palier II ; + palier III | Association déconseillée ; contre-indication |
+| Morphiniques + oxybate de sodium | Contre-indication |
 
 ### Adaptation des doses
 
 - Tramadol (gélule 50 mg) : 50 à 100 mg toutes les 4 à 6 heures, sans dépasser 400 mg/24 h. Après 75 ans, et en cas d'insuffisance rénale ou hépatique, allonger l'intervalle entre les prises.
-- Paracétamol-codéine 500 mg/30 mg chez l'adulte : 1 à 2 comprimés par prise, 6 heures minimum entre les prises, 8 comprimés par jour au maximum.
+- Paracétamol-codéine 500 mg/30 mg chez l'adulte : 1 à 2 comprimés par prise, 6 heures minimum entre les prises ; 6 comprimés par jour en général, 8 au maximum (240 mg de codéine) en cas de douleur plus intense.
 
 ### Pièges fréquents
 
@@ -159,7 +166,8 @@ Niveaux du Thésaurus de l'ANSM (version du 15 septembre 2023, non mise à jour 
 
 ### Mesures de réduction du risque
 
-- Tramadol, codéine et dihydrocodéine : ordonnance sécurisée depuis le 1er mars 2025, posologie et durée en toutes lettres ; durée de prescription limitée à 12 semaines.
+- Tramadol, codéine et dihydrocodéine : ordonnance sécurisée depuis le 1er mars 2025, dosage, posologie et durée en toutes lettres ; durée de prescription limitée à 12 semaines. Cette durée maximale réglementaire ne change pas celle du RCP : 3 jours au plus pour le paracétamol-codéine dans la douleur aiguë.
+- Morphine et oxycodone par voie orale : stupéfiants, ordonnance sécurisée, durée de prescription de 28 jours au plus (tableau ANSM).
 - Addictovigilance : le CEIP-A de Caen (CHU de Caen) couvre les cinq départements normands (14, 27, 50, 61, 76). Les cas d'abus, de pharmacodépendance ou d'usage détourné se déclarent sur [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr).
 
 :::
