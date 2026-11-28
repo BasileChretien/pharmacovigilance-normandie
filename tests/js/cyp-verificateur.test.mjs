@@ -176,7 +176,9 @@ test("a minor pathway that forms a prodrug's active substance is not played down
     const m = one(s, e, REAL);
     const notes = cv.notes(m, [m], REAL);
     assert.ok(!notes.some((n) => /dépend de la part de cette voie/.test(n)), s);
-    assert.ok(notes.includes("Voie mineure de l'élimination " + (s === "Codéine" ? "de codéine" : "de " + s.toLowerCase()) + ", mais c'est elle qui forme son métabolite actif."), s);
+    // "participe à": the enzyme need not be the only route to the active metabolite (clopidogrel).
+    assert.ok(notes.includes("Voie mineure de l'élimination de " + s.toLowerCase() + ", mais elle participe à la formation de son métabolite actif."), s);
+    assert.ok(!notes.some((n) => /c'est elle qui forme/.test(n)), s);
   }
 });
 

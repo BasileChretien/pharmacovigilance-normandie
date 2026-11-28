@@ -175,10 +175,11 @@
     var liste = [];
     var defaut = (data && data.defaut) || "hug";
     var sources = (data && data.sources) || {};
-    // For a prodrug the minor pathway is the one that forms the active substance: its share of
+    // For a prodrug the minor pathway takes part in forming the active substance: its share of
     // the elimination says nothing about the effect (codeine + paroxetine is "déconseillée").
+    // "Participe à", not "forme": one enzyme need not be the only route (clopidogrel).
     if (m.voie === "mineure" && m.prodrogue) {
-      liste.push("Voie mineure de l'élimination " + deNom(m.substrat.nom) + ", mais c'est elle qui forme son métabolite actif.");
+      liste.push("Voie mineure de l'élimination " + deNom(m.substrat.nom) + ", mais elle participe à la formation de son métabolite actif.");
     } else if (m.voie === "mineure") {
       liste.push("Voie mineure pour " + lowerFirst(m.substrat.nom) + " : l'effet dépend de la part de cette voie dans son élimination.");
     }
