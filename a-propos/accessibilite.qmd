@@ -1,25 +1,49 @@
 ---
 title: "Accessibilité"
-description: "État de conformité du site au référentiel général d'amélioration de l'accessibilité (RGAA)."
+description: "Déclaration d'accessibilité du site : état de conformité au référentiel général d'amélioration de l'accessibilité (RGAA), ce qui est en place, comment signaler un problème."
 type: institutionnel
 statut: brouillon
 relu_par: null
 relu_le: null
 prochaine_relecture: null
 sources:
-  - titre: "RGAA, référentiel général d'amélioration de l'accessibilité"
+  - titre: "RGAA, référentiel général d'amélioration de l'accessibilité, version 4.1.2"
     url: "https://accessibilite.numerique.gouv.fr/"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "RGAA, obligations : la déclaration d'accessibilité"
+    url: "https://accessibilite.numerique.gouv.fr/obligations/declaration-accessibilite/"
+    consulte_le: 2026-11-28
+  - titre: "RGAA, obligations : mentions et pages obligatoires"
+    url: "https://accessibilite.numerique.gouv.fr/obligations/mentions-et-pages-obligatoires/"
+    consulte_le: 2026-11-28
+  - titre: "Loi n° 2005-102 du 11 février 2005, article 47 (version du 8 septembre 2023)"
+    url: "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000048050213"
+    consulte_le: 2026-11-28
+  - titre: "Décret n° 2019-768 du 24 juillet 2019, article 6 (contenu de la déclaration d'accessibilité)"
+    url: "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000038956852"
+    consulte_le: 2026-11-28
 ---
+
+Les CHU de Caen et de Rouen sont des établissements publics : leurs sites doivent être accessibles aux personnes handicapées (article 47 de la loi n° 2005-102 du 11 février 2005). Cette page tiendra lieu de déclaration d'accessibilité du site.
+
+[À compléter par les CHU : établissement responsable du site et coordonnées du responsable de la publication.]
 
 ## État de conformité
 
-Le site vise la conformité au RGAA 4.1.2. **Aucun audit n'a encore été réalisé** : le site est donc non conforme à ce jour. Un audit sera fait avant la mise en ligne, puis une fois par an.
+**Accessibilité : non conforme.** Le site vise la conformité au RGAA 4.1.2, version en vigueur du référentiel. **Aucun audit n'a encore été réalisé** : un site sans résultat d'audit en cours de validité est déclaré non conforme. Un audit sera fait avant la mise en ligne. La déclaration sera mise à jour à chaque refonte du site, et au moins tous les trois ans.
+
+Contenus non accessibles : [à compléter après l'audit].
+
+Cette déclaration a été établie le [à compléter].
+
+## Schéma pluriannuel et plan d'action
+
+[À compléter par les CHU : schéma pluriannuel de mise en accessibilité, de trois ans au plus, et plan d'action de l'année en cours, ou liens vers ces documents.]
 
 ## Ce qui est déjà en place
 
 - Des contrôles automatiques à chaque modification : contrastes des couleurs, textes alternatifs, structure des titres, validité du code.
-- Des polices libres hébergées sur le site, sans service extérieur : Atkinson Hyperlegible, conçue pour les personnes malvoyantes, pour le texte ; une taille de texte de 18 pixels ; des lignes courtes.
+- Des polices libres hébergées sur le site, sans service extérieur : Atkinson Hyperlegible Next, conçue pour les personnes malvoyantes, pour le texte ; une taille de texte de 18 pixels ; des lignes courtes.
 - Un focus visible au clavier sur tous les liens et boutons.
 - Des figures accompagnées d'un texte qui dit la même chose.
 
@@ -27,4 +51,12 @@ Les outils automatiques ne détectent qu'une partie des problèmes. L'audit et d
 
 ## Signaler un problème
 
-[Adresse de contact à compléter.] Si vous n'obtenez pas de réponse, vous pouvez saisir le Défenseur des droits.
+Si vous ne pouvez pas accéder à un contenu ou à une fonction du site, signalez-le. Vous pouvez aussi demander l'information sous une forme accessible. [Adresse de contact ou formulaire à compléter.]
+
+## Voies de recours
+
+Si vous nous avez signalé un défaut d'accessibilité qui vous empêche d'accéder à un contenu ou à une fonction du site, et que vous n'obtenez pas de réponse, vous pouvez saisir le Défenseur des droits :
+
+- par un message en ligne sur le [site du Défenseur des droits](https://www.defenseurdesdroits.fr/) ;
+- en contactant le [délégué du Défenseur des droits](https://www.defenseurdesdroits.fr/carte-des-delegues) de votre région ;
+- par courrier, gratuit et sans timbre : Défenseur des droits, Libre réponse 71120, 75342 Paris CEDEX 07.

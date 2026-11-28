@@ -6,6 +6,22 @@ statut: brouillon
 relu_par: null
 relu_le: null
 prochaine_relecture: null
+sources:
+  - titre: "ANSM, Organiser les vigilances : la pharmacovigilance"
+    url: "https://ansm.sante.fr/qui-sommes-nous/nos-missions/assurer-la-securite-des-produits-de-sante/p/organiser-les-vigilances"
+    consulte_le: 2026-11-28
+  - titre: "ANSM, liste des centres d'évaluation et d'information sur la pharmacodépendance-addictovigilance (CEIP-A), mise à jour du 16/09/2026"
+    url: "https://ansm.sante.fr/page/liste-des-centres-devaluation-et-dinformation-sur-la-pharmacodependance-addictovigilance-ceip-a"
+    consulte_le: 2026-11-28
+  - titre: "CHU d'Angers, centre antipoison et de toxicovigilance du Grand Ouest"
+    url: "https://www.chu-angers.fr/soins-specialites/services/centre-antipoison"
+    consulte_le: 2026-11-28
+  - titre: "Code de la santé publique, articles R. 1413-90 et R. 1413-91 (observatoires du médicament, des dispositifs médicaux et de l'innovation thérapeutique)"
+    url: "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000039659018"
+    consulte_le: 2026-11-28
+  - titre: "Code de la santé publique, article R. 1413-62 (réseau régional de vigilances et d'appui)"
+    url: "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046581336"
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Site du réseau français des centres régionaux de pharmacovigilance"
     url: "https://www.rfcrpv.fr/"
@@ -18,8 +34,8 @@ pour_aller_plus_loin:
 | Structure | Rôle |
 |---|---|
 | [Réseau français des centres régionaux de pharmacovigilance](https://www.rfcrpv.fr) | Réseau national des CRPV |
-| [Agence nationale de sécurité du médicament (ANSM)](https://ansm.sante.fr) | Autorité nationale ; coordonne la pharmacovigilance en France |
-| Centre d'évaluation et d'information sur la pharmacodépendance – addictovigilance (CEIP-A) de Caen | Abus, dépendance et usage détourné des substances |
-| Centre antipoison d'Angers | Intoxications, pour la Normandie |
-| OMéDIT Normandie | Bon usage du médicament dans les établissements ; liste des médicaments écrasables |
-| ARS Normandie | Agence régionale de santé ; anime le réseau régional de vigilances et d'appui |
+| [Agence nationale de sécurité du médicament (ANSM)](https://ansm.sante.fr) | Autorité nationale, responsable de la pharmacovigilance : analyse les signaux transmis par les CRPV et prend les mesures pour réduire les risques |
+| Centre d'évaluation et d'information sur la pharmacodépendance – addictovigilance (CEIP-A) de Caen | Abus, dépendance et usage détourné des substances, pour la Normandie et la Bretagne |
+| Centre antipoison d'Angers | Intoxications, pour la Bretagne, la Normandie, le Centre-Val de Loire et les Pays de la Loire |
+| Observatoire du médicament, des dispositifs médicaux et de l'innovation thérapeutique (OMéDIT) de Normandie | Bon usage des produits de santé, auprès des établissements de santé et médico-sociaux et des professionnels de santé ; liste des médicaments écrasables |
+| ARS Normandie | Agence régionale de santé ; désigne les établissements qui accueillent les CRPV, après avis de l'ANSM ; constitue et anime le réseau régional de vigilances et d'appui |

@@ -18,6 +18,18 @@ sources:
   - titre: "French public medicines database, SmPC and leaflet of TRIATEC 10 mg (ramipril, CIS 60161143), in French"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/60161143/extrait"
     consulte_le: 2026-11-25
+  - titre: "ANSM, how to report if you are a patient (in French)"
+    url: "https://ansm.sante.fr/documents/reference/declarer-un-effet-indesirable/comment-declarer-si-vous-etes-patient-ou-usager"
+    consulte_le: 2026-11-28
+  - titre: "ANSM, how pharmacovigilance works in France (in French)"
+    url: "https://ansm.sante.fr/qui-sommes-nous/nos-missions/assurer-la-securite-des-produits-de-sante/p/organiser-les-vigilances"
+    consulte_le: 2026-11-28
+  - titre: "French public health code, article R5121-161: who must report, who may report (in French)"
+    url: "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047950830"
+    consulte_le: 2026-11-28
+  - titre: "RésoGardes, pharmacies on duty (3237, in French)"
+    url: "https://www.3237.fr/"
+    consulte_le: 2026-11-28
 ---
 
 This page is for visitors and English-speaking residents of Normandy. The rest of the website is in French. This page is a draft that the regional centres still have to review.
@@ -30,7 +42,7 @@ This page is for visitors and English-speaking residents of Normandy. The rest o
 ## I think a medicine is making me ill
 
 1. If it is serious (difficulty breathing, swelling of the face or throat, fainting): call 15.
-2. Otherwise, talk to a doctor or a pharmacist the same day. Pharmacies have a green cross. At night and on Sundays, call 3237 (in French) to find the pharmacy on duty [to confirm].
+2. Otherwise, talk to a doctor or a pharmacist the same day. Pharmacies have a green cross. At night, on Sundays and on public holidays, go to [3237.fr](https://www.3237.fr/) or call 3237 (in French) to find the pharmacy on duty.
 3. Do not stop or change a treatment without talking to a doctor or a pharmacist.
 
 ### Example: a dry cough with a blood-pressure medicine
@@ -39,7 +51,7 @@ Some blood-pressure medicines (ACE inhibitors, whose names end in *-pril*, such 
 
 ## Reporting a side effect
 
-Anyone can report a suspected side effect of a medicine in France, including patients and relatives.
+Patients can report a suspected side effect of a medicine in France, and so can a parent for their child. Doctors, dentists, midwives, pharmacists and nurses must report the side effects they suspect.
 
 1. Go to the French reporting portal, [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr). It is in French only.
 2. Have ready: the name of the medicine (as on the box), the dates you took it, what happened and when, your age, and your other medicines.
@@ -47,7 +59,7 @@ Anyone can report a suspected side effect of a medicine in France, including pat
 
 The French page [[Déclarer un effet indésirable]{lang="fr"}](../../declarer.qmd) explains the same steps in more detail.
 
-Your report goes to the regional pharmacovigilance centre: Caen for Calvados, Manche and Orne; Rouen for Eure and Seine-Maritime. It is recorded without your name in the national database. Living elsewhere in France? [Find your regional centre](../../crpv/trouver-mon-crpv.qmd) by typing your postal code (the page is in French).
+Your report goes to the regional pharmacovigilance centre: Caen for Calvados, Manche and Orne; Rouen for Eure and Seine-Maritime. The centre analyses it, may contact you for more details, and records it in the national pharmacovigilance database. Living elsewhere in France? [Find your regional centre](../../crpv/trouver-mon-crpv.qmd) by typing your postal code (the page is in French).
 
 ## The regional pharmacovigilance centres
 
