@@ -2,6 +2,24 @@
 title: "Les CRPV de Caen et de Rouen"
 description: "Les missions des deux centres régionaux de pharmacovigilance de Normandie, leurs équipes et leurs activités."
 toc: false
+type: institutionnel
+statut: brouillon
+relu_par: null
+relu_le: null
+prochaine_relecture: null
+sources:
+  - titre: "ANSM, liste des centres régionaux de pharmacovigilance (mise à jour du 14/09/2026)"
+    url: "https://ansm.sante.fr/page/liste-des-centres-regionaux-de-pharmacovigilance"
+    consulte_le: 2026-11-28
+  - titre: "Code de la santé publique, article R. 5121-158 (centres régionaux de pharmacovigilance)"
+    url: "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039659066"
+    consulte_le: 2026-11-28
+  - titre: "Code de la santé publique, articles R. 1413-61-1 à R. 1413-61-6 (vigilances relatives aux produits de santé)"
+    url: "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072665/LEGISCTA000039458989/"
+    consulte_le: 2026-11-28
+  - titre: "Arrêté du 14 novembre 2022 définissant les missions des centres et coordonnateurs régionaux sur les vigilances relatives aux produits de santé (annexe 1 modifiée le 16/10/2026)"
+    url: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000046566303"
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Organisation du réseau des CRPV"
     url: "https://www.rfcrpv.fr/organisation/"
@@ -14,16 +32,20 @@ pour_aller_plus_loin:
     site: rfcrpv
 ---
 
-Les centres régionaux de pharmacovigilance (CRPV) font partie du réseau national de 31 centres coordonné par l'Agence nationale de sécurité du médicament (ANSM) [nombre à vérifier]. En Normandie, deux centres se partagent la région : Caen pour le Calvados, la Manche et l'Orne ; Rouen pour l'Eure et la Seine-Maritime.
+La France compte 30 centres régionaux de pharmacovigilance (CRPV), d'après la liste de l'Agence nationale de sécurité du médicament (ANSM). Chaque centre est installé dans un établissement de santé désigné par l'agence régionale de santé (ARS), après avis de l'ANSM. En Normandie, deux centres se partagent la région : Caen pour le Calvados, la Manche et l'Orne ; Rouen pour l'Eure et la Seine-Maritime.
 
 ## Nos missions
 
-- Recueillir et analyser les déclarations d'effets indésirables des médicaments, et les enregistrer dans la base nationale de pharmacovigilance.
-- Répondre aux questions des professionnels de santé, et orienter les patients.
-- Mener des expertises et des enquêtes pour l'ANSM.
-- Informer les professionnels et le public.
-- Former les étudiants et les professionnels.
-- Faire de la recherche sur la sécurité des médicaments.
+Le code de la santé publique (articles R. 5121-158 et R. 1413-61-4) et un arrêté du 14 novembre 2022 fixent les missions des centres :
+
+- recueillir, analyser et enregistrer dans la base nationale de pharmacovigilance les déclarations d'effets indésirables des médicaments, et transmettre sans délai à l'ANSM les effets indésirables graves ;
+- repérer les signaux dans la région ;
+- donner un avis aux professionnels de santé qui le demandent pour la prise en charge d'un patient ;
+- conseiller pour prévenir les risques des médicaments, notamment pendant la grossesse et l'allaitement ;
+- renseigner les professionnels, les patients et le public sur les médicaments et leur bon usage ;
+- mener les études et les expertises demandées par l'ANSM ou le ministre chargé de la santé.
+
+Les équipes forment aussi les étudiants et les professionnels, et font de la recherche sur la sécurité des médicaments.
 
 ::: {.cartes}
 
