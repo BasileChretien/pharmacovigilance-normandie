@@ -51,3 +51,16 @@ def test_four_cystitis_episodes_in_a_year_already_send_to_a_doctor():
     consulter = box("medicaments/maux-courants/cystite.qmd", "quand-consulter")
     assert "4 cystites ou plus en un an" in consulter
     assert "Plus de 4 cystites" not in consulter
+
+
+def test_st_johns_wort_is_to_avoid_with_every_doac():
+    # RCP Eliquis, rubrique 4.4: with strong CYP3A4 and P-gp inducers (millepertuis), apixaban
+    # « ne doit pas être utilisé » to treat a DVT or a PE, « avec précaution » otherwise.
+    # RCP Xarelto and Pradaxa: the association « doit être évitée ». « Ask advice » alone is
+    # weaker than the SmPC for a patient treated for a DVT or a PE.
+    text = page("medicaments/classes/anticoagulants-oraux.qmd")
+    patient = line_with(text, "- Le millepertuis")
+    assert "à éviter avec un AOD" in patient
+    assert "Avec l'apixaban, demandez conseil" not in patient
+    row = line_with(text, "| AOD + millepertuis")
+    assert "traitement d'une TVP ou d'une EP" in row

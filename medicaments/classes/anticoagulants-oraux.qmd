@@ -125,7 +125,7 @@ La fluindione peut, rarement, donner une allergie grave de la peau, du foie ou d
 - Les anti-inflammatoires (ibuprofène, par exemple Advil ou Nurofen ; kétoprofène…) et l'aspirine augmentent le risque de saignement. Évitez-les, y compris en automédication.
 - Avec un AVK, le paracétamol à 4 grammes par jour pendant 4 jours ou plus peut augmenter l'INR.
 - Avec un AVK, le miconazole (contre les champignons) est interdit, même en gel pour la bouche.
-- Le millepertuis (une plante utilisée contre la déprime) diminue l'effet des anticoagulants. Il est interdit avec un AVK, et à éviter avec le rivaroxaban ou le dabigatran. Avec l'apixaban, demandez conseil avant d'en prendre.
+- Le millepertuis (une plante utilisée contre la déprime) diminue l'effet des anticoagulants. Il est interdit avec un AVK et à éviter avec un AOD : demandez conseil avant d'en prendre.
 - Sous AVK, un antibiotique peut déséquilibrer l'INR.
 - Sous AVK, gardez une alimentation régulière : choux, épinards, brocolis et certaines salades sont riches en vitamine K.
 
@@ -185,7 +185,7 @@ Niveaux du Thésaurus de l'ANSM (dernière version : 15 septembre 2023 ; l'ANSM 
 | AVK + sulfaméthoxazole (cotrimoxazole), fluorouracile | Association déconseillée |
 | AVK + amiodarone, fluconazole, fluoroquinolones, statines, allopurinol, inducteurs enzymatiques, paracétamol 4 g/j ≥ 4 jours | Précaution d'emploi (INR rapproché) |
 | Apixaban ou rivaroxaban + inhibiteurs puissants du CYP3A4, fluconazole, inducteurs puissants, rifampicine | Association déconseillée |
-| AOD + millepertuis | Pas d'entrée au Thésaurus ; à éviter (RCP Xarelto, Pradaxa), avec précaution (RCP Eliquis, Lixiana) |
+| AOD + millepertuis | Pas d'entrée au Thésaurus. RCP : à éviter avec le rivaroxaban et le dabigatran ; apixaban à ne pas utiliser en traitement d'une TVP ou d'une EP, avec précaution dans ses autres indications ; édoxaban avec précaution |
 | Dabigatran + ciclosporine, dronédarone, itraconazole, kétoconazole, glécaprévir/pibrentasvir | Contre-indication |
 | Dabigatran + amiodarone, quinidine | Précaution d'emploi |
 
