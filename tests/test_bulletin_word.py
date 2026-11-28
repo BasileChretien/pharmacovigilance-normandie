@@ -117,7 +117,16 @@ def test_a_picture_and_its_caption_become_a_figure(tmp_path):
     assert image, texte
     assert (sortie.parent / image.group(1)).is_file()
     # Half of Word's text width (6.5 in): half the column.
-    assert re.search(r"!\[Légende de test\]\(images/[^)]+\)\{width=\"50%\"\}", texte)
+    assert re.search(r"!\[Légende de test\]\(images/[^)]+\)\{[^}]*width=\"50%\"", texte)
+
+
+@avec_pandoc
+def test_the_word_alternative_text_of_a_picture_is_kept(tmp_path):
+    # pandoc writes the Markdown alt text as the Word picture's alternative text (descr).
+    texte = imp.importer(_docx(tmp_path), "2025-10", bulletin=tmp_path).read_text(
+        encoding="utf-8"
+    )
+    assert re.search(r"!\[Légende de test\]\(images/[^)]+\)\{[^}]*fig-alt=\"Légende de test\"", texte), texte
 
 
 @avec_pandoc

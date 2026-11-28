@@ -52,6 +52,12 @@ end
 local LARGEUR_WORD = 6.5
 
 local function Image(img)
+  -- Word's alternative text (pandoc reads it as the picture's alt): kept as fig-alt, which
+  -- the Markdown writer would otherwise drop when the picture becomes a figure.
+  local alt = pandoc.utils.stringify(img.caption)
+  if alt ~= "" then
+    img.attributes["fig-alt"] = alt
+  end
   local pouces = tonumber((img.attributes.width or ""):match("^([%d%.e%-]+)in$"))
   img.attributes.height = nil
   img.attributes.width = nil

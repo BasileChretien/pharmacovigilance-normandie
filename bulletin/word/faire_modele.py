@@ -75,17 +75,23 @@ def styler(styles_xml: str) -> str:
 
 def main() -> int:
     brut = MODELE.with_suffix(".tmp.docx")
-    subprocess.run([*commande_pandoc(), str(SOURCE), "-o", str(brut)], check=True)
-    with (
-        zipfile.ZipFile(brut) as entree,
-        zipfile.ZipFile(MODELE, "w", zipfile.ZIP_DEFLATED) as sortie,
-    ):
-        for info in entree.infolist():
-            data = entree.read(info.filename)
-            if info.filename == "word/styles.xml":
-                data = styler(data.decode("utf-8")).encode("utf-8")
-            sortie.writestr(info, data)
-    brut.unlink()
+    nouveau = MODELE.with_suffix(".nouveau.docx")
+    try:
+        subprocess.run([*commande_pandoc(), str(SOURCE), "-o", str(brut)], check=True)
+        with (
+            zipfile.ZipFile(brut) as entree,
+            zipfile.ZipFile(nouveau, "w", zipfile.ZIP_DEFLATED) as sortie,
+        ):
+            for info in entree.infolist():
+                data = entree.read(info.filename)
+                if info.filename == "word/styles.xml":
+                    data = styler(data.decode("utf-8")).encode("utf-8")
+                sortie.writestr(info, data)
+        # The template is replaced only once the new one is complete.
+        nouveau.replace(MODELE)
+    finally:
+        brut.unlink(missing_ok=True)
+        nouveau.unlink(missing_ok=True)
     print(f"{MODELE.relative_to(ICI.parents[1])} écrit.")
     return 0
 

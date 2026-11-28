@@ -18,7 +18,7 @@ logo-gauche, logo-droite and bandeau (images of the logos and of the Vigiking ba
 
 Le texte de l'article s'écrit comme un courriel : des paragraphes séparés par une ligne vide. Les mots importants se mettent **en gras**, les titres d'ouvrages *en italique*, et un appel de référence en exposant^1^.
 
-La mise en page se fait toute seule : colonnes justifiées, polices, couleurs et marges viennent du modèle, identiques à chaque numéro.
+La mise en page se fait toute seule : colonnes, polices, couleurs, taille du texte et marges viennent du modèle, identiques à chaque numéro.
 
 ::: {.encadre}
 **Un encadré** met en avant un message clé, comme dans les numéros PowerPoint.
