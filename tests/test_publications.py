@@ -525,3 +525,32 @@ def test_a_doi_is_percent_encoded_in_its_link():
         }
     )
     assert 'href="https://doi.org/10.1000/a%23b%3Fc%25d"' in item
+
+
+def test_an_orcid_answer_that_fails_for_every_member_is_an_outage(
+    tmp_path, monkeypatch
+):
+    # ORCID retiring its API version would answer 410 for every iD: keep the list.
+    sortie = tmp_path / "publications.json"
+    _ecrire_precedent(sortie, [CARBERRY, AUTRE])
+    monkeypatch.setattr(fp, "OUT", sortie)
+    monkeypatch.setattr(
+        fp, "membres", lambda: ({CARBERRY: ["caen"], AUTRE: ["rouen"]}, [])
+    )
+
+    def disparu(url):
+        raise urllib.error.HTTPError(url, 410, "Gone", None, None)
+
+    monkeypatch.setattr(fp, "_fetch", disparu)
+    assert fp.main() == 1
+    data = json.loads(sortie.read_text(encoding="utf-8"))
+    assert len(data["publications"]) == 2 and data["releve_le"] == "2026-11-23"
+
+
+def test_an_orcid_link_followed_by_punctuation_is_read(tmp_path):
+    racine = _equipes(
+        tmp_path,
+        f"ORCID : https://orcid.org/{CARBERRY}. Ou **https://orcid.org/{CARBERRY}**, "
+        f"(https://orcid.org/{CARBERRY});",
+    )
+    assert fp.membres(racine) == ({CARBERRY: ["caen"]}, [])

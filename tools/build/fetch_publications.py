@@ -52,12 +52,15 @@ PAR_REQUETE = 50  # DOIs per OpenAlex request
 SELECT = "doi,display_name,publication_date,type,language,primary_location,open_access,is_retracted"
 
 # ORCID answers these for a record that is missing, locked or deactivated: that member is
-# not read, the others are. Any other failure is an outage and fails the whole run.
+# not read, the others are. Any other failure, or one of these for every member (ORCID
+# retiring its API version), is an outage and fails the whole run.
 FICHE_ABSENTE = {404, 409, 410}
 
 # What follows orcid.org/ in a card's link, read loosely so that a mistyped iD is reported
 # rather than skipped; then checked against _ID and the check digit.
 _ORCID = re.compile(r"https?://(?:www\.)?orcid\.org/([^\s/)\]\"'<>?#]+)")
+# Punctuation that may follow a link in a sentence or close its bold: not part of an iD.
+_APRES_LIEN = ".,;:!*_"
 _ID = re.compile(r"[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]")
 _PREFIXE_DOI = re.compile(r"(?:https?://)?(?:dx\.)?doi\.org/|doi:\s*", re.IGNORECASE)
 _COMMENTAIRE = re.compile(r"<!--.*?-->", re.DOTALL)
@@ -89,7 +92,8 @@ def membres(
     illisibles: list[tuple[str, str]] = []
     for equipe, chemin in EQUIPES.items():
         texte = _COMMENTAIRE.sub("", (root / chemin).read_text(encoding="utf-8"))
-        for brut in _ORCID.findall(texte):
+        for lien in _ORCID.findall(texte):
+            brut = lien.rstrip(_APRES_LIEN)
             orcid = brut.upper()
             if not (_ID.fullmatch(orcid) and orcid_valide(orcid)):
                 if (chemin, brut) not in illisibles:
@@ -235,6 +239,8 @@ def releve(
             if exc.code not in FICHE_ABSENTE:
                 raise
             non_lus.append(orcid)
+            if len(non_lus) == len(equipes):
+                raise  # no member read at all: the API, not the records
             continue
         for doi in dois_orcid(reponse, depuis):
             par_doi.setdefault(doi, {})[orcid] = siennes
