@@ -30,7 +30,7 @@ marques `[à compléter : source]` et ses `<!-- FIGURE À FAIRE -->`.
 | classes/statines | Chiffres SAMSON tirés du rapport complet JACC 2021 (NEJM non accessible) |
 | classes/antidiabetiques | Metformine et produits de contraste iodés : contre-indication (Thésaurus) ou association déconseillée (RCP) |
 | classes/antihypertenseurs | Bêtabloquants et diltiazem/vérapamil lus dans un tableau PDF mal aligné ; phrase « une tension bien contrôlée protège… » non sourcée |
-| classes/antidepresseurs | Fréquence du contrôle de la natrémie chez le sujet âgé ; délivrance des tricycliques |
+| classes/antidepresseurs | Fréquence du contrôle de la natrémie chez le sujet âgé et délivrance des tricycliques : tranchées d'après la HAS (2017), voir la section « Vérification des textes et de la littérature (28/11/2026) : fiches de classe A–F » |
 | classes/ipp | « Appelez le 15 » pour sang dans les vomissements ou selles noires ; oméprazole et clopidogrel (RCP seulement) |
 | classes/fluoroquinolones | Fluoroquinolones et corticoïdes : « à prendre en compte » (Thésaurus) ou à éviter (RCP) |
 | classes/valproate-teratogenes | Topiramate : réévaluation semestrielle (tableau ANSM 2023) ou annuelle (guide 2024) ; doses en insuffisance rénale ou hépatique |

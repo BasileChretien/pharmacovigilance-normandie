@@ -141,6 +141,27 @@ def test_antidepressant_sodium_check_follows_has_2017():
     text = page("medicaments/classes/antidepresseurs.qmd")
     pro = text[text.index("## Pour les professionnels"):]
     surveillance = line_with(pro, "Natrémie devant")
+    assert "Chez le sujet âgé sous ISRS" in surveillance
     assert "une semaine après le début du traitement" in surveillance
     assert "après chaque modification de dose" in surveillance
     assert "Ni les RCP ni la HAS" not in surveillance
+
+
+def test_antidepressants_in_pregnancy_at_any_stage():
+    # HAS 2017, recommandations: « Les antidépresseurs suivants peuvent être utilisés quel que
+    # soit le terme »; "selon le terme" misstated it (review of #55).
+    text = page("medicaments/classes/antidepresseurs.qmd")
+    pregnancy = line_with(text, "- **Grossesse et allaitement** (HAS 2017)")
+    assert "quel que soit le terme" in pregnancy
+    assert "selon le terme" not in pregnancy
+
+
+def test_benzodiazepine_durations_credit_each_source():
+    # HAS (avis TEMESTA, 2015) and the ministerial answer (JO AN, 1 May 2012) say « depuis
+    # 1991 »; only the written question names the arrêté of 7 October 1991 (review of #55).
+    text = page("medicaments/classes/benzodiazepines-apparentes.qmd")
+    line = line_with(text, "Textes réglementaires :")
+    assert ("durées maximales fixées depuis 1991 (HAS, avis TEMESTA de 2015 ; réponse "
+            "ministérielle") in line
+    assert "arrêté du 7 octobre 1991, modifié depuis (cité dans la question écrite" in line
+    assert "par l'arrêté du 7 octobre 1991, modifié depuis (HAS" not in line
