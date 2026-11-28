@@ -7,6 +7,7 @@ and the committed outputs to the current data.
 
 import json
 import re
+from pathlib import Path
 
 import pytest
 
@@ -112,6 +113,22 @@ def test_names_that_differ_only_by_punctuation_are_duplicates():
     with pytest.raises(ValueError, match="en double"):
         mk.load(YAML + "  chardon-marie:\n    inhibiteur: {CYP2C8: puissant}\n"
                        "  chardon marie:\n    inhibiteur: {CYP2C8: puissant}\n")
+
+
+FOLD_CASES = json.loads((Path(__file__).parent / "fold-cases.json").read_text(encoding="utf-8"))["cas"]
+
+
+@pytest.mark.parametrize(("text", "key"), FOLD_CASES)
+def test_fold_gives_the_checker_search_key(text, key):
+    """Same cases as the JS test of fold(): letters that do not decompose (œ, æ, ß, ø) are
+    spelt out, so "oestrogenes" finds "Œstrogènes", and both sides agree on duplicates."""
+    assert mk.fold(text) == key
+
+
+def test_names_that_differ_only_by_a_ligature_are_duplicates():
+    with pytest.raises(ValueError, match="en double"):
+        mk.load(YAML + "  œstrogènes:\n    inducteur: {CYP2C9: modéré}\n"
+                       "  oestrogenes:\n    inducteur: {CYP2C9: modéré}\n")
 
 
 GOOD_DRUG = "medicaments: {a: {substrat: {CYP2D6: majeure}}}\n"

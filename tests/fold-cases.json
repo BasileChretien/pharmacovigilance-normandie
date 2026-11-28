@@ -1,0 +1,16 @@
+{
+  "_note": "Search key of a drug name, [text, key]. Read by tests/test_make_cytochromes.py (fold in tools/build/make_cytochromes.py) and tests/js/cyp-verificateur.test.mjs (fold in assets/js/cyp-verificateur.js): the build spots duplicates with the key the checker searches by, so both must give the same key.",
+  "cas": [
+    ["Éthinylestradiol", "ethinylestradiol"],
+    ["Chardon-Marie", "chardon marie"],
+    ["millepertuis (Hypericum perforatum)", "millepertuis hypericum perforatum"],
+    ["CYP3A4/5", "cyp3a4 5"],
+    ["Œstrogènes conjugués", "oestrogenes conjugues"],
+    ["cœur", "coeur"],
+    ["Ægle", "aegle"],
+    ["Straße", "strasse"],
+    ["Søren", "soren"],
+    ["Łódź", "odz"],
+    ["  ", ""]
+  ]
+}
