@@ -14,7 +14,9 @@ Les contenus sont rédigés par les équipes des CRPV de Caen et de Rouen, sous 
 
 ## Usage de l'intelligence artificielle
 
-Des outils d'intelligence artificielle aident à repérer l'actualité et à rédiger des brouillons. Ils ne publient jamais rien. Chaque texte est vérifié par des contrôles automatiques (chiffres cités mot pour mot depuis leur source, règles de rédaction, accessibilité), puis relu et validé par un pharmacologue qui en porte la responsabilité éditoriale.
+Des outils d'intelligence artificielle aident à repérer l'actualité, à rédiger des brouillons et à dessiner des schémas. Ils ne publient jamais rien. Chaque texte passe des contrôles automatiques (règles de rédaction, en-tête et sources déclarées, contrastes des couleurs, validité du code), puis il est relu et validé par un pharmacologue qui en porte la responsabilité éditoriale. Les contrôles automatiques ne vérifient pas les chiffres : la relecture compare chacun à sa source.
+
+Seul le fil des alertes officielles est mis à jour sans relecture préalable, chaque semaine, par un programme qui reprend tels quels les titres, les dates et les liens des sites de l'ANSM et de l'Agence européenne des médicaments.
 
 ## Sources
 
@@ -26,7 +28,7 @@ Le site distingue un effet indésirable établi, décrit dans le résumé des ca
 
 ## Mises à jour et corrections
 
-Chaque page a une date de prochaine relecture. Elle est relue plus tôt si une de ses sources change. Une erreur est corrigée avec un erratum daté et visible.
+Chaque page a une date de prochaine relecture. Elle est relue plus tôt si une de ses sources change. Une erreur est corrigée avec un erratum daté et visible. [À mettre en place.]
 
 ## Ce que le site ne fait pas
 
