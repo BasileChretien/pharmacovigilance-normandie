@@ -204,3 +204,8 @@ légende (dans la page, raccourci `figure-svg`).
 | medicaments/situations/sujet-age | Du médicament à la chute | « Confusion » vient de la consigne ; « perte d'autonomie » vient du texte |
 | normandie/carte | Carte des cinq départements | Contours officiels (Etalab, d'après IGN Admin Express, Licence Ouverte 2.0), générée par `tools/design/make_carte_departements.py` ; Caen en aplat, Rouen en hachures ; la source est ajoutée à l'en-tête de la page |
 
+## RCP annoté (28/11/2026)
+
+| Page | À vérifier |
+|---|---|
+| comprendre/lire-un-rcp | Choix du médicament : ADVIL 200 mg, comprimé enrobé (ibuprofène), courant et déjà donné en exemple de notice ; à confirmer ou à remplacer. Chaque « Dans ce RCP » résume ou cite le RCP de la base mis à jour par l'ANSM le 13/02/2025 : à revérifier quand il change. Les « À y chercher » suivent la ligne directrice européenne du RCP. Points relevés dans ce RCP : section 4.7 sans niveau d'influence, section 4.8 sans tableau ni fréquence pour la plupart des effets, sections 9 et 10 laissées à compléter par le titulaire |

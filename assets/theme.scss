@@ -1395,6 +1395,51 @@ a[href^="tel:"]::after {
 .fil-titre { font-weight: 600; line-height: 1.4; }
 .fil-resume { line-height: 1.45; }
 
+// Annotated SmPC (comprendre/lire-un-rcp.qmd, assets/filters/rcp-annote.lua): a sheet with
+// one line per section, its number first; each line opens its note. The browser's own
+// disclosure triangle shows whether a section is open, so that never rests on colour;
+// no background image, so a dark-mode extension can recolour it like the rest.
+.rcp-annote {
+  margin: 1rem 0 1.5rem;
+  padding: 0.25rem 1.25rem;
+  background: $pv-paper;
+  border: 1px solid $pv-rule;
+  border-radius: $border-radius-lg;
+}
+.rcp-section {
+  border-bottom: 1px solid $pv-rule;
+  &:last-child { border-bottom: 0; }
+  > summary {
+    cursor: pointer;
+    margin: 0 -0.5rem;
+    padding: 0.65rem 0.5rem;
+    border-radius: 6px;
+    color: $pv-ink;  // Quarto greys every summary
+    line-height: 1.35;
+    &:hover { background: $pv-mist; }
+  }
+  &[open] > summary .rcp-titre { font-weight: 700; }
+}
+// Number and title side by side, beside the browser's triangle: a long title wraps under
+// itself, not under the number.
+.rcp-ligne {
+  display: inline-grid;
+  grid-template-columns: 3rem 1fr;
+  column-gap: 0.35rem;
+  width: calc(100% - 1.5rem);
+  vertical-align: top;
+}
+.rcp-numero {
+  color: $pv-signal-dark;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.rcp-note {
+  padding: 0 0 0.85rem 1.5rem;
+  line-height: 1.5;
+  p { margin: 0 0 0.5rem; }
+}
+
 // Editorial placeholders, marked by the page-meta filter.
 .a-completer {
   display: inline;
