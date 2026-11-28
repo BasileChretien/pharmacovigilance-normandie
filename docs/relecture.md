@@ -308,8 +308,6 @@ Méthode : chaque affirmation médicale, juridique ou chiffrée relue contre la 
 | bon-usage/index | Rien à vérifier (page de liste) | — |
 | medicaments/classes/levothyroxine | Ajouté après la revue de #42 : moment de prise, texte professionnel. Le matin à jeun reste la consigne du RCP ; les deux essais randomisés croisés qui divergent sur la prise au coucher (Bach-Huynh 2009, Bolk 2010) sont cités. Texte patient : en parler au médecin plutôt que changer seul d'horaire | Faut-il dire aux patients que la prise au coucher est une possibilité étudiée ? |
 
-| comprendre/triangle-noir | Les deux « [à compléter] » sont remplis : art. 23 du règlement 726/2004 (rédaction du règlement 1027/2012) pour la liste, l'inscription facultative et la durée ; règlement d'exécution (UE) n° 198/2013 pour le symbole. Durée : cinq ans pour une nouvelle substance ou un biologique, sinon jusqu'à ce que les conditions soient remplies (texte patient et professionnel). Mentions standard : la notice ne reprend que la première phrase du RCP, suivie du renvoi à la rubrique 4 | Version consolidée de l'art. 23 du règlement 726/2004 non chargée : vérifier qu'aucun texte postérieur à 2012 ne l'a modifié |
-
 ## Vérification des textes et de la littérature (28/11/2026) : fiches de classe A–F
 
 Huit fiches relues phrase par phrase contre les RCP de la base de données publique des médicaments et de l'EMA (en ligne le 28/11/2026), le Thésaurus de l'ANSM (15/09/2023, lu en texte), les pages de l'ANSM et de la HAS citées en source, et PubMed. Les sources relues ont leur `consulte_le` au 28/11/2026. Légifrance affiche une vérification anti-robot : il n'a pas été ouvert.
