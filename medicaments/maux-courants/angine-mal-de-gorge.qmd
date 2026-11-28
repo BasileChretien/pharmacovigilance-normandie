@@ -18,7 +18,7 @@ sources:
   - titre: "HAS. Choix et durées d'antibiothérapies : rapport d'élaboration, mise à jour 2024 (suppression de l'azithromycine et de la josamycine dans l'angine)"
     url: "https://www.has-sante.fr/upload/docs/application/pdf/2021-08/rapport_elaboration__durees_antibiotherapies_coi_2021_07_15_v2.pdf"
     consulte_le: 2026-11-28
-  - titre: "SPILF, SFP, GPIP. Antibiothérapie par voie générale dans les infections respiratoires hautes de l'adulte et de l'enfant, 2011 (part du streptocoque A dans les angines)"
+  - titre: "SPILF, SFP, GPIP. Antibiothérapie par voie générale dans les infections respiratoires hautes de l'adulte et de l'enfant, 2011 (part du streptocoque A dans les angines ; score de Mac Isaac)"
     url: "https://www.infectiologie.com/UserFiles/File/medias/Recos/2011-infections-respir-hautes-recommandations.pdf"
     consulte_le: 2026-11-28
   - titre: "Arrêté du 17 juin 2024 (délivrance d'antibiotiques sans ordonnance par le pharmacien d'officine après un test rapide de l'angine ou une bandelette urinaire), JORF du 18/06/2024, annexe I (critères d'orientation vers un médecin)"
@@ -138,7 +138,7 @@ Rechercher les signes de complication locorégionale (phlegmon péri-amygdalien,
 
 ### Stratégie thérapeutique
 
-Adulte (HAS 2021, actualisation 2024) : score de Mac Isaac (température > 38 °C : 1 ; absence de toux : 1 ; adénopathie cervicale antérieure douloureuse : 1 ; augmentation de volume ou exsudat amygdalien : 1 ; âge 15-44 ans : 0 ; > 45 ans : −1, cotation de la HAS).
+Adulte (HAS 2021, actualisation 2024) : score de Mac Isaac (température > 38 °C : 1 ; absence de toux : 1 ; adénopathie cervicale antérieure douloureuse : 1 ; augmentation de volume ou exsudat amygdalien : 1 ; âge 15-44 ans : 0 ; ≥ 45 ans : −1, d'après la SPILF 2011 ; la fiche HAS écrit « > 45 ans », ce qui laisse 45 ans sans cotation).
 
 - Score < 2, ou score ≥ 2 et TROD négatif : pas d'antibiotique.
 - Score ≥ 2 et TROD positif : amoxicilline 2 g/j en 2 prises pendant 6 jours.
