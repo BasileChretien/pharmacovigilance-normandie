@@ -9,16 +9,16 @@ prochaine_relecture: null
 sources:
   - titre: "ANSM, Thésaurus des interactions médicamenteuses (page de référence ; dernière version du 15 septembre 2023, en ligne sans mise à jour jusqu'au 15 juin 2027)"
     url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Thésaurus des interactions médicamenteuses, septembre 2023 (PDF, 263 pages)"
     url: "https://ansm.sante.fr/uploads/2024/06/07/20230915-thesaurus-interactions-medicamenteuses-septembre-2023.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, dossier thématique « Le paracétamol » (mis à jour le 25/06/2024)"
     url: "https://ansm.sante.fr/dossiers-thematiques/medicaments-de-la-douleur/le-paracetamol"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Paracétamol et risque pour le foie : un message d'alerte ajouté sur les boîtes de médicament (communiqué du 09/07/2019, mis à jour le 15/01/2021)"
     url: "https://ansm.sante.fr/actualites/paracetamol-et-risque-pour-le-foie-un-message-dalerte-ajoute-sur-les-boites-de-medicament-communique"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Interactions entre médicaments et pamplemousse"
     url: "https://www.rfcrpv.fr/interactions-entre-medicaments-et-pamplemousse/"
@@ -31,7 +31,7 @@ pour_aller_plus_loin:
     site: rfcrpv
 ---
 
-<!-- NOTE DE RÉDACTION (à retirer avant publication) : chaque association a été vérifiée le 25/11/2026 dans le PDF du Thésaurus de septembre 2023 (niveau et texte recopiés dans l'onglet professionnel). L'ANSM indique que cette version est la dernière et qu'elle restera en ligne sans mise à jour jusqu'au 15 juin 2027 ; les RCP et notices sont les seuls documents de référence opposables. Le relecteur vérifie qu'aucun RCP récent ne modifie un niveau, et décide quelle référence citer après juin 2027. -->
+<!-- NOTE DE RÉDACTION (à retirer avant publication) : chaque association a été vérifiée le 25/11/2026 dans le PDF du Thésaurus de septembre 2023 (niveau et texte recopiés dans l'onglet professionnel), puis revérifiée le 28/11/2026 sur un texte reconstruit à partir de la position des mots dans le PDF : aucun écart. L'ANSM indique que cette version est la dernière et qu'elle restera en ligne sans mise à jour jusqu'au 15 juin 2027 ; les RCP et notices sont les seuls documents de référence opposables. Le relecteur vérifie qu'aucun RCP récent ne modifie un niveau, et décide quelle référence citer après juin 2027. -->
 
 ::: {.deux-versions}
 
