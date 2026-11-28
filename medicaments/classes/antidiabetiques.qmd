@@ -11,31 +11,37 @@ prochaine_relecture: null
 sources:
   - titre: "Base de données publique des médicaments, RCP et notice de GLUCOPHAGE 1000 mg, comprimé pelliculé sécable (CIS 61052830)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/61052830/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Base de données publique des médicaments, RCP et notice de DIAMICRON 60 mg, comprimé sécable à libération modifiée (CIS 68831670)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/68831670/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "EMA, Ozempic (sémaglutide), informations sur le produit (RCP et notice)"
     url: "https://www.ema.europa.eu/fr/documents/product-information/ozempic-epar-product-information_fr.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "EMA, Januvia (sitagliptine), informations sur le produit (RCP et notice)"
     url: "https://www.ema.europa.eu/fr/documents/product-information/januvia-epar-product-information_fr.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "EMA, Forxiga (dapagliflozine), informations sur le produit (RCP et notice)"
     url: "https://www.ema.europa.eu/fr/documents/product-information/forxiga-epar-product-information_fr.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, « Ozempic (sémaglutide) : un médicament à utiliser uniquement dans le traitement du diabète de type 2 » (01/03/2023, mis à jour le 25/04/2024)"
     url: "https://ansm.sante.fr/actualites/ozempic-semaglutide-un-medicament-a-utiliser-uniquement-dans-le-traitement-du-diabete-de-type-2"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, « Analogues du GLP-1 : point sur la surveillance des effets indésirables graves et mésusages » (05/07/2024, mis à jour le 07/01/2026)"
     url: "https://ansm.sante.fr/actualites/analogues-du-glp-1-point-sur-la-surveillance-des-effets-indesirables-graves-et-mesusages"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "ANSM, « Analogues du GLP-1 indiqués dans le traitement de l'obésité : l'ANSM fait évoluer leurs conditions de prescription et de délivrance » (20/06/2025, mis à jour le 01/04/2026)"
+    url: "https://ansm.sante.fr/actualites/analogues-du-glp-1-indiques-dans-le-traitement-de-lobesite-lansm-fait-evoluer-leurs-conditions-de-prescription-et-de-delivrance"
+    consulte_le: 2026-11-28
+  - titre: "ANSM, « 3e rapport de pharmacovigilance sur les aGLP-1 : persistance du mésusage associé à des complications graves et mise en évidence du risque d'interactions médicamenteuses » (07/10/2026)"
+    url: "https://ansm.sante.fr/actualites/3-rapport-de-pharmacovigilance-sur-les-aglp-1-persistance-du-mesusage-associe-a-des-complications-graves-et-mise-en-evidence-du-risque-dinteractions-medicamenteuses"
+    consulte_le: 2026-11-28
   - titre: "HAS, Stratégie thérapeutique du patient vivant avec un diabète de type 2, fiche de synthèse (mai 2024)"
     url: "https://has-sante.fr/upload/docs/application/pdf/2024-06/strategie_therapeutique_du_patient_vivant_avec_un_diabete_de_type_2_-_fiche_de_synthese.pdf"
     consulte_le: 2026-11-25
   - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
     url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Antidiabétiques : les points essentiels"
     url: "https://pharmacomedicale.org/medicaments/par-specialites/item/antidiabetiques-les-points-essentiels"
@@ -57,7 +63,7 @@ pour_aller_plus_loin:
 ::: {.a-retenir}
 - Prenez votre traitement régulièrement, même quand vous vous sentez bien.
 - Certains de ces médicaments peuvent faire trop baisser le sucre dans le sang : apprenez à en reconnaître les signes.
-- Le sémaglutide (Ozempic) traite le diabète. Il n'est pas fait pour maigrir.
+- Ozempic (sémaglutide) est réservé au diabète de type 2 : ne l'utilisez jamais pour maigrir.
 :::
 
 ### À quoi sert ce traitement ?
@@ -125,7 +131,9 @@ Avec un sulfamide ou de l'insuline, une hypoglycémie peut survenir au volant. P
 
 ### Et pour maigrir ?
 
-Le sémaglutide (Ozempic) est réservé au diabète de type 2. Sans diabète, il expose à des troubles digestifs, à une pancréatite et à des hypoglycémies. N'utilisez jamais un stylo acheté hors pharmacie : il peut être faux et dangereux. Pour perdre du poids, parlez-en à votre médecin.
+Ozempic (sémaglutide) est réservé au diabète de type 2. Le sémaglutide existe aussi sous un autre nom (Wegovy), à d'autres doses, pour traiter l'obésité. Un médecin le prescrit alors quand le régime et l'activité physique n'ont pas suffi.
+
+Ces médicaments ne servent jamais à maigrir pour des raisons esthétiques. Pris sans raison médicale, ils exposent à des troubles digestifs, à une pancréatite et à des hypoglycémies. N'utilisez jamais un stylo acheté hors pharmacie : il peut être faux et dangereux. Pour perdre du poids, parlez-en à votre médecin.
 
 ### Puis-je arrêter mon traitement ?
 
@@ -151,7 +159,7 @@ Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-s
 
 ### Mésusage des analogues du GLP-1
 
-Ozempic est indiqué uniquement dans le diabète de type 2 insuffisamment contrôlé. L'ANSM rappelle que les analogues du GLP-1 ne doivent pas être utilisés pour une perte de poids à visée esthétique. La CNAM estime à environ 1,5 % la part des patients sous Ozempic en situation de mésusage, chiffre probablement sous-estimé. Des stylos falsifiés étiquetés Ozempic circulent hors du circuit légal (alertes EMA et OMS). À la dispensation : vigilance vis-à-vis des ordonnances falsifiées ou hors AMM, signalement à l'ARS en cas de doute.
+Ozempic est indiqué uniquement dans le diabète de type 2 insuffisamment contrôlé. L'ANSM rappelle que les analogues du GLP-1 ne doivent pas être utilisés pour une perte de poids à visée esthétique. La CNAM estime à environ 1,5 % la part des patients sous Ozempic en situation de mésusage, chiffre probablement sous-estimé. Des stylos falsifiés étiquetés Ozempic circulent hors du circuit légal (alertes EMA et OMS). Le sémaglutide est aussi autorisé sous le nom Wegovy, comme le tirzépatide (Mounjaro) et le liraglutide (Saxenda), dans le contrôle du poids en deuxième intention, chez l'adulte avec un IMC ≥ 30 kg/m², ou de 27 à 30 kg/m² avec au moins une comorbidité ; depuis le 23 juin 2025, tout médecin peut les prescrire dans le respect de l'AMM (ANSM). Ils ne doivent pas être utilisés pour une perte de poids à visée esthétique. À la dispensation : vigilance vis-à-vis des ordonnances falsifiées ou hors AMM, signalement à l'ARS en cas de doute.
 
 ### Surveillance
 
@@ -178,7 +186,7 @@ Ozempic est indiqué uniquement dans le diabète de type 2 insuffisamment contr�
 
 ### Pièges fréquents
 
-À compléter par le CRPV à partir de cas anonymisés. Situations à risque décrites dans les RCP : déshydratation sous metformine + IEC + diurétique ; hypoglycémie prolongée sous sulfamide chez le sujet âgé dénutri ; acidocétose périopératoire sous gliflozine.
+À compléter par le CRPV à partir de cas anonymisés. Situations à risque décrites dans les RCP : déshydratation sous metformine + IEC + diurétique ; hypoglycémie prolongée sous sulfamide chez le sujet âgé dénutri ; acidocétose périopératoire sous gliflozine. Vomissements sous analogue du GLP-1 chez un patient sous metformine : l'ANSM appelle à la vigilance sur le risque d'acidose lactique favorisé par la déshydratation (3e rapport de pharmacovigilance sur les aGLP-1, octobre 2026).
 
 ### Mesures de réduction du risque
 

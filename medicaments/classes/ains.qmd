@@ -11,25 +11,25 @@ prochaine_relecture: null
 sources:
   - titre: "Base de données publique des médicaments, ADVIL 200 mg (ibuprofène) : RCP et notice"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/68634000/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Base de données publique des médicaments, CELEBREX 200 mg (célécoxib) : RCP"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/66150367/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Les anti-inflammatoires non stéroïdiens (AINS) : ibuprofène, kétoprofène, acide acétylsalicylique (dossier thématique, 2024)"
     url: "https://ansm.sante.fr/dossiers-thematiques/medicaments-de-la-douleur/les-anti-inflammatoires-non-steroidiens-ains-ibuprofene-ketoprofene-acide-acetylsalicylique"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Infections hivernales : il est conseillé d'éviter l'ibuprofène ou le kétoprofène en première intention (décembre 2025)"
     url: "https://ansm.sante.fr/actualites/infections-hivernales-il-est-conseille-deviter-libuprofene-ou-le-ketoprofene-en-premiere-intention"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Anti-inflammatoires non stéroïdiens (AINS) et complications infectieuses graves (2019, mis à jour 2023)"
     url: "https://ansm.sante.fr/actualites/anti-inflammatoires-non-steroidiens-ains-et-complications-infectieuses-graves"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, AINS chez les femmes enceintes : améliorer l'information sur les risques pour un meilleur usage (avril 2025)"
     url: "https://ansm.sante.fr/actualites/anti-inflammatoires-non-steroidiens-ains-chez-les-femmes-enceintes-ameliorer-linformation-sur-les-risques-pour-un-meilleur-usage"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
     url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Anti-inflammatoires non stéroïdiens"
     url: "https://pharmacomedicale.org/medicaments/par-specialites/item/anti-inflammatoires-non-steroidiens"
@@ -67,10 +67,11 @@ Certains sont vendus sans ordonnance. Depuis janvier 2020, ils sont rangés derr
 - Prenez le comprimé au cours d'un repas, avec un grand verre d'eau.
 - Pour l'ibuprofène sans ordonnance, un adulte prend 200 à 400 milligrammes par prise. Attendez au moins 6 heures entre deux prises. Ne dépassez pas 1 200 milligrammes par jour.
 - Arrêtez dès que les symptômes disparaissent.
-- Sans avis médical, ne dépassez pas 3 jours pour la fièvre et 5 jours pour la douleur.
+- Chez l'adulte, sans avis médical, ne dépassez pas 3 jours pour la fièvre et 5 jours pour la douleur.
+- Chez l'enfant, demandez un avis médical au-delà de 3 jours, ou plus tôt si les symptômes s'aggravent.
 - Avec un gel ou un patch, protégez la peau traitée du soleil. Faites-le pendant le traitement et 2 semaines après.
 
-{{< figure-svg ains-1 alt="Calendrier d'une semaine. Fièvre : un anti-inflammatoire pendant 3 jours au plus, puis consultez. Douleur : 5 jours au plus, puis consultez." legende="Sans avis médical, pas plus de 3 jours pour la fièvre et 5 jours pour la douleur. Arrêtez dès que les symptômes disparaissent." >}}
+{{< figure-svg ains-1 alt="Calendrier d'une semaine, chez l'adulte. Fièvre : un anti-inflammatoire pendant 3 jours au plus, puis consultez. Douleur : 5 jours au plus, puis consultez." legende="Chez l'adulte, sans avis médical, pas plus de 3 jours pour la fièvre et 5 jours pour la douleur. Arrêtez dès que les symptômes disparaissent." >}}
 
 ### Pourquoi éviter les AINS en cas d'infection ?
 
@@ -103,8 +104,8 @@ Ne prenez jamais deux anti-inflammatoires en même temps. Demandez l'avis de vot
 
 ### Grossesse, allaitement, conduite
 
-- À partir du début du 6e mois (24 semaines d'aménorrhée, comptées depuis les dernières règles), tout AINS est contre-indiqué. Même une seule prise expose le bébé à une atteinte grave du cœur et des poumons, parfois mortelle.
-- Avant le 6e mois, prenez un AINS seulement si votre médecin l'a prescrit.
+- À partir du début du 6e mois (24 semaines d'aménorrhée, comptées depuis les dernières règles), tout AINS est contre-indiqué. Même une seule prise expose le bébé à une atteinte grave du cœur, des poumons et des reins, parfois mortelle.
+- Avant le 6e mois, ils ne sont pas sans risque (fausse couche, atteinte des reins du bébé). Prenez un AINS seulement si votre médecin l'a prescrit.
 - Le célécoxib est contre-indiqué pendant toute la grossesse.
 - Les AINS peuvent rendre une grossesse plus difficile à obtenir. Cet effet disparaît à l'arrêt.
 - Pendant l'allaitement, l'ibuprofène est déconseillé.
@@ -131,8 +132,8 @@ Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-s
 
 ### Points clés de sécurité
 
-- **Infections.** Les AINS peuvent masquer une infection bactérienne débutante. Enquête de pharmacovigilance (1er janvier 2019 au 30 juin 2023) : 162 cas graves avec l'ibuprofène, 54 avec le kétoprofène, 12 décès, surtout à streptocoque ou pneumocoque (sepsis, choc septique, méningite, infections cutanées graves). L'enquête de 2019 relevait des complications après seulement 2 à 3 jours, y compris sous antibiotique. Paracétamol en première intention ; éviter les AINS en cas de varicelle, de grippe ou d'infection ORL non documentée.
-- **Grossesse.** Tout AINS est contre-indiqué à partir de 24 SA, même en prise unique (constriction du canal artériel, oligoamnios, mort fœtale). Une prise unique après 24 SA justifie un contrôle échographique cardiaque et rénal du fœtus. Avant 24 SA, prescription seulement en cas de nécessité absolue. Le célécoxib est contre-indiqué pendant toute la grossesse et chez la femme en âge de procréer sans contraception efficace. Entre 2018 et 2023, plus de 700 000 femmes enceintes ont été potentiellement exposées, dont 26 000 après le 5e mois (ANSM 2025).
+- **Infections.** Les AINS peuvent masquer une infection bactérienne débutante (conclusion du PRAC en 2020, reprise à la rubrique 4.4 des RCP de l'ibuprofène et du kétoprofène). Cas graves déclarés en France du 1er janvier 2019 au 30 juin 2023 (comptes de déclarations, pas des fréquences) : 162 avec l'ibuprofène, 54 avec le kétoprofène, 12 décès, surtout à streptocoque ou pneumocoque (sepsis, choc septique, méningite, infections cutanées graves). L'enquête de 2019 relevait des complications après seulement 2 à 3 jours, y compris sous antibiotique. Paracétamol en première intention ; éviter les AINS en cas de varicelle, de grippe ou d'infection ORL non documentée.
+- **Grossesse.** Tout AINS est contre-indiqué à partir de 24 SA, même en prise unique (toxicité cardio-pulmonaire : fermeture prématurée du canal artériel, hypertension artérielle pulmonaire ; mort fœtale in utero). Une prise même unique après 24 SA justifie un contrôle échographique cardiaque et rénal du fœtus et/ou du nouveau-né. Avant 24 SA, prescription seulement en cas de nécessité absolue, à la dose la plus faible et le moins longtemps possible : dès 12 SA, risque d'atteinte rénale fœtale (oligoamnios) ; dès 20 SA, s'y ajoute un risque de constriction du canal artériel, et une surveillance cardiaque et rénale du fœtus peut être nécessaire après une prise. Au premier trimestre, des études épidémiologiques ont observé plus de fausses couches et, pour certains AINS, de malformations cardiaques (risque absolu passant de moins de 1 % à environ 1,5 %) et de la paroi abdominale (RCP Advil, rubrique 4.6). Le célécoxib est contre-indiqué pendant toute la grossesse et chez la femme en âge de procréer sans contraception efficace. Entre 2018 et 2023, plus de 700 000 femmes enceintes ont été potentiellement exposées, dont 26 000 après le 5e mois (ANSM 2025).
 - **Digestif.** Risque d'hémorragie, d'ulcération ou de perforation à tout moment, croissant avec la dose et l'âge. Un IPP n'est justifié qu'en cas d'antécédent ulcéreux ou de facteur de risque, dont l'âge supérieur à 65 ans (ANSM).
 - **Cardiovasculaire.** Ibuprofène à 2 400 mg/j : légère augmentation du risque de thrombose artérielle ; pas d'association retrouvée à ≤ 1 200 mg/j. Célécoxib contre-indiqué en cas de cardiopathie ischémique, d'artériopathie, d'antécédent d'AVC ou d'insuffisance cardiaque NYHA II-IV.
 - **Rein.** Insuffisance rénale fonctionnelle, dose-dépendante, par inhibition des prostaglandines rénales ; rétention hydrosodée ; hyperkaliémie.
@@ -154,14 +155,14 @@ Niveaux du Thésaurus de l'ANSM (version du 15 septembre 2023, non mise à jour 
 | AINS + héparines à dose curative et/ou sujet âgé | Association déconseillée |
 | AINS + lithium | Association déconseillée |
 | AINS + méthotrexate > 20 mg/semaine | Association déconseillée (≤ 20 mg/semaine : précaution d'emploi) |
-| AINS + mifamurtide | Contre-indication |
+| AINS + mifamurtide | Contre-indication (aux doses élevées d'AINS) |
 | AINS + IEC, ARA II, diurétiques | Précaution d'emploi : hydrater, surveiller la fonction rénale |
 | AINS + ciclosporine, tacrolimus, ténofovir disoproxil | Précaution d'emploi |
 | AINS + antiagrégants, ISRS, corticoïdes, héparines préventives | À prendre en compte |
 
 ### Adaptation des doses
 
-- Contre-indications de l'ibuprofène : insuffisance hépatique sévère, insuffisance rénale sévère, insuffisance cardiaque sévère (NYHA IV), ulcère évolutif ou antécédents d'hémorragie digestive récurrente.
+- Contre-indications de l'ibuprofène (RCP Advil) : antécédent d'asthme déclenché par un AINS ou l'aspirine ; ulcère peptique évolutif ou antécédent d'ulcère, antécédent d'hémorragie ou de perforation digestive sous AINS, hémorragie digestive récurrente ou hémorragie en évolution ; insuffisance hépatique, rénale ou cardiaque (NYHA IV) sévère ; lupus érythémateux disséminé ; grossesse à partir de 24 SA.
 - Célécoxib : contre-indiqué si clairance de la créatinine estimée < 30 mL/min.
 - Sujet âgé : pas d'adaptation pharmacocinétique pour l'ibuprofène, mais risque accru d'hémorragie digestive ; dose minimale, durée minimale.
 

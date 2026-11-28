@@ -93,3 +93,15 @@ def test_the_bupropion_contraindication_is_not_read_as_a_third_drug():
     text = page("medicaments/maux-courants/rhume-toux.qmd")
     assert "(contre-indication avec le bupropion)" not in text
     assert "seulement quand le sympathomimétique indirect est le bupropion" in text
+
+
+def test_the_levothyroxine_sheet_gives_both_bedtime_trials():
+    # Same two trials as on quand-prendre: Bach-Huynh 2009 (fasting better than breakfast or
+    # bedtime) and Bolk 2010 (bedtime better than morning). The sheet keeps the SmPC's morning
+    # dose for patients and states the disagreement, in one bullet, for professionals.
+    text = page("medicaments/classes/levothyroxine.qmd")
+    patients = text[text.index("## Pour les patients"):text.index("## Pour les professionnels")]
+    evening = re.search(r"\b(coucher|soir|nuit)|dormir", patients.lower())
+    assert not evening, f"patient text mentions an evening dose: {evening.group(0) if evening else ''}"
+    trials = line_with(text[text.index("## Pour les professionnels"):], "Bolk")
+    assert "Bach-Huynh" in trials and "divergent" in trials

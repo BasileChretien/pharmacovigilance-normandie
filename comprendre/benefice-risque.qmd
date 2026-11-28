@@ -40,6 +40,9 @@ sources:
   - titre: "Règlement (UE) n° 1235/2010 modifiant le règlement (CE) n° 726/2004 en ce qui concerne la pharmacovigilance (nouvel article 14, paragraphe 3 : durée de l'AMM centralisée renouvelée)"
     url: "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32010R1235"
     consulte_le: 2026-11-28
+  - titre: "Règlement (CE) n° 726/2004, version consolidée au 28 janvier 2022 (article 14, paragraphe 3 ; article 14 -bis, numéroté 14-a dans la version anglaise : AMM conditionnelle ; article 23 : liste des médicaments faisant l'objet d'une surveillance supplémentaire)"
+    url: "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:02004R0726-20220128"
+    consulte_le: 2026-11-28
   - titre: "Règlement (CE) n° 507/2006 de la Commission relatif à l'autorisation de mise sur le marché conditionnelle (article 4 : exigences)"
     url: "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32006R0507"
     consulte_le: 2026-11-28
@@ -113,7 +116,7 @@ L'AMM repose sur l'examen du rapport bénéfice/risque : démonstration de l'eff
 
 L'AMM est valable 5 ans. Elle peut être renouvelée au terme de ces 5 ans, sur la base d'une réévaluation du rapport bénéfice/risque. Une fois renouvelée, elle est valable sans limitation de durée, sauf si l'autorité compétente (l'ANSM, ou la Commission européenne pour une AMM centralisée) décide, pour des raisons justifiées de pharmacovigilance, dont une exposition d'un nombre insuffisant de patients, d'un nouveau renouvellement quinquennal (article 24 de la directive 2001/83/CE ; article 14 du règlement (CE) n° 726/2004).
 
-L'AMM conditionnelle relève de la procédure centralisée (article 14-a du règlement (CE) n° 726/2004 et règlement (CE) n° 507/2006). Elle vise un besoin médical non couvert et suppose un rapport bénéfice/risque positif, la probabilité que le demandeur fournisse ensuite des données complètes, et un bénéfice de la mise à disposition immédiate supérieur au risque lié à des données moins complètes (EMA). Elle est valable un an, renouvelable chaque année, avec des obligations spécifiques à remplir dans des délais fixés.
+L'AMM conditionnelle relève de la procédure centralisée (article 14 -bis du règlement (CE) n° 726/2004, numéroté 14-a dans la version anglaise, et règlement (CE) n° 507/2006). Elle vise un besoin médical non couvert et suppose un rapport bénéfice/risque positif, la probabilité que le demandeur fournisse ensuite des données complètes, et un bénéfice de la mise à disposition immédiate supérieur au risque lié à des données moins complètes (EMA). Elle est valable un an, renouvelable chaque année, avec des obligations spécifiques à remplir dans des délais fixés.
 
 ### Pourquoi le rapport n'est pas figé
 
@@ -125,7 +128,7 @@ Au moment de l'AMM, le médicament a été étudié chez un nombre relativement 
 - **Détection et gestion des signaux** : l'ANSM catégorise chaque signal selon son niveau de risque. Au niveau européen, le PRAC (Pharmacovigilance Risk Assessment Committee) évalue les signaux issus d'EudraVigilance.
 - **Enquêtes de pharmacovigilance** : menées par un CRPV à la demande de l'ANSM.
 - **Rapports périodiques actualisés de sécurité (PSUR)** : pour un médicament autorisé dans plusieurs États membres, évaluation unique européenne qui aboutit à une recommandation du PRAC (articles 107 sexies à 107 octies de la directive 2001/83/CE).
-- **Études de sécurité post-autorisation (PASS) imposées** : le PRAC évalue le protocole, sauf pour une étude menée dans le seul État membre qui l'a demandée, où l'autorité nationale s'en charge (articles 107 quaterdecies et suivants de la directive).
+- **Études de sécurité post-autorisation (PASS) non interventionnelles imposées** : le PRAC évalue le protocole, sauf pour une étude menée dans le seul État membre qui l'a demandée, où l'autorité nationale s'en charge (articles 107 quaterdecies et suivants de la directive).
 - **Études de pharmaco-épidémiologie**, notamment sur les données de l'Assurance maladie.
 
 ### Qui recommande, qui décide

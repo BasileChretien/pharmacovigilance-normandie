@@ -10,6 +10,9 @@ sources:
   - titre: "ANSM, Comment déclarer si vous êtes patient ou usager ?"
     url: "https://ansm.sante.fr/documents/reference/declarer-un-effet-indesirable/comment-declarer-si-vous-etes-patient-ou-usager"
     consulte_le: 2026-11-28
+  - titre: "ANSM, Formulaire de déclaration d'un effet indésirable survenu avec un médicament (cerfa n° 10011*07, 24/11/2021)"
+    url: "https://ansm.sante.fr/uploads/2021/11/24/cerfa-10011-07-formulaire-de-declaration-d-un-effet-indesirable-survenu-avec-un-medicament.pdf"
+    consulte_le: 2026-11-28
   - titre: "ANSM, Comment déclarer si vous êtes professionnel de santé ?"
     url: "https://ansm.sante.fr/documents/reference/declarer-un-effet-indesirable/comment-declarer-si-vous-etes-professionnel-de-sante"
     consulte_le: 2026-11-28
@@ -86,7 +89,7 @@ Tout effet que vous pensez lié à un médicament. Il n'est pas nécessaire d'ê
 
 Le plus simple est le portail en ligne [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr/). À la fin, le site vous dit à quel centre votre déclaration est envoyée. Vous pouvez aussi écrire directement au centre régional de pharmacovigilance (CRPV) de votre région.
 
-Gardez la boîte du médicament à portée de main. Le nom exact et le numéro de lot (un code imprimé sur la boîte) sont utiles. Notez aussi les dates : début du traitement, début de l'effet, arrêt éventuel.
+Gardez la boîte du médicament à portée de main : son nom exact est utile. On fabrique certains médicaments à partir d'un organisme vivant, par exemple un vaccin ou un médicament dérivé du sang : ce sont des médicaments biologiques. Pour eux, notez aussi le numéro de lot (un code imprimé sur la boîte). Notez aussi les dates : début du traitement, début de l'effet, arrêt éventuel.
 
 Voir aussi la page [Déclarer](../declarer.qmd).
 
@@ -131,7 +134,7 @@ Tout effet indésirable suspecté, y compris en cas de mésusage, surdosage, err
 
 ### Comment
 
-Portail commun des vigilances, ouvert en 2017 aux professionnels et aux usagers : [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr/). Le déclarant est informé en fin de saisie du destinataire. Formulaires papier ou courriel possibles directement auprès du CRPV. Éléments utiles : spécialité et numéro de lot, chronologie (début, arrêt, réintroduction), co-médications, évolution.
+Portail commun des vigilances, ouvert en 2017 aux professionnels et aux usagers : [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr/). Le déclarant est informé en fin de saisie du destinataire. Formulaires papier ou courriel possibles directement auprès du CRPV. Éléments utiles : spécialité et, pour un médicament biologique (vaccin, médicament dérivé du sang…), numéro de lot ; chronologie (début, arrêt, réintroduction), co-médications, évolution (formulaire cerfa n° 10011*07 de l'ANSM).
 
 ### Circuit
 
