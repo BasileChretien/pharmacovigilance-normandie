@@ -131,7 +131,7 @@ Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre ph
 - **Paracétamol** : utilisable si nécessaire, à la dose efficace la plus faible et pour la durée la plus courte.
 - **AINS, y compris l'aspirine** : ne pas en prendre de soi-même au premier trimestre ; toute prise, même ponctuelle, est strictement contre-indiquée à partir du 6e mois (24 semaines d'aménorrhée). La page « bons réflexes » de l'ANSM l'exprime comme « jamais après le 5e mois ». En cas de prise par mégarde à partir du 6e mois, la patiente doit consulter.
 - **Voie cutanée** : la contre-indication à partir du 6e mois figure aussi au RCP des gels d'AINS (Ketum 2,5 % gel, kétoprofène ; Voltarenactigo 1 % gel, diclofénac, rubriques 4.3 et 4.6).
-- **Aspirine à faible dose** : le RCP de Kardegic distingue les doses ≤ 100 mg/j, dont l'usage obstétrical restreint sous surveillance spécialisée « paraît sûr », des doses supérieures, contre-indiquées au troisième trimestre. Une patiente traitée par aspirine à faible dose pour une indication obstétricale ne doit pas l'interrompre sans avis.
+- **Aspirine à faible dose** : le RCP de Kardegic distingue les doses ≤ 100 mg/j, dont l'usage obstétrical restreint sous surveillance spécialisée « paraît sûr », des doses supérieures, contre-indiquées à partir du début du 6e mois (au-delà de 24 semaines d'aménorrhée, rubrique 4.3). Une patiente traitée par aspirine à faible dose pour une indication obstétricale ne doit pas l'interrompre sans avis.
 - **Tramadol** : déconseillé au premier trimestre ; des doses élevées en fin de grossesse peuvent induire des troubles respiratoires chez le nouveau-né.
 
 ### Pictogramme « femme enceinte »
