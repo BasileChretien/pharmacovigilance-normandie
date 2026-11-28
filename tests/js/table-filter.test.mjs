@@ -10,6 +10,11 @@ test("fold drops accents and case", () => {
   assert.equal(tf.fold("Kétoprofène, ÉRYTHROMYCINE"), "ketoprofene, erythromycine");
 });
 
+test("fold spells out œ, æ, ß and ø, as the cytochrome checker does", () => {
+  assert.equal(tf.fold("Œstrogènes, cœur, Ægle, Straße, Søren"), "oestrogenes, coeur, aegle, strasse, soren");
+  assert.ok(tf.matches("Œstrogènes conjugués", "oestrogenes"));
+});
+
 test("a row matches when it holds every typed word, in any order", () => {
   const row = "Simvastatine + inhibiteurs puissants du CYP3A4 (clarithromycine, érythromycine)";
   assert.ok(tf.matches(row, "clarithromycine simvastatine"));

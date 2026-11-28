@@ -5,6 +5,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { createRequire } from "node:module";
 import { readFileSync } from "node:fs";
+import { add, fakeDocument } from "./fake-dom.mjs";
 
 const require = createRequire(import.meta.url);
 const cv = require("../../assets/js/cyp-verificateur.js");
@@ -260,4 +261,99 @@ test("messages for an empty, unknown, ambiguous or repeated entry", () => {
   const ambigu = cv.resolve("flu", FIXTURE.medicaments);
   assert.equal(cv.problem("A", ambigu), "Médicament A : plusieurs correspondances (fluconazole, fluoxétine). Choisissez-en un dans la liste.");
   assert.equal(cv.problem("B", { statut: "meme" }), "Choisissez deux médicaments différents.");
+});
+
+// ---------- Search key shared with the build -------------------------------------------
+
+const FOLD_CASES = JSON.parse(readFileSync(new URL("../fold-cases.json", import.meta.url), "utf8")).cas;
+
+test("fold gives the key the build checks duplicates with (tests/fold-cases.json)", () => {
+  for (const [text, key] of FOLD_CASES) assert.equal(cv.fold(text), key, text);
+});
+
+test("a name with a ligature is found when typed without it", () => {
+  const meds = cv.prepare({ enzymes: ENZYMES, sources: {}, medicaments: [{ nom: "Œstrogènes conjugués", precision: "", roles: {} }] }).medicaments;
+  assert.equal(cv.resolve("oestrogenes", meds).statut, "trouve");
+});
+
+// ---------- The form, on a fake page -----------------------------------------------------
+
+// The page of bon-usage/cytochromes.qmd reduced to what init() reads, with the real data.
+function page() {
+  const doc = fakeDocument();
+  const form = add(doc, "form", "cyp-verificateur");
+  form.hidden = true;
+  add(doc, "script", "cyp-donnees").textContent = json;
+  for (const x of ["a", "b"]) {
+    add(doc, "input", "cyp-" + x, { "aria-controls": "cyp-" + x + "-liste" });
+    add(doc, "ul", "cyp-" + x + "-liste").hidden = true;
+  }
+  add(doc, "p", "cyp-statut");
+  add(doc, "div", "cyp-resultat");
+  cv.init(doc);
+  const field = (x) => doc.getElementById("cyp-" + x);
+  return {
+    type(x, text) { field(x).value = text; field(x).fire("input"); },
+    key(x, key) { field(x).fire("keydown", { key }); },
+    check() { form.fire("submit"); },
+    flagged() { return ["A", "B"].filter((x) => field(x.toLowerCase()).getAttribute("aria-invalid") === "true"); },
+    status() { return doc.getElementById("cyp-statut").textContent; },
+    result() { return doc.getElementById("cyp-resultat").textContent; },
+  };
+}
+
+test("the fake page runs the checker: a found pair gives a result and no flag", (t) => {
+  t.mock.timers.enable({ apis: ["setTimeout"] });
+  const p = page();
+  p.type("a", "warfarine");
+  p.type("b", "fluconazole");
+  p.check();
+  t.mock.timers.tick(100);
+  assert.deepEqual(p.flagged(), []);
+  assert.match(p.status(), /warfarine/i);
+  assert.match(p.result(), /CYP2C9/);
+});
+
+test("a field that is right again is no longer flagged at the next check", (t) => {
+  t.mock.timers.enable({ apis: ["setTimeout"] });
+  const p = page();
+  p.type("a", "warfarine");
+  p.type("b", "warfarine");
+  p.check();
+  t.mock.timers.tick(100);
+  assert.deepEqual(p.flagged(), ["B"]);
+  p.type("a", "xyz");
+  p.check();
+  t.mock.timers.tick(100);
+  assert.deepEqual(p.flagged(), ["A"]); // B (warfarine) is a valid entry
+});
+
+test("editing a field after an error clears the message and every flag", (t) => {
+  t.mock.timers.enable({ apis: ["setTimeout"] });
+  const p = page();
+  p.type("a", "xyz");
+  p.type("b", "abc");
+  p.check();
+  t.mock.timers.tick(100);
+  assert.deepEqual(p.flagged(), ["A", "B"]);
+  assert.notEqual(p.status(), "");
+  p.type("a", "w");
+  t.mock.timers.tick(100);
+  assert.deepEqual(p.flagged(), []);
+  assert.equal(p.status(), "");
+});
+
+test("choosing a suggestion with the keyboard also clears an old message and its flags", (t) => {
+  t.mock.timers.enable({ apis: ["setTimeout"] });
+  const p = page();
+  p.type("a", "flu"); // ambiguous: fluconazole, fluoxétine…
+  p.type("b", "xyz");
+  p.check();
+  t.mock.timers.tick(100);
+  assert.deepEqual(p.flagged(), ["A", "B"]);
+  p.key("a", "ArrowDown");
+  p.key("a", "Enter");
+  t.mock.timers.tick(100);
+  assert.deepEqual(p.flagged(), []);
+  assert.equal(p.status(), "");
 });
