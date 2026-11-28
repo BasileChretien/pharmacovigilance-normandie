@@ -221,6 +221,8 @@ test("the server answers with the file and its type", async () => {
   const root = site();
   const server = await serve(root, "/pharmacovigilance-normandie/");
   try {
+    // Quarto's page script treats only localhost (or the site-url) as internal.
+    assert.match(server.url, /^http:\/\/localhost:\d+\/pharmacovigilance-normandie\/$/);
     const page = await fetch(`${server.url}bon-usage/ecraser-couper.html`);
     assert.equal(page.status, 200);
     assert.equal(page.headers.get("content-type"), "text/html; charset=utf-8");

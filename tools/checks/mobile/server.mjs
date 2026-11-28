@@ -97,7 +97,10 @@ export function serve(root, prefix) {
     server.listen(0, "127.0.0.1", () => {
       const { port } = server.address();
       resolvePromise({
-        url: `http://127.0.0.1:${port}${prefix}`,
+        // "localhost", not 127.0.0.1: Quarto's page script counts a link as internal only
+        // on the site-url or on http://localhost:port/; on 127.0.0.1 it marks every link
+        // external and adds its icon, which widens the links (and the anchor links).
+        url: `http://localhost:${port}${prefix}`,
         close: () => new Promise((done) => {
           server.close(() => done());
           server.closeAllConnections();
