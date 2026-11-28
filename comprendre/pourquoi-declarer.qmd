@@ -89,7 +89,7 @@ Tout effet que vous pensez lié à un médicament. Il n'est pas nécessaire d'ê
 
 Le plus simple est le portail en ligne [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr/). À la fin, le site vous dit à quel centre votre déclaration est envoyée. Vous pouvez aussi écrire directement au centre régional de pharmacovigilance (CRPV) de votre région.
 
-Gardez la boîte du médicament à portée de main : son nom exact est utile. Pour un vaccin ou un médicament dérivé du sang, notez aussi le numéro de lot (un code imprimé sur la boîte). Notez aussi les dates : début du traitement, début de l'effet, arrêt éventuel.
+Gardez la boîte du médicament à portée de main : son nom exact est utile. On fabrique certains médicaments à partir d'un organisme vivant, par exemple un vaccin ou un médicament dérivé du sang : ce sont des médicaments biologiques. Pour eux, notez aussi le numéro de lot (un code imprimé sur la boîte). Notez aussi les dates : début du traitement, début de l'effet, arrêt éventuel.
 
 Voir aussi la page [Déclarer](../declarer.qmd).
 
