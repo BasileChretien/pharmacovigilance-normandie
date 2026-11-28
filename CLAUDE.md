@@ -15,7 +15,7 @@ reviews it.
 - `uv run python tools/checks/check_toc.py` — every section heading is in its page's table of contents (after `quarto render`).
 
 - `uv run python tools/design/make_carte_departements.py` — regenerate the department map of normandie/carte.qmd (`assets/img/figures/carte-1.svg`, data `data/normandie-carte.json`).
-- `uv run python tools/build/make_cyp_index.py` — regenerate the per-drug index of the cytochrome table.
+- `uv run python tools/build/make_cytochromes.py` — regenerate the grid and the two-drug checker's data of bon-usage/cytochromes.qmd from `data/cytochromes.yml` (edit the data, never the `_includes/cyp-*.md` outputs).
 - `uv run python tools/build/fetch_crpv.py` then `make_crpv_page.py` — refresh the list of the French CRPV (ANSM) for crpv/trouver-mon-crpv.qmd.
 - `uv run python tools/build/fetch_bdpm.py` then `make_bdpm_liens.py` and `make_bdpm_recherche.py` (index of medicaments/chercher.qmd, `assets/data/medicaments.json`) — monthly: official notice/SmPC links of the class sheets (front matter `substances:`) and marketing status of cited BDPM products (cache `data/bdpm/`, gitignored).
 - `uv run python tools/build/fetch_openmedic.py` then `make_openmedic.py` — yearly: reimbursed medicines in Normandy vs France (Open Medic + INSEE, cache `data/openmedic/`, gitignored) for normandie/medicaments-rembourses.qmd.

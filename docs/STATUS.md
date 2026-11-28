@@ -12,8 +12,10 @@ Mis à jour le 28/11/2026. Prototype non officiel, publié depuis la branche `ma
   sur 30.
 - Recherche tolérante aux accents, avec synonymes (`tools/build/search_postprocess.py`).
 - Les marques « [à compléter] » s'affichent comme des étiquettes (101 à ce jour).
-- Champ de filtre au-dessus des longs tableaux (interactions en ville, cytochromes et leur
-  index par médicament) : `assets/js/table-filter.js`.
+- Champ de filtre au-dessus des longs tableaux (interactions en ville, grille des cytochromes) :
+  `assets/js/table-filter.js`.
+- Cytochromes : vérificateur de deux médicaments et grille à la manière des HUG, produits
+  depuis `data/cytochromes.yml` (`tools/build/make_cytochromes.py`, `assets/js/cyp-verificateur.js`).
 - Liens « Pour aller plus loin » vers rfcrpv.fr et pharmacomedicale.org sur 46 pages
   (`pour_aller_plus_loin` dans l'en-tête des pages).
 - Design rafraîchi (26/11/2026) : en-tête sur deux lignes dès 1 200 px, cartes, pied de page

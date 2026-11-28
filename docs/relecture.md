@@ -68,7 +68,7 @@ marques `[à compléter : source]` et ses `<!-- FIGURE À FAIRE -->`.
 | vigiking/inscription | Adresses provisoires pour recevoir Vigiking, à confirmer par les CRPV |
 | crpv/acces | Horaires des deux centres |
 | bon-usage/ecraser-fiche | Fiche imprimable : chaque règle reprend la page « Écraser ou couper » ; mesures de protection pour les médicaments CMR à préciser |
-| bon-usage/cytochromes | Index par médicament généré automatiquement depuis le tableau : il hérite des points à vérifier du tableau |
+| bon-usage/cytochromes | Grille et vérificateur de deux médicaments produits depuis `data/cytochromes.yml` : ils héritent des points à vérifier de ces données. Relire les phrases du vérificateur (sens de la variation, prodrogues, voie mineure : `assets/js/cyp-verificateur.js`). Clopidogrel ajouté comme substrat mineur du CYP2C19 d'après la carte des HUG (28/11/2026). Reprise de la présentation de la carte des HUG (« Copyright SPTC - Genève, mars 2020 », aucun droit de réutilisation sur hug.ch) : accord du CIT-PV de Genève à demander avant publication |
 | crpv/enseignement | Modalités de candidature proposées, à valider par chaque centre |
 | bon-usage/interactions-ville | Page nouvelle, 16 associations : niveaux relevés sur le Thésaurus du 15/09/2023 (pages 26, 102 et 228 lues en texte seulement) ; « triple whammy » reconstitué à partir de trois couples ; clopidogrel + oméprazole d'après le RCP de Plavix |
 
