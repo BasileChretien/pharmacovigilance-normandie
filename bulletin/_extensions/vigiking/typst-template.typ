@@ -10,6 +10,7 @@
 // orange 5.0:1 (4.6:1 on the mist of the boxes); white on the Channel blue 9.7:1, sea foam
 // on it 7.2:1. Cyan, bright green and gold are decoration only.
 $reseau.typ()$
+$mascotte.typ()$
 
 #let encre = rgb("#10283a")
 #let encre-douce = rgb("#46586a")
@@ -332,17 +333,23 @@ $reseau.typ()$
   }
 }
 
-// Cover: the logos and the Vigiking banner in a white band, then the theme of the issue on
-// the Channel blue, beside the cover picture (or the network map when there is none).
+// Cover: the logos, the mascot and the Vigiking banner in a white band, then the theme of the
+// issue on the Channel blue, beside the cover picture (or the network map when there is none).
 #let une(title, numero, couverture, couverture-alt, logo-gauche, logo-droite, bandeau) = {
   let haut-bande = 2.9cm
   let haut-visuel = 19.05cm - haut-bande - 4pt
   block(width: 100%, height: haut-bande, inset: (x: 1.5cm, y: 0.45cm), below: 0pt, align(horizon, grid(
     columns: (1fr, auto, 1fr), align: (left + horizon, center + horizon, right + horizon),
     if logo-gauche != none { image(logo-gauche, height: 1.7cm, alt: "CRPV de Rouen") },
-    if bandeau != none { image(bandeau, height: 2cm, alt: "Vigiking Normand") } else {
-      text(font: titres, size: 34pt, weight: 800, fill: bleu, tracking: 0.04em)[VIGIKING NORMAND]
-    },
+    box({
+      // The site's mascot, left of the banner and turned to sound its horn towards it.
+      // Placed outside the cell, so the banner stays centred between the logos.
+      place(left + horizon, dx: -2.15cm,
+        scale(x: -100%, image(mascotte-svg, format: "svg", height: 2cm, alt: "")))
+      if bandeau != none { image(bandeau, height: 2cm, alt: "Vigiking Normand") } else {
+        text(font: titres, size: 34pt, weight: 800, fill: bleu, tracking: 0.04em)[VIGIKING NORMAND]
+      }
+    }),
     if logo-droite != none { image(logo-droite, height: 1.7cm, alt: "CRPV de Caen") },
   )))
   block(width: 100%, height: 4pt, fill: degrade, above: 0pt, below: 0pt)
