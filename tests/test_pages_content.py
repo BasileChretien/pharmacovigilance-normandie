@@ -59,7 +59,7 @@ def test_the_levothyroxine_sheet_gives_both_bedtime_trials():
     # dose for patients and states the disagreement, in one bullet, for professionals.
     text = page("medicaments/classes/levothyroxine.qmd")
     patients = text[text.index("## Pour les patients"):text.index("## Pour les professionnels")]
-    for words in ("coucher", "soir", "avant de dormir"):
-        assert words not in patients.lower(), words
+    evening = re.search(r"\b(coucher|soir|nuit)|dormir", patients.lower())
+    assert not evening, f"patient text mentions an evening dose: {evening.group(0) if evening else ''}"
     trials = line_with(text[text.index("## Pour les professionnels"):], "Bolk")
     assert "Bach-Huynh" in trials and "divergent" in trials
