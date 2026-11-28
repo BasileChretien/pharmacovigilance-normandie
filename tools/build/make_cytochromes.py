@@ -44,7 +44,8 @@ TABLES = (
 )
 
 
-# Letters that NFD does not split into a base letter and an accent, spelt out.
+# œ, æ, ß and ø, which NFD does not split into a letter and an accent, are spelt out. Other
+# such letters (ł, đ…) become a space, like any character outside a-z and 0-9.
 LIGATURES = str.maketrans({"œ": "oe", "æ": "ae", "ß": "ss", "ø": "o"})
 # The combining accents U+0300 to U+036F, the range the JS fold() removes.
 ACCENTS = re.compile("[" + chr(0x300) + "-" + chr(0x36F) + "]")

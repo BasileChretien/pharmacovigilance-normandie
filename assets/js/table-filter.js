@@ -25,7 +25,7 @@
   var HELP_FIRST_COLUMN = "Le nom d'un médicament, ou une partie de ce nom. Les accents sont facultatifs.";
   var FIRST_COLUMN = "premiere-colonne";
 
-  // Letters that NFD does not split into a base letter and an accent, spelt out as the
+  // œ, æ, ß and ø, which NFD does not split into a letter and an accent, are spelt out as the
   // cytochrome checker does (assets/js/cyp-verificateur.js): "oeil" finds "œil".
   var LIGATURES = { "œ": "oe", "æ": "ae", "ß": "ss", "ø": "o" };
 

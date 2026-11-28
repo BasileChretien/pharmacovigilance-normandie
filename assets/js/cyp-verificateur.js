@@ -25,8 +25,9 @@
 
   // ---------- Text ----------------------------------------------------------------
 
-  // Letters that NFD does not split into a base letter and an accent, spelt out so that
-  // "oestrogenes" finds "Œstrogènes". Same table as fold() in tools/build/make_cytochromes.py.
+  // œ, æ, ß and ø, which NFD does not split into a letter and an accent, are spelt out so that
+  // "oestrogenes" finds "Œstrogènes". Other such letters (ł, đ…) become a space, like any
+  // character outside a-z and 0-9. Same table as fold() in tools/build/make_cytochromes.py.
   var LIGATURES = { "œ": "oe", "æ": "ae", "ß": "ss", "ø": "o" };
 
   // The search key of a name; the build spots duplicates with the same key (tests/fold-cases.json).
