@@ -18,8 +18,10 @@ Mis à jour le 28/11/2026. Prototype non officiel, publié depuis la branche `ma
   (`pour_aller_plus_loin` dans l'en-tête des pages).
 - Design rafraîchi (26/11/2026) : en-tête sur deux lignes dès 1 200 px, cartes, pied de page
   « Manche », colombages, bandeau des deux centres, page 404.
-- Contrôles automatiques en place : règles de rédaction, contrastes, HTML, accessibilité
-  (axe-core), tests.
+- Thème sombre (réglage du système ou bouton de la barre de navigation), et figures lisibles
+  avec Dark Reader (`docs/mode-sombre.md`).
+- Contrôles automatiques en place : règles de rédaction, contrastes (thèmes clair et
+  sombre), HTML, accessibilité (axe-core), tests.
 
 ## Prochaine étape
 

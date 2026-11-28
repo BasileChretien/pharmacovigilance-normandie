@@ -8,6 +8,8 @@ project:
     - assets/data/
   post-render:
     - tools/build/search_postprocess.py
+    # Valid HTML for the light/dark switch (duplicate ids, unnamed button).
+    - tools/build/theme_postprocess.py
   render:
     - "*.qmd"
     - "!_templates/"
