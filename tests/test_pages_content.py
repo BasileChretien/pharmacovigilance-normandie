@@ -105,3 +105,16 @@ def test_the_levothyroxine_sheet_gives_both_bedtime_trials():
     assert not evening, f"patient text mentions an evening dose: {evening.group(0) if evening else ''}"
     trials = line_with(text[text.index("## Pour les professionnels"):], "Bolk")
     assert "Bach-Huynh" in trials and "divergent" in trials
+
+
+def test_st_johns_wort_is_to_avoid_with_every_doac():
+    # RCP Eliquis, rubrique 4.4: with strong CYP3A4 and P-gp inducers (millepertuis), apixaban
+    # « ne doit pas être utilisé » to treat a DVT or a PE, « avec précaution » otherwise.
+    # RCP Xarelto and Pradaxa: the association « doit être évitée ». « Ask advice » alone is
+    # weaker than the SmPC for a patient treated for a DVT or a PE.
+    text = page("medicaments/classes/anticoagulants-oraux.qmd")
+    patient = line_with(text, "- Le millepertuis")
+    assert "à éviter avec un AOD" in patient
+    assert "Avec l'apixaban, demandez conseil" not in patient
+    row = line_with(text, "| AOD + millepertuis")
+    assert "traitement d'une TVP ou d'une EP" in row
