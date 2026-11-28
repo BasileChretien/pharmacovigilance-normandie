@@ -10,6 +10,8 @@ project:
     - tools/build/search_postprocess.py
     # Valid HTML for the light/dark switch (duplicate ids, unnamed button).
     - tools/build/theme_postprocess.py
+    # The prototype notice leaves the fixed header (it scrolls away); the skip link comes first.
+    - tools/build/entete_postprocess.py
   render:
     - "*.qmd"
     - "!_templates/"
