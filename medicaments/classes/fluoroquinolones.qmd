@@ -11,22 +11,22 @@ prochaine_relecture: null
 sources:
   - titre: "ANSM, « Antibiotiques de la famille des quinolones et fluoroquinolones administrés par voie systémique ou inhalée : risque d'effets indésirables invalidants, durables et potentiellement irréversibles et restrictions d'utilisation » (10/04/2019, mis à jour le 15/04/2021)"
     url: "https://ansm.sante.fr/informations-de-securite/antibiotiques-de-la-famille-des-quinolones-et-fluoroquinolones-administres-par-voie-systemique-ou-inhalee-risque-deffets-indesirables-invalidants-durables-et-potentiellement-irreversibles-et-restrictions-dutilisation"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, « Fluoroquinolones par voie systémique ou inhalée : risque de survenue d'anévrisme et de dissection aortique » (06/11/2018, mis à jour le 23/04/2021)"
     url: "https://ansm.sante.fr/informations-de-securite/fluroquinolones-par-voie-systemique-ou-inhalee-risque-de-survenue-danevrisme-et-de-dissection-aortique"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, « Fluoroquinolones : nous rappelons l'importance du bon usage de ces antibiotiques » (20/02/2025)"
     url: "https://ansm.sante.fr/actualites/fluoroquinolones-nous-rappelons-limportance-du-bon-usage-de-ces-antibiotiques"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Base de données publique des médicaments, RCP et notice de CIFLOX 500 mg, comprimé pelliculé sécable (ciprofloxacine, CIS 65636245)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/65636245/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Base de données publique des médicaments, RCP et notice de TAVANIC 500 mg, comprimé pelliculé sécable (lévofloxacine, CIS 64784789)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/64784789/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
     url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Fluoroquinolones : des précautions d'utilisations toujours indispensables"
     url: "https://www.rfcrpv.fr/fluoroquinolones-des-precautions-dutilisations-toujours-indispensables/"
@@ -76,9 +76,9 @@ En cas d'oubli, prenez la dose dès que possible, sauf si la suivante est proche
 
 ### Quels effets indésirables ?
 
-Avec la lévofloxacine, une inflammation ou une rupture de tendon touche jusqu'à 1 personne sur 1 000. Le talon (tendon d'Achille) est le plus souvent atteint. Cela peut arriver dès les 2 premiers jours, et jusqu'à plusieurs mois après l'arrêt.
+Avec la lévofloxacine, une atteinte d'un tendon, surtout une inflammation (tendinite), touche jusqu'à 1 personne sur 1 000. Le tendon peut aussi se rompre : la fréquence de la rupture n'est pas connue. Le talon (tendon d'Achille) est le plus souvent atteint. Cela peut arriver dès les 2 premiers jours, et jusqu'à plusieurs mois après l'arrêt.
 
-Le risque est plus grand après 60 ans, après une greffe d'organe, si vos reins fonctionnent mal ou si vous prenez de la cortisone.
+Le risque est plus grand chez les personnes âgées, après une greffe d'organe, si vos reins fonctionnent mal ou si vous prenez de la cortisone.
 
 ### Quels effets peuvent durer ?
 
@@ -86,7 +86,7 @@ Des effets qui durent des mois ou des années touchent jusqu'à 1 personne sur 1
 
 {{< figure-svg fluoroquinolones-2 alt="Une grille de 10 000 points, dont 1 cerclé : des effets qui durent touchent jusqu'à 1 personne sur 10 000. Une grille de 1 000 points, dont 1 cerclé : une atteinte d'un tendon avec la lévofloxacine touche jusqu'à 1 personne sur 1 000." legende="Deux risques rares, chacun sur son nombre de personnes : 10 000 pour les effets qui durent, 1 000 pour les tendons." >}}
 
-Très rarement, l'aorte (la grosse artère du ventre et de la poitrine) se dilate ou se déchire. Les valves du cœur peuvent aussi fuir.
+L'aorte est la grosse artère du ventre et de la poitrine. Des études ont observé plus de dilatations ou de déchirures de l'aorte après une fluoroquinolone, surtout chez les personnes âgées. Des fuites des valves du cœur ont aussi été observées.
 
 ### Quels signes doivent vous alerter ?
 
@@ -135,9 +135,9 @@ Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-s
 ### Points clés de sécurité
 
 - **Effets invalidants et persistants** (mois ou années), potentiellement irréversibles, très rares : musculo-squelettiques, neurologiques, psychiatriques et sensoriels, parfois associés. Arrêt au premier signe.
-- **Tendinopathie et rupture** (Achille surtout, parfois bilatérales) : dès les 48 premières heures et jusqu'à plusieurs mois après l'arrêt. Risque accru chez le sujet âgé, l'insuffisant rénal, le transplanté d'organe solide et sous corticoïdes (association à éviter). Contre-indication de la lévofloxacine en cas d'antécédent de tendinopathie sous fluoroquinolone.
+- **Tendinopathie et rupture** (Achille surtout, parfois bilatérales) : dès les 48 premières heures et jusqu'à plusieurs mois après l'arrêt. Risque accru chez le sujet âgé, l'insuffisant rénal, le transplanté d'organe solide, à 1 000 mg/j de lévofloxacine et sous corticoïdes (association à éviter : RCP, ANSM 2019, rappel en 2025). Fréquence (RCP Tavanic) : affections des tendons, notamment tendinites, rares ; ruptures de fréquence indéterminée. Contre-indication de la lévofloxacine en cas d'antécédent de tendinopathie sous fluoroquinolone.
 - **Neuropathie périphérique** sensitive ou sensitivo-motrice : arrêt à l'apparition des symptômes pour prévenir une évolution irréversible.
-- **Anévrisme et dissection aortiques, régurgitation valvulaire** (aortique, mitrale) : risque accru dans les études épidémiologiques, surtout chez le sujet âgé. Après évaluation attentive et seulement en l'absence d'alternative en cas d'antécédent familial d'anévrisme, de valvulopathie connue, de syndrome de Marfan ou d'Ehlers-Danlos vasculaire, de Turner, de maladie de Behçet, d'artérite de Takayasu ou à cellules géantes, d'athérosclérose connue, d'hypertension artérielle, d'endocardite.
+- **Anévrisme et dissection aortiques, régurgitation valvulaire** (aortique, mitrale) : risque accru dans les études épidémiologiques, surtout chez le sujet âgé ; cas rapportés, parfois mortels. Seulement après évaluation attentive du rapport bénéfice/risque et des autres options en cas d'antécédent familial d'anévrisme ou de valvulopathie congénitale, d'anévrisme ou de dissection aortique préexistants, de valvulopathie connue, de syndrome de Marfan ou d'Ehlers-Danlos, de syndrome de Turner, de maladie de Behçet, d'hypertension artérielle, de polyarthrite rhumatoïde, d'artérite de Takayasu ou à cellules géantes, d'athérosclérose connue, de syndrome de Sjögren ou d'endocardite infectieuse. Une corticothérapie systémique associée peut majorer ce risque (RCP Tavanic).
 - **Autres** : dysglycémies et comas hypoglycémiques (sujet âgé diabétique sous sulfamide ou insuline) ; allongement du QT ; photosensibilité ; aggravation d'une myasthénie ; convulsions (lévofloxacine contre-indiquée dans l'épilepsie) ; réactions psychotiques avec idées suicidaires, parfois dès la première prise.
 
 ### Restrictions d'utilisation (ANSM, depuis 2019)
@@ -155,7 +155,7 @@ Glycémie chez le diabétique ; INR sous AVK pendant et juste après le traiteme
 - Ciprofloxacine + tizanidine : **contre-indication** (RCP ; Cmax ×7, ASC ×10).
 - Ciprofloxacine + méthotrexate, agomélatine : **association déconseillée**. Ciprofloxacine + théophylline, clozapine, ropinirole, phénytoïne, calcium : **précaution d'emploi**.
 - Fluoroquinolones + AVK : **précaution d'emploi**. Fluoroquinolones + fer, zinc, sucralfate, strontium : **précaution d'emploi** (plus de 2 heures). Topiques gastro-intestinaux et antiacides : prise à distance (plus de 2 heures). RCP de la ciprofloxacine : 1 à 2 heures avant ou au moins 4 heures après les cations polyvalents.
-- Fluoroquinolones + glucocorticoïdes (sauf hydrocortisone) : **à prendre en compte** au Thésaurus ; le RCP demande d'éviter l'association.
+- Fluoroquinolones + glucocorticoïdes (sauf hydrocortisone) : **à prendre en compte** au Thésaurus ; le RCP et l'ANSM (2019, rappel en 2025) demandent d'éviter l'association.
 - Ciprofloxacine + substances susceptibles de donner des torsades de pointes : **précaution d'emploi**. La moxifloxacine est torsadogène : contre-indiquée avec le citalopram, l'escitalopram, l'hydroxyzine, la dompéridone.
 - Fluoroquinolones + mycophénolate : **à prendre en compte**.
 

@@ -11,22 +11,22 @@ prochaine_relecture: null
 sources:
   - titre: "Base de données publique des médicaments, STILNOX 10 mg (zolpidem) : RCP et notice"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/63179285/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Base de données publique des médicaments, IMOVANE 7,5 mg (zopiclone) : RCP et notice"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/68508795/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Base de données publique des médicaments, TEMESTA 1 mg (lorazépam) : RCP et notice"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67917629/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "HAS, Arrêt des benzodiazépines et médicaments apparentés : démarche du médecin traitant en ambulatoire, rapport d'élaboration (juin 2015)"
     url: "https://www.has-sante.fr/upload/docs/application/pdf/2015-06/fiche_memo_rapport_elaboration_arret_benzodiazepines__2015_06_17.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "HAS, Benzodiazépines : programmer l'arrêt dès la prescription (2017, mis à jour 2019)"
     url: "https://has-sante.fr/jcms/pprd_2974495/fr/benzodiazepines-programmer-l-arret-des-la-prescription"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
     url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Benzodiazépines"
     url: "https://pharmacomedicale.org/medicaments/par-specialites/item/benzodiazepines"
@@ -118,7 +118,7 @@ Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-s
 - Zolpidem : comportements complexes du sommeil (somnambulisme, conduite automobile) avec amnésie, dès la première prise ; arrêt immédiat et contre-indication ultérieure. Altération de la vigilance le lendemain : respecter 8 heures de sommeil avant de conduire.
 - Contre-indications du zolpidem : insuffisance respiratoire sévère, syndrome d'apnée du sommeil, insuffisance hépatique sévère, myasthénie, antécédent de comportement complexe du sommeil.
 - Épisode dépressif majeur : ne pas prescrire seul ; délivrer la plus petite quantité possible (risque suicidaire).
-- Grossesse : les études cas-témoins suggèrent une incidence des fentes labio-palatines inférieure à 2/1 000 après exposition, contre 1/1 000 attendu. En fin de grossesse, imprégnation néonatale (hypotonie axiale, troubles de la succion) sur 1 à 3 semaines.
+- Grossesse : de nombreuses études de cohorte n'ont pas montré d'effet malformatif après une exposition au premier trimestre ; certaines études cas-témoins ont observé plus de fentes labio-palatines (incidence inférieure à 2/1 000 après exposition, contre 1/1 000 attendu ; RCP Stilnox). Zolpidem déconseillé pendant toute la grossesse et l'allaitement. En fin de grossesse, imprégnation néonatale (hypotonie axiale, troubles de la succion) sur 1 à 3 semaines.
 
 ### Surveillance
 
@@ -156,7 +156,7 @@ Niveaux du Thésaurus de l'ANSM (version du 15 septembre 2023, non mise à jour 
 
 ### Mesures de réduction du risque
 
-- Zolpidem : liste I, ordonnance sécurisée, prescription en toutes lettres, durée limitée à 28 jours. Zopiclone : durée de prescription limitée à 4 semaines. Lorazépam : prescription limitée à 12 semaines.
+- Conditions de prescription (base de données publique des médicaments, novembre 2026). Zolpidem : liste I, ordonnance sécurisée, prescription en toutes lettres, limitée à 4 semaines, chevauchement interdit sauf mention expresse du prescripteur. Zopiclone : liste I, prescription limitée à 4 semaines. Lorazépam, alprazolam : liste I, prescription limitée à 12 semaines. Textes réglementaires : [à compléter : vérifier sur Légifrance l'arrêté du 7 octobre 1991 (durées de prescription) et les règles de prescription du zolpidem (2017)].
 - Annoncer la durée du traitement et les modalités d'arrêt dès la prescription.
 
 :::
