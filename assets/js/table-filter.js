@@ -22,7 +22,7 @@
   var ANNOUNCE_DELAY_MS = 400;
   var DEFAULT_LABEL = "Filtrer ce tableau";
   var HELP = "Un ou plusieurs mots, par exemple un médicament ou une classe. Les accents sont facultatifs.";
-  var HELP_FIRST_COLUMN = "Le nom d'un médicament, ou son début. Les accents sont facultatifs.";
+  var HELP_FIRST_COLUMN = "Le nom d'un médicament, ou une partie de ce nom. Les accents sont facultatifs.";
   var FIRST_COLUMN = "premiere-colonne";
 
   function fold(text) {
