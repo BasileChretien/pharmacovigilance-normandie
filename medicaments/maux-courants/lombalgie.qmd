@@ -11,19 +11,22 @@ substances: [paracétamol, ibuprofène]
 sources:
   - titre: "HAS, Prise en charge du patient présentant une lombalgie commune, recommandation de bonne pratique, 2019 (page de présentation)"
     url: "https://www.has-sante.fr/jcms/c_2961499/fr/prise-en-charge-du-patient-presentant-une-lombalgie-commune"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "HAS, Fiche mémo – Prise en charge du patient présentant une lombalgie commune, mars 2019 (PDF)"
     url: "https://www.has-sante.fr/upload/docs/application/pdf/2019-04/fm_lombalgie_v2_2.pdf"
-    consulte_le: 2026-11-25
-  - titre: "Base de données publique des médicaments, THIOCOLCHICOSIDE BIOGARAN 4 mg, comprimé (RCP)"
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments, THIOCOLCHICOSIDE BIOGARAN 4 mg, comprimé (RCP mis à jour le 15/10/2024)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67136662/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. DOLIPRANE 1000 mg, comprimé (paracétamol), RCP mis à jour le 25/08/2025"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/60234100/extrait"
+    consulte_le: 2026-11-28
   - titre: "ANSM, Savez-vous bien utiliser le paracétamol contre la douleur et la fièvre ?, 18 octobre 2021"
     url: "https://ansm.sante.fr/actualites/savez-vous-bien-utiliser-le-paracetamol-contre-la-douleur-et-la-fievre"
-    consulte_le: 2026-11-25
-  - titre: "ANSM, Traitement de la douleur durant la grossesse"
+    consulte_le: 2026-11-28
+  - titre: "ANSM, Traitement de la douleur durant la grossesse, 24/09/2020, mis à jour le 20/10/2022"
     url: "https://ansm.sante.fr/dossiers-thematiques/medicaments-et-grossesse/traitement-de-la-douleur-durant-la-grossesse"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Antalgiques non opiacés : les points essentiels"
     url: "https://pharmacomedicale.org/medicaments/par-specialites/item/antalgiques-non-opiaces-les-points-essentiels"
@@ -66,7 +69,7 @@ La lombalgie commune est une douleur du bas du dos sans signe de maladie grave. 
 
 ### Comment choisir ?
 
-Le choix dépend de vos autres maladies et de vos médicaments. Les anti-inflammatoires ne conviennent pas à tout le monde. Ils sont risqués en cas d'ulcère, de maladie des reins ou du cœur. Pendant la grossesse, ne prenez jamais d'anti-inflammatoire de vous-même. À partir du 6e mois, une seule prise est interdite. Demandez conseil à votre pharmacien.
+Le choix dépend de vos autres maladies et de vos médicaments. Les anti-inflammatoires ne conviennent pas à tout le monde. Ils sont risqués en cas d'ulcère (plaie de l'estomac ou de l'intestin), de maladie des reins ou du cœur. Pendant la grossesse, ne prenez jamais d'anti-inflammatoire de vous-même. À partir du 6e mois, une seule prise est interdite. Demandez conseil à votre pharmacien.
 
 ### Comment bien les utiliser ?
 
@@ -104,20 +107,20 @@ L'exercice physique est le traitement principal (grade B). Aucun antalgique n'a 
 
 ### Ce qu'il faut éviter
 
-- **Myorelaxants** : balance bénéfice/risque défavorable dans la lombalgie commune (AE). Pour le thiocolchicoside, le RCP restreint l'indication au traitement d'appoint des contractures douloureuses en pathologie rachidienne aiguë, à partir de 16 ans. La dose maximale est de 8 mg toutes les 12 heures, pendant 7 jours consécutifs au plus. Son métabolite SL59.0955 induit une aneuploïdie : contre-indication pendant la grossesse et l'allaitement, et contraception efficace requise chez la femme (jusqu'à 1 mois après) et chez l'homme (jusqu'à 3 mois après).
+- **Myorelaxants** : balance bénéfice/risque défavorable dans la lombalgie commune (AE). Pour le thiocolchicoside, le RCP restreint l'indication au traitement d'appoint des contractures douloureuses en pathologie rachidienne aiguë, à partir de 16 ans. La dose maximale est de 8 mg toutes les 12 heures, pendant 7 jours consécutifs au plus. Son métabolite SL59.0955 induit une aneuploïdie : contre-indication pendant la grossesse et l'allaitement, et contraception efficace requise chez la femme (jusqu'à 1 mois après) et chez l'homme (jusqu'à 3 mois après). Atteintes hépatiques, dont des hépatites fulminantes rapportées en association avec des AINS ou du paracétamol ; risque de convulsions, notamment chez l'épileptique (RCP).
 - **Corticoïdes et néfopam** : pas de recommandation possible faute d'étude (AE).
 - **Antibiotiques, vitamine D** (grade B), **patch de lidocaïne, anti-TNF** (AE) : pas d'indication.
 
 ### Précautions et effets indésirables
 
-- **Paracétamol** : 3 g/j au maximum en automédication chez l'adulte de plus de 50 kg, 4 g/j au maximum sur avis médical. Le mésusage est la première cause de greffe hépatique d'origine médicamenteuse en France (ANSM).
+- **Paracétamol** : 3 g/j au maximum en automédication chez l'adulte et l'enfant à partir de 50 kg, jusqu'à 4 g/j seulement sur avis médical (RCP Doliprane 1000 mg ; ANSM). Le surdosage est la première cause de greffe hépatique d'origine médicamenteuse en France (ANSM).
 - **AINS** : tenir compte des antécédents digestifs, rénaux et cardiovasculaires. Toute prise, même ponctuelle, est contre-indiquée à partir du 6e mois de grossesse (ANSM).
 - **Opioïdes** : informer des effets indésirables et réévaluer très régulièrement le maintien du traitement (AE). En cas de mésusage avéré, prise en charge conjointe avec un centre de la douleur ou d'addictologie (AE).
 
 ### Outils et liens
 
 - Arbre décisionnel HAS 2019 et questionnaires de risque de chronicité (STarT Back, Örebro) cités dans la fiche mémo.
-- Rechercher les drapeaux jaunes, bleus et noirs en cas d'arrêts de travail répétés ou de plus de 4 semaines (AE).
+- Rechercher tôt les facteurs de risque psychosociaux de chronicité, ou drapeaux jaunes (grade B) ; les drapeaux bleus et noirs en cas d'arrêts de travail répétés ou de plus de 4 semaines (AE).
 
 :::
 

@@ -11,22 +11,25 @@ substances: [paracétamol, ibuprofène]
 sources:
   - titre: "HAS. Fiche mémo : Prise en charge de la fièvre chez l'enfant, octobre 2016"
     url: "https://has-sante.fr/upload/docs/application/pdf/2016-10/fiche_memo_-_prise_en_charge_de_la_fievre_chez_lenfant.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM. Infections hivernales : il est conseillé d'éviter l'ibuprofène ou le kétoprofène en première intention, 17/12/2025, mis à jour le 18/12/2025"
     url: "https://ansm.sante.fr/actualites/infections-hivernales-il-est-conseille-deviter-libuprofene-ou-le-ketoprofene-en-premiere-intention"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "HAS. Prise en charge médicamenteuse de la douleur chez l'enfant : alternatives à la codéine, 2016"
     url: "https://has-sante.fr/jcms/c_2010340/fr/prise-en-charge-medicamenteuse-de-la-douleur-chez-l-enfant-alternatives-a-la-codeine"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "HAS. Choix et durées d'antibiothérapies : Angine aiguë de l'enfant (traitement symptomatique), mis à jour le 13/05/2025"
     url: "https://has-sante.fr/jcms/p_3529229/fr/choix-et-durees-d-antibiotherapies-angine-aigue-de-l-enfant"
-    consulte_le: 2026-11-25
-  - titre: "Base de données publique des médicaments. DOLIPRANE 2,4 POUR CENT, suspension buvable (paracétamol), RCP mis à jour le 05/10/2026"
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. DOLIPRANE 2,4 POUR CENT, suspension buvable (paracétamol), RCP et notice mis à jour le 05/10/2026"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/66477582/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. ADVILMED ENFANTS ET NOURRISSONS 20 mg/1 ml, suspension buvable (ibuprofène), RCP mis à jour le 19/06/2025"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/61902232/extrait"
+    consulte_le: 2026-11-28
   - titre: "Base de données publique des médicaments. DAFALGAN CODEINE, comprimé pelliculé, RCP mis à jour le 31/07/2026"
-    url: "http://base-donnees-publique.medicaments.gouv.fr/medicament/66003374/extrait"
-    consulte_le: 2026-11-25
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/66003374/extrait"
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Paracétamol"
     url: "https://pharmacomedicale.org/medicaments/par-specialites/item/paracetamol"
@@ -63,7 +66,7 @@ pour_aller_plus_loin:
 ::: {.encadre-pratique}
 ### Ce soir, que faire ?
 
-- **Paracétamol** (Doliprane, Dafalgan, Efferalgan) : avec le sirop pour enfant, la pipette doseuse est graduée en kilos. Remplissez-la jusqu'au poids de votre enfant, par exemple « 16 kg ».
+- **Paracétamol** (Doliprane, Dafalgan, Efferalgan) : avec le sirop pour enfant, la seringue doseuse est graduée en kilos. Remplissez-la jusqu'au poids de votre enfant, par exemple « 12 kg ». Au-delà de la dernière graduation, la notice explique comment la remplir deux fois.
 - Espacez les prises de 6 heures si possible, et jamais de moins de 4 heures. Pas plus de 4 prises en 24 heures.
 - **Ibuprofène** (Advil, Nurofen) : ne le donnez pas en plus du paracétamol sans avis médical, et évitez-le pendant une infection comme la varicelle.
 - Un doute la nuit ? Appelez le 15, ou demandez conseil au pharmacien de garde.
@@ -100,17 +103,17 @@ La dose dépend du poids de l'enfant, pas de son âge. Pesez-le si vous n'êtes 
 - La dose habituelle est d'environ 15 mg par kilo, toutes les 6 heures.
 - Par exemple, un enfant de 12 kilos reçoit environ 180 mg par prise, et un enfant de 16 kilos environ 240 mg.
 - Ne donnez pas plus de 4 prises en 24 heures. Espacez les prises de 6 heures si possible, et jamais de moins de 4 heures.
-- Pour les sirops, la pipette est graduée en kilos. Remplissez-la jusqu'au poids de votre enfant.
+- Pour les sirops, la seringue doseuse est graduée en kilos. Remplissez-la jusqu'au poids de votre enfant.
 
-Utilisez la pipette fournie dans la boîte du médicament. Ne la mélangez pas avec celle d'un autre flacon.
+Utilisez la seringue fournie dans la boîte du médicament. Ne la mélangez pas avec celle d'un autre flacon.
 
-{{< figure-svg fievre-douleur-enfant-1 alt="Remplir la pipette jusqu'au poids de l'enfant ; 4 prises par jour au plus, espacées de 6 heures." legende="Le paracétamol en sirop, avec sa pipette graduée en kilos." >}}
+{{< figure-svg fievre-douleur-enfant-1 alt="Remplir la seringue doseuse jusqu'au poids de l'enfant ; 4 prises par jour au plus, espacées de 6 heures." legende="Le paracétamol en sirop, avec sa seringue graduée en kilos." >}}
 
 Vérifiez qu'aucun autre médicament ne contient déjà du paracétamol. Lisez la composition sur la boîte ou demandez au pharmacien.
 
 ### Et l'ibuprofène ?
 
-L'ibuprofène se donne aussi selon le poids, avec la pipette graduée de son flacon. Respectez en général 6 heures entre deux prises. Arrêtez-le dès que la douleur a disparu.
+L'ibuprofène se donne aussi selon le poids, avec la seringue graduée de son flacon. Respectez au moins 6 heures entre deux prises. Arrêtez-le dès que la douleur a disparu.
 
 ### Quels effets surveiller ?
 
@@ -154,7 +157,7 @@ Posologies (HAS 2016) :
 | Molécule | Posologie | Intervalle |
 |---|---|---|
 | Paracétamol | 60 mg/kg/j en 4 ou 6 prises, soit environ 15 mg/kg toutes les 6 h | 4 h au minimum |
-| Ibuprofène | 20 à 30 mg/kg/j en 3 ou 4 prises | 6 h en général |
+| Ibuprofène | 20 à 30 mg/kg/j en 4 prises (3 ou 4 selon le RCP d'Advilmed) | 6 h au moins (RCP) |
 | Kétoprofène | 0,5 mg/kg/prise, sans dépasser 2 mg/kg/j, en 3 ou 4 prises | 6 h en général |
 
 Plafond du paracétamol (RCP Doliprane 2,4 %) : 80 mg/kg/j chez l'enfant de moins de 40 kg ; 3 g/j de 41 à 50 kg ; 4 g/j au-delà de 50 kg. Dans l'angine de l'enfant, la HAS limite l'ibuprofène à 24 heures entre 3 et 6 mois et à 72 heures au-delà, et ne le justifie pas pour la seule fièvre.
@@ -167,10 +170,10 @@ Plafond du paracétamol (RCP Doliprane 2,4 %) : 80 mg/kg/j chez l'enfant de moin
 ### Précautions et effets indésirables
 
 - Paracétamol : hypersensibilité, réactions cutanées graves et cytopénies très rares ; cytolyse hépatique en cas de surdosage. Vérifier l'absence d'autre spécialité contenant du paracétamol.
-- AINS (HAS 2016) : complications infectieuses bactériennes graves des tissus mous (fasciite nécrosante) en cas de varicelle ; prudence en cas d'infection bactérienne ; hémorragies digestives exceptionnelles ; insuffisance rénale aiguë exceptionnelle, à risque accru en cas de déshydratation ; allongement du temps de saignement ; bronchospasme, hyperkaliémie.
+- AINS (HAS 2016, fiche mémo) : complications infectieuses bactériennes exceptionnelles mais graves, en particulier en cas de varicelle ; prudence en cas d'infection bactérienne ; hémorragies digestives exceptionnelles ; insuffisance rénale aiguë exceptionnelle ; allongement du temps de saignement ; bronchospasme, hyperkaliémie. Une déshydratation doit être prévenue ou corrigée avant l'utilisation d'AINS (HAS 2016, alternatives à la codéine).
 - Signal de pharmacovigilance (ANSM, 2025) : entre le 1^er^ janvier 2019 et le 30 juin 2023, 162 cas graves avec l'ibuprofène et 54 avec le kétoprofène (sepsis, choc septique, méningites, infections cutanées graves, souvent à streptocoque ou pneumocoque), dont 12 décès, y compris chez des enfants et des adultes jeunes en bonne santé. L'ANSM recommande le paracétamol en première intention en contexte infectieux et d'éviter les AINS en cas de varicelle, de grippe ou d'infection ORL sans diagnostic biologique documenté.
 
-Codéine (décision ANSM d'avril 2013 rappelée par la HAS ; RCP Dafalgan Codéine) : contre-indiquée avant 12 ans, chez tous les patients de moins de 18 ans après amygdalectomie et/ou adénoïdectomie, chez les métaboliseurs CYP2D6 ultra-rapides connus et pendant l'allaitement. Mécanisme du risque : conversion variable en morphine selon le polymorphisme du CYP2D6, avec dépression respiratoire chez les métaboliseurs ultra-rapides. Entre 12 et 18 ans, elle n'est utilisée qu'après échec du paracétamol et/ou d'un AINS.
+Codéine (mesures ANSM d'avril 2013 rappelées par la HAS ; RCP Dafalgan Codéine) : contre-indiquée avant 12 ans, avant 18 ans après amygdalectomie et/ou adénoïdectomie pour syndrome d'apnées obstructives du sommeil (RCP ; l'ANSM, en 2013, déconseillait la codéine après toute amygdalectomie ou adénoïdectomie chez l'enfant), chez les métaboliseurs CYP2D6 ultra-rapides connus et pendant l'allaitement ; aussi en cas d'asthme ou d'insuffisance respiratoire. Mécanisme du risque : conversion variable en morphine selon le polymorphisme du CYP2D6, avec dépression respiratoire chez les métaboliseurs ultra-rapides. Entre 12 et 18 ans, elle n'est utilisée qu'après échec du paracétamol et/ou d'un AINS.
 
 Alternatives à la codéine (HAS 2016) : tramadol envisageable après 3 ans pour une douleur intense (même voie CYP2D6, effets indésirables graves possibles) ; morphine orale de référence pour une douleur intense ou après échec des paliers inférieurs, avec surveillance d'une heure après la première prise.
 

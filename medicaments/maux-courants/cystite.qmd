@@ -2,28 +2,31 @@
 title: "Cystite de la femme : quels médicaments ?"
 description: "Cystite simple de la femme : la bandelette urinaire, la fosfomycine en une prise puis le pivmécillinam, comment les prendre et quand consulter un médecin."
 public: [patients, professionnels]
-recommandation_de_reference: "HAS, Choix et durées d'antibiothérapies : Cystite aiguë simple, à risque de complication ou récidivante, de la femme (2021, mise à jour le 13 mai 2025)"
+recommandation_de_reference: "HAS, Choix et durées d'antibiothérapies : Cystite aiguë simple, à risque de complication ou récidivante, de la femme (2021, actualisée en 2024 ; page mise à jour le 13 mai 2025)"
 statut: brouillon
 relu_par: null
 relu_le: null
 prochaine_relecture: null
 substances: [fosfomycine, pivmécillinam, nitrofurantoïne]
 sources:
-  - titre: "HAS. Choix et durées d'antibiothérapies : Cystite aiguë simple, à risque de complication ou récidivante, de la femme, mise en ligne le 27/08/2021, mise à jour le 13/05/2025"
+  - titre: "HAS. Choix et durées d'antibiothérapies : Cystite aiguë simple, à risque de complication ou récidivante, de la femme, mise en ligne le 27/08/2021, actualisée en 2024, page mise à jour le 13/05/2025"
     url: "https://has-sante.fr/jcms/c_2722827/fr/choix-et-durees-d-antibiotherapies-cystite-aigue-simple-a-risque-de-complication-ou-recidivante-de-la-femme"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Santé.fr (ministère de la Santé), Antibio'Malin. Infection urinaire chez la femme, 05/06/2025"
     url: "https://www.sante.fr/antibiomalin-pour-savoir-comment-bien-utiliser-les-antibiotiques/infection-urinaire-chez-la-femme-definition-diagnostic-traitement-prevention"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Santé.fr. Angines et cystites : les pharmaciens peuvent délivrer sous certaines conditions des antibiotiques sans ordonnance, 20/06/2024"
     url: "https://www.sante.fr/angines-et-cystites-les-pharmaciens-peuvent-delivrer-sous-certaines-conditions-des-antibiotiques"
-    consulte_le: 2026-11-25
-  - titre: "Base de données publique des médicaments. MONURIL 3 g, granulés pour solution buvable en sachet (fosfomycine trométamol), RCP mis à jour le 25/07/2025"
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. MONURIL 3 g, granulés pour solution buvable en sachet (fosfomycine trométamol), RCP et notice mis à jour le 25/07/2025"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67951706/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Base de données publique des médicaments. SELEXID 200 mg, comprimé pelliculé (pivmécillinam), RCP mis à jour le 27/05/2026"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/60670489/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. FURADANTINE 50 mg, gélule (nitrofurantoïne), RCP mis à jour le 28/10/2025"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/62013296/extrait"
+    consulte_le: 2026-11-28
   - titre: "Antibioclic, outil d'aide à la prescription antibiotique (cystite de la femme et de l'enfant)"
     url: "https://antibioclic.com/"
     consulte_le: 2026-11-25
@@ -44,6 +47,7 @@ pour_aller_plus_loin:
 - Grande faiblesse, confusion ou peau marbrée : appelez le 15 (SAMU, service d'aide médicale urgente).
 - Vous êtes enceinte : consultez toujours un médecin.
 - Les signes durent ou s'aggravent après 3 jours de traitement, ou reviennent dans les 2 semaines : consultez.
+- Plus de 4 cystites en un an : consultez un médecin plutôt que le pharmacien. Un bilan peut vous être proposé.
 :::
 
 ::: {.a-retenir}
@@ -109,7 +113,7 @@ Buvez environ 1,5 litre d'eau par jour et ne vous retenez pas d'uriner.
 ### Quels effets surveiller ?
 
 - Fosfomycine : diarrhée, nausées, maux de tête, mal au ventre. Une diarrhée importante ou qui dure doit faire consulter.
-- Pivmécillinam : il peut irriter l'œsophage s'il est mal avalé. Signalez si vous prenez du valproate (traitement de l'épilepsie ou de troubles de l'humeur).
+- Pivmécillinam : il peut irriter l'œsophage s'il est mal avalé. Signalez si vous prenez du valproate (traitement de l'épilepsie ou de troubles de l'humeur) ou du méthotrexate.
 - Pour les deux : en cas de gonflement du visage ou de gêne pour respirer, appelez le 15.
 
 ### Comment éviter une nouvelle cystite ?
@@ -141,30 +145,30 @@ Fièvre, frissons, douleur lombaire souvent unilatérale ou signes digestifs év
 
 ### Stratégie thérapeutique
 
-Cystite aiguë simple (HAS, mise à jour 2025) :
+Cystite aiguë simple (HAS 2021, actualisation 2024) :
 
-- Diagnostic clinique et bandelette urinaire (leucocytes, nitrites). Pas d'ECBU d'emblée ; ECBU si évolution défavorable après 3 jours ou récidive précoce dans les 2 semaines.
+- Diagnostic clinique et bandelette urinaire (leucocytes, nitrites ; positive si leucocyturie ou nitriturie). Pas d'ECBU d'emblée ; ECBU si évolution défavorable après 3 jours ou récidive précoce dans les 2 semaines.
 - 1^re^ intention : fosfomycine-trométamol 3 g en prise unique.
 - 2^e^ intention : pivmécillinam 400 mg 2 fois par jour pendant 3 jours.
 - Les autres antibiotiques ne sont pas indiqués.
 
 Écart entre recommandation et AMM : le RCP de Selexid (mis à jour le 27/05/2026) indique 400 mg 2 fois par jour pendant 5 jours dans la cystite aiguë non compliquée, contre 3 jours dans la fiche HAS. [à compléter : arbitrage du relecteur sur la durée à afficher]
 
-Dispensation en officine sans ordonnance (depuis le 19 juin 2024) : femmes de 16 à 65 ans, cystite simple sans fièvre, bandelette positive, pharmacien formé ; attestation transmise via le DMP ou au médecin traitant.
+Dispensation en officine sans ordonnance (depuis le 19 juin 2024) : femmes de 16 à 65 ans, cystite simple sans fièvre, bandelette positive, pharmacien formé ; attestation remise à la patiente, informations inscrites dans le DMP ou, à défaut, attestation adressée au médecin traitant. Antibio'Malin oriente vers le médecin plutôt que la pharmacie en cas de récidive dans les 2 semaines après un antibiotique ou de 4 cystites en moins d'un an.
 
-Cystite à risque de complication (HAS) : ECBU systématique ; traitement différé selon l'antibiogramme de préférence (amoxicilline, puis pivmécillinam, puis nitrofurantoïne, 7 jours) ; si le traitement ne peut être différé : nitrofurantoïne 100 mg 3 fois par jour pendant 7 jours, ou fosfomycine-trométamol 3 g à J1, J3 et J5. Nitrofurantoïne contre-indiquée si DFG < 45 ml/min ou en traitements répétés.
+Cystite à risque de complication (HAS) : ECBU systématique ; traitement différé selon l'antibiogramme de préférence (amoxicilline, puis pivmécillinam, puis nitrofurantoïne, 7 jours) ; si le traitement ne peut être différé : nitrofurantoïne 100 mg 3 fois par jour pendant 7 jours, ou fosfomycine-trométamol 3 g à J1, J3 et J5. Nitrofurantoïne (RCP Furadantine) : contre-indiquée si DFG < 45 ml/min, en traitement prophylactique (continu ou intermittent) et en traitement curatif prolongé ; durée de 7 jours au plus, réintroduction exceptionnelle (HAS : traitements itératifs contre-indiqués).
 
 Cystite récidivante (au moins 4 épisodes en 12 mois) : traitement de chaque épisode comme une cystite simple ; mesures préventives ; canneberge (36 mg/j de proanthocyanidines) possible en cas de cystites récidivantes à *E. coli* ; œstrogènes locaux après la ménopause sur avis gynécologique. Antibioprophylaxie si au moins 1 épisode par mois, après ECBU : fosfomycine-trométamol 3 g tous les 7 jours au plus, ou triméthoprime 150 mg/j au coucher (ou en péricoïtal) ; en 2^e^ intention cotrimoxazole 400/80 mg/j. Pas de nitrofurantoïne, de bêta-lactamines ni de fluoroquinolones en prophylaxie.
 
 ### Mécanismes d'action
 
-- Fosfomycine : inhibition précoce de la synthèse de la paroi bactérienne (enzyme MurA) ; forte élimination urinaire sous forme active. [à compléter : RCP Monuril, rubriques 5.1 et 5.2]
-- Pivmécillinam : prodrogue du mécillinam, bêta-lactamine (amidinopénicilline) active surtout sur les entérobactéries. [à compléter : RCP Selexid, rubrique 5.1]
+- Fosfomycine : bactéricide ; inhibe la première étape de la synthèse du peptidoglycane de la paroi bactérienne. Éliminée sous forme inchangée par filtration glomérulaire : 40 à 50 % de la dose dans les urines, concentrations urinaires supérieures à 128 µg/ml pendant au moins 24 heures après 3 g (RCP Monuril, rubriques 5.1 et 5.2).
+- Pivmécillinam : prodrogue du mécillinam (amidinopénicilline), bactéricide par fixation sélective sur la PBP2, actif surtout sur les entérobactéries ; environ 40 à 45 % de la dose retrouvée inchangée dans les urines en 6 heures (RCP Selexid, rubriques 5.1 et 5.2).
 
 ### Précautions et effets indésirables
 
-- Fosfomycine-trométamol (RCP Monuril) : à jeun, 2 à 3 heures à distance d'un repas, de préférence au coucher après vidange vésicale ; non recommandée si clairance de la créatinine < 10 ml/min. Seule contre-indication : hypersensibilité. Association avec le métoclopramide à éviter (baisse des concentrations sériques et urinaires de fosfomycine). Effets fréquents : diarrhée, céphalées, vertiges, nausées, dyspepsie, douleurs abdominales, vulvovaginite. Rares mais graves : anaphylaxie, angio-œdème, colite à *Clostridioides difficile*.
-- Pivmécillinam (RCP Selexid) : contre-indiqué en cas d'affection retardant le transit œsophagien et de déficit génétique sévère en carnitine ; ne pas utiliser en cas de porphyrie ; prise au milieu d'un repas avec un grand verre d'eau, en position assise ou debout, sans s'allonger pendant 30 minutes (risque d'ulcération œsophagienne). Association déconseillée avec l'acide valproïque ou le valproate (déficit en carnitine : myopathie, hypoglycémie, cardiomyopathie, encéphalopathie). Prudence en cas de traitements longs ou répétés. Réactions cutanées graves rapportées ; rechercher une allergie aux bêta-lactamines.
+- Fosfomycine-trométamol (RCP Monuril) : à jeun, 2 à 3 heures à distance d'un repas, de préférence au coucher après vidange vésicale ; non recommandée si clairance de la créatinine < 10 ml/min. Seule contre-indication : hypersensibilité. Association avec le métoclopramide à éviter (baisse des concentrations sériques et urinaires de fosfomycine). Effets fréquents : diarrhée, céphalées, vertiges, nausées, dyspepsie, douleurs abdominales, vulvovaginite. Graves, de fréquence indéterminée : réactions anaphylactiques dont choc, angio-œdème, colite associée aux antibiotiques (*Clostridioides difficile*).
+- Pivmécillinam (RCP Selexid) : contre-indiqué en cas d'affection retardant le transit œsophagien et de déficit génétique sévère en carnitine ; ne pas utiliser en cas de porphyrie ; prise au milieu d'un repas avec un grand verre d'eau, en position assise ou debout, sans s'allonger pendant 30 minutes (risque d'ulcération œsophagienne). Associations déconseillées : acide valproïque ou valproate (déficit en carnitine : myopathie, hypoglycémie, cardiomyopathie, encéphalopathie) et méthotrexate. Prudence en cas de traitements longs ou répétés. Contre-indiqué en cas d'allergie aux pénicillines ou d'antécédent d'hypersensibilité immédiate sévère à une autre bêta-lactamine. Réactions cutanées graves (DRESS, syndrome de Stevens-Johnson, nécrolyse épidermique toxique) : arrêt immédiat.
 
 ### Ce qu'il faut éviter
 

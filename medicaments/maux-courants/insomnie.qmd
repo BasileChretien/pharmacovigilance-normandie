@@ -11,19 +11,37 @@ substances: [zolpidem, zopiclone, mélatonine, daridorexant]
 sources:
   - titre: "HAS, Quelle place pour les benzodiazépines dans l'insomnie ?, fiche de bon usage, validée le 11 juillet 2024 (PDF)"
     url: "https://www.has-sante.fr/upload/docs/application/pdf/2024-07/bum_bzd_insomnie_11_07_24_vf.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "HAS et SFTG, Prise en charge du patient adulte se plaignant d'insomnie en médecine générale, synthèse des recommandations, décembre 2006 (PDF)"
     url: "https://www.has-sante.fr/upload/docs/application/pdf/rpc_sftg_insomnie_-_synthese_des_recommandations.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "HAS, Arrêt des benzodiazépines et médicaments apparentés : démarche du médecin traitant en ambulatoire, fiche mémo, juin 2015 (PDF)"
+    url: "https://www.has-sante.fr/upload/docs/application/pdf/2015-06/fiche_memo_arret_benzodiazepines_pour_mel_2015_06_16.pdf"
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. STILNOX 10 mg, comprimé pelliculé sécable (zolpidem), RCP mis à jour le 08/02/2024"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/63179285/extrait"
+    consulte_le: 2026-11-28
   - titre: "EMA, Circadin (mélatonine 2 mg LP), informations sur le produit (RCP et notice), version française"
     url: "https://www.ema.europa.eu/fr/documents/product-information/circadin-epar-product-information_fr.pdf"
-    consulte_le: 2026-11-25
-  - titre: "Ordre national des pharmaciens, Compléments alimentaires contenant de la mélatonine : certaines populations doivent en éviter la consommation selon l'Anses, 19 avril 2018 (relais de l'avis de l'Anses, page de l'Anses inaccessible le jour de la consultation)"
-    url: "https://www.ordre.pharmacien.fr/les-communications/focus-sur/les-actualites/complements-alimentaires-contenant-de-la-melatonine-certaines-populations-doivent-en-eviter-la-consommation-selon-l-anses"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "EMA, Slenyto (mélatonine LP, enfant et adolescent), informations sur le produit, version française"
+    url: "https://www.ema.europa.eu/fr/documents/product-information/slenyto-epar-product-information_fr.pdf"
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. ADAFLEX 1 mg, comprimé (mélatonine), RCP mis à jour le 26/12/2024"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67474429/extrait"
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. VOQUILY 1 mg/mL, solution buvable (mélatonine), RCP mis à jour le 09/04/2026"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/66822516/extrait"
+    consulte_le: 2026-11-28
+  - titre: "EMA, Quviviq (daridorexant), informations sur le produit, version française"
+    url: "https://www.ema.europa.eu/fr/documents/product-information/quviviq-epar-product-information_fr.pdf"
+    consulte_le: 2026-11-28
+  - titre: "Anses, Avis relatif aux risques liés à la consommation de compléments alimentaires contenant de la mélatonine, saisine 2016-SA-0209, 23/02/2018 (copie mise en ligne par la SFRMS ; site de l'Anses bloqué par une vérification anti-robot le jour de la consultation)"
+    url: "https://www.sfrms-sommeil.org/wp-content/uploads/2025/04/Avis-sur-les-risques-lies-a-la-consommation-de-complements-alimentaires-contenant-de-la-melatonine-Anses-2018.pdf"
+    consulte_le: 2026-11-28
   - titre: "ANSM, Médicaments et conduite"
     url: "https://ansm.sante.fr/dossiers-thematiques/medicaments-et-conduite"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Hypnotiques : les points essentiels"
     url: "https://pharmacomedicale.org/medicaments/par-specialites/item/hypnotiques-les-points-essentiels"
@@ -81,13 +99,13 @@ Un somnifère se prend sur une courte période, à la dose la plus faible. La du
 - Troubles de la mémoire et du comportement.
 - Chutes, surtout chez les personnes âgées.
 - Dépendance (besoin de continuer à en prendre), même sans terrain à risque.
-- Retour de l'insomnie à l'arrêt, souvent passager.
+- Retour de l'insomnie à l'arrêt (effet rebond).
 
 Pratiquement tous les somnifères rendent la conduite dangereuse. Ne conduisez pas après en avoir pris.
 
 ### Et la mélatonine ?
 
-La mélatonine existe en médicament sur ordonnance. Il est réservé aux personnes de 55 ans ou plus, pour une durée courte. Elle existe aussi en complément alimentaire. Ces compléments sont déconseillés pendant la grossesse et l'allaitement, et chez l'enfant et l'adolescent. Ils le sont aussi en cas de maladie inflammatoire ou auto-immune, ou d'activité demandant une grande vigilance. Demandez conseil si vous avez une épilepsie, un asthme, un trouble de l'humeur, ou un autre traitement.
+La mélatonine existe en médicament, sur ordonnance. Contre l'insomnie de l'adulte, le médecin peut la prescrire à partir de 55 ans, sur une courte durée. Elle sert aussi contre le décalage horaire chez l'adulte. Chez certains enfants (autisme, trouble du déficit de l'attention avec hyperactivité), elle traite aussi l'insomnie. Elle existe enfin en complément alimentaire. Ces compléments sont déconseillés pendant la grossesse et l'allaitement, et chez l'enfant et l'adolescent. Ils le sont aussi en cas de maladie inflammatoire ou auto-immune, ou d'activité demandant une grande vigilance. Demandez conseil si vous avez une épilepsie, un asthme, un trouble de l'humeur, ou un autre traitement.
 
 ### Ce qu'il vaut mieux éviter
 
@@ -111,7 +129,7 @@ Une insomnie isolée est fréquemment le symptôme avant-coureur d'un état dép
 
 - Règles d'hygiène du sommeil dans tous les cas ; elles peuvent suffire dans les insomnies légères sans comorbidité.
 - Devant toute insomnie autre qu'occasionnelle : **TCC en première intention**.
-- **Hypnotique** (benzodiazépine ou apparenté) : seconde intention, stratégie à court terme, seulement dans l'insomnie occasionnelle ou transitoire sévère. Dose minimale utile, prescription limitée à 4 semaines période de réduction comprise (28 jours). Zolpidem : ordonnance sécurisée.
+- **Hypnotique** (benzodiazépine ou apparenté) : seconde intention, stratégie à court terme, seulement dans l'insomnie occasionnelle ou transitoire sévère. Dose minimale utile, prescription limitée à 4 semaines période de réduction comprise (28 jours). Zolpidem : liste I, ordonnance sécurisée, chevauchement interdit (RCP Stilnox).
 - **Insomnie chronique (> 3 mois)** : aucune benzodiazépine n'est indiquée ; seul le daridorexant (antagoniste des récepteurs de l'orexine) a actuellement cette indication.
 - **Sujet âgé** : favoriser l'éveil diurne et un coucher retardé ; non pharmacologique d'abord ; si hypnotique, réduire la posologie (de moitié par exemple).
 
@@ -122,14 +140,16 @@ Benzodiazépines et apparentés (zolpidem, zopiclone) : modulateurs allostériqu
 ### Précautions et effets indésirables
 
 - **Hypnotiques** : troubles de la mémoire, baisse de vigilance, troubles du comportement, chutes, tolérance et dépendance psychique et physique. L'association épidémiologique avec la démence n'est pas causale (HAS 2024). Contre-indications principales : syndrome d'apnées du sommeil, myasthénie, dépression respiratoire sévère. Rebond d'insomnie à l'arrêt. Conduite : niveau 3 pour pratiquement tous les somnifères (ANSM).
-- **Circadin 2 mg LP** (RCP) : monothérapie de l'insomnie primaire avec sommeil de mauvaise qualité à partir de 55 ans. Dose : 2 mg une fois par jour, 1 à 2 heures avant le coucher, après le repas, jusqu'à 13 semaines. Alcool à proscrire ; influence modérée sur l'aptitude à conduire.
+- **Circadin 2 mg LP** et ses génériques (RCP ; liste II) : monothérapie de l'insomnie primaire avec sommeil de mauvaise qualité à partir de 55 ans, traitement court. Dose : 2 mg une fois par jour, 1 à 2 heures avant le coucher, après le repas, jusqu'à 13 semaines. Alcool à proscrire ; influence modérée sur l'aptitude à conduire.
+- **Autres médicaments à base de mélatonine** (RCP) : Slenyto (2 à 18 ans, troubles du spectre de l'autisme et/ou maladies neurogénétiques ; liste I) ; Adaflex (décalage horaire de l'adulte, et insomnie de l'enfant de 6 à 17 ans avec trouble du déficit de l'attention avec hyperactivité ; liste II) ; Voquily (même insomnie de l'enfant de 6 à 17 ans ; liste I).
+- **Quviviq (daridorexant)** (RCP ; liste I) : adulte dont les symptômes durent depuis au moins 3 mois avec retentissement diurne ; 50 mg (25 mg dans certains cas) 30 minutes avant le coucher ; réévaluer dans les 3 mois.
 - **Compléments alimentaires à base de mélatonine** (Anses, 2018) : à éviter chez la femme enceinte ou allaitante, l'enfant, l'adolescent, en cas de maladie inflammatoire ou auto-immune et d'activité exigeant une vigilance soutenue. Avis médical préalable en cas d'épilepsie, d'asthme, de troubles de l'humeur, du comportement ou de la personnalité, ou de traitement en cours. Usage ponctuel.
 
 ### Ce qu'il faut éviter
 
 - Prescrire ou renouveler un hypnotique de façon systématique.
 - Associer deux hypnotiques ou deux anxiolytiques ; cumuler les sédatifs.
-- Arrêter brutalement : chez l'utilisateur au long cours, sevrage progressif sur quelques semaines à plusieurs mois. Proposer une stratégie d'arrêt à tout patient traité quotidiennement depuis plus d'un mois. Les traitements de 2 à 5 jours ne nécessitent pas d'arrêt progressif.
+- Arrêter brutalement : chez l'utilisateur au long cours, sevrage progressif sur quelques semaines à plusieurs mois (HAS 2024 ; 4 à 10 semaines le plus souvent, HAS 2015). Proposer une stratégie d'arrêt à tout patient traité quotidiennement depuis plus de 30 jours (HAS 2015). Les traitements très brefs, de 2 à 5 jours, ne nécessitent pas d'arrêt progressif (HAS 2024).
 
 ### Outils et liens
 

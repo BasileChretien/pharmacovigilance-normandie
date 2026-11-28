@@ -9,36 +9,48 @@ relu_le: null
 prochaine_relecture: null
 substances: [ibuprofène, sumatriptan, paracétamol]
 sources:
+  - titre: "SFEMC. Ducros A et al. Revised guidelines of the French headache society for the diagnosis and management of migraine in adults. Part 2: Pharmacological treatment. Rev Neurol. 2021;177(7):734-52 (texte intégral, version acceptée, sur sfetd-douleur.org)"
+    url: "https://doi.org/10.1016/j.neurol.2021.07.006"
+    consulte_le: 2026-11-28
+  - titre: "SFEMC. Demarquay G et al. Revised guidelines of the French Headache Society. Part 1: Diagnosis and assessment. Rev Neurol. 2021;177(7):725-33"
+    url: "https://doi.org/10.1016/j.neurol.2021.07.001"
+    consulte_le: 2026-11-28
+  - titre: "SFEMC. Texte intégral des recommandations 2021, parties 1 et 2 (version acceptée de Rev Neurol 2021), mis en ligne par la SFETD"
+    url: "https://www.sfetd-douleur.org/wp-content/uploads/2021/11/Recommandations_migraine.pdf"
+    consulte_le: 2026-11-28
   - titre: "SFEMC. Donnet A, Demarquay G, Ducros A. Recommandations 2021 pour le diagnostic et la prise en charge de la migraine chez l'adulte : traitement des crises. Presse Med Form. 2022;3(5):404-11 (résumé)"
     url: "https://www.em-consulte.com/it/article/1561290/recommandations-2021-pour-le-diagnostic-et-la-pris"
     consulte_le: 2026-11-25
-  - titre: "SFEMC. Ducros A et al. Revised guidelines of the French headache society for the diagnosis and management of migraine in adults. Part 2: Pharmacological treatment. Rev Neurol. 2021;177(7):734-52 (notice PubMed)"
-    url: "https://doi.org/10.1016/j.neurol.2021.07.006"
-    consulte_le: 2026-11-25
-  - titre: "SFEMC. Demarquay G et al. Revised guidelines of the French Headache Society. Part 1: Diagnosis and assessment. Rev Neurol. 2021;177(7):725-33 (notice PubMed)"
-    url: "https://doi.org/10.1016/j.neurol.2021.07.001"
-    consulte_le: 2026-11-25
-  - titre: "VIDAL. Migraine de l'adulte : une prise en charge thérapeutique bien codifiée (synthèse des recommandations SFEMC 2021), 16 novembre 2023"
-    url: "https://www.vidal.fr/actualites/30484-migraine-de-l-adulte-une-prise-en-charge-therapeutique-bien-codifiee.html"
-    consulte_le: 2026-11-25
   - titre: "SFEMC, SFN. Recommandations françaises pour la prise en charge des céphalées en urgence (version française de Moisset X et al., Rev Neurol 2016;172:350-60)"
     url: "https://sfetd-douleur.org/wp-content/uploads/2021/02/Recommandations_pour_la_prise_en_charge_des_cphales_en_urgence.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "International Headache Society. ICHD-3, 8.2 Medication-overuse headache"
     url: "https://ichd-3.org/8-headache-attributed-to-a-substance-or-its-withdrawal/8-2-medication-overuse-headache-moh/"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "International Headache Society. ICHD-3, 8.2.2 Triptan-overuse headache"
     url: "https://ichd-3.org/8-headache-attributed-to-a-substance-or-its-withdrawal/8-2-medication-overuse-headache-moh/8-2-2-triptan-overuse-headache/"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "International Headache Society. ICHD-3, 8.2.3 Non-opioid analgesic-overuse headache"
     url: "https://ichd-3.org/8-headache-attributed-to-a-substance-or-its-withdrawal/8-2-medication-overuse-headache-moh/8-2-3-simple-analgesic-overuse-headache/"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "International Headache Society. ICHD-3, 8.2.5 Combination-analgesic-overuse headache"
+    url: "https://ichd-3.org/8-headache-attributed-to-a-substance-or-its-withdrawal/8-2-medication-overuse-headache-moh/8-2-5-combination-analgesic-overuse-headache/"
+    consulte_le: 2026-11-28
   - titre: "Base de données publique des médicaments. IMIGRANE 50 mg (sumatriptan), RCP mis à jour le 30/10/2025"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/64676030/extrait"
-    consulte_le: 2026-11-25
-  - titre: "ANSM, AINS chez les femmes enceintes : améliorer l'information sur les risques pour un meilleur usage (avril 2025)"
+    consulte_le: 2026-11-28
+  - titre: "ANSM, Thésaurus des interactions médicamenteuses, version du 15/09/2023 (triptans : pages 249 et 250)"
+    url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
+    consulte_le: 2026-11-28
+  - titre: "ANSM, AINS chez les femmes enceintes : améliorer l'information sur les risques pour un meilleur usage, 25/04/2025"
     url: "https://ansm.sante.fr/actualites/anti-inflammatoires-non-steroidiens-ains-chez-les-femmes-enceintes-ameliorer-linformation-sur-les-risques-pour-un-meilleur-usage"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. ADVIL 200 mg, comprimé enrobé (ibuprofène), RCP (grossesse : 24 semaines d'aménorrhée)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/68634000/extrait"
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. DOLIPRANE 1000 mg, comprimé (paracétamol), RCP mis à jour le 25/08/2025"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/60234100/extrait"
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Antimigraineux : les points essentiels"
     url: "https://pharmacomedicale.org/medicaments/par-specialites/item/antimigraineux-points-essentiels"
@@ -58,20 +70,20 @@ pour_aller_plus_loin:
 - Le mal de tête arrive d'un coup et devient très fort en moins d'une minute : appelez le 15 (SAMU, service d'aide médicale urgente).
 - Le mal de tête s'accompagne d'une faiblesse d'un bras ou d'une jambe, d'un trouble de la parole ou de la vue : appelez le 15.
 - Le mal de tête s'accompagne de fièvre, sans cause évidente comme une grippe : consultez en urgence.
-- Le mal de tête est nouveau, inhabituel, ou s'aggrave depuis moins d'une semaine : consultez en urgence.
-- Vous prenez un médicament contre la crise plus de 8 jours par mois, ou votre traitement habituel ne marche plus : parlez-en à votre médecin.
+- Le mal de tête est inhabituel, et il a commencé ou empiré depuis moins d'une semaine : consultez en urgence.
+- Vous prenez un médicament contre la crise 8 jours par mois ou plus, ou votre traitement habituel ne marche plus : parlez-en à votre médecin.
 :::
 
 ::: {.a-retenir}
 - Prenez le traitement de la crise tôt, dès le début du mal de tête.
 - Trop de médicaments contre la douleur entretient les maux de tête : visez 8 jours de traitement par mois au plus.
-- Évitez la codéine, le tramadol et les comprimés qui associent plusieurs médicaments.
+- Évitez la codéine et le tramadol contre la migraine.
 :::
 
 ::: {.encadre-pratique}
 ### Vous êtes enceinte ou vous allaitez ?
 
-- Ne prenez ni ibuprofène ni aspirine sans avis médical. Ces anti-inflammatoires sont interdits à partir du début du 6e mois de grossesse (24 semaines d'aménorrhée, comptées depuis le premier jour des dernières règles), même en une seule prise, et déconseillés avant. Voir [Les anti-inflammatoires (AINS)](../classes/ains.qmd).
+- Ne prenez ni ibuprofène ni aspirine sans avis médical. Ces anti-inflammatoires sont interdits à partir du début du 6e mois de grossesse, même en une seule prise. Ce 6e mois commence à 24 semaines d'aménorrhée, comptées depuis le premier jour des dernières règles. Avant, ne les prenez que si votre médecin vous les a prescrits. Voir [Les anti-inflammatoires (AINS)](../classes/ains.qmd).
 - Le paracétamol (Doliprane, Dafalgan, Efferalgan) peut être utilisé, à la dose la plus faible et le moins longtemps possible.
 - Parlez de vos migraines à votre médecin ou à votre sage-femme. Voir aussi [Grossesse et allaitement](../situations/grossesse-allaitement.qmd).
 :::
@@ -123,7 +135,7 @@ Prendre trop souvent des médicaments contre la douleur peut provoquer un mal de
 ### Ce qu'il vaut mieux éviter
 
 - Les médicaments à base de codéine ou de tramadol contre la migraine.
-- Les comprimés qui associent plusieurs médicaments.
+- Les comprimés qui associent plusieurs médicaments contre la douleur, pris souvent. Le mal de tête par abus de médicaments arrive alors dès 10 jours par mois.
 - Deux triptans différents le même jour.
 - Un triptan si vous prenez certains antidépresseurs (IMAO, inhibiteurs de la monoamine oxydase). Montrez toujours vos ordonnances au pharmacien.
 
@@ -137,20 +149,20 @@ Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre ph
 
 ### Signes d'alerte
 
-D'après les recommandations SFEMC/SFN sur les céphalées en urgence, une prise en charge urgente s'impose devant : une céphalée brutale, voire en coup de tonnerre (intensité maximale en moins d'une minute) ; une céphalée récente ou d'aggravation récente (moins de 7 jours) et inhabituelle ; une céphalée fébrile sans cause générale évidente ; une céphalée avec signes neurologiques ; une suspicion d'intoxication (notamment au monoxyde de carbone) ; un contexte d'immunodépression. Toute modification récente d'une céphalée primaire doit faire écarter une céphalée secondaire.
+D'après les recommandations SFEMC/SFN sur les céphalées en urgence, une prise en charge urgente s'impose devant : une céphalée brutale, voire en coup de tonnerre (intensité maximale en moins d'une minute) ; une céphalée récente ou d'aggravation récente (moins de 7 jours) et inhabituelle ; une céphalée fébrile sans cause générale évidente ; une céphalée avec signes neurologiques ; une suspicion d'intoxication (notamment au monoxyde de carbone) ; un contexte d'immunodépression. Les céphalées de début brutal et/ou inhabituelles doivent être considérées comme secondaires jusqu'à preuve du contraire.
 
 ### Stratégie thérapeutique
 
 Selon la SFEMC 2021, l'objectif du traitement de crise est l'absence de douleur à 2 heures, ou un soulagement significatif et durable sur 24 heures, avec peu ou pas d'effets indésirables. Le traitement est pris le plus tôt possible, à dose adéquate, par une voie adaptée aux troubles digestifs.
 
 - Crise légère : AINS (ou aspirine) en première intention ; triptan ajouté si la réponse est insuffisante après 1 heure.
-- Crise modérée à sévère : triptan d'emblée ; association AINS + triptan si le triptan seul est insuffisant ou en cas de récurrence.
+- Crise modérée à sévère : triptan d'emblée, AINS ajouté si la réponse est insuffisante après 1 heure ; prise simultanée triptan + AINS si les crises résistent au triptan seul ou si les récurrences sont gênantes.
 - Migraine avec aura : AINS au début de l'aura, triptan au début de la céphalée.
 - Nausées ou vomissements invalidants : métoclopramide oral ou parentéral.
 - Paracétamol : crises peu intenses ; association paracétamol + métoclopramide si AINS, aspirine et triptans sont contre-indiqués.
-- Opioïdes et associations médicamenteuses : à éviter (risque de mésusage, d'abus et de surconsommation).
+- Opioïdes : à éviter (risques de mésusage, d'abus et de céphalée par abus médicamenteux). Les associations d'antalgiques exposent à la céphalée par abus dès 10 jours par mois (ICHD-3, 8.2.5) ; l'association paracétamol + métoclopramide reste recommandée en cas de contre-indication aux autres traitements.
 
-Réévaluer après trois crises (questionnaire M-TOQ proposé par la SFEMC). Limiter si possible le traitement de crise à 8 jours par mois. Un traitement de fond se discute notamment si le traitement de crise est pris au moins 8 jours par mois depuis au moins 3 mois (synthèse VIDAL des recommandations ; [à compléter : vérifier dans le texte intégral Rev Neurol 2021]).
+Réévaluer après trois crises (questionnaire M-TOQ proposé par la SFEMC). Limiter le traitement de crise à 8 jours par mois au plus. Un traitement de fond est indiqué si le traitement de crise est pris 8 jours ou plus par mois depuis au moins 3 mois, en cas de migraine sévère selon les critères français, de migraine chronique (ICHD-3), de score HIT-6 de 60 ou plus, ou de crises invalidantes malgré un traitement de crise optimisé (SFEMC 2021, partie 2, recommandation 16).
 
 ### Mécanismes d'action
 
@@ -161,19 +173,19 @@ Réévaluer après trois crises (questionnaire M-TOQ proposé par la SFEMC). Lim
 
 Sumatriptan (RCP Imigrane, 30/10/2025), à transposer avec prudence aux autres triptans :
 
-- Contre-indications : antécédent d'infarctus du myocarde ou de cardiopathie ischémique, antécédent d'AVC ou d'AIT, hypertension modérée ou sévère, artériopathie périphérique, insuffisance hépatique sévère.
+- Contre-indications : antécédent d'infarctus du myocarde ou de cardiopathie ischémique, symptômes ou signes compatibles avec une cardiopathie ischémique, vasospasme coronarien (angor de Prinzmetal), antécédent d'AVC ou d'AIT, hypertension modérée ou sévère et hypertension légère traitée non contrôlée, artériopathie périphérique, insuffisance hépatique sévère.
 - Posologie : 50 mg, 100 mg si besoin ; deuxième prise possible en cas de récurrence, au moins 2 heures après la première ; maximum 300 mg par 24 heures. Non recommandé avant 18 ans et après 65 ans.
 - Effets indésirables fréquents : vertiges, somnolence, paresthésies, bouffées de chaleur, élévation transitoire de la pression artérielle, sensation de lourdeur ou d'oppression thoracique ou cervicale, asthénie.
 - Allaitement : éviter d'allaiter pendant les 12 heures suivant la prise.
 
-Interactions (RCP) : IMAO et dérivés de l'ergot de seigle, autres triptans : associations contre-indiquées (délai de 24 heures après l'ergotamine ou un autre triptan, de 6 heures après le sumatriptan avant l'ergotamine, de 2 semaines après l'arrêt d'un IMAO). ISRS/IRSN : risque de syndrome sérotoninergique, surveillance si l'association est justifiée. [à compléter : niveaux exacts dans le Thésaurus ANSM des interactions médicamenteuses].
+Interactions (RCP) : IMAO et dérivés de l'ergot de seigle, autres triptans : associations contre-indiquées (délai de 24 heures après l'ergotamine ou un autre triptan, de 6 heures après le sumatriptan avant l'ergotamine, de 2 semaines après l'arrêt d'un IMAO). ISRS/IRSN : risque de syndrome sérotoninergique, surveillance si l'association est justifiée. Thésaurus ANSM (15/09/2023, pages 249 et 250) : triptans + alcaloïdes de l'ergot vasoconstricteurs, contre-indication (délai de 6 à 24 heures selon le triptan) ; triptans métabolisés par la MAO (almotriptan, rizatriptan, sumatriptan, zolmitriptan) + IMAO irréversibles, IMAO-A réversibles (dont linézolide et bleu de méthylène) ou IMAO-B, contre-indication ; autres triptans (élétriptan, frovatriptan, naratriptan) + ces IMAO, association déconseillée ; triptans + ISRS, à prendre en compte. Le Thésaurus ne donne pas les couples triptan + IRSN et triptan + triptan, qui viennent du RCP.
 
 Céphalée par abus médicamenteux (ICHD-3, 8.2) : céphalée 15 jours ou plus par mois chez un patient céphalalgique, avec prise régulière depuis plus de 3 mois de triptans, d'opioïdes, d'ergotés ou d'associations 10 jours ou plus par mois, ou d'antalgiques non opioïdes (paracétamol, aspirine, AINS) 15 jours ou plus par mois. Le RCP du sumatriptan demande d'y penser en cas de céphalées fréquentes ou quotidiennes malgré le traitement.
 
 ### Ce qu'il faut éviter
 
 - Codéine, tramadol et autres opioïdes dans la migraine.
-- Associations fixes d'antalgiques.
+- Associations fixes d'antalgiques prises souvent (seuil d'abus de 10 jours par mois).
 - Triptan chez un patient coronarien ou aux antécédents d'AVC.
 - Augmentation des prises en cas de crises fréquentes, au lieu de discuter un traitement de fond.
 
