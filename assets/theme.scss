@@ -555,8 +555,9 @@ main table a { padding-block: 0.125rem; }
   .tableau-large thead tr > :first-child { z-index: 3; }
 }
 
-// Cards (.tableau-cartes): one card per row when the box is narrower than 36rem (576 px):
-// on phones, and on a tablet where the text column is about 500 px wide. The first cell is
+// Cards (.tableau-cartes): one card per row when the box is narrower than 36rem (about
+// 650 px with the site's 18 px root font, more when the reader enlarges the text): on phones,
+// and on tablets, where the text column is 500 to 600 px wide. The first cell is
 // the card's title; each other cell shows its column header (data-label, written by the
 // filter) above its value. The header row stays in the table for screen readers, out of
 // sight, and assets/js/tableaux.js gives the rows and cells their table roles back.
@@ -697,7 +698,7 @@ main table a { padding-block: 0.125rem; }
 // Column widths: the generator's colgroup. On a phone each issue is a card ("Tables").
 .vigiking-table td { vertical-align: top; }
 .vigiking-table td:first-child { font-weight: 600; }
-.vigiking-table td:first-child, .vigiking-table td:last-child { white-space: nowrap; }
+.vigiking-table td:last-child { white-space: nowrap; }
 // "PDF" names itself: its card needs no label.
 .vigiking-table td:last-child::before { display: none !important; }
 .vigiking-table ul { margin: 0; padding-left: 1.1rem; }

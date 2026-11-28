@@ -5,7 +5,8 @@
 --     <div class="tableau-defile-cadre"><table>…</table></div>
 --   </div>
 --
--- How each table behaves on a phone (assets/theme.scss, "Tables"; docs/tableaux.md):
+-- How each table behaves in a box under 36rem (about 650 px), on a phone or a tablet
+-- (assets/theme.scss, "Tables"; docs/tableaux.md):
 -- - two columns: the text wraps, the table fits;
 -- - three columns or more: one card per row (tableau-cartes). Each body cell gets
 --   data-label, the header of its column, which the card shows above the value; the
