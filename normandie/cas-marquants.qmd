@@ -1,6 +1,7 @@
 ---
 title: "Cas marquants normands"
 description: "Des cas d'effets indésirables anonymisés, choisis par les CRPV pour ce qu'ils apprennent aux professionnels."
+mascotte: sobre
 type: institutionnel
 statut: brouillon
 relu_par: null

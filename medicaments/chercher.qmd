@@ -1,6 +1,7 @@
 ---
 title: "Chercher un médicament"
 description: "Le nom inscrit sur la boîte, ou celui de la substance, suffit pour trouver la notice et le résumé des caractéristiques du produit officiels d'un médicament vendu en France."
+mascotte: recherche
 type: institutionnel
 statut: brouillon
 relu_par: null

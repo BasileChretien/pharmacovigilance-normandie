@@ -47,32 +47,53 @@ Les SVG passent aussi les règles de `tools/checks/check_figures.py` (taille, je
 
 ## Où elle est, et ce qu'elle y fait
 
-Une variante par contexte, dans `assets/img/mascotte/`, écrite par
-`tools/design/make_mascotte.py` à partir du dessin `assets/img/mascotte.svg` (on modifie le
-dessin ou le script, puis on le relance ; on ne modifie pas les variantes). Même personnage,
-une pose et une courte animation propres à chaque endroit :
+Sur toutes les pages (décision du 28/11/2026, pages sérieuses comprises, avec une animation
+plus douce ; l'animation se joue à chaque ouverture de page). Une variante par contexte, dans
+`assets/img/mascotte/`, écrite par `tools/design/make_mascotte.py` à partir du dessin
+`assets/img/mascotte.svg` (on modifie le dessin ou le script, puis on le relance ; on ne
+modifie pas les variantes). Même personnage, une pose et une courte animation propres à
+chaque endroit.
 
-| Contexte | Page | Pose (aussi sans animation) | Animation |
+Dans le bandeau de titre de chaque page, à droite du titre : la variante de la rubrique,
+donnée par la clé `mascotte:` du `_metadata.yml` de son dossier, ou de l'en-tête de la page
+pour une page qui fait exception. Le filtre `assets/filters/mascotte.lua` en fait une image
+que `_includes/title-block.html` (le bandeau de Quarto, une ligne ajoutée) place à côté du
+titre. Une page qui montre déjà la mascotte dans son corps (accueil, 404, Vigiking, liste des
+publications vide) n'en a pas dans son bandeau.
+
+| Contexte | Où | Pose (aussi sans animation) | Animation |
 |---|---|---|---|
-| `accueil` | accueil, à côté de « Déclarer », tournée vers lui | cor aux lèvres, trois ondes | il lève le cor et sonne l'alerte, trois fois |
-| `vigiking` | page du bulletin et anciens numéros | cor aux lèvres, trois ondes | un petit saut, puis le cor annonce le numéro |
+| `accueil` | accueil, à côté de « Déclarer », tournée vers lui ; page Déclarer | cor aux lèvres, trois ondes | il lève le cor et sonne l'alerte, trois fois |
+| `vigiking` | rubrique Vigiking | cor aux lèvres, trois ondes | un petit saut, puis le cor annonce le numéro |
 | `404` | page introuvable | cor écarté, bouche en « o », point d'interrogation | il regarde à gauche, à droite, la tête penchée ; le « ? » surgit |
-| `recherche` | recherche du site sans résultat | cor écarté, bouche « hmm » | il cherche des yeux, la tête penchée |
+| `recherche` | recherche du site sans résultat ; Chercher un médicament | cor écarté, bouche « hmm » | il cherche des yeux, la tête penchée |
 | `attente` | liste des publications pas encore remplie | cor écarté, sourire, trois points | les points s'allument l'un après l'autre ; il respire, cligne des yeux |
+| `comprendre` | rubrique Comprendre | sourire, ampoule allumée | il réfléchit, tête penchée ; l'ampoule surgit et rayonne ; il hoche la tête |
+| `bon-usage` | rubrique Bon usage | sourire, coche verte | la coche se trace ; il hoche la tête |
+| `normandie` | rubrique En Normandie | sourire, deux vagues de la Manche sous les pieds | il tangue comme sur un drakkar, la mer ondule |
+| `crpv` | rubrique Les CRPV | sourire | il salue avec son cor, deux fois |
+| `question` | Poser une question | sourire, point d'interrogation | tête penchée, le « ? » surgit |
+| `actualites` (douce) | rubrique Actualités, alertes officielles comprises | cor aux lèvres, trois ondes | il lève le cor, qui sonne une seule fois |
+| `medicaments` (douce) | rubrique Médicaments : fiches, maux courants, situations | sourire | il lève un peu son bouclier-comprimé, hoche la tête, cligne des yeux |
+| `sobre` (douce) | Cas marquants, Vous pensez avoir un effet indésirable ?, À propos | bouche calme, sans sourire | une respiration, un clignement |
 
-- Les ondes du cor ne sortent que là où il annonce quelque chose (accueil, Vigiking).
+- Pages sur des risques, des doses ou des effets graves (`medicaments/`, `actualites/`, cas
+  marquants, que faire en cas d'effet indésirable) : seulement une variante douce
+  (`DOUX` du script) : clignement, respiration, hochement, regard, bouclier levé, cor qui
+  sonne une fois. Ni saut, ni tangage, rien qui surgit.
+- Les ondes du cor ne sortent que là où il annonce quelque chose (accueil, Vigiking, Actualités).
 - Chaque animation se joue une fois et s'arrête d'elle-même en 5 secondes au plus : une image
   ne peut pas être mise en pause depuis la page, et au-delà de 5 secondes il faudrait un bouton
   pause (WCAG 2.2.2). Aucune ne se joue si le lecteur a demandé moins d'animations
   (`prefers-reduced-motion`) : il voit la pose. Sur l'accueil, la mascotte bascule aussi quand
   on survole ou qu'on atteint le bouton « Déclarer » au clavier, sous la même condition.
-- Jamais : fiches médicament, fiches de classe, pages grossesse, alertes de sécurité, pages
-  sur des effets graves. Sur ces pages (`medicaments/`, `actualites/`, cas marquants, que
-  faire en cas d'effet indésirable), même la recherche sans résultat reste sans mascotte.
 - Toujours décorative (`alt=""` et `aria-hidden`), cachée à l'impression.
-- La liste des pages et la variante de chacune sont fixées par `tests/test_mascotte.py` ; les
-  règles des variantes (jetons, durée, mouvement réduit, ondes) par
+- Fixé par les tests : les pages, la variante de chaque rubrique et les variantes douces par
+  `tests/test_mascotte.py` ; le bandeau par `tests/test_mascotte_bandeau.py` ; les règles des
+  variantes (jetons, durée, mouvement réduit, ondes, douceur) par
   `tests/test_mascotte_animations.py`.
+- Nouvelle rubrique : lui donner un `_metadata.yml` avec sa clé `mascotte:` (le test le
+  demande), d'une variante qu'aucune autre rubrique n'a.
 - Bulletin Vigiking (PDF) : la mascotte, fixe, à gauche du bandeau « VIGIKING NORMAND » de la
   couverture, tournée vers lui (branche du bulletin, `tools/design/make_bulletin_mascotte.py`).
 

@@ -1,6 +1,7 @@
 ---
 title: "Déclarer un effet indésirable"
 description: "Qui peut déclarer, quoi déclarer, comment, et ce qui se passe ensuite."
+mascotte: accueil
 public: [patients, professionnels]
 statut: brouillon
 relu_par: null

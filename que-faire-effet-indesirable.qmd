@@ -1,6 +1,7 @@
 ---
 title: "Vous pensez avoir un effet indésirable ?"
 description: "Un médicament semble vous rendre malade : les bons réflexes, qui appeler et comment le signaler."
+mascotte: sobre
 public: [patients]
 statut: brouillon
 relu_par: null
