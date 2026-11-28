@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 930" width="440" height="930" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 930" width="440" height="930" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="currentColor">
   <text x="16" y="26" fill="#46586a">Dans chaque bandeau : ce que je veux ajouter.</text>
   <text x="16" y="48" fill="#46586a">Dessous : ce que je prends déjà.</text>
   <rect x="8" y="66" width="424" height="46" rx="8" fill="#eef6fa"/>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 352" width="440" height="352" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 352" width="440" height="352" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="currentColor">
   <defs>
     <marker id="angine-mal-de-gorge-1-fleche" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M0 0 L10 5 L0 10 Z" fill="#073f6e"/>
@@ -7,8 +7,8 @@
 
   <!-- 1. Swab at the back of the throat -->
   <rect x="64" y="12" width="360" height="64" rx="10" fill="#eef6fa"/>
-  <circle cx="36" cy="44" r="16" fill="#073f6e"/>
-  <text x="36" y="50" text-anchor="middle" font-weight="700" fill="#ffffff">1</text>
+  <circle cx="36" cy="44" r="16" fill="none" stroke="#073f6e" stroke-width="2.5"/>
+  <text x="36" y="50" text-anchor="middle" font-weight="700" fill="#073f6e">1</text>
   <line x1="82" y1="58" x2="122" y2="30" stroke="#46586a" stroke-width="3" stroke-linecap="round"/>
   <ellipse cx="126" cy="27" rx="7" ry="4.5" transform="rotate(-35 126 27)" fill="#ffffff" stroke="#10283a" stroke-width="1.8"/>
   <text x="146" y="40" font-size="17" font-weight="700">Prélèvement au fond</text>
@@ -17,8 +17,8 @@
 
   <!-- 2. Reading in a few minutes -->
   <rect x="64" y="100" width="360" height="64" rx="10" fill="#eef6fa"/>
-  <circle cx="36" cy="132" r="16" fill="#073f6e"/>
-  <text x="36" y="138" text-anchor="middle" font-weight="700" fill="#ffffff">2</text>
+  <circle cx="36" cy="132" r="16" fill="none" stroke="#073f6e" stroke-width="2.5"/>
+  <text x="36" y="138" text-anchor="middle" font-weight="700" fill="#073f6e">2</text>
   <rect x="80" y="116" width="48" height="32" rx="6" fill="#ffffff" stroke="#10283a" stroke-width="2"/>
   <rect x="88" y="124" width="22" height="16" rx="2" fill="#ffffff" stroke="#46586a" stroke-width="1.5"/>
   <path d="M95 125 V139 M103 125 V139" stroke="#073f6e" stroke-width="2"/>
@@ -28,8 +28,8 @@
   <line x1="36" y1="148" x2="36" y2="184" stroke="#073f6e" stroke-width="2.5" marker-end="url(#angine-mal-de-gorge-1-fleche)"/>
 
   <!-- 3. Two results -->
-  <circle cx="36" cy="204" r="16" fill="#073f6e"/>
-  <text x="36" y="210" text-anchor="middle" font-weight="700" fill="#ffffff">3</text>
+  <circle cx="36" cy="204" r="16" fill="none" stroke="#073f6e" stroke-width="2.5"/>
+  <text x="36" y="210" text-anchor="middle" font-weight="700" fill="#073f6e">3</text>
   <path d="M52 204 H320 V228" fill="none" stroke="#073f6e" stroke-width="2.5" marker-end="url(#angine-mal-de-gorge-1-fleche)"/>
   <path d="M116 204 V228" fill="none" stroke="#073f6e" stroke-width="2.5" marker-end="url(#angine-mal-de-gorge-1-fleche)"/>
   <rect x="16" y="232" width="200" height="104" rx="10" fill="#dcebf3" stroke="#073f6e" stroke-width="2"/>

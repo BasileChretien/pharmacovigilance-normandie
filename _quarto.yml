@@ -8,6 +8,8 @@ project:
     - assets/data/
   post-render:
     - tools/build/search_postprocess.py
+    # Valid HTML for the light/dark switch (duplicate ids, unnamed button).
+    - tools/build/theme_postprocess.py
   render:
     - "*.qmd"
     - "!_templates/"
@@ -38,8 +40,14 @@ website:
     position: below-navbar
   navbar:
     title: "Pharmacovigilance Normandie"
-    logo: assets/img/logo-mark.svg
-    logo-alt: "Accueil Pharmacovigilance Normandie"
+    # The dark variant keeps the centre of the mark visible on the dark bar.
+    logo:
+      light:
+        path: assets/img/logo-mark.svg
+        alt: "Accueil Pharmacovigilance Normandie"
+      dark:
+        path: assets/img/logo-mark-sombre.svg
+        alt: "Accueil Pharmacovigilance Normandie"
     collapse-below: xl
     left:
       - text: "Médicaments"
@@ -87,9 +95,12 @@ website:
 
 format:
   html:
+    # Dark theme: the reader's system setting, or the switch in the navigation bar
+    # (docs/mode-sombre.md). assets/theme-sombre.scss only changes the tokens' values.
     theme:
-      - default
-      - assets/theme.scss
+      light: [default, assets/theme.scss]
+      dark: [default, assets/theme.scss, assets/theme-sombre.scss]
+    respect-user-color-scheme: true
     css: assets/fonts/fonts.css
     title-block-banner: true
     toc: true
@@ -103,6 +114,8 @@ format:
     include-in-header:
       - text: |
           <meta name="robots" content="noindex, nofollow">
+      # Dark theme: Dark Reader lock, printing in light, state of the switch.
+      - file: _includes/theme-sombre.html
     include-after-body:
       - text: |
           <script>
