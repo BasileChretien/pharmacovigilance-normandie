@@ -24,6 +24,12 @@ sources:
   - titre: "Centre de référence sur les agents tératogènes (CRAT)"
     url: "https://www.lecrat.fr/"
     consulte_le: 2026-11-25
+  - titre: "HAS, Comment prévenir les fractures dues à l'ostéoporose, fiche bon usage (2007)"
+    url: "https://www.has-sante.fr/upload/docs/application/pdf/prevenir_fractures_osteoporose.pdf"
+    consulte_le: 2026-11-28
+  - titre: "HAS, Bon usage des médicaments de l'ostéoporose, fiche (validée le 5 janvier 2023)"
+    url: "https://www.has-sante.fr/upload/docs/application/pdf/2019-05/bum_osteoporose_maj_avril2019.pdf"
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Corticoïdes : les points essentiels"
     url: "https://pharmacomedicale.org/medicaments/par-specialites/item/corticoides-les-points-essentiels"
@@ -126,7 +132,7 @@ Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-s
 
 ### Surveillance
 
-Pression artérielle, poids, glycémie (autosurveillance renforcée chez le diabétique, l'efficacité de l'insuline, de la metformine et des sulfamides hypoglycémiants diminuant), kaliémie si forte dose, traitement prolongé, risque de troubles du rythme ou association hypokaliémiante. Examen ophtalmologique en cas de vision floue. Mesures associées au long cours : apport calcique et vitamine D systématique, régime pauvre en sucres rapides et riche en protéines, apport sodé réduit au-delà de 15 à 20 mg/j d'équivalent prednisone. Ostéoporose cortisonique (SFR et GRIO 2014, corticothérapie prévue ou en cours d'au moins 3 mois, quelle que soit la dose) : chez la femme ménopausée et l'homme de plus de 50 ans, traitement anti-ostéoporotique si antécédent de fracture par fragilité après 50 ans, T-score ≤ −2,5 sur au moins un site, âge ≥ 70 ans ou dose ≥ 7,5 mg/j d'équivalent prednisone pendant plus de 3 mois ; les bisphosphonates sont utilisables dans toutes ces situations. Chez la femme non ménopausée et l'homme de moins de 50 ans, décision au cas par cas. Indications de l'ostéodensitométrie, et conduite chez les patients de plus de 50 ans sans aucun de ces critères (place du FRAX) : [à compléter : texte complet des recommandations SFR et GRIO 2014, lues en résumé].
+Pression artérielle, poids, glycémie (autosurveillance renforcée chez le diabétique, l'efficacité de l'insuline, de la metformine et des sulfamides hypoglycémiants diminuant), kaliémie si forte dose, traitement prolongé, risque de troubles du rythme ou association hypokaliémiante. Examen ophtalmologique en cas de vision floue. Mesures associées au long cours : apport calcique et vitamine D systématique, régime pauvre en sucres rapides et riche en protéines, apport sodé réduit au-delà de 15 à 20 mg/j d'équivalent prednisone. Ostéoporose cortisonique (SFR et GRIO 2014, corticothérapie prévue ou en cours d'au moins 3 mois, quelle que soit la dose) : chez la femme ménopausée et l'homme de plus de 50 ans, traitement anti-ostéoporotique si antécédent de fracture par fragilité après 50 ans, T-score ≤ −2,5 sur au moins un site, âge ≥ 70 ans ou dose ≥ 7,5 mg/j d'équivalent prednisone pendant plus de 3 mois ; les bisphosphonates sont utilisables dans toutes ces situations. Chez la femme non ménopausée et l'homme de moins de 50 ans, décision au cas par cas. Ostéodensitométrie (HAS, 2007) : indiquée en cas de corticothérapie systémique en cours, prescrite pour au moins 3 mois consécutifs à une dose ≥ 7,5 mg/j d'équivalent prednisone, de préférence au début du traitement ; chez la femme ménopausée, aussi après une telle corticothérapie ; seulement si le résultat peut modifier la prise en charge. La HAS (2023) demande d'envisager le traitement préventif de l'ostéoporose cortisonique dès que la dose atteint 7,5 mg/j d'équivalent prednisone pour une durée prévisible de plus de 3 mois. Conduite sous ce seuil chez les plus de 50 ans sans autre critère (place du FRAX) : [à compléter : texte complet des recommandations SFR et GRIO 2014].
 
 ### Interactions majeures
 

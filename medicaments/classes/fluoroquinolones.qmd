@@ -27,6 +27,12 @@ sources:
   - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
     url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
     consulte_le: 2026-11-28
+  - titre: "ANSM, « Fluoroquinolones : une consommation en baisse mais des mésusages qui persistent » (19/12/2025, mis à jour le 06/05/2026)"
+    url: "https://ansm.sante.fr/actualites/fluoroquinolones-une-consommation-en-baisse-mais-des-mesusages-qui-persistent"
+    consulte_le: 2026-11-28
+  - titre: "Vuotto F et al. (SPILF, GPIP), The latest updates on the proper use of fluoroquinolones – Actualisation 2025, Infect Dis Now 2025;55:105062"
+    url: "https://doi.org/10.1016/j.idnow.2025.105062"
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Fluoroquinolones : des précautions d'utilisations toujours indispensables"
     url: "https://www.rfcrpv.fr/fluoroquinolones-des-precautions-dutilisations-toujours-indispensables/"
@@ -144,7 +150,7 @@ Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-s
 
 Ne pas prescrire dans : les infections non sévères ou spontanément résolutives (pharyngite, angine, bronchite aiguë) ; la prévention de la diarrhée du voyageur ou des infections urinaires basses récidivantes ; les infections non bactériennes (prostatite chronique non bactérienne) ; les infections légères à modérées (cystite non compliquée, exacerbation de BPCO, rhinosinusite bactérienne aiguë, otite moyenne aiguë) sauf si les antibiotiques habituels sont jugés inappropriés ; un antécédent d'effet indésirable grave avec une quinolone. Informer le patient des risques et de la conduite à tenir avant la prescription.
 
-Entre 2014 et 2023, l'usage a baissé d'environ 50 % (2,2 millions de délivrances en ville pour 1,7 million d'utilisateurs en 2023), mais des mésusages persistent (ANSM, 2025).
+Entre 2014 et 2023, l'usage a baissé d'environ 50 % (de 4,8 à 2,2 millions de délivrances en ville par an ; 1,7 million d'utilisateurs en 2023), mais les deux tiers des prescriptions de 2023 seraient non conformes aux recommandations les plus récentes (ANSM, 2025). Avant toute prescription, l'ANSM renvoie aux recommandations de la HAS et à la mise au point de la SPILF et du GPIP actualisée en 2025.
 
 ### Surveillance
 
