@@ -25,11 +25,17 @@
 
   // ---------- Text ----------------------------------------------------------------
 
+  // Letters that NFD does not split into a base letter and an accent, spelt out so that
+  // "oestrogenes" finds "Œstrogènes". Same table as fold() in tools/build/make_cytochromes.py.
+  var LIGATURES = { "œ": "oe", "æ": "ae", "ß": "ss", "ø": "o" };
+
+  // The search key of a name; the build spots duplicates with the same key (tests/fold-cases.json).
   function fold(text) {
     return String(text || "")
       .normalize("NFD")
       .replace(/[̀-ͯ]/g, "")
       .toLowerCase()
+      .replace(/[œæßø]/g, function (c) { return LIGATURES[c]; })
       .replace(/[^a-z0-9]+/g, " ")
       .trim();
   }
@@ -262,7 +268,7 @@
   function optionText(m) { return m.nom + (m.precision ? " (" + m.precision + ")" : ""); }
 
   // One field with its list of suggestions. lire() gives the chosen or typed drug; onEdit runs
-  // at every keystroke (the result of the previous pair is then out of date).
+  // at every keystroke and every choice (the result of the previous pair is then out of date).
   function combobox(doc, input, data, onChoice, onEdit) {
     var listbox = doc.getElementById(input.getAttribute("aria-controls"));
     var options = [];
@@ -297,14 +303,13 @@
     function choisir(m) {
       input.value = m.nom;
       choisi = m;
-      input.removeAttribute("aria-invalid");
       fermer();
+      onEdit();
       onChoice();
     }
 
     input.addEventListener("input", function () {
       choisi = null;
-      input.removeAttribute("aria-invalid");
       onEdit();
       options = suggest(input.value, data.medicaments);
       active = -1;
@@ -427,19 +432,29 @@
       minuterie = setTimeout(function () { statut.textContent = texte; }, ANNONCE_MS);
     }
 
+    // A field is flagged only while the message that says why is shown: the flags are set
+    // from the latest check, and cleared with its message.
+    function marquer(invalides) {
+      Object.keys(champs).forEach(function (label) {
+        if (invalides.indexOf(label) >= 0) champs[label].input.setAttribute("aria-invalid", "true");
+        else champs[label].input.removeAttribute("aria-invalid");
+      });
+    }
+
     function effacer() {
       clearTimeout(minuterie);
       statut.textContent = "";
       resultat.textContent = "";
+      marquer([]);
     }
 
     function verifier() {
       var ra = champs.A.lire();
       var rb = champs.B.lire();
       var erreurs = problems(ra, rb);
+      marquer(erreurs.invalides);
       if (erreurs.invalides.length) {
         resultat.textContent = "";
-        erreurs.invalides.forEach(function (label) { champs[label].input.setAttribute("aria-invalid", "true"); });
         annoncer(erreurs.message);
         return;
       }
@@ -447,7 +462,6 @@
       var b = rb.medicament;
       [champs.A, champs.B].forEach(function (champ, i) {
         champ.input.value = (i ? b : a).nom;
-        champ.input.removeAttribute("aria-invalid");
         champ.fermer();
       });
       var liste = mechanisms(a, b, data.enzymes);

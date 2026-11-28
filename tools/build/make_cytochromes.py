@@ -44,11 +44,18 @@ TABLES = (
 )
 
 
+# Letters that NFD does not split into a base letter and an accent, spelt out.
+LIGATURES = str.maketrans({"œ": "oe", "æ": "ae", "ß": "ss", "ø": "o"})
+# The combining accents U+0300 to U+036F, the range the JS fold() removes.
+ACCENTS = re.compile("[" + chr(0x300) + "-" + chr(0x36F) + "]")
+
+
 def fold(text: str) -> str:
-    """Lower case, no accents, punctuation as spaces: the checker's search key (fold() in
-    assets/js/cyp-verificateur.js), used here to sort and to spot duplicates."""
-    ascii_text = unicodedata.normalize("NFD", text).encode("ascii", "ignore").decode().lower()
-    return re.sub(r"[^a-z0-9]+", " ", ascii_text).strip()
+    """The checker's search key, step for step as fold() in assets/js/cyp-verificateur.js:
+    accents dropped, lower case, ligatures spelt out, anything else than a-z and 0-9 a space.
+    Used here to sort and to spot duplicates; tests/fold-cases.json holds both to it."""
+    no_accents = ACCENTS.sub("", unicodedata.normalize("NFD", text)).lower()
+    return re.sub(r"[^a-z0-9]+", " ", no_accents.translate(LIGATURES)).strip()
 
 
 class _UniqueKeyLoader(yaml.SafeLoader):
