@@ -47,3 +47,20 @@ jobs:
           npm install --no-save playwright @axe-core/playwright
           npx playwright install --with-deps chromium
           npm run check:a11y
+      # Phone layout (docs/mobile.md): WebKit at 320 and 390 px, Chromium at 412 px, light
+      # and dark. Uses the playwright installed by the axe step; the browser tests are
+      # skipped by npm run test:js, which runs before it.
+      - name: Phone layout
+        id: mobile
+        run: |
+          npx playwright install --with-deps webkit
+          node --test tests/js/check-mobile-browser.test.mjs
+          npm run check:mobile
+      - name: Screenshots of the phone-layout failures
+        if: failure() && steps.mobile.outcome == 'failure'
+        uses: actions/upload-artifact@v7
+        with:
+          name: captures-mobile
+          path: _captures-mobile/
+          if-no-files-found: ignore
+          retention-days: 14

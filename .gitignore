@@ -18,3 +18,6 @@ data/bdpm/
 
 # Open Medic and INSEE files downloaded by tools/build/fetch_openmedic.py
 data/openmedic/
+
+# Screenshots of tools/checks/check_mobile.mjs (CI artefact)
+_captures-mobile/
