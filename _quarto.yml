@@ -140,6 +140,7 @@ format:
       - text: |
           <script>
           (function () {
+            if (!document.querySelector(".tableau-defile")) { return; }
             var offset = document.querySelector('meta[name="quarto:offset"]');
             var script = document.createElement("script");
             script.src = (offset ? offset.getAttribute("content") : "./") + "assets/js/tableaux.js";
