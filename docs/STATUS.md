@@ -96,9 +96,10 @@ Prochaines pull requests, dans l'ordre (décidé le 27/11/2026) :
 - [x] Les 52 figures marquées `FIGURE À FAIRE` (28/11/2026) : 48 dessinées (comprendre 5, bon
       usage 5, fiches de classe 23, maux courants 11, situations 3, carte des départements
       générée depuis les contours officiels), style et contrôle dans `docs/regles-redaction.md`
-      section 5 et `tools/checks/check_figures.py`. Quatre repères restent, inscrits plus haut
-      (À faire par les CRPV) ou ci-dessous.
-- [ ] RCP annoté interactif (comprendre/lire-un-rcp) : le tableau « Où chercher quoi ? » en donne
-      déjà le contenu ; choisir avec les relecteurs un médicament dont annoter le RCP réel.
+      section 5 et `tools/checks/check_figures.py`. Trois repères restent, inscrits plus haut
+      (À faire par les CRPV).
+- [x] RCP annoté interactif (comprendre/lire-un-rcp, 28/11/2026) : le RCP d'ADVIL 200 mg,
+      section par section ; chacune s'ouvre sur ce qu'on y cherche et ce qu'en dit ce RCP
+      (`assets/filters/rcp-annote.lua`). Choix du médicament à confirmer avec les relecteurs.
 - [ ] Contrôles automatiques : mode « site » dans manuscript-guard ou script séparé (décision).
 - [ ] Refaire le test avec de vrais utilisateurs normands après la relecture.

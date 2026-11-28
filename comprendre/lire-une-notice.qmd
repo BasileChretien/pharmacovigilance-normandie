@@ -9,16 +9,22 @@ prochaine_relecture: null
 sources:
   - titre: "EMA, modèle QRD de l'information produit (RCP, étiquetage, notice), version 10.4, février 2024, version française"
     url: "https://www.ema.europa.eu/fr/documents/template-form/qrd-product-information-template-version-104-highlighted_fr.pdf"
-    consulte_le: 2026-11-25
-  - titre: "EMA, QRD product information annotated template, version 10.3 (notice, rubrique 4 : convention de fréquence)"
-    url: "https://www.ema.europa.eu/en/documents/template-form/qrd-product-information-annotated-template-english-version-103_en.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "EMA, QRD product information annotated template, version 10.4, février 2024 (notice, rubrique 4 : effets graves en premier, convention de fréquence)"
+    url: "https://www.ema.europa.eu/en/documents/template-form/qrd-product-information-annotated-template-english-version-104_en.pdf"
+    consulte_le: 2026-11-28
   - titre: "EMA, Eliquis : information produit en français (exemple de libellés de fréquence dans une notice)"
     url: "https://www.ema.europa.eu/fr/documents/product-information/eliquis-epar-product-information_fr.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Base de données publique des médicaments (ANSM, HAS, UNCAM)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "ANSM, E-notice : phase pilote (QR code sur certaines boîtes en pharmacie depuis l'automne 2025, pour deux ans)"
+    url: "https://ansm.sante.fr/dossiers-thematiques/e-notice-phase-pilote"
+    consulte_le: 2026-11-28
+  - titre: "Commission européenne, Guideline on Summary of Product Characteristics (SmPC), rév. 2, section 4.8 (effets dont le lien de causalité est au moins une possibilité raisonnable)"
+    url: "https://health.ec.europa.eu/document/download/6a043dea-7d0f-4252-947b-cef58f53d37e_en"
+    consulte_le: 2026-11-28
 ---
 
 ::: {.texte-patient}
@@ -70,21 +76,19 @@ Dans la rubrique 4, chaque groupe d'effets porte un mot de fréquence, suivi d'u
 | Mot de la notice | Formule de la notice prise en exemple |
 |---|---|
 | Très fréquent | « pouvant affecter plus d'une personne sur 10 » |
-| Fréquent | « pouvant affecter jusqu'à 1 personne sur 10 » |
+| Fréquent | « pouvant affecter jusqu'à une personne sur 10 » |
 | Peu fréquent | « pouvant affecter jusqu'à une personne sur 100 » |
 | Rare | « pouvant affecter jusqu'à une personne sur 1 000 » |
 | Très rare | « pouvant affecter jusqu'à une personne sur 10 000 » |
 | Fréquence indéterminée | « la fréquence ne peut être estimée à partir des seules données disponibles » |
 
-« Jusqu'à 1 personne sur 10 » est la limite haute : un effet « fréquent » touche de 1 à 10 personnes sur 100. Voir [Que veulent dire « fréquent » et « rare » ?](frequences.qmd).
-
-« Jusqu'à 1 personne sur 10 » veut dire « au plus 1 personne sur 10 ». Selon la règle européenne, un effet « fréquent » touche entre 1 et 10 personnes sur 100. Pour comprendre ces mots en détail, lisez la page [Que veulent dire « fréquent » et « rare » ?](frequences.qmd).
+« Jusqu'à 1 personne sur 10 » veut dire « au plus 1 personne sur 10 ». Selon la définition européenne, un effet « fréquent » touche de 1 à moins de 10 personnes sur 100. Pour comprendre ces mots en détail, lisez la page [Que veulent dire « fréquent » et « rare » ?](frequences.qmd).
 
 ### Un effet cité dans la notice va-t-il m'arriver ?
 
 Non, pas forcément. La notice le dit elle-même : ces effets ne surviennent pas chez tout le monde. Prenons un effet « fréquent ». Il touche au plus 1 personne sur 10. Au moins 9 personnes sur 10 ne l'ont donc pas.
 
-La liste est longue parce qu'elle doit être complète. Un effet y figure dès que le lien avec le médicament est possible. Ce n'est pas une preuve que le médicament le provoque.
+La liste est longue parce qu'elle doit être complète. Un effet y figure dès que le lien avec le médicament est raisonnablement possible, après examen des données. Ce n'est pas une preuve que le médicament le provoque.
 
 ### Et si mon effet n'est pas dans la notice ?
 
@@ -92,9 +96,9 @@ Il peut quand même venir du médicament. Parlez-en à votre médecin ou à votr
 
 ### Où trouver la notice à jour ?
 
-La notice change quand on apprend du nouveau sur un médicament. Celle de votre boîte peut donc être plus ancienne. La version à jour est sur la [base de données publique des médicaments](https://base-donnees-publique.medicaments.gouv.fr/). Ce site public est géré par l'Agence nationale de sécurité du médicament et des produits de santé (ANSM). Tapez le nom du médicament, puis ouvrez sa notice.
+La notice change quand on apprend du nouveau sur un médicament. Celle de votre boîte peut donc être plus ancienne. La version à jour est sur la [base de données publique des médicaments](https://base-donnees-publique.medicaments.gouv.fr/). Ce site public est tenu par l'Agence nationale de sécurité du médicament et des produits de santé (ANSM). La Haute Autorité de santé et l'Assurance maladie y participent. Tapez le nom du médicament, puis ouvrez sa notice.
 
-Depuis l'automne 2025, un essai est en cours sur certaines boîtes. Elles portent un QR code (un carré à photographier avec un téléphone). Ce code ouvre directement la notice en ligne.
+Depuis l'automne 2025, un essai de deux ans est en cours sur certaines boîtes vendues en pharmacie. Elles portent un QR code (un carré à photographier avec un téléphone). Ce code ouvre directement la notice en ligne. La notice en papier reste dans la boîte.
 
 Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
 

@@ -134,6 +134,11 @@ que le médicament est en cause.
   source devient « [à compléter : source] » dans la page, pas dans la figure. Personnes,
   organes et objets sont des schémas sans échelle. Une figure qui demanderait de
   l'interaction (un clic) devient statique, ou son repère reste, inscrit dans `docs/STATUS.md`.
+- **Sections à ouvrir** (le RCP annoté de comprendre/lire-un-rcp) : un bloc `::: {.rcp-annote}`
+  contient un bloc `::: {.rcp-section numero="4.8" titre="Effets indésirables"}` par section,
+  qui devient une ligne à ouvrir (`<details>`, sans JavaScript ; `assets/filters/rcp-annote.lua`).
+  Chaque section commence par « **À y chercher.** » puis « **Dans ce RCP.** »
+  (`tests/test_rcp_annote.py`).
 - **Fichier** : SVG écrit à la main, `assets/img/figures/<page>-<n>.svg`, placé dans la page
   par le raccourci
   `{{< figure-svg <page>-<n> alt="…" legende="…" >}}` (`assets/filters/figure-svg.lua`).

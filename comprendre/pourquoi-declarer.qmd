@@ -9,31 +9,37 @@ prochaine_relecture: null
 sources:
   - titre: "ANSM, Comment déclarer si vous êtes patient ou usager ?"
     url: "https://ansm.sante.fr/documents/reference/declarer-un-effet-indesirable/comment-declarer-si-vous-etes-patient-ou-usager"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Comment déclarer si vous êtes professionnel de santé ?"
     url: "https://ansm.sante.fr/documents/reference/declarer-un-effet-indesirable/comment-declarer-si-vous-etes-professionnel-de-sante"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Organiser les vigilances"
     url: "https://ansm.sante.fr/qui-sommes-nous/nos-missions/assurer-la-securite-des-produits-de-sante/p/organiser-les-vigilances"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "ANSM, Liste des centres régionaux de pharmacovigilance (CRPV), mise à jour le 14/09/2026 (30 centres)"
+    url: "https://ansm.sante.fr/page/liste-des-centres-regionaux-de-pharmacovigilance"
+    consulte_le: 2026-11-28
   - titre: "ANSM, La surveillance renforcée des médicaments (BNPV, enquêtes, détection des signaux)"
     url: "https://ansm.sante.fr/page/la-surveillance-renforcee-des-medicaments"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Réglementation relative à la pharmacovigilance (décret n° 2011-655 du 10 juin 2011)"
     url: "https://ansm.sante.fr/documents/reference/reglementation-relative-a-la-pharmacovigilance"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "EMA, Que signifie le triangle noir ? (pourquoi surveiller les médicaments après leur autorisation)"
     url: "https://www.ema.europa.eu/fr/documents/other/what-does-black-triangle-mean_fr.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Levothyrox : les nouveaux résultats de l'enquête nationale de pharmacovigilance confirment les premiers résultats (30/01/2018)"
     url: "https://ansm.sante.fr/actualites/point-dactualite-sur-le-levothyrox-et-les-autres-medicaments-a-base-de-levothyroxine-les-nouveaux-resultats-de-lenquete-nationale-de-pharmacovigilance-confirment-les-premiers-resultats-publies-le-10-octobre-2017-communique"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Médicaments à base de lévothyroxine : les études menées et les analyses en laboratoire"
     url: "https://ansm.sante.fr/dossiers-thematiques/les-medicaments-a-base-de-levothyroxine-disponibles-en-france-1/les-etudes-menees-et-les-analyses-en-laboratoire"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Benfluorex (Mediator) : bilan du suivi de pharmacovigilance"
     url: "https://ansm.sante.fr/actualites/benfluorex-mediator-bilan-du-suivi-de-pharmacovigilance"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "Directive 2001/83/CE instituant un code communautaire relatif aux médicaments à usage humain, version consolidée au 1er janvier 2025 (article 107 bis, paragraphe 4 : transmission des cas à EudraVigilance)"
+    url: "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:02001L0083-20250101"
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Missions du réseau des CRPV"
     url: "https://www.rfcrpv.fr/missions/"
@@ -84,13 +90,13 @@ Gardez la boîte du médicament à portée de main. Le nom exact et le numéro d
 
 Voir aussi la page [Déclarer](../declarer.qmd).
 
-{{< figure-svg pourquoi-declarer-1 alt="Parcours d'une déclaration en cinq étapes. 1, vous ou votre soignant déclarez l'effet. 2, le CRPV de votre région analyse et vous recontacte si besoin. 3, le CRPV enregistre le cas dans la base nationale. 4, l'Agence du médicament recherche des signaux. 5, les cas graves partent dans la base européenne. En retour, des mesures sont possibles : notice modifiée, restriction, retrait du marché." legende="Le parcours d'une déclaration, de vous jusqu'aux mesures qui peuvent changer la notice ou l'usage du médicament." >}}
+{{< figure-svg pourquoi-declarer-1 alt="Parcours d'une déclaration en cinq étapes. 1, vous ou votre soignant déclarez l'effet. 2, le CRPV de votre région analyse et vous recontacte si besoin. 3, le CRPV enregistre le cas dans la base nationale. 4, l'Agence du médicament recherche des signaux. 5, grave ou non, le cas part dans la base européenne. En retour, des mesures sont possibles : notice modifiée, restriction, retrait du marché." legende="Le parcours d'une déclaration, de vous jusqu'aux mesures qui peuvent changer la notice ou l'usage du médicament." >}}
 
 ### Que devient votre déclaration ?
 
 Elle arrive au CRPV de votre région. Un expert l'analyse. Il peut vous recontacter pour compléter le dossier. Il évalue ensuite le rôle possible du médicament.
 
-Le cas est enregistré dans la base nationale de pharmacovigilance. L'Agence nationale de sécurité du médicament et des produits de santé (ANSM) y a accès. Elle y recherche des signaux, c'est-à-dire des effets nouveaux ou plus fréquents que prévu. Les cas graves sont aussi envoyés dans une base européenne.
+Le cas est enregistré dans la base nationale de pharmacovigilance. L'Agence nationale de sécurité du médicament et des produits de santé (ANSM) y a accès. Elle y recherche des signaux, c'est-à-dire des effets nouveaux ou plus fréquents que prévu. Le cas part aussi dans une base européenne, qu'il soit grave ou non.
 
 ### Les déclarations ont-elles déjà changé quelque chose ?
 
@@ -111,7 +117,7 @@ Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre ph
 
 ### Qui déclare
 
-- **Obligation** : médecins, chirurgiens-dentistes, sages-femmes, pharmaciens et infirmiers doivent signaler tout effet indésirable suspecté d'être dû à un médicament, quel que soit le contexte de survenue (ANSM, page mise à jour le 23/06/2026). [à compléter : article du CSP fondant l'obligation, sur Légifrance.]
+- **Obligation** : médecins, chirurgiens-dentistes, sages-femmes, pharmaciens et infirmiers doivent signaler tout effet indésirable suspecté d'être dû à un médicament, quel que soit le contexte de survenue (ANSM, page mise à jour le 23/06/2026). Base légale : article R. 5121-161 du CSP [à compléter : vérifier sur Légifrance la version en vigueur de l'article R. 5121-161 du CSP et sa liste des professionnels tenus de déclarer ; la page « Organiser les vigilances » de l'ANSM ne cite pas les infirmiers].
 - **Faculté** : tout autre professionnel de santé ayant connaissance d'un effet indésirable.
 - **Patients** : déclaration directe par le patient ou son représentant mandaté (parent d'un enfant, association agréée sollicitée par le patient). Base réglementaire : décret n° 2011-655 du 10 juin 2011 et arrêté du même jour relatifs au signalement par les patients et les associations agréées de patients.
 
@@ -129,15 +135,15 @@ Portail commun des vigilances, ouvert en 2017 aux professionnels et aux usagers 
 
 ### Circuit
 
-1. Le CRPV (31 centres en France) instruit le cas, échange si besoin avec le déclarant ou le patient, et détermine l'imputabilité.
+1. Le CRPV (30 centres en France, d'après la liste de l'ANSM mise à jour le 14/09/2026) instruit le cas, échange si besoin avec le déclarant ou le patient, et détermine l'imputabilité.
 2. Le cas est saisi dans la BNPV (base nationale de pharmacovigilance), créée en 1985 par les premiers CRPV. Elle contient plus de 900 000 cas et sert à la détection statistique des signaux.
 3. Les CRPV signalent à l'ANSM les « cas marquants ». L'ANSM catégorise chaque signal selon son niveau de risque. Elle peut confier une enquête de pharmacovigilance à un CRPV.
-4. Les effets indésirables graves sont transmis à EudraVigilance, base de l'EMA, où le PRAC (Pharmacovigilance Risk Assessment Committee) évalue les signaux européens.
+4. Les cas sont transmis à EudraVigilance, base de l'EMA : les cas graves dans les 15 jours, les cas non graves dans les 90 jours (article 107 bis, paragraphe 4, de la directive 2001/83/CE ; cas non graves collectés depuis novembre 2017 selon l'ANSM). Le PRAC (Pharmacovigilance Risk Assessment Committee) y évalue les signaux européens.
 
 ### Mesures issues des déclarations
 
 - **Benfluorex** : retrait du marché le 30 novembre 2009 après l'observation de valvulopathies. Le suivi s'est appuyé ensuite sur les rapports de deux CRPV (Lyon et Paris-HEGP). Il a confirmé les signaux de valvulopathies et d'HTAP (hypertension artérielle pulmonaire). Il a identifié la fibrose pleurale comme effet possible mais rare : 11 cas rapportés de 1974 au 31 mars 2015.
-- **Levothyrox, nouvelle formule** (mise sur le marché en mars 2017) : 5 062 cas (fin mars au 15 septembre 2017), puis 12 248 cas (15 septembre au 30 novembre 2017) enregistrés dans la BNPV, ces derniers « très majoritairement déclarés par les patients (90 %) » selon l'ANSM. Suites : enquête nationale de pharmacovigilance, étendue aux autres lévothyroxines ; étude de pharmaco-épidémiologie sur les données de l'Assurance maladie ; contrôles en laboratoire ; offre thérapeutique diversifiée à partir d'octobre 2017. Conclusions : profil d'effets similaire à l'ancienne formule, fréquence de déclaration inattendue, pas d'augmentation des problèmes de santé graves dans l'étude de pharmaco-épidémiologie, qualité du principe actif conforme.
+- **Levothyrox, nouvelle formule** (mise sur le marché en mars 2017) : 5 062 cas (fin mars au 15 septembre 2017), puis 12 248 cas (15 septembre au 30 novembre 2017) enregistrés dans la BNPV, ces derniers « très majoritairement déclarés par les patients (90 %) » selon l'ANSM. Suites : enquête nationale de pharmacovigilance, étendue aux autres lévothyroxines ; étude de pharmaco-épidémiologie sur les données de l'Assurance maladie ; contrôles en laboratoire ; offre thérapeutique diversifiée à partir d'octobre 2017. Conclusions de l'enquête : profil d'effets similaire à celui de l'ancienne formule, sans effet nouveau, mais avec une fréquence de déclaration « inédite et inattendue » ; parmi les 1 745 cas documentés avec des dosages de TSH, déséquilibre thyroïdien possible lors du changement de formule chez environ un tiers, TSH dans les normes chez les deux autres tiers. Étude de pharmaco-épidémiologie : pas d'augmentation des problèmes de santé graves (décès, hospitalisation, arrêt de travail d'au moins 7 jours), mais environ 360 000 consultations de médecine de ville supplémentaires (+2 %), surtout d'août à octobre 2017. Contrôles en laboratoire : principe actif conforme.
 
 Ces deux exemples illustrent deux rôles de la notification : faire émerger un risque, et objectiver l'ampleur d'un phénomène pour orienter des études complémentaires.
 

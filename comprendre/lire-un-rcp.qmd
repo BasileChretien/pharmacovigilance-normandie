@@ -7,12 +7,15 @@ relu_par: null
 relu_le: null
 prochaine_relecture: null
 sources:
-  - titre: "Commission européenne, Guideline on Summary of Product Characteristics (SmPC), rév. 2"
+  - titre: "Commission européenne, Guideline on Summary of Product Characteristics (SmPC), rév. 2, septembre 2009 (sections 4.7 et 4.8)"
     url: "https://health.ec.europa.eu/document/download/6a043dea-7d0f-4252-947b-cef58f53d37e_en"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Base de données publique des médicaments"
     url: "https://base-donnees-publique.medicaments.gouv.fr/"
     consulte_le: 2026-11-25
+  - titre: "RCP d'ADVIL 200 mg, comprimé enrobé (base de données publique des médicaments, mis à jour par l'ANSM le 13/02/2025)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/68634000/extrait#tab-rcp"
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Mise sur le marché des médicaments"
     url: "https://pharmacomedicale.org/pharmacologie/developpement-et-suivi-des-medicaments/29-mise-sur-le-marche-des-medicaments"
@@ -46,9 +49,9 @@ Les RCP à jour sont sur la [base de données publique des médicaments](https:/
 
 1. **Une fréquence n'est pas un risque attribuable.** Les fréquences tirées des essais sont des taux bruts chez les patients traités, pas des différences avec le placebo ou un comparateur. Quand un effet fréquent survient aussi sous placebo à une fréquence notable, les deux taux peuvent être donnés, souvent en 4.8c.
 2. **Être listé ne prouve pas la causalité.** Un effet figure dans le RCP quand le lien de causalité est au moins une possibilité raisonnable, après évaluation des données disponibles.
-3. **« Fréquence indéterminée » ne veut pas dire « rare ».** La catégorie s'utilise quand les données ne permettent pas d'estimer la fréquence.
-4. **« Rare » peut être une borne haute.** Pour un effet identifié après la commercialisation et jamais observé dans les essais, la borne supérieure de l'intervalle de confiance à 95 % est d'au plus 3/X, X étant le nombre de patients exposés dans les essais (règle de trois). Exemple de la ligne directrice : non observé chez 3 600 patients, la borne est de 1/1 200, et l'effet est classé « rare ».
-5. **Le tableau n'est pas classé par gravité.** L'ordre est : classe de systèmes d'organes (MedDRA), puis fréquence, puis gravité décroissante au sein d'une même fréquence. Les effets graves sont décrits en 4.4 et en 4.8c.
+3. **« Fréquence indéterminée » ne veut pas dire « rare ».** La catégorie s'utilise, à titre exceptionnel selon la ligne directrice, quand les données ne permettent pas d'estimer la fréquence.
+4. **« Rare » peut être une borne haute.** Pour un effet identifié après la commercialisation et jamais observé dans les essais, la borne supérieure de l'intervalle de confiance à 95 % est d'au plus 3/X, X étant le nombre total de sujets exposés dans les essais et études pertinents, c'est-à-dire suivis assez longtemps pour détecter l'effet (règle de trois). Exemple de la ligne directrice : non observé chez 3 600 patients, la borne est de 1/1 200, et l'effet est classé « rare ».
+5. **Le tableau n'est pas classé par gravité.** L'ordre est : classe de systèmes d'organes (MedDRA), puis fréquence, puis gravité décroissante au sein d'une même fréquence. Les effets graves sont caractérisés en 4.8c (délai d'apparition, réversibilité, facteurs de risque…), et les mesures pour les prévenir ou les prendre en charge figurent en 4.4.
 
 ## Les catégories de fréquence
 
@@ -63,6 +66,132 @@ Les RCP à jour sont sur la [base de données publique des médicaments](https:/
 
 Une version illustrée pour les patients se trouve sur la page [Que veulent dire « fréquent » et « rare » ?](frequences.qmd).
 
-<!-- FIGURE À FAIRE : RCP annoté d'un médicament courant, un clic sur chaque section affiche ce qu'il faut y chercher -->
+## Un RCP annoté, section par section
+
+Le plan d'un RCP réel, celui d'un médicament courant : l'ADVIL 200 mg, comprimé enrobé (ibuprofène). Ouvrez une section pour voir ce qu'on y cherche et ce qu'en dit ce RCP. Le texte complet est sur la [fiche ADVIL 200 mg de la base de données publique des médicaments](https://base-donnees-publique.medicaments.gouv.fr/medicament/68634000/extrait#tab-rcp), onglet « Résumé des caractéristiques du produit », dont le menu mène à chaque section.
+
+::: {.rcp-annote}
+
+::: {.rcp-section numero="1" titre="Dénomination du médicament"}
+**À y chercher.** Le nom, le dosage et la forme, qui distinguent ce médicament des autres présentations de la même substance.
+
+**Dans ce RCP.** « ADVIL 200 mg, comprimé enrobé ».
+:::
+
+::: {.rcp-section numero="2" titre="Composition qualitative et quantitative"}
+**À y chercher.** La quantité de substance active par unité de prise, et les excipients à effet notoire ; la liste complète des excipients est en 6.1.
+
+**Dans ce RCP.** 200 mg d'ibuprofène par comprimé ; un excipient à effet notoire, le saccharose.
+:::
+
+::: {.rcp-section numero="3" titre="Forme pharmaceutique"}
+**À y chercher.** La forme et, pour un comprimé sécable, si la barre permet de le partager en doses égales (voir aussi [écraser ou couper un comprimé](../bon-usage/ecraser-couper.qmd)).
+
+**Dans ce RCP.** « Comprimé enrobé. »
+:::
+
+::: {.rcp-section numero="4.1" titre="Indications thérapeutiques"}
+**À y chercher.** Pour quoi le médicament est autorisé, chez qui (âge, poids) et pour quelle durée. Un usage en dehors de ce cadre est hors autorisation de mise sur le marché (AMM).
+
+**Dans ce RCP.** Chez l'adulte et l'enfant de plus de 20 kg (environ 6 ans), le traitement de courte durée de la fièvre et/ou des douleurs telles que maux de tête, états grippaux, douleurs dentaires, courbatures, règles douloureuses.
+:::
+
+::: {.rcp-section numero="4.2" titre="Posologie et mode d'administration"}
+**À y chercher.** La dose, l'intervalle entre les prises, la durée, l'adaptation à l'âge, au poids, au rein ou au foie, et la façon de prendre le médicament.
+
+**Dans ce RCP.** Chez l'enfant de 20 à 30 kg (environ 6 à 11 ans), 1 comprimé, à renouveler si besoin au bout de 6 heures, sans dépasser 3 comprimés (600 mg) par jour. Chez l'adulte et l'enfant de plus de 30 kg, 1 à 2 comprimés, à renouveler si besoin au bout de 6 heures, sans dépasser 6 comprimés (1 200 mg) par jour. Toujours la dose efficace la plus faible, pendant la durée la plus courte. Chez l'adulte, avis médical si la douleur dure plus de 5 jours ou la fièvre plus de 3 jours.
+:::
+
+::: {.rcp-section numero="4.3" titre="Contre-indications"}
+**À y chercher.** Les situations où le médicament ne doit jamais être donné.
+
+**Dans ce RCP.** Entre autres : un asthme déjà déclenché par l'ibuprofène, l'aspirine ou un autre anti-inflammatoire non stéroïdien (AINS) ; un ulcère évolutif ou ancien, une hémorragie en cours ; une insuffisance hépatique, rénale ou cardiaque sévère ; la grossesse à partir du début du 6^e^ mois (24 semaines d'aménorrhée) ; le comprimé chez l'enfant de moins de 6 ans, pour le risque de fausse route.
+:::
+
+::: {.rcp-section numero="4.4" titre="Mises en garde spéciales et précautions d'emploi"}
+**À y chercher.** Les risques graves, les patients les plus exposés, et la surveillance à prévoir. Les effets graves y sont décrits plus en détail qu'en 4.8.
+
+**Dans ce RCP.** La section s'ouvre sur le risque de mort fœtale, « même après une seule prise », et les effets chez l'enfant à naître. Suivent, entre autres, l'association avec un autre AINS (à éviter), l'asthme, les enfants déshydratés, les sujets âgés, les effets digestifs, cardiovasculaires et cutanés, le rein, et les symptômes d'une infection que le médicament peut masquer.
+:::
+
+::: {.rcp-section numero="4.5" titre="Interactions avec d'autres médicaments et autres formes d'interactions"}
+**À y chercher.** Les associations à risque, classées comme dans le [Thésaurus de l'ANSM](https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1) : contre-indiquée, déconseillée, précaution d'emploi, à prendre en compte.
+
+**Dans ce RCP.** Les quatre niveaux. Le méthotrexate y figure deux fois : association déconseillée au-delà de 20 mg par semaine, précaution d'emploi jusqu'à 20 mg par semaine. Le niveau d'une même association peut dépendre de la dose.
+:::
+
+::: {.rcp-section numero="4.6" titre="Fertilité, grossesse et allaitement"}
+**À y chercher.** Ce qui est possible ou non selon le terme de la grossesse, pendant l'allaitement, et l'effet sur la fertilité. Pour la grossesse, compléter avec le [CRAT](https://www.lecrat.fr/).
+
+**Dans ce RCP.** À partir de 24 semaines d'aménorrhée, toute prise, même ponctuelle, est contre-indiquée. Avant, pas de prescription sauf nécessité absolue.
+:::
+
+::: {.rcp-section numero="4.7" titre="Effets sur l'aptitude à conduire des véhicules et à utiliser des machines"}
+**À y chercher.** L'influence sur la conduite, que la ligne directrice européenne classe en quatre niveaux : nulle ou négligeable, mineure, modérée ou importante.
+
+**Dans ce RCP.** Une phrase, sans niveau : « Prévenir les patients de l'apparition possible de vertiges et de troubles de la vue. » Tous les RCP ne suivent pas le plan de la ligne directrice actuelle.
+:::
+
+::: {.rcp-section numero="4.8" titre="Effets indésirables"}
+**À y chercher.** Les effets indésirables et leur fréquence ; voir les cinq pièges plus haut.
+
+**Dans ce RCP.** Pas de tableau par classe de systèmes d'organes et par fréquence : la plupart des effets sont listés sans catégorie de fréquence, et quelques-uns portent « très rare » ou « fréquence indéterminée ». Un effet sans fréquence n'est pas pour autant rare.
+:::
+
+::: {.rcp-section numero="4.9" titre="Surdosage"}
+**À y chercher.** Les signes d'un surdosage et la conduite à tenir.
+
+**Dans ce RCP.** Les signes, digestifs, neurologiques, hépatiques (anomalies du bilan), métaboliques (hyperkaliémie, acidose), rénaux et respiratoires, et l'hypotension ; puis la conduite à tenir, qui commence par le transfert immédiat à l'hôpital.
+:::
+
+::: {.rcp-section numero="5.1" titre="Propriétés pharmacodynamiques"}
+**À y chercher.** Le mécanisme d'action et les effets du médicament sur l'organisme, avec parfois une information utile en pratique.
+
+**Dans ce RCP.** L'ibuprofène inhibe la synthèse des prostaglandines. Des données expérimentales suggèrent qu'il peut diminuer l'effet antiagrégant plaquettaire d'une faible dose d'aspirine prise en même temps.
+:::
+
+::: {.rcp-section numero="5.2" titre="Propriétés pharmacocinétiques"}
+**À y chercher.** Absorption, distribution, transformation et élimination : ce qui explique le délai d'action, le rythme des prises et l'adaptation au rein ou au foie.
+
+**Dans ce RCP.** Concentration maximale environ 90 minutes après la prise, demi-vie d'élimination d'environ 2 heures, élimination surtout urinaire. Ces paramètres sont peu modifiés en cas d'insuffisance rénale ou hépatique.
+:::
+
+::: {.rcp-section numero="5.3" titre="Données de sécurité préclinique"}
+**À y chercher.** Les résultats des études chez l'animal utiles au prescripteur et absents des autres sections.
+
+**Dans ce RCP.** « Sans objet. »
+:::
+
+::: {.rcp-section numero="6" titre="Données pharmaceutiques (6.1 à 6.6)"}
+**À y chercher.** Les excipients (6.1), la durée et les conditions de conservation (6.3 et 6.4), les présentations (6.5).
+
+**Dans ce RCP.** À conserver entre 10 et 25 °C ; boîtes de 20 ou 30 comprimés.
+:::
+
+::: {.rcp-section numero="7 à 9" titre="Titulaire, numéros et date de l'autorisation"}
+**À y chercher.** Le laboratoire qui détient l'autorisation, les codes des présentations, et depuis quand le médicament est autorisé.
+
+**Dans ce RCP.** La date d'autorisation (section 9) reste à compléter par le titulaire ; la fiche de la base l'indique : 29/05/1987.
+:::
+
+::: {.rcp-section numero="10" titre="Date de mise à jour du texte"}
+**À y chercher.** La date de la dernière mise à jour : un texte ancien peut manquer d'informations de sécurité récentes.
+
+**Dans ce RCP.** Cette section aussi reste à compléter par le titulaire. La base indique, en tête du RCP, une mise à jour par l'ANSM le 13/02/2025.
+:::
+
+::: {.rcp-section numero="11-12" titre="Dosimétrie, préparation des radiopharmaceutiques"}
+**À y chercher.** Des informations propres aux médicaments radiopharmaceutiques.
+
+**Dans ce RCP.** « Sans objet. », pour les deux sections.
+:::
+
+::: {.rcp-section numero="—" titre="Conditions de prescription et de délivrance (sans numéro)"}
+**À y chercher.** Si le médicament est délivré avec ou sans ordonnance, et les éventuelles restrictions de prescription.
+
+**Dans ce RCP.** « Médicament non soumis à prescription médicale. »
+:::
+
+:::
 
 :::

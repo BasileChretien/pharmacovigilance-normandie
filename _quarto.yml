@@ -78,7 +78,7 @@ website:
         href: a-propos/politique-editoriale.qmd
       - text: "Mentions légales"
         href: a-propos/mentions-legales.qmd
-      - text: "Accessibilité"
+      - text: "Accessibilité : non conforme"
         href: a-propos/accessibilite.qmd
       - text: "In English (visitors)"
         href: normandie/en/index.qmd
@@ -122,3 +122,5 @@ format:
           <a class="lien-evitement" href="#quarto-document-content">Aller au contenu</a>
     filters:
       - assets/filters/page-meta.lua
+      # The annotated SmPC of comprendre/lire-un-rcp.qmd: sections as disclosures.
+      - assets/filters/rcp-annote.lua
