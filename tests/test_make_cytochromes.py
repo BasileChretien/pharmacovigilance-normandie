@@ -181,12 +181,12 @@ def test_checker_data_cannot_close_its_script_element():
 
 
 def tables(md):
-    return re.findall(r"<table class=\"cyp-grille\">.*?</table>", md, re.DOTALL)
+    return re.findall(r"<table class=\"cyp-grille tableau-encadre\">.*?</table>", md, re.DOTALL)
 
 
 def test_grid_has_three_tables_substrates_inhibitors_inducers_with_captions():
     md = mk.to_grid(data())
-    ids = re.findall(r'<div id="(grille-[a-z]+)" class="cyp-grille-cadre"', md)
+    ids = re.findall(r'<div id="(grille-[a-z]+)" class="tableau-defile tableau-large">', md)
     assert ids == ["grille-substrats", "grille-inhibiteurs", "grille-inducteurs"]
     captions = re.findall(r"<caption>(Tableau \d\. \w+)", md)
     assert captions == ["Tableau 1. Substrats", "Tableau 2. Inhibiteurs", "Tableau 3. Inducteurs"]
@@ -251,9 +251,17 @@ def test_precision_is_shown_beside_the_name():
 
 
 def test_scrolling_box_is_a_named_focusable_region():
+    """The grid writes its own box (docs/tableaux.md): the region works without JavaScript,
+    and tableau-encadre keeps assets/filters/tableaux.lua from boxing the table a second time."""
     md = mk.to_grid(data())
-    boxes = re.findall(r'<div id="grille-[a-z]+" class="cyp-grille-cadre" role="region" aria-label="([^"]+)" tabindex="0">', md)
-    assert len(boxes) == 3 and all(boxes)
+    boxes = re.findall(
+        r'<div id="grille-[a-z]+" class="tableau-defile tableau-large">\n'
+        r'<div class="tableau-defile-cadre" role="region" aria-label="([^"]+)" tabindex="0">\n'
+        r'<table class="cyp-grille tableau-encadre">',
+        md,
+    )
+    assert boxes == ["Tableau 1 : substrats", "Tableau 2 : inhibiteurs", "Tableau 3 : inducteurs"]
+    assert md.count("<div") == md.count("</div>")
 
 
 def test_text_is_html_escaped():

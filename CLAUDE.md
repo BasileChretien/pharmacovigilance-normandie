@@ -40,6 +40,7 @@ Status and open tasks: `docs/STATUS.md`. Points for medical reviewers: `docs/rel
 - Fonts are self-hosted in `assets/fonts/` (OFL, from @fontsource-variable); never load fonts from a third-party server.
 - The home-page map is generated: edit `tools/design/make_signal.py` (data: `data/normandie-carte.json`, refreshed by `tools/design/fetch_normandie.py`), not `_includes/signal.md`. Its motion needs the pause button (WCAG 2.2.2): keep animations gated by `.signal-anime` (added by `assets/js/accueil.js`).
 - Search synonyms and the accent-free index copy: `tools/build/search_postprocess.py` (post-render).
+- Tables on phones (docs/tableaux.md): `assets/filters/tableaux.lua` boxes every table; 3+ columns become cards, so give every column a header; a grid read by columns takes class `tableau-large`. Never make `main table` itself scroll (`display: block`, `overflow-x`): its box does.
 - Long tables get a filter field: wrap them in `::: {.tableau-filtrable}` and load `assets/js/table-filter.js` (see `bon-usage/cytochromes.qmd`); JS tests: `npm run test:js`.
 - `[à compléter …]`-style brackets render as badges (page-meta.lua); in Lua use `pandoc.text.lower`, not `string.lower` (breaks UTF-8 on Windows).
 - Pushing to `main` deploys GitHub Pages (`.github/workflows/pages.yml`); keep links relative (site lives under a subpath).

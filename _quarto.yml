@@ -135,6 +135,18 @@ format:
           </script>
       # The mascot in the empty state of the search (docs/mascotte/README.md).
       - file: _includes/mascotte-recherche.html
+      # Tables: the cue at the edge of a box that scrolls, and keyboard access (docs/tableaux.md).
+      # Quarto's offset leads from the page to the site root.
+      - text: |
+          <script>
+          (function () {
+            if (!document.querySelector(".tableau-defile")) { return; }
+            var offset = document.querySelector('meta[name="quarto:offset"]');
+            var script = document.createElement("script");
+            script.src = (offset ? offset.getAttribute("content") : "./") + "assets/js/tableaux.js";
+            document.body.appendChild(script);
+          })();
+          </script>
     include-before-body:
       - text: |
           <a class="lien-evitement" href="#quarto-document-content">Aller au contenu</a>
@@ -144,3 +156,5 @@ format:
       - assets/filters/rcp-annote.lua
       # The mascot in the title banner: `mascotte:` of the section's _metadata.yml or the page.
       - assets/filters/mascotte.lua
+      # Every table in its own box: cards or sideways scrolling on phones (docs/tableaux.md).
+      - assets/filters/tableaux.lua
