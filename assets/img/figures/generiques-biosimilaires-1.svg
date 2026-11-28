@@ -25,7 +25,7 @@
     <line x1="37" y1="207" x2="51" y2="207"/><line x1="37" y1="217" x2="51" y2="217"/>
   </g>
   <text x="72" y="206" font-weight="700">Identique</text>
-  <text x="72" y="230">la substance active et sa dose</text>
+  <text x="72" y="230">la substance active, en même quantité</text>
 
   <rect x="16" y="256" width="408" height="64" rx="10" fill="#ffffff" stroke="#46586a" stroke-width="1.5" stroke-dasharray="6 4"/>
   <g fill="none" stroke="#46586a" stroke-width="2">
@@ -34,17 +34,17 @@
   <text x="72" y="282" font-weight="700">Peut changer</text>
   <text x="72" y="306" font-size="16">taille, forme, couleur, goût, excipients</text>
 
-  <!-- Bioequivalence: two superposed curves -->
+  <!-- Bioequivalence: two curves very close, not identical -->
   <text x="60" y="358" font-size="16" fill="#46586a">Quantité dans le sang</text>
   <g stroke="#46586a" stroke-width="2" fill="none" stroke-linecap="round">
     <path d="M60 368 V494 H420"/>
   </g>
   <text x="420" y="518" text-anchor="end" font-size="16" fill="#46586a">Temps</text>
   <path d="M60 492 C92 404 128 384 160 384 C214 384 290 444 420 480" fill="none" stroke="#073f6e" stroke-width="4"/>
-  <path d="M60 492 C92 404 128 384 160 384 C214 384 290 444 420 480" fill="none" stroke="#0b6b45" stroke-width="3" stroke-dasharray="9 7"/>
+  <path d="M60 492 C96 412 134 392 168 392 C222 392 294 450 420 484" fill="none" stroke="#0b6b45" stroke-width="3" stroke-dasharray="9 7"/>
 
   <line x1="60" y1="544" x2="96" y2="544" stroke="#073f6e" stroke-width="4"/>
   <text x="106" y="550" font-size="16">Médicament d'origine</text>
   <line x1="60" y1="572" x2="96" y2="572" stroke="#0b6b45" stroke-width="3" stroke-dasharray="9 7"/>
-  <text x="106" y="578" font-size="16">Générique : courbe superposée</text>
+  <text x="106" y="578" font-size="16">Générique : courbe très proche</text>
 </svg>

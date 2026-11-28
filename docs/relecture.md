@@ -23,7 +23,7 @@ marques `[à compléter : source]` et ses `<!-- FIGURE À FAIRE -->`.
 | comprendre/frequences | Ordre des effets : notice (graves d'abord, puis par fréquence) et RCP (par organe) |
 | comprendre/triangle-noir | Règlement d'exécution du symbole ; critères facultatifs |
 | comprendre/benefice-risque | Source sur PSUR, PGR, études post-AMM ; benfluorex : retrait après « cas observés », pas forcément des déclarations |
-| comprendre/generiques-biosimilaires | Définition légale (art. L5121-1 CSP), critères de bioéquivalence, listes MTE et groupes biosimilaires substituables (arrêtés 2026), remboursement en cas de refus du générique |
+| comprendre/generiques-biosimilaires | Définition légale : citée d'après la directive 2001/83/CE (art. 10, § 2, b), dont l'art. L5121-1, 5° a, du CSP reprend le contenu ; le texte en vigueur sur Légifrance n'a pas pu être lu (vérification anti-robot, 28/11/2026). Critères de bioéquivalence d'après la ligne directrice de l'EMA de 2010 ; la ligne directrice ICH M13A en remplace une partie depuis le 25/01/2025 (plans non répliqués) : vérifier que les intervalles cités restent ceux en vigueur. Exemple du périndopril (groupe 494 du répertoire, 4 mg et 5 mg selon le sel). Écart moyen « environ 4 sur 100 » : données de la FDA (Davit 2009), pas européennes. Listes MTE et groupes biosimilaires substituables (arrêtés 2026), remboursement en cas de refus du générique |
 | comprendre/pourquoi-declarer | Article du CSP sur l'obligation de déclarer ; conseils « marque et numéro de lot » et « confusion de boîtes » non sourcés |
 | classes/anticoagulants-oraux | Fiche HAS AOD de 2018 (statut de l'édoxaban) ; « un arrêt, même bref, expose au risque de caillot » et AOD contre-indiqués à l'allaitement sont des déductions |
 | classes/ains | Chiffres de cas d'infections graves : ce sont des comptes de déclarations, pas des fréquences |
@@ -155,7 +155,7 @@ légende (dans la page, raccourci `figure-svg`).
 | Page | Figure | À vérifier |
 |---|---|---|
 | comprendre/benefice-risque | Balance bénéfices/risques, puis avant et après l'autorisation | La balance penche du côté des bénéfices (« autorisé quand ses bénéfices dépassent ses risques ») ; « interactions » côté risques vient de la consigne de la figure, pas du texte patient |
-| comprendre/generiques-biosimilaires | Deux boîtes, ce qui est identique et ce qui peut changer, deux courbes superposées | Les courbes sont exactement superposées, comme le dit le texte (« en même quantité et à la même vitesse ») ; faut-il montrer que la bioéquivalence admet un écart ? |
+| comprendre/generiques-biosimilaires | Deux boîtes, ce qui est identique (la substance active, en même quantité) et ce qui peut changer, deux courbes très proches | Corrigé le 28/11/2026 : les courbes ne sont plus superposées, la bioéquivalence admettant un écart ; l'écart dessiné est illustratif, sans échelle |
 | comprendre/lire-une-notice | Notice dépliée, six rubriques | Les rubriques 2 et 4 sont marquées « à lire en priorité » (consigne de la figure) ; le texte ne le dit que de la rubrique 2. Libellé « Composition » pour la rubrique 6 |
 | comprendre/pourquoi-declarer | Parcours d'une déclaration en cinq étapes, retour vers les mesures | « Le CRPV enregistre le cas » (étape 3) ; mesures citées : notice modifiée, restriction, retrait du marché |
 | comprendre/triangle-noir | Haut d'une notice inventée (« Médicament X ») et boîte sans triangle | Seule la première phrase de la mention est reproduite |
