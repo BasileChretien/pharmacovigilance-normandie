@@ -32,7 +32,7 @@ Ces informations sont celles que demande l'article 1-1 de la loi n° 2004-575 du
 
 ## Données personnelles
 
-Le site ne collecte aucune donnée de santé. La recherche et le formulaire « Trouver votre centre » fonctionnent sur votre appareil : ce que vous tapez n'est envoyé nulle part. Les polices sont hébergées sur le site, sans appel à un service extérieur. Le site ne dépose pas de cookie publicitaire. [À préciser avec l'hébergeur : les données de connexion, comme l'adresse IP, qu'il enregistre.]
+Le site ne collecte aucune donnée de santé. Le formulaire « Trouver votre centre » et la page « Chercher un médicament » fonctionnent sur votre appareil : ce que vous y tapez n'est envoyé nulle part. La recherche du site se fait aussi sur votre appareil, mais quand vous ouvrez un résultat, les mots cherchés figurent dans l'adresse de la page ouverte : l'hébergeur les reçoit avec la demande de cette page. Les polices sont hébergées sur le site, sans appel à un service extérieur. Le site ne dépose pas de cookie publicitaire. [À préciser avec l'hébergeur : les données de connexion, comme l'adresse IP, qu'il enregistre.]
 
 La mesure d'audience utilisera Matomo, réglé selon les conditions de la CNIL pour être dispensé de consentement : mesure de l'audience du seul site, statistiques anonymes, aucun recoupement avec d'autres données ni transmission à des tiers, information des visiteurs. Les traceurs auront une durée de vie de 13 mois au plus et les données seront conservées 25 mois au plus, comme le recommande la CNIL. [À mettre en place.]
 
