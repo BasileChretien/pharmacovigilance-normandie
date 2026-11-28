@@ -586,6 +586,152 @@ main table tbody tr:nth-child(even) td { background: rgba($pv-mist, 0.6); }
 .medicament-nom { font-weight: 600; }
 .medicament-substances, .medicament-fiche { color: $pv-ink-quiet; font-size: 0.92rem; }
 
+// Two-drug checker and grid of bon-usage/cytochromes.qmd (assets/js/cyp-verificateur.js,
+// tools/build/make_cytochromes.py). Strength is written in words; the filled or hollow square
+// repeats it by shape, never by colour alone. Text pairs: pv-ink on pv-paper, pv-mist,
+// pv-mist-deep and pv-amber-tint; pv-ink-quiet on pv-paper (contrast_pairs.yml).
+$icon-fleche-haut: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 20V4'/%3E%3Cpath d='m5 11 7-7 7 7'/%3E%3C/svg%3E");
+$icon-fleche-bas: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 4v16'/%3E%3Cpath d='m5 13 7 7 7-7'/%3E%3C/svg%3E");
+
+.cyp-verificateur { margin: 1.25rem 0 0.5rem; }
+.cyp-champs { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 0.75rem 1rem; }
+.cyp-champ { position: relative; flex: 1 1 15rem; min-width: 0; }
+.cyp-champ label { display: block; font-weight: 600; margin-bottom: 0.35rem; }
+.cyp-champ input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  font-size: 1.1rem;
+  color: $pv-ink;
+  background: $pv-paper;
+  border: 2px solid $pv-ink-quiet;
+  border-radius: $border-radius;
+}
+.cyp-champs .btn { padding: 0.65rem 1.4rem; font-size: 1.05rem; }
+.cyp-suggestions {
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  right: 0;
+  max-height: 17rem;
+  overflow-y: auto;
+  margin: 0.25rem 0 0;
+  padding: 0.25rem 0;
+  list-style: none;
+  background: $pv-paper;
+  border: 1px solid $pv-rule;
+  border-radius: $border-radius;
+  box-shadow: 0 0.5rem 1.25rem rgba($pv-ombre, 0.16);
+}
+.cyp-suggestions [role="option"] { padding: 0.45rem 0.8rem; cursor: pointer; }
+.cyp-suggestions [role="option"]:hover { background: $pv-mist; }
+.cyp-suggestions [role="option"][aria-selected="true"] {
+  background: $pv-mist-deep;
+  box-shadow: inset 4px 0 0 $pv-ink;
+  font-weight: 600;
+}
+.cyp-aide { color: $pv-ink-quiet; font-size: 0.92rem; margin: 0.5rem 0 0; }
+.cyp-statut { font-weight: 600; margin: 1.1rem 0 0.6rem; }
+.cyp-statut:empty { margin: 0; }
+.cyp-mecanismes { list-style: none; padding: 0; margin: 0 0 1rem; }
+.cyp-mecanisme {
+  border: 1px solid $pv-rule;
+  border-left: 5px solid $pv-ink;
+  border-radius: $border-radius;
+  padding: 0.8rem 1.1rem 0.4rem;
+  margin-bottom: 0.75rem;
+  background: $pv-paper;
+  p { margin: 0 0 0.45rem; }
+}
+.cyp-mecanisme-titre { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.6rem; font-size: 1.08rem; }
+.cyp-fleche {
+  width: 1.4rem;
+  height: 1.4rem;
+  flex: none;
+  background: currentColor;
+  -webkit-mask: var(--icone) center / contain no-repeat;
+  mask: var(--icone) center / contain no-repeat;
+}
+.cyp-hausse .cyp-fleche { --icone: #{$icon-fleche-haut}; }
+.cyp-baisse .cyp-fleche { --icone: #{$icon-fleche-bas}; }
+.cyp-mecanisme-enzyme {
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.05rem 0.5rem;
+  border: 1px solid $pv-rule;
+  border-radius: 999px;
+  background: $pv-mist;
+}
+.cyp-mecanisme-cause, .cyp-mecanisme-lien { font-size: 0.95rem; }
+.cyp-mecanisme-notes { font-size: 0.95rem; margin: 0 0 0.45rem; padding-left: 1.1rem; }
+main table.cyp-roles { margin: 0.5rem 0 1rem; }
+main table.cyp-roles caption, main table.cyp-grille caption {
+  caption-side: top;
+  color: $pv-ink-quiet;
+  font-size: 0.92rem;
+  padding: 0 0 0.4rem;
+}
+main table.cyp-roles tr.cyp-roles-concerne > * { background: $pv-mist-deep; font-weight: 600; }
+.cyp-rappel {
+  background: $pv-amber-tint;
+  border: 1px solid rgba($pv-amber, 0.25);
+  border-left: 5px solid $pv-amber;
+  border-radius: $border-radius-lg;
+  padding: 0.9rem 1.2rem 0.1rem;
+  margin: 1.25rem 0 1.75rem;
+}
+
+.cyp-grille-cadre { max-width: 100%; overflow-x: auto; margin: 0 0 1.5rem; }
+main .cyp-grille-cadre table.cyp-grille {
+  display: table;
+  width: 100%;
+  overflow: visible;
+  font-size: 0.88rem;
+}
+main table.cyp-grille th, main table.cyp-grille td { padding: 0.4rem 0.55rem !important; }
+main table.cyp-grille td { white-space: nowrap; }
+main table.cyp-grille thead th { white-space: nowrap; }
+// The drug column stays in view while the table scrolls sideways on a phone.
+main table.cyp-grille th[scope="row"] {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  min-width: 9.5rem;
+  background: $pv-paper;
+  font-weight: 600;
+  border-right: 1px solid $pv-rule;
+}
+main .cyp-grille td.cyp-fort { background: $pv-mist-deep; }
+main .cyp-grille td.cyp-moyen { background: $pv-mist; }
+.cyp-marque::before {
+  content: "";
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  margin-right: 0.35em;
+  border: 2px solid currentColor;
+  border-radius: 2px;
+  vertical-align: -0.05em;
+}
+.cyp-fort .cyp-marque { font-weight: 700; }
+.cyp-fort .cyp-marque::before { background: currentColor; }
+.cyp-drapeau {
+  display: inline-block;
+  margin-left: 0.25em;
+  padding: 0 0.4em;
+  font-size: 0.8rem;
+  background: $pv-paper;
+  border: 1px solid $pv-rule;
+  border-radius: 999px;
+}
+.cyp-source { font-size: 0.82rem; }
+.cyp-precision { color: $pv-ink-quiet; font-weight: 400; font-size: 0.85rem; }
+
+@media print {
+  .cyp-verificateur, .cyp-statut, .cyp-resultat { display: none; }
+  .cyp-grille-cadre { overflow: visible; }
+  main table.cyp-grille th[scope="row"] { position: static; }
+}
+
 // Official notice and SmPC links (front matter substances, built by the page-meta filter).
 .notices-officielles {
   margin-top: 3.5rem;

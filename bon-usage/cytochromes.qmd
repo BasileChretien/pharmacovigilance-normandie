@@ -1,6 +1,6 @@
 ---
 title: "Tableau des cytochromes P450 et de la P-glycoprotéine"
-description: "Substrats, inhibiteurs et inducteurs des principaux cytochromes P450 et de la P-glycoprotéine, d'après le tableau des HUG recoupé avec la FDA, avec un exemple de conséquence pratique issu du Thésaurus de l'ANSM. Tableau statique et daté."
+description: "Vérifier si deux médicaments partagent un cytochrome P450 ou la P-glycoprotéine, l'un substrat, l'autre inhibiteur ou inducteur, puis lire la grille des substrats, inhibiteurs et inducteurs, d'après la carte des HUG recoupée avec la FDA. Outil daté, qui ne remplace pas le Thésaurus de l'ANSM."
 public: [professionnels, etudiants]
 statut: brouillon
 relu_par: null
@@ -46,62 +46,97 @@ pour_aller_plus_loin:
     site: "Centre national hospitalier d'information sur le médicament"
 ---
 
-<!-- NOTE DE RÉDACTION (à retirer avant publication) : les classements HUG ont été relevés le 25/11/2026 sur le PDF « carte_des_cytochromes_2020.pdf », puis revérifiés le 28/11/2026 en relisant par script la couleur et la position de chaque case (substrats, inhibiteurs, inducteurs) : le tableau concorde avec la carte, sauf le cobicistat, ajouté d'après la liste du Thésaurus. Le gliclazide (substrat du CYP2C9), le sulfaméthoxazole (inhibiteur du CYP2C9) et le cobicistat (inhibiteur de la P-gp), absents de la carte, ont été retirés. Commercialisation en France vérifiée le 28/11/2026 sur le fichier de la base de données publique du 20/11/2026. Les classements FDA n'ont pas pu être revérifiés le 28/11/2026 (le site de la FDA refuse les accès automatisés). Le PDF renvoie à des tableaux dynamiques sur www.pharmacoclin.ch : ce domaine est en vente au 25/11/2026, aucune version plus récente n'a été trouvée sur hug.ch. Le relecteur peut demander au CIT-PV de Genève s'il existe une mise à jour. -->
+<!-- NOTE DE RÉDACTION (à retirer avant publication) : les classements HUG ont été relevés le 25/11/2026 sur le PDF « carte_des_cytochromes_2020.pdf », puis revérifiés le 28/11/2026 en relisant par script la couleur et la position de chaque case (substrats, inhibiteurs, inducteurs) : les données concordent avec la carte, sauf le cobicistat, ajouté d'après la liste du Thésaurus. Le gliclazide (substrat du CYP2C9), le sulfaméthoxazole (inhibiteur du CYP2C9) et le cobicistat (inhibiteur de la P-gp), absents de la carte, ont été retirés. Ajouté le 28/11/2026 d'après la carte (case claire avec « ! ») : clopidogrel, substrat mineur du CYP2C19, dont dépend l'exemple clopidogrel + oméprazole. Commercialisation en France vérifiée le 28/11/2026 sur le fichier de la base de données publique du 20/11/2026. Les classements FDA n'ont pas pu être revérifiés le 28/11/2026 (le site de la FDA refuse les accès automatisés). Le PDF renvoie à des tableaux dynamiques sur www.pharmacoclin.ch : ce domaine est en vente au 25/11/2026, aucune version plus récente n'a été trouvée sur hug.ch. Le relecteur peut demander au CIT-PV de Genève s'il existe une mise à jour.
+Données : la grille et le vérificateur sont produits par tools/build/make_cytochromes.py à partir d'un seul fichier, data/cytochromes.yml ; c'est lui qu'il faut corriger. Droits : la carte porte la mention « Copyright SPTC - Genève, mars 2020 » et le site hug.ch n'accorde aucun droit de réutilisation. La page reprend la présentation de la carte (trois tableaux, une ligne par médicament, une colonne par enzyme) et une sélection sourcée de ses classements, filtrée pour la France ; elle ne reproduit pas la carte. Avant publication, demander au CIT-PV de Genève s'il accepte cette reprise. -->
 
 ::: {.texte-pro}
 
 ::: {.callout-warning}
-## Un tableau statique, pas un outil de recherche d'interactions
+## Une aide pour repérer un mécanisme, pas un avis sur une association
 
-Ce tableau est une aide à la compréhension des mécanismes. Il est daté (sources de 2020 à 2026, voir plus bas) et ne sera pas mis à jour en continu. Il ne dit pas si une association donnée est autorisée, déconseillée ou contre-indiquée.
+Le vérificateur et la grille aident à repérer un mécanisme pharmacocinétique. Ils sont datés (sources de 2020 à 2026, voir plus bas) et ne citent que des exemples. Ils ne disent pas si une association donnée est autorisée, déconseillée ou contre-indiquée.
 
 La référence française des interactions est le [Thésaurus des interactions médicamenteuses de l'ANSM](https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1), avec la rubrique 4.5 du RCP de chaque spécialité. L'ANSM précise que la version du 15 septembre 2023 est la dernière : le Thésaurus reste en ligne sans mise à jour jusqu'au 15 juin 2027, et le RCP et la notice sont les seuls documents opposables.
 
-Chaque ligne est **à revérifier sur le Thésaurus de l'ANSM et le RCP** avant toute décision.
+Chaque résultat est **à revérifier sur le Thésaurus de l'ANSM et le RCP** avant toute décision.
 :::
 
-## Sources et méthode
+## Vérifier deux médicaments
 
-**Base du tableau.** Le tableau reprend la carte [« Interactions médicamenteuses, cytochromes P450 et P-glycoprotéine (Pgp) »](https://www.hug.ch/sites/interhug/files/structures/pharmacologie_et_toxicologie_cliniques/images/carte_des_cytochromes_2020.pdf) du Centre d'informations thérapeutiques et de pharmacovigilance, Service de pharmacologie et toxicologie cliniques des Hôpitaux universitaires de Genève (HUG), version de mars 2020. C'est la version proposée sur la [page Ressources du service](https://www.hug.ch/pharmacologie-toxicologie-cliniques/ressources) (« Carte Cytochromes (CYP) 2020 ») au 25 novembre 2026. La carte comprend trois tableaux (substrats, inhibiteurs, inducteurs) pour les CYP1A2, 2B6, 2C8, 2C9, 2C19, 2D6, 2E1, 3A4/5 et la P-gp. Le CYP2E1 n'est pas repris ici.
+Choisissez deux médicaments. Pour chaque cytochrome de la grille (CYP1A2, 2B6, 2C8, 2C9, 2C19, 2D6 et 3A4/5) et pour la P-glycoprotéine (P-gp), le vérificateur cherche si l'un est substrat et l'autre inhibiteur ou inducteur. Il dit alors dans quel sens l'exposition peut varier, et pour lequel des deux.
 
-**Recoupement.** Chaque ligne a été comparée aux listes de la FDA : la [table des substrats, inhibiteurs et inducteurs](https://www.fda.gov/drugs/drug-interactions-labeling/drug-development-and-drug-interactions-table-substrates-inhibitors-and-inducers) (à jour au 5 juin 2023) et les [exemples destinés aux professionnels de santé](https://www.fda.gov/drugs/drug-interactions-labeling/healthcare-professionals-fdas-examples-drugs-interact-cyp-enzymes-and-transporter-systems) (à jour au 29 mai 2026). Les désaccords de classement sont signalés plus bas.
+```{=html}
+<form id="cyp-verificateur" class="cyp-verificateur" hidden novalidate>
+  <div class="cyp-champs">
+    <div class="cyp-champ">
+      <label for="cyp-a">Médicament A</label>
+      <input id="cyp-a" name="cyp-a" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="cyp-a-liste" aria-describedby="cyp-aide" autocomplete="off" spellcheck="false">
+      <ul id="cyp-a-liste" class="cyp-suggestions" role="listbox" aria-label="Suggestions pour le médicament A" hidden></ul>
+    </div>
+    <div class="cyp-champ">
+      <label for="cyp-b">Médicament B</label>
+      <input id="cyp-b" name="cyp-b" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="cyp-b-liste" aria-describedby="cyp-aide" autocomplete="off" spellcheck="false">
+      <ul id="cyp-b-liste" class="cyp-suggestions" role="listbox" aria-label="Suggestions pour le médicament B" hidden></ul>
+    </div>
+    <button type="submit" class="btn btn-primary">Vérifier</button>
+  </div>
+  <p id="cyp-aide" class="cyp-aide">Tapez le début d'un nom, avec ou sans accents, puis choisissez dans la liste (flèches, puis Entrée). Votre saisie reste sur votre appareil : elle n'est envoyée nulle part.</p>
+</form>
+<noscript><p class="cyp-aide">Le vérificateur a besoin de JavaScript. La grille plus bas donne les mêmes informations, médicament par médicament.</p></noscript>
+<p id="cyp-statut" class="cyp-statut" role="status" aria-live="polite"></p>
+<div id="cyp-resultat" class="cyp-resultat"></div>
+```
 
-**Conséquence pratique.** Chaque exemple de la dernière colonne et son niveau viennent du Thésaurus de l'ANSM, version de septembre 2023.
+::: {.cyp-rappel}
+**Aucun mécanisme trouvé ne veut pas dire aucune interaction.** Le vérificateur ne lit que la grille ci-dessous, qui ne cite que des exemples. Il ne couvre pas les interactions pharmacodynamiques (effets qui s'additionnent : sédation, saignement, allongement du QT…), les autres transporteurs, ni le polymorphisme génétique. Le niveau officiel d'une association (contre-indication, association déconseillée, précaution d'emploi, à prendre en compte) est donné par le [Thésaurus des interactions médicamenteuses de l'ANSM](https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1) et par la rubrique 4.5 du RCP.
+:::
 
-**Filtre France.** Ne sont cités que des médicaments commercialisés en France d'après la base de données publique des médicaments (fichier du 20 novembre 2026), plus quelques aliments, plantes et le tabac. Ont été retirées les molécules de la carte des HUG absentes de cette base ou non commercialisées, par exemple : atomoxétine, édoxaban, métamizole, nortriptyline, phenprocoumone, pioglitazone, tizanidine, tolbutamide, triazolam.
+{{< include ../_includes/cyp-donnees.md >}}
 
-## Comment lire le tableau
+## Comment lire la grille
 
-- **Substrats** : médicaments éliminés par l'enzyme ou transportés par la P-gp. Les HUG distinguent une voie majeure et une voie mineure ; seules des voies majeures sont citées, sauf mention « (mineure) ». Le signe « ! » des HUG signale un métabolite actif. Pour une prodrogue (codéine, tramadol, tamoxifène, clopidogrel), l'inhibition de la voie d'activation peut diminuer l'effet au lieu de l'augmenter : la carte cite la fluoxétine, qui peut abolir l'efficacité de la codéine.
+- **Trois tableaux**, comme sur la carte des HUG : les substrats, puis les inhibiteurs, puis les inducteurs. Une ligne par médicament, une colonne par enzyme. La force est écrite en toutes lettres et marquée d'un carré plein (inhibiteur ou inducteur puissant, voie majeure) ou vide (modéré, voie mineure).
+- **Substrats** : médicaments éliminés par l'enzyme ou transportés par la P-gp. Les HUG distinguent une voie majeure et une voie mineure. Le signe « ! » des HUG, qui signale un métabolite actif, devient « métabolite actif », ou « prodrogue » quand l'effet vient du métabolite. Pour une prodrogue (codéine, tramadol, tamoxifène, clopidogrel), l'inhibition de la voie d'activation peut diminuer l'effet au lieu de l'augmenter : la carte cite la fluoxétine, qui peut abolir l'efficacité de la codéine.
 - **Inhibiteurs puissants et modérés** : classement des HUG. Pour la FDA, un inhibiteur puissant multiplie par 5 au moins l'aire sous la courbe (ASC) d'un substrat sensible, un inhibiteur modéré la multiplie par 2 à moins de 5.
-- **Inducteurs** : classement des HUG. Pour la FDA, un inducteur puissant diminue l'ASC d'un substrat sensible de 80 % au moins, un inducteur modéré de 50 % à moins de 80 %.
+- **Inducteurs** : classement des HUG. Pour la FDA, un inducteur puissant diminue l'ASC d'un substrat sensible de 80 % au moins, un inducteur modéré de 50 % à moins de 80 %. Le CYP2D6 n'a pas d'inducteur cliniquement notable (HUG, FDA) : sa colonne du tableau 3 est vide.
+- **Une case vide** veut dire que la grille ne cite pas ce médicament pour cette enzyme, pas qu'il n'a aucun effet sur elle.
 - **Délais** (carte des HUG) : après l'arrêt d'un inhibiteur, l'activité de l'enzyme revient progressivement à la normale en environ 4 demi-vies. Après l'arrêt d'un inducteur, le retour à la normale prend plus de 2 semaines après la disparition de l'inducteur du sang.
 - **Importance clinique** (carte des HUG) : elle dépend de la part de la voie inhibée ou induite dans la clairance totale, de l'existence de métabolites actifs et des concentrations de l'inhibiteur ou de l'inducteur. Pour la P-gp, elle dépend de l'affinité du substrat pour le transporteur.
 
 {{< figure-svg cytochromes-1 alt="Effet d'un inhibiteur et d'un inducteur sur un médicament substrat et sur une prodrogue." legende="Le CYP3A4 et la P-gp limitent la quantité de substrat qui atteint le sang : un inhibiteur l'augmente, un inducteur la diminue. Pour une prodrogue, c'est l'inverse." description="Le médicament passe de l'intestin à l'entérocyte, puis par la veine porte à l'hépatocyte, puis dans le sang. Dans l'entérocyte, la P-gp le renvoie vers l'intestin et le CYP3A4 le transforme en métabolites ; dans l'hépatocyte, le CYP3A4 le transforme aussi. Avec un inhibiteur du CYP3A4 ou de la P-gp, plus de substrat atteint le sang : risque de surdosage. Avec un inducteur, moins de substrat atteint le sang : effet diminué. Cas inverse, une prodrogue : la codéine est transformée en morphine par le CYP2D6 ; avec un inhibiteur du CYP2D6 comme la fluoxétine, moins de morphine, effet diminué." >}}
 
-## Le tableau
+## La grille
 
-::: {.tableau-filtrable libelle="Filtrer le tableau par enzyme ou par médicament"}
-| Enzyme ou transporteur | Substrats (exemples) | Inhibiteurs puissants / modérés (exemples) | Inducteurs (exemples) | Conséquence pratique (exemple du Thésaurus de l'ANSM) |
-|---|---|---|---|---|
-| **CYP1A2** | Caféine, clozapine, duloxétine, olanzapine, théophylline, agomélatine, imipramine, clomipramine, erlotinib | Puissants : ciprofloxacine, fluvoxamine, norfloxacine. Modérés : éthinylestradiol (contraceptifs oraux), amiodarone, propafénone, vérapamil | Puissants : tabac (goudrons), légumes crucifères (chou, brocoli). Modérés : carbamazépine, oméprazole, lansoprazole, ritonavir, modafinil | Théophylline + fluvoxamine, théophylline + ciprofloxacine : précaution d'emploi (hausse de la théophyllinémie, surdosage). Clozapine + fluvoxamine : précaution d'emploi. Arrêt du tabac chez un patient sous clozapine ou théophylline : [à compléter : source et conduite à tenir]. *À revérifier sur le Thésaurus de l'ANSM et le RCP.* |
-| **CYP2B6** | Bupropion (!), éfavirenz, méthadone, cyclophosphamide (prodrogue), sertraline, tramadol, propofol | Puissants : clopidogrel, voriconazole. Modérés : éfavirenz, sertraline, prasugrel | Puissants : phénobarbital, primidone. Modérés : rifampicine, éfavirenz, névirapine, modafinil | Méthadone + inducteurs enzymatiques : précaution d'emploi (baisse des concentrations de méthadone ; prises fractionnées en 2 à 3 par jour). Exemple propre au CYP2B6 : [à compléter : source]. *À revérifier sur le Thésaurus de l'ANSM et le RCP.* |
-| **CYP2C8** | Répaglinide, paclitaxel, montélukast, lopéramide, enzalutamide | Puissants : gemfibrozil, imatinib, silibinine (chardon-Marie). Modérés : triméthoprime, dasatinib, nilotinib, sorafénib | Puissant : rifampicine. Modéré : dexaméthasone | Répaglinide + gemfibrozil : contre-indication (hypoglycémie sévère, voire coma). Répaglinide + clopidogrel : à prendre en compte. *À revérifier sur le Thésaurus de l'ANSM et le RCP.* |
-| **CYP2C9** | Warfarine, acénocoumarol, phénytoïne, glibenclamide, glimépiride, célécoxib, ibuprofène, diclofénac, piroxicam, losartan, irbésartan, fluvastatine, bosentan | Puissants : amiodarone, fluconazole, miconazole, voriconazole, métronidazole, acide valproïque, gemfibrozil, étravirine. Modérés : fluoxétine, fluvoxamine, éfavirenz, atazanavir, clopidogrel | Puissants : rifampicine, carbamazépine, phénobarbital, phénytoïne, primidone, bosentan. Modérés : enzalutamide, dexaméthasone, ritonavir | AVK + miconazole : contre-indication. AVK + fluconazole : précaution d'emploi (INR, jusqu'à 8 jours après l'arrêt). AVK + amiodarone : précaution d'emploi (jusqu'à 4 semaines après l'arrêt). Phénytoïne + fluconazole : précaution d'emploi. *À revérifier sur le Thésaurus de l'ANSM et le RCP.* |
-| **CYP2C19** | Oméprazole, ésoméprazole, lansoprazole, pantoprazole, diazépam, clobazam, citalopram, moclobémide, voriconazole, proguanil (prodrogue), clozapine | Puissants : fluconazole, fluvoxamine, voriconazole, felbamate, modafinil, oméprazole, ésoméprazole, lansoprazole, clobazam. Modéré : fluoxétine | Puissants : rifampicine, phénobarbital, phénytoïne, primidone, ritonavir. Modéré : enzalutamide | Voriconazole + rifampicine : contre-indication (perte d'efficacité). Escitalopram + oméprazole ou ésoméprazole : précaution d'emploi (surveillance clinique et électrocardiographique). Clopidogrel (prodrogue) + oméprazole ou ésoméprazole : pas d'entrée dans le Thésaurus 2023 ; association déconseillée par le RCP de Plavix (baisse de l'exposition au métabolite actif), qui précise que le pantoprazole peut être associé. *À revérifier sur le Thésaurus de l'ANSM et le RCP.* |
-| **CYP2D6** | Métoprolol, nébivolol, carvédilol, propafénone, flécaïnide, amitriptyline, imipramine, clomipramine, venlafaxine, dextrométhorphane, halopéridol, rispéridone, aripiprazole. Prodrogues : codéine (mineure), tramadol (mineure), tamoxifène | Puissants : fluoxétine, paroxétine, bupropion, quinidine, terbinafine, amiodarone, propafénone, halopéridol. Modérés : duloxétine, sertraline, citalopram, dronédarone | Pas d'inducteur cliniquement notable (HUG, FDA) | Codéine ou tramadol + fluoxétine, paroxétine, bupropion, quinidine, terbinafine ou duloxétine : association déconseillée (inefficacité de l'opiacé). Tamoxifène + paroxétine, fluoxétine, bupropion, quinidine ou terbinafine : association déconseillée (baisse d'efficacité). Métoprolol + paroxétine : précaution d'emploi (bradycardie). *À revérifier sur le Thésaurus de l'ANSM et le RCP.* |
-| **CYP3A4/5** | Midazolam, alprazolam, simvastatine, atorvastatine, ciclosporine, tacrolimus, sirolimus, évérolimus, colchicine, ticagrélor, amlodipine, félodipine, nifédipine, quétiapine, fentanyl, oxycodone, sildénafil, tadalafil ; apixaban et rivaroxaban (mineure) | Puissants : clarithromycine, érythromycine, itraconazole, kétoconazole, posaconazole, voriconazole, fluconazole, ritonavir, cobicistat (liste du Thésaurus), diltiazem, vérapamil, pamplemousse. Modérés : ciprofloxacine, dronédarone, doxycycline | Puissants : rifampicine, carbamazépine, phénytoïne, phénobarbital, primidone, millepertuis, enzalutamide, éfavirenz, bosentan. Modérés : rifabutine, névirapine, étravirine, modafinil, dexaméthasone | Simvastatine, ticagrélor + inhibiteurs puissants du CYP3A4 : contre-indication. Colchicine + macrolides (sauf spiramycine) : contre-indication. Apixaban, rivaroxaban + inhibiteurs puissants : association déconseillée. Immunosuppresseurs + clarithromycine, itraconazole ou kétoconazole : association déconseillée. Estroprogestatifs + inducteurs enzymatiques : association déconseillée ; + millepertuis : contre-indication. *À revérifier sur le Thésaurus de l'ANSM et le RCP.* |
-| **P-glycoprotéine (P-gp)** | Digoxine, dabigatran, apixaban, rivaroxaban, fexofénadine, colchicine, ticagrélor, ciclosporine, tacrolimus, lopéramide, céliprolol | Puissants : amiodarone, ciclosporine, clarithromycine, érythromycine, itraconazole, kétoconazole, vérapamil, quinidine, propafénone, ritonavir. Modérés : dronédarone, diltiazem, posaconazole | Puissants : rifampicine, millepertuis, carbamazépine, rifabutine. Modérés : phénobarbital, phénytoïne, primidone | Dabigatran + ciclosporine, dronédarone, itraconazole ou kétoconazole : contre-indication. Dabigatran + amiodarone ou vérapamil : précaution d'emploi (adaptation de dose). Dabigatran + inducteurs enzymatiques puissants : association déconseillée. Digoxine + dronédarone : association déconseillée ; + amiodarone, vérapamil, propafénone ou quinidine : précaution d'emploi. *À revérifier sur le Thésaurus de l'ANSM et le RCP.* |
+Sur téléphone, faites défiler chaque tableau de côté : la colonne des médicaments reste visible.
+
+::: {.tableau-filtrable libelle="Filtrer la grille par médicament"}
+{{< include ../_includes/cyp-grille.md >}}
 :::
 
-## Index par médicament
+## Exemples du Thésaurus, enzyme par enzyme
 
-Le même tableau, rangé par médicament : cherchez une molécule pour voir ses rôles. Cet index est produit automatiquement à partir du tableau ci-dessus.
+Chaque exemple et son niveau viennent du Thésaurus de l'ANSM, version de septembre 2023, sauf mention contraire. *À revérifier sur le Thésaurus de l'ANSM et le RCP.*
 
-::: {.tableau-filtrable libelle="Filtrer l'index par médicament"}
-{{< include ../_includes/cyp-index.md >}}
-:::
+- [**CYP1A2**]{#exemples-cyp1a2}. Théophylline + fluvoxamine, théophylline + ciprofloxacine : précaution d'emploi (hausse de la théophyllinémie, surdosage). Clozapine + fluvoxamine : précaution d'emploi. Arrêt du tabac chez un patient sous clozapine ou théophylline : [à compléter : source et conduite à tenir].
+- [**CYP2B6**]{#exemples-cyp2b6}. Méthadone + inducteurs enzymatiques : précaution d'emploi (baisse des concentrations de méthadone ; prises fractionnées en 2 à 3 par jour). Exemple propre au CYP2B6 : [à compléter : source].
+- [**CYP2C8**]{#exemples-cyp2c8}. Répaglinide + gemfibrozil : contre-indication (hypoglycémie sévère, voire coma). Répaglinide + clopidogrel : à prendre en compte.
+- [**CYP2C9**]{#exemples-cyp2c9}. AVK + miconazole : contre-indication. AVK + fluconazole : précaution d'emploi (INR, jusqu'à 8 jours après l'arrêt). AVK + amiodarone : précaution d'emploi (jusqu'à 4 semaines après l'arrêt). Phénytoïne + fluconazole : précaution d'emploi.
+- [**CYP2C19**]{#exemples-cyp2c19}. Voriconazole + rifampicine : contre-indication (perte d'efficacité). Escitalopram + oméprazole ou ésoméprazole : précaution d'emploi (surveillance clinique et électrocardiographique). Clopidogrel (prodrogue) + oméprazole ou ésoméprazole : pas d'entrée dans le Thésaurus 2023 ; association déconseillée par le RCP de Plavix (baisse de l'exposition au métabolite actif), qui précise que le pantoprazole peut être associé.
+- [**CYP2D6**]{#exemples-cyp2d6}. Codéine ou tramadol + fluoxétine, paroxétine, bupropion, quinidine, terbinafine ou duloxétine : association déconseillée (inefficacité de l'opiacé). Tamoxifène + paroxétine, fluoxétine, bupropion, quinidine ou terbinafine : association déconseillée (baisse d'efficacité). Métoprolol + paroxétine : précaution d'emploi (bradycardie).
+- [**CYP3A4/5**]{#exemples-cyp3a4-5}. Simvastatine, ticagrélor + inhibiteurs puissants du CYP3A4 : contre-indication. Colchicine + macrolides (sauf spiramycine) : contre-indication. Apixaban, rivaroxaban + inhibiteurs puissants : association déconseillée. Immunosuppresseurs + clarithromycine, itraconazole ou kétoconazole : association déconseillée. Estroprogestatifs + inducteurs enzymatiques : association déconseillée ; + millepertuis : contre-indication.
+- [**P-glycoprotéine (P-gp)**]{#exemples-p-gp}. Dabigatran + ciclosporine, dronédarone, itraconazole ou kétoconazole : contre-indication. Dabigatran + amiodarone ou vérapamil : précaution d'emploi (adaptation de dose). Dabigatran + inducteurs enzymatiques puissants : association déconseillée. Digoxine + dronédarone : association déconseillée ; + amiodarone, vérapamil, propafénone ou quinidine : précaution d'emploi.
+
+## Sources et méthode
+
+**Base de la grille.** La grille reprend la carte [« Interactions médicamenteuses, cytochromes P450 et P-glycoprotéine (Pgp) »](https://www.hug.ch/sites/interhug/files/structures/pharmacologie_et_toxicologie_cliniques/images/carte_des_cytochromes_2020.pdf) du Centre d'informations thérapeutiques et de pharmacovigilance, Service de pharmacologie et toxicologie cliniques des Hôpitaux universitaires de Genève (HUG), version de mars 2020. C'est la version proposée sur la [page Ressources du service](https://www.hug.ch/pharmacologie-toxicologie-cliniques/ressources) (« Carte Cytochromes (CYP) 2020 ») au 25 novembre 2026. La carte comprend trois tableaux (substrats, inhibiteurs, inducteurs) pour les CYP1A2, 2B6, 2C8, 2C9, 2C19, 2D6, 2E1, 3A4/5 et la P-gp. La grille en garde la présentation et une sélection de classements, sans le CYP2E1. Pour la carte complète, voir le PDF des HUG.
+
+**Recoupement.** Chaque ligne a été comparée aux listes de la FDA : la [table des substrats, inhibiteurs et inducteurs](https://www.fda.gov/drugs/drug-interactions-labeling/drug-development-and-drug-interactions-table-substrates-inhibitors-and-inducers) (à jour au 5 juin 2023) et les [exemples destinés aux professionnels de santé](https://www.fda.gov/drugs/drug-interactions-labeling/healthcare-professionals-fdas-examples-drugs-interact-cyp-enzymes-and-transporter-systems) (à jour au 29 mai 2026). Les désaccords de classement sont signalés plus bas.
+
+**Une exception.** Le cobicistat, absent de la carte des HUG, figure comme inhibiteur puissant du CYP3A4/5 d'après la liste du Thésaurus ; sa case le dit.
+
+**Filtre France.** Ne sont cités que des médicaments commercialisés en France d'après la base de données publique des médicaments (fichier du 20 novembre 2026), plus quelques aliments, plantes et le tabac. Ont été retirées les molécules de la carte des HUG absentes de cette base ou non commercialisées, par exemple : atomoxétine, édoxaban, métamizole, nortriptyline, phenprocoumone, pioglitazone, tizanidine, tolbutamide, triazolam.
+
+**Vérificateur.** Il lit les mêmes données que la grille et les compare enzyme par enzyme. Le sens de la variation suit la figure plus haut : un inhibiteur augmente l'exposition à un substrat et un inducteur la diminue ; pour une prodrogue, c'est l'inverse.
 
 ## Désaccords entre les HUG et la FDA
 
@@ -125,8 +160,9 @@ Les deux sources ne classent pas toujours une molécule de la même façon. Les 
 
 Le Thésaurus de l'ANSM a sa propre liste d'inhibiteurs puissants du CYP3A4 : clarithromycine, cobicistat, érythromycine, itraconazole, kétoconazole, posaconazole, ritonavir, télithromycine, tucatinib et voriconazole. Ses inducteurs enzymatiques puissants sont l'apalutamide, la carbamazépine, l'enzalutamide, la fosphénytoïne, le phénobarbital, la phénytoïne et la primidone. Pour une décision en France, c'est ce classement, avec le RCP, qui s'applique.
 
-## Ce que ce tableau ne couvre pas
+## Ce que le vérificateur et la grille ne couvrent pas
 
+- Les médicaments absents de la grille : elle ne cite que des exemples.
 - Les autres transporteurs (OATP1B1, OATP1B3, BCRP, OCT2, MATE) et les enzymes de conjugaison : voir les tables de la FDA.
 - Les interactions pharmacodynamiques (addition d'effets sédatifs, hémorragiques, allongement du QT…) : voir le Thésaurus de l'ANSM et la page [Les interactions à connaître](interactions.qmd).
 - Le CYP2E1, présent dans la carte des HUG.
@@ -138,4 +174,5 @@ Pour une question sur un patient, contactez le centre régional de pharmacovigil
 
 ```{=html}
 <script src="../assets/js/table-filter.js" defer></script>
+<script src="../assets/js/cyp-verificateur.js" defer></script>
 ```

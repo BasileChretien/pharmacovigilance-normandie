@@ -1,0 +1,310 @@
+# Cytochromes P450 and P-glycoprotein: the one hand-written source of the grid and of the
+# two-drug checker of bon-usage/cytochromes.qmd. After an edit, run
+#   uv run python tools/build/make_cytochromes.py
+# which writes _includes/cyp-grille.md (the grid) and _includes/cyp-donnees.md (the checker's data).
+#
+# One entry per drug, as on the HUG card (one row per drug, one column per enzyme):
+#   substrat:   {ENZYME: majeure | mineure [prodrogue] [métabolite-actif] [SOURCE]}
+#   inhibiteur: {ENZYME: puissant | modéré [SOURCE]}
+#   inducteur:  {ENZYME: puissant | modéré [SOURCE]}
+#   précision:  shown in brackets beside the name, and searched by the checker.
+# ENZYME: CYP1A2, CYP2B6, CYP2C8, CYP2C9, CYP2C19, CYP2D6, CYP3A4/5, P-gp (the CYP2E1 of the card is
+# not used). SOURCE: a key of `sources`; without one, the entry comes from `source_par_defaut`.
+# "prodrogue": the enzyme forms the active substance; "métabolite-actif": the "!" of the card for a
+# drug that is itself active. Only drugs marketed in France (BDPM file of 20/11/2026), plus some
+# foods, plants and tobacco. Strengths are the HUG ones; the page lists where the FDA disagrees.
+# Reading of the card: 25/11/2026, rechecked cell by cell (colour and position) on 28/11/2026.
+
+sources:
+  hug: {court: HUG, long: "carte « Interactions médicamenteuses, cytochromes P450 et P-glycoprotéine » des HUG (mars 2020)"}
+  thesaurus: {court: Thésaurus, long: "liste des inhibiteurs puissants du CYP3A4 du Thésaurus de l'ANSM (septembre 2023)"}
+source_par_defaut: hug
+
+medicaments:
+  acénocoumarol:
+    substrat: {CYP2C9: majeure}
+  acide valproïque:
+    inhibiteur: {CYP2C9: puissant}
+  agomélatine:
+    substrat: {CYP1A2: majeure}
+  alprazolam:
+    substrat: {CYP3A4/5: majeure}
+  amiodarone:
+    inhibiteur: {CYP1A2: modéré, CYP2C9: puissant, CYP2D6: puissant, P-gp: puissant}
+  amitriptyline:
+    substrat: {CYP2D6: majeure}
+  amlodipine:
+    substrat: {CYP3A4/5: majeure}
+  apixaban:
+    substrat: {CYP3A4/5: mineure, P-gp: majeure}
+  aripiprazole:
+    substrat: {CYP2D6: majeure}
+  atazanavir:
+    inhibiteur: {CYP2C9: modéré}
+  atorvastatine:
+    substrat: {CYP3A4/5: majeure}
+  bosentan:
+    substrat: {CYP2C9: majeure}
+    inducteur: {CYP2C9: puissant, CYP3A4/5: puissant}
+  bupropion:
+    substrat: {CYP2B6: majeure métabolite-actif}
+    inhibiteur: {CYP2D6: puissant}
+  caféine:
+    substrat: {CYP1A2: majeure}
+  carbamazépine:
+    inducteur: {CYP1A2: modéré, CYP2C9: puissant, CYP3A4/5: puissant, P-gp: puissant}
+  carvédilol:
+    substrat: {CYP2D6: majeure}
+  célécoxib:
+    substrat: {CYP2C9: majeure}
+  céliprolol:
+    substrat: {P-gp: majeure}
+  ciclosporine:
+    substrat: {CYP3A4/5: majeure, P-gp: majeure}
+    inhibiteur: {P-gp: puissant}
+  ciprofloxacine:
+    inhibiteur: {CYP1A2: puissant, CYP3A4/5: modéré}
+  citalopram:
+    substrat: {CYP2C19: majeure}
+    inhibiteur: {CYP2D6: modéré}
+  clarithromycine:
+    inhibiteur: {CYP3A4/5: puissant, P-gp: puissant}
+  clobazam:
+    substrat: {CYP2C19: majeure}
+    inhibiteur: {CYP2C19: puissant}
+  clomipramine:
+    substrat: {CYP1A2: majeure, CYP2D6: majeure}
+  clopidogrel:
+    # CYP2C19: light cell with "!" on the HUG card (read 28/11/2026); the page's example
+    # clopidogrel + omeprazole (Plavix SmPC) rests on it. Other pathways of the card not used.
+    substrat: {CYP2C19: mineure prodrogue}
+    inhibiteur: {CYP2B6: puissant, CYP2C9: modéré}
+  clozapine:
+    substrat: {CYP1A2: majeure, CYP2C19: majeure}
+  cobicistat:
+    inhibiteur: {CYP3A4/5: puissant thesaurus}
+  codéine:
+    substrat: {CYP2D6: mineure prodrogue}
+  colchicine:
+    substrat: {CYP3A4/5: majeure, P-gp: majeure}
+  cyclophosphamide:
+    substrat: {CYP2B6: majeure prodrogue}
+  dabigatran:
+    substrat: {P-gp: majeure}
+  dasatinib:
+    inhibiteur: {CYP2C8: modéré}
+  dexaméthasone:
+    inducteur: {CYP2C8: modéré, CYP2C9: modéré, CYP3A4/5: modéré}
+  dextrométhorphane:
+    substrat: {CYP2D6: majeure}
+  diazépam:
+    substrat: {CYP2C19: majeure}
+  diclofénac:
+    substrat: {CYP2C9: majeure}
+  digoxine:
+    substrat: {P-gp: majeure}
+  diltiazem:
+    inhibiteur: {CYP3A4/5: puissant, P-gp: modéré}
+  doxycycline:
+    inhibiteur: {CYP3A4/5: modéré}
+  dronédarone:
+    inhibiteur: {CYP2D6: modéré, CYP3A4/5: modéré, P-gp: modéré}
+  duloxétine:
+    substrat: {CYP1A2: majeure}
+    inhibiteur: {CYP2D6: modéré}
+  éfavirenz:
+    substrat: {CYP2B6: majeure}
+    inhibiteur: {CYP2B6: modéré, CYP2C9: modéré}
+    inducteur: {CYP2B6: modéré, CYP3A4/5: puissant}
+  enzalutamide:
+    substrat: {CYP2C8: majeure}
+    inducteur: {CYP2C9: modéré, CYP2C19: modéré, CYP3A4/5: puissant}
+  erlotinib:
+    substrat: {CYP1A2: majeure}
+  érythromycine:
+    inhibiteur: {CYP3A4/5: puissant, P-gp: puissant}
+  ésoméprazole:
+    substrat: {CYP2C19: majeure}
+    inhibiteur: {CYP2C19: puissant}
+  éthinylestradiol:
+    précision: contraceptifs oraux
+    inhibiteur: {CYP1A2: modéré}
+  étravirine:
+    inhibiteur: {CYP2C9: puissant}
+    inducteur: {CYP3A4/5: modéré}
+  évérolimus:
+    substrat: {CYP3A4/5: majeure}
+  felbamate:
+    inhibiteur: {CYP2C19: puissant}
+  félodipine:
+    substrat: {CYP3A4/5: majeure}
+  fentanyl:
+    substrat: {CYP3A4/5: majeure}
+  fexofénadine:
+    substrat: {P-gp: majeure}
+  flécaïnide:
+    substrat: {CYP2D6: majeure}
+  fluconazole:
+    inhibiteur: {CYP2C9: puissant, CYP2C19: puissant, CYP3A4/5: puissant}
+  fluoxétine:
+    inhibiteur: {CYP2C9: modéré, CYP2C19: modéré, CYP2D6: puissant}
+  fluvastatine:
+    substrat: {CYP2C9: majeure}
+  fluvoxamine:
+    inhibiteur: {CYP1A2: puissant, CYP2C9: modéré, CYP2C19: puissant}
+  gemfibrozil:
+    inhibiteur: {CYP2C8: puissant, CYP2C9: puissant}
+  glibenclamide:
+    substrat: {CYP2C9: majeure}
+  glimépiride:
+    substrat: {CYP2C9: majeure}
+  halopéridol:
+    substrat: {CYP2D6: majeure}
+    inhibiteur: {CYP2D6: puissant}
+  ibuprofène:
+    substrat: {CYP2C9: majeure}
+  imatinib:
+    inhibiteur: {CYP2C8: puissant}
+  imipramine:
+    substrat: {CYP1A2: majeure, CYP2D6: majeure}
+  irbésartan:
+    substrat: {CYP2C9: majeure}
+  itraconazole:
+    inhibiteur: {CYP3A4/5: puissant, P-gp: puissant}
+  kétoconazole:
+    inhibiteur: {CYP3A4/5: puissant, P-gp: puissant}
+  lansoprazole:
+    substrat: {CYP2C19: majeure}
+    inhibiteur: {CYP2C19: puissant}
+    inducteur: {CYP1A2: modéré}
+  légumes crucifères:
+    précision: chou, brocoli
+    inducteur: {CYP1A2: puissant}
+  lopéramide:
+    substrat: {CYP2C8: majeure, P-gp: majeure}
+  losartan:
+    substrat: {CYP2C9: majeure}
+  méthadone:
+    substrat: {CYP2B6: majeure}
+  métoprolol:
+    substrat: {CYP2D6: majeure}
+  métronidazole:
+    inhibiteur: {CYP2C9: puissant}
+  miconazole:
+    inhibiteur: {CYP2C9: puissant}
+  midazolam:
+    substrat: {CYP3A4/5: majeure}
+  millepertuis:
+    inducteur: {CYP3A4/5: puissant, P-gp: puissant}
+  moclobémide:
+    substrat: {CYP2C19: majeure}
+  modafinil:
+    inhibiteur: {CYP2C19: puissant}
+    inducteur: {CYP1A2: modéré, CYP2B6: modéré, CYP3A4/5: modéré}
+  montélukast:
+    substrat: {CYP2C8: majeure}
+  nébivolol:
+    substrat: {CYP2D6: majeure}
+  névirapine:
+    inducteur: {CYP2B6: modéré, CYP3A4/5: modéré}
+  nifédipine:
+    substrat: {CYP3A4/5: majeure}
+  nilotinib:
+    inhibiteur: {CYP2C8: modéré}
+  norfloxacine:
+    inhibiteur: {CYP1A2: puissant}
+  olanzapine:
+    substrat: {CYP1A2: majeure}
+  oméprazole:
+    substrat: {CYP2C19: majeure}
+    inhibiteur: {CYP2C19: puissant}
+    inducteur: {CYP1A2: modéré}
+  oxycodone:
+    substrat: {CYP3A4/5: majeure}
+  paclitaxel:
+    substrat: {CYP2C8: majeure}
+  pamplemousse:
+    inhibiteur: {CYP3A4/5: puissant}
+  pantoprazole:
+    substrat: {CYP2C19: majeure}
+  paroxétine:
+    inhibiteur: {CYP2D6: puissant}
+  phénobarbital:
+    inducteur: {CYP2B6: puissant, CYP2C9: puissant, CYP2C19: puissant, CYP3A4/5: puissant, P-gp: modéré}
+  phénytoïne:
+    substrat: {CYP2C9: majeure}
+    inducteur: {CYP2C9: puissant, CYP2C19: puissant, CYP3A4/5: puissant, P-gp: modéré}
+  piroxicam:
+    substrat: {CYP2C9: majeure}
+  posaconazole:
+    inhibiteur: {CYP3A4/5: puissant, P-gp: modéré}
+  prasugrel:
+    inhibiteur: {CYP2B6: modéré}
+  primidone:
+    inducteur: {CYP2B6: puissant, CYP2C9: puissant, CYP2C19: puissant, CYP3A4/5: puissant, P-gp: modéré}
+  proguanil:
+    substrat: {CYP2C19: majeure prodrogue}
+  propafénone:
+    substrat: {CYP2D6: majeure}
+    inhibiteur: {CYP1A2: modéré, CYP2D6: puissant, P-gp: puissant}
+  propofol:
+    substrat: {CYP2B6: majeure}
+  quétiapine:
+    substrat: {CYP3A4/5: majeure}
+  quinidine:
+    inhibiteur: {CYP2D6: puissant, P-gp: puissant}
+  répaglinide:
+    substrat: {CYP2C8: majeure}
+  rifabutine:
+    inducteur: {CYP3A4/5: modéré, P-gp: puissant}
+  rifampicine:
+    inducteur: {CYP2B6: modéré, CYP2C8: puissant, CYP2C9: puissant, CYP2C19: puissant, CYP3A4/5: puissant, P-gp: puissant}
+  rispéridone:
+    substrat: {CYP2D6: majeure}
+  ritonavir:
+    inhibiteur: {CYP3A4/5: puissant, P-gp: puissant}
+    inducteur: {CYP1A2: modéré, CYP2C9: modéré, CYP2C19: puissant}
+  rivaroxaban:
+    substrat: {CYP3A4/5: mineure, P-gp: majeure}
+  sertraline:
+    substrat: {CYP2B6: majeure}
+    inhibiteur: {CYP2B6: modéré, CYP2D6: modéré}
+  sildénafil:
+    substrat: {CYP3A4/5: majeure}
+  silibinine:
+    précision: chardon-Marie
+    inhibiteur: {CYP2C8: puissant}
+  simvastatine:
+    substrat: {CYP3A4/5: majeure}
+  sirolimus:
+    substrat: {CYP3A4/5: majeure}
+  sorafénib:
+    inhibiteur: {CYP2C8: modéré}
+  tabac:
+    précision: goudrons
+    inducteur: {CYP1A2: puissant}
+  tacrolimus:
+    substrat: {CYP3A4/5: majeure, P-gp: majeure}
+  tadalafil:
+    substrat: {CYP3A4/5: majeure}
+  tamoxifène:
+    substrat: {CYP2D6: majeure prodrogue}
+  terbinafine:
+    inhibiteur: {CYP2D6: puissant}
+  théophylline:
+    substrat: {CYP1A2: majeure}
+  ticagrélor:
+    substrat: {CYP3A4/5: majeure, P-gp: majeure}
+  tramadol:
+    substrat: {CYP2B6: majeure, CYP2D6: mineure prodrogue}
+  triméthoprime:
+    inhibiteur: {CYP2C8: modéré}
+  venlafaxine:
+    substrat: {CYP2D6: majeure}
+  vérapamil:
+    inhibiteur: {CYP1A2: modéré, CYP3A4/5: puissant, P-gp: puissant}
+  voriconazole:
+    substrat: {CYP2C19: majeure}
+    inhibiteur: {CYP2B6: puissant, CYP2C9: puissant, CYP2C19: puissant, CYP3A4/5: puissant}
+  warfarine:
+    substrat: {CYP2C9: majeure}
