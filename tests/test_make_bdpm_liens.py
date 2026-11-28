@@ -1,6 +1,7 @@
 """Tests for tools/build/make_bdpm_liens.py (official notice and SmPC links, from the BDPM)."""
 
 import make_bdpm_liens as mb
+import pytest
 
 # Same columns as the BDPM files (tab-separated): CIS_bdpm.txt
 SPECIALITES = "\n".join(
@@ -399,6 +400,7 @@ def test_report_lists_unknown_substances_and_products_no_longer_marketed():
         {"medicaments/ains.qmd": ["ibuprofène", "inconnue"]},
         {"68634000": ["a.qmd"], "60000006": ["b.qmd"], "99999999": ["c.qmd"]},
         "2026-11-20",
+        {},
     )
     assert data["mis_a_jour"] == "2026-11-20"
     assert data["substances"]["ibuprofène"]["cis"] == "68634000"
@@ -427,9 +429,9 @@ def test_update_date_of_the_products_file_is_read_from_the_download_page():
 
 
 def test_a_missing_files_date_is_reported():
-    data = mb.construire(_base(), {}, {}, None)
+    data = mb.construire(_base(), {}, {}, None, {})
     assert any("date" in p for p in mb.rapport(data, {}, {}))
-    dated = mb.construire(_base(), {}, {}, "2026-11-20")
+    dated = mb.construire(_base(), {}, {}, "2026-11-20", {})
     assert mb.rapport(dated, {}, {}) == []
 
 
@@ -530,6 +532,7 @@ def test_every_page_that_lists_substances_is_named_for_the_filter():
         {"medicaments/b.qmd": ["ibuprofène"], "medicaments/a.qmd": ["inconnue"]},
         {},
         "2026-11-20",
+        {},
     )
     assert data["pages_lues"] == ["medicaments/a.qmd", "medicaments/b.qmd"]
 
@@ -540,3 +543,9 @@ def test_the_bulletin_folder_is_not_read(tmp_path):
         "---\ntitle: N\nsubstances: [ibuprofène]\n---\n", encoding="utf-8"
     )
     assert mb.lire_pages(tmp_path) == ({}, {}, {})
+
+
+def test_the_products_cited_in_sources_must_be_passed():
+    # Left out, every page would quietly fall back to the site-wide examples.
+    with pytest.raises(TypeError):
+        mb.construire(_base(), {"medicaments/p.qmd": ["ibuprofène"]}, {}, None)
