@@ -30,6 +30,9 @@ sources:
   - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
     url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
     consulte_le: 2026-11-28
+  - titre: "CRAT, Ibuprofène – Allaitement (mise à jour du 20/05/2026)"
+    url: "https://www.lecrat.fr/15339/"
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Anti-inflammatoires non stéroïdiens"
     url: "https://pharmacomedicale.org/medicaments/par-specialites/item/anti-inflammatoires-non-steroidiens"
@@ -102,17 +105,20 @@ Ne prenez jamais deux anti-inflammatoires en même temps. Demandez l'avis de vot
 - un corticoïde ou certains antidépresseurs ;
 - du lithium ou du méthotrexate.
 
-### Grossesse, allaitement, conduite
+### Et pendant la grossesse ?
 
 - À partir du début du 6e mois (24 semaines d'aménorrhée, comptées depuis les dernières règles), tout AINS est contre-indiqué. Même une seule prise expose le bébé à une atteinte grave du cœur, des poumons et des reins, parfois mortelle.
 - Avant le 6e mois, ils ne sont pas sans risque (fausse couche, atteinte des reins du bébé). Prenez un AINS seulement si votre médecin l'a prescrit.
 - Le célécoxib est contre-indiqué pendant toute la grossesse.
 - Les AINS peuvent rendre une grossesse plus difficile à obtenir. Cet effet disparaît à l'arrêt.
-- Pendant l'allaitement, l'ibuprofène est déconseillé.
-- Votre médecin peut consulter le CRAT (Centre de référence sur les agents tératogènes) : [lecrat.fr](https://www.lecrat.fr).
-- Rarement, des vertiges ou des troubles de la vue gênent la conduite.
 
 {{< figure-svg ains-2 alt="Frise des 9 mois de grossesse. Jusqu'à la fin du 5e mois : un anti-inflammatoire seulement si le médecin l'a prescrit. À partir du 6e mois : interdit, même une seule prise. Le célécoxib est interdit pendant toute la grossesse." legende="À partir du début du 6e mois de grossesse, tout anti-inflammatoire est interdit, même une seule prise." >}}
+
+### Et pour l'allaitement et la conduite ?
+
+- Pendant l'allaitement, la notice de l'ibuprofène le déconseille, mais le Centre de référence sur les agents tératogènes (CRAT) juge son utilisation possible. Demandez conseil à votre médecin ou à votre pharmacien.
+- Votre médecin peut consulter le CRAT : [lecrat.fr](https://www.lecrat.fr).
+- Rarement, des vertiges ou des troubles de la vue gênent la conduite.
 
 ### Puis-je arrêter mon traitement ?
 
@@ -134,6 +140,7 @@ Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-s
 
 - **Infections.** Les AINS peuvent masquer une infection bactérienne débutante (conclusion du PRAC en 2020, reprise à la rubrique 4.4 des RCP de l'ibuprofène et du kétoprofène). Cas graves déclarés en France du 1er janvier 2019 au 30 juin 2023 (comptes de déclarations, pas des fréquences) : 162 avec l'ibuprofène, 54 avec le kétoprofène, 12 décès, surtout à streptocoque ou pneumocoque (sepsis, choc septique, méningite, infections cutanées graves). L'enquête de 2019 relevait des complications après seulement 2 à 3 jours, y compris sous antibiotique. Paracétamol en première intention ; éviter les AINS en cas de varicelle, de grippe ou d'infection ORL non documentée.
 - **Grossesse.** Tout AINS est contre-indiqué à partir de 24 SA, même en prise unique (toxicité cardio-pulmonaire : fermeture prématurée du canal artériel, hypertension artérielle pulmonaire ; mort fœtale in utero). Une prise même unique après 24 SA justifie un contrôle échographique cardiaque et rénal du fœtus et/ou du nouveau-né. Avant 24 SA, prescription seulement en cas de nécessité absolue, à la dose la plus faible et le moins longtemps possible : dès 12 SA, risque d'atteinte rénale fœtale (oligoamnios) ; dès 20 SA, s'y ajoute un risque de constriction du canal artériel, et une surveillance cardiaque et rénale du fœtus peut être nécessaire après une prise. Au premier trimestre, des études épidémiologiques ont observé plus de fausses couches et, pour certains AINS, de malformations cardiaques (risque absolu passant de moins de 1 % à environ 1,5 %) et de la paroi abdominale (RCP Advil, rubrique 4.6). Le célécoxib est contre-indiqué pendant toute la grossesse et chez la femme en âge de procréer sans contraception efficace. Entre 2018 et 2023, plus de 700 000 femmes enceintes ont été potentiellement exposées, dont 26 000 après le 5e mois (ANSM 2025).
+- **Allaitement.** RCP Advil : déconseillé (passage dans le lait). CRAT (mise à jour du 20/05/2026) : utilisation possible quelle que soit la voie ; l'enfant reçoit moins de 1 % de la dose pédiatrique usuelle, et aucun événement particulier n'est signalé chez une vingtaine d'enfants allaités. Célécoxib : contre-indiqué pendant l'allaitement (RCP).
 - **Digestif.** Risque d'hémorragie, d'ulcération ou de perforation à tout moment, croissant avec la dose et l'âge. Un IPP n'est justifié qu'en cas d'antécédent ulcéreux ou de facteur de risque, dont l'âge supérieur à 65 ans (ANSM).
 - **Cardiovasculaire.** Ibuprofène à 2 400 mg/j : légère augmentation du risque de thrombose artérielle ; pas d'association retrouvée à ≤ 1 200 mg/j. Célécoxib contre-indiqué en cas de cardiopathie ischémique, d'artériopathie, d'antécédent d'AVC ou d'insuffisance cardiaque NYHA II-IV.
 - **Rein.** Insuffisance rénale fonctionnelle, dose-dépendante, par inhibition des prostaglandines rénales ; rétention hydrosodée ; hyperkaliémie.

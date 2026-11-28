@@ -38,7 +38,7 @@ sources:
     consulte_le: 2026-11-28
   - titre: "HAS, Stratégie thérapeutique du patient vivant avec un diabète de type 2, fiche de synthèse (mai 2024)"
     url: "https://has-sante.fr/upload/docs/application/pdf/2024-06/strategie_therapeutique_du_patient_vivant_avec_un_diabete_de_type_2_-_fiche_de_synthese.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
     url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
     consulte_le: 2026-11-28

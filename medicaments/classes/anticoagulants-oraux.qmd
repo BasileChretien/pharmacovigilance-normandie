@@ -42,6 +42,9 @@ sources:
   - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
     url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
     consulte_le: 2026-11-28
+  - titre: "EMA, Ondexxya (andexanet alfa) : résumé de l'EPAR"
+    url: "https://www.ema.europa.eu/fr/medicines/human/EPAR/ondexxya"
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Je prends un anticoagulant oral, quels sont les risques ?"
     url: "https://www.rfcrpv.fr/prends-anticoagulant-oral-risques/"
@@ -162,7 +165,7 @@ Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-s
 - Fluindione : ne plus initier de traitement (ANSM 2018), en raison d'atteintes immuno-allergiques (cutanées, hépatiques, rénales, hématologiques), surtout dans les 6 premiers mois. Patient traité depuis plus de 6 mois et équilibré : pas de raison de changer.
 - Aucun argument pour remplacer un anticoagulant efficace et bien toléré par un autre (HAS 2018).
 - Mésusages identifiés par la HAS : sous-dosage intentionnel des AOD, prescription hors indication (CHA2DS2-VASc = 0, valvulopathie pour les AOD).
-- Antagonisation : vitamine K et concentrés de complexes prothrombiniques pour les AVK ; idarucizumab pour le dabigatran ; andexanet alfa disponible chez l'adulte pour l'apixaban et le rivaroxaban (RCP Eliquis, Xarelto).
+- Antagonisation : vitamine K et concentrés de complexes prothrombiniques pour les AVK ; idarucizumab pour le dabigatran ; andexanet alfa (Ondexxya) chez l'adulte pour l'apixaban et le rivaroxaban en cas de saignement menaçant le pronostic vital ou non contrôlé : AMM européenne conditionnelle depuis 2019, usage hospitalier (EMA ; RCP Eliquis, Xarelto), mais absent de la base de données publique des médicaments au 20/11/2026, ce qui indique qu'aucune présentation n'est commercialisée en France.
 
 ### Surveillance
 

@@ -132,3 +132,15 @@ def test_st_johns_wort_follows_each_doac_smpc():
     assert "apixaban à ne pas utiliser en traitement d'une TVP ou d'une EP" in row
     assert "avec précaution dans ses autres indications" in row
     assert "prévention de la récidive" in row
+
+
+def test_antidepressant_sodium_check_follows_has_2017():
+    # HAS 2017, Épisode dépressif caractérisé de l'adulte, recommandations (sujet âgé): « Une
+    # surveillance de la natrémie est recommandée une semaine après le début d'un traitement par
+    # ISRS et après chaque modification de dosage ». The synthesis leaves it out (review of #55).
+    text = page("medicaments/classes/antidepresseurs.qmd")
+    pro = text[text.index("## Pour les professionnels"):]
+    surveillance = line_with(pro, "Natrémie devant")
+    assert "une semaine après le début du traitement" in surveillance
+    assert "après chaque modification de dose" in surveillance
+    assert "Ni les RCP ni la HAS" not in surveillance

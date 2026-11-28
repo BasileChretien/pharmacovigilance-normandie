@@ -30,6 +30,12 @@ sources:
   - titre: "3114, numéro national de prévention du suicide"
     url: "https://3114.fr/"
     consulte_le: 2026-11-25
+  - titre: "HAS, Épisode dépressif caractérisé de l'adulte : prise en charge en soins de premier recours, synthèse (octobre 2017)"
+    url: "https://www.has-sante.fr/upload/docs/application/pdf/2017-10/depression_adulte_fiche_de_synthese_pec.pdf"
+    consulte_le: 2026-11-28
+  - titre: "HAS, Épisode dépressif caractérisé de l'adulte : prise en charge en soins de premier recours, recommandations (octobre 2017)"
+    url: "https://www.has-sante.fr/upload/docs/application/pdf/2017-10/depression_adulte_recommandations_version_mel.pdf"
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Antidépresseurs : les points essentiels"
     url: "https://pharmacomedicale.org/medicaments/par-specialites/item/antidepresseurs-les-points-essentiels"
@@ -143,11 +149,12 @@ Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-s
 - **QT** : escitalopram contre-indiqué en cas d'allongement du QT congénital ou acquis.
 - **Autres** : dysfonction sexuelle (des cas persistant après l'arrêt d'un ISRS ont été rapportés) ; glaucome aigu par fermeture de l'angle ; hausse dose-dépendante de la pression artérielle sous venlafaxine.
 - **Tricycliques** : contre-indiqués après un infarctus récent, en cas de trouble de conduction ou de rythme, d'insuffisance coronarienne. Effets atropiniques (rétention urinaire, glaucome, constipation), hypotension orthostatique du sujet âgé. Toxicité grave en surdosage (élargissement du QRS, arythmies) dès 750 mg chez l'adulte ; enfants très sensibles.
+- **Grossesse et allaitement** (HAS 2017) : un antidépresseur pendant la grossesse seulement s'il est strictement nécessaire ; poursuivre celui qui était efficace avant la grossesse ; informer l'équipe obstétricale ; surveiller le nouveau-né dans les jours qui suivent l'accouchement (syndrome d'arrêt, effets anticholinergiques des imipraminiques à fortes doses). Molécules utilisables quel que soit le terme, et pendant l'allaitement : liste de la recommandation et CRAT.
 - **Mirtazapine** : agranulocytose très rare, parfois fatale (décès surtout après 65 ans) ; arrêter et faire une NFS devant fièvre, angine ou stomatite.
 
 ### Surveillance
 
-Idées suicidaires et comportement en début de traitement et à chaque changement de dose. Natrémie devant céphalées, confusion, troubles mnésiques ou chutes chez le sujet âgé. Pression artérielle sous venlafaxine. ECG si facteurs de risque d'allongement du QT. Fréquence d'un ionogramme systématique chez le sujet âgé : [à compléter : source].
+Idées suicidaires et comportement en début de traitement et à chaque changement de dose. Natrémie devant céphalées, confusion, troubles mnésiques ou chutes chez le sujet âgé. Pression artérielle sous venlafaxine. ECG si facteurs de risque d'allongement du QT. Chez le sujet âgé sous ISRS, la HAS (2017) recommande une natrémie une semaine après le début du traitement et après chaque modification de dose, surtout sous diurétique ou en cas d'insuffisance rénale ; adapter la dose avec soin (RCP Zoloft).
 
 ### Interactions majeures
 
@@ -172,7 +179,7 @@ Idées suicidaires et comportement en début de traitement et à chaque changeme
 
 ### Mesures de réduction du risque
 
-Prescrire la plus petite quantité utile de tricycliques chez un patient à risque suicidaire : [à compléter : source]. Informer le patient et l'entourage du délai d'action, des symptômes d'arrêt et des signes du syndrome sérotoninergique.
+Risque suicidaire : tenir compte de la toxicité d'un surdosage volontaire et, si besoin, limiter la quantité de médicament disponible ; choisir l'antidépresseur le moins toxique en cas de surdosage, les imipraminiques venant en deuxième intention en raison de leur toxicité cardiovasculaire (HAS 2017). Informer le patient et l'entourage du délai d'action, des symptômes d'arrêt et des signes du syndrome sérotoninergique.
 
 :::
 
