@@ -95,10 +95,11 @@ for (const engine of ["webkit", "chromium"]) {
     });
 
     test("an invisible child that pushes the page sideways is named", async () => {
-      const result = await measure(`<h2 style="margin: 0 12px; font-size: 22px;">Un titre qui remplit sa ligne<a href="#t"
-        style="opacity: 0; display: inline-block; width: 60px; margin-right: -60px;">#</a></h2>`);
-      const scroll = result.findings.find((f) => f.rule === "defilement");
-      assert.match(scroll.detail, /par l'enfant invisible a /);
+      // Wider than the screen on its own, so the result does not depend on the fonts.
+      const result = await measure(`<h2 style="margin: 0 12px; font-size: 22px;">Titre<a href="#t"
+        style="opacity: 0; display: inline-block; width: 400px;">#</a></h2>`);
+      assert.deepEqual(rules(result), ["defilement"]);
+      assert.match(result.findings[0].detail, /par l'enfant invisible a /);
     });
 
     test("texts drawn over each other overlap", async () => {
