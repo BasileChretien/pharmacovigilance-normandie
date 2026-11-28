@@ -40,6 +40,9 @@ sources:
   - titre: "ANSM, Benfluorex (Mediator) : bilan du suivi de pharmacovigilance"
     url: "https://ansm.sante.fr/actualites/benfluorex-mediator-bilan-du-suivi-de-pharmacovigilance"
     consulte_le: 2026-11-28
+  - titre: "IGAS, Enquête sur le MEDIATOR®, rapport n° RM2011-001P, janvier 2011 (chronologie de la suspension de 2009 et données prises en compte)"
+    url: "https://www.vie-publique.fr/files/rapport/pdf/114000028.pdf"
+    consulte_le: 2026-11-28
   - titre: "Directive 2001/83/CE instituant un code communautaire relatif aux médicaments à usage humain, version consolidée au 1er janvier 2025 (article 107 bis, paragraphe 4 : transmission des cas à EudraVigilance)"
     url: "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:02001L0083-20250101"
     consulte_le: 2026-11-28
@@ -105,7 +108,7 @@ Le cas est enregistré dans la base nationale de pharmacovigilance. L'Agence nat
 
 Oui. Deux exemples :
 
-- **Le benfluorex (Mediator).** Il a été retiré du marché le 30 novembre 2009. Des atteintes des valves du cœur avaient été observées chez des personnes traitées. Après le retrait, l'analyse des déclarations a continué. Elle a fait apparaître un autre effet rare, sur la plèvre (l'enveloppe des poumons).
+- **Le benfluorex (Mediator).** Il a été retiré du marché le 30 novembre 2009. Des déclarations et plusieurs études avaient montré des atteintes des valves du cœur chez des personnes traitées. Après le retrait, l'analyse des déclarations a continué. Elle a fait apparaître un autre effet rare, sur la plèvre (l'enveloppe des poumons).
 - **Le Levothyrox, nouvelle formule (2017).** Ce médicament traite le manque d'hormone thyroïdienne. Après le changement de formule, plus de 17 000 cas ont été déclarés entre mars et novembre 2017. À l'automne, environ 9 déclarations sur 10 venaient de patients. L'ANSM a analysé ces cas dans une enquête nationale. Elle a aussi lancé une grande étude sur les données de l'Assurance maladie. À partir d'octobre 2017, d'autres médicaments à base de lévothyroxine ont été rendus disponibles.
 
 Une déclaration ne prouve pas à elle seule qu'un médicament est en cause. Mais beaucoup de déclarations semblables donnent l'alerte.
@@ -143,9 +146,9 @@ Portail commun des vigilances, ouvert en 2017 aux professionnels et aux usagers 
 3. Les CRPV signalent à l'ANSM les « cas marquants ». L'ANSM catégorise chaque signal selon son niveau de risque. Elle peut confier une enquête de pharmacovigilance à un CRPV.
 4. Les cas sont transmis à EudraVigilance, base de l'EMA : les cas graves dans les 15 jours, les cas non graves dans les 90 jours (article 107 bis, paragraphe 4, de la directive 2001/83/CE ; cas non graves collectés depuis novembre 2017 selon l'ANSM). Le PRAC (Pharmacovigilance Risk Assessment Committee) y évalue les signaux européens.
 
-### Mesures issues des déclarations
+### Mesures auxquelles les déclarations ont contribué
 
-- **Benfluorex** : retrait du marché le 30 novembre 2009 après l'observation de valvulopathies. Le suivi s'est appuyé ensuite sur les rapports de deux CRPV (Lyon et Paris-HEGP). Il a confirmé les signaux de valvulopathies et d'HTAP (hypertension artérielle pulmonaire). Il a identifié la fibrose pleurale comme effet possible mais rare : 11 cas rapportés de 1974 au 31 mars 2015.
+- **Benfluorex** : retrait du marché le 30 novembre 2009 par suspension de l'AMM, puis retrait de l'AMM le 20 juillet 2010 après l'avis des instances européennes. La décision de 2009 s'appuyait sur les cas de valvulopathies notifiés, une étude cas-témoins du CHU de Brest, l'étude REGULATE du laboratoire et une étude de cohorte de la CNAMTS sur les données chaînées de l'Assurance maladie et des hôpitaux (SNIRAM et PMSI) (IGAS, 2011). Le suivi s'est appuyé ensuite sur les rapports de deux CRPV (Lyon et Paris-HEGP). Il a confirmé les signaux de valvulopathies et d'HTAP (hypertension artérielle pulmonaire). Il a identifié la fibrose pleurale comme effet possible mais rare : 11 cas rapportés de 1974 au 31 mars 2015.
 - **Levothyrox, nouvelle formule** (mise sur le marché en mars 2017) : 5 062 cas (fin mars au 15 septembre 2017), puis 12 248 cas (15 septembre au 30 novembre 2017) enregistrés dans la BNPV, ces derniers « très majoritairement déclarés par les patients (90 %) » selon l'ANSM. Suites : enquête nationale de pharmacovigilance, étendue aux autres lévothyroxines ; étude de pharmaco-épidémiologie sur les données de l'Assurance maladie ; contrôles en laboratoire ; offre thérapeutique diversifiée à partir d'octobre 2017. Conclusions de l'enquête : profil d'effets similaire à celui de l'ancienne formule, sans effet nouveau, mais avec une fréquence de déclaration « inédite et inattendue » ; parmi les 1 745 cas documentés avec des dosages de TSH, déséquilibre thyroïdien possible lors du changement de formule chez environ un tiers, TSH dans les normes chez les deux autres tiers. Étude de pharmaco-épidémiologie : pas d'augmentation des problèmes de santé graves (décès, hospitalisation, arrêt de travail d'au moins 7 jours), mais environ 360 000 consultations de médecine de ville supplémentaires (+2 %), surtout d'août à octobre 2017. Contrôles en laboratoire : principe actif conforme.
 
 Ces deux exemples illustrent deux rôles de la notification : faire émerger un risque, et objectiver l'ampleur d'un phénomène pour orienter des études complémentaires.
