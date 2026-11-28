@@ -9,19 +9,19 @@ prochaine_relecture: null
 sources:
   - titre: "HAS, Points clés – Comment améliorer la qualité et la sécurité des prescriptions de médicaments chez la personne âgée ?, septembre 2014 (PDF)"
     url: "https://has-sante.fr/upload/docs/application/pdf/2014-10/fpcs_prescription_web.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "HAS, Quelle place pour les benzodiazépines dans l'insomnie ?, fiche de bon usage, juillet 2024 (PDF)"
     url: "https://www.has-sante.fr/upload/docs/application/pdf/2024-07/bum_bzd_insomnie_11_07_24_vf.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "HAS, Élaboration d'un bilan médicamenteux harmonisé et partagé, note de cadrage, juillet 2024 (PDF)"
     url: "https://has-sante.fr/upload/docs/application/pdf/2024-07/note_de_cadrage_bilan_medicamenteux_harmonise_et_partage_vd.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "OMÉDIT Pays de la Loire, Médicaments anticholinergiques chez le sujet âgé : les bons réflexes de prescription, V3, février 2026 (PDF)"
     url: "https://www.omedit-paysdelaloire.fr/wp-content/uploads/2021/09/20260217_Fiche-des-medicaments-anticholinergiques_V3.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "HAS, Fiche BUM – Bon usage des inhibiteurs de la pompe à protons (IPP), septembre 2022 (PDF)"
     url: "https://www.has-sante.fr/upload/docs/application/pdf/2022-09/fiche_bum_-_bon_usage_des_inhibiteurs_de_la_pompe_a_protons_ipp.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Variabilités pharmacocinétiques"
     url: "https://pharmacomedicale.org/pharmacologie/les-sources-de-variabilite-de-la-reponse-au-medicament/45-variabilites-pharmacocinetiques"

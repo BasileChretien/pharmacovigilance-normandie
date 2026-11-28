@@ -9,7 +9,16 @@ prochaine_relecture: null
 sources:
   - titre: "Portail de signalement des événements sanitaires indésirables"
     url: "https://signalement.social-sante.gouv.fr"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "Réseau français des CRPV, Obligation de déclaration des effets indésirables médicamenteux étendue à la profession infirmière (cite le décret n° 2023-736 du 8 août 2023 et le texte de l'article R. 5121-161 du code de la santé publique ; Légifrance non lisible le 28/11/2026)"
+    url: "https://www.rfcrpv.fr/obligation-de-declaration-des-effets-indesirables-medicamenteux-etendue-a-la-profession-infirmiere/"
+    consulte_le: 2026-11-28
+  - titre: "Sante.fr (ministère de la Santé), Signaler les effets indésirables d'un médicament, 16/03/2022 : le signalement est enregistré dans la base nationale de pharmacovigilance, données personnelles anonymisées"
+    url: "https://www.sante.fr/signaler-les-effets-indesirables-dun-medicament"
+    consulte_le: 2026-11-28
+  - titre: "ANSM, Liste des centres régionaux de pharmacovigilance (coordonnées des CRPV de Caen et de Rouen)"
+    url: "https://ansm.sante.fr/page/liste-des-centres-regionaux-de-pharmacovigilance"
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Je déclare"
     url: "https://www.rfcrpv.fr/je-declare/"
@@ -70,7 +79,7 @@ Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre ph
 
 ::: {.texte-pro}
 
-- Les médecins, chirurgiens-dentistes, sages-femmes et pharmaciens doivent déclarer tout effet indésirable suspecté d'être dû à un médicament [à vérifier : article R. 5121-161 du code de la santé publique]. Les autres professionnels de santé peuvent le faire.
+- Les médecins, chirurgiens-dentistes, sages-femmes, pharmaciens et, depuis le décret n° 2023-736 du 8 août 2023, les infirmiers doivent déclarer immédiatement au CRPV tout effet indésirable suspecté d'être dû à un médicament dont ils ont connaissance (article R. 5121-161 du code de la santé publique) [à compléter : vérifier sur Légifrance l'article R. 5121-161]. Les autres professionnels de santé peuvent le faire.
 - Déclarez sur le portail, ou appelez le CRPV de votre département pour un cas grave, inattendu ou complexe : il peut vous aider à documenter le cas.
 - En EHPAD ou en établissement : prévenez le médecin traitant ou le médecin coordonnateur et le pharmacien référent, notez l'effet et les médicaments dans le dossier du résident, puis déclarez.
 

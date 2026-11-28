@@ -12,7 +12,6 @@
 | Apixaban | substrat du CYP3A4/5 ; substrat de la P-glycoprotéine (P-gp) |
 | Aripiprazole | substrat du CYP2D6 |
 | Atazanavir | inhibiteur modéré du CYP2C9 |
-| Atomoxétine | substrat du CYP2D6 |
 | Atorvastatine | substrat du CYP3A4/5 |
 | Bosentan | substrat du CYP2C9 ; inducteur puissant du CYP2C9 ; inducteur puissant du CYP3A4/5 |
 | Bupropion | substrat du CYP2B6 ; inhibiteur puissant du CYP2D6 |
@@ -29,7 +28,7 @@
 | Clomipramine | substrat du CYP1A2 ; substrat du CYP2D6 |
 | Clopidogrel | inhibiteur puissant du CYP2B6 ; inhibiteur modéré du CYP2C9 |
 | Clozapine | substrat du CYP1A2 ; substrat du CYP2C19 |
-| Cobicistat | inhibiteur puissant du CYP3A4/5 ; inhibiteur puissant de la P-glycoprotéine (P-gp) |
+| Cobicistat | inhibiteur puissant du CYP3A4/5 |
 | Codéine | substrat du CYP2D6 |
 | Colchicine | substrat du CYP3A4/5 ; substrat de la P-glycoprotéine (P-gp) |
 | Cyclophosphamide | substrat du CYP2B6 |
@@ -44,7 +43,6 @@
 | Doxycycline | inhibiteur modéré du CYP3A4/5 |
 | Dronédarone | inhibiteur modéré du CYP2D6 ; inhibiteur modéré du CYP3A4/5 ; inhibiteur modéré de la P-glycoprotéine (P-gp) |
 | Duloxétine | substrat du CYP1A2 ; inhibiteur modéré du CYP2D6 |
-| Édoxaban | substrat de la P-glycoprotéine (P-gp) |
 | Éfavirenz | substrat du CYP2B6 ; inhibiteur modéré du CYP2B6 ; inducteur modéré du CYP2B6 ; inhibiteur modéré du CYP2C9 ; inducteur puissant du CYP3A4/5 |
 | Enzalutamide | substrat du CYP2C8 ; inducteur modéré du CYP2C9 ; inducteur modéré du CYP2C19 ; inducteur puissant du CYP3A4/5 |
 | Erlotinib | substrat du CYP1A2 |
@@ -64,7 +62,6 @@
 | Fluvoxamine | inhibiteur puissant du CYP1A2 ; inhibiteur modéré du CYP2C9 ; inhibiteur puissant du CYP2C19 |
 | Gemfibrozil | inhibiteur puissant du CYP2C8 ; inhibiteur puissant du CYP2C9 |
 | Glibenclamide | substrat du CYP2C9 |
-| Gliclazide | substrat du CYP2C9 |
 | Glimépiride | substrat du CYP2C9 |
 | Halopéridol | substrat du CYP2D6 ; inhibiteur puissant du CYP2D6 |
 | Ibuprofène | substrat du CYP2C9 |
@@ -77,7 +74,6 @@
 | Légumes crucifères | inducteur puissant du CYP1A2 |
 | Lopéramide | substrat du CYP2C8 ; substrat de la P-glycoprotéine (P-gp) |
 | Losartan | substrat du CYP2C9 |
-| Métamizole | inducteur puissant du CYP2B6 |
 | Méthadone | substrat du CYP2B6 |
 | Métoprolol | substrat du CYP2D6 |
 | Métronidazole | inhibiteur puissant du CYP2C9 |
@@ -92,7 +88,6 @@
 | Nifédipine | substrat du CYP3A4/5 |
 | Nilotinib | inhibiteur modéré du CYP2C8 |
 | Norfloxacine | inhibiteur puissant du CYP1A2 |
-| Nortriptyline | substrat du CYP2D6 |
 | Olanzapine | substrat du CYP1A2 |
 | Oméprazole | inducteur modéré du CYP1A2 ; substrat du CYP2C19 ; inhibiteur puissant du CYP2C19 |
 | Oxycodone | substrat du CYP3A4/5 |
@@ -103,7 +98,6 @@
 | Pas d'inducteur cliniquement notable | inducteur du CYP2D6 |
 | Phénobarbital | inducteur puissant du CYP2B6 ; inducteur puissant du CYP2C9 ; inducteur puissant du CYP2C19 ; inducteur puissant du CYP3A4/5 ; inducteur modéré de la P-glycoprotéine (P-gp) |
 | Phénytoïne | substrat du CYP2C9 ; inducteur puissant du CYP2C9 ; inducteur puissant du CYP2C19 ; inducteur puissant du CYP3A4/5 ; inducteur modéré de la P-glycoprotéine (P-gp) |
-| Pioglitazone | substrat du CYP2C8 |
 | Piroxicam | substrat du CYP2C9 |
 | Posaconazole | inhibiteur puissant du CYP3A4/5 ; inhibiteur modéré de la P-glycoprotéine (P-gp) |
 | Prasugrel | inhibiteur modéré du CYP2B6 |
@@ -125,7 +119,6 @@
 | Simvastatine | substrat du CYP3A4/5 |
 | Sirolimus | substrat du CYP3A4/5 |
 | Sorafénib | inhibiteur modéré du CYP2C8 |
-| Sulfaméthoxazole | inhibiteur modéré du CYP2C9 |
 | Tabac | inducteur puissant du CYP1A2 |
 | Tacrolimus | substrat du CYP3A4/5 ; substrat de la P-glycoprotéine (P-gp) |
 | Tadalafil | substrat du CYP3A4/5 |
@@ -134,7 +127,6 @@
 | Théophylline | substrat du CYP1A2 |
 | Ticagrélor | substrat du CYP3A4/5 ; substrat de la P-glycoprotéine (P-gp) |
 | Tramadol | substrat du CYP2B6 ; substrat du CYP2D6 |
-| Triazolam | substrat du CYP3A4/5 |
 | Triméthoprime | inhibiteur modéré du CYP2C8 |
 | Venlafaxine | substrat du CYP2D6 |
 | Vérapamil | inhibiteur modéré du CYP1A2 ; inhibiteur puissant du CYP3A4/5 ; inhibiteur puissant de la P-glycoprotéine (P-gp) |

@@ -10,10 +10,10 @@ toc: false
 sources:
   - titre: "OMéDIT Normandie, en partenariat avec la SFPC : Liste des médicaments écrasables (page de référence)"
     url: "https://www.omedit-normandie.fr/boite-a-outils/bon-usage/liste-des-medicaments-ecrasables/liste-des-medicaments-ecrasables,3184,3511.html"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "HUG, Comprimés : couper ou écraser ? (révision du 27/03/2023)"
     url: "https://hug.ch/pharmacie/recommandations/document/tab_couper_ecraser"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
 ---
 
 ```{=html}
@@ -38,7 +38,7 @@ Cette fiche résume la page [Écraser ou couper un comprimé ?](ecraser-couper.q
 - Les formes **gastro-résistantes**.
 - Les principes actifs **irritants** pour la bouche et l'œsophage (exemple : alendronate).
 - Les formes **sublinguales** et **orodispersibles**, conçues pour fondre dans la bouche.
-- Les médicaments **dangereux pour le soignant** (cytotoxiques, médicaments classés CMR dans la liste) : protection comme pour les cytotoxiques (gants, lunettes, masque, surblouse).
+- Les médicaments **dangereux pour le soignant** (cytotoxiques, médicaments classés CMR dans la liste) : demandez au pharmacien les mesures de protection. Exemple des HUG pour l'évérolimus : gants, lunettes, masque et surblouse.
 
 Un médicament qui ne doit pas être écrasé ne doit pas non plus être croqué.
 
@@ -47,7 +47,7 @@ Un médicament qui ne doit pas être écrasé ne doit pas non plus être croqué
 Demandez au pharmacien de l'établissement ou à l'officine. Pour un effet indésirable, prévenez le médecin et déclarez-le : [pharmacovigilance-normandie, page « Déclarer »](../declarer.qmd).
 
 ::: {.mention-impression}
-Fiche du site Pharmacovigilance Normandie, version brouillon du 25/11/2026. Avant de l'afficher, vérifiez qu'elle est à jour en ligne.
+Fiche du site Pharmacovigilance Normandie, version brouillon du 28/11/2026. Avant de l'afficher, vérifiez qu'elle est à jour en ligne.
 :::
 
 :::
