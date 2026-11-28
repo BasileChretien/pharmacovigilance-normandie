@@ -113,13 +113,18 @@ def test_st_johns_wort_follows_each_doac_smpc():
     # RCP Xarelto and Pradaxa: the association « doit être évitée ». Thésaurus: contraindicated
     # with a VKA. « Ask advice » alone is weaker than the SmPC for a DVT or a PE (review of #48);
     # « à éviter » for every DOAC is stronger than it for apixaban in its other indications
-    # (review of #48, round 2).
+    # (review of #48, round 2). RCP Eliquis, rubrique 4.2: the prevention of a recurrence
+    # (2.5 mg twice a day) starts « à l'issue de 6 mois de traitement », so the treatment of a
+    # DVT or a PE is the first 6 months (review of #50).
     text = page("medicaments/classes/anticoagulants-oraux.qmd")
     patient = line_with(text, "- Le millepertuis")
     assert "interdit avec un AVK" in patient
     assert "Avec le rivaroxaban ou le dabigatran, il est à éviter" in patient
-    assert "n'en prenez pas pendant le traitement d'une phlébite ou d'une embolie" in patient
+    assert "n'en prenez pas pendant les 6 premiers mois de traitement d'une phlébite ou d'une embolie" in patient
+    assert "dans les autres cas, seulement sur avis médical" in patient
     assert "à éviter avec un AOD" not in patient
     row = line_with(text, "| AOD + millepertuis")
+    assert "à éviter avec le rivaroxaban et le dabigatran" in row
     assert "apixaban à ne pas utiliser en traitement d'une TVP ou d'une EP" in row
     assert "avec précaution dans ses autres indications" in row
+    assert "prévention de la récidive" in row
