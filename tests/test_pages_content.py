@@ -107,14 +107,19 @@ def test_the_levothyroxine_sheet_gives_both_bedtime_trials():
     assert "Bach-Huynh" in trials and "divergent" in trials
 
 
-def test_st_johns_wort_is_to_avoid_with_every_doac():
+def test_st_johns_wort_follows_each_doac_smpc():
     # RCP Eliquis, rubrique 4.4: with strong CYP3A4 and P-gp inducers (millepertuis), apixaban
     # « ne doit pas être utilisé » to treat a DVT or a PE, « avec précaution » otherwise.
-    # RCP Xarelto and Pradaxa: the association « doit être évitée ». « Ask advice » alone is
-    # weaker than the SmPC for a patient treated for a DVT or a PE.
+    # RCP Xarelto and Pradaxa: the association « doit être évitée ». Thésaurus: contraindicated
+    # with a VKA. « Ask advice » alone is weaker than the SmPC for a DVT or a PE (review of #48);
+    # « à éviter » for every DOAC is stronger than it for apixaban in its other indications
+    # (review of #48, round 2).
     text = page("medicaments/classes/anticoagulants-oraux.qmd")
     patient = line_with(text, "- Le millepertuis")
-    assert "à éviter avec un AOD" in patient
-    assert "Avec l'apixaban, demandez conseil" not in patient
+    assert "interdit avec un AVK" in patient
+    assert "Avec le rivaroxaban ou le dabigatran, il est à éviter" in patient
+    assert "n'en prenez pas pendant le traitement d'une phlébite ou d'une embolie" in patient
+    assert "à éviter avec un AOD" not in patient
     row = line_with(text, "| AOD + millepertuis")
-    assert "traitement d'une TVP ou d'une EP" in row
+    assert "apixaban à ne pas utiliser en traitement d'une TVP ou d'une EP" in row
+    assert "avec précaution dans ses autres indications" in row

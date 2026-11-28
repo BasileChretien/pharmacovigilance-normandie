@@ -125,7 +125,7 @@ La fluindione peut, rarement, donner une allergie grave de la peau, du foie ou d
 - Les anti-inflammatoires (ibuprofène, par exemple Advil ou Nurofen ; kétoprofène…) et l'aspirine augmentent le risque de saignement. Évitez-les, y compris en automédication.
 - Avec un AVK, le paracétamol à 4 grammes par jour pendant 4 jours ou plus peut augmenter l'INR.
 - Avec un AVK, le miconazole (contre les champignons) est interdit, même en gel pour la bouche.
-- Le millepertuis (une plante utilisée contre la déprime) diminue l'effet des anticoagulants. Il est interdit avec un AVK et à éviter avec un AOD : demandez conseil avant d'en prendre.
+- Le millepertuis (une plante utilisée contre la déprime) diminue l'effet des anticoagulants. Il est interdit avec un AVK. Avec le rivaroxaban ou le dabigatran, il est à éviter. Avec l'apixaban, n'en prenez pas pendant le traitement d'une phlébite ou d'une embolie ; dans les autres cas, seulement sur avis médical.
 - Sous AVK, un antibiotique peut déséquilibrer l'INR.
 - Sous AVK, gardez une alimentation régulière : choux, épinards, brocolis et certaines salades sont riches en vitamine K.
 
