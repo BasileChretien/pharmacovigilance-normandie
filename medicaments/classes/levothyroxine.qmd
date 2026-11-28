@@ -11,16 +11,22 @@ prochaine_relecture: null
 sources:
   - titre: "Base de données publique des médicaments, RCP et notice de LEVOTHYROX 25 microgrammes, comprimé sécable (CIS 68588503)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/68588503/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, « Point d'actualité sur le Levothyrox et les autres médicaments à base de lévothyroxine » (11/10/2017, mis à jour le 01/04/2021)"
     url: "https://ansm.sante.fr/actualites/point-dactualite-sur-le-levothyrox-et-les-autres-medicaments-a-base-de-levothyroxine"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, dossier « Les médicaments à base de lévothyroxine disponibles en France » (mis à jour le 01/10/2025)"
     url: "https://ansm.sante.fr/dossiers-thematiques/les-medicaments-a-base-de-levothyroxine-disponibles-en-france-1/les-medicaments-a-base-de-levothyroxine-disponibles-en-france"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Thésaurus des interactions médicamenteuses (version du 15 septembre 2023)"
     url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "ANSM, Médicaments à base de lévothyroxine disponibles en France (liste, octobre 2025)"
+    url: "https://ansm.sante.fr/uploads/2025/10/01/20251001-levothyroxine-liste-medicaments-maj-octobre-2025.pdf"
+    consulte_le: 2026-11-28
+  - titre: "Ordre national des pharmaciens, « Médicaments à marge thérapeutique étroite : conditions d'exclusion de la substitution par le pharmacien » (20/02/2020), d'après les arrêtés du 12 novembre 2019 et du 30 janvier 2020"
+    url: "https://www.ordre.pharmacien.fr/les-communications/focus-sur/les-actualites/medicaments-a-marge-therapeutique-etroite-conditions-d-exclusion-de-la-substitution-par-le-pharmacien"
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Hormones thyroïdiennes de synthèse"
     url: "https://pharmacomedicale.org/medicaments/par-specialites/item/medicaments-et-thyroide"
@@ -41,7 +47,7 @@ pour_aller_plus_loin:
 
 ### À quoi sert ce traitement ?
 
-La lévothyroxine remplace l'hormone que votre thyroïde (glande du cou) ne produit plus assez. On parle d'hypothyroïdie. Elle s'appelle par exemple Levothyrox ou Euthyrox. D'autres marques existent, en comprimés ou en gouttes.
+La lévothyroxine remplace l'hormone que votre thyroïde (glande du cou) ne produit plus assez. On parle d'hypothyroïdie. Elle s'appelle par exemple Levothyrox, L-Thyroxin Henning, Thyrofix ou Tcaps. Elle existe aussi en gouttes.
 
 L'hypothyroïdie dure le plus souvent toute la vie. Le traitement se poursuit donc sans limite de durée. La lévothyroxine ne fait pas maigrir : ne la prenez jamais pour perdre du poids.
 
@@ -62,6 +68,8 @@ Cette prise de sang a lieu environ 6 à 8 semaines après un changement de dose.
 ### Et si on change ma marque de médicament ?
 
 Passer d'une marque à une autre peut modifier votre équilibre. Prévenez votre médecin. Il vous prescrit alors une prise de sang 6 à 8 semaines après le changement. Votre dose peut devoir changer.
+
+Votre pharmacien peut vous proposer un générique. Si votre traitement est bien équilibré, votre médecin peut écrire sur l'ordonnance qu'il ne faut pas changer de médicament. Votre pharmacien peut aussi décider de ne pas le changer.
 
 ### Quels effets indésirables ?
 
@@ -109,9 +117,11 @@ Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-s
 ### Points clés de sécurité
 
 - Marge thérapeutique étroite (ANSM) : une surveillance clinique et biologique est indiquée lors du passage d'une spécialité à une autre.
-- Contre-indications : hyperthyroïdie non contrôlée, insuffisance surrénalienne non traitée. Ne pas instaurer en cas de syndrome coronarien aigu ou de myocardite aiguë ; généralement déconseillée en cas de cardiopathie décompensée, coronaropathie ou trouble du rythme non contrôlé.
+- Contre-indications : hyperthyroïdie, sauf si elle a été réduite (antithyroïdiens de synthèse, iode 131 ou chirurgie) ; insuffisance surrénalienne non traitée. Ne pas instaurer en cas de syndrome coronarien aigu ou de myocardite aiguë ; généralement déconseillée en cas de cardiopathie décompensée, coronaropathie ou trouble du rythme non contrôlé.
 - Corriger une insuffisance corticosurrénalienne avant d'instaurer la lévothyroxine (risque d'insuffisance surrénale aiguë).
 - Pas d'indication pour perdre du poids : effets graves possibles à forte dose, notamment avec des sympathomimétiques.
+- **Substitution** : la lévothyroxine figure sur la liste des médicaments à marge thérapeutique étroite. Chez un patient effectivement stabilisé, hors phases d'adaptation du traitement, le prescripteur peut exclure la substitution par la mention « non substituable (MTE) » (arrêté du 12 novembre 2019) ; le pharmacien peut aussi ne pas substituer, en inscrivant « non substituable (MTE-PH) » et en informant le prescripteur (arrêté du 30 janvier 2020). [à compléter : vérifier sur Légifrance la liste en vigueur de l'arrêté du 12 novembre 2019 modifié] Tcaps figure comme générique de Levothyrox sur la liste de l'ANSM (octobre 2025).
+- Euthyrox (ancienne formule) : renouvellement seulement, aucune instauration ; fin de distribution prévue fin 2028 (ANSM, octobre 2025).
 
 ### Surveillance
 
@@ -125,7 +135,7 @@ Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-s
 
 Niveaux du Thésaurus de l'ANSM (version du 15 septembre 2023), entrée « hormones thyroïdiennes » :
 
-- Fer, calcium, résines chélatrices, sucralfate : **précaution d'emploi** ; prendre ces produits à distance de la lévothyroxine (plus de 2 heures si possible). Topiques gastro-intestinaux, antiacides et adsorbants : entrée générique du Thésaurus (association déconseillée ou précaution d'emploi selon la substance associée), prise à plus de 2 heures de tout médicament oral ; le RCP classe cette association en précaution d'emploi.
+- Fer, calcium, résines chélatrices, sucralfate : **précaution d'emploi** ; prendre ces produits à distance de la lévothyroxine (plus de 2 heures si possible). Topiques gastro-intestinaux, antiacides et adsorbants : **précaution d'emploi**, prise à plus de 2 heures (la lévothyroxine fait partie des « substances à absorption réduite » de cette entrée ; l'association déconseillée n'y vise que les inhibiteurs d'intégrase).
 - Inhibiteurs de la pompe à protons : **précaution d'emploi** (baisse probable de l'absorption) ; contrôle clinique et biologique, augmentation éventuelle de la dose, vigilance aussi à l'arrêt de l'inhibiteur.
 - Inducteurs enzymatiques puissants, rifampicine, rifabutine, éfavirenz, inhibiteurs de protéases boostés par ritonavir : **précaution d'emploi** (risque d'hypothyroïdie clinique).
 - Millepertuis : **association déconseillée**.
@@ -138,7 +148,7 @@ Le RCP mentionne aussi l'imatinib et le sunitinib (à prendre en compte) et le s
 
 ### Adaptation des doses
 
-Adulte : début à 25 ou 50 µg/j, paliers de 12 à 50 µg toutes les 2 à 4 semaines ; dose moyenne de substitution 100 à 150 µg/j (1,7 µg/kg/j ; 2,1 à 2,5 µg/kg/j en traitement frénateur). Sujet âgé, insuffisance coronarienne ou cardiaque, troubles du rythme : doses initiales plus faibles et paliers plus progressifs, avec une TSH visée dans les valeurs normales hautes en cas de cardiopathie. Insuffisance rénale ou hépatique : [à compléter : source].
+Adulte : début à 25 ou 50 µg/j, paliers de 12 à 50 µg toutes les 2 à 4 semaines ; dose moyenne de substitution 100 à 150 µg/j (1,7 µg/kg/j ; 2,1 à 2,5 µg/kg/j en traitement frénateur). Sujet âgé, insuffisance coronarienne ou cardiaque, troubles du rythme : doses initiales plus faibles et paliers plus progressifs, avec une TSH visée dans les valeurs normales hautes en cas de cardiopathie. Insuffisance rénale ou hépatique : le RCP de Levothyrox ne donne pas de recommandation particulière ; la dose s'ajuste sur la TSH.
 
 ### Pièges fréquents
 
