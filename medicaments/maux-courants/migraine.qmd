@@ -71,7 +71,7 @@ pour_aller_plus_loin:
 - Le mal de tête s'accompagne d'une faiblesse d'un bras ou d'une jambe, d'un trouble de la parole ou de la vue : appelez le 15.
 - Le mal de tête s'accompagne de fièvre, sans cause évidente comme une grippe : consultez en urgence.
 - Le mal de tête est inhabituel, et il a commencé ou empiré depuis moins d'une semaine : consultez en urgence.
-- Vous atteignez 8 jours de traitement par mois depuis 3 mois, ou votre traitement habituel ne marche plus : parlez-en à votre médecin.
+- Plus de 8 jours de traitement par mois, ou 8 jours depuis 3 mois, ou un traitement qui ne marche plus : consultez votre médecin.
 :::
 
 ::: {.a-retenir}
@@ -122,7 +122,7 @@ Les triptans ne conviennent pas à tout le monde. Signalez à votre médecin une
 - Avec un triptan, si la douleur revient après un soulagement, une deuxième prise est possible. Attendez au moins 2 heures entre les deux prises.
 - Notez vos crises et vos médicaments dans un calendrier. Votre médecin pourra mieux adapter votre traitement.
 
-{{< figure-svg migraine-1 alt="Une rangée de 30 cases pour les jours d'un mois, dont 6 jours traités en exemple. Des repères marquent 8 jours, la limite conseillée, puis 10 jours avec un triptan et 15 jours avec le paracétamol ou un anti-inflammatoire. Ces seuils atteints depuis plus de 3 mois exposent à un mal de tête par abus de médicaments." legende="Visez 8 jours de traitement par mois au plus." >}}
+{{< figure-svg migraine-1 alt="Une rangée de 30 cases pour les jours d'un mois, dont 6 jours traités en exemple. Des repères marquent 8 jours, la limite conseillée, puis 10 jours avec un triptan et 15 jours avec le paracétamol ou un anti-inflammatoire. Ces seuils atteints depuis plus de 3 mois exposent à un mal de tête par abus de médicaments." legende="Ne dépassez pas 8 jours de traitement par mois." >}}
 
 ### Quels effets surveiller ?
 

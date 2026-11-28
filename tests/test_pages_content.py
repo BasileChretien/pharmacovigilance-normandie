@@ -65,11 +65,13 @@ def test_the_two_migraine_boxes_give_one_eight_day_rule():
     # SFEMC 2021: acute treatment « limited to a maximum of eight days per month » (Rt4), and a
     # preventive treatment for « eight days or more per month since at least three months »
     # (Rt16a). « visez 8 jours au plus » next to « 8 jours par mois ou plus : parlez-en » sent
-    # a patient at exactly 8 days both ways (review of #38).
+    # a patient at exactly 8 days both ways (review of #38). Going over the limit must still
+    # send to the doctor at once, without waiting 3 months (review of #45).
     migraine = "medicaments/maux-courants/migraine.qmd"
     assert "ne dépassez pas 8 jours de traitement par mois" in box(migraine, "a-retenir")
     consulter = box(migraine, "quand-consulter")
-    assert "8 jours de traitement par mois depuis 3 mois" in consulter
+    assert "Plus de 8 jours de traitement par mois" in consulter
+    assert "8 jours depuis 3 mois" in consulter
     assert "8 jours par mois ou plus" not in consulter
 
 
