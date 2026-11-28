@@ -114,7 +114,8 @@ def test_st_johns_wort_follows_each_doac_smpc():
     # with a VKA. « Ask advice » alone is weaker than the SmPC for a DVT or a PE (review of #48);
     # « à éviter » for every DOAC is stronger than it for apixaban in its other indications
     # (review of #48, round 2). RCP Eliquis, rubrique 4.2: the treatment of a DVT or a PE is
-    # 10 mg then 5 mg twice a day, « au moins 3 mois », its total length « sera personnalisée »;
+    # 10 mg then 5 mg twice a day; a short course of « au moins 3 mois » when the risk factor is
+    # transient, a total length that « sera personnalisée »;
     # the prevention of a recurrence (2.5 mg twice a day) starts after 6 months only when it is
     # indicated. The patient cue is the dose and the reason, not a calendar limit (review of #52).
     text = page("medicaments/classes/anticoagulants-oraux.qmd")
