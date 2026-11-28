@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 244" width="440" height="244" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 244" width="440" height="244" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="currentColor">
   <!-- The morning: sunrise and breakfast, the tablet -->
   <rect x="12" y="12" width="128" height="176" rx="10" fill="#e6f7ef" stroke="#0b6b45" stroke-width="2"/>
   <path d="M40 58 a14 14 0 0 1 28 0 Z" fill="#e7b03b" stroke="#10283a" stroke-width="1.5"/>
@@ -28,8 +28,8 @@
   <g fill="none" stroke="#46586a" stroke-width="2" stroke-dasharray="4 3">
     <circle cx="193" cy="146" r="16"/><circle cx="289" cy="146" r="16"/><circle cx="385" cy="146" r="16"/>
   </g>
-  <g text-anchor="middle" fill="#46586a">
-    <text x="193" y="178">rien</text><text x="289" y="178">rien</text><text x="385" y="178">rien</text>
+  <g text-anchor="middle">
+    <text x="193" y="178" fill="#46586a">rien</text><text x="289" y="178" fill="#46586a">rien</text><text x="385" y="178" fill="#46586a">rien</text>
   </g>
 
   <text x="16" y="212" fill="#46586a">Forte dose au début : le médecin peut</text>

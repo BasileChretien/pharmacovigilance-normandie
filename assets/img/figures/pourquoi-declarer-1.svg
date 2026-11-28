@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 528" width="440" height="528" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="17" fill="#10283a">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 528" width="440" height="528" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="17" fill="currentColor">
   <defs>
     <marker id="pourquoi-declarer-1-fleche" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M0 0 L10 5 L0 10 Z" fill="#073f6e"/>
@@ -19,32 +19,32 @@
   <!-- The five steps -->
   <g>
     <rect x="64" y="16" width="316" height="56" rx="10" fill="#eef6fa"/>
-    <circle cx="40" cy="44" r="16" fill="#073f6e"/>
-    <text x="40" y="50" text-anchor="middle" font-weight="700" fill="#ffffff">1</text>
+    <circle cx="40" cy="44" r="16" fill="none" stroke="#073f6e" stroke-width="2.5"/>
+    <text x="40" y="50" text-anchor="middle" font-weight="700" fill="#073f6e">1</text>
     <text x="80" y="39" font-weight="700">Vous ou votre soignant</text>
     <text x="80" y="61">déclarez l'effet</text>
 
     <rect x="64" y="94" width="316" height="56" rx="10" fill="#eef6fa"/>
-    <circle cx="40" cy="122" r="16" fill="#073f6e"/>
-    <text x="40" y="128" text-anchor="middle" font-weight="700" fill="#ffffff">2</text>
+    <circle cx="40" cy="122" r="16" fill="none" stroke="#073f6e" stroke-width="2.5"/>
+    <text x="40" y="128" text-anchor="middle" font-weight="700" fill="#073f6e">2</text>
     <text x="80" y="117" font-weight="700">Le CRPV de votre région analyse</text>
     <text x="80" y="139">et vous recontacte si besoin</text>
 
     <rect x="64" y="172" width="316" height="56" rx="10" fill="#eef6fa"/>
-    <circle cx="40" cy="200" r="16" fill="#073f6e"/>
-    <text x="40" y="206" text-anchor="middle" font-weight="700" fill="#ffffff">3</text>
+    <circle cx="40" cy="200" r="16" fill="none" stroke="#073f6e" stroke-width="2.5"/>
+    <text x="40" y="206" text-anchor="middle" font-weight="700" fill="#073f6e">3</text>
     <text x="80" y="195" font-weight="700">Le CRPV enregistre le cas</text>
     <text x="80" y="217">dans la base nationale</text>
 
     <rect x="64" y="250" width="316" height="56" rx="10" fill="#eef6fa"/>
-    <circle cx="40" cy="278" r="16" fill="#073f6e"/>
-    <text x="40" y="284" text-anchor="middle" font-weight="700" fill="#ffffff">4</text>
+    <circle cx="40" cy="278" r="16" fill="none" stroke="#073f6e" stroke-width="2.5"/>
+    <text x="40" y="284" text-anchor="middle" font-weight="700" fill="#073f6e">4</text>
     <text x="80" y="273" font-weight="700">L'Agence du médicament (ANSM)</text>
     <text x="80" y="295">recherche des signaux</text>
 
     <rect x="64" y="328" width="316" height="56" rx="10" fill="#eef6fa"/>
-    <circle cx="40" cy="356" r="16" fill="#073f6e"/>
-    <text x="40" y="362" text-anchor="middle" font-weight="700" fill="#ffffff">5</text>
+    <circle cx="40" cy="356" r="16" fill="none" stroke="#073f6e" stroke-width="2.5"/>
+    <text x="40" y="362" text-anchor="middle" font-weight="700" fill="#073f6e">5</text>
     <text x="80" y="351" font-weight="700">Grave ou non, le cas part</text>
     <text x="80" y="373">dans la base européenne</text>
   </g>

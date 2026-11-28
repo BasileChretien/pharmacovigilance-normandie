@@ -52,9 +52,12 @@
     return NONE;
   }
 
+  // A hollow ring has no fill: Dark Reader lightens small shapes, and a white fill would
+  // look like the grey of the people who do not have the effect (docs/mode-sombre.md).
+  // The dark theme maps these colours (assets/theme-sombre.scss, $pv-figures-sombre).
   function paint(state) {
     if (state === SURE) { return 'fill="' + INK + '"'; }
-    if (state === MAYBE) { return 'fill="#ffffff" stroke="' + INK + '" stroke-width="2.2"'; }
+    if (state === MAYBE) { return 'fill="none" stroke="' + INK + '" stroke-width="2.2"'; }
     return 'fill="' + NEUTRAL + '"';
   }
 

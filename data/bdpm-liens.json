@@ -632,10 +632,48 @@
     "association": false
    }
   },
+  "medicaments/maux-courants/brulures-estomac.qmd": {
+   "oméprazole": {
+    "cis": "62044256",
+    "nom": "MOPRALPRO 20 mg, comprimé gastro-résistant",
+    "princeps": false,
+    "association": false
+   }
+  },
   "medicaments/maux-courants/fievre-douleur-enfant.qmd": {
    "paracétamol": {
     "cis": "66477582",
     "nom": "DOLIPRANE 2,4 POUR CENT, suspension buvable",
+    "princeps": false,
+    "association": false
+   },
+   "ibuprofène": {
+    "cis": "61902232",
+    "nom": "ADVILMED ENFANTS ET NOURRISSONS 20 mg/1 ml, suspension buvable en flacon",
+    "princeps": false,
+    "association": false
+   }
+  },
+  "medicaments/maux-courants/insomnie.qmd": {
+   "mélatonine": {
+    "cis": "67474429",
+    "nom": "ADAFLEX 1 mg, comprimé",
+    "princeps": false,
+    "association": false
+   }
+  },
+  "medicaments/maux-courants/lombalgie.qmd": {
+   "paracétamol": {
+    "cis": "60234100",
+    "nom": "DOLIPRANE 1000 mg, comprimé",
+    "princeps": false,
+    "association": false
+   }
+  },
+  "medicaments/maux-courants/migraine.qmd": {
+   "paracétamol": {
+    "cis": "60234100",
+    "nom": "DOLIPRANE 1000 mg, comprimé",
     "princeps": false,
     "association": false
    }
@@ -673,6 +711,10 @@
    "nom": "TRIATEC 10 mg, comprimé sécable",
    "etat": "Commercialisée"
   },
+  "60234100": {
+   "nom": "DOLIPRANE 1000 mg, comprimé",
+   "etat": "Commercialisée"
+  },
   "60492702": {
    "nom": "CORTANCYL 5 mg, comprimé sécable",
    "etat": "Commercialisée"
@@ -705,12 +747,40 @@
    "nom": "EFFEXOR L.P. 75 mg, gélule à libération prolongée",
    "etat": "Commercialisée"
   },
+  "61902232": {
+   "nom": "ADVILMED ENFANTS ET NOURRISSONS 20 mg/1 ml, suspension buvable en flacon",
+   "etat": "Commercialisée"
+  },
   "61913385": {
    "nom": "EPITOMAX 100 mg, comprimé pelliculé",
    "etat": "Commercialisée"
   },
+  "62013296": {
+   "nom": "FURADANTINE 50 mg, gélule",
+   "etat": "Commercialisée"
+  },
+  "62044256": {
+   "nom": "MOPRALPRO 20 mg, comprimé gastro-résistant",
+   "etat": "Commercialisée"
+  },
   "62390849": {
    "nom": "CORTANCYL 20 mg, comprimé sécable",
+   "etat": "Commercialisée"
+  },
+  "62582924": {
+   "nom": "PADERYL 0,1 POUR CENT, sirop",
+   "etat": "Commercialisée"
+  },
+  "62804360": {
+   "nom": "TIORFAN 10 mg NOURRISSONS, poudre orale en sachet-dose",
+   "etat": "Commercialisée"
+  },
+  "62906109": {
+   "nom": "TIORFAN 100 mg, gélule",
+   "etat": "Commercialisée"
+  },
+  "63029111": {
+   "nom": "LOPERAMIDE BIOGARAN 2 mg, gélule",
    "etat": "Commercialisée"
   },
   "63179285": {
@@ -727,6 +797,10 @@
   },
   "63564053": {
    "nom": "PLAVIX 75 mg, comprimé pelliculé",
+   "etat": "Commercialisée"
+  },
+  "63566855": {
+   "nom": "NASONEX 50 microgrammes/dose, suspension pour pulvérisation nasale",
    "etat": "Commercialisée"
   },
   "63646874": {
@@ -757,6 +831,10 @@
    "nom": "TAVANIC 500 mg, comprimé pelliculé sécable",
    "etat": "Commercialisée"
   },
+  "64949486": {
+   "nom": "ZYRTECSET 10 mg, comprimé pelliculé sécable",
+   "etat": "Commercialisée"
+  },
   "65124914": {
    "nom": "NORSET 15 mg, comprimé pelliculé",
    "etat": "Commercialisée"
@@ -771,6 +849,10 @@
   },
   "65636245": {
    "nom": "CIFLOX 500 mg, comprimé pelliculé sécable",
+   "etat": "Commercialisée"
+  },
+  "65639939": {
+   "nom": "PERNAZENE 0,05 POUR CENT, solution pour pulvérisation nasale",
    "etat": "Commercialisée"
   },
   "65892928": {
@@ -793,8 +875,24 @@
    "nom": "DOLIPRANE 2,4 POUR CENT, suspension buvable",
    "etat": "Commercialisée"
   },
+  "66768488": {
+   "nom": "AGIOLAX, granulés",
+   "etat": "Commercialisée"
+  },
+  "66819541": {
+   "nom": "TUSSIDANE 1,5 mg/ml SANS SUCRE, solution buvable édulcorée au maltitol liquide et à la saccharine sodique",
+   "etat": "Commercialisée"
+  },
+  "66822516": {
+   "nom": "VOQUILY 1 mg/mL, solution buvable",
+   "etat": "Commercialisée"
+  },
   "67037301": {
    "nom": "ZOCOR 20 mg, comprimé pelliculé",
+   "etat": "Commercialisée"
+  },
+  "67064661": {
+   "nom": "CONTALAX, comprimé gastro-résistant",
    "etat": "Commercialisée"
   },
   "67136662": {
@@ -811,6 +909,10 @@
   },
   "67464926": {
    "nom": "ACIDE ALENDRONIQUE CRISTERS 70 mg, comprimé",
+   "etat": "Commercialisée"
+  },
+  "67474429": {
+   "nom": "ADAFLEX 1 mg, comprimé",
    "etat": "Commercialisée"
   },
   "67623734": {
@@ -853,6 +955,10 @@
    "nom": "IMOVANE 7,5 mg, comprimé pelliculé sécable",
    "etat": "Commercialisée"
   },
+  "68520477": {
+   "nom": "PSYLIA, poudre effervescente pour suspension buvable en sachet",
+   "etat": "Commercialisée"
+  },
   "68588503": {
    "nom": "LEVOTHYROX 25 microgrammes, comprimé sécable",
    "etat": "Commercialisée"
@@ -867,6 +973,22 @@
   },
   "69164379": {
    "nom": "CURACNE 20 mg, capsule molle",
+   "etat": "Commercialisée"
+  },
+  "69298346": {
+   "nom": "FORLAX 10 g, poudre pour solution buvable en sachet",
+   "etat": "Commercialisée"
+  },
+  "69345098": {
+   "nom": "DERINOX, solution pour pulvérisation nasale",
+   "etat": "Commercialisée"
+  },
+  "69440048": {
+   "nom": "FLUIMUCIL 2 % ENFANTS, solution buvable édulcorée à la saccharine sodique, au cyclamate de sodium et au sucralose",
+   "etat": "Commercialisée"
+  },
+  "69584073": {
+   "nom": "SMECTA 3 g ORANGE-VANILLE, poudre pour suspension buvable en sachet",
    "etat": "Commercialisée"
   }
  }

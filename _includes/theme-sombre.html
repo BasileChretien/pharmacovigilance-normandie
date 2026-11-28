@@ -1,0 +1,89 @@
+<script>
+// Dark theme and Dark Reader (docs/mode-sombre.md; tests: tests/js/theme-sombre.test.mjs).
+// Quarto layers the dark stylesheet (assets/theme-sombre.scss) on the light one when the
+// reader chose it with the switch of the navigation bar, or else when the system is dark.
+// 1. While the dark theme is on, a <meta name="darkreader-lock"> asks Dark Reader to leave
+//    the page alone: the site's own dark theme, checked for contrast, shows instead of
+//    Dark Reader's rewrite of it. With the light theme, Dark Reader works as usual.
+//    This script runs in <head>, before Quarto picks the theme at the top of <body>, so it
+//    applies Quarto's rule itself; then it follows the class Quarto sets on <body>.
+// 2. A page always prints in the light theme: the dark stylesheet is set aside for printing.
+// 3. The switch is a link: it gets the role and the state of a toggle button.
+(function () {
+  "use strict";
+  var KEY = "quarto-color-scheme"; // Quarto's storage: "alternate" = dark, "default" = light
+  var LOCK = "darkreader-lock";
+
+  // Quarto's rule: the reader's last choice on the switch, otherwise the system setting.
+  function sombreChoisi(choix, systemeSombre) {
+    if (choix === "alternate") { return true; }
+    if (choix === "default") { return false; }
+    return systemeSombre;
+  }
+
+  function choixEnregistre(win) {
+    if (win.location && win.location.protocol === "file:") { return null; } // Quarto keeps no choice there
+    try { return win.localStorage.getItem(KEY); } catch (e) { return null; }
+  }
+
+  function systemeSombre(win) {
+    return !!(win.matchMedia && win.matchMedia("(prefers-color-scheme: dark)").matches);
+  }
+
+  function verrou(doc, actif) {
+    var meta = doc.head.querySelector('meta[name="' + LOCK + '"]');
+    if (actif && !meta) {
+      meta = doc.createElement("meta");
+      meta.setAttribute("name", LOCK);
+      doc.head.appendChild(meta);
+    } else if (!actif && meta) {
+      meta.parentNode.removeChild(meta);
+    }
+  }
+
+  function feuillesSombres(doc) {
+    return Array.prototype.slice.call(doc.querySelectorAll("link.quarto-color-scheme.quarto-color-alternate"));
+  }
+
+  function bouton(doc, sombre) {
+    var liens = doc.querySelectorAll(".quarto-color-scheme-toggle");
+    for (var i = 0; i < liens.length; i++) {
+      liens[i].setAttribute("role", "button");
+      liens[i].setAttribute("aria-label", "Thème sombre");
+      liens[i].setAttribute("aria-pressed", sombre ? "true" : "false");
+    }
+  }
+
+  function installer(win, doc) {
+    verrou(doc, sombreChoisi(choixEnregistre(win), systemeSombre(win)));
+
+    var misDeCote = [];
+    win.addEventListener("beforeprint", function () {
+      misDeCote = feuillesSombres(doc).filter(function (l) { return l.rel === "stylesheet"; });
+      misDeCote.forEach(function (l) { l.rel = "disabled-stylesheet"; });
+    });
+    win.addEventListener("afterprint", function () {
+      misDeCote.forEach(function (l) { l.rel = "stylesheet"; });
+      misDeCote = [];
+    });
+
+    function suivre() {
+      var sombre = doc.body.classList.contains("quarto-dark");
+      verrou(doc, sombre);
+      bouton(doc, sombre);
+    }
+    function demarrer() {
+      suivre();
+      new win.MutationObserver(suivre).observe(doc.body, { attributes: true, attributeFilter: ["class"] });
+    }
+    if (doc.readyState === "loading") {
+      doc.addEventListener("DOMContentLoaded", demarrer);
+    } else {
+      demarrer();
+    }
+  }
+
+  window.pvThemeSombre = { sombreChoisi: sombreChoisi, installer: installer }; // for the tests
+  installer(window, document);
+})();
+</script>

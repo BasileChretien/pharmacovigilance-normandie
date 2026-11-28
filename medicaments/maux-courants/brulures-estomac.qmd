@@ -11,13 +11,22 @@ substances: [oméprazole, ésoméprazole, lansoprazole, pantoprazole, rabéprazo
 sources:
   - titre: "HAS, Fiche bon usage des inhibiteurs de la pompe à protons (IPP), validée le 8 septembre 2022 (page de présentation)"
     url: "https://www.has-sante.fr/jcms/p_3372966/fr/fiche-bon-usage-des-inhibiteurs-de-la-pompe-a-protons-ipp"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "HAS, Fiche BUM – Bon usage des inhibiteurs de la pompe à protons (IPP), septembre 2022 (PDF)"
     url: "https://www.has-sante.fr/upload/docs/application/pdf/2022-09/fiche_bum_-_bon_usage_des_inhibiteurs_de_la_pompe_a_protons_ipp.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "HAS, Commission de la transparence, Rapport de réévaluation des inhibiteurs de la pompe à protons, avis définitif, 2020"
     url: "https://www.has-sante.fr/upload/docs/application/pdf/2020-11/rapport_reevaluation_ipp_avisdef_cteval493.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. MOPRALPRO 20 mg, comprimé gastro-résistant (oméprazole, sans ordonnance), RCP et notice"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/62044256/extrait"
+    consulte_le: 2026-11-28
+  - titre: "EMA. Nexium Control (ésoméprazole 20 mg, sans ordonnance), informations sur le produit (RCP et notice), version française"
+    url: "https://www.ema.europa.eu/fr/documents/product-information/nexium-control-epar-product-information_fr.pdf"
+    consulte_le: 2026-11-28
+  - titre: "ANSM, Thésaurus des interactions médicamenteuses, version du 15/09/2023 (topiques gastro-intestinaux, antiacides et adsorbants : page 227)"
+    url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Antiulcéreux : les points essentiels"
     url: "https://pharmacomedicale.org/medicaments/par-specialites/item/antiulcereux-les-points-essentiels"
@@ -36,14 +45,14 @@ pour_aller_plus_loin:
 - Vous vomissez souvent.
 - Vous êtes très fatigué et pâle (signe possible d'anémie, un manque de globules rouges).
 - Les brûlures durent malgré le traitement, ou reviennent dès l'arrêt.
-- Vous avez plus de 50 ans et ces brûlures sont nouvelles pour vous.
+- Vous avez plus de 55 ans et ces brûlures sont nouvelles, ou ont changé récemment.
 - Vous vomissez du sang ou vos selles sont noires : appelez le 15.
-- Une douleur serre la poitrine et peut venir du cœur : appelez le 15.
+- Douleur dans la poitrine avec malaise, sueurs ou vertiges, ou douleur dans les épaules avec essoufflement : cela peut venir du cœur, appelez le 15.
 :::
 
 ::: {.a-retenir}
 - Des brûlures rares se soulagent avec un médicament pris seulement au moment de la gêne.
-- Un traitement de fond dure en général 4 semaines, pas plus sans avis médical.
+- Sans ordonnance, un inhibiteur de la pompe à protons (IPP) se prend 14 jours au plus. Prescrit, il dure en général 4 semaines.
 - Certains signes doivent faire consulter vite : voir l'encadré ci-dessus.
 :::
 
@@ -71,7 +80,7 @@ Prenez l'antiacide ou l'alginate au moment de la gêne. Un IPP se prend une fois
 
 ### Quels effets surveiller ?
 
-Les IPP sont en général bien tolérés sur une courte durée. Pris pendant des mois ou des années, ils peuvent favoriser des infections de l'intestin. D'autres effets ont été décrits, comme une baisse du magnésium dans le sang ou des fractures. À l'arrêt, les brûlures peuvent revenir quelques jours : c'est l'effet rebond. Il ne veut pas dire que le traitement doit reprendre.
+Les IPP sont en général bien tolérés sur une courte durée. Pris pendant des mois ou des années, ils peuvent favoriser des infections de l'intestin. D'autres effets ont été décrits, comme une baisse du magnésium dans le sang ou des fractures. À l'arrêt, les brûlures peuvent revenir pendant un temps : c'est un effet rebond possible. Il ne veut pas dire que le traitement doit reprendre.
 
 ### Ce qu'il vaut mieux éviter
 
@@ -96,7 +105,7 @@ Une endoscopie digestive haute est recommandée en cas de symptômes atypiques o
 - **Symptômes typiques espacés (< 1 par semaine)** : traitement ponctuel d'action rapide par antiacide, alginate ou antisécrétoire à la demande, avec les mesures hygiéno-diététiques. L'automédication après conseil pharmaceutique est une option, sans dépasser 14 jours en cas d'inefficacité (HAS 2020).
 - **Symptômes typiques rapprochés (> 1 par semaine)** : IPP pendant 4 semaines au maximum (HAS 2022). Doses du traitement symptomatique initial du RGO sans œsophagite : demi-dose pour ésoméprazole, lansoprazole, pantoprazole et rabéprazole ; pleine dose pour oméprazole. Les topiques peuvent être associés en cas de symptômes résiduels.
 - **Pas d'IPP** en cas de « pyrosis fonctionnel », ni comme test thérapeutique devant des manifestations extradigestives isolées (toux chronique, symptômes ORL, asthme, douleur thoracique non cardiaque) sans RGO documenté.
-- **Traitement prolongé justifié** : œsophagite de grade C ou D (Los Angeles), endobrachyœsophage, RGO symptomatique invalidant mal contrôlé par un traitement intermittent. Au-delà de 3 mois : investiguer (endoscopie) et rechercher la dose minimale efficace.
+- **Traitement prolongé justifié** : œsophagite de grade C ou D (Los Angeles), endobrachyœsophage, RGO symptomatique invalidant mal contrôlé par un traitement intermittent : poursuivre avec réévaluation régulière. RGO non compliqué dont les symptômes persistent : avant de poursuivre au-delà de 3 mois, investiguer (endoscopie) et rechercher la dose minimale efficace (arbre de la HAS, 2022).
 
 ### Mécanismes d'action
 
@@ -104,7 +113,7 @@ Les antiacides neutralisent l'acidité gastrique (effet immédiat, modeste). Les
 
 ### Précautions et effets indésirables
 
-En usage prolongé, le risque établi avec un bon niveau de preuve est celui d'infections intestinales (essai COMPASS cité par la HAS). Les RCP mentionnent aussi hyponatrémie, hypomagnésémie sévère, fractures, néphrites interstitielles, colites. Des associations avec surmortalité, démence ou cancer ont été rapportées en observationnel, sans lien causal établi. L'utilisation au long cours expose à la polymédication, en particulier chez le sujet âgé. Les topiques peuvent réduire l'absorption digestive d'autres médicaments administrés simultanément [à compléter : source — RCP d'un antiacide et Thésaurus ANSM pour le délai à respecter].
+En usage prolongé, le risque établi avec un bon niveau de preuve est celui d'infections intestinales (essai COMPASS cité par la HAS). Les RCP mentionnent aussi hyponatrémie, hypomagnésémie sévère, fractures, néphrites interstitielles, colites. Des associations avec surmortalité, démence ou cancer ont été rapportées en observationnel, sans lien causal établi. L'utilisation au long cours expose à la polymédication, en particulier chez le sujet âgé. Les topiques peuvent réduire l'absorption digestive d'autres médicaments administrés simultanément : les prendre à distance de tout autre médicament, plus de 2 heures si possible (Thésaurus ANSM, 15/09/2023, page 227 ; association déconseillée avec les inhibiteurs d'intégrase).
 
 ### Ce qu'il faut éviter
 
@@ -113,7 +122,7 @@ En usage prolongé, le risque établi avec un bon niveau de preuve est celui d'i
 
 ### Déprescription
 
-Si l'ordonnance contient un IPP depuis plus de 4 semaines dans un RGO non compliqué : arrêter l'IPP et informer le patient qu'un effet rebond est possible mais ne justifie pas une nouvelle prescription. Si les symptômes reviennent de façon occasionnelle : antiacide, anti-H2, alginate ou IPP à la demande (arbre de déprescription, HAS 2022).
+Si l'ordonnance contient un IPP depuis plus de 4 semaines dans un RGO non compliqué dont les symptômes ont disparu : arrêter l'IPP et informer le patient qu'un effet rebond est possible (rebond symptomatique possible mais pas formellement établi, HAS 2020) mais ne justifie pas une nouvelle prescription. Si les symptômes reviennent de façon occasionnelle : antiacide, anti-H2, alginate ou IPP à la demande (arbre de déprescription, HAS 2022).
 
 ### Outils et liens
 
