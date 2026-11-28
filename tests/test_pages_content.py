@@ -20,8 +20,9 @@ def test_aspirin_above_100_mg_is_contraindicated_from_the_6th_month():
     # The 3rd trimester (4.6) would leave 24 to 28 weeks out.
     bullet = line_with(page("medicaments/situations/grossesse-allaitement.qmd"),
                        "**Aspirine à faible dose**")
-    assert "6e mois" in bullet and "24 semaines" in bullet
-    assert "troisième trimestre" not in bullet
+    above_100_mg = bullet.split("doses supérieures", 1)[1]
+    assert "6e mois" in above_100_mg and "24 semaines" in above_100_mg
+    assert "trimestre" not in above_100_mg
 
 
 def test_bedtime_levothyroxine_is_not_presented_as_worse():
@@ -31,4 +32,4 @@ def test_bedtime_levothyroxine_is_not_presented_as_worse():
     patient_row = line_with(text, "| Lévothyroxine (Levothyrox")
     assert "coucher" not in patient_row
     pro = text[text.index("## Pour les professionnels"):]
-    assert "Bach-Huynh" in pro and "Bolk" in pro
+    assert "Bach-Huynh" in pro and "Bolk" in pro and "divergent" in pro
