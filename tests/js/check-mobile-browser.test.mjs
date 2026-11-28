@@ -86,6 +86,14 @@ for (const engine of ["webkit", "chromium"]) {
       assert.deepEqual((await measure(ellipsis)).findings, []);
     });
 
+    test("a table at overflow: hidden does not clip its rows: they push the page sideways", async () => {
+      const result = await measure(`<table style="overflow: hidden; max-width: 100%;"><tbody>
+        <tr><td style="white-space: nowrap;">Simvastatine + clarithromycine : association contre-indiquée</td></tr></tbody></table>`);
+      assert.deepEqual(rules(result), ["defilement", "hors-ecran"]);
+      assert.equal(result.findings[0].element, "table");
+      assert.match(result.findings[0].detail, /^boîte de \d+×\d+ px qui dépasse de \d+ px à droite/);
+    });
+
     test("an invisible child that pushes the page sideways is named", async () => {
       const result = await measure(`<h2 style="margin: 0 12px; font-size: 22px;">Un titre qui remplit sa ligne<a href="#t"
         style="opacity: 0; display: inline-block; width: 60px; margin-right: -60px;">#</a></h2>`);

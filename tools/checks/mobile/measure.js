@@ -143,6 +143,14 @@
       || /paint|layout|strict|content/.test(s.contain || "") || /transform|filter|perspective/.test(s.willChange || "");
   }
 
+  // overflow only applies to block, flex and grid boxes: a table at overflow: hidden,
+  // for one, still lets its rows spill (WebKit and Chromium).
+  const NO_OVERFLOW = /^(inline|contents|table|inline-table|table-row|table-row-group|table-header-group|table-footer-group|table-column|table-column-group)$/;
+
+  function overflows(s) {
+    return { x: s.overflowX !== "visible" && !NO_OVERFLOW.test(s.display), y: s.overflowY !== "visible" && !NO_OVERFLOW.test(s.display) };
+  }
+
   // Ancestors whose overflow cuts or scrolls `el`, following containing blocks: an
   // absolute box escapes its static ancestors, a fixed box all but a transformed one.
   // <html> and <body> are left out: what they cut is lost, not scrollable.
@@ -155,8 +163,7 @@
         : position === "absolute" ? s.position !== "static" || fixedContainer(s) : true;
       if (!contains) continue;
       position = s.position;
-      const x = s.overflowX !== "visible";
-      const y = s.overflowY !== "visible";
+      const { x, y } = overflows(s);
       if (x || y) out.push({ node, x, y });
     }
     return out;
@@ -223,7 +230,7 @@
     const out = [];
     for (const el of ctx.doc.body.querySelectorAll("*")) {
       if (el.clientWidth === 0 || inSvg(el) || !visible(el, ctx) || inFixed(ctx, el)) continue;
-      if (ctx.style(el).overflowX !== "visible" || el.scrollWidth <= el.clientWidth + G.TOLERANCE) continue;
+      if (overflows(ctx.style(el)).x || el.scrollWidth <= el.clientWidth + G.TOLERANCE) continue;
       const r = ctx.rect(el);
       if (r.left + el.clientLeft + el.scrollWidth <= ctx.vw + G.TOLERANCE) continue;
       if (clippers(el, ctx).some((c) => c.x)) continue;
@@ -310,7 +317,12 @@
     const causes = boxes.concat(spills.map((s) => explainSpill(ctx, s)));
     if (causes.length) return causes;
     const el = bisect(ctx);
-    return el ? [{ el, detail: "trouvé en masquant les éléments un à un" }] : [];
+    if (!el) return [];
+    // WebKit: a <table> at display: block and overflow: hidden is cut on screen, yet its
+    // full width still counts in the page's.
+    const clipper = clippers(el, ctx).find((c) => c.x);
+    const cut = clipper ? `, coupé par ${label(clipper.node)} mais compté dans la largeur de la page` : "";
+    return [{ el, detail: `trouvé en masquant les éléments un à un${cut}` }];
   }
 
   function sideScroll(ctx, offenders) {
@@ -370,7 +382,7 @@
     const out = [];
     for (const el of ctx.doc.body.querySelectorAll("*")) {
       const s = ctx.style(el);
-      if ((s.overflowX !== "hidden" && s.overflowX !== "clip") || s.textOverflow === "ellipsis") continue;
+      if ((s.overflowX !== "hidden" && s.overflowX !== "clip") || !overflows(s).x || s.textOverflow === "ellipsis") continue;
       if (el.scrollWidth <= el.clientWidth + G.TOLERANCE || !visible(el, ctx)) continue;
       const r = ctx.rect(el);
       const left = r.left + el.clientLeft;
