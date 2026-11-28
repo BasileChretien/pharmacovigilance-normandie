@@ -165,7 +165,7 @@ Niveaux du Thésaurus de l'ANSM (version du 15 septembre 2023, non mise à jour 
 
 ### Mesures de réduction du risque
 
-- Conditions de prescription (base de données publique des médicaments, novembre 2026). Zolpidem : liste I, ordonnance sécurisée, prescription en toutes lettres, limitée à 4 semaines, chevauchement interdit sauf mention expresse du prescripteur. Zopiclone : liste I, prescription limitée à 4 semaines. Lorazépam, alprazolam : liste I, prescription limitée à 12 semaines. Textes réglementaires : durées maximales fixées depuis 1991 par l'arrêté du 7 octobre 1991, modifié depuis (HAS, avis TEMESTA de 2015 ; réponse ministérielle, JO de l'Assemblée nationale du 1er mai 2012) ; zolpidem : arrêté du 7 janvier 2017, appliqué depuis le 10 avril 2017 (Ordre national des pharmaciens).
+- Conditions de prescription (base de données publique des médicaments, novembre 2026). Zolpidem : liste I, ordonnance sécurisée, prescription en toutes lettres, limitée à 4 semaines, chevauchement interdit sauf mention expresse du prescripteur. Zopiclone : liste I, prescription limitée à 4 semaines. Lorazépam, alprazolam : liste I, prescription limitée à 12 semaines. Textes réglementaires : durées maximales fixées depuis 1991 (HAS, avis TEMESTA de 2015 ; réponse ministérielle, JO de l'Assemblée nationale du 1er mai 2012), par l'arrêté du 7 octobre 1991, modifié depuis (cité dans la question écrite à laquelle répond le ministère) ; zolpidem : arrêté du 7 janvier 2017, appliqué depuis le 10 avril 2017 (Ordre national des pharmaciens).
 - Annoncer la durée du traitement et les modalités d'arrêt dès la prescription.
 
 :::
