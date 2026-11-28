@@ -99,6 +99,7 @@ def test_the_pdf_web_page_and_list_land_next_to_the_word_file(monkeypatch, tmp_p
 
 
 def test_a_file_that_is_neither_word_nor_an_issue_stops(tmp_path):
+    (tmp_path / "numero.pdf").write_bytes(b"%PDF-1.7")
     with pytest.raises(fabriquer.Echec, match="docx"):
         fabriquer.fabriquer(tmp_path / "numero.pdf", None, avec_liens=False)
 

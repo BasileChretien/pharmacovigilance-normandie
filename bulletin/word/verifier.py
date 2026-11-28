@@ -35,18 +35,28 @@ ALT = "clic droit sur l'image → Modifier le texte de remplacement"
 MESSAGES = {
     "sous-titre": "Le sous-titre manque : écrivez le mois du numéro (par exemple "
     "« Octobre 2025 ») sur une ligne au style « Sous-titre », sous le titre.",
-    "couleur": "{lieu} : couleur mise à la main sur {quoi} — elle sera perdue. Utilisez "
-    "le style « Contre-indication » (rouge) ou « CredibleMeds » (orange).",
+    "couleur": "{lieu} : couleur mise à la main sur {quoi} — elle sera perdue. Pour "
+    "une mise en garde, utilisez le style « Bloc Attention » ; pour un médicament dans une "
+    "liste, « Contre-indication » (rouge) ou « CredibleMeds » (orange).",
     "fond": "{lieu} : fond coloré mis à la main sur {quoi} — il sera perdu. Utilisez le "
     "style « Encadré » (encadré bleu) ou un style « Catégorie … ».",
     "image": "{lieu} : {quoi} {plus} pas de texte de remplacement, lu par les lecteurs d'écran "
     f"(dans Word : {ALT}).",
     "style": "{lieu} : le style « {quoi} »{plus} ne fait pas partie du modèle — sa mise "
-    "en forme sera perdue. Utilisez un style du modèle (« Encadré », « Légende », "
-    "« Références », « Catégorie … ») ou « Normal ».",
+    "en forme sera perdue. Utilisez un style du modèle (« Encadré », un « Bloc … », "
+    "« Légende », « Catégorie … ») ou « Normal » ; pour un encadré de couleur à vous, "
+    "renommez le style « Bloc » suivi de son titre (par exemple « Bloc Interaction »).",
     "styles": "… et {quoi} autre(s) style(s) hors du modèle, à remplacer de même.",
     "auteur": "{lieu} : le nom de l'auteur est à compléter (ligne « Auteur : Initiale. "
     "Nom » sous le titre). Il ne s'affiche qu'avec l'accord écrit de l'auteur.",
+    "auteur modele": "{lieu} : le nom de l'auteur est encore celui du modèle (« {quoi} ») : "
+    "remplacez-le par le vrai nom, ou retirez la ligne « Auteur : ».",
+    "ligne egaree": "{lieu} : la ligne « {quoi} » s'affiche dans le texte de l'article. Les "
+    "lignes « Auteur : », « Rubrique : » et « Relecture : » se placent juste sous le "
+    "« Titre 1 », avant tout « Titre 2 » ; pour un nouvel article, utilisez « Titre 1 ».",
+    "rubrique": "{lieu} : la rubrique « {quoi} » n'est pas une des trois habituelles "
+    "(Cas d'ici et d'ailleurs, Littérature, Infos des Autorités de Santé) : vérifiez son "
+    "orthographe ; elle fait un groupe à part dans le sommaire.",
     "a completer": "{lieu} : il reste {quoi} dans le texte ; complétez-le ou retirez-le.",
     "introuvable": "{lieu} : {quoi} est introuvable ({plus}) ; remettez-la dans le "
     "fichier Word et refaites l'import.",
@@ -56,8 +66,9 @@ MESSAGES = {
     "floue. Demandez-en une version plus grande (au moins 800 pixels de large).",
     "sans couverture": "Pas d'image de couverture : une couverture graphique est créée "
     "à la place. Pour mettre une image, placez-la dans Word avant le premier article.",
-    "deborde": "{lieu} : trop long pour sa page, même en petits caractères. "
-    "Raccourcissez-le, ou coupez-le en deux articles (un nouveau « Titre 1 »).",
+    "deborde": "{lieu} : trop long pour sa page, même en petits caractères (les images "
+    "comptent aussi). Raccourcissez-le, réduisez une image, ou coupez-le en deux articles "
+    "(un nouveau « Titre 1 »).",
     "petit texte": "{lieu} : texte en petits caractères ({quoi} pt) ; un texte plus "
     "court se lirait mieux.",
     "lien mort": "Lien mort : {lieu} ({quoi}). Corrigez l'adresse ou retirez le lien.",
@@ -313,6 +324,13 @@ IMAGE = re.compile(
 )
 A_COMPLETER = re.compile(r"\\?\[[àÀ] compléter[^\]\n]*?\\?\]", re.IGNORECASE)
 SANS_AUTEUR = {"", "[auteur]", r"\[auteur\]"}
+# The template's own placeholders, left in by mistake.
+AUTEURS_MODELE = {"initiale. nom", "a. nom", "b. nom", "initiale nom", "prénom nom"}
+RUBRIQUES = ("Cas d'ici et d'ailleurs", "Littérature", "Infos des Autorités de Santé")
+# Lines meant to sit right under an article's title, found in its text instead.
+LIGNE_EGAREE = re.compile(
+    r"(?im)^(?:\*\*)?((?:auteurs?|rubrique|relecture|relu par)\s*:\s*[^\n]{1,80})$"
+)
 FORMATS_ILLISIBLES = {".emf", ".wmf", ".tif", ".tiff"}  # neither Typst nor browsers
 LARGEUR_MIN = 800  # pixels
 
@@ -365,7 +383,9 @@ def _fichier_image(dossier: Path, chemin: str, lieu: str, nom: str) -> list[Aler
     return []
 
 
-def _images(dossier: Path, segment: str, lieu: str) -> list[Alerte]:
+def _images(
+    dossier: Path, segment: str, lieu: str, avec_alt: bool = True
+) -> list[Alerte]:
     """Pictures of one article: their file, and their text for screen readers.
 
     A picture alone in its paragraph is a figure: its brackets hold the caption, its
@@ -383,7 +403,7 @@ def _images(dossier: Path, segment: str, lieu: str) -> list[Alerte]:
         if segment[debut : fin if fin >= 0 else None].strip() == m.group(0):
             alt = re.search(r'fig-alt="([^"]*)"', m.group(4) or "")
             legende = alt.group(1).strip() if alt else ""
-        if not legende:
+        if avec_alt and not legende:
             alertes.append(_alerte("verifier", "image", lieu, nom, "n'a"))
         alertes += _fichier_image(dossier, chemin, lieu, nom)
     return alertes
@@ -411,18 +431,35 @@ def _a_completer(texte: str, lieu: str) -> list[Alerte]:
     )
 
 
+def _signature(lieu: str, attributs: str, texte: str) -> list[Alerte]:
+    """The lines under the title: author (missing or the template's), lines left in the
+    text, rubric outside the usual three."""
+    auteur = re.search(r'\bauteur\s*=\s*"([^"]*)"', attributs)
+    nom = auteur.group(1).strip() if auteur else ""
+    alertes = []
+    if nom in SANS_AUTEUR:
+        alertes.append(_alerte("verifier", "auteur", lieu))
+    elif nom.casefold() in AUTEURS_MODELE:
+        alertes.append(_alerte("corriger", "auteur modele", lieu, nom))
+    for m in LIGNE_EGAREE.finditer(texte):
+        alertes.append(_alerte("verifier", "ligne egaree", lieu, _extrait(m.group(1))))
+    rubrique = re.search(r'\brubrique\s*=\s*"([^"]*)"', attributs)
+    if rubrique and rubrique.group(1).strip() not in RUBRIQUES:
+        alertes.append(_alerte("verifier", "rubrique", lieu, rubrique.group(1).strip()))
+    return alertes
+
+
 def _article(
-    dossier: Path, titre: str | None, attributs: str, texte: str
+    dossier: Path, titre: str | None, attributs: str, texte: str, avec_alt: bool = True
 ) -> list[Alerte]:
     lieu = _lieu(titre)
     alertes = _a_completer(texte, lieu)
     hors_article = titre is None or re.search(
         r"(^|\s)\.(dos|references-page)\b", attributs
     )
-    auteur = re.search(r'\bauteur\s*=\s*"([^"]*)"', attributs)
-    if not hors_article and (not auteur or auteur.group(1).strip() in SANS_AUTEUR):
-        alertes.insert(0, _alerte("verifier", "auteur", lieu))
-    return alertes + _images(dossier, texte, lieu)
+    if not hors_article:
+        alertes = _signature(lieu, attributs, texte) + alertes
+    return alertes + _images(dossier, texte, lieu, avec_alt)
 
 
 def _couverture(dossier: Path, entete: dict[str, str]) -> list[Alerte]:
@@ -438,14 +475,17 @@ def _couverture(dossier: Path, entete: dict[str, str]) -> list[Alerte]:
     )
 
 
-def verifier_numero(qmd: Path) -> list[Alerte]:
-    """Check an imported issue: authors, text left to fill in, pictures, cover."""
+def verifier_numero(qmd: Path, textes_alternatifs: bool = True) -> list[Alerte]:
+    """Check an imported issue: authors, text left to fill in, pictures, cover.
+
+    textes_alternatifs=False when the Word file was checked already: verifier_docx reports
+    missing alternative texts there, in the author's terms."""
     if not qmd.is_file():
         raise SystemExit(f"verifier : fichier introuvable : {qmd}")
     entete, brut, corps = _entete(qmd.read_text(encoding="utf-8"))
     alertes = _a_completer(brut, "Titre ou sous-titre du numéro")
     for titre, attributs, texte in _articles(corps):
-        alertes += _article(qmd.parent, titre, attributs, texte)
+        alertes += _article(qmd.parent, titre, attributs, texte, textes_alternatifs)
     return alertes + _couverture(qmd.parent, entete)
 
 

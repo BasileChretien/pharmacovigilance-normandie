@@ -15,10 +15,21 @@ numéro :
 2. **Écrivez le numéro dans Word** à partir de `word/modele-vigiking.docx` (styles ci-dessous).
 3. **Déposez le fichier Word sur l'icône.** Une à deux minutes plus tard, à côté du fichier
    Word : le PDF (qui s'ouvre), la page web, et `vigiking-AAAA-MM - à vérifier.txt`, la
-   liste de ce qui reste à corriger.
+   liste de ce qui reste à corriger. La dernière ligne de la fenêtre dit si le numéro peut
+   partir (« Prêt à envoyer ») ou s'il faut renvoyer la liste à l'auteur.
 
 Le mode d'emploi illustré est dans `guide/index.html` : un double-clic l'ouvre dans le
-navigateur.
+navigateur. Il sépare ce que fait l'auteur (écrire dans Word) de ce que fait la personne
+qui fabrique le bulletin (installer, déposer, vérifier).
+
+Les messages s'adressent à des personnes qui ne sont pas informaticiennes : toute erreur
+(fichier PDF ou .doc déposé, document encore ouvert dans Word, PDF ouvert ailleurs, mise en
+page qui échoue) finit par une phrase en français qui dit quoi faire ; le détail technique
+va dans `Vigiking - journal technique.txt`, à côté du fichier Word, et le PDF d'une
+fabrication précédente est renommé « (ancienne version) » pour ne pas être envoyé par
+erreur. Les formes courantes sont acceptées : « oct. 2025 » ou « 10/2025 » en sous-titre,
+« Par A. Nom » comme ligne d'auteur, « Litterature » ou « Cas d'ici » comme rubrique,
+« (PMID 123) » comme citation.
 
 ## Ce qui se fait tout seul
 
@@ -33,14 +44,15 @@ navigateur.
   sur PubMed ou Crossref) va sur une page « Références » avant le dos. Une source sans
   identifiant s'écrit `[Réf : texte libre]`. Les références trouvées sont gardées dans
   `.cache/`, pour refaire un numéro sans connexion.
-- Les vérifications, dans la liste « à vérifier » :
+- Les vérifications, dans la liste à vérifier :
   - couleur mise à la main (perdue) ;
   - image sans texte de remplacement, trop petite, ou dans un format illisible ;
-  - nom d'auteur à compléter ;
+  - nom d'auteur à compléter, ou encore celui du modèle ;
+  - ligne « Auteur : » ou « Rubrique : » égarée dans le texte, rubrique hors des trois ;
   - « [à compléter] » oublié ;
   - article trop long ;
   - lien mort ;
-  - référence introuvable.
+  - référence introuvable, ou tapée sans crochets.
 
 ## La mise en page
 

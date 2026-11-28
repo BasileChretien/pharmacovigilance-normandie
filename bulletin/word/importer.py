@@ -29,6 +29,10 @@ FILTRE = BULLETIN / "word" / "word-vers-vigiking.lua"
 W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
 # A paragraph style "Bloc <titre>" is a type of block (the template's or one an author made).
 BLOC = re.compile(r"bloc[\s:-]+\S", re.IGNORECASE)
+NOMS_MOIS = (
+    "Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
+    "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre",
+)  # fmt: skip
 # Front matter key, file in bulletin/commun/.
 IMAGES_COMMUNES = {
     "logo-gauche": "logo-rouen.png",
@@ -105,6 +109,9 @@ def importer(
         )
     (dossier / "images").mkdir(parents=True, exist_ok=True)
     meta = ["-M", f"fichier={nom}", "-M", "dossier-images=images"]
+    # The month in words, for an issue whose Word file has no subtitle.
+    annee, numero_mois = mois.split("-")
+    meta += ["-M", f"mois-libelle={NOMS_MOIS[int(numero_mois) - 1]} {annee}"]
     commun = bulletin / "commun"
     for cle, fichier in IMAGES_COMMUNES.items():
         if (commun / fichier).is_file():

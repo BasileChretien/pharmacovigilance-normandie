@@ -58,6 +58,15 @@ IDENTIFIANTS = [
     ("doi", re.compile(_DOI)),
 ]
 PMID_NU = re.compile(r"(\d{1,9})")
+# "(PMID 123)" or "(PMID 1; PMID 2)", as authors type them: read as a citation bracket.
+# (Not DOIs: a DOI may itself hold parentheses.)
+PARENTHESES_PMID = re.compile(
+    r"\((\s*pmid\s*:?\s*\d{1,9}(?:\s*[;,]\s*(?:pmid\s*:?\s*)?\d{1,9})*\s*)\)",
+    re.IGNORECASE,
+)
+# An identifier typed outside any bracket ("PMID:123", "doi: 10.x/y"): left unnumbered.
+NU_PMID = re.compile(r"(?i)\bpmid\s*:?\s*(\d{4,9})")
+NU_DOI = re.compile(r"(?i)\bdoi\s*:\s*(10\.\d{4,9}/[^\s>)\]]+)")
 ECHAPPE = re.compile(r"\\([^A-Za-z0-9\s])")
 SPECIAUX = re.compile(r"([\\`*_{}\[\]<>^~$@|#])")
 BALISE = re.compile(r"<[^>]+>")
@@ -448,6 +457,36 @@ def _remplacer(
     return corps
 
 
+def _hors_blocs_refs(corps: str) -> str:
+    """The text without its reference lists (hand-made or generated), where identifiers
+    are expected outside brackets."""
+    lignes, dans_bloc = [], False
+    for ligne in corps.splitlines():
+        if BLOC_REFS.match(ligne):
+            dans_bloc = True
+        elif dans_bloc and FIN_BLOC.match(ligne):
+            dans_bloc = False
+        elif not dans_bloc:
+            lignes.append(ligne)
+    return "\n".join(lignes)
+
+
+def non_crochetes(corps: str) -> list[str]:
+    """One warning per identifier typed outside a bracket: it stays raw text, unnumbered."""
+    hors = _desechapper(_hors_blocs_refs(CITATION.sub(" ", corps)))
+    trouves = [(m.group(0), f"PMID {m.group(1)}") for m in NU_PMID.finditer(hors)]
+    trouves += [
+        (m.group(0).rstrip(".,;:"), f"DOI {m.group(1).rstrip('.,;:')}")
+        for m in NU_DOI.finditer(hors)
+    ]
+    alertes = [
+        f"« {tape} » n'est pas entre crochets : écrivez [{forme}] pour que la "
+        "référence soit numérotée."
+        for tape, forme in trouves
+    ]
+    return list(dict.fromkeys(alertes))
+
+
 def resoudre(
     texte: str, cache: Path, chercher: Chercher | None = None
 ) -> tuple[str, list[str]]:
@@ -456,7 +495,9 @@ def resoudre(
     entete = FRONT_MATTER.match(texte)
     tete, corps = (entete.group(0), texte[entete.end() :]) if entete else ("", texte)
     corps = LIEN_DOI.sub(r"\1\2\3", corps)
+    corps = PARENTHESES_PMID.sub(r"[\1]", corps)
     groupes, avertissements = _groupes(corps)
+    avertissements += non_crochetes(corps)
     manuels = items_manuels(corps)
     if not groupes and not manuels:
         return texte, avertissements

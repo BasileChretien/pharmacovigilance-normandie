@@ -17,7 +17,7 @@ Rubrique : Cas d'ici et d'ailleurs
 
 Relecture : Initiale. Nom
 
-Écrivez chaque article sous un titre au style « Titre 1 ». Juste en dessous, une ligne « Auteur : … » ; si vous le souhaitez, une ligne « Rubrique : … » (Cas d'ici et d'ailleurs, Littérature, Infos des Autorités de Santé : le sommaire regroupe les articles par rubrique) et une ligne « Relecture : … ». Le texte s'écrit normalement : **gras**, *italique*, listes à puces ou numérotées. La mise en page, les couleurs et la taille du texte se font toutes seules.
+Écrivez chaque article sous un titre au style « Titre 1 ». Juste en dessous, avant tout le reste (et avant tout « Titre 2 »), une ligne « Auteur : … » (ou « Par … ») ; si vous le souhaitez, une ligne « Rubrique : … », une des trois rubriques du bulletin (Cas d'ici et d'ailleurs, Littérature, Infos des Autorités de Santé : le sommaire regroupe les articles par rubrique), et une ligne « Relecture : … ». Remplacez « Initiale. Nom » par le vrai nom. Le texte s'écrit normalement : **gras**, *italique*, listes à puces ou numérotées. La mise en page, les couleurs et la taille du texte se font toutes seules.
 
 ::: {custom-style="Encadré"}
 Un paragraphe au style « Encadré » devient un encadré : le message clé de l'article.
@@ -150,7 +150,7 @@ Auteur : Initiale. Nom
 
 Le dernier article reprend le message clé.
 
-Pour citer un article, écrivez son PMID ou son DOI entre crochets, là où vous le citez : [PMID 14999113] ou [DOI 10.1136/postgradmedj-2020-138661]. Le numéro d'appel et la référence complète s'ajoutent tout seuls, dans l'ordre de citation, sur une page « Références » à la fin du bulletin. Pour une source sans identifiant (site, document interne) : [Réf : CredibleMeds. https://www.crediblemeds.org].
+Pour citer un article, écrivez son PMID ou son DOI entre crochets, là où vous le citez : [PMID 14999113] ou [DOI 10.1136/postgradmedj-2020-138661]. Le numéro d'appel et la référence complète s'ajoutent tout seuls, dans l'ordre de citation, sur une page « Références » à la fin du bulletin. Pour une source sans identifiant (site, document interne) : [Réf : CredibleMeds. https://www.crediblemeds.org]. Sans crochets (« PMID:14999113 »), la référence reste telle quelle, sans numéro : la liste à vérifier le signale.
 
 Si vous préférez taper les références vous-même, numérotez les appels en exposant et écrivez la liste au style « Références » (sans crochets dans le texte, pour ne pas mélanger les deux numérotations) :
 

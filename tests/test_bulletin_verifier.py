@@ -127,7 +127,8 @@ def test_hand_colour_is_flagged_by_article_and_consecutive_runs_make_one_passage
     assert couleurs == [
         (
             "Article « Allongement du QT » : couleur mise à la main sur « amiodarone » — "
-            "elle sera perdue. Utilisez le style « Contre-indication » (rouge) ou "
+            "elle sera perdue. Pour une mise en garde, utilisez le style « Bloc Attention » ; "
+            "pour un médicament dans une liste, « Contre-indication » (rouge) ou "
             "« CredibleMeds » (orange)."
         ),
         couleurs[1],

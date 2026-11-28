@@ -1,4 +1,4 @@
-<title>Fabriquer le Vigiking</title>
+<title>Écrire et fabriquer le Vigiking</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <style>
 @font-face { font-family: "Atkinson Hyperlegible Next"; font-weight: 200 800; font-display: swap; src: url(data:font/woff2;base64,__ATKINSON__) format("woff2"); }
@@ -286,6 +286,23 @@ kbd { font: 600 0.85em/1 var(--mono); padding: 0.15em 0.45em; border-radius: 5px
 .faire ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.5rem; color: var(--encre-douce); }
 .faire li strong { color: var(--encre); }
 
+/* ---------- Two readers: who writes, who builds ------------------------------------ */
+.choix { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.8rem; margin-top: 1.6rem; }
+.choix a { display: grid; gap: 0.25rem; padding: 0.95rem 1.1rem; border-radius: 0.8rem; text-decoration: none; color: var(--sur-manche); background: rgb(255 255 255 / 0.08); border: 1px solid rgb(255 255 255 / 0.3); }
+.choix a:hover { background: rgb(255 255 255 / 0.16); }
+.choix a:focus-visible { outline: 3px solid var(--cyan); outline-offset: 3px; }
+.choix b { font: 700 1.1rem/1.2 var(--titres); }
+.choix span { font-size: 0.92rem; color: var(--ecume); }
+.sommaire li.separation { padding-left: 1.5rem; border-left: 1px solid var(--filet); }
+.bande-fabrication { background: var(--manche); color: var(--sur-manche); padding-block: 2.4rem; }
+.bande-fabrication .wrap { display: grid; gap: 0.6rem; }
+.bande-fabrication .surtitre { color: var(--ecume); }
+.bande-fabrication h2 { color: var(--sur-manche); }
+.bande-fabrication p { color: var(--ecume); max-width: 46rem; }
+.informatique { border: 1px dashed var(--filet); border-radius: 0.8rem; padding: 0.9rem 1rem; background: var(--carte); font-size: 0.9rem; color: var(--encre-douce); display: grid; gap: 0.4rem; }
+.informatique strong { color: var(--encre); }
+@media (max-width: 44rem) { .choix { grid-template-columns: minmax(0, 1fr); } .sommaire li.separation { padding-left: 0; border-left: 0; } }
+
 /* ---------- Download buttons -------------------------------------------------------- */
 .telecharger { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.5rem; }
 .bouton { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.6rem 1rem 0.6rem 0.6rem; border-radius: 0.6rem; font-weight: 600; text-decoration: none; }
@@ -437,7 +454,7 @@ kbd { font: 600 0.85em/1 var(--mono); padding: 0.15em 0.45em; border-radius: 5px
     <div>
       <span class="surtitre">Vigiking Normand · mode d'emploi</span>
       <h1>Du fichier Word au bulletin, <em>en un seul geste</em></h1>
-      <p class="chapeau">Vous écrivez le numéro dans Word, sur le modèle. Vous déposez le fichier sur l'icône. <strong>Le PDF, la page web et la liste des points à vérifier</strong> arrivent à côté du fichier, en une à deux minutes.</p>
+      <p class="chapeau">Vous écrivez le numéro dans Word, sur le modèle. Vous déposez le fichier sur l'icône. <strong>Le PDF, la page web et la liste à vérifier</strong> arrivent à côté du fichier, en une à deux minutes.</p>
       <div class="reperes">
         <span class="repere">Mise en page automatique</span>
         <span class="repere">Références depuis PMID et DOI</span>
@@ -447,7 +464,10 @@ kbd { font: 600 0.85em/1 var(--mono); padding: 0.15em 0.45em; border-radius: 5px
         <a class="bouton" href="__ZIP__"><b>ZIP</b>Télécharger le dossier du bulletin</a>
         <a class="bouton secondaire" href="__MODELE__"><b>DOCX</b>Télécharger le modèle Word</a>
       </div>
-      <a class="cta" href="#installer">Première fois ? Commencez par l'installation ↓</a>
+      <nav class="choix" aria-label="Par où commencer">
+        <a href="#word"><b>J'écris un article</b><span>Le modèle Word et ses styles. Rien à installer.</span></a>
+        <a href="#fabriquer-le-numero"><b>Je fabrique le numéro</b><span>Une installation, puis le fichier Word déposé sur une icône.</span></a>
+      </nav>
     </div>
     <div class="geste" role="img" aria-label="Un fichier Word déposé sur l'icône Fabriquer le Vigiking donne un PDF, une page web et une liste à vérifier.">
       <div class="doc"><span class="format">DOCX</span><span class="nom">Vigiking octobre.docx</span></div>
@@ -477,122 +497,20 @@ kbd { font: 600 0.85em/1 var(--mono); padding: 0.15em 0.45em; border-radius: 5px
 <nav class="sommaire" aria-label="Sommaire">
   <div class="wrap">
     <ul>
-      <li><a href="#installer">Installer</a></li>
-      <li><a href="#etapes">Les trois étapes</a></li>
       <li><a href="#word">Écrire dans Word</a></li>
       <li><a href="#styles">Les styles</a></li>
       <li><a href="#blocs">Les types de blocs</a></li>
       <li><a href="#citer">Citer</a></li>
+      <li class="separation"><a href="#installer">Installer</a></li>
+      <li><a href="#etapes">Fabriquer</a></li>
       <li><a href="#obtenez">Le résultat</a></li>
-      <li><a href="#liste">Vérifier</a></li>
+      <li><a href="#liste">La liste à vérifier</a></li>
       <li><a href="#souci">Dépannage</a></li>
     </ul>
   </div>
 </nav>
 
 <main>
-  <section class="section" aria-labelledby="installer">
-    <div class="wrap">
-      <div class="entete">
-        <span class="surtitre">Une seule fois par ordinateur</span>
-        <h2 id="installer">Installer</h2>
-        <p>L'installation met en place deux outils de mise en page et l'icône du bureau. Elle prend quelques minutes et demande une connexion Internet ; ensuite, il n'y a plus rien à installer.</p>
-      </div>
-      <div class="prerequis">
-        <span>Windows 10 ou 11</span>
-        <span>Une connexion Internet</span>
-        <span>Le dossier du bulletin</span>
-      </div>
-      <div class="installer">
-        <ol class="pas">
-          <li><div>
-            <h3>Récupérer le dossier du bulletin</h3>
-            <p>Téléchargez-le, puis décompressez-le dans vos Documents (clic droit sur le fichier ZIP, <span class="menu">Extraire tout</span>). Ajoutez-y le sous-dossier <code>commun</code> (logos, bandeau Vigiking, dos du bulletin) que vous donne la personne qui gère le bulletin : il n'est pas en ligne.</p>
-            <p><a class="bouton plein" href="__ZIP__"><b>ZIP</b>Télécharger le dossier du bulletin</a></p>
-            <p class="astuce">Gardez le dossier entier : les scripts du bulletin se servent des fichiers voisins.</p>
-          </div></li>
-          <li><div>
-            <h3>Double-cliquer sur Installer.bat</h3>
-            <p>Il est dans le sous-dossier <code>bulletin</code>. Une fenêtre s'ouvre et installe, pour votre compte, Quarto (la mise en page) et uv (qui lance les scripts du bulletin et installe Python).</p>
-            <p class="astuce">Si Windows affiche « Windows a protégé votre ordinateur », cliquez sur <span class="menu">Informations complémentaires</span>, puis <span class="menu">Exécuter quand même</span>. En cas de doute, demandez au service informatique.</p>
-          </div></li>
-          <li><div>
-            <h3>Répondre aux questions éventuelles</h3>
-            <p>Si la fenêtre demande d'accepter les conditions du catalogue d'applications de Windows (« [Y] Oui [N] Non »), tapez <kbd>Y</kbd> puis <kbd>Entrée</kbd>. Si Windows demande l'autorisation de modifier l'ordinateur, acceptez ; s'il demande un mot de passe administrateur, appelez le service informatique.</p>
-          </div></li>
-          <li><div>
-            <h3>Attendre « Prêt »</h3>
-            <p>Chaque outil installé s'affiche avec <strong>OK</strong>. À la fin, la fenêtre annonce « Prêt » : appuyez sur une touche pour la fermer. L'icône <strong>Fabriquer le Vigiking</strong> est sur le bureau.</p>
-          </div></li>
-          <li><div>
-            <h3>Faire un essai</h3>
-            <p>Ouvrez le modèle Word, enregistrez-le sous le nom <code>essai.docx</code>, remplacez le sous-titre « Mois Année » par « Janvier 2099 », enregistrez, puis déposez le fichier sur l'icône. Le PDF d'essai s'ouvre une à deux minutes plus tard.</p>
-          </div></li>
-        </ol>
-        <aside>
-          <div class="fenetre">
-            <div class="barre">Installer.bat</div>
-<pre><span class="t">Bulletin Vigiking : installation</span>
-
-  ... installation de quarto (cela peut prendre quelques minutes)
-  <span class="ok">OK</span>  quarto est installé.
-  ... installation de uv (cela peut prendre quelques minutes)
-  <span class="ok">OK</span>  uv est installé.
-  ... préparation de Python (la première fois seulement)
-  <span class="ok">OK</span>  Python est prêt.
-  <span class="ok">OK</span>  icône « Fabriquer le Vigiking » posée sur le bureau.
-
-<span class="t">Prêt.</span> Pour fabriquer un numéro : déposez son fichier Word sur l'icône
-« Fabriquer le Vigiking » du bureau.
-
-Appuyez sur une touche pour continuer...</pre>
-          </div>
-<pre class="arbo"><b>pharmacovigilance-normandie/</b>
-└─ <b>bulletin/</b>
-   ├─ Installer.bat               <i>une fois par ordinateur</i>
-   ├─ Fabriquer le Vigiking.bat   <i>l'icône du bureau y mène</i>
-   ├─ word/modele-vigiking.docx   <i>le modèle Word</i>
-   ├─ guide/                      <i>ce mode d'emploi</i>
-   └─ commun/                     <i>logos, bandeau, dos (fourni à part)</i></pre>
-          <p class="legende-arbo">Après l'installation, ne déplacez plus le dossier : l'icône du bureau y mène. S'il faut le déplacer, relancez <code>Installer.bat</code>.</p>
-        </aside>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" aria-labelledby="etapes">
-    <div class="wrap">
-      <div class="entete">
-        <span class="surtitre">À chaque numéro</span>
-        <h2 id="etapes">Trois étapes</h2>
-      </div>
-      <ol class="etapes">
-        <li class="etape">
-          <span class="num">1</span>
-          <h3>Écrire dans Word</h3>
-          <p>Ouvrez <code>modele-vigiking.docx</code>, enregistrez-le sous un autre nom, puis écrivez le numéro avec les styles du modèle. Le modèle explique chacun d'eux.</p>
-          <p class="note">Le sous-titre donne le mois, par exemple « Octobre 2025 » : c'est lui qui nomme le numéro.</p>
-        </li>
-        <li class="etape">
-          <span class="num">2</span>
-          <h3>Déposer sur l'icône</h3>
-          <p>Enregistrez le document, puis faites-le glisser sur l'icône <strong>Fabriquer le Vigiking</strong> du bureau. Une fenêtre suit les quatre étapes de la fabrication.</p>
-          <p class="note">Comptez une à deux minutes. Le PDF s'ouvre tout seul à la fin.</p>
-        </li>
-        <li class="etape">
-          <span class="num">3</span>
-          <h3>Relire et envoyer</h3>
-          <p>Lisez la liste « à vérifier » posée à côté du fichier Word. Corrigez dans Word, déposez à nouveau, jusqu'à ce que la liste soit vide. Joignez alors le PDF au courriel.</p>
-          <p class="note">Redéposer le fichier refait tout : rien n'est à effacer avant.</p>
-        </li>
-      </ol>
-      <div class="premiere-fois">
-        <span class="badge">Une seule fois</span>
-        <p><strong>Pas encore d'icône sur le bureau ?</strong> Faites d'abord l'<a href="#installer">installation</a>, une fois pour toutes sur cet ordinateur.</p>
-      </div>
-    </div>
-  </section>
-
   <section class="section" aria-labelledby="word">
     <div class="wrap">
       <div class="entete">
@@ -604,12 +522,12 @@ Appuyez sur une touche pour continuer...</pre>
         <li><div>
           <h3>Partir du modèle</h3>
           <p>Double-cliquez sur <code>word/modele-vigiking.docx</code> : il contient un petit numéro d'exemple qui explique chaque style. Faites tout de suite <span class="menu">Fichier › Enregistrer sous</span>, au format <span class="menu">Document Word (*.docx)</span>, avec un nom parlant comme <code>Vigiking octobre 2025.docx</code>, dans le dossier de votre choix.</p>
-          <p class="astuce">Les fichiers fabriqués arriveront dans ce même dossier, à côté du fichier Word. Vous écrivez seulement, sans fabriquer ? Le modèle suffit : téléchargez-le ci-dessous, et envoyez votre fichier Word à la personne qui fabrique le bulletin.</p>
+          <p class="astuce">Vous écrivez seulement ? Le modèle suffit, rien à installer : téléchargez-le ci-dessous, et, une fois votre texte écrit, envoyez le fichier Word à la personne qui fabrique le bulletin.</p>
           <p><a class="bouton plein" href="__MODELE__"><b>DOCX</b>Télécharger le modèle Word</a></p>
         </div></li>
         <li><div>
-          <h3>Afficher le volet Styles</h3>
-          <p>Onglet <span class="menu">Accueil</span>, groupe <span class="menu">Styles</span> : cliquez sur la petite flèche en bas à droite du groupe. Le volet qui s'ouvre liste tous les styles du modèle, y compris Encadré, Catégorie rouge, Contre-indication et CredibleMeds. Gardez-le ouvert pendant que vous écrivez.</p>
+          <h3>Afficher la liste des styles</h3>
+          <p>Onglet <span class="menu">Accueil</span>, dans la barre du haut de Word : la rangée des styles montre Normal, Titre 1… Pour les voir tous, cliquez sur la petite flèche en bas à droite de cette rangée : la liste complète s'ouvre à droite de l'écran (le « volet Styles »), avec Encadré, les Bloc…, Contre-indication, CredibleMeds. Gardez-la ouverte pendant que vous écrivez.</p>
         </div></li>
         <li><div>
           <h3>Remplir l'en-tête</h3>
@@ -618,7 +536,7 @@ Appuyez sur une touche pour continuer...</pre>
         </div></li>
         <li><div>
           <h3>Écrire les articles</h3>
-          <p>Chaque article commence par son titre au style <strong>Titre 1</strong>, suivi d'une ligne <code>Auteur : A. Nom</code> (ou <code>Auteurs : A. Nom, B. Nom</code>). Ajoutez si besoin une ligne <code>Rubrique : Littérature</code> (ou Cas d'ici et d'ailleurs, Infos des Autorités de Santé : le sommaire regroupe les articles par rubrique) et une ligne <code>Relecture : B. Nom</code>. Le texte s'écrit ensuite en style <strong>Normal</strong> : gras, italique, exposants, listes à puces ou numérotées sont gardés.</p>
+          <p>Chaque article commence par son titre au style <strong>Titre 1</strong>. Juste en dessous, avant tout le reste, une ligne <code>Auteur : A. Nom</code> (ou <code>Auteurs : A. Nom, B. Nom</code>, ou <code>Par A. Nom</code>) ; si besoin, une ligne <code>Rubrique : …</code>, une des trois rubriques du bulletin (Cas d'ici et d'ailleurs, Littérature, Infos des Autorités de Santé : le sommaire les regroupe), et une ligne <code>Relecture : B. Nom</code>. Le texte s'écrit ensuite en style <strong>Normal</strong> : gras, italique, exposants, listes à puces ou numérotées sont gardés.</p>
           <p class="astuce">Un article tient sur une page. Pour le passer sur deux colonnes, tapez un paragraphe <code>[saut de colonne]</code> à l'endroit de la coupure. Pour plusieurs informations courtes sous un même titre (des brèves), donnez à chacune un intertitre au style <strong>Titre 2</strong>.</p>
         </div></li>
         <li><div>
@@ -628,16 +546,16 @@ Appuyez sur une touche pour continuer...</pre>
         </div></li>
         <li><div>
           <h3>Ajouter les images</h3>
-          <p><span class="menu">Insertion › Images</span>. La largeur que vous donnez à l'image est gardée : sur la moitié de la page Word, elle occupe la moitié de la colonne. Juste sous l'image, écrivez sa légende dans un paragraphe au style <strong>Légende de figure</strong>, puis ajoutez son texte de remplacement (clic droit › <span class="menu">Modifier le texte de remplacement</span>), qui décrit l'image en une phrase pour les lecteurs d'écran.</p>
+          <p><span class="menu">Insertion › Images</span>. La largeur que vous donnez à l'image est gardée : sur la moitié de la page Word, elle occupe la moitié de la colonne. Juste sous l'image, écrivez sa légende dans un paragraphe au style <strong>Légende de figure</strong>, puis ajoutez son texte de remplacement (clic droit › <span class="menu">Modifier le texte de remplacement</span>) : une phrase qui décrit l'image pour les personnes aveugles, dont l'ordinateur lit l'écran à voix haute.</p>
           <p class="astuce">Utilisez des images dont vous avez le droit, et citez leur source dans la légende.</p>
         </div></li>
         <li><div>
           <h3>Citer vos sources</h3>
-          <p>Tapez le PMID ou le DOI entre crochets, là où vous citez : <code>[PMID 14999113]</code>. Le numéro et la référence complète s'ajoutent tout seuls (voir <a href="#citer">Citer</a>).</p>
+          <p>Tapez le PMID ou le DOI entre crochets, là où vous citez : <code>[PMID 14999113]</code> (voir <a href="#citer">Citer</a>).</p>
         </div></li>
         <li><div>
-          <h3>Enregistrer et déposer</h3>
-          <p>Enregistrez (<kbd>Ctrl</kbd> + <kbd>S</kbd>), puis déposez le fichier sur l'icône. Le sommaire, la page Références et le dos du bulletin s'ajoutent à la fabrication : ne les écrivez pas.</p>
+          <h3>Enregistrer, puis envoyer ou déposer</h3>
+          <p>Enregistrez (<kbd>Ctrl</kbd> + <kbd>S</kbd>). Envoyez le fichier Word à la personne qui fabrique le bulletin, ou, si c'est vous, déposez-le sur l'icône (voir <a href="#fabriquer-le-numero">Fabriquer le numéro</a>). Le sommaire, la page Références et la dernière page du bulletin s'ajoutent à la fabrication : ne les écrivez pas.</p>
         </div></li>
       </ol>
 
@@ -670,7 +588,7 @@ Appuyez sur une touche pour continuer...</pre>
           <ul>
             <li><strong>Un style par élément</strong> : Titre 1 pour chaque article, Encadré pour un message clé.</li>
             <li><strong>Le mois en toutes lettres</strong> dans le sous-titre : « Octobre 2025 ».</li>
-            <li><strong>Une ligne « Auteur : »</strong> sous chaque titre, avec l'accord écrit de l'auteur.</li>
+            <li><strong>Une ligne « Auteur : »</strong> juste sous chaque titre (un nom ne s'affiche qu'avec l'accord de la personne nommée).</li>
             <li><strong>Un texte de remplacement</strong> pour chaque image.</li>
             <li><strong>Un type de bloc</strong> pour un cas clinique, des messages à retenir, une conduite à tenir.</li>
             <li><strong>Des corrections dans Word</strong>, puis un nouveau dépôt sur l'icône.</li>
@@ -721,7 +639,7 @@ Appuyez sur une touche pour continuer...</pre>
         <div class="ligne">
           <div class="style-word"><span class="apercu">Éditorial</span><span class="nom">avant le premier article</span></div>
           <span class="vers" aria-hidden="true">→</span>
-          <div class="rendu"><div class="mini"><div class="edito">Chères lectrices, chers lecteurs, ce numéro est consacré…</div></div><p class="explication">Un encadré sur la page du sommaire, à côté de la liste des articles.</p></div>
+          <div class="rendu"><div class="mini"><div class="edito">Chères lectrices, chers lecteurs, ce numéro est consacré…</div></div><p class="explication">Il s'affiche sur la page du sommaire, à côté de la liste des articles.</p></div>
         </div>
         <div class="ligne">
           <div class="style-word"><span class="apercu">Titre 2</span><span class="nom">dans un article</span></div>
@@ -782,7 +700,7 @@ Appuyez sur une touche pour continuer...</pre>
       <div class="entete">
         <span class="surtitre">Types de contenu</span>
         <h2 id="blocs">Les types de blocs</h2>
-        <p>Un cas clinique, des messages à retenir, une conduite à tenir : chaque type de contenu des numéros passés a son style « Bloc … » dans le modèle. Le bulletin en fait un encadré titré, dans sa couleur ; plusieurs paragraphes à la suite dans le même style forment un seul bloc.</p>
+        <p>Un cas clinique, des messages à retenir, une conduite à tenir : chaque type de contenu des numéros passés a son style « Bloc … » dans le modèle. Le bulletin en fait un bloc titré, dans sa couleur ; plusieurs paragraphes à la suite dans le même style forment un seul bloc.</p>
       </div>
       <div class="types">
         <div class="type" style="--t: #0d4a5e; --f: #e7edef"><span>Cas clinique</span><p>Le récit d'un cas (âge, traitement, évolution), séparé du commentaire.</p><small>Bloc Cas clinique</small></div>
@@ -804,7 +722,7 @@ Appuyez sur une touche pour continuer...</pre>
             <li><div><p>Dans le volet <span class="menu">Styles</span>, cliquez sur le bouton <span class="menu">Nouveau style</span>, le premier des trois boutons en bas du volet.</p></div></li>
             <li><div><p><strong>Nom</strong> : « Bloc » suivi du titre du bloc, par exemple <code>Bloc Interaction</code>. Ce titre s'affichera en tête du bloc.</p></div></li>
             <li><div><p><strong>Type de style</strong> : Paragraphe ; <strong>Style basé sur</strong> : Normal.</p></div></li>
-            <li><div><p>Choisissez une <strong>couleur de police</strong> : ce sera la couleur du bloc. Sans couleur, le bloc prend celle de l'article.</p></div></li>
+            <li><div><p>Choisissez une <strong>couleur de police</strong> (dans la zone Mise en forme, le bouton A souligné de couleur) : ce sera la couleur du bloc. Sans couleur, le bloc prend celle de l'article.</p></div></li>
             <li><div><p>Cliquez sur <span class="menu">OK</span>, puis appliquez le nouveau style comme les autres.</p><p class="astuce">Une couleur trop claire est assombrie automatiquement, pour que le titre du bloc reste lisible. Pour retrouver ce type dans les prochains numéros, demandez à la personne qui gère le bulletin de l'ajouter au modèle.</p></div></li>
           </ol>
         </div>
@@ -815,7 +733,7 @@ Appuyez sur une touche pour continuer...</pre>
               <span>Nom :</span><span class="champ saisi">Bloc Interaction</span>
               <span>Type de style :</span><span class="champ">Paragraphe</span>
               <span>Style basé sur :</span><span class="champ">Normal</span>
-              <span>Couleur :</span><span class="champ"><i class="pastille-couleur"></i>Vert</span>
+              <span>Couleur de police :</span><span class="champ"><i class="pastille-couleur"></i>Vert</span>
             </div>
             <div class="boutons"><span class="ok">OK</span><span>Annuler</span></div>
           </div>
@@ -851,10 +769,131 @@ Appuyez sur une touche pour continuer...</pre>
         </div>
       </div>
       <div class="syntaxes">
-        <div class="syntaxe"><code>[PMID 14999113]</code><p>Un article indexé dans PubMed.</p></div>
-        <div class="syntaxe"><code>[DOI 10.1136/postgradmedj-2020-138661]</code><p>Tout article qui a un DOI.</p></div>
+        <div class="syntaxe"><code>[PMID 14999113]</code><p>Un article indexé dans PubMed (« (PMID 14999113) » marche aussi).</p></div>
+        <div class="syntaxe"><code>[DOI 10.1136/postgradmedj-2020-138661]</code><p>Tout article qui a un DOI : son code, qui commence par 10., sur le site de la revue.</p></div>
         <div class="syntaxe"><code>[Réf : CredibleMeds. https://www.crediblemeds.org]</code><p>Une source sans identifiant : site, document interne. Le texte est repris tel quel.</p></div>
       </div>
+      <div class="faire">
+        <div class="non">
+          <h3>À éviter</h3>
+          <ul>
+            <li><strong>« PMID:14999113 » ou « doi: 10.1136/… » sans crochets</strong> : la référence reste telle quelle, sans numéro (la liste à vérifier le signale).</li>
+            <li><strong>Mélanger les deux façons de faire</strong> : si vous tapez vous-même les numéros en exposant et la liste au style « Références », n'utilisez pas les crochets dans le même numéro.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="bande-fabrication" id="fabriquer-le-numero">
+    <div class="wrap">
+      <span class="surtitre">Pour la personne qui fabrique le bulletin</span>
+      <h2>Fabriquer le numéro</h2>
+      <p>Une installation, une fois par ordinateur ; puis, à chaque numéro, le fichier Word déposé sur l'icône. Vous écrivez seulement ? Cette partie n'est pas pour vous : envoyez votre fichier Word à la personne qui fabrique le bulletin.</p>
+    </div>
+  </div>
+
+  <section class="section" aria-labelledby="installer">
+    <div class="wrap">
+      <div class="entete">
+        <span class="surtitre">Une seule fois par ordinateur</span>
+        <h2 id="installer">Installer</h2>
+        <p>L'installation met en place deux petits logiciels gratuits, pour votre compte seulement, et l'icône du bureau. Prévoyez quelques minutes et une connexion Internet ; sur un poste du CHU, le service informatique devra peut-être intervenir.</p>
+      </div>
+      <div class="prerequis">
+        <span>Windows 10 ou 11</span>
+        <span>Une connexion Internet</span>
+        <span>Le dossier du bulletin</span>
+      </div>
+      <div class="installer">
+        <ol class="pas">
+          <li><div>
+            <h3>Récupérer le dossier du bulletin</h3>
+            <p>Téléchargez le dossier compressé (ZIP), puis faites un clic droit dessus et choisissez <span class="menu">Extraire tout</span>, vers vos Documents. Le dossier extrait peut avoir un long nom : c'est normal.</p>
+            <p><a class="bouton plein" href="__ZIP__"><b>ZIP</b>Télécharger le dossier du bulletin</a></p>
+            <p>La personne qui gère le bulletin vous donne aussi le dossier <code>commun</code> (logos, bandeau Vigiking, dernière page du bulletin), qui n'est pas en ligne : placez-le dans le dossier <code>bulletin</code>, à côté du fichier Installer.</p>
+            <p class="astuce">N'ouvrez pas le fichier Installer depuis le ZIP sans l'avoir extrait : l'installation s'arrêterait en vous le disant. Gardez le dossier entier.</p>
+          </div></li>
+          <li><div>
+            <h3>Double-cliquer sur le fichier Installer</h3>
+            <p>Il est dans le dossier <code>bulletin</code> (son nom complet est <code>Installer.bat</code>, mais Windows cache souvent la fin). Une fenêtre s'ouvre et installe l'outil de mise en page (Quarto) et l'outil qui lance la fabrication (uv).</p>
+            <p class="astuce">Si Windows affiche « Windows a protégé votre ordinateur » (c'est normal pour un fichier téléchargé), cliquez sur <span class="menu">Informations complémentaires</span>, puis <span class="menu">Exécuter quand même</span>. En cas de doute, demandez au service informatique.</p>
+          </div></li>
+          <li><div>
+            <h3>Laisser faire, répondre si besoin</h3>
+            <p>Des lignes en anglais et des barres de progression défilent : c'est normal, ne fermez pas la fenêtre. Si elle demande d'accepter des conditions (« [Y] Oui [N] Non »), tapez la lettre <kbd>Y</kbd> puis <kbd>Entrée</kbd>. Si Windows demande un mot de passe administrateur, appelez le service informatique.</p>
+          </div></li>
+          <li><div>
+            <h3>Attendre « Prêt »</h3>
+            <p>Chaque étape réussie s'affiche avec <strong>OK</strong>. À la fin, la fenêtre annonce « Prêt » : appuyez sur une touche pour la fermer. L'icône <strong>Fabriquer le Vigiking</strong> est sur le bureau. Une ligne <strong>!!</strong> dit ce qui n'a pas marché et quoi faire.</p>
+          </div></li>
+          <li><div>
+            <h3>Faire un essai</h3>
+            <p>Ouvrez le modèle Word (dossier <code>bulletin</code>, puis <code>word</code>, ou le bouton DOCX en haut de cette page), enregistrez-le sous le nom <code>essai.docx</code>, remplacez le sous-titre « Mois Année » par « Janvier 2099 », enregistrez, puis déposez le fichier sur l'icône. Le PDF d'essai s'ouvre une à deux minutes plus tard.</p>
+          </div></li>
+        </ol>
+        <aside>
+          <div class="fenetre">
+            <div class="barre">Vigiking : installation</div>
+<pre><span class="t">Bulletin Vigiking : installation</span>
+
+  ... installation de l'outil de mise en page (Quarto) (quelques minutes).
+      Des lignes en anglais et des barres de progression vont défiler : c'est normal…
+  <span class="ok">OK</span>  l'outil de mise en page (Quarto) est installé.
+  <span class="ok">OK</span>  l'outil qui lance la fabrication (uv) est installé.
+  ... préparation de Python (la première fois seulement).
+  <span class="ok">OK</span>  Python est prêt.
+  <span class="ok">OK</span>  icône « Fabriquer le Vigiking » posée sur le bureau.
+  <span class="ok">OK</span>  le dossier commun (logos, dos du bulletin) est là.
+
+<span class="t">Prêt.</span> Pour fabriquer un numéro : faites glisser son fichier Word sur l'icône
+« Fabriquer le Vigiking » du bureau, et lâchez-le.
+
+Appuyez sur une touche pour continuer...</pre>
+          </div>
+<pre class="arbo"><b>le dossier du bulletin/</b>
+└─ <b>bulletin/</b>
+   ├─ Installer                   <i>une fois par ordinateur</i>
+   ├─ Fabriquer le Vigiking       <i>l'icône du bureau y mène</i>
+   ├─ word/modele-vigiking.docx   <i>le modèle Word</i>
+   ├─ guide/                      <i>ce mode d'emploi</i>
+   └─ commun/                     <i>logos, bandeau, dernière page (fourni à part)</i></pre>
+          <p class="legende-arbo">Après l'installation, ne déplacez plus le dossier : l'icône du bureau y mène. S'il faut le déplacer, relancez le fichier Installer.</p>
+          <div class="informatique">
+            <strong>Pour le service informatique</strong>
+            <p>Installation pour l'utilisateur, sans droits d'administrateur en principe : <code>winget install --id Posit.Quarto --scope user</code> et <code>winget install --id astral-sh.uv --scope user</code>. Au premier lancement, uv télécharge Python ; il faut donc un accès Internet sortant (GitHub, PyPI).</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="etapes">
+    <div class="wrap">
+      <div class="entete">
+        <span class="surtitre">À chaque numéro</span>
+        <h2 id="etapes">Fabriquer un numéro, en trois étapes</h2>
+      </div>
+      <ol class="etapes">
+        <li class="etape">
+          <span class="num">1</span>
+          <h3>Recevoir le fichier Word</h3>
+          <p>L'auteur l'écrit sur le modèle (voir <a href="#word">Écrire dans Word</a>). Enregistrez-le dans un dossier à vous : les fichiers fabriqués arriveront à côté.</p>
+          <p class="note">Le sous-titre du document donne le mois, par exemple « Octobre 2025 » : il donne son nom au numéro.</p>
+        </li>
+        <li class="etape">
+          <span class="num">2</span>
+          <h3>Déposer sur l'icône</h3>
+          <p>Fermez le document dans Word. Maintenez le clic sur le fichier, faites-le glisser sur l'icône <strong>Fabriquer le Vigiking</strong> du bureau, et lâchez. Une fenêtre montre l'avancement.</p>
+          <p class="note">Comptez une à deux minutes. Le PDF s'ouvre tout seul à la fin. Un fichier à la fois.</p>
+        </li>
+        <li class="etape">
+          <span class="num">3</span>
+          <h3>Relire et envoyer</h3>
+          <p>La dernière ligne de la fenêtre dit si le numéro peut partir. Tant qu'il reste une ligne ✖ À corriger, envoyez la liste à vérifier à l'auteur, puis déposez sa version corrigée. Quand la fenêtre dit « Prêt à envoyer », joignez le PDF au courriel de diffusion du bulletin.</p>
+          <p class="note">Redéposer le fichier refait tout : rien n'est à effacer avant.</p>
+        </li>
+      </ol>
     </div>
   </section>
 
@@ -866,8 +905,8 @@ Appuyez sur une touche pour continuer...</pre>
         <p>Trois fichiers, à côté de votre fichier Word, qui portent le mois du numéro.</p>
       </div>
       <div class="trois">
-        <div class="fichier-carte"><span class="format">PDF</span><h3>À joindre au courriel</h3><span class="fichier">vigiking-2025-10.pdf</span><p>Pages 16:9, pour la lecture à l'écran, avec un sommaire cliquable.</p></div>
-        <div class="fichier-carte"><span class="format">HTML</span><h3>La page web</h3><span class="fichier">vigiking-2025-10.html</span><p>Le même numéro, lisible sur téléphone, avec un lien vers le PDF.</p></div>
+        <div class="fichier-carte"><span class="format">PDF</span><h3>À joindre au courriel</h3><span class="fichier">vigiking-2025-10.pdf</span><p>Des pages en largeur, comme un écran, avec un sommaire cliquable.</p></div>
+        <div class="fichier-carte"><span class="format">HTML</span><h3>La page web</h3><span class="fichier">vigiking-2025-10.html</span><p>Le même numéro, lisible sur téléphone. À garder : il servira quand le bulletin sera en ligne sur le site.</p></div>
         <div class="fichier-carte"><span class="format">TXT</span><h3>La liste à vérifier</h3><span class="fichier">vigiking-2025-10 - à vérifier.txt</span><p>Ce qui reste à corriger avant l'envoi. Elle s'affiche aussi dans la fenêtre.</p></div>
       </div>
       <ul class="galerie">
@@ -878,7 +917,7 @@ Appuyez sur une touche pour continuer...</pre>
         <li><figure><img src="img/exemple-6.png" alt="Trois tuiles de chiffres clés, un tableau à en-tête bleu et une ligne de source." loading="lazy" width="1013" height="570"><figcaption><b>Chiffres clés et tableau.</b> Les tuiles, le tableau, la source officielle.</figcaption></figure></li>
         <li><figure><img src="img/exemple-8.png" alt="Liste de médicaments classés par catégorie, en rouge gras et en orange italique." loading="lazy" width="1013" height="570"><figcaption><b>Une liste de médicaments.</b> Étiquettes de catégorie et code rouge et orange.</figcaption></figure></li>
         <li><figure><img src="img/word-5.png" alt="Page Références : deux références au format Vancouver, numérotées." loading="lazy" width="1013" height="570"><figcaption><b>Les références.</b> Trouvées depuis leur PMID ou leur DOI.</figcaption></figure></li>
-        <li><figure><img src="img/word-6.png" alt="Dos du bulletin sur fond bleu : coordonnées des deux centres et carte du réseau." loading="lazy" width="1013" height="570"><figcaption><b>Le dos.</b> Les coordonnées des deux centres, ajoutées à chaque numéro.</figcaption></figure></li>
+        <li><figure><img src="img/word-6.png" alt="Dos du bulletin sur fond bleu : coordonnées des deux centres et carte du réseau." loading="lazy" width="1013" height="570"><figcaption><b>La dernière page.</b> Les coordonnées des deux centres, ajoutées à chaque numéro.</figcaption></figure></li>
       </ul>
     </div>
   </section>
@@ -888,22 +927,20 @@ Appuyez sur une touche pour continuer...</pre>
       <div class="entete">
         <span class="surtitre">Avant l'envoi</span>
         <h2 id="liste">La liste à vérifier</h2>
-        <p>Chaque ligne dit où regarder et quoi faire. Quand elle annonce « Rien à signaler », le bulletin est prêt.</p>
+        <p>Elle s'affiche dans la fenêtre et arrive à côté du fichier Word. Chaque ligne dit où regarder et quoi faire, dans le fichier Word ; la dernière ligne de la fenêtre dit si le numéro peut partir.</p>
       </div>
       <div class="verifier">
         <div class="fenetre">
           <div class="barre">Fabriquer le Vigiking</div>
-<pre><span class="t">Vigiking 2025-10 : points à vérifier</span>
+<pre><span class="t">Vigiking 2025-10 : points à vérifier (fichier « Vigiking octobre.docx », fabriqué le 28/11/2026 à 14:05)</span>
 
 <span class="t">À corriger (1)</span>
-<span class="x">✖</span> Article « Par quels mécanismes… ? » (page 4) : trop long pour sa page, même en petits caractères. Raccourcissez-le, ou coupez-le en deux articles (un nouveau « Titre 1 »).
+<span class="x">✖</span> Article « Par quels mécanismes… ? » (page 4) : trop long pour sa page, même en petits caractères (les images comptent aussi). Raccourcissez-le, réduisez une image, ou coupez-le en deux articles (un nouveau « Titre 1 »).
 
-<span class="t">À vérifier (2)</span>
+<span class="t">À vérifier (1)</span>
 <span class="w">⚠</span> Couverture : l'image n'a pas de texte de remplacement, lu par les lecteurs d'écran (dans Word : clic droit sur l'image → Modifier le texte de remplacement).
-<span class="w">⚠</span> Article « À retenir » : le nom de l'auteur est à compléter (ligne « Auteur : Initiale. Nom » sous le titre). Il ne s'affiche qu'avec l'accord écrit de l'auteur.
 
-<span class="t">Pour information (1)</span>
-<span class="i">ℹ</span> Les liens n'ont pas été vérifiés : pas de connexion Internet.</pre>
+<span class="x">✖</span> À ne pas envoyer encore : 1 point à corriger dans le fichier Word. Envoyez « vigiking-2025-10 - à vérifier.txt » à l'auteur, puis déposez ici sa version corrigée.</pre>
         </div>
         <div class="niveaux">
           <div class="niveau x"><span class="signe" aria-hidden="true">✖</span><div><h3>À corriger</h3><p>Le bulletin est faux ou abîmé tant que ce n'est pas réglé : un article déborde, une image manque, une référence est introuvable.</p></div></div>
@@ -915,35 +952,23 @@ Appuyez sur une touche pour continuer...</pre>
         <table>
           <thead><tr><th scope="col">La liste dit</th><th scope="col">Faites ceci dans Word</th></tr></thead>
           <tbody>
-            <tr><td>trop long pour sa page</td><td>Raccourcissez l'article, ou coupez-le en deux avec un nouveau « Titre 1 ».</td></tr>
-            <tr><td>couleur mise à la main</td><td>Retirez la couleur, puis appliquez le style « Contre-indication » ou « CredibleMeds ».</td></tr>
+            <tr><td>trop long pour sa page</td><td>Raccourcissez l'article, réduisez une image, ou coupez-le en deux avec un nouveau « Titre 1 ».</td></tr>
+            <tr><td>couleur mise à la main</td><td>Retirez la couleur ; pour une mise en garde, utilisez « Bloc Attention » ; pour un médicament dans une liste, « Contre-indication » ou « CredibleMeds ».</td></tr>
             <tr><td>pas de texte de remplacement</td><td>Clic droit sur l'image, « Modifier le texte de remplacement », puis décrivez ce qu'elle montre en une phrase.</td></tr>
             <tr><td>l'image est petite</td><td>Demandez une version plus grande, au moins 800 pixels de large, et remplacez-la.</td></tr>
-            <tr><td>le style « … » ne fait pas partie du modèle</td><td>Appliquez un style du modèle, ou créez un type de bloc dont le nom commence par « Bloc ».</td></tr>
+            <tr><td>au format EMF (ou WMF, TIFF)</td><td>Remplacez l'image par une image PNG ou JPEG.</td></tr>
+            <tr><td>le style « … » ne fait pas partie du modèle</td><td>Appliquez un style du modèle, ou renommez votre style « Bloc » suivi de son titre.</td></tr>
+            <tr><td>n'est pas entre crochets</td><td>Écrivez la référence entre crochets, par exemple [PMID 14999113].</td></tr>
             <tr><td>Référence introuvable</td><td>Vérifiez le numéro PMID ou le DOI : un chiffre manque ou s'est inversé.</td></tr>
+            <tr><td>Pas de connexion internet</td><td>Rien dans Word : refaites le bulletin depuis un ordinateur connecté.</td></tr>
             <tr><td>Lien mort</td><td>Corrigez l'adresse, ou retirez le lien.</td></tr>
-            <tr><td>le nom de l'auteur est à compléter</td><td>Écrivez « Auteur : Initiale. Nom » sous le titre, avec l'accord écrit de l'auteur.</td></tr>
+            <tr><td>il reste « [à compléter] »</td><td>Complétez le passage, ou retirez-le.</td></tr>
+            <tr><td>le nom de l'auteur est à compléter, ou encore celui du modèle</td><td>Écrivez « Auteur : » et le vrai nom, juste sous le titre.</td></tr>
+            <tr><td>la ligne « Rubrique : … » s'affiche dans le texte</td><td>Remontez-la juste sous le « Titre 1 », avant tout « Titre 2 ».</td></tr>
+            <tr><td>la rubrique « … » n'est pas une des trois habituelles</td><td>Écrivez Cas d'ici et d'ailleurs, Littérature ou Infos des Autorités de Santé.</td></tr>
+            <tr><td>le document est encore ouvert dans Word</td><td>Enregistrez-le, fermez-le, puis déposez-le à nouveau.</td></tr>
           </tbody>
         </table>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" aria-labelledby="seul">
-    <div class="wrap">
-      <div class="entete">
-        <span class="surtitre">Plus besoin d'y penser</span>
-        <h2 id="seul">Ce qui se fait tout seul</h2>
-      </div>
-      <div class="auto">
-        <div style="--teinte: #0a5c9e"><h3>Le mois</h3><p>Lu dans le sous-titre, il nomme les fichiers.</p></div>
-        <div style="--teinte: #0a5f8e"><h3>La taille du texte</h3><p>Chaque article remplit sa page ; les images suivent.</p></div>
-        <div style="--teinte: #0a627d"><h3>Le sommaire</h3><p>Numéros, auteurs et pages, avec des liens.</p></div>
-        <div style="--teinte: #0b656b"><h3>Les couleurs</h3><p>Une par article, du bleu au vert, contrastes vérifiés.</p></div>
-        <div style="--teinte: #0b6766"><h3>La couverture</h3><p>Votre photo, ou la carte du réseau normand.</p></div>
-        <div style="--teinte: #0b695a"><h3>Les références</h3><p>Trouvées, numérotées, mises au format Vancouver.</p></div>
-        <div style="--teinte: #0b6a50"><h3>Le dos</h3><p>Les coordonnées des deux centres, à jour.</p></div>
-        <div style="--teinte: #0b6b45"><h3>Les vérifications</h3><p>Images, auteurs, liens, longueur des articles.</p></div>
       </div>
     </div>
   </section>
@@ -956,20 +981,40 @@ Appuyez sur une touche pour continuer...</pre>
       </div>
       <div class="faq">
         <details>
-          <summary>La fenêtre dit « uv n'est pas installé »</summary>
-          <div><p>L'installation n'a pas été faite sur cet ordinateur. Double-cliquez sur <code>Installer.bat</code> dans le dossier du bulletin, puis déposez à nouveau le fichier.</p></div>
+          <summary>Windows a bloqué le fichier Installer</summary>
+          <div><p>C'est normal pour un fichier téléchargé : cliquez sur <span class="menu">Informations complémentaires</span>, puis <span class="menu">Exécuter quand même</span>. Si le bouton n'apparaît pas, l'ordinateur est verrouillé : montrez l'encadré « Pour le service informatique » de la partie <a href="#installer">Installer</a> au service informatique.</p></div>
         </details>
         <details>
-          <summary>« Le mois du numéro est introuvable »</summary>
+          <summary>La fenêtre d'installation affiche une ligne « !! »</summary>
+          <div><p>Ce n'est pas une erreur de votre part : l'ordinateur n'a pas permis l'installation. Appelez le service informatique et montrez-lui la fenêtre ; elle donne ce qu'il faut installer.</p></div>
+        </details>
+        <details>
+          <summary>Il n'y a pas d'icône sur le bureau</summary>
+          <div><p>L'installation ne s'est pas terminée. Relancez le fichier Installer et lisez ses lignes <strong>!!</strong> ; elles disent quoi faire.</p></div>
+        </details>
+        <details>
+          <summary>L'icône dit « L'installation n'est pas faite sur cet ordinateur »</summary>
+          <div><p>Si vous venez d'installer, fermez votre session Windows et rouvrez-la, puis recommencez. Sinon, double-cliquez sur le fichier Installer, dans le dossier du bulletin.</p></div>
+        </details>
+        <details>
+          <summary>« Le fichier … est ouvert dans un autre programme »</summary>
+          <div><p>Le PDF de la fabrication précédente est encore ouvert, dans un lecteur de PDF ou le navigateur. Fermez-le, puis déposez à nouveau le fichier Word.</p></div>
+        </details>
+        <details>
+          <summary>J'ai déposé un PDF ou un ancien fichier Word (.doc)</summary>
+          <div><p>Seul le fichier Word du numéro (.docx) se dépose sur l'icône. Un ancien .doc : ouvrez-le dans Word, faites <span class="menu">Fichier › Enregistrer sous › Document Word (*.docx)</span>, et déposez ce nouveau fichier.</p></div>
+        </details>
+        <details>
+          <summary>« Le mois du numéro » n'est pas reconnu</summary>
           <div><p>Le sous-titre manque ou ne contient pas de mois. Écrivez par exemple « Octobre 2025 » sur une ligne au style « Sous-titre », sous le titre, puis redéposez le fichier.</p></div>
         </details>
         <details>
-          <summary>« La mise en page a échoué »</summary>
-          <div><p>Un fichier <code>journal-quarto.txt</code> a été écrit ; la fenêtre donne son emplacement. Envoyez-le à la personne qui gère le bulletin : il contient le détail technique.</p></div>
+          <summary>« La mise en page a échoué » ou « Un problème inattendu est survenu »</summary>
+          <div><p>Rien n'est abîmé. Un fichier <code>Vigiking - journal technique.txt</code> est à côté du fichier Word : envoyez-le à la personne qui gère le bulletin. L'ancien PDF est renommé « (ancienne version) » : ne l'envoyez pas.</p></div>
         </details>
         <details>
           <summary>Je n'ai pas de connexion Internet</summary>
-          <div><p>La fabrication marche quand même. Les références déjà trouvées une fois sont gardées sur l'ordinateur ; les nouvelles et les liens seront vérifiés à la prochaine fabrication connectée. La liste à vérifier le signale.</p></div>
+          <div><p>La fabrication marche quand même, mais n'envoyez pas ce PDF si la liste dit « Pas de connexion internet » : les nouvelles références y sont marquées « (référence non trouvée) ». Les références déjà trouvées une fois sont gardées sur l'ordinateur ; refaites le bulletin depuis un ordinateur connecté pour les autres.</p></div>
         </details>
         <details>
           <summary>Le type de bloc dont j'ai besoin n'existe pas</summary>

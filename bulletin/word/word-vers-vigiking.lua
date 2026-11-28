@@ -135,21 +135,66 @@ local function Figure(fig)
   return fig
 end
 
--- The author line right under a title: "Auteur : A. Nom" (or "Auteurs :").
--- The lines right under an article's title: "Auteur : A. Nom" (or "Auteurs :"), "Rubrique :
--- Littérature", "Relecture : B. Nom" (or "Relu par :"), in any order.
+-- The lines right under an article's title: "Auteur : A. Nom" (or "Auteurs :", "Par :",
+-- or "Par A. Nom"), "Rubrique : Littérature", "Relecture : B. Nom" (or "Relu par :"), in
+-- any order.
 local LIGNES = {
-  auteur = "auteur", auteurs = "auteur", rubrique = "rubrique",
+  auteur = "auteur", auteurs = "auteur", par = "auteur", rubrique = "rubrique",
   relecture = "relecture", ["relu par"] = "relecture",
 }
 
-local function ligne_titre(bloc)
-  if bloc and bloc.t == "Para" then
-    local cle, valeur = pandoc.utils.stringify(bloc):match("^%s*([^:]-)%s*:%s*(.-)%s*$")
-    local nom = cle and LIGNES[pandoc.text.lower(cle)]
-    if nom and valeur ~= "" then
-      return nom, valeur
+-- The three usual rubrics, recognised whatever the accents, capitals or a shortened form
+-- ("Litterature", "Cas d'ici", "infos des autorités de santé"); any other is kept as typed
+-- (and the checks flag it).
+local RUBRIQUES = {
+  { "cas d'ici", "Cas d'ici et d'ailleurs" },
+  { "litterature", "Littérature" },
+  { "autorites", "Infos des Autorités de Santé" },
+}
+local SANS_ACCENT = {
+  ["à"] = "a", ["â"] = "a", ["ä"] = "a", ["é"] = "e", ["è"] = "e", ["ê"] = "e", ["ë"] = "e",
+  ["î"] = "i", ["ï"] = "i", ["ô"] = "o", ["ö"] = "o", ["ù"] = "u", ["û"] = "u", ["ü"] = "u",
+  ["ç"] = "c", ["’"] = "'",
+}
+
+local function rubrique(valeur)
+  local cle = pandoc.text.lower(valeur)
+  for accent, lettre in pairs(SANS_ACCENT) do
+    cle = cle:gsub(accent, lettre)
+  end
+  for _, r in ipairs(RUBRIQUES) do
+    if cle:find(r[1], 1, true) then
+      return r[2]
     end
+  end
+  return valeur
+end
+
+-- "Par A. Nom" without a colon: an author line only when a capital follows "Par", so a
+-- first paragraph "Par ailleurs, …" stays text.
+local function par_nom(texte)
+  local nom = texte:match("^%s*[Pp]ar%s+(.-)%s*$")
+  if nom and #nom > 0 and #nom <= 80 then
+    local initiale = pandoc.text.sub(nom, 1, 1)
+    if initiale == pandoc.text.upper(initiale) and initiale ~= pandoc.text.lower(initiale) then
+      return nom
+    end
+  end
+end
+
+local function ligne_titre(bloc)
+  if not (bloc and bloc.t == "Para") then
+    return
+  end
+  local texte = pandoc.utils.stringify(bloc)
+  local cle, valeur = texte:match("^%s*([^:]-)%s*:%s*(.-)%s*$")
+  local nom = cle and LIGNES[pandoc.text.lower(cle)]
+  if nom and valeur ~= "" then
+    return nom, nom == "rubrique" and rubrique(valeur) or valeur
+  end
+  local auteur = par_nom(texte)
+  if auteur then
+    return "auteur", auteur
   end
 end
 
@@ -262,7 +307,11 @@ local function metadonnees(meta)
   if meta.subtitle then
     meta.numero = pandoc.utils.stringify(meta.subtitle)
     meta.subtitle = "Vigiking Normand, " .. pandoc.utils.stringify(meta.subtitle)
+  elseif meta["mois-libelle"] then
+    -- No subtitle: the month importer.py was given ("Mai 2099"), so the PDF still shows it.
+    meta.numero = pandoc.utils.stringify(meta["mois-libelle"])
   end
+  meta["mois-libelle"] = nil
   meta["dossier-images"] = nil
   meta.pdf = fichier .. ".pdf"
   meta.format = {
