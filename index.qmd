@@ -21,7 +21,7 @@ listing:
 ::: {.hero-texte}
 ```{=html}
 <p class="hero-surtitre">CRPV de Caen et de Rouen · Normandie · <a href="normandie/en/index.html" lang="en">In English</a></p>
-<h1>Un doute sur un <span class="surligne">médicament</span>&nbsp;?</h1>
+<h1>Un doute sur&nbsp;un <span class="surligne">médicament</span>&nbsp;?</h1>
 <p class="hero-chapo">Les centres régionaux de pharmacovigilance vous aident à bien utiliser vos médicaments, à repérer leurs effets indésirables et à les déclarer.</p>
 <button type="button" class="hero-recherche">
   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>

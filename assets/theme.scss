@@ -83,6 +83,15 @@ body {
 main.content {
   max-width: 46rem; // about 70 characters a line
 }
+// A string with no break in it ("sofosbuvir/velpatasvir/voxilaprévir", "pharmacovigilance"
+// in a title, a word followed by a heading's anchor link) breaks rather than widen a phone
+// page. Only where nothing else fits: words keep whole otherwise, and table columns keep
+// their width (break-word, unlike anywhere, leaves min-content widths alone). Not on the
+// navigation bar, whose site name is cut with an ellipsis instead.
+main.content,
+.quarto-title-banner .title {
+  overflow-wrap: break-word;
+}
 
 h1, h2, .h1, .h2 {
   font-family: $headings-font-family;
@@ -384,26 +393,35 @@ summary:focus-visible,
 }
 
 // Draft status: a compact pill, not a wall.
+// Notices that may wrap (this one, the version switch) take a radius of about half their
+// one-line height, not 999px: one line still reads as a pill, two or three lines on a
+// phone as a rounded box instead of a squeezed capsule.
+$rayon-pilule: 1.5rem;
 .statut-brouillon {
   display: inline-flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.5rem;
   background: $pv-amber-tint;
   color: $pv-amber;
-  border-radius: 999px;
+  border-radius: $rayon-pilule;
   padding: 0.3rem 0.9rem;
   margin-bottom: 1.5rem;
   font-size: 0.85rem;
   font-weight: 700;
 }
 .statut-brouillon p { margin: 0; }
+// The dot sits on the first line, whatever the number of lines.
 .statut-brouillon::before {
   content: "";
   width: 0.55rem;
   height: 0.55rem;
+  margin-top: 0.4rem;
   border-radius: 50%;
   background: $pv-amber;
   flex: none;
+}
+@media (max-width: 575.98px) {
+  .statut-brouillon { padding: 0.5rem 1rem; }
 }
 
 // ---------- Patient / professional tabs ----------------------------------
@@ -442,15 +460,25 @@ summary:focus-visible,
   margin-bottom: 1.75rem;
   background: $pv-mist;
   border: 1px solid $pv-rule;
-  border-radius: 999px;
+  border-radius: $rayon-pilule;
   font-weight: 600;
 }
-.versions a { font-weight: 700; }
+// A version's name moves to the next line whole: the switch wraps between the names, and
+// inside one only when it is longer than the line (« Pour les patients et les aidants »).
+.versions a { font-weight: 700; display: inline-block; }
+// On a phone, one version a line, without the separator.
+@media (max-width: 575.98px) {
+  .versions a { display: block; width: fit-content; margin-top: 0.15rem; }
+  .versions-sep { display: none; }
+}
 
+// The heading's parts (title, anchor link, the pros' label) wrap onto a new line rather
+// than stretch the page: on a 320 px phone the label alone made 36 pages 72 px too wide.
 .partie > h2:first-child {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.2rem 0.6rem;
   margin-top: 0;
   padding: 0.7rem 1.1rem;
   border-radius: $border-radius;
@@ -472,6 +500,16 @@ summary:focus-visible,
   font-weight: 700;
   letter-spacing: 0.04em;
   color: $pv-ink-quiet;
+}
+// Below 992 px the label does not fit beside the title (title, anchor link and label need
+// some 520 px): the heading is plain text again, the label under the title as a subtitle.
+// In a wrapping flex row the (invisible) anchor link took a line of its own above it.
+@media (max-width: 991.98px) {
+  .partie > h2:first-child { display: block; }
+  .partie-pros > h2:first-child::after {
+    display: block;
+    margin: 0.25rem 0 0;
+  }
 }
 
 // Skip link (RGAA 12.7): hidden until it receives keyboard focus.
@@ -1013,11 +1051,22 @@ main .cyp-grille td.cyp-moyen { background: $pv-mist; }
 .plus-loin li a { font-size: 1rem; font-weight: 700; }
 .plus-loin + .sources-relecture { margin-top: 1.25rem; }
 
+// Phones: boxes keep more of the narrow column for their text (on 320 px, a 1.5rem padding
+// left some 210 px for it).
+@media (max-width: 575.98px) {
+  .encadre, .encadre-pratique, .sources-relecture, .notices-officielles, .plus-loin {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .partie > h2:first-child { padding: 0.6rem 0.9rem; }
+}
+
 // ---------- Cards: section landing pages, listings, team -----------------
 
 .cartes {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  // Columns of 15rem, or one column as wide as the page when the phone is narrower.
+  grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
   gap: 1rem;
   margin: 1.5rem 0;
 }
@@ -1090,7 +1139,9 @@ main .cyp-grille td.cyp-moyen { background: $pv-mist; }
   font-family: $headings-font-family;
 }
 
-// Category badges: Quarto fades them to 60 %, which breaks the contrast.
+// Category badges: Quarto fades them to 60 %, which breaks the contrast, and sets them in
+// 11.7 px capitals. Its selectors are longer than ours: these match them, so the badges of a
+// post and of a listing read at 0.85rem and are targets of 24 px or more (WCAG 2.5.8).
 .quarto-category,
 .quarto-category a,
 .listing-categories .listing-category {
@@ -1099,11 +1150,32 @@ main .cyp-grille td.cyp-moyen { background: $pv-mist; }
   font-size: 0.85rem;
   border-color: $pv-rule !important;
 }
+.quarto-title .quarto-categories .quarto-category,
+div.quarto-post .listing-categories .listing-category,
+.quarto-grid-item .listing-categories .listing-category {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+}
+// On a post the badge is a link: the link fills the badge, so all of it is the target.
+.quarto-title .quarto-categories .quarto-category { padding: 0; }
+.quarto-title .quarto-categories .quarto-category a {
+  display: block;
+  padding: 0.25rem 0.75rem;
+  text-decoration: none;
+}
+.quarto-title .quarto-categories .quarto-category a:hover { text-decoration: underline; }
+div.quarto-post .listing-categories .listing-category,
+.quarto-grid-item .listing-categories .listing-category {
+  padding: 0.25rem 0.65rem;
+  margin: 0 0.4rem 0.4rem 0;
+}
 
 // ---------- Buttons --------------------------------------------------------
 
+// Pill-shaped on one line; a label that wraps on a phone gets a rounded box ($rayon-pilule).
 .btn {
-  border-radius: 999px;
+  border-radius: $rayon-pilule;
   font-weight: 700;
   padding: 0.7rem 1.4rem;
 }
@@ -1157,6 +1229,10 @@ main .cyp-grille td.cyp-moyen { background: $pv-mist; }
 .nav-footer a:focus-visible { outline-color: $pv-or; }
 // Footer links keep each label on one line; the list wraps instead.
 .nav-footer .footer-items { flex-wrap: wrap; justify-content: flex-end; }
+// Where Quarto stacks the footer and centres its text, the links follow it.
+@media (max-width: 767.98px) {
+  .nav-footer .footer-items { justify-content: center; }
+}
 .nav-footer .footer-items { row-gap: 0.25rem; }
 // At least 24 px targets, spaced apart (WCAG 2.2, 2.5.8).
 .nav-footer .footer-items .nav-link {
@@ -1268,7 +1344,7 @@ body {
   padding: 0.95rem 1.2rem;
   background: $pv-paper;
   border: 2px solid $pv-rule;
-  border-radius: 999px;
+  border-radius: 2rem; // a pill on one line (60 px high), a rounded box when the label wraps
   color: $pv-ink-quiet;
   font: inherit;
   text-align: left;
@@ -1277,6 +1353,7 @@ body {
 }
 .hero-recherche:hover { border-color: $pv-signal; }
 .hero-recherche svg { flex: none; color: $pv-signal; }
+.hero-recherche span { line-height: 1.35; }
 // Example searches under the search field: each opens the site search, already filled in.
 .hero-exemples {
   display: flex;
@@ -1503,7 +1580,7 @@ a[href^="tel:"]::after {
   display: inline-block;
   padding: 0.55rem 1rem;
   border: 1px solid $pv-rule;
-  border-radius: 999px;
+  border-radius: $rayon-pilule;
   background: $pv-paper;
   color: $pv-ink;
   text-decoration: none;
@@ -1609,12 +1686,25 @@ a[href^="tel:"]::after {
 @media (max-width: 575.98px) {
   .hero { padding: 1rem 0 1rem; }
   .hero-surtitre { margin-bottom: 0.4rem; }
-  .hero h1 { font-size: 2.1rem; margin-bottom: 0; }
+  .hero h1 { font-size: 2.1rem; margin-bottom: 0; text-wrap: balance; }
   .hero-chapo { display: none; }
   .hero-recherche { margin: 1rem 0 0.9rem; padding: 0.75rem 1rem; }
-  .hero-actions .btn-lg { padding: 0.55rem 1rem; font-size: 1rem; }
+  .hero-actions .btn-lg { padding: 0.55rem 1rem; font-size: 1rem; line-height: 1.35; }
+  // The mascot beside "Déclarer", sounding the horn at it; "Poser une question" below. In a
+  // row that wraps, the mascot was left alone on its line above the buttons.
+  .hero-actions {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.75rem 0.6rem;
+    justify-items: start;
+  }
+  .hero-actions .btn-primary { justify-self: stretch; }
+  .hero-actions .btn-outline-primary { grid-column: 1 / -1; }
+  .hero-actions .mascotte-accueil { width: 52px; }
   .urgence { padding: 0.9rem 1rem; }
   .urgence-numero { font-size: 1.3rem; }
+  // The two links of the last cell each wrap over two lines: a gap keeps them apart.
+  .urgence > div:last-child a { display: inline-block; margin: 0.2rem 0; }
 }
 
 // ---------- 404: lost in the bocage ----------------------------------------
@@ -1625,7 +1715,7 @@ a[href^="tel:"]::after {
   display: inline-block;
   padding: 0.55rem 1.1rem;
   border: 1px solid $pv-rule;
-  border-radius: 999px;
+  border-radius: $rayon-pilule;
   font-weight: 700;
   text-decoration: none;
   background: $pv-paper;
@@ -1660,7 +1750,8 @@ a[href^="tel:"]::after {
 .quarto-search-no-results:has(.mascotte) { text-align: center; }
 .quarto-search-no-results .mascotte { width: 60px; margin: 0 auto 0.5rem; }
 @media (max-width: 575.98px) {
-  .page-404 .mascotte-404 { width: 96px; margin-left: 1rem; }
+  // Smaller, so that the text beside it keeps lines of three or four words.
+  .page-404 .mascotte-404 { width: 72px; margin-left: 0.75rem; }
   .quarto-title-banner .mascotte-titre { width: 60px; margin: -0.25rem 0 0.25rem 0.75rem; }
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -1723,13 +1814,31 @@ a[href^="tel:"]::after {
 .frequences-outil {
   border: 1px solid $pv-rule;
   border-radius: $border-radius-lg;
-  padding: 1.25rem;
+  padding: clamp(0.9rem, 4vw, 1.25rem);
   margin: 1.5rem 0;
   background: $pv-paper;
 }
 .frequences-outil fieldset { border: 0; padding: 0; margin: 0 0 0.75rem; }
 .frequences-outil legend { font-size: 1rem; font-weight: 700; }
-.frequences-outil label { margin-right: 1rem; }
+// Each choice is a row of 2.25rem at least, its box 1.35rem (24 px) wide, and the whole
+// label is the target (WCAG 2.5.8): the browser's 12 px radio was too small on a phone.
+.frequences-outil fieldset label {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  min-height: 2.25rem;
+  margin-right: 1.1rem;
+  padding: 0.3rem 0;
+  cursor: pointer;
+}
+.frequences-outil fieldset input {
+  flex: none;
+  width: 1.35rem;
+  height: 1.35rem;
+  margin: 0.15rem 0 0; // centred on the first line of the label
+  accent-color: $pv-signal;
+  cursor: pointer;
+}
 .frequences-grille { line-height: 0; }
 .frequences-grille svg { max-width: 100%; height: auto; }
 .frequences-resume { font-weight: 700; margin-top: 0.75rem; }
@@ -1879,6 +1988,15 @@ a[href^="tel:"]::after {
   padding: 0 0 0.85rem 1.5rem;
   line-height: 1.5;
   p { margin: 0 0 0.5rem; }
+}
+// Phones: a narrower number column and margins, and long titles ("pharmacodynamiques",
+// "radiopharmaceutiques") hyphenate inside the sheet instead of running past its edge.
+@media (max-width: 575.98px) {
+  .rcp-annote { padding: 0.25rem 0.75rem; }
+  .rcp-ligne { grid-template-columns: 2.85rem minmax(0, 1fr); }
+  .rcp-numero { white-space: nowrap; } // « 11-12 » on one line
+  .rcp-titre { -webkit-hyphens: auto; hyphens: auto; }
+  .rcp-note { padding-left: 0.5rem; }
 }
 
 // Editorial placeholders, marked by the page-meta filter.

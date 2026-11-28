@@ -65,7 +65,7 @@ Choisissez un mot. La grille montre combien de personnes ont l'effet dans un gro
     <label><input type="radio" name="frequence" value="indeterminee"> Fréquence indéterminée</label>
   </fieldset>
   <div class="frequences-grille" aria-hidden="true"></div>
-  <p class="frequences-legende" aria-hidden="true">● personne qui a l’effet · ○ personne qui peut l’avoir · ● gris : personne qui ne l’a pas</p>
+  <p class="frequences-legende" aria-hidden="true">●&nbsp;personne qui a l’effet&nbsp;· ○&nbsp;personne qui peut l’avoir&nbsp;· ●&nbsp;gris : personne qui ne l’a pas</p>
   <p class="frequences-resume" aria-live="polite">Très fréquent : plus d’une personne sur 10. Dans un groupe de 100 personnes, 10 personnes ou plus ont l’effet.</p>
 </div>
 ```
@@ -83,7 +83,7 @@ Pour le savoir, les essais comparent avec un placebo (un comprimé sans substanc
     <label><input type="checkbox"> Montrer les personnes qui ont aussi eu mal à la tête avec le placebo</label>
   </fieldset>
   <div class="frequences-grille" aria-hidden="true"></div>
-  <p class="frequences-legende" aria-hidden="true">● dû au médicament · ○ l’aurait eu aussi avec le placebo · ● gris : n’a pas mal à la tête</p>
+  <p class="frequences-legende" aria-hidden="true">●&nbsp;dû au médicament&nbsp;· ○&nbsp;l’aurait eu aussi avec le placebo&nbsp;· ●&nbsp;gris : n’a pas mal à la tête</p>
   <p class="frequences-resume" aria-live="polite">Avec le médicament, 12 personnes sur 100 ont mal à la tête. C’est ce chiffre que le RCP indique.</p>
 </div>
 ```
