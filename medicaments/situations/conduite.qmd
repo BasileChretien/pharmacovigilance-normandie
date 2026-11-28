@@ -9,16 +9,16 @@ prochaine_relecture: null
 sources:
   - titre: "ANSM, Médicaments et conduite (dossier thématique)"
     url: "https://ansm.sante.fr/dossiers-thematiques/medicaments-et-conduite"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Afssaps (ANSM), Mise au point – Médicaments et conduite automobile, actualisation mars 2009 (PDF ; reproduit les trois pictogrammes, page 5)"
     url: "https://ansm.sante.fr/uploads/2021/03/11/faff1e402339cd443a9894792f20d31d.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Propositions d'annexes AMM / enregistrements (RCP, notice, étiquetage) – rubrique pictogrammes du conditionnement extérieur (version imprimable)"
     url: "https://ansm.sante.fr/page/impression/89"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "HAS, Quelle place pour les benzodiazépines dans l'insomnie ?, fiche de bon usage, juillet 2024 (PDF)"
     url: "https://www.has-sante.fr/upload/docs/application/pdf/2024-07/bum_bzd_insomnie_11_07_24_vf.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
 ---
 
 ::: {.deux-versions}
@@ -89,7 +89,7 @@ Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre ph
 
 ### Le dispositif
 
-La classification en trois niveaux a été élaborée par l'Afssaps à partir de 2003. Le pictogramme gradé est apposé sur le conditionnement extérieur depuis 2008, selon l'ANSM. La mise au point Afssaps de 2009 le date de 2006, avec une apposition progressive depuis 2005 [à compléter : préciser la date réglementaire]. Chaque pictogramme associe une couleur (jaune, orange, rouge), le numéro du niveau en toutes lettres et une mise en garde suivie d'un message. Le niveau de chaque substance figure en annexe de l'arrêté du 8 août 2008 pris pour l'application de l'article R. 5121-139 du Code de la santé publique (Afssaps 2009). La liste a pu évoluer depuis [à compléter : texte en vigueur sur Légifrance].
+La classification en trois niveaux a été élaborée par l'Afssaps à partir de 2003. Le pictogramme gradé est apposé sur le conditionnement extérieur depuis 2008, selon l'ANSM. La mise au point Afssaps de 2009 le date de 2006, avec une apposition progressive depuis 2005 [à compléter : vérifier sur Légifrance la date de l'arrêté qui a instauré le pictogramme gradé]. Chaque pictogramme associe une couleur (jaune, orange, rouge), le numéro du niveau en toutes lettres et une mise en garde suivie d'un message. Le niveau de chaque substance figure en annexe de l'arrêté du 8 août 2008 pris pour l'application de l'article R. 5121-139 du Code de la santé publique (Afssaps 2009). La liste a pu évoluer depuis [à compléter : vérifier sur Légifrance l'arrêté du 8 août 2008 et ses modifications].
 
 Définitions de l'ANSM :
 

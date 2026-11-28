@@ -9,19 +9,19 @@ prochaine_relecture: null
 sources:
   - titre: "OMéDIT Normandie, en partenariat avec la SFPC : Liste des médicaments écrasables (page de référence)"
     url: "https://www.omedit-normandie.fr/boite-a-outils/bon-usage/liste-des-medicaments-ecrasables/liste-des-medicaments-ecrasables,3184,3511.html"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "OMéDIT Normandie – SFPC (groupe Gériatrie) : Liste nationale des médicaments concernant l'écrasement des comprimés et l'ouverture des gélules, fichier Excel, onglet « Lisez-moi »"
     url: "https://www.omedit-normandie.fr/media-files/49860/liste-medicaments-ecrasables_01122025.xlsx"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Hôpitaux universitaires de Genève (HUG), Pharmacie : Comprimés, couper ou écraser ? Sécabilité, possibilité de broyage des comprimés et d'ouverture des capsules (révision du 27/03/2023)"
     url: "https://hug.ch/pharmacie/recommandations/document/tab_couper_ecraser"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "RCP MOPRAL 20 mg, gélule gastro-résistante (base de données publique des médicaments)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/64103828/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "RCP et notice ACIDE ALENDRONIQUE CRISTERS 70 mg, comprimé (base de données publique des médicaments)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67464926/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Influence des formes et voies d'administration sur le devenir du médicament"
     url: "https://pharmacomedicale.org/pharmacologie/pharmacocinetique/37-influence-des-formes-et-voies-d-administration-sur-le-devenir-du-medicament"
