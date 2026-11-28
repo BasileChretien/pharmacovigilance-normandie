@@ -3,6 +3,7 @@ recent publications on crpv/recherche.qmd)."""
 
 import datetime as dt
 import json
+import urllib.error
 
 import fetch_publications as fp
 import make_publications_page as mp
@@ -71,13 +72,23 @@ def test_member_cards_give_the_orcid_ids_and_their_team(tmp_path):
         f"<!-- carte retirée : [ORCID](https://orcid.org/{AUTRE}) -->",
         f"[ORCID](https://orcid.org/{CARBERRY})",
     )
-    assert fp.membres(racine) == {CARBERRY: ["caen", "rouen"]}
+    assert fp.membres(racine) == ({CARBERRY: ["caen", "rouen"]}, [])
 
 
-def test_an_orcid_id_with_a_wrong_check_digit_stops(tmp_path):
-    racine = _equipes(tmp_path, "[ORCID](https://orcid.org/0000-0002-1825-0098)")
-    with pytest.raises(SystemExit):
-        fp.membres(racine)
+def test_an_orcid_link_that_gives_no_valid_id_is_reported_not_ignored(tmp_path):
+    racine = _equipes(
+        tmp_path,
+        "[ORCID](https://orcid.org/0000-0002-1825-0098) "  # wrong check digit
+        "[ORCID](https://orcid.org/0000-0002-1825-00977) "  # one digit too many
+        "[ORCID](https://orcid.org/0000-0009-9999-993x) "  # lower-case x: fine
+        f"[ORCID](https://orcid.org/{CARBERRY}/)",  # trailing slash: fine
+    )
+    valides, illisibles = fp.membres(racine)
+    assert valides == {"0000-0009-9999-993X": ["caen"], CARBERRY: ["caen"]}
+    assert illisibles == [
+        ("crpv/equipe-caen.qmd", "0000-0002-1825-0098"),
+        ("crpv/equipe-caen.qmd", "0000-0002-1825-00977"),
+    ]
 
 
 def test_the_check_digit_can_be_x():
@@ -90,7 +101,14 @@ def test_dois_are_normalised_and_unusable_ones_dropped():
         fp.normaliser_doi(" https://doi.org/10.1007/S40264-020-00950-3 ")
         == "10.1007/s40264-020-00950-3"
     )
-    assert fp.normaliser_doi("doi:10.1002/pds.5000") == "10.1002/pds.5000"
+    for ecrit in (
+        "doi:10.1002/pds.5000",
+        "doi: 10.1002/pds.5000",
+        "http://dx.doi.org/10.1002/PDS.5000",
+        "doi.org/10.1002/pds.5000",
+        "https://doi.org/10.1002%2Fpds.5000",
+    ):
+        assert fp.normaliser_doi(ecrit) == "10.1002/pds.5000", ecrit
     assert fp.normaliser_doi("10.1000/a,b") is None
     assert fp.normaliser_doi("pas un doi") is None
 
@@ -105,6 +123,32 @@ def test_orcid_works_before_the_window_are_left_out_but_undated_ones_kept():
     assert fp.dois_orcid(reponse, 2024) == ["10.1000/a", "10.1000/c"]
 
 
+def test_an_orcid_group_gives_its_first_usable_doi_and_its_latest_year():
+    groupe = {
+        "external-ids": {
+            "external-id": [
+                {
+                    "external-id-type": "doi",
+                    "external-id-value": "pas un doi",
+                    "external-id-relationship": "self",
+                },
+                {
+                    "external-id-type": "doi",
+                    "external-id-value": "https://doi.org/10.1000/BRUT",
+                    "external-id-normalized": {"value": "10.1000/brut"},
+                    "external-id-relationship": "self",
+                },
+            ]
+        },
+        # Two versions of the work: the older one first.
+        "work-summary": [
+            {"publication-date": {"year": {"value": "2019"}}},
+            {"publication-date": {"year": {"value": "2025"}}},
+        ],
+    }
+    assert fp.dois_orcid({"group": [groupe]}, 2024) == ["10.1000/brut"]
+
+
 def test_no_member_card_means_no_request_and_an_empty_list():
     def ne_pas_appeler(url):
         raise AssertionError(url)
@@ -114,6 +158,7 @@ def test_no_member_card_means_no_request_and_an_empty_list():
         "releve_le": "2026-11-28",
         "depuis": 2024,
         "membres": [],
+        "non_lus": [],
         "publications": [],
     }
 
@@ -157,6 +202,33 @@ def test_orcid_then_openalex_give_one_entry_per_work_newest_first():
         [CARBERRY, AUTRE]
     )
     assert older["revue"] == "Drug Safety" and older["langue"] == "en"
+
+
+def _panne_pour(orcid, code):
+    def fetch(url):
+        if url == fp.ORCID_API.format(orcid):
+            raise urllib.error.HTTPError(url, code, "x", None, None)
+        if url.startswith("https://pub.orcid.org/"):
+            return _orcid(("10.1000/a", "2025"))
+        return {"results": [_oeuvre("10.1000/a")]}
+
+    return fetch
+
+
+def test_a_member_whose_orcid_record_is_gone_is_marked_not_read_and_others_listed():
+    for code in (404, 409, 410):
+        data = fp.releve(
+            {CARBERRY: ["caen"], AUTRE: ["rouen"]},
+            _panne_pour(AUTRE, code),
+            AUJOURD_HUI,
+        )
+        assert data["non_lus"] == [AUTRE]
+        assert [p["membres"] for p in data["publications"]] == [[CARBERRY]]
+
+
+def test_an_orcid_outage_is_not_blamed_on_one_member():
+    with pytest.raises(urllib.error.HTTPError):
+        fp.releve({AUTRE: ["rouen"]}, _panne_pour(AUTRE, 503), AUJOURD_HUI)
 
 
 def test_a_free_access_link_that_is_not_a_web_address_is_dropped():
@@ -205,8 +277,47 @@ def test_a_failed_fetch_keeps_the_previous_list_without_the_works_of_departed_me
     )
     data = fp.precedent(chemin, {CARBERRY: ["caen"]})
     assert data["releve_le"] == "2026-11-23" and data["membres"] == [CARBERRY]
+    assert data["non_lus"] == []
     assert [(p["doi"], p["membres"], p["equipes"]) for p in data["publications"]] == [
         ("10.1000/a", [CARBERRY], ["caen"])
+    ]
+
+
+def _ecrire_precedent(chemin, membres, non_lus=None):
+    data = {
+        "releve_le": "2026-11-23",
+        "depuis": 2024,
+        "membres": membres,
+        "publications": [
+            {
+                "doi": f"10.1000/{i}",
+                "titre": f"T{i}",
+                "revue": None,
+                "publie_le": "2025-01-01",
+                "langue": None,
+                "acces_libre": None,
+                "retracte": False,
+                "membres": [m],
+                "equipes": ["caen"],
+            }
+            for i, m in enumerate(membres)
+        ],
+    }
+    if non_lus is not None:
+        data["non_lus"] = non_lus
+    chemin.write_text(json.dumps(data), encoding="utf-8")
+
+
+def test_a_member_the_previous_list_never_read_is_marked_not_read(tmp_path):
+    chemin = tmp_path / "publications.json"
+    _ecrire_precedent(chemin, [CARBERRY])
+    data = fp.precedent(chemin, {CARBERRY: ["caen"], AUTRE: ["rouen"]})
+    assert data["membres"] == sorted([CARBERRY, AUTRE]) and data["non_lus"] == [AUTRE]
+    assert [p["membres"] for p in data["publications"]] == [[CARBERRY]]
+    # A member the previous list could not read stays not read.
+    _ecrire_precedent(chemin, [CARBERRY, AUTRE], non_lus=[AUTRE])
+    assert fp.precedent(chemin, {CARBERRY: ["caen"], AUTRE: ["rouen"]})["non_lus"] == [
+        AUTRE
     ]
 
 
@@ -226,7 +337,7 @@ def test_main_writes_the_not_read_state_when_the_sites_fail_and_nothing_is_kept(
 ):
     sortie = tmp_path / "data" / "publications.json"
     monkeypatch.setattr(fp, "OUT", sortie)
-    monkeypatch.setattr(fp, "membres", lambda: {CARBERRY: ["caen"]})
+    monkeypatch.setattr(fp, "membres", lambda: ({CARBERRY: ["caen"]}, []))
 
     def panne(url):
         raise OSError("hors ligne")
@@ -238,6 +349,7 @@ def test_main_writes_the_not_read_state_when_the_sites_fail_and_nothing_is_kept(
         "releve_le": None,
         "depuis": None,
         "membres": [CARBERRY],
+        "non_lus": [CARBERRY],
         "publications": [],
     }
     assert "liste n'a pas encore pu être relevée" in mp.liste(data)
@@ -310,13 +422,13 @@ def test_an_answer_of_an_unexpected_shape_keeps_the_previous_list(
 ):
     sortie = tmp_path / "publications.json"
     monkeypatch.setattr(fp, "OUT", sortie)
-    monkeypatch.setattr(fp, "membres", lambda: {CARBERRY: ["caen"]})
+    monkeypatch.setattr(fp, "membres", lambda: ({CARBERRY: ["caen"]}, []))
     monkeypatch.setattr(fp, "_fetch", lambda url: {"group": ["pas un groupe"]})
     assert fp.main() == 1
     assert json.loads(sortie.read_text(encoding="utf-8"))["releve_le"] is None
 
 
-def test_a_previous_list_that_did_not_read_a_new_member_is_not_kept(
+def test_a_new_member_after_the_committed_seed_is_not_read_yet_not_without_works(
     tmp_path, monkeypatch
 ):
     # The committed seed: read on a date, but before any card gave an iD.
@@ -333,7 +445,7 @@ def test_a_previous_list_that_did_not_read_a_new_member_is_not_kept(
         encoding="utf-8",
     )
     monkeypatch.setattr(fp, "OUT", sortie)
-    monkeypatch.setattr(fp, "membres", lambda: {CARBERRY: ["caen"]})
+    monkeypatch.setattr(fp, "membres", lambda: ({CARBERRY: ["caen"]}, []))
 
     def panne(url):
         raise OSError("hors ligne")
@@ -343,3 +455,123 @@ def test_a_previous_list_that_did_not_read_a_new_member_is_not_kept(
     data = json.loads(sortie.read_text(encoding="utf-8"))
     assert "pas encore pu être relevée" in mp.liste(data)
     assert "Aucune publication" not in mp.liste(data)
+
+
+def test_an_unreadable_card_id_is_named_and_departed_works_still_go(
+    tmp_path, monkeypatch, capsys
+):
+    # In one commit: AUTRE's card goes and another card gets a typo in its iD; the sites
+    # are down. AUTRE's works must not stay, and the log names the typo.
+    sortie = tmp_path / "publications.json"
+    _ecrire_precedent(sortie, [CARBERRY, AUTRE])
+    faute = "0000-0002-1825-0098"
+    monkeypatch.setattr(fp, "OUT", sortie)
+    monkeypatch.setattr(
+        fp,
+        "membres",
+        lambda: ({CARBERRY: ["caen"]}, [("crpv/equipe-rouen.qmd", faute)]),
+    )
+
+    def panne(url):
+        raise OSError("hors ligne")
+
+    monkeypatch.setattr(fp, "_fetch", panne)
+    assert fp.main() == 1
+    data = json.loads(sortie.read_text(encoding="utf-8"))
+    assert [p["membres"] for p in data["publications"]] == [[CARBERRY]]
+    assert data["non_lus"] == [faute] and faute in data["membres"]
+    erreurs = capsys.readouterr().err
+    assert faute in erreurs and "crpv/equipe-rouen.qmd" in erreurs
+
+
+def test_the_page_says_how_many_members_could_not_be_read():
+    publication = {
+        "doi": "10.1000/a",
+        "titre": "T",
+        "revue": None,
+        "publie_le": "2026-01-01",
+        "langue": None,
+        "acces_libre": None,
+        "retracte": False,
+        "membres": [CARBERRY],
+        "equipes": ["caen"],
+    }
+    data = {
+        "releve_le": "2026-11-28",
+        "depuis": 2024,
+        "membres": [AUTRE, CARBERRY],
+        "non_lus": [AUTRE],
+        "publications": [publication],
+    }
+    page = mp.liste(data)
+    assert "d'un membre n'ont pas pu être relevées" in page and "fil-alertes" in page
+    assert AUTRE not in page
+    # Every member unread: the list was not read at all.
+    page = mp.liste({**data, "non_lus": [AUTRE, CARBERRY], "publications": []})
+    assert "pas encore pu être relevée" in page
+
+
+def test_a_doi_is_percent_encoded_in_its_link():
+    item = mp._item(
+        {
+            "doi": "10.1000/a#b?c%d",
+            "titre": "T",
+            "revue": None,
+            "publie_le": "2026-01-01",
+            "langue": None,
+            "acces_libre": None,
+            "retracte": False,
+            "equipes": ["caen"],
+        }
+    )
+    assert 'href="https://doi.org/10.1000/a%23b%3Fc%25d"' in item
+
+
+def test_an_orcid_answer_that_fails_for_every_member_is_an_outage(
+    tmp_path, monkeypatch
+):
+    # ORCID retiring its API version would answer 410 for every iD: keep the list.
+    sortie = tmp_path / "publications.json"
+    _ecrire_precedent(sortie, [CARBERRY, AUTRE])
+    monkeypatch.setattr(fp, "OUT", sortie)
+    monkeypatch.setattr(
+        fp, "membres", lambda: ({CARBERRY: ["caen"], AUTRE: ["rouen"]}, [])
+    )
+
+    def disparu(url):
+        raise urllib.error.HTTPError(url, 410, "Gone", None, None)
+
+    monkeypatch.setattr(fp, "_fetch", disparu)
+    assert fp.main() == 1
+    data = json.loads(sortie.read_text(encoding="utf-8"))
+    assert len(data["publications"]) == 2 and data["releve_le"] == "2026-11-23"
+
+
+def test_an_orcid_link_followed_by_punctuation_is_read(tmp_path):
+    racine = _equipes(
+        tmp_path,
+        f"ORCID : https://orcid.org/{CARBERRY}. Ou **https://orcid.org/{CARBERRY}**, "
+        f"(https://orcid.org/{CARBERRY});",
+    )
+    assert fp.membres(racine) == ({CARBERRY: ["caen"]}, [])
+
+
+def test_a_single_member_whose_record_is_locked_is_not_read_while_orcid_answers(
+    tmp_path, monkeypatch, capsys
+):
+    # One card, its record locked (409); ORCID's own test record still answers.
+    sortie = tmp_path / "publications.json"
+    _ecrire_precedent(sortie, [AUTRE])
+    monkeypatch.setattr(fp, "OUT", sortie)
+    monkeypatch.setattr(fp, "membres", lambda: ({AUTRE: ["rouen"]}, []))
+
+    def fetch(url):
+        if url == fp.ORCID_API.format(fp.TEMOIN):
+            return _orcid(("10.1000/temoin", "2012"))
+        raise urllib.error.HTTPError(url, 409, "Conflict", None, None)
+
+    monkeypatch.setattr(fp, "_fetch", fetch)
+    assert fp.main() == 1
+    data = json.loads(sortie.read_text(encoding="utf-8"))
+    assert data["non_lus"] == [AUTRE] and data["publications"] == []
+    assert AUTRE in capsys.readouterr().err
