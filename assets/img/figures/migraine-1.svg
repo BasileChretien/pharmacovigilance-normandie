@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 352" width="440" height="352" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 352" width="440" height="352" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="currentColor">
   <defs>
     <pattern id="migraine-1-jours" x="25" y="88" width="13" height="22" patternUnits="userSpaceOnUse">
-      <rect x="1" y="1" width="11" height="20" rx="2" fill="#ffffff" stroke="#46586a" stroke-width="1.2"/>
+      <rect x="1" y="1" width="11" height="20" rx="2" fill="none" stroke="#46586a" stroke-width="1.2"/>
     </pattern>
   </defs>
   <text x="16" y="24" font-size="17" font-weight="700">Jours avec un traitement de crise, sur un mois</text>
@@ -26,17 +26,17 @@
 
   <!-- What the marks mean -->
   <line x1="16" y1="148" x2="424" y2="148" stroke="#d5e2ea" stroke-width="2"/>
-  <rect x="16" y="162" width="36" height="26" rx="6" fill="#e6f7ef" stroke="#0b6b45" stroke-width="2"/>
-  <text x="34" y="181" text-anchor="middle" font-weight="700">8</text>
-  <text x="62" y="181">jours au plus : ce qui est conseillé</text>
+  <rect x="16" y="162" width="48" height="26" rx="6" fill="#e6f7ef" stroke="#0b6b45" stroke-width="2"/>
+  <text x="40" y="181" text-anchor="middle" font-weight="700">8</text>
+  <text x="74" y="181">jours au plus : ce qui est conseillé</text>
 
-  <rect x="16" y="200" width="36" height="26" rx="6" fill="#ffffff" stroke="#46586a" stroke-width="2"/>
-  <text x="34" y="219" text-anchor="middle" font-weight="700">10</text>
-  <text x="62" y="219">jours ou plus avec un triptan</text>
+  <rect x="16" y="200" width="48" height="26" rx="6" fill="#ffffff" stroke="#46586a" stroke-width="2"/>
+  <text x="40" y="219" text-anchor="middle" font-weight="700">10</text>
+  <text x="74" y="219">jours ou plus avec un triptan</text>
 
-  <rect x="16" y="238" width="36" height="26" rx="6" fill="#ffffff" stroke="#46586a" stroke-width="2"/>
-  <text x="34" y="257" text-anchor="middle" font-weight="700">15</text>
-  <text x="62" y="257">jours ou plus avec le paracétamol</text>
+  <rect x="16" y="238" width="48" height="26" rx="6" fill="#ffffff" stroke="#46586a" stroke-width="2"/>
+  <text x="40" y="257" text-anchor="middle" font-weight="700">15</text>
+  <text x="74" y="257">jours ou plus avec le paracétamol</text>
   <text x="62" y="277">ou un anti-inflammatoire</text>
 
   <rect x="16" y="292" width="408" height="52" rx="10" fill="#fdeceb"/>

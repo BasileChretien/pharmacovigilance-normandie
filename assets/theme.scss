@@ -8,25 +8,34 @@
 // a signal colour, sparingly. Quiet nods to Normandy: half-timbering (colombages) as a
 // faint texture, the Channel as the footer, the gold of the two leopards as a marker. The signature is the animated map of the home page:
 // the towns of Normandy, linked to the two regional pharmacovigilance centres.
-$pv-ink: #10283a;            // body text
-$pv-ink-quiet: #46586a;      // secondary text
-$pv-paper: #ffffff;          // page background
-$pv-mist: #eef6fa;           // bands: title banner, hero, footer
-$pv-mist-deep: #dcebf3;      // borders and hover on mist
-$pv-signal: #0a5c9e;         // links, primary buttons
-$pv-signal-dark: #073f6e;    // hover
-$pv-cyan: #19a6e3;           // decorative only (logo colour), never text
-$pv-green: #2bcf8c;          // decorative only (logo colour), never text
-$pv-green-ink: #0b6b45;      // "À retenir"
-$pv-green-tint: #e6f7ef;
-$pv-alert: #b3261e;          // "Quand consulter", urgency
-$pv-alert-tint: #fdeceb;
-$pv-amber: #7a4f00;          // draft and prototype notices
-$pv-amber-tint: #fdf1d8;
-$pv-rule: #d5e2ea;           // borders
-$pv-manche: #0d4a5e;         // the Channel: footer band
-$pv-ecume: #bfe3ee;          // sea foam: secondary text on the Channel band
-$pv-or: #e7b03b;             // gold of the Normandy leopards: decorative, never text
+//
+// Dark theme: assets/theme-sombre.scss gives each token below its dark value (!default lets
+// it win: Quarto reads the defaults of the last theme file first). Same names, same pairs:
+// check_contrast.py checks every pair in both themes (docs/mode-sombre.md).
+$pv-ink: #10283a !default;            // body text
+$pv-ink-quiet: #46586a !default;      // secondary text
+$pv-paper: #ffffff !default;          // page background
+$pv-mist: #eef6fa !default;           // bands: title banner, hero, footer
+$pv-mist-deep: #dcebf3 !default;      // borders and hover on mist
+$pv-signal: #0a5c9e !default;         // links, primary buttons
+$pv-signal-dark: #073f6e !default;    // hover
+$pv-cyan: #19a6e3 !default;           // decorative only (logo colour), never text
+$pv-green: #2bcf8c !default;          // decorative only (logo colour), never text
+$pv-green-ink: #0b6b45 !default;      // "À retenir"
+$pv-green-tint: #e6f7ef !default;
+$pv-alert: #b3261e !default;          // "Quand consulter", urgency
+$pv-alert-tint: #fdeceb !default;
+$pv-amber: #7a4f00 !default;          // draft and prototype notices
+$pv-amber-tint: #fdf1d8 !default;
+$pv-rule: #d5e2ea !default;           // borders
+$pv-manche: #0d4a5e !default;         // the Channel: footer band
+$pv-manche-texte: #ffffff !default;   // text on the Channel band (stays light in the dark theme)
+$pv-ecume: #bfe3ee !default;          // sea foam: secondary text on the Channel band
+$pv-eau: #bfe3ee !default;            // water in figures: decorative, never text
+$pv-or: #e7b03b !default;             // gold of the Normandy leopards: decorative, never text
+$pv-surligne: #e7b03b !default;       // gold marker under a word of the home title (60 % opaque)
+$pv-ombre: #10283a !default;          // shadows (rgba)
+$pv-logo-fond: #ffffff;               // behind the partner logos, white in both themes
 
 $body-color: $pv-ink;
 $body-bg: $pv-paper;
@@ -37,7 +46,7 @@ $navbar-bg: $pv-paper;
 $navbar-fg: $pv-ink;
 $navbar-hl: $pv-signal;
 $footer-bg: $pv-manche;
-$footer-fg: $pv-paper;
+$footer-fg: $pv-manche-texte;
 
 // Self-hosted open fonts (assets/fonts/fonts.css, SIL OFL): no third-party server.
 // Body: Atkinson Hyperlegible, designed for readers with low vision.
@@ -55,13 +64,14 @@ $border-radius-lg: 1.25rem;
 
 /*-- scss:rules --*/
 
-// Nods to Normandy, drawn as inline SVG so nothing is downloaded.
+// Nods to Normandy, drawn as inline SVG so nothing is downloaded. Their colours come from
+// the tokens (escape-svg is Bootstrap's), so the dark theme redraws them.
 // Half-timbering (colombages): studs, rails, a St Andrew's cross and a brace.
-$motif-colombage: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120' fill='none' stroke='%2310283a' stroke-opacity='.07' stroke-width='3'%3E%3Cpath d='M0 1.5h120M0 60h120M1.5 0v120M30 0v120M60 0v120M90 0v120M30 0l30 60M60 0 30 60M90 60l30 60'/%3E%3C/svg%3E");
-// The Channel: a wave along the top of the footer (fill = $pv-manche, #0d4a5e).
-$vague-manche: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 24' preserveAspectRatio='none'%3E%3Cpath fill='%230d4a5e' d='M0 12C120 0 240 0 360 12S600 24 720 12 960 0 1080 12 1320 24 1440 12V24H0Z'/%3E%3C/svg%3E");
+$motif-colombage: escape-svg(url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120' fill='none' stroke='#{$pv-ink}' stroke-opacity='.07' stroke-width='3'><path d='M0 1.5h120M0 60h120M1.5 0v120M30 0v120M60 0v120M90 0v120M30 0l30 60M60 0 30 60M90 60l30 60'/></svg>"));
+// The Channel: a wave along the top of the footer, in the colour of the footer band.
+$vague-manche: escape-svg(url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 24' preserveAspectRatio='none'><path fill='#{$pv-manche}' d='M0 12C120 0 240 0 360 12S600 24 720 12 960 0 1080 12 1320 24 1440 12V24H0Z'/></svg>"));
 $degrade-logo: linear-gradient(90deg, $pv-cyan, $pv-green);
-$ombre-carte: 0 12px 32px -24px rgba(16, 40, 58, 0.5);
+$ombre-carte: 0 12px 32px -24px rgba($pv-ombre, 0.5);
 
 // ---------- Base ----------------------------------------------------------
 
@@ -126,7 +136,7 @@ summary:focus-visible,
 }
 
 .navbar {
-  background: rgba(255, 255, 255, 0.9) !important;
+  background: rgba($pv-paper, 0.9) !important;
   -webkit-backdrop-filter: saturate(1.5) blur(12px);
   backdrop-filter: saturate(1.5) blur(12px);
   border-bottom: 1px solid $pv-rule;
@@ -220,15 +230,18 @@ summary:focus-visible,
   color: $pv-ink-quiet !important;
 }
 
-// Prototype notice under the navbar: present, but quiet.
-.quarto-announcement {
+// Prototype notice under the navbar: present, but quiet. Quarto renders it as
+// #quarto-announcement.alert-warning: without the id, Bootstrap's yellow showed instead.
+.quarto-announcement,
+#quarto-announcement {
   background: $pv-amber-tint !important;
   color: $pv-amber !important;
   border: none !important;
   font-size: 0.85rem;
   padding: 0.4rem 1rem;
 }
-.quarto-announcement a { color: $pv-amber; }
+.quarto-announcement a,
+#quarto-announcement a { color: $pv-amber; }
 
 // ---------- Title banner of content pages ----------------------------------
 
@@ -236,7 +249,7 @@ summary:focus-visible,
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(56rem 20rem at 88% 0%, rgba(25, 166, 227, 0.11), transparent 70%),
+    radial-gradient(56rem 20rem at 88% 0%, rgba($pv-cyan, 0.11), transparent 70%),
     $pv-mist !important;
   color: $pv-ink !important;
   border-bottom: none;
@@ -324,7 +337,7 @@ summary:focus-visible,
 .panel-tabset > .nav-tabs .nav-link.active {
   background: $pv-paper;
   color: $pv-signal-dark;
-  box-shadow: 0 1px 3px rgba(16, 40, 58, 0.12);
+  box-shadow: 0 1px 3px rgba($pv-ombre, 0.12);
 }
 .panel-tabset > .tab-content {
   border: none;
@@ -432,7 +445,7 @@ $icon-alert: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' v
 
 .a-retenir {
   background: $pv-green-tint;
-  border-color: rgba(11, 107, 69, 0.18);
+  border-color: rgba($pv-green-ink, 0.18);
   border-left-color: $pv-green-ink;
   --icone: #{$icon-check};
 }
@@ -440,7 +453,7 @@ $icon-alert: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' v
 
 .quand-consulter {
   background: $pv-alert-tint;
-  border-color: rgba(179, 38, 30, 0.22);
+  border-color: rgba($pv-alert, 0.22);
   border-left-color: $pv-alert;
   --icone: #{$icon-alert};
 }
@@ -482,7 +495,7 @@ main table td, main table th {
   border-top: 1px solid $pv-rule;
 }
 main table tbody tr:first-child td { border-top: none; }
-main table tbody tr:nth-child(even) td { background: rgba(238, 246, 250, 0.6); }
+main table tbody tr:nth-child(even) td { background: rgba($pv-mist, 0.6); }
 
 // ---------- Sources and review block --------------------------------------
 
@@ -640,7 +653,7 @@ main table tbody tr:nth-child(even) td { background: rgba(238, 246, 250, 0.6); }
 .quarto-grid-item:hover {
   transform: translateY(-2px);
   border-color: $pv-signal !important;
-  box-shadow: 0 8px 24px -12px rgba(10, 92, 158, 0.35);
+  box-shadow: 0 8px 24px -12px rgba($pv-signal, 0.35);
 }
 .carte h3, .quarto-grid-item .card-title {
   font-family: $headings-font-family;
@@ -684,7 +697,7 @@ main table tbody tr:nth-child(even) td { background: rgba(238, 246, 250, 0.6); }
 }
 .quarto-listing-default .quarto-post:hover {
   border-color: $pv-signal;
-  box-shadow: 0 8px 24px -12px rgba(10, 92, 158, 0.35);
+  box-shadow: 0 8px 24px -12px rgba($pv-signal, 0.35);
 }
 .quarto-listing-default .quarto-post .listing-title { margin-top: 0; }
 .quarto-post .listing-date, .listing-date {
@@ -716,7 +729,7 @@ main table tbody tr:nth-child(even) td { background: rgba(238, 246, 250, 0.6); }
 .btn-primary {
   background: $pv-signal;
   border-color: $pv-signal;
-  box-shadow: 0 8px 18px -10px rgba(10, 92, 158, 0.7);
+  box-shadow: 0 8px 18px -10px rgba($pv-signal, 0.7);
 }
 .btn:hover { transform: translateY(-1px); }
 .btn-primary:hover {
@@ -736,7 +749,7 @@ main table tbody tr:nth-child(even) td { background: rgba(238, 246, 250, 0.6); }
   position: relative;
   margin-top: 4.5rem;
   background: $pv-manche;
-  color: $pv-paper;
+  color: $pv-manche-texte;
 }
 .footer::before {
   content: "";
@@ -756,9 +769,9 @@ main table tbody tr:nth-child(even) td { background: rgba(238, 246, 250, 0.6); }
   background: transparent;
   color: $pv-ecume;
 }
-.nav-footer strong { color: $pv-paper; }
+.nav-footer strong { color: $pv-manche-texte; }
 .nav-footer a,
-.nav-footer .nav-link { color: $pv-paper !important; }
+.nav-footer .nav-link { color: $pv-manche-texte !important; }
 // A gold focus ring stays visible on the sea (4.9:1 against $pv-manche).
 .nav-footer a:focus-visible { outline-color: $pv-or; }
 // Footer links keep each label on one line; the list wraps instead.
@@ -776,7 +789,7 @@ main table tbody tr:nth-child(even) td { background: rgba(238, 246, 250, 0.6); }
   width: auto;
   margin: 0.25rem 0.35rem;
   padding: 0.4rem 0.6rem;
-  background: $pv-paper;
+  background: $pv-logo-fond;
   border-radius: $border-radius;
   vertical-align: middle;
 }
@@ -824,8 +837,8 @@ body {
 .hero::before {
   // Soft glows of the logo colours behind the map.
   background:
-    radial-gradient(40rem 30rem at 80% 45%, rgba(25, 166, 227, 0.22), transparent 70%),
-    radial-gradient(32rem 24rem at 97% 95%, rgba(43, 207, 140, 0.2), transparent 70%),
+    radial-gradient(40rem 30rem at 80% 45%, rgba($pv-cyan, 0.22), transparent 70%),
+    radial-gradient(32rem 24rem at 97% 95%, rgba($pv-green, 0.2), transparent 70%),
     $pv-mist;
 }
 .hero-grille {
@@ -854,7 +867,7 @@ body {
 }
 // The gold of the Normandy leopards, as a marker under one word of the title.
 .surligne {
-  background: linear-gradient(transparent 64%, rgba(231, 176, 59, 0.6) 64%, rgba(231, 176, 59, 0.6) 90%, transparent 90%);
+  background: linear-gradient(transparent 64%, rgba($pv-surligne, 0.6) 64%, rgba($pv-surligne, 0.6) 90%, transparent 90%);
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   padding: 0 0.04em;
@@ -879,7 +892,7 @@ body {
   font: inherit;
   text-align: left;
   cursor: pointer;
-  box-shadow: 0 6px 20px -14px rgba(16, 40, 58, 0.45);
+  box-shadow: 0 6px 20px -14px rgba($pv-ombre, 0.45);
 }
 .hero-recherche:hover { border-color: $pv-signal; }
 .hero-recherche svg { flex: none; color: $pv-signal; }
@@ -985,7 +998,7 @@ $signal-pulse: 18px; // pulse length, in figure units (px = SVG user units)
   margin: 2rem auto 0;
   padding: 1.1rem 1.5rem;
   background: $pv-alert-tint;
-  border: 1px solid rgba(179, 38, 30, 0.22);
+  border: 1px solid rgba($pv-alert, 0.22);
   border-radius: $border-radius-lg;
 }
 .urgence-titre {
@@ -1076,7 +1089,7 @@ a[href^="tel:"]::after {
 .rubrique:hover {
   transform: translateY(-2px);
   border-color: $pv-signal;
-  box-shadow: 0 8px 24px -12px rgba(10, 92, 158, 0.35);
+  box-shadow: 0 8px 24px -12px rgba($pv-signal, 0.35);
   color: $pv-ink;
 }
 .rubrique .icone { background: $pv-mist; flex: none; }
@@ -1252,11 +1265,14 @@ a[href^="tel:"]::after {
   border-radius: $border-radius-lg;
   background: $pv-paper;
 }
+// The root <svg> of a figure is fill="currentColor": text without a fill of its own takes
+// this colour, which the dark theme and Dark Reader both change like the page text.
 .figure-pv svg {
   display: block;
   max-width: 100%;
   height: auto;
   font-family: $font-family-sans-serif;
+  color: $pv-ink;
 }
 .figure-pv figcaption {
   max-width: 440px;

@@ -1,6 +1,10 @@
 # Text/background pairs used on the site, checked against WCAG 2.1 AA:
 # 4.5:1 for body text, 3:1 for large text and interface elements.
 # pv-cyan and pv-green are decorative only (logo colours) and never carry text.
+# Each pair is checked in the light theme (assets/theme.scss) and in the dark theme
+# (assets/theme-sombre.scss, same token names): add `themes: [clair]` or `themes: [sombre]`
+# only for a pair used in one theme. Figures keep the light tokens in their attributes and
+# the dark theme maps each to its dark token, so their pairs hold in both themes too.
 paires:
   - { texte: pv-ink, fond: pv-paper, minimum: 4.5, usage: "texte courant" }
   - { texte: pv-ink, fond: pv-mist, minimum: 4.5, usage: "texte des bandeaux (titre, accueil, pied de page)" }
@@ -19,9 +23,9 @@ paires:
   - { texte: pv-signal, fond: pv-alert-tint, minimum: 4.5, usage: "lien du bandeau urgence" }
   - { texte: pv-amber, fond: pv-amber-tint, minimum: 4.5, usage: "bandeau prototype, statut brouillon" }
   - { texte: pv-signal, fond: pv-rule, minimum: 3.0, usage: "bordure du champ de recherche au survol (élément d'interface)" }
-  - { texte: pv-paper, fond: pv-manche, minimum: 4.5, usage: "texte et liens du pied de page (la Manche)" }
+  - { texte: pv-manche-texte, fond: pv-manche, minimum: 4.5, usage: "texte et liens du pied de page (la Manche)" }
   - { texte: pv-ecume, fond: pv-manche, minimum: 4.5, usage: "texte secondaire du pied de page" }
-  - { texte: pv-ink, fond: pv-or, minimum: 4.5, usage: "mot surligné en or du titre d'accueil" }
+  - { texte: pv-ink, fond: pv-surligne, minimum: 4.5, usage: "mot surligné en or du titre d'accueil" }
   - { texte: pv-ink, fond: pv-mist-deep, minimum: 4.5, usage: "titres des parties patients et professionnels" }
   # Figures (assets/img/figures/, docs/regles-redaction.md section 5)
   - { texte: pv-signal-dark, fond: pv-paper, minimum: 4.5, usage: "figures : libellés et flèches" }
@@ -32,3 +36,5 @@ paires:
   - { texte: pv-amber, fond: pv-paper, minimum: 4.5, usage: "figures : « Consultez », « attendre » (bord pointillé)" }
   - { texte: pv-paper, fond: pv-green-ink, minimum: 4.5, usage: "figures : numéro d'une étape (vert)" }
   - { texte: pv-paper, fond: pv-amber, minimum: 4.5, usage: "figures : numéro d'une étape (ambre)" }
+  # Non-text contrast (WCAG 1.4.11, 3:1)
+  - { texte: pv-or, fond: pv-manche, minimum: 3.0, usage: "anneau de focus doré du pied de page" }
