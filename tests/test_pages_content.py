@@ -51,3 +51,14 @@ def test_four_cystitis_episodes_in_a_year_already_send_to_a_doctor():
     consulter = box("medicaments/maux-courants/cystite.qmd", "quand-consulter")
     assert "4 cystites ou plus en un an" in consulter
     assert "Plus de 4 cystites" not in consulter
+
+
+def test_the_levothyroxine_sheet_gives_both_bedtime_trials():
+    # Same two trials as on quand-prendre: Bach-Huynh 2009 (fasting better than breakfast or
+    # bedtime) and Bolk 2010 (bedtime better than morning). The sheet keeps the SmPC's morning
+    # dose for patients and states the disagreement, in one bullet, for professionals.
+    text = page("medicaments/classes/levothyroxine.qmd")
+    patients = text[text.index("## Pour les patients"):text.index("## Pour les professionnels")]
+    assert "coucher" not in patients
+    trials = line_with(text[text.index("## Pour les professionnels"):], "Bolk")
+    assert "Bach-Huynh" in trials and "divergent" in trials
