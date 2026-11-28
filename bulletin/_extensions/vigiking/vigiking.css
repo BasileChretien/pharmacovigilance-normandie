@@ -171,3 +171,41 @@ section.dos strong { color: #fff; }
 .dos-carte { float: right; width: 42%; max-width: 22rem; margin: 0 0 1rem 1.5rem; }
 .dos-carte img { width: 100%; height: auto; }
 @media (max-width: 40rem) { .dos-carte { float: none; width: 100%; margin: 0 0 1rem; } }
+
+/* ---------- Types of content (vigiking.lua) ---------------------------------------- */
+/* A titled block: its colour from the Word style "Bloc <titre>" (--bloc, made readable by
+   vigiking.lua), else the article's colour. */
+.bloc {
+  margin: 1.25rem 0; padding: 0.75rem 1.1rem 0.9rem; border-radius: 0 0 0.5rem 0.5rem;
+  background: var(--bloc-fond, var(--brume)); border-top: 3px solid var(--bloc, var(--accent, var(--bleu)));
+}
+.bloc[data-titre]::before {
+  content: attr(data-titre); display: block; margin-bottom: 0.35rem;
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--bloc, var(--accent, var(--bleu)));
+}
+.bloc > :last-child { margin-bottom: 0; }
+section.article[data-rubrique]::before {
+  content: attr(data-rubrique); display: block; margin-bottom: 0.4rem;
+  font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--accent, var(--bleu));
+}
+.intertitre { font-family: var(--titres); font-weight: 700; color: var(--accent, var(--bleu)); }
+.source p { margin: 1rem 0 0; font-size: 0.85rem; font-style: italic; color: var(--encre-douce); }
+.chiffres { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: 0.7rem; margin: 1.25rem 0; }
+.chiffre { padding: 0.8rem 1rem; border-radius: 0.5rem; background: var(--brume); }
+.chiffre .nombre { display: block; font-family: var(--titres); font-weight: 800; font-size: 2rem; line-height: 1.05; color: var(--accent, var(--bleu)); }
+.chiffre .libelle { font-size: 0.9rem; }
+.editorial {
+  margin: 0 0 2.5rem; padding: 1.3rem 1.5rem; border-radius: 0.75rem; background: var(--manche); color: #fff;
+}
+.editorial::before {
+  content: "Éditorial"; display: block; margin-bottom: 0.5rem;
+  font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ecume);
+}
+.editorial a { color: var(--ecume); }
+.editorial > :last-child { margin-bottom: 0; }
+table { border-collapse: collapse; font-size: 0.92rem; margin: 1rem 0; }
+table thead th { background: var(--manche); color: #fff; text-align: left; }
+table th, table td { padding: 0.45rem 0.7rem; vertical-align: top; }
+table tbody tr:nth-child(even) { background: var(--brume); }

@@ -15,13 +15,20 @@ Usage: python bulletin/word/importer.py numero.docx 2025-10 [--remplacer]
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import shutil
 import subprocess
+import tempfile
+import xml.etree.ElementTree as ET
+import zipfile
 from pathlib import Path
 
 BULLETIN = Path(__file__).resolve().parents[1]
 FILTRE = BULLETIN / "word" / "word-vers-vigiking.lua"
+W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
+# A paragraph style "Bloc <titre>" is a type of block (the template's or one an author made).
+BLOC = re.compile(r"bloc[\s:-]+\S", re.IGNORECASE)
 # Front matter key, file in bulletin/commun/.
 IMAGES_COMMUNES = {
     "logo-gauche": "logo-rouen.png",
@@ -41,6 +48,44 @@ def commande_pandoc() -> list[str]:
     raise SystemExit(
         "importer : installez Quarto (https://quarto.org), qui fournit pandoc."
     )
+
+
+def _styles_paragraphe(docx: Path) -> dict[str, tuple[str, str | None, str | None]]:
+    """Word's paragraph styles: id → (name, id it is based on, font colour)."""
+    with zipfile.ZipFile(docx) as paquet:
+        if "word/styles.xml" not in paquet.namelist():
+            return {}
+        racine = ET.fromstring(paquet.read("word/styles.xml"))
+    styles = {}
+    for st in racine.iter(f"{W}style"):
+        if st.get(f"{W}type") != "paragraph":
+            continue
+        nom, base = st.find(f"{W}name"), st.find(f"{W}basedOn")
+        couleur = st.find(f"{W}rPr/{W}color")
+        styles[st.get(f"{W}styleId")] = (
+            nom.get(f"{W}val") if nom is not None else "",
+            base.get(f"{W}val") if base is not None else None,
+            couleur.get(f"{W}val") if couleur is not None else None,
+        )
+    return styles
+
+
+def couleurs_des_blocs(docx: Path) -> dict[str, str]:
+    """The colour of each "Bloc …" style: its font colour in Word, or the one of the style
+    it is based on. Black, white and "automatic" give none (the article's colour is used)."""
+    styles = _styles_paragraphe(docx)
+    couleurs = {}
+    for nom, base, couleur in styles.values():
+        if not BLOC.match(nom):
+            continue
+        vus: set[str] = set()
+        while couleur in (None, "auto") and base and base not in vus:
+            vus.add(base)
+            _, base, couleur = styles.get(base, ("", None, None))
+        visible = couleur and couleur.lower() not in ("000000", "ffffff")
+        if visible and re.fullmatch(r"[0-9A-Fa-f]{6}", couleur):
+            couleurs[nom] = "#" + couleur.lower()
+    return couleurs
 
 
 def importer(
@@ -68,22 +113,29 @@ def importer(
             meta += ["-M", f"{cle}=images/{fichier}"]
     if (commun / "dos.md").is_file():
         meta += ["-M", "dos=../../commun/dos.md"]
-    subprocess.run(
-        [
-            *commande_pandoc(),
-            str(docx.resolve()),
-            "--from=docx+styles",
-            "--to=markdown-simple_tables-multiline_tables-grid_tables",
-            "--standalone",
-            "--wrap=none",
-            f"--lua-filter={FILTRE}",
-            "--extract-media=images",
-            f"--output={sortie.name}",
-            *meta,
-        ],
-        cwd=dossier,
-        check=True,
-    )
+    # The colours of the "Bloc …" styles, for the filter (pandoc gives it style names only).
+    with tempfile.TemporaryDirectory() as tmp:
+        couleurs = Path(tmp) / "couleurs.json"
+        couleurs.write_text(
+            json.dumps({"couleurs-blocs": couleurs_des_blocs(docx)}), encoding="utf-8"
+        )
+        subprocess.run(
+            [
+                *commande_pandoc(),
+                str(docx.resolve()),
+                "--from=docx+styles",
+                "--to=markdown-simple_tables-multiline_tables-grid_tables",
+                "--standalone",
+                "--wrap=none",
+                f"--lua-filter={FILTRE}",
+                "--extract-media=images",
+                f"--output={sortie.name}",
+                f"--metadata-file={couleurs}",
+                *meta,
+            ],
+            cwd=dossier,
+            check=True,
+        )
     return sortie
 
 

@@ -24,3 +24,5 @@ bulletin/numeros/
 bulletin/_output/
 # Logos, Vigiking banner and standard back cover used by bulletin/word/importer.py
 bulletin/commun/
+# Vigiking issues downloaded from rfcrpv.fr for the survey of block types: local only
+data/vigiking-pdf/

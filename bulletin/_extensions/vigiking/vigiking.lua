@@ -2,7 +2,15 @@
 --
 --   ## Titre {auteur="…"}                 an article, on its own page in the PDF: one column,
 --                                          or two when ::: {.saut-colonne} splits it; the
---                                          text is sized to fill the page (taille=14 sets it)
+--                                          text is sized to fill the page (taille=14 sets it);
+--                                          rubrique="Littérature" above the title (and the
+--                                          contents grouped by rubric), relecture="B. Nom"
+--   ### Intertitre                        a subheading inside the article (several short
+--                                          items under one title: "brèves")
+--   ::: {.editorial}                      before the first article: on the contents page
+--   ::: {.chiffres}                       key figures, one paragraph each: "66 % des cas…"
+--   ::: {.source}                         the official source of an article, one small line
+--   [texte]{.intertitre}                  a heading run into its paragraph
 --   ## Titre {.liste}                     a list of drug names (kept for older issues: all
 --                                          text is now left-aligned)
 --   ## Titre {.references-page}           the sources found from their DOI or PMID
@@ -10,6 +18,8 @@
 --   ## Titre {.dos}                        the back cover; its ### headings become bands
 --   ::: {.encadre}  ::: {.legende}  ::: {.saut-colonne}  ::: {.pastille couleur=rouge}
 --   ::: {.references} (small print)  ::: {.deux-colonnes}
+--   ::: {.bloc titre="Cas clinique" couleur="#b3261e"}  a titled block: a type of content of
+--                                          its own (Word style "Bloc <titre>"); colour optional
 --   [texte]{.ci}  contraindicated (red, bold)    [texte]{.cm}  CredibleMeds (orange, italic)
 --
 -- Articles are numbered and each takes a colour from its place in the issue, from blue to
@@ -51,6 +61,56 @@ local function teinte(i, n)
   return string.format("#%02x%02x%02x", c[1], c[2], c[3])
 end
 
+-- Colours of a titled block (::: {.bloc couleur="#rrggbb"}), from the author's colour: a
+-- pale tint of it behind the text, and the colour itself for the title and the rule,
+-- darkened towards ink until the title reads on that tint (WCAG AA, 4.5:1). So any
+-- colour an author picks in Word stays readable.
+local ENCRE = "#10283a"
+
+local function composantes(hex)
+  return tonumber(hex:sub(2, 3), 16), tonumber(hex:sub(4, 5), 16), tonumber(hex:sub(6, 7), 16)
+end
+
+local function melange(a, b, t)
+  local r1, g1, b1 = composantes(a)
+  local r2, g2, b2 = composantes(b)
+  local function m(x, y)
+    return math.floor(x + (y - x) * t + 0.5)
+  end
+  return string.format("#%02x%02x%02x", m(r1, r2), m(g1, g2), m(b1, b2))
+end
+
+local function luminance(hex)
+  local function lin(v)
+    v = v / 255
+    return v <= 0.03928 and v / 12.92 or ((v + 0.055) / 1.055) ^ 2.4
+  end
+  local r, g, b = composantes(hex)
+  return 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b)
+end
+
+local function contraste(a, b)
+  local la, lb = luminance(a), luminance(b)
+  if la < lb then
+    la, lb = lb, la
+  end
+  return (la + 0.05) / (lb + 0.05)
+end
+
+local function couleurs_bloc(hex)
+  if not (hex and hex:match("^#%x%x%x%x%x%x$")) then
+    return nil
+  end
+  hex = hex:lower()
+  local fond = melange(hex, "#ffffff", 0.9)
+  local titre, t = hex, 0
+  while contraste(titre, fond) < 4.5 and t < 1 do
+    t = t + 0.1
+    titre = melange(hex, ENCRE, t)
+  end
+  return titre, fond
+end
+
 local function est_article(b)
   return b.t == "Header"
     and b.level == 2
@@ -66,11 +126,66 @@ local function envelopper(open, blocks)
   return out
 end
 
+-- A titled block: a Typst call for the PDF; colours as CSS variables for the web page.
+local function bloc(el)
+  local titre, fond = couleurs_bloc(el.attributes.couleur)
+  if not TYPST then
+    el.attributes.couleur = nil
+    if titre then
+      el.attributes.style = "--bloc: " .. titre .. "; --bloc-fond: " .. fond
+    end
+    return el
+  end
+  local args = {}
+  if el.attributes.titre then
+    table.insert(args, "titre: " .. chaine(el.attributes.titre))
+  end
+  if titre then
+    table.insert(args, 'couleur: rgb("' .. titre .. '")')
+    table.insert(args, 'fond: rgb("' .. fond .. '")')
+  end
+  return envelopper("#bloc(" .. table.concat(args, ", ") .. ")[", el.content)
+end
+
+-- Key figures (::: chiffres, one paragraph each): the leading number, then what it counts.
+local function chiffre(bloc_texte)
+  local texte = pandoc.utils.stringify(bloc_texte):gsub("\194\160", " ")
+  local nombre, libelle = texte:match("^%s*([%+%-<>~]?%s*%d[%d%s.,]*%s*%%?)%s+(.+)$")
+  if not nombre then
+    return "", texte
+  end
+  return (nombre:gsub("%s+$", "")), libelle
+end
+
+local function chiffres(el)
+  local items = {}
+  for _, b in ipairs(el.content) do
+    if b.t == "Para" or b.t == "Plain" then
+      local nombre, libelle = chiffre(b)
+      table.insert(items, { nombre, libelle })
+    end
+  end
+  if TYPST then
+    local args = {}
+    for _, it in ipairs(items) do
+      table.insert(args, "(" .. chaine(it[1]) .. ", " .. chaine(it[2]) .. ")")
+    end
+    return raw_block("#chiffres(" .. table.concat(args, ", ") .. ")")
+  end
+  local tuiles = pandoc.Blocks({})
+  for _, it in ipairs(items) do
+    tuiles:insert(pandoc.Div(pandoc.Plain({
+      pandoc.Span(it[1], { class = "nombre" }), pandoc.Space(), pandoc.Span(it[2], { class = "libelle" }),
+    }), { class = "chiffre" }))
+  end
+  return pandoc.Div(tuiles, { class = "chiffres" })
+end
+
 local function Span(el)
   if not TYPST then
     return nil
   end
-  for _, cls in ipairs({ "ci", "cm" }) do
+  for _, cls in ipairs({ "ci", "cm", "intertitre" }) do
     if el.classes:includes(cls) then
       local out = pandoc.Inlines({ raw_inline("#" .. cls .. "[") })
       out:extend(el.content)
@@ -84,6 +199,12 @@ local function Div(el)
   if el.classes:includes("saut-colonne") then
     return TYPST and raw_block(COLBREAK) or {}
   end
+  if el.classes:includes("bloc") then
+    return bloc(el)
+  end
+  if el.classes:includes("chiffres") then
+    return chiffres(el)
+  end
   if not TYPST then
     return nil
   end
@@ -91,7 +212,7 @@ local function Div(el)
     local couleur = el.attributes.couleur or "bleu"
     return envelopper("#pastille(couleur: " .. chaine(couleur) .. ")[", el.content)
   end
-  for _, cls in ipairs({ "encadre", "legende", "references", "deux-colonnes" }) do
+  for _, cls in ipairs({ "encadre", "legende", "references", "deux-colonnes", "source", "editorial" }) do
     if el.classes:includes(cls) then
       return envelopper("#" .. cls .. "[", el.content)
     end
@@ -126,8 +247,10 @@ local function ouverture(b)
     return "#annexe([" .. titre .. "])["
   end
   local args = { "titre-texte: " .. chaine(pandoc.utils.stringify(b.content)) }
-  if b.attributes.auteur then
-    table.insert(args, "auteur: " .. chaine(b.attributes.auteur))
+  for _, cle in ipairs({ "auteur", "rubrique", "relecture" }) do
+    if b.attributes[cle] then
+      table.insert(args, cle .. ": " .. chaine(b.attributes[cle]))
+    end
   end
   if b.attributes.taille then
     table.insert(args, "taille: " .. (tonumber(b.attributes.taille) or 15) .. "pt")
@@ -214,8 +337,15 @@ local function sections_web(blocks, n)
       i = i + 1
       b.classes:insert("article")
       b.attributes.style = "--accent: " .. teinte(i, n)
+      local signe = {}
       if b.attributes.auteur then
-        out:insert(pandoc.Div(pandoc.Para({ pandoc.Str("Par " .. b.attributes.auteur) }), { class = "auteur" }))
+        table.insert(signe, "Par " .. b.attributes.auteur)
+      end
+      if b.attributes.relecture then
+        table.insert(signe, "Relecture : " .. b.attributes.relecture)
+      end
+      if #signe > 0 then
+        out:insert(pandoc.Div(pandoc.Para({ pandoc.Str(table.concat(signe, " · ")) }), { class = "auteur" }))
       end
     elseif b.t == "Header" and b.level == 2 and b.classes:includes("dos") then
       local alt = "Carte de la Normandie : les villes reliées aux centres de pharmacovigilance de Caen et de Rouen"

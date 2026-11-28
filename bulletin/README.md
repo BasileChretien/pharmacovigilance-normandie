@@ -63,9 +63,18 @@ bulletin :
 |---|---|
 | « Titre » / « Sous-titre » | le thème du numéro / son mois |
 | une image avant le premier article | la couverture |
+| « Éditorial », avant le premier article | un encadré sur la page du sommaire |
 | « Titre 1 », puis une ligne « Auteur : Initiale. Nom » | un article, sur sa page |
+| une ligne « Rubrique : Littérature » sous le titre | la rubrique au-dessus du titre ; le sommaire regroupe les articles par rubrique |
+| une ligne « Relecture : Initiale. Nom » | le relecteur, après l'auteur |
+| « Titre 2 » | un intertitre dans l'article (plusieurs brèves sous un même titre) |
 | un paragraphe « [saut de colonne] » | deux colonnes, coupées à cet endroit |
 | « Encadré » | un encadré |
+| « Bloc Cas clinique », « Bloc À retenir », « Bloc En pratique », « Bloc Le saviez-vous ? », « Bloc Mécanisme », « Bloc Attention », « Bloc Pour les patients », « Bloc Pour les pharmaciens », « Bloc Pour les prescripteurs », « Bloc Annonce » | un bloc titré dans sa couleur (voir plus bas) |
+| « Chiffre clé » (un paragraphe par chiffre) | une rangée de tuiles : le nombre en grand, puis ce qu'il compte |
+| un tableau (Insertion › Tableau), avec une ligne d'en-tête | un tableau à en-tête bleu, une ligne sur deux teintée |
+| « Source » | la source officielle de l'article, en petits caractères |
+| « Intertitre en ligne » (caractères) | quelques mots en couleur qui ouvrent un paragraphe |
 | « Catégorie rouge » (verte, bleue, jaune) | une étiquette de catégorie ; l'article devient une liste |
 | « Contre-indication », « CredibleMeds » (caractères) | rouge et gras / orange et italique |
 | « Légende », « Références » | petits caractères |
@@ -75,6 +84,21 @@ bulletin :
 Les couleurs se mettent par ces styles : une couleur appliquée à la main se perd (la liste
 « à vérifier » le signale).
 
+### Les types de blocs, et en créer un
+
+Les dix types du modèle viennent d'un relevé des 25 numéros parus de 2017 à 2025 (cas
+cliniques, messages à retenir, conduites à tenir, encadrés « Le saviez-vous ? », conseils par
+public, annonces…). Chacun est un style de paragraphe dont le nom commence par « Bloc » ;
+sa couleur de police dans Word devient la couleur du bloc.
+
+Un auteur crée son propre type de la même façon : dans Word, volet Styles, « Nouveau
+style », nom « Bloc » suivi du titre (par exemple « Bloc Interaction »), type Paragraphe,
+basé sur Normal, avec la couleur de police de son choix. Le bulletin en fait un bloc titré
+« Interaction » dans cette couleur, assombrie si besoin pour que le titre reste lisible
+(contraste WCAG AA) ; sans couleur, le bloc prend celle de l'article. La liste à vérifier ne
+signale jamais un style « Bloc … ». Pour qu'un nouveau type serve à tous, ajoutez-le à
+`BLOCS` dans `word/faire_modele.py` et à `word/modele.md`, puis refaites le modèle.
+
 ## Écrire en texte
 
 Un numéro est aussi un fichier texte `numeros/AAAA-MM/vigiking-AAAA-MM.qmd` (voir
@@ -83,7 +107,14 @@ Un numéro est aussi un fichier texte `numeros/AAAA-MM/vigiking-AAAA-MM.qmd` (vo
 | Ce qu'on écrit | Ce que ça donne |
 |---|---|
 | `## Titre {auteur="Initiale. Nom"}` | un article sur sa page ; la taille du texte remplit la page |
+| `## Titre {auteur="…" rubrique="Littérature" relecture="…"}` | sa rubrique au-dessus du titre, et le relecteur |
 | `## Titre {auteur="…" taille=14}` | la taille du texte fixée à la main |
+| `### Intertitre` | un intertitre dans l'article |
+| `::: {.editorial}` avant le premier article | l'éditorial, sur la page du sommaire |
+| `::: {.bloc titre="Cas clinique" couleur="#0d4a5e"}` | un bloc titré (couleur facultative) |
+| `::: {.chiffres}` (un paragraphe par chiffre : `66 % des cas…`) | des tuiles de chiffres clés |
+| `::: {.source}` | la source officielle de l'article |
+| `[En pratique]{.intertitre}` | un intertitre en ligne |
 | `::: {.saut-colonne}` | l'article passe sur deux colonnes, coupées à cet endroit |
 | `::: {.encadre}` | un encadré |
 | `::: {.pastille couleur=rouge}` | une étiquette de catégorie (rouge, vert, bleu, jaune) |
@@ -118,9 +149,11 @@ Options de `fabriquer.py` : `--mois AAAA-MM` (si le sous-titre ne le donne pas),
 - `_extensions/vigiking/` : la mise en page (`typst-template.typ` pour le PDF, `vigiking.css`
   pour le web, `vigiking.lua` commun), les polices (`fonts/`, licence OFL) et la carte
   (`reseau.svg`, `reseau.typ`, générés).
-- `guide/` : le mode d'emploi illustré pour les auteurs (`index.html`, qui reprend les
-  polices de `_extensions/vigiking/fonts/`), avec des pages de `exemple/exemple.qmd` et d'un
-  numéro d'essai fait depuis Word (pages des références et du dos).
+- `guide/` : le mode d'emploi illustré pour les auteurs. Il se modifie dans `source.html`,
+  puis `uv run python bulletin/guide/construire.py` écrit `index.html` (qui reprend les polices
+  de `_extensions/vigiking/fonts/`) ; `--en-ligne DOSSIER` écrit la version publiée en ligne.
+  Images : pages de `exemple/exemple.qmd` et d'un numéro d'essai fait depuis Word (pages des
+  références et du dos).
 - `commun/` (local, hors du dépôt) : logos, bandeau et dos repris dans chaque numéro.
 
 ## À décider avant d'aller plus loin

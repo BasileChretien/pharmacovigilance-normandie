@@ -46,6 +46,7 @@ STYLES = {
     "Caption": ("paragraph", "caption"),
     "Encadr": ("paragraph", "Encadré"),
     "Perso": ("paragraph", "Mon encadré vert"),
+    "BlocPerso": ("paragraph", "Bloc Interaction"),
     "CI": ("character", "Contre-indication"),
 }
 
@@ -248,12 +249,14 @@ def test_unknown_styles_are_capped(tmp_path):
     assert messages[-1].startswith("… et 2 autre(s) style(s)")
 
 
-def test_a_heading_2_would_become_an_article_of_its_own(tmp_path):
+def test_a_block_type_an_author_created_raises_nothing(tmp_path):
+    corps = _texte("Article", "Titre1") + _texte("Une interaction.", "BlocPerso")
+    assert _messages(ver.verifier_docx(_docx(tmp_path, corps)), "verifier") == []
+
+
+def test_a_heading_2_is_a_subheading_and_raises_nothing(tmp_path):
     corps = _texte("Article", "Titre1") + _texte("Intertitre", "Titre2")
-    (message,) = _messages(ver.verifier_docx(_docx(tmp_path, corps)), "verifier")
-    assert message.startswith(
-        "Article « Article » : le style « Titre 2 » fait de « Intertitre » un article à part"
-    )
+    assert _messages(ver.verifier_docx(_docx(tmp_path, corps)), "verifier") == []
 
 
 def test_a_file_that_is_not_a_word_document_stops(tmp_path):

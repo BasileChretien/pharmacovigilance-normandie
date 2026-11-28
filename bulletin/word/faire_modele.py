@@ -50,7 +50,42 @@ LOOKS = {
     ),
     "Contre-indication": ("", '<w:b/><w:color w:val="C00000"/>'),
     "CredibleMeds": ("", '<w:i/><w:color w:val="B45309"/>'),
+    "Éditorial": (
+        '<w:shd w:val="clear" w:color="auto" w:fill="0D4A5E"/>',
+        '<w:color w:val="FFFFFF"/>',
+    ),
+    "Source": ("", '<w:i/><w:sz w:val="18"/><w:color w:val="46586A"/>'),
+    "Chiffre clé": ("", '<w:b/><w:sz w:val="28"/><w:color w:val="0A5C9E"/>'),
+    "Intertitre en ligne": ("", '<w:b/><w:color w:val="0A5C9E"/>'),
 }
+
+# The template's types of blocks: Word style "Bloc <titre>" -> its colour. The font colour
+# is what importer.py reads (an author's own "Bloc …" style works the same way); the top
+# border and the pale tint only show the type in Word.
+BLOCS = {
+    "Bloc Cas clinique": "0D4A5E",
+    "Bloc À retenir": "0B6B45",
+    "Bloc En pratique": "0A5C9E",
+    "Bloc Le saviez-vous ?": "2A8FBD",
+    "Bloc Mécanisme": "46586A",
+    "Bloc Attention": "B3261E",
+    "Bloc Pour les patients": "8A3C6B",
+    "Bloc Pour les pharmaciens": "0B6472",
+    "Bloc Pour les prescripteurs": "3B5BA9",
+    "Bloc Annonce": "B7791F",
+}
+
+
+def teinte_pale(couleur: str) -> str:
+    """The colour mixed with 90 % white, as the bulletin's block background."""
+    rgb = [int(couleur[i : i + 2], 16) for i in (0, 2, 4)]
+    return "".join(f"{round(c + (255 - c) * 0.9):02X}" for c in rgb)
+
+
+for _nom, _couleur in BLOCS.items():
+    _bordure = f'<w:pBdr><w:top w:val="single" w:sz="18" w:space="4" w:color="{_couleur}"/></w:pBdr>'
+    _fond = f'<w:shd w:val="clear" w:color="auto" w:fill="{teinte_pale(_couleur)}"/>'
+    LOOKS[_nom] = (_bordure + _fond, f'<w:color w:val="{_couleur}"/>')
 
 
 def styler(styles_xml: str) -> str:

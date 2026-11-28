@@ -39,9 +39,6 @@ MESSAGES = {
     "le style « Contre-indication » (rouge) ou « CredibleMeds » (orange).",
     "fond": "{lieu} : fond coloré mis à la main sur {quoi} — il sera perdu. Utilisez le "
     "style « Encadré » (encadré bleu) ou un style « Catégorie … ».",
-    "titre 2": "{lieu} : le style « Titre 2 » fait de {quoi} un article à part, sur sa "
-    "propre page. Pour un intertitre, écrivez-le en gras ; pour un nouvel article, "
-    "utilisez « Titre 1 ».",
     "image": "{lieu} : {quoi} {plus} pas de texte de remplacement, lu par les lecteurs d'écran "
     f"(dans Word : {ALT}).",
     "style": "{lieu} : le style « {quoi} »{plus} ne fait pas partie du modèle — sa mise "
@@ -113,11 +110,15 @@ PIC = "{http://schemas.openxmlformats.org/drawingml/2006/picture}"
 # Styles of the template (modele.md), compared case-insensitively.
 STYLES_MODELE = {
     "encadré", "légende", "références", "catégorie rouge", "catégorie verte",
-    "catégorie bleue", "catégorie jaune",
+    "catégorie bleue", "catégorie jaune", "éditorial", "source", "chiffre clé",
 }  # fmt: skip
+# A paragraph style "Bloc <titre>" is a type of block: the template's, or one an author
+# created in Word (word-vers-vigiking.lua makes it a titled box). Never flagged.
+PREFIXES_BLOCS = ("bloc ", "bloc:", "bloc-")
 CARACTERES_MODELE = {
     "contre-indication",
     "crediblemeds",
+    "intertitre en ligne",
     "hyperlink",
     "lien hypertexte",
 }
@@ -130,12 +131,12 @@ STYLES_CONNUS = STYLES_MODELE | {
     "en-tête", "pied de page", "annotation text", "plain text", "definition",
     "definition term", "default",
 }  # fmt: skip
-PREFIXES_CONNUS = (
+PREFIXES_CONNUS = PREFIXES_BLOCS + (
     "list", "liste", "paragraphe de liste", "toc ", "heading ", "titre ", "body text",
     "corps de texte", "caption", "légende", "image caption", "table caption",
     "footnote", "note de bas", "endnote", "note de fin",
 )  # fmt: skip
-TITRES_1, TITRES_2 = {"heading 1", "titre 1"}, {"heading 2", "titre 2"}
+TITRES_1 = {"heading 1", "titre 1"}
 SOUS_TITRES = {"subtitle", "sous-titre"}
 SANS_COULEUR = {"", "auto", "000000", "none", "ffffff"}
 STYLES_SIGNALES_MAX = 5
@@ -224,8 +225,6 @@ def _constats(corps: ET.Element, noms: dict[str, str]) -> Iterator[tuple]:
             article = _extrait(texte, 60) or "(titre vide)"
         elif cle in SOUS_TITRES and texte.strip():
             yield "sous-titre", None, None
-        elif cle in TITRES_2:
-            yield "titre 2", article, _extrait(texte)
         elif cle not in STYLES_CONNUS and not cle.startswith(PREFIXES_CONNUS):
             yield "style", article, nom
         if (
@@ -275,8 +274,7 @@ def _alertes_docx(constats: list[tuple]) -> list[Alerte]:
     alertes = []
     if not any(genre == "sous-titre" for genre, _, _ in constats):
         alertes.append(_alerte("corriger", "sous-titre"))
-    unites = {"couleur": ("corriger", "passage"), "fond": ("verifier", "paragraphe"),
-              "titre 2": ("verifier", "titre")}  # fmt: skip
+    unites = {"couleur": ("corriger", "passage"), "fond": ("verifier", "paragraphe")}
     for genre, (niveau, unite) in unites.items():
         for article, details in _grouper(constats, genre).items():
             alertes.append(

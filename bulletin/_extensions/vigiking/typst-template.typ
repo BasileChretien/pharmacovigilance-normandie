@@ -79,6 +79,49 @@ $reseau.typ()$
   ))
 }
 
+// A titled block, one type of content (clinical case, take-home points, did you know…):
+// a Word style "Bloc <title>", the template's or one an author created. Its colour comes
+// from that style, made readable by vigiking.lua; without one, the article's colour.
+#let bloc(titre: none, couleur: auto, fond: auto, corps) = context {
+  let c = if couleur == auto { accent.get() } else { couleur }
+  let f = if fond == auto { brume } else { fond }
+  block(
+    width: 100%, breakable: false, fill: f, radius: (bottom: 6pt),
+    stroke: (top: 2.5pt + c), inset: (x: 14pt, top: 9pt, bottom: 11pt),
+    {
+      if titre != none {
+        block(below: 0.5em, text(font: texte, size: 0.72em, weight: "bold", tracking: 0.12em, fill: c, upper(titre)))
+      }
+      corps
+    },
+  )
+}
+
+// The official source of an article (an ANSM letter and its date), on one small line.
+#let source(corps) = block(above: 10pt, text(size: 9.5pt, style: "italic", fill: encre-douce, corps))
+
+// A heading run into its paragraph ("En pratique", "Mécanisme"…), in the article's colour.
+#let intertitre(corps) = context text(font: titres, weight: 700, fill: accent.get(), corps)
+
+// Key figures: a row of tiles, each a large number and what it counts.
+#let chiffres(..items) = context {
+  let c = accent.get()
+  let liste = items.pos()
+  grid(
+    columns: (1fr,) * calc.min(calc.max(liste.len(), 1), 4), column-gutter: 10pt, row-gutter: 10pt,
+    ..liste.map(((nombre, libelle)) => block(width: 100%, fill: brume, radius: 6pt, inset: (x: 12pt, y: 10pt), {
+      if nombre != "" {
+        block(below: 0.3em, text(font: titres, weight: 800, size: 2.1em, fill: c, nombre))
+      }
+      text(size: 0.82em, libelle)
+    })),
+  )
+}
+
+// The editorial, written before the first article: shown on the contents page.
+#let editorial-etat = state("vigiking-editorial", none)
+#let editorial(corps) = editorial-etat.update(corps)
+
 // The issue as a line of dots, one per article, the current one large and coloured; each
 // dot links to its article. It echoes the network of the CRPV logo.
 #let piste(i, n) = context {
@@ -99,8 +142,9 @@ $reseau.typ()$
   })
 }
 
-// Title of an article: its number, large, in the article's colour; the author under it.
-#let entete(i, n, auteur, titre) = {
+// Title of an article: its number, large, in the article's colour; its rubric above the
+// title ("Cas d'ici et d'ailleurs", "Littérature"…); the author and the reviewer under it.
+#let entete(i, n, auteur, titre, rubrique: none, relecture: none) = {
   piste(i, n)
   v(10pt)
   grid(
@@ -111,10 +155,16 @@ $reseau.typ()$
       if i < 10 [0#i] else [#i],
     ),
     {
+      if rubrique != none and rubrique != "" {
+        block(below: 6pt, surtitre(rubrique, couleur: teinte(i, n), taille: 9pt))
+      }
       heading(level: 2, titre)
-      if auteur != none and auteur != "" {
+      let signe = ()
+      if auteur != none and auteur != "" { signe.push([Par #auteur]) }
+      if relecture != none and relecture != "" { signe.push([Relecture : #relecture]) }
+      if signe.len() > 0 {
         v(5pt)
-        surtitre[Par #auteur]
+        surtitre(signe.join[#h(6pt) · #h(6pt)])
       }
     },
   )
@@ -140,7 +190,10 @@ $reseau.typ()$
 // vigiking.lua passes each column as its own block). The text gets the largest size at
 // which every column fits the page, so nobody resizes text by hand; taille: sets it.
 // Each article leaves a measure (size, overflow) that the build's checks read.
-#let article(auteur: none, taille: auto, justifier: false, titre-texte: "", titre, ..colonnes) = {
+#let article(
+  auteur: none, rubrique: none, relecture: none, taille: auto, justifier: false,
+  titre-texte: "", titre, ..colonnes,
+) = {
   pagebreak(weak: true)
   num-article.step()
   context {
@@ -151,7 +204,7 @@ $reseau.typ()$
     let nb = calc.max(blocs.len(), 1)
     // The whole page at a text size: title block, then the columns side by side.
     let page-a(t) = {
-      entete(i, n, auteur, titre)
+      entete(i, n, auteur, titre, rubrique: rubrique, relecture: relecture)
       grid(
         columns: (1fr,) * nb, column-gutter: gouttiere,
         ..blocs.map(c => mise-en-forme(t, c, justifier: justifier)),
@@ -165,7 +218,7 @@ $reseau.typ()$
       let t = if taille != auto { taille } else {
         tailles.filter(tient).at(0, default: tailles.last())
       }
-      [#metadata((titre: titre, auteur: auteur)) <vigiking-article>]
+      [#metadata((titre: titre, auteur: auteur, rubrique: rubrique)) <vigiking-article>]
       [#metadata((titre: titre-texte, page: here().page(), taille: t.pt(), deborde: hauteur(t) > zone.height)) <vigiking-mesure>]
       page-a(t)
     })
@@ -215,39 +268,68 @@ $reseau.typ()$
   ))
 }
 
-// Contents: the articles, numbered in their colour, with their page.
+// Contents: the articles, numbered in their colour, with their page, grouped under their
+// rubric when they have one; the editorial, when the issue has one, beside the list.
 #let sommaire(numero, title) = context {
   let arts = query(<vigiking-article>)
   let n = arts.len()
+  let edito = editorial-etat.final()
+  let serre = edito != none  // a shorter list, beside the editorial
   [#metadata("sommaire") <sommaire>]
   barre-or
   h(8pt)
   surtitre[Dans ce numéro]
   v(6pt)
   text(font: titres, weight: 700, size: 22pt, fill: encre, title)
-  v(18pt)
+  v(if serre { 12pt } else { 18pt })
   let entree(k, a) = link(a.location(), grid(
-    columns: (2.2cm, 1fr, auto), column-gutter: 10pt, align: (left + top, left + top, right + top),
-    text(font: titres, weight: 800, size: 24pt, fill: teinte(k + 1, n), top-edge: "cap-height",
-      if k < 9 [0#(k + 1)] else [#(k + 1)]),
+    columns: (if serre { 1.5cm } else { 2.2cm }, 1fr, auto), column-gutter: 10pt,
+    align: (left + top, left + top, right + top),
+    text(font: titres, weight: 800, size: if serre { 17pt } else { 24pt }, fill: teinte(k + 1, n),
+      top-edge: "cap-height", if k < 9 [0#(k + 1)] else [#(k + 1)]),
     {
-      text(size: 14pt, weight: 600, fill: encre, a.value.titre)
+      text(size: if serre { 11.5pt } else { 14pt }, weight: 600, fill: encre, a.value.titre)
       if a.value.auteur != none and a.value.auteur != "" {
         linebreak()
-        text(size: 9.5pt, fill: encre-douce, a.value.auteur)
+        text(size: 9pt, fill: encre-douce, a.value.auteur)
       }
     },
-    text(size: 11pt, fill: encre-douce)[p. #a.location().page()],
+    text(size: 10pt, fill: encre-douce)[p. #a.location().page()],
   ))
-  let cases = arts.enumerate().map(((k, a)) => block(
-    width: 100%, inset: (y: 7pt), stroke: (top: 0.75pt + filet), entree(k, a),
-  ))
-  let par-colonne = if n > 5 { calc.ceil(n / 2) } else { n }
-  grid(
-    columns: if n > 5 { (1fr, 1fr) } else { (1fr,) }, column-gutter: 1.2cm,
-    stack(..cases.slice(0, par-colonne)),
-    if n > 5 { stack(..cases.slice(par-colonne)) },
-  )
+  // One row per article, and the rubric's name before the first article of each rubric.
+  let lignes = ()
+  let precedente = none
+  for (k, a) in arts.enumerate() {
+    let r = a.value.at("rubrique", default: none)
+    if r != none and r != "" and r != precedente {
+      lignes.push(block(width: 100%, inset: (top: 10pt, bottom: 5pt),
+        surtitre(r, couleur: teinte(k + 1, n), taille: 8.5pt)))
+    }
+    precedente = r
+    lignes.push(block(width: 100%, inset: (y: if serre { 5pt } else { 7pt }),
+      stroke: (top: 0.75pt + filet), entree(k, a)))
+  }
+  let liste = if serre or n <= 5 { stack(..lignes) } else {
+    let moitie = calc.ceil(lignes.len() / 2)
+    grid(columns: (1fr, 1fr), column-gutter: 1.2cm,
+      stack(..lignes.slice(0, moitie)), stack(..lignes.slice(moitie)))
+  }
+  if edito == none { liste } else {
+    grid(
+      columns: (1fr, 1.3fr), column-gutter: 1.2cm,
+      block(width: 100%, fill: manche, radius: 8pt, inset: 16pt, {
+        set text(size: 11pt, fill: white)
+        set par(leading: 0.55em, spacing: 0.75em)
+        show strong: set text(fill: white)
+        block(below: 10pt, surtitre([Éditorial], couleur: ecume, taille: 9pt))
+        // Links in sea foam on the dark box, as on the back cover.
+        fond-sombre.update(true)
+        edito
+        fond-sombre.update(false)
+      }),
+      liste,
+    )
+  }
 }
 
 // Cover: the logos and the Vigiking banner in a white band, then the theme of the issue on
@@ -334,6 +416,15 @@ $reseau.typ()$
     text(font: titres, size: 1.05em, weight: 700, fill: encre, it.body),
   )
   show strong: set text(weight: "bold")
+  // Tables: a header row on the Channel blue, light banding, smaller text (real tables
+  // pasted from Word, not pictures of tables).
+  set table(
+    stroke: none, inset: (x: 8pt, y: 5pt),
+    fill: (_, y) => if y == 0 { manche } else if calc.even(y) { brume } else { none },
+  )
+  show table.cell.where(y: 0): set text(fill: white, weight: "bold")
+  show table: set text(size: 0.85em)
+  show table: set par(justify: false)
   show figure.caption: it => text(size: 10pt, fill: encre-douce, it.body)
   show figure: set block(above: 10pt, below: 12pt)
   show figure: it => {

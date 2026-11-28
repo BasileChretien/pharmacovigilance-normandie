@@ -5,7 +5,12 @@
 --   Titre (style "Title")                           title:
 --   Sous-titre (style "Subtitle")                   numero: (the month)
 --   Titre 1                                         ## an article
---   "Auteur : A. Nom" right after the title         {auteur="A. Nom"}
+--   "Auteur : A. Nom" right after the title         {auteur="A. Nom"}; also "Rubrique : …"
+--     (and "Relecture : B. Nom")                     and "Relecture : …" lines
+--   Titre 2 (and below)                             ### a subheading inside the article
+--   paragraph style "Éditorial" (before the first   ::: editorial, on the contents page
+--     article), "Source", "Chiffre clé"              ::: source, ::: chiffres
+--   character style "Intertitre en ligne"           [texte]{.intertitre}
 --   a paragraph "[saut de colonne]"                 two columns, split there; without it,
 --                                                   one column that fills its page
 --   paragraph style "Encadré", "Légende",           ::: encadre, legende, references
@@ -17,27 +22,63 @@
 --   picture, then a "Caption"/"Légende de figure"   a figure with its caption
 --     paragraph
 --   a picture before the first article              the cover illustration
+--   paragraph style "Bloc <titre>" (the template's   ::: {.bloc titre="<titre>"
+--     types, or one an author created), its font      couleur="#rrggbb"}, a titled box
+--     colour in Word read by importer.py
 
-local BLOCS = { ["Encadré"] = "encadre", ["Légende"] = "legende", ["Références"] = "references" }
+local BLOCS = {
+  ["Encadré"] = "encadre",
+  ["Légende"] = "legende",
+  ["Références"] = "references",
+  ["Éditorial"] = "editorial",
+  ["Source"] = "source",
+  ["Chiffre clé"] = "chiffres",
+}
 local PASTILLES = {
   ["Catégorie rouge"] = "rouge",
   ["Catégorie verte"] = "vert",
   ["Catégorie bleue"] = "bleu",
   ["Catégorie jaune"] = "jaune",
 }
-local CARACTERES = { ["Contre-indication"] = "ci", ["CredibleMeds"] = "cm" }
+local CARACTERES = { ["Contre-indication"] = "ci", ["CredibleMeds"] = "cm", ["Intertitre en ligne"] = "intertitre" }
 local LEGENDES = { ["Caption"] = true, ["Image Caption"] = true, ["Légende de figure"] = true }
 local SAUT = "[saut de colonne]"
+-- Colour of each "Bloc …" style, read from the .docx by importer.py (metadata couleurs-blocs).
+local COULEURS_BLOCS = {}
 
 local function style(el)
   return el.attributes["custom-style"]
 end
 
+local function lire_couleurs(meta)
+  if meta["couleurs-blocs"] then
+    for nom, valeur in pairs(meta["couleurs-blocs"]) do
+      COULEURS_BLOCS[nom] = pandoc.utils.stringify(valeur)
+    end
+    meta["couleurs-blocs"] = nil
+    return meta
+  end
+end
+
+-- A paragraph style "Bloc <titre>" (the template's types, or one an author created in
+-- Word): a titled box. "Blocage" is not one: "Bloc" must be followed by a space, : or -.
+local function titre_de_bloc(s)
+  if s then
+    local titre = s:match("^[Bb][Ll][Oo][Cc][%s:%-]+(.+)$")
+    return titre and (titre:gsub("%s+$", ""))
+  end
+end
+
 -- Word paragraph styles: ours become classes; every other style ("Body Text"…) goes.
 local function Div(el)
   local s = style(el)
+  local titre = titre_de_bloc(s)
   if BLOCS[s] then
     return pandoc.Div(el.content, { class = BLOCS[s] })
+  elseif titre then
+    local attributs = { titre = titre }
+    attributs.couleur = COULEURS_BLOCS[s]
+    return pandoc.Div(el.content, pandoc.Attr("", { "bloc" }, attributs))
   elseif PASTILLES[s] then
     return pandoc.Div(el.content, pandoc.Attr("", { "pastille" }, { couleur = PASTILLES[s] }))
   elseif LEGENDES[s] then
@@ -95,9 +136,20 @@ local function Figure(fig)
 end
 
 -- The author line right under a title: "Auteur : A. Nom" (or "Auteurs :").
-local function auteur(bloc)
+-- The lines right under an article's title: "Auteur : A. Nom" (or "Auteurs :"), "Rubrique :
+-- Littérature", "Relecture : B. Nom" (or "Relu par :"), in any order.
+local LIGNES = {
+  auteur = "auteur", auteurs = "auteur", rubrique = "rubrique",
+  relecture = "relecture", ["relu par"] = "relecture",
+}
+
+local function ligne_titre(bloc)
   if bloc and bloc.t == "Para" then
-    return pandoc.utils.stringify(bloc):match("^%s*Auteurs?%s*:%s*(.-)%s*$")
+    local cle, valeur = pandoc.utils.stringify(bloc):match("^%s*([^:]-)%s*:%s*(.-)%s*$")
+    local nom = cle and LIGNES[pandoc.text.lower(cle)]
+    if nom and valeur ~= "" then
+      return nom, valeur
+    end
   end
 end
 
@@ -105,17 +157,26 @@ local function seule_image(bloc)
   return bloc and bloc.t == "Para" and #bloc.content == 1 and bloc.content[1].t == "Image"
 end
 
--- Consecutive paragraphs in one style ("Encadré"…): one block, so one box.
-local FUSIONNABLES = { encadre = true, legende = true, references = true }
+-- Consecutive paragraphs in one style ("Encadré", one "Bloc …"): one block, so one box.
+local FUSIONNABLES = {
+  encadre = true, legende = true, references = true, bloc = true,
+  editorial = true, source = true, chiffres = true,
+}
+
+local function meme_boite(a, b)
+  if not (a and a.t == "Div" and b.t == "Div" and #a.classes == 1 and #b.classes == 1) then
+    return false
+  end
+  local cls = a.classes[1]
+  return cls == b.classes[1] and FUSIONNABLES[cls] == true
+    and (cls ~= "bloc" or a.attributes.titre == b.attributes.titre)
+end
 
 local function fusionner(blocks)
   local out = pandoc.Blocks({})
   for _, b in ipairs(blocks) do
-    local precedent = out[#out]
-    local cls = b.t == "Div" and #b.classes == 1 and b.classes[1] or nil
-    if cls and FUSIONNABLES[cls] and precedent and precedent.t == "Div"
-        and #precedent.classes == 1 and precedent.classes[1] == cls then
-      precedent.content:extend(b.content)
+    if meme_boite(out[#out], b) then
+      out[#out].content:extend(b.content)
     else
       out:insert(b)
     end
@@ -169,12 +230,21 @@ local function articles(blocks)
     if b.t == "Header" and b.level == 1 then
       fermer()
       local h = pandoc.Header(2, b.content, pandoc.Attr("", {}, {}))
-      local nom = auteur(blocks[i + 1])
-      if nom then
-        h.attributes.auteur = nom
+      local cle, valeur = ligne_titre(blocks[i + 1])
+      while cle do
+        h.attributes[cle] = valeur
         i = i + 1
+        cle, valeur = ligne_titre(blocks[i + 1])
       end
       en_cours = { titre = h, corps = pandoc.Blocks({}) }
+    elseif b.t == "Header" then
+      -- "Titre 2" and below: subheadings inside the article (### …), never a new article.
+      b.level = b.level + 1
+      if en_cours then
+        en_cours.corps:insert(b)
+      else
+        out:insert(b)
+      end
     elseif en_cours then
       en_cours.corps:insert(b)
     else
@@ -240,6 +310,7 @@ local function document(doc)
 end
 
 return {
+  { Meta = lire_couleurs },
   { Div = Div, Span = Span, Para = Para, Image = Image },
   { Figure = Figure },
   { Pandoc = document },
