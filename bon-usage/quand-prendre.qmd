@@ -9,46 +9,52 @@ prochaine_relecture: null
 sources:
   - titre: "RCP et notice LEVOTHYROX 100 microgrammes, comprimé sécable (base de données publique des médicaments)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/68416845/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "RCP et notice ACIDE ALENDRONIQUE CRISTERS 70 mg, comprimé (base de données publique des médicaments)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67464926/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "RCP MOPRAL 20 mg, gélule gastro-résistante (base de données publique des médicaments)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/64103828/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "RCP INIPOMP 20 mg, comprimé gastro-résistant (base de données publique des médicaments)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/65220275/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "RCP GLUCOPHAGE 1000 mg, comprimé pelliculé sécable (base de données publique des médicaments)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/61052830/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "RCP CORTANCYL 5 mg, comprimé sécable (base de données publique des médicaments)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/60492702/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "RCP et notice ESIDREX 25 mg, comprimé sécable (base de données publique des médicaments)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/66153192/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "RCP et notice LASILIX 40 mg, comprimé sécable (base de données publique des médicaments)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/65606743/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "RCP ZOCOR 20 mg, comprimé pelliculé (base de données publique des médicaments)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67037301/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "RCP TAHOR 10 mg, comprimé pelliculé (base de données publique des médicaments)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67143532/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "RCP TARDYFERON 80 mg, comprimé pelliculé (base de données publique des médicaments)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/68269288/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "RCP et notice ADVIL 400 mg, comprimé enrobé (base de données publique des médicaments)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/63646874/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Mackenzie IS et al. Cardiovascular outcomes in adults with hypertension with evening versus morning dosing of usual antihypertensives in the UK (TIME study). Lancet 2022;400:1417-25. doi:10.1016/S0140-6736(22)01786-X (accès libre, CC BY 4.0)"
     url: "https://discovery.ucl.ac.uk/10157735/1/1-s2.0-S014067362201786X-main.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "Bach-Huynh TG et al. Timing of levothyroxine administration affects serum thyrotropin concentration. J Clin Endocrinol Metab 2009;94:3905-12. doi:10.1210/jc.2009-0860 (essai randomisé croisé)"
+    url: "https://doi.org/10.1210/jc.2009-0860"
+    consulte_le: 2026-11-28
+  - titre: "Awad K et al. Effects of morning vs evening statin administration on lipid profile: a systematic review and meta-analysis. J Clin Lipidol 2017;11:972-985.e9. doi:10.1016/j.jacl.2017.06.001"
+    url: "https://doi.org/10.1016/j.jacl.2017.06.001"
+    consulte_le: 2026-11-28
 ---
 
-<!-- NOTE DE RÉDACTION (à retirer avant publication) : chaque ligne du tableau a été vérifiée sur le RCP ou la notice d'UNE spécialité représentative, citée dans la colonne Source. Les génériques et les autres dosages peuvent avoir une consigne différente : le relecteur vérifie que la spécialité citée reste représentative. Dates de mise à jour des RCP lues le 25/11/2026 : Levothyrox 04/03/2024 ; acide alendronique Cristers 01/10/2026 ; Mopral 25/08/2026 ; Inipomp 02/09/2025 ; Glucophage 10/02/2026 ; Cortancyl 30/01/2026 ; Esidrex 14/01/2022 ; Lasilix 27/10/2026 ; Zocor 25/06/2026 ; Tahor 27/01/2025 ; Tardyferon 12/09/2024 ; Advil 400 mg 13/02/2025. -->
+<!-- NOTE DE RÉDACTION (à retirer avant publication) : chaque ligne du tableau a été vérifiée sur le RCP ou la notice d'UNE spécialité représentative, citée dans la colonne Source (vérification refaite le 28/11/2026 sur les RCP en ligne, sans écart). Les génériques et les autres dosages peuvent avoir une consigne différente : le relecteur vérifie que la spécialité citée reste représentative. Dates de mise à jour des RCP lues le 25/11/2026 : Levothyrox 04/03/2024 ; acide alendronique Cristers 01/10/2026 ; Mopral 25/08/2026 ; Inipomp 02/09/2025 ; Glucophage 10/02/2026 ; Cortancyl 30/01/2026 ; Esidrex 14/01/2022 ; Lasilix 27/10/2026 ; Zocor 25/06/2026 ; Tahor 27/01/2025 ; Tardyferon 12/09/2024 ; Advil 400 mg 13/02/2025. -->
 
 ::: {.deux-versions}
 
@@ -90,7 +96,7 @@ Nous avons vérifié chaque ligne sur la notice ou sur le RCP (résumé des cara
 
 | Médicament (exemple vérifié) | Quand le prendre | Pourquoi | Source |
 |---|---|---|---|
-| Lévothyroxine (Levothyrox, hormone de la thyroïde) | Le matin à jeun, une demi-heure avant le petit-déjeuner, avec un peu d'eau. À plus de 2 heures du fer, du calcium et des pansements gastriques. | Le fer, le calcium et les pansements gastriques diminuent son passage dans le sang. Raison de la prise à jeun : [à compléter : source]. | RCP Levothyrox, rubriques 4.2 et 4.5 ; notice, rubrique 3 |
+| Lévothyroxine (Levothyrox, hormone de la thyroïde) | Le matin à jeun, une demi-heure avant le petit-déjeuner, avec un peu d'eau. À plus de 2 heures du fer, du calcium et des pansements gastriques. | Le fer, le calcium et les pansements gastriques diminuent son passage dans le sang. Une étude a observé une thyroïde moins bien équilibrée quand la lévothyroxine était prise au petit-déjeuner ou au coucher. | RCP Levothyrox, rubriques 4.2 et 4.5 ; notice, rubrique 3 ; étude de Bach-Huynh, 2009 |
 | Alendronate (contre la fragilité des os) | Au lever, avant tout aliment, boisson ou autre médicament. Avec un grand verre d'eau du robinet. Attendre au moins 30 minutes avant de manger. Ne pas s'allonger pendant ces 30 minutes. Jamais au coucher. | Pris au petit-déjeuner, il ne passe presque pas dans le sang. Rester assis ou debout l'aide à descendre dans l'estomac et protège l'œsophage (le tube qui va de la bouche à l'estomac). | RCP acide alendronique 70 mg, rubriques 4.2, 4.4 et 5.2 |
 | Oméprazole (Mopral, réduit l'acidité de l'estomac) | Le matin. Gélule avalée entière avec un demi-verre d'eau, sans la mâcher. | Les aliments ne changent pas la quantité de médicament qui passe dans le sang. | RCP Mopral, rubriques 4.2 et 5.2 |
 | Pantoprazole (Inipomp, réduit l'acidité de l'estomac) | Une heure avant un repas. Comprimé avalé entier avec un peu d'eau. | Le RCP ne donne pas la raison : [à compléter : source]. | RCP Inipomp, rubriques 4.2 et 5.2 |
@@ -98,7 +104,7 @@ Nous avons vérifié chaque ligne sur la notice ou sur le RCP (résumé des cara
 | Prednisone (Cortancyl, corticoïde) | Avec un peu d'eau, au cours d'un repas. En une prise, de préférence le matin. | Le RCP ne donne pas la raison : [à compléter : source]. | RCP Cortancyl, rubrique 4.2 |
 | Hydrochlorothiazide (Esidrex, diurétique) | En une prise : le matin. Pas de dernière prise tard dans la journée. Avec ou sans aliments. | Ce médicament fait uriner : le prendre tôt évite de se réveiller la nuit. | Notice Esidrex, rubrique 3 ; RCP, rubrique 4.2 |
 | Furosémide (Lasilix, diurétique) | Ni le RCP ni la notice ne donnent d'heure de prise. Suivez l'ordonnance. | Les aliments ralentissent son passage dans le sang, sans le diminuer. | RCP Lasilix, rubriques 4.2 et 5.2 ; notice, rubrique 3 |
-| Simvastatine (Zocor, contre le cholestérol) | Le soir, en une prise. Évitez le jus de pamplemousse. | Le RCP ne donne pas la raison de la prise du soir : [à compléter : source]. Le pamplemousse augmente beaucoup sa quantité dans le sang. | RCP Zocor, rubriques 4.2 et 4.5 |
+| Simvastatine (Zocor, contre le cholestérol) | Le soir, en une prise. Évitez le jus de pamplemousse. | Le RCP ne donne pas la raison de la prise du soir. Une analyse de 11 études a observé une baisse du cholestérol un peu plus forte avec la prise du soir, pour les statines vite éliminées par le corps. Le pamplemousse augmente beaucoup sa quantité dans le sang. | RCP Zocor, rubriques 4.2 et 4.5 ; analyse d'Awad, 2017 |
 | Atorvastatine (Tahor, contre le cholestérol) | Une fois par jour, à n'importe quel moment, pendant ou en dehors des repas. | Pas de moment imposé par le RCP. | RCP Tahor, rubrique 4.2 |
 | Fer (Tardyferon, sulfate ferreux) | Avant ou pendant les repas. Comprimé avalé entier avec de l'eau, sans le sucer ni le mâcher. À au moins 2 heures du thé, du café et du vin rouge. | Certains aliments et boissons réduisent son passage dans le sang. Le fer gêne aussi certains antibiotiques et les hormones de la thyroïde. | RCP Tardyferon, rubriques 4.2, 4.5 et 5.2 |
 | Ibuprofène (Advil 400 mg, anti-inflammatoire) | Avalé sans croquer, avec un grand verre d'eau, de préférence au cours d'un repas. | Les anti-inflammatoires peuvent abîmer l'estomac. Ce risque augmente avec la dose. | RCP Advil 400 mg, rubriques 4.2 et 4.4 ; notice, rubrique 3 |
@@ -131,7 +137,8 @@ Vous pouvez déclarer vous-même un effet indésirable sur [signalement.social-s
 ### Points clés
 
 - Le moment de prise relève du RCP de la spécialité (rubrique 4.2, et 5.2 pour l'effet des aliments). Au sein d'une même classe, les consignes diffèrent : le RCP de Mopral (oméprazole) recommande une prise le matin sans référence au repas, celui d'Inipomp (pantoprazole) une prise une heure avant un repas ; pour les deux, la rubrique 5.2 indique que les aliments ne modifient pas la biodisponibilité.
-- Le RCP de Zocor écrit que la simvastatine « peut être administrée le soir » : c'est une possibilité, pas une obligation. Le RCP de Tahor autorise la prise à tout moment de la journée.
+- Le RCP de Zocor donne la posologie de la simvastatine « en une prise unique le soir » (rubrique 4.2 ; la phrase sur le mode d'administration dit qu'il « peut être administré le soir, en une prise unique »). Le RCP n'en donne pas la raison. Une méta-analyse de 11 études (1 034 participants) a observé une baisse du LDL-cholestérol plus marquée avec la prise du soir pour les statines à demi-vie courte, et une efficacité équivalente pour les statines à demi-vie longue (Awad et al., J Clin Lipidol 2017, doi:10.1016/j.jacl.2017.06.001). Le RCP de Tahor autorise la prise à tout moment de la journée.
+- Lévothyroxine : le RCP ne motive pas la prise à jeun. Un essai randomisé croisé (65 patients, trois périodes de 8 semaines) a observé une TSH plus élevée et plus variable avec une prise au petit-déjeuner ou au coucher qu'avec une prise à jeun (Bach-Huynh et al., J Clin Endocrinol Metab 2009, doi:10.1210/jc.2009-0860).
 - Le RCP de Lasilix ne précise aucun horaire ; la consigne de prise matinale d'un diurétique figure dans la notice d'Esidrex (hydrochlorothiazide), pour éviter les réveils nocturnes.
 - Les intervalles avec les sels de fer, de calcium et les topiques gastro-intestinaux (plus de 2 heures si possible) sont ceux du RCP et du Thésaurus de l'ANSM ; voir [Les interactions à connaître](interactions.qmd).
 

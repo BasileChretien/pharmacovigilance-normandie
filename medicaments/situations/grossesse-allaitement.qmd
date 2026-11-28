@@ -9,25 +9,40 @@ prochaine_relecture: null
 sources:
   - titre: "ANSM, Médicaments et grossesse : les bons réflexes"
     url: "https://ansm.sante.fr/dossiers-thematiques/medicaments-et-grossesse/medicaments-et-grossesse-les-bons-reflexes"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Traitement de la douleur durant la grossesse"
     url: "https://ansm.sante.fr/dossiers-thematiques/medicaments-et-grossesse/traitement-de-la-douleur-durant-la-grossesse"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Médicaments et allaitement"
     url: "https://ansm.sante.fr/dossiers-thematiques/medicaments-et-grossesse/medicaments-et-allaitement"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Médicaments et grossesse (dossier thématique)"
     url: "https://ansm.sante.fr/dossiers-thematiques/medicaments-et-grossesse"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Propositions d'annexes AMM / enregistrements (RCP, notice, étiquetage) – rubrique pictogramme « femmes enceintes » (version imprimable)"
     url: "https://ansm.sante.fr/page/impression/89"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "CRAT, Qui sommes-nous ?"
     url: "https://www.lecrat.fr/qui-sommes-nous/"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "CRAT, Mises en garde"
     url: "https://www.lecrat.fr/mises-en-garde/"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "ANSM, Pictogramme grossesse sur les boîtes de médicaments : point d'étape sur la réévaluation du dispositif (16/10/2025)"
+    url: "https://ansm.sante.fr/actualites/pictogramme-grossesse-sur-les-boites-de-medicaments-point-detape-sur-la-reevaluation-du-dispositif"
+    consulte_le: 2026-11-28
+  - titre: "ANSM, Réévaluation du pictogramme grossesse sur les boîtes de médicaments : lancement d'une consultation publique (05/09/2024)"
+    url: "https://ansm.sante.fr/actualites/reevaluation-du-pictogramme-grossesse-sur-les-boites-de-medicaments-lancement-dune-consultation-publique"
+    consulte_le: 2026-11-28
+  - titre: "RCP KARDEGIC 75 mg, poudre pour solution buvable en sachet-dose, rubrique 4.6 (base de données publique des médicaments)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/64755969/extrait"
+    consulte_le: 2026-11-28
+  - titre: "RCP KETUM 2,5 POUR CENT, gel, rubriques 4.3 et 4.6 (base de données publique des médicaments)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/63736058/extrait"
+    consulte_le: 2026-11-28
+  - titre: "RCP VOLTARENACTIGO 1 POUR CENT, gel, rubriques 4.3 et 4.6 (base de données publique des médicaments)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/60851678/extrait"
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Médicaments et grossesse"
     url: "https://pharmacomedicale.org/pharmacologie/medicaments-et-grossesse/294-medicaments-et-grossesse"
@@ -48,7 +63,7 @@ pour_aller_plus_loin:
 
 ::: {.a-retenir}
 - Enceinte ou allaitante, ne prenez aucun médicament sans conseil d'un professionnel de santé.
-- Les anti-inflammatoires, comme l'ibuprofène ou l'aspirine, sont interdits à partir du 6e mois.
+- Les anti-inflammatoires, comme l'ibuprofène ou l'aspirine contre la douleur, sont interdits à partir du 6e mois.
 - N'arrêtez pas seule un traitement en cours : parlez-en vite à votre médecin.
 :::
 
@@ -79,7 +94,9 @@ Certains médicaments peuvent être dangereux pour le bébé à naître. Ils peu
 
 ### Et pour la douleur ou la fièvre ?
 
-Si besoin, le paracétamol peut être utilisé pendant la grossesse. Prenez la dose la plus faible qui soulage, le moins longtemps possible. Ne prenez jamais d'anti-inflammatoire de vous-même. À partir du 6e mois, une seule prise peut mettre en danger votre bébé. Cela vaut aussi pour une crème ou un gel [à compléter : source ANSM].
+Si besoin, le paracétamol peut être utilisé pendant la grossesse. Prenez la dose la plus faible qui soulage, le moins longtemps possible. Ne prenez jamais d'anti-inflammatoire de vous-même. À partir du 6e mois, une seule prise peut mettre en danger votre bébé. Cela vaut aussi pour un gel à mettre sur la peau.
+
+Votre médecin ou votre sage-femme vous a prescrit de l'aspirine à petite dose pendant la grossesse ? C'est un cas à part, suivi de près. Ne l'arrêtez pas sans leur avis.
 
 {{< figure-svg grossesse-allaitement-1 alt="Frise des 9 mois de grossesse. Pendant toute la grossesse : anti-inflammatoires jamais sans avis médical. À partir du début du 6e mois : interdits, même une seule prise." legende="Ne prenez jamais d'anti-inflammatoire de vous-même pendant la grossesse." >}}
 
@@ -112,12 +129,14 @@ Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre ph
 ### Douleur et fièvre (ANSM)
 
 - **Paracétamol** : utilisable si nécessaire, à la dose efficace la plus faible et pour la durée la plus courte.
-- **AINS, y compris l'aspirine** : ne pas en prendre de soi-même au premier trimestre ; toute prise, même ponctuelle, est strictement contre-indiquée à partir du 6e mois. La page « bons réflexes » de l'ANSM l'exprime comme « jamais après le 5e mois ». En cas de prise par mégarde à partir du 6e mois, la patiente doit consulter.
+- **AINS, y compris l'aspirine** : ne pas en prendre de soi-même au premier trimestre ; toute prise, même ponctuelle, est strictement contre-indiquée à partir du 6e mois (24 semaines d'aménorrhée). La page « bons réflexes » de l'ANSM l'exprime comme « jamais après le 5e mois ». En cas de prise par mégarde à partir du 6e mois, la patiente doit consulter.
+- **Voie cutanée** : la contre-indication à partir du 6e mois figure aussi au RCP des gels d'AINS (Ketum 2,5 % gel, kétoprofène ; Voltarenactigo 1 % gel, diclofénac, rubriques 4.3 et 4.6).
+- **Aspirine à faible dose** : le RCP de Kardegic distingue les doses ≤ 100 mg/j, dont l'usage obstétrical restreint sous surveillance spécialisée « paraît sûr », des doses supérieures, contre-indiquées au troisième trimestre. Une patiente traitée par aspirine à faible dose pour une indication obstétricale ne doit pas l'interrompre sans avis.
 - **Tramadol** : déconseillé au premier trimestre ; des doses élevées en fin de grossesse peuvent induire des troubles respiratoires chez le nouveau-né.
 
 ### Pictogramme « femme enceinte »
 
-Le décret du 14 avril 2017 et ses arrêtés d'application, modifiant l'article R. 5121-139 du CSP, imposent un pictogramme sur le conditionnement extérieur des médicaments tératogènes ou fœtotoxiques depuis le 17 octobre 2017 (ANSM). Son apposition relève de la responsabilité des titulaires d'AMM. L'ANSM a engagé une réévaluation du dispositif [à compléter : état actuel de la réforme, source ANSM].
+Le décret du 14 avril 2017 et ses arrêtés d'application, modifiant l'article R. 5121-139 du CSP, imposent un pictogramme sur le conditionnement extérieur des médicaments tératogènes ou fœtotoxiques depuis le 17 octobre 2017 (ANSM). Son apposition relève de la responsabilité des titulaires d'AMM. À la demande de la DGS, l'ANSM a réévalué le dispositif avec un comité scientifique temporaire (2023-2024). Sa proposition (quatre risques au lieu de deux, jauge colorée, dispositif propre aux médicaments à ne jamais prendre pendant la grossesse) a été mise en consultation publique à l'automne 2024. Au point d'étape du 16/10/2025, la DGS a demandé un dispositif plus simple : aucun nouveau pictogramme n'est donc décidé, et celui de 2017 reste celui des boîtes [à compléter : vérifier sur Légifrance l'article R. 5121-139].
 
 ### Allaitement (ANSM)
 
