@@ -119,13 +119,15 @@
       <path d="M95 74 Q97 56 110 45" fill="none" stroke="#ffffff" stroke-width="4" />
       <path d="M116.5 37 L120 31 L123.5 37 V80 H116.5 Z" fill="#e7b03b" stroke="#10283a" stroke-width="2.5" />
       <rect x="81" y="80" width="78" height="13" rx="4" fill="#e7b03b" stroke="#10283a" stroke-width="3.5" />
+      <g fill="#10283a">
+        <circle cx="91" cy="86.5" r="2" />
+        <circle cx="104" cy="86.5" r="2" />
+        <circle cx="136" cy="86.5" r="2" />
+        <circle cx="149" cy="86.5" r="2" />
+      </g>
+      <path d="M116 92 H124 V108 Q124 112 120 112 Q116 112 116 108 Z" fill="#dcebf3" stroke="#10283a" stroke-width="3" />
+      <circle cx="120" cy="86.5" r="2" fill="#10283a" />
       <g class="m-yeux">
-        <g fill="#10283a">
-          <circle cx="91" cy="86.5" r="2" />
-          <circle cx="104" cy="86.5" r="2" />
-          <circle cx="136" cy="86.5" r="2" />
-          <circle cx="149" cy="86.5" r="2" />
-        </g>
         <g fill="#10283a">
           <circle cx="104" cy="103" r="4.2" />
           <circle cx="136" cy="103" r="4.2" />
@@ -135,8 +137,6 @@
           <circle cx="137.5" cy="101.5" r="1.4" />
         </g>
       </g>
-      <path d="M116 92 H124 V108 Q124 112 120 112 Q116 112 116 108 Z" fill="#dcebf3" stroke="#10283a" stroke-width="3" />
-      <circle cx="120" cy="86.5" r="2" fill="#10283a" />
     </g>
     <!-- Shield: a scored tablet seen from above; the score line is the join of its boards -->
     <circle cx="168" cy="189" r="44" fill="#dcebf3" stroke="#10283a" stroke-width="4" />

@@ -163,8 +163,10 @@ def _cercle(el: ET.Element, cx: str) -> bool:
     return el.tag == q("circle") and el.get("cx") == cx
 
 
-def _contient_cercle(el: ET.Element, cx: str) -> bool:
-    return el.tag == q("g") and any(_cercle(c, cx) for c in el)
+def _contient_cercle(el: ET.Element, cx: str, cy: str | None = None) -> bool:
+    return el.tag == q("g") and any(
+        _cercle(c, cx) and cy in (None, c.get("cy")) for c in el
+    )
 
 
 def envelopper(
@@ -203,8 +205,13 @@ def _grouper(root: ET.Element) -> None:
     debut = next(i for i, c in enumerate(enfants) if _contient_cercle(c, "89"))
     fin = next(i for i, c in enumerate(enfants) if _contient_cercle(c, "105.5"))
     tete = envelopper(root, enfants[debut : fin + 1], "m-tete")
-    envelopper(tete, [c for c in tete if _contient_cercle(c, "104") or _contient_cercle(c, "105.5")],
-               "m-yeux")  # fmt: skip
+    # The pupils (y 103) and their highlights, not the helmet's rivets (one is also at x 104).
+    yeux = [
+        c
+        for c in tete
+        if _contient_cercle(c, "104", "103") or _contient_cercle(c, "105.5", "101.5")
+    ]
+    envelopper(tete, yeux, "m-yeux")
     enfants = list(root)
     bras = next(i for i, c in enumerate(enfants)
                 if c.tag is ET.Comment and "Arm raised" in (c.text or ""))  # fmt: skip

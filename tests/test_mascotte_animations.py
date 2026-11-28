@@ -9,6 +9,7 @@ for reduced motion.
 from __future__ import annotations
 
 import re
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 import make_mascotte as mm
@@ -106,6 +107,19 @@ def test_the_duration_reader():
     assert duree("m-onde 1s ease-out 0.7s 3 both") == 3.7
     assert duree("m-saut 600ms cubic-bezier(.3,.7,.4,1) 0.2s 2 both") == 1.4
     assert duree("m-cligne 0.25s") == 0.25
+
+
+def test_only_the_eyes_blink_and_look_around():
+    """The eye group holds the pupils (y 103) and their highlights (y 101.5), nothing else:
+    the helmet's rivets (y 86.5) would slide onto the face with every blink."""
+    for nom, svg in fichiers().items():
+        racine = ET.fromstring(svg)
+        groupes = racine.findall(".//{http://www.w3.org/2000/svg}g[@class='m-yeux']")
+        assert len(groupes) == 1, nom
+        hauteurs = {
+            c.get("cy") for c in groupes[0].iter("{http://www.w3.org/2000/svg}circle")
+        }
+        assert hauteurs == {"103", "101.5"}, f"{nom} : {sorted(hauteurs)}"
 
 
 def test_the_horn_sounds_only_where_the_mascot_announces_something():
