@@ -12,25 +12,34 @@ sources:
     consulte_le: 2026-11-25
   - titre: "ANSM, Savez-vous bien utiliser le paracétamol contre la douleur et la fièvre ?, 18 octobre 2021"
     url: "https://ansm.sante.fr/actualites/savez-vous-bien-utiliser-le-paracetamol-contre-la-douleur-et-la-fievre"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "HAS, Prise en charge médicamenteuse de la douleur chez l'enfant : alternatives à la codéine, 2016"
     url: "https://www.has-sante.fr/jcms/c_2010340/fr/prise-en-charge-medicamenteuse-de-la-douleur-chez-l-enfant-alternatives-a-la-codeine"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Décès d'enfants suite à l'ingestion accidentelle de méthadone : rappel des règles de bon usage, 15 décembre 2021"
     url: "https://ansm.sante.fr/actualites/deces-denfants-suite-a-lingestion-accidentelle-de-methadone-rappel-des-regles-de-bon-usage"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Sante.fr, Normandie : numéros utiles en cas d'urgence"
     url: "https://www.sante.fr/node/1488679"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Résumé des caractéristiques du produit AGIOLAX, granulés (séné et ispaghul)"
     url: "https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0405189.htm"
     consulte_le: 2026-11-25
   - titre: "Base de données publique des médicaments, THIOCOLCHICOSIDE BIOGARAN 4 mg, comprimé (RCP)"
     url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/67136662/extrait"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Ordre national des pharmaciens, Compléments alimentaires contenant de la mélatonine : certaines populations doivent en éviter la consommation selon l'Anses, 19 avril 2018"
     url: "https://www.ordre.pharmacien.fr/les-communications/focus-sur/les-actualites/complements-alimentaires-contenant-de-la-melatonine-certaines-populations-doivent-en-eviter-la-consommation-selon-l-anses"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "CHU d'Angers, Centre antipoison et toxicovigilance du Grand Ouest (Bretagne, Normandie, Centre-Val de Loire, Pays de la Loire) : 02 41 48 21 21, consultation 24 h/24"
+    url: "https://www.chu-angers.fr/soins-specialites/services/centre-antipoison"
+    consulte_le: 2026-11-28
+  - titre: "HAS, Prise en charge de la fièvre chez l'enfant, fiche mémo, octobre 2016 (PDF)"
+    url: "https://www.has-sante.fr/upload/docs/application/pdf/2016-10/fiche_memo_-_prise_en_charge_de_la_fievre_chez_lenfant.pdf"
+    consulte_le: 2026-11-28
+  - titre: "HAS, Prise en charge médicamenteuse de la douleur chez l'enfant : alternatives à la codéine, fiche mémo, février 2016 (PDF)"
+    url: "https://www.has-sante.fr/upload/docs/application/pdf/2016-02/prise_en_charge_medicamenteuse_de_la_douleur_chez_lenfant_alternatives_a_la_codeine_-_fiche_memo.pdf"
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Variabilités pharmacocinétiques"
     url: "https://pharmacomedicale.org/pharmacologie/les-sources-de-variabilite-de-la-reponse-au-medicament/45-variabilites-pharmacocinetiques"
@@ -50,7 +59,7 @@ pour_aller_plus_loin:
 :::
 
 ::: {.quand-consulter}
-- Votre enfant a moins de 3 mois et il a de la fièvre [à compléter : source].
+- Votre enfant a moins de 3 mois et il a de la fièvre.
 - La fièvre dure plus de 3 jours, ou la douleur plus de 5 jours.
 - Votre enfant est très somnolent, difficile à réveiller, ou respire mal : appelez le 15.
 - Votre enfant a avalé un médicament qui n'était pas pour lui ? Appelez le centre antipoison au **02 41 48 21 21**.
@@ -84,7 +93,7 @@ Les jeunes enfants portent tout à la bouche. Pour les protéger :
 
 ### Que faire si votre enfant a avalé un médicament ?
 
-Gardez votre calme. Appelez le centre antipoison d'Angers au 02 41 48 21 21, ouvert à toute heure [à compléter : source pour l'ouverture 24 h/24]. Gardez la boîte à portée de main. Si votre enfant est somnolent, respire mal ou a des convulsions (secousses du corps), appelez le 15 ou le 112.
+Gardez votre calme. Appelez le centre antipoison d'Angers au 02 41 48 21 21, ouvert à toute heure. Gardez la boîte à portée de main. Si votre enfant est somnolent, respire mal ou a des convulsions (secousses du corps), appelez le 15 ou le 112.
 
 Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre pharmacien.
 
@@ -115,7 +124,11 @@ RCP de la suspension buvable pédiatrique à 2,4 % (3 à 26 kg) : 60 mg/kg/j ré
 
 ### Prévention des expositions accidentelles
 
-L'ANSM a rapporté des décès d'enfants après ingestion accidentelle de méthadone (décembre 2021). Elle recommande de conserver le médicament hors de portée, en hauteur et si possible sous clé. Elle demande aussi de ne jamais préparer les doses à l'avance et de ne pas le prendre devant les enfants. En cas d'ingestion d'opioïde : appeler le 15, le 18 ou le 112, administrer de la naloxone intranasale si disponible et garder la personne éveillée. Ces règles s'appliquent à tout médicament à risque au domicile.
+L'ANSM a rapporté des décès d'enfants après ingestion accidentelle de méthadone (décembre 2021). Elle recommande de conserver le médicament hors de portée, en hauteur et si possible sous clé. Elle demande aussi de ne jamais préparer les doses à l'avance et de ne pas le prendre devant les enfants. En cas d'ingestion de méthadone : appeler le 15, le 18 ou le 112, administrer de la naloxone intranasale si disponible (le spray nasal est autorisé à partir de 14 ans selon l'ANSM) et garder la personne éveillée. Les mêmes précautions de rangement valent pour les autres médicaments dangereux conservés au domicile.
+
+### Fièvre du nourrisson (HAS 2016)
+
+La fiche mémo de la HAS sur la fièvre de l'enfant range l'âge de moins de 3 mois parmi les signes de gravité à rechercher ; le délai de réévaluation d'une fièvre mal tolérée peut y être raccourci.
 
 ### Outils et liens
 

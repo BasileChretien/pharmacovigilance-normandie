@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 304" width="440" height="304" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="currentColor">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 324" width="440" height="324" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="currentColor">
   <defs>
     <g id="anticoagulants-oraux-2-prise">
       <circle r="13" fill="#073f6e"/>
@@ -30,12 +30,13 @@
   <use href="#anticoagulants-oraux-2-prise" x="404" y="176"/>
   <text x="176" y="210">2 fois par jour, matin et soir</text>
 
-  <!-- Rivaroxaban: once a day, with a meal -->
+  <!-- Rivaroxaban: usually once a day, with a meal at 15 or 20 mg -->
   <line x1="16" y1="228" x2="424" y2="228" stroke="#d5e2ea" stroke-width="2"/>
   <text x="16" y="260" font-size="17" font-weight="700">Rivaroxaban</text>
   <line x1="176" y1="256" x2="404" y2="256" stroke="#d5e2ea" stroke-width="4" stroke-linecap="round"/>
   <circle cx="276" cy="256" r="13" fill="#ffffff" stroke="#10283a" stroke-width="2"/>
   <circle cx="276" cy="256" r="6" fill="none" stroke="#46586a" stroke-width="1.5"/>
   <use href="#anticoagulants-oraux-2-prise" x="306" y="256"/>
-  <text x="176" y="290">1 fois par jour, au repas</text>
+  <text x="176" y="290">en général 1 fois par jour,</text>
+  <text x="176" y="312">au repas (15 ou 20 mg)</text>
 </svg>
