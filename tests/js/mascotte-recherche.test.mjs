@@ -79,6 +79,9 @@ test("no mascot on medicine, alert or serious-harm pages", () => {
     "/pharmacovigilance-normandie/actualites/posts/alertes-officielles.html",
     "/pharmacovigilance-normandie/normandie/cas-marquants.html",
     "/pharmacovigilance-normandie/que-faire-effet-indesirable.html",
+    // GitHub Pages also serves a page at its address without ".html".
+    "/pharmacovigilance-normandie/normandie/cas-marquants",
+    "/pharmacovigilance-normandie/que-faire-effet-indesirable",
   ]) {
     assert.equal(page({ path }).observer(), null, path);
   }

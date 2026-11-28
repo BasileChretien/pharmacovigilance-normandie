@@ -5,8 +5,9 @@
 // serious-harm pages keep a plain empty box (tests/test_mascotte.py).
 (function () {
   "use strict";
-  // Medicine and class sheets, pregnancy, safety alerts, serious harm.
-  var SANS_MASCOTTE = /\/(medicaments|actualites)\/|\/normandie\/cas-marquants\.html$|\/que-faire-effet-indesirable\.html$/;
+  // Medicine and class sheets, pregnancy, safety alerts, serious harm. A page answers with or
+  // without ".html" on GitHub Pages.
+  var SANS_MASCOTTE = /\/(medicaments|actualites)\/|\/normandie\/cas-marquants(\.html)?$|\/que-faire-effet-indesirable(\.html)?$/;
   var VIDE = ".quarto-search-no-results:not(.no-query)";
 
   // Quarto's offset from the page to the site root ("../", or an absolute path on the 404 page).
