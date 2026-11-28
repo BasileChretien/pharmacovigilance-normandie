@@ -9,13 +9,16 @@ prochaine_relecture: null
 sources:
   - titre: "ANSM, liste des centres régionaux de pharmacovigilance (mise à jour du 14/09/2026)"
     url: "https://ansm.sante.fr/page/liste-des-centres-regionaux-de-pharmacovigilance"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "CHU de Caen Normandie, pharmacologie et centre régional de pharmacovigilance"
     url: "http://www.chu-caen.fr/pharmacologie.html"
     consulte_le: 2026-11-25
+  - titre: "CHU d'Angers, centre antipoison et de toxicovigilance du Grand Ouest (Bretagne, Normandie, Centre-Val de Loire, Pays de la Loire)"
+    url: "https://www.chu-angers.fr/soins-specialites/services/centre-antipoison"
+    consulte_le: 2026-11-28
 ---
 
-Pour une urgence vitale, appelez le 15 ou le 112. Pour une intoxication, le centre antipoison d'Angers : 02 41 48 21 21.
+Pour une urgence vitale, appelez le 15 ou le 112. Pour une intoxication, le centre antipoison d'Angers, compétent pour la Normandie, 24 heures sur 24 : [02 41 48 21 21](tel:+33241482121).
 
 ## CRPV de Caen
 
@@ -32,7 +35,7 @@ Eure (27), Seine-Maritime (76)
 
 - **Téléphone** : [02 32 88 90 79](tel:+33232889079)
 - **Courriel** : [pharmacovigilance@chu-rouen.fr](mailto:pharmacovigilance@chu-rouen.fr)
-- **Adresse** : CHU de Rouen, hôpital Charles-Nicolle, 76031 Rouen cedex
+- **Adresse** : CHU de Rouen, hôpital Charles-Nicolle, Institut de biologie clinique, 76031 Rouen cedex
 - **Horaires** : [à compléter par le centre]
 
 Les numéros et courriels de Caen figurent à la fois sur le site du CHU de Caen et sur la liste de l'ANSM. Ceux de Rouen viennent de la liste de l'ANSM.
