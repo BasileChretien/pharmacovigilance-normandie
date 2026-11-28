@@ -19,6 +19,7 @@
   "use strict";
 
   var LIMITE = 8;
+  var ANNONCE_MS = 100;
   var TYPES = ["inhibiteur", "inducteur"];
   var SANS_CORRESPONDANCE = "aucun mécanisme substrat-inhibiteur ou substrat-inducteur dans ce tableau. Cela ne veut pas dire qu'il n'y a pas d'interaction.";
 
@@ -35,12 +36,8 @@
 
   function upperFirst(text) { return text.charAt(0).toUpperCase() + text.slice(1); }
   function lowerFirst(text) { return text.charAt(0).toLowerCase() + text.slice(1); }
-
-  // "de silibinine", "d'éfavirenz".
-  function deNom(name) {
-    var lower = lowerFirst(name);
-    return (/^[aeiouyhàâéèêëîïôöûü]/i.test(lower) ? "d'" : "de ") + lower;
-  }
+  // Sentences start with the drug's name and a colon ("Codéine : …"): a French drug name
+  // would need an article ("de la codéine"), and the data do not hold its gender.
 
   function compare(a, b) { return a < b ? -1 : a > b ? 1 : 0; }
 
@@ -178,22 +175,24 @@
     // For a prodrug the minor pathway takes part in forming the active substance: its share of
     // the elimination says nothing about the effect (codeine + paroxetine is "déconseillée").
     // "Participe à", not "forme": one enzyme need not be the only route (clopidogrel).
+    var s = m.substrat.nom;
     if (m.voie === "mineure" && m.prodrogue) {
-      liste.push("Voie mineure de l'élimination " + deNom(m.substrat.nom) + ", mais elle participe à la formation de son métabolite actif.");
+      liste.push(s + " : voie mineure de son élimination, mais elle participe à la formation de son métabolite actif.");
     } else if (m.voie === "mineure") {
-      liste.push("Voie mineure pour " + lowerFirst(m.substrat.nom) + " : l'effet dépend de la part de cette voie dans son élimination.");
+      liste.push(s + " : voie mineure de son élimination ; l'effet dépend de la part de cette voie.");
     }
-    if (m.actif) liste.push(m.substrat.nom + " a un métabolite actif : l'effet dépend aussi de ce métabolite.");
+    if (m.actif) liste.push(s + " : métabolite actif ; l'effet dépend aussi de ce métabolite.");
+    // A source's "long" carries its own article: "la liste du Thésaurus…" (data/cytochromes.yml).
     [["effecteur", m.sources.effecteur], ["substrat", m.sources.substrat]].forEach(function (p) {
       if (p[1] && p[1] !== defaut && sources[p[1]]) {
-        liste.push("Classement " + deNom(m[p[0]].nom) + " : " + sources[p[1]].long + ".");
+        liste.push(m[p[0]].nom + " : classé d'après " + sources[p[1]].long + ".");
       }
     });
     var oppose = (toutes || []).some(function (o) {
       return o !== m && o.enzyme === m.enzyme && o.substrat === m.substrat && o.effecteur === m.effecteur && o.type !== m.type;
     });
     if (oppose) {
-      liste.push(m.effecteur.nom + " est classé à la fois inhibiteur et inducteur " + m.enzyme.de + " : l'effet global ne se déduit pas du tableau.");
+      liste.push(m.effecteur.nom + " : classé à la fois inhibiteur et inducteur " + m.enzyme.de + " ; l'effet global ne se déduit pas du tableau.");
     }
     return liste;
   }
@@ -229,6 +228,27 @@
     return "";
   }
 
+  // What is wrong with the two fields, both at once: the fields to flag and one message.
+  function problems(ra, rb) {
+    var invalides = [];
+    var messages = [];
+    [["A", ra], ["B", rb]].forEach(function (p) {
+      if (p[1].statut !== "trouve") {
+        invalides.push(p[0]);
+        messages.push(problem(p[0], p[1]));
+      }
+    });
+    if (!invalides.length && ra.medicament === rb.medicament) {
+      invalides.push("B");
+      messages.push(problem("B", { statut: "meme" }));
+    }
+    return { invalides: invalides, message: messages.join(" ") };
+  }
+
+  function rolesCaption(a, b) {
+    return upperFirst(a.nom) + " et " + lowerFirst(b.nom) + " : rôles, enzyme par enzyme";
+  }
+
   // ---------- Page ----------------------------------------------------------------
 
   function el(doc, tag, attributes, text) {
@@ -240,8 +260,9 @@
 
   function optionText(m) { return m.nom + (m.precision ? " (" + m.precision + ")" : ""); }
 
-  // One field with its list of suggestions. lire() gives the chosen or typed drug.
-  function combobox(doc, input, data, onChoice) {
+  // One field with its list of suggestions. lire() gives the chosen or typed drug; onEdit runs
+  // at every keystroke (the result of the previous pair is then out of date).
+  function combobox(doc, input, data, onChoice, onEdit) {
     var listbox = doc.getElementById(input.getAttribute("aria-controls"));
     var options = [];
     var active = -1;
@@ -283,6 +304,7 @@
     input.addEventListener("input", function () {
       choisi = null;
       input.removeAttribute("aria-invalid");
+      onEdit();
       options = suggest(input.value, data.medicaments);
       active = -1;
       afficher();
@@ -341,7 +363,7 @@
 
   function tableauRoles(doc, a, b, liste, enzymes) {
     var table = el(doc, "table", { class: "cyp-roles" });
-    table.appendChild(el(doc, "caption", null, "Rôles " + deNom(a.nom) + " et " + deNom(b.nom) + ", enzyme par enzyme"));
+    table.appendChild(el(doc, "caption", null, rolesCaption(a, b)));
     var tete = el(doc, "tr");
     ["Enzyme", a.nom, b.nom].forEach(function (t) { tete.appendChild(el(doc, "th", { scope: "col" }, t)); });
     table.appendChild(el(doc, "thead")).appendChild(tete);
@@ -387,26 +409,39 @@
     var statut = doc.getElementById("cyp-statut");
     var resultat = doc.getElementById("cyp-resultat");
     var champs = {};
-    champs.A = combobox(doc, doc.getElementById("cyp-a"), data, auChoix);
-    champs.B = combobox(doc, doc.getElementById("cyp-b"), data, auChoix);
+    var minuterie = null;
+    champs.A = combobox(doc, doc.getElementById("cyp-a"), data, auChoix, effacer);
+    champs.B = combobox(doc, doc.getElementById("cyp-b"), data, auChoix, effacer);
     form.hidden = false;
 
     function auChoix() {
       if (champs.A.choisi() && champs.B.choisi()) verifier();
     }
 
-    function signaler(label, r) {
+    // Emptied first, then filled: a live region repeats a text only when it changes, and the
+    // same pair checked twice gives the same text.
+    function annoncer(texte) {
+      clearTimeout(minuterie);
+      statut.textContent = "";
+      minuterie = setTimeout(function () { statut.textContent = texte; }, ANNONCE_MS);
+    }
+
+    function effacer() {
+      clearTimeout(minuterie);
+      statut.textContent = "";
       resultat.textContent = "";
-      statut.textContent = problem(label, r);
-      champs[label].input.setAttribute("aria-invalid", "true");
     }
 
     function verifier() {
       var ra = champs.A.lire();
       var rb = champs.B.lire();
-      if (ra.statut !== "trouve") return signaler("A", ra);
-      if (rb.statut !== "trouve") return signaler("B", rb);
-      if (ra.medicament === rb.medicament) return signaler("B", { statut: "meme" });
+      var erreurs = problems(ra, rb);
+      if (erreurs.invalides.length) {
+        resultat.textContent = "";
+        erreurs.invalides.forEach(function (label) { champs[label].input.setAttribute("aria-invalid", "true"); });
+        annoncer(erreurs.message);
+        return;
+      }
       var a = ra.medicament;
       var b = rb.medicament;
       [champs.A, champs.B].forEach(function (champ, i) {
@@ -415,7 +450,7 @@
         champ.fermer();
       });
       var liste = mechanisms(a, b, data.enzymes);
-      statut.textContent = summary(a, b, liste);
+      annoncer(summary(a, b, liste));
       resultat.textContent = "";
       if (liste.length) {
         var ul = el(doc, "ul", { class: "cyp-mecanismes" });
@@ -446,6 +481,8 @@
     summary: summary,
     roleLabel: roleLabel,
     problem: problem,
+    problems: problems,
+    rolesCaption: rolesCaption,
     init: init,
   };
 });

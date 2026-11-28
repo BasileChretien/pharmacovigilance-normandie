@@ -45,8 +45,27 @@ TABLES = (
 
 
 def fold(text: str) -> str:
-    """Lower case without accents, for sorting and for spotting duplicates."""
-    return unicodedata.normalize("NFD", text).encode("ascii", "ignore").decode().lower()
+    """Lower case, no accents, punctuation as spaces: the checker's search key (fold() in
+    assets/js/cyp-verificateur.js), used here to sort and to spot duplicates."""
+    ascii_text = unicodedata.normalize("NFD", text).encode("ascii", "ignore").decode().lower()
+    return re.sub(r"[^a-z0-9]+", " ", ascii_text).strip()
+
+
+class _UniqueKeyLoader(yaml.SafeLoader):
+    """safe_load keeps the last of two equal keys, so a drug written twice would vanish."""
+
+
+def _mapping_without_duplicates(loader: yaml.SafeLoader, node: yaml.MappingNode) -> dict:
+    seen = set()
+    for key_node, _ in node.value:
+        key = loader.construct_object(key_node)
+        if key in seen:
+            raise ValueError(f"data/cytochromes.yml, ligne {key_node.start_mark.line + 1} : « {key} » en double")
+        seen.add(key)
+    return yaml.SafeLoader.construct_mapping(loader, node)
+
+
+_UniqueKeyLoader.add_constructor(yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, _mapping_without_duplicates)
 
 
 def anchor(enzyme: str) -> str:
@@ -105,16 +124,30 @@ def _drug(name: str, entry: object, sources: dict, default: str) -> dict:
     return {"nom": name[:1].upper() + name[1:], "precision": str(entry.get("précision") or ""), "roles": ordered}
 
 
+def _sources(raw: object) -> dict:
+    """Each source: {court: shown in the grid, long: said by the checker, with its article}."""
+    if not isinstance(raw, dict) or not raw:
+        raise ValueError("data/cytochromes.yml : sources doit associer chaque clé à {court, long}")
+    for key, value in raw.items():
+        for field in ("court", "long"):
+            if not isinstance(value, dict) or not isinstance(value.get(field), str) or not value[field].strip():
+                raise ValueError(f"data/cytochromes.yml, sources, {key} : champ {field} manquant")
+    return raw
+
+
 def load(text: str) -> dict:
     """Read and check data/cytochromes.yml; drugs sorted alphabetically, ignoring accents."""
-    raw = yaml.safe_load(text) or {}
-    sources = raw.get("sources") or {}
+    raw = yaml.load(text, Loader=_UniqueKeyLoader) or {}
+    sources = _sources(raw.get("sources"))
     default = raw.get("source_par_defaut")
     if default not in sources:
         raise ValueError("data/cytochromes.yml : source_par_defaut doit être une clé de sources")
+    medicaments = raw.get("medicaments") or {}
+    if not isinstance(medicaments, dict):
+        raise ValueError("data/cytochromes.yml : medicaments doit être une liste de clés (nom: rôles), pas une liste simple")
     seen: dict[str, str] = {}
     drugs = []
-    for name, entry in (raw.get("medicaments") or {}).items():
+    for name, entry in medicaments.items():
         name = str(name)
         if fold(name) in seen:
             _fail(name, "", f"en double avec {seen[fold(name)]}")

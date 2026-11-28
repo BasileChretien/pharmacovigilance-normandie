@@ -2,6 +2,8 @@
 // interactions table and the cytochrome index were "a long table without a filter").
 // In a page: wrap the table in ::: {.tableau-filtrable} ... ::: and load this script. A box may
 // hold several tables (the three tables of the cytochrome grid): one field filters them all.
+// With cible="premiere-colonne" only the first cell of a row is searched (the drug names of
+// the grid, whose other cells hold "Puissant", "Modéré"…).
 // Rows that do not hold every typed word are hidden; accents and case are ignored, so
 // "erythromycine" finds "érythromycine". A status line gives the count, announced to
 // screen readers once typing pauses rather than at every key. Without JavaScript the
@@ -20,6 +22,8 @@
   var ANNOUNCE_DELAY_MS = 400;
   var DEFAULT_LABEL = "Filtrer ce tableau";
   var HELP = "Un ou plusieurs mots, par exemple un médicament ou une classe. Les accents sont facultatifs.";
+  var HELP_FIRST_COLUMN = "Le nom d'un médicament, ou son début. Les accents sont facultatifs.";
+  var FIRST_COLUMN = "premiere-colonne";
 
   function fold(text) {
     return String(text).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
@@ -48,6 +52,12 @@
     return rows;
   }
 
+  // The text a row is searched on: the whole row, or its first cell only.
+  function rowText(row, target) {
+    if (target === FIRST_COLUMN && row.cells && row.cells.length) return row.cells[0].textContent;
+    return row.textContent;
+  }
+
   function element(doc, tag, attributes, text) {
     var node = doc.createElement(tag);
     Object.keys(attributes).forEach(function (name) { node.setAttribute(name, attributes[name]); });
@@ -62,6 +72,7 @@
     // Each field needs its own label when a page has several tables:
     // ::: {.tableau-filtrable libelle="Filtrer l'index par médicament"}
     var label = box.getAttribute("data-libelle") || DEFAULT_LABEL;
+    var target = box.getAttribute("data-cible");
 
     var field = element(doc, "div", { class: "filtre-tableau" });
     var input = element(doc, "input", {
@@ -71,7 +82,8 @@
     var status = element(doc, "p", { class: "filtre-tableau-etat", id: id + "-etat", role: "status" });
     field.appendChild(element(doc, "label", { class: "form-label", for: id }, label));
     field.appendChild(input);
-    field.appendChild(element(doc, "p", { class: "filtre-tableau-aide", id: id + "-aide" }, HELP));
+    field.appendChild(element(doc, "p", { class: "filtre-tableau-aide", id: id + "-aide" },
+      target === FIRST_COLUMN ? HELP_FIRST_COLUMN : HELP));
     field.appendChild(status);
     box.insertBefore(field, box.firstChild);
 
@@ -81,7 +93,7 @@
     input.addEventListener("input", function () {
       var shown = 0;
       rows.forEach(function (row) {
-        var keep = matches(row.textContent, input.value);
+        var keep = matches(rowText(row, target), input.value);
         row.hidden = !keep;
         if (keep) shown += 1;
       });
@@ -97,5 +109,5 @@
     Array.prototype.forEach.call(boxes, function (box, index) { enhance(doc, box, index); });
   }
 
-  return { fold: fold, matches: matches, countLabel: countLabel, bodyRows: bodyRows, init: init };
+  return { fold: fold, matches: matches, countLabel: countLabel, bodyRows: bodyRows, rowText: rowText, init: init };
 });
