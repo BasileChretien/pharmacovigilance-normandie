@@ -50,3 +50,21 @@ def test_centroid_of_a_square_and_of_a_flat_ring():
     assert abs(area) == 4 and (x, y) == (1, 1)
     area, _ = mc.area_and_centroid([(0, 0), (1, 1), (2, 2)])  # an islet simplified to a line
     assert area == 0
+
+
+def test_hatched_departments_lie_on_a_tint_of_their_own():
+    # Dark Reader cannot measure a pattern's tile: the tint is a shape under the hatching,
+    # which it darkens like the plain departments (docs/mode-sombre.md).
+    text = mc.svg(DATA)
+    assert "<rect" not in re.search(r"<pattern.*?</pattern>", text, re.S).group(0)
+    for dep in DATA["departements"]:
+        d = re.search(rf'id="{mc.NAME}-dep-{dep["code"]}" d="([^"]*)"', text).group(1)
+        under = f'<path d="{d}" fill="{mc.GREEN_TINT}"/>' in text
+        assert under == (dep["crpv"] == "Rouen")
+
+
+def test_legend_swatches_are_drawn_like_the_map_by_dark_reader():
+    # A swatch of 46 units or less would be lightened while the map is darkened.
+    text = mc.svg(DATA)
+    widths = [float(w) for w in re.findall(r'<rect x="16" y="[0-9.]+" width="([0-9.]+)"', text)]
+    assert widths and all(w > cf.SMALL_SHAPE for w in widths)

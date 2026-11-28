@@ -10,13 +10,28 @@ prochaine_relecture: null
 sources:
   - titre: "SFORL, Recommandation pour la pratique clinique : prise en charge diagnostique et thérapeutique des rhinites allergiques par l'ORL, 2020 (PDF)"
     url: "https://www.sforl.org/wp-content/uploads/2020/07/Recommandation-SFORL-Prise-en-charge-diagnostique-et-thérapeutique-des-Rhinites-Allergiques-par-lORL-2020.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Rhume : ordonnance obligatoire pour toute dispensation de médicament à base de pseudoéphédrine, 10 décembre 2024"
     url: "https://ansm.sante.fr/actualites/rhume-ordonnance-obligatoire-pour-toute-dispensation-de-medicament-a-base-de-pseudoephedrine"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. Fichier des spécialités du 20/11/2026 : les médicaments oraux à la pseudoéphédrine sont « non commercialisés »"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/telechargement"
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. PERNAZENE 0,05 POUR CENT, solution pour pulvérisation nasale (oxymétazoline), RCP mis à jour le 10/02/2023"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/65639939/extrait"
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. DERINOX, solution pour pulvérisation nasale (naphazoline, prednisolone), RCP mis à jour le 01/09/2025"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/69345098/extrait"
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. NASONEX 50 microgrammes/dose, suspension pour pulvérisation nasale (mométasone), notice mise à jour le 17/02/2025"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/63566855/extrait"
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. ZYRTECSET 10 mg, comprimé pelliculé sécable (cétirizine), notice mise à jour le 22/05/2026"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/64949486/extrait"
+    consulte_le: 2026-11-28
   - titre: "Afssaps (ANSM), Mise au point – Médicaments et conduite automobile, actualisation mars 2009 (PDF)"
     url: "https://ansm.sante.fr/uploads/2021/03/11/faff1e402339cd443a9894792f20d31d.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Antihistaminiques H1"
     url: "https://pharmacomedicale.org/medicaments/par-specialites/item/antihistaminiques-h1"
@@ -71,7 +86,7 @@ Pour un spray nasal, tenez le flacon de la main opposée à la narine : main dro
 
 ### Ce qu'il vaut mieux éviter
 
-- Les **décongestionnants** (médicaments qui débouchent le nez en resserrant les vaisseaux) ne sont pas conseillés en premier. En spray, ne les utilisez pas plus de 3 jours : le nez peut se boucher davantage. En comprimés, ceux à la pseudoéphédrine exposent à de rares accidents graves, comme un accident vasculaire cérébral (AVC). Ils ne sont délivrés que sur ordonnance.
+- Les **décongestionnants** (médicaments qui débouchent le nez en resserrant les vaisseaux) ne sont pas conseillés en premier. En spray, ils demandent une ordonnance et sont interdits avant 15 ans. Ne les utilisez pas plus de 3 jours : le nez peut se boucher davantage. En comprimés, ceux à la pseudoéphédrine exposent à de rares accidents graves, comme un accident vasculaire cérébral (AVC). Ils ne sont plus vendus en France.
 - Les piqûres de corticoïdes « retard » contre l'allergie : elles ont des effets indésirables importants.
 - Conduire si un antihistaminique vous rend somnolent. Regardez le pictogramme sur la boîte.
 
@@ -94,8 +109,8 @@ Symptomatologie unilatérale ou suppurative : remettre en cause le diagnostic (r
 - **Rhinite modérée** : rhinocorticostéroïde en monothérapie en première intention (grade B). Chez l'adulte insuffisamment contrôlé : doubler la dose (grade A), puis association fixe corticoïde et anti-H1 nasal (grade A ; en France, azélastine-fluticasone en seconde intention).
 - **Associations sans intérêt démontré** par rapport au rhinocorticostéroïde seul : avec un anti-H1 oral, un décongestionnant ou un antileucotriène.
 - **Antileucotriènes** : pas en monothérapie de première intention (grade A).
-- **Immunothérapie allergénique** : rhinite modérée ou sévère insuffisamment contrôlée, prescrite par un praticien formé (grade A), première prise sublinguale au cabinet avec adrénaline auto-injectable disponible (grade A).
-- **Enfant** : corticoïde intranasal en première intention à partir de 3 ans dans la rhinite perannuelle, selon l'AMM de la molécule. Entre 1 et 3 ans, l'anti-H1 oral de dernière génération est la seule option (grade C). Éviter corticoïdes systémiques et vasoconstricteurs.
+- **Immunothérapie allergénique** : rhinite modérée ou sévère insuffisamment contrôlée (accord professionnel), prescrite par un praticien formé à l'allergologie (grade A), première prise sublinguale au cabinet avec adrénaline auto-injectable disponible (grade A).
+- **Enfant** : corticoïde intranasal en première intention à partir de 3 ans dans la rhinite perannuelle, selon l'AMM de la molécule. Entre 1 et 3 ans, l'anti-H1 oral de dernière génération est la seule option (grade C). Éviter les corticoïdes systémiques (SFORL) ; les vasoconstricteurs nasaux sont contre-indiqués avant 15 ans (RCP de Pernazène et de Derinox).
 
 ### Mécanismes d'action
 
@@ -103,9 +118,9 @@ Anti-H1 : antagonistes des récepteurs H1 de l'histamine ; efficacité partielle
 
 ### Précautions et effets indésirables
 
-- **Anti-H1 de première génération** : sédation nettement plus marquée, effets anticholinergiques (vision floue, mydriase), vertiges, hypotension orthostatique ; souvent en vente libre, conseil pharmaceutique indispensable avant la conduite (Afssaps 2009). Seconde génération : somnolence peu fréquente mais à signaler à la première prescription.
+- **Anti-H1 de première génération** : sédation nettement plus marquée, effets anticholinergiques (vision floue, mydriase), vertiges, hypotension orthostatique ; en majorité disponibles sans ordonnance en 2009, conseil pharmaceutique indispensable avant la conduite (Afssaps 2009). Seconde génération : somnolence peu fréquente mais à signaler à la première prescription.
 - **Rhinocorticostéroïdes** : épistaxis chez 17 à 23 % des patients, souvent liées à la technique (main ipsilatérale) ; pas d'effet significatif sur l'axe corticotrope ; élévation transitoire de la pression intra-oculaire décrite.
-- **Vasoconstricteurs** : rhinite médicamenteuse au-delà de 3 jours ; pas en première intention (grade A). La pseudoéphédrine orale est inscrite sur la liste I et soumise à prescription depuis le 11 décembre 2024 (ANSM). Ses risques : AVC, infarctus du myocarde, PRES (encéphalopathie postérieure réversible) et SVCR (syndrome de vasoconstriction cérébrale réversible), y compris sans facteur de risque et quelle que soit la dose. Les formes nasales sont déjà sur prescription.
+- **Vasoconstricteurs** : pas en première intention (grade A). Par voie nasale, pas plus de 3 jours (SFORL ; RCP : 3 à 5 jours au plus), l'usage prolongé exposant à une rhinite médicamenteuse ; contre-indiqués avant 15 ans ; liste II (Pernazène, Derinox ; RCP). La pseudoéphédrine orale est inscrite sur la liste I et soumise à prescription depuis le 11 décembre 2024 (ANSM). Ses risques : AVC, infarctus du myocarde, PRES (encéphalopathie postérieure réversible) et SVCR (syndrome de vasoconstriction cérébrale réversible), y compris sans facteur de risque et quelle que soit la dose. Aucune spécialité orale qui en contient n'est commercialisée au 20/11/2026 (BDPM).
 
 ### Ce qu'il faut éviter
 

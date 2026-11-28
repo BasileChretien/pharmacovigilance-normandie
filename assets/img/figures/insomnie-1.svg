@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="#10283a">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="16" fill="currentColor">
   <line x1="40" y1="30" x2="40" y2="388" stroke="#d5e2ea" stroke-width="4"/>
   <g fill="#eef6fa" stroke="#46586a" stroke-width="1.5">
-    <circle cx="40" cy="30" r="20"/><circle cx="40" cy="100" r="20"/><circle cx="40" cy="170" r="20"/>
-    <circle cx="40" cy="240" r="20"/><circle cx="40" cy="310" r="20"/><circle cx="40" cy="388" r="20"/>
+    <circle cx="40" cy="30" r="24"/><circle cx="40" cy="100" r="24"/><circle cx="40" cy="170" r="24"/>
+    <circle cx="40" cy="240" r="24"/><circle cx="40" cy="310" r="24"/><circle cx="40" cy="388" r="24"/>
   </g>
 
   <!-- Getting up -->

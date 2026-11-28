@@ -164,9 +164,27 @@ que le médicament est en cause.
   - Fonds de zones : `pv-paper`, `pv-mist`, `pv-mist-deep`, `pv-green-tint`,
     `pv-alert-tint`, `pv-amber-tint`.
   - Décor seulement, jamais du texte ni seul porteur d'un sens : `pv-cyan`, `pv-green`,
-    `pv-or`, `pv-rule`.
+    `pv-or`, `pv-rule`, `pv-eau` (l'eau, un liquide).
   - Toute nouvelle paire texte/fond va dans `tools/checks/contrast_pairs.yml`
-    (`check_contrast.py`).
+    (`check_contrast.py`, qui la vérifie dans les deux thèmes).
+- **Lisible dans le noir** (thème sombre du site et extensions comme Dark Reader ; le
+  pourquoi : `docs/mode-sombre.md`). Le SVG garde les jetons clairs ; le thème sombre
+  donne à chacun sa valeur sombre (`$pv-figures-sombre` dans `assets/theme-sombre.scss`).
+  Dark Reader, lui, assombrit le `fill` d'une grande forme comme un fond et éclaircit celui
+  d'un texte, ou d'une forme de 32 px ou moins, comme une couleur de texte. D'où :
+  - `fill="currentColor"` sur `<svg>` : un texte sans couleur propre prend celle du texte
+    de la page ;
+  - un texte porte sa couleur lui-même, pas celle d'un groupe `<g fill>` ; pas de couleur
+    sur un `<tspan>` (colorer le `<text>` entier, garder le mot en gras) ;
+  - pas de texte sur une forme pleine de 46 unités ou moins de côté (32 px sur un
+    téléphone de 320 px) : une pastille numérotée a un bord seul (`fill="none"`), un badge
+    fait plus de 46 unités de large ;
+  - un motif (`<pattern>`) ne garde que ses traits, en `<path>` ; la teinte de la zone est
+    une forme à part, dessous ;
+  - une case de légende qui reprend une zone fait plus de 46 unités de large (sinon Dark
+    Reader l'éclaircit quand il assombrit la zone) ;
+  - une couleur nouvelle (carte d'accueil, grilles de fréquences comprises) a sa ligne
+    dans `$pv-figures-sombre`.
 - **Jamais la couleur seule** : `pv-signal`, `pv-signal-dark`, `pv-alert`, `pv-green-ink` et
   `pv-amber` ont presque la même clarté et se confondent en niveaux de gris ; leurs teintes
   aussi. Un niveau se lit à son mot (« Interdit », « À éviter », « Précaution ») et à sa
@@ -177,4 +195,4 @@ que le médicament est en cause.
 - **Accessibilité** : le raccourci ajoute `role="img"`, le titre (`alt`) et la description ;
   les `id` du SVG commencent par son nom (plusieurs figures par page).
 - `tools/checks/check_figures.py` vérifie les règles mesurables (taille, couleurs, police,
-  `id`, raccourcis).
+  `id`, raccourcis, lisibilité dans le noir sauf les cases de légende).

@@ -1,0 +1,83 @@
+/*-- scss:defaults --*/
+
+// Dark theme, layered on assets/theme.scss (_quarto.yml: theme dark). Quarto reads the
+// defaults of this file first, so the values below win over the light ones (!default there).
+// It follows the reader's system setting (prefers-color-scheme) and the switch in the
+// navigation bar; _includes/theme-sombre.html then asks Dark Reader to stand aside and
+// prints in the light theme. Why, and what Dark Reader does to the light theme:
+// docs/mode-sombre.md.
+//
+// Same token names, same text/background pairs: tools/checks/check_contrast.py checks each
+// pair of contrast_pairs.yml in both themes. A deep Channel-blue night, not pure black.
+$pv-ink: #e3ecf2;
+$pv-ink-quiet: #a9bcca;
+$pv-paper: #0f1b25;
+$pv-mist: #152634;
+$pv-mist-deep: #1e3446;
+$pv-signal: #72b9ee;
+$pv-signal-dark: #a9d4f6;     // "darker" = stronger: lighter on a dark page
+$pv-green-ink: #62d3a0;
+$pv-green-tint: #11291f;
+$pv-alert: #ff958c;
+$pv-alert-tint: #341a1a;
+$pv-amber: #efc46c;
+$pv-amber-tint: #30260f;
+$pv-rule: #2c4356;
+$pv-manche: #0a3644;
+$pv-eau: #1f4a5c;
+$pv-surligne: #80591a;
+$pv-ombre: #000000;
+
+/*-- scss:rules --*/
+
+// Form controls, scroll bars, and Dark Reader's own detection (it reads color-scheme).
+:root { color-scheme: dark; }
+
+// Partner logos are drawn for a white page: they keep a white backing.
+.logo-page {
+  background: $pv-logo-fond;
+  padding: 0.5rem 0.75rem;
+  border-radius: $border-radius;
+}
+
+// Figures keep the light tokens in their fill and stroke attributes: Dark Reader reads them
+// there (docs/mode-sombre.md). The dark theme gives each light colour its dark token.
+// tools/checks/check_figures.py checks that every colour of a figure, of the home-page map
+// (tools/design/make_signal.py) and of the frequency grids (assets/js/frequences.js) has a
+// line here, and that a token's line points to a token of the same light value.
+$pv-figures-sombre: (
+  "#10283a": $pv-ink,
+  "#46586a": $pv-ink-quiet,
+  "#ffffff": $pv-paper,
+  "#eef6fa": $pv-mist,
+  "#dcebf3": $pv-mist-deep,
+  "#0a5c9e": $pv-signal,
+  "#073f6e": $pv-signal-dark,
+  "#19a6e3": $pv-cyan,
+  "#2bcf8c": $pv-green,
+  "#0b6b45": $pv-green-ink,
+  "#e6f7ef": $pv-green-tint,
+  "#b3261e": $pv-alert,
+  "#fdeceb": $pv-alert-tint,
+  "#7a4f00": $pv-amber,
+  "#fdf1d8": $pv-amber-tint,
+  "#d5e2ea": $pv-rule,
+  "#e7b03b": $pv-or,
+  "#bfe3ee": $pv-eau,
+  "#0d4a5e": $pv-manche,
+  // Home-page map: territories, small towns and resting links (decorative).
+  "#d3e9f5": #183449,
+  "#d4efe2": #163a2e,
+  "#7f9fb3": #7290a5,
+  "#9bb9cb": #4d677b,
+  // Frequency grids: people who do not have the effect.
+  "#c9d8e2": #3b5265,
+);
+
+@each $clair, $sombre in $pv-figures-sombre {
+  :is(.figure-pv, .hero-figure, .frequences-grille) svg {
+    [fill="#{$clair}" i] { fill: $sombre; }
+    [stroke="#{$clair}" i] { stroke: $sombre; }
+    [stop-color="#{$clair}" i] { stop-color: $sombre; }
+  }
+}

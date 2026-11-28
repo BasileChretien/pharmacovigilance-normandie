@@ -11,37 +11,61 @@ substances: [dextrométhorphane, codéine, paracétamol]
 sources:
   - titre: "ANSM. En cas de rhume, ne pas utiliser de médicaments à base de pseudoéphédrine (vasoconstricteurs par voie orale), 08/04/2024"
     url: "https://ansm.sante.fr/informations-de-securite/en-cas-de-rhume-ne-pas-utiliser-de-medicaments-a-base-de-pseudoephedrine-vasoconstricteurs-par-voie-orale"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM. Rhume : ordonnance obligatoire pour toute dispensation de médicament à base de pseudoéphédrine, 10/12/2024"
     url: "https://ansm.sante.fr/actualites/rhume-ordonnance-obligatoire-pour-toute-dispensation-de-medicament-a-base-de-pseudoephedrine"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "EMA. Pseudoephedrine-containing medicinal products, article 31 referral (avis du PRAC du 30/11/2023, décision de la Commission européenne du 27/03/2024)"
+    url: "https://www.ema.europa.eu/en/medicines/human/referrals/pseudoephedrine-containing-medicinal-products"
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. Fichier des spécialités du 20/11/2026 : les médicaments oraux à la pseudoéphédrine sont « non commercialisés » (déclarations d'arrêt de commercialisation de décembre 2024 à décembre 2025)"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/telechargement"
+    consulte_le: 2026-11-28
   - titre: "ANSM. Vous avez un rhume : que faire ? Document d'information pour les patients, septembre 2020"
     url: "https://ansm.sante.fr/uploads/2021/09/13/information-pour-les-patients-vous-avez-un-rhume-que-faire-2.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM. Pholcodine : suspension des autorisations de mise sur le marché et retrait de toutes les boîtes de sirop, 08/09/2022, mis à jour le 13/09/2022"
     url: "https://ansm.sante.fr/informations-de-securite/pholcodine-suspension-des-autorisations-de-mise-sur-le-marche-et-retrait-de-toutes-les-boites-de-sirop-contenant-de-la-pholcodine-en-raison-dun-risque-dallergie-croisee-avec-les-curares"
-    consulte_le: 2026-11-25
-  - titre: "HAS. Prise en charge médicamenteuse de la douleur chez l'enfant : alternatives à la codéine (rappel des mesures ANSM d'avril 2013), 2016"
-    url: "https://has-sante.fr/jcms/c_2010340/fr/prise-en-charge-medicamenteuse-de-la-douleur-chez-l-enfant-alternatives-a-la-codeine"
-    consulte_le: 2026-11-25
-  - titre: "HAS. Choix et durées d'antibiothérapies : Rhinopharyngite aiguë enfant, mise à jour le 13/05/2025"
-    url: "https://has-sante.fr/jcms/c_2722754/fr/"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "ANSM. Risque d'allergie grave aux curares en cas d'utilisation des sirops contre la toux contenant de la pholcodine, 01/09/2022, mis à jour le 05/04/2023 (retrait des AMM)"
+    url: "https://ansm.sante.fr/actualites/risque-dallergie-grave-aux-curares-en-cas-dutilisation-des-sirops-contre-la-toux-contenant-de-la-pholcodine"
+    consulte_le: 2026-11-28
+  - titre: "EMA. Pholcodine-containing medicinal products, article 31 referral (avis du PRAC du 01/12/2022, CMDh du 14/12/2022, décision de la Commission européenne du 06/03/2023)"
+    url: "https://www.ema.europa.eu/en/medicines/human/referrals/pholcodine-containing-medicinal-products"
+    consulte_le: 2026-11-28
+  - titre: "EMA. Codeine-containing medicinal products for the treatment of cough or cold in paediatric patients, article 31 referral (avis du PRAC du 12/03/2015, CMDh du 22/04/2015)"
+    url: "https://www.ema.europa.eu/en/medicines/human/referrals/codeine-containing-medicinal-products-treatment-cough-or-cold-paediatric-patients"
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. PADERYL 0,1 POUR CENT, sirop (codéine), RCP et notice mis à jour le 12/06/2026"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/62582924/extrait"
+    consulte_le: 2026-11-28
+  - titre: "ANSM. Décision du 24/09/2024 portant inscription sur les listes I et II des substances vénéneuses (codéine en sirop classée sur la liste I), entrée en vigueur reportée au 01/03/2025 par la décision du 27/11/2024"
+    url: "https://ansm.sante.fr/actualites/decision-du-24-09-2024-portant-inscription-sur-les-listes-i-et-ii-des-substances-veneneuses-definies-a-larticle-l-5132-6-du-code-de-la-sante-publique"
+    consulte_le: 2026-11-28
+  - titre: "ANSM, Thésaurus des interactions médicamenteuses, version du 15/09/2023 (sympathomimétiques indirects : pages 233 et 234)"
+    url: "https://ansm.sante.fr/documents/reference/thesaurus-des-interactions-medicamenteuses-1"
+    consulte_le: 2026-11-28
   - titre: "VIDAL. Codéine, dextrométorphane, éthylmorphine et noscapine : prescription médicale obligatoire (arrêté du 12 juillet 2017)"
     url: "https://www.vidal.fr/actualites/21716-codeine-dextrometorphane-ethylmorphine-et-noscapine-prescription-medicale-obligatoire-liste-des-produits-concernes.html"
-    consulte_le: 2026-11-25
-  - titre: "ANSM, Répertoire des spécialités. FLUIMUCIL EXPECTORANT ACETYLCYSTEINE 2 % ENFANTS SANS SUCRE, RCP mis à jour le 20/11/2020"
-    url: "https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0363528.htm"
-    consulte_le: 2026-11-25
-  - titre: "Base de données publique des médicaments. DAFALGAN CODEINE, comprimé pelliculé, RCP mis à jour le 31/07/2026"
-    url: "http://base-donnees-publique.medicaments.gouv.fr/medicament/66003374/extrait"
-    consulte_le: 2026-11-25
-  - titre: "Santé.fr (ministère de la Santé), Antibio'Malin. Rhinopharyngite ou rhume"
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. TUSSIDANE 1,5 mg/ml SANS SUCRE, solution buvable (dextrométhorphane), RCP mis à jour le 06/06/2024"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/66819541/extrait"
+    consulte_le: 2026-11-28
+  - titre: "Afssaps. Mise au point : prise en charge de la toux aiguë chez le nourrisson de moins de deux ans, octobre 2010"
+    url: "https://ansm.sante.fr/uploads/2021/03/11/fa84be12b0ebddf5e5ad026a59f6a996.pdf"
+    consulte_le: 2026-11-28
+  - titre: "Base de données publique des médicaments. FLUIMUCIL 2 % ENFANTS, solution buvable (acétylcystéine), RCP mis à jour le 09/09/2024"
+    url: "https://base-donnees-publique.medicaments.gouv.fr/medicament/69440048/extrait"
+    consulte_le: 2026-11-28
+  - titre: "HAS. Choix et durées d'antibiothérapies : Rhinopharyngite aiguë enfant, mise à jour le 13/05/2025"
+    url: "https://has-sante.fr/jcms/c_2722754/fr/"
+    consulte_le: 2026-11-28
+  - titre: "Santé.fr (ministère de la Santé), Antibio'Malin. Rhinopharyngite ou rhume, 29/03/2022"
     url: "https://www.sante.fr/antibiomalin-pour-savoir-comment-bien-utiliser-les-antibiotiques/rhinopharyngite-ou-rhume"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Santé.fr (ministère de la Santé), Antibio'Malin. Bronchite aiguë, 16/09/2025"
     url: "https://www.sante.fr/antibiomalin-pour-savoir-comment-bien-utiliser-les-antibiotiques/bronchite-aigue-definition-diagnostic-traitement-prevention"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Médicaments pour le rhume, désormais sur prescription obligatoire : une décision au bénéfice des patients"
     url: "https://www.rfcrpv.fr/medicaments-pour-le-rhume-desormais-sur-prescription-obligatoire-une-decision-au-benefice-des-patients/"
@@ -95,9 +119,11 @@ Il peut provoquer, rarement, des effets graves :
 - des convulsions ;
 - une baisse brutale de la vue.
 
-Ces effets peuvent survenir quelle que soit la dose, et chez des personnes sans problème de santé connu. L'Agence nationale de sécurité du médicament (ANSM) déconseille ces comprimés contre le rhume. Depuis décembre 2024, ils ne sont plus délivrés que sur ordonnance.
+Ces effets peuvent survenir quelle que soit la dose, et chez des personnes sans problème de santé connu. L'Agence nationale de sécurité du médicament (ANSM) déconseille ces comprimés contre le rhume. Depuis décembre 2024, ils ne sont plus délivrés que sur ordonnance. Leurs laboratoires ont ensuite arrêté de les vendre : en novembre 2026, on n'en trouve plus en France.
 
-### Comment les utiliser si un médecin les prescrit ?
+### Et s'il vous en reste une boîte ?
+
+N'en prenez pas de vous-même. Si un médecin vous en a prescrit, suivez ces règles :
 
 - Ne dépassez pas 5 jours de traitement.
 - Ne les donnez pas avant 15 ans.
@@ -114,13 +140,13 @@ Il faut distinguer deux toux :
 
 Avant 2 ans, aucun sirop contre la toux, ni médicament pour fluidifier le mucus. Chez la femme enceinte et l'enfant de moins de 6 ans, seulement sur avis médical.
 
-Les sirops à base de codéine ou de dextrométhorphane ne sont délivrés que sur ordonnance depuis 2017. Certains jeunes les détournaient pour se droguer. La codéine est interdite avant 12 ans et pendant l'allaitement. Chez certaines personnes, elle se transforme trop vite en morphine et peut bloquer la respiration.
+Les sirops à base de codéine ou de dextrométhorphane ne sont délivrés que sur ordonnance depuis 2017. Certains jeunes les détournaient pour se droguer. Depuis mars 2025, un sirop à la codéine demande une ordonnance sécurisée, sur un papier spécial. La codéine est interdite avant 12 ans et pendant l'allaitement. Chez certaines personnes, elle se transforme trop vite en morphine et peut bloquer la respiration.
 
 ### Quels effets surveiller ?
 
-Avec la codéine, une somnolence inhabituelle ou une respiration lente doivent faire appeler le 15. [à compléter : source, notice d'un sirop codéiné]
+Avec la codéine, une respiration lente ou faible, une somnolence inhabituelle ou une confusion doivent faire arrêter le sirop. Consultez tout de suite un médecin. Appelez le 15 si vous avez du mal à respirer.
 
-La pholcodine, un ancien médicament contre la toux, a été retirée en 2022. Elle augmente le risque d'allergie grave à certains médicaments utilisés pour l'anesthésie (les curares). Si vous en avez pris, même il y a longtemps, signalez-le avant une opération.
+La pholcodine, un ancien médicament contre la toux, a été retirée du marché en 2022. Elle augmente le risque d'allergie grave à certains médicaments utilisés pour l'anesthésie (les curares). Si vous en avez pris, même il y a longtemps, signalez-le avant une opération.
 
 ### Ce qu'il vaut mieux éviter
 
@@ -145,7 +171,7 @@ Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre ph
 
 - Rhinopharyngite : pas d'antibiotique quel que soit l'âge ; paracétamol en première intention (enfant : 60 mg/kg/j en 4 prises, sans dépasser 80 mg/kg/j, 72 heures au plus) ; pas de bénéfice attendu de l'ibuprofène ; intérêt des corticoïdes systémiques et locaux non démontré (HAS, 2025).
 - Mesures non médicamenteuses en première ligne : lavage nasal au sérum physiologique, hydratation, tête surélevée, atmosphère à 18-20 °C (ANSM).
-- Vasoconstricteurs oraux : l'ANSM recommande de ne pas les utiliser dans le rhume, y compris depuis leur passage sur ordonnance.
+- Vasoconstricteurs oraux : l'ANSM recommande de ne pas les utiliser dans le rhume (08/04/2024). Inscrits sur la liste I le 11/12/2024, ils ne sont plus commercialisés : déclarations d'arrêt de commercialisation de décembre 2024 à décembre 2025 (base de données publique des médicaments, fichier du 20/11/2026).
 - Toux sèche invalidante : antitussif éventuel ; pas d'antitussif dans la toux productive (Antibio'Malin).
 
 ### Mécanismes d'action
@@ -156,19 +182,20 @@ Ne modifiez pas votre traitement sans en parler à votre médecin ou à votre ph
 
 ### Précautions et effets indésirables
 
-Pseudoéphédrine (ANSM, 08/04/2024 ; 10/12/2024) :
+Pseudoéphédrine (ANSM, 2020, 08/04/2024 et 10/12/2024 ; EMA, 2024) :
 
-- Risques rares mais graves : infarctus du myocarde, AVC, neuropathie optique ischémique, convulsions, pustulose exanthématique aiguë généralisée (PEAG), colite ischémique, troubles psychiatriques. Syndrome d'encéphalopathie postérieure réversible (PRES) et syndrome de vasoconstriction cérébrale réversible (SVCR), confirmés par l'EMA. Ces effets peuvent survenir sans facteur de risque, quelles que soient la dose et la durée.
-- Liste I depuis le 11 décembre 2024 (Actifed Rhume, Actifed Rhume jour et nuit, Dolirhume, Dolirhumepro, Humex Rhume, Nurofen Rhume, Rhinadvil Rhume, Rhinadvilcaps Rhume).
-- Précautions rappelées par l'ANSM (2020) : 5 jours au plus, pas avant 15 ans, pas pendant la grossesse ni l'allaitement, pas d'association à un autre vasoconstricteur oral ou nasal (oxymétazoline, éphédrine, naphazoline, tuaminoheptane), pas d'association à une autre spécialité contenant du paracétamol, de l'ibuprofène ou de la cétirizine. [à compléter : niveaux du Thésaurus ANSM des interactions pour les sympathomimétiques indirects]
+- Risques rares mais graves (ANSM, 2024) : infarctus du myocarde, AVC, neuropathie optique ischémique, convulsions, réactions cutanées graves dont la pustulose exanthématique aiguë généralisée (PEAG), syndrome d'encéphalopathie postérieure réversible (PRES) et syndrome de vasoconstriction cérébrale réversible (SVCR). Ces effets peuvent survenir sans facteur de risque, quelles que soient la dose et la durée. Le document patient de 2020 cite aussi la colite ischémique et des troubles psychiatriques.
+- Réévaluation européenne (avis du PRAC du 30/11/2023, décision de la Commission du 27/03/2024) : PRES et SVCR ajoutés ; contre-indication en cas d'hypertension artérielle sévère ou non contrôlée et d'insuffisance rénale aiguë ou chronique sévère.
+- Liste I depuis le 11 décembre 2024 (Actifed Rhume, Actifed Rhume jour et nuit, Dolirhume, Dolirhumepro, Humex Rhume, Nurofen Rhume, Rhinadvil Rhume, Rhinadvilcaps Rhume ; Rhumagrip figurait aussi dans la liste de 2020). Aucune de ces spécialités n'est commercialisée au 20/11/2026 (BDPM).
+- Précautions rappelées par l'ANSM (2020) : 5 jours au plus, pas avant 15 ans, pas pendant la grossesse ni l'allaitement, pas d'association à un autre vasoconstricteur oral ou nasal (oxymétazoline, éphédrine, naphazoline, tuaminoheptane), pas d'association à une autre spécialité contenant du paracétamol, de l'ibuprofène ou de la cétirizine. Thésaurus ANSM (15/09/2023, sympathomimétiques indirects, pages 233 et 234) : autres sympathomimétiques indirects, contre-indication ; sympathomimétiques alpha par voie orale ou nasale, contre-indication ; IMAO irréversibles, contre-indication (jusqu'à 15 jours après l'arrêt de l'IMAO) ; IMAO-A réversibles (dont linézolide et bleu de méthylène), association déconseillée (contre-indication avec le bupropion) ; alcaloïdes de l'ergot dopaminergiques ou vasoconstricteurs, association déconseillée ; anesthésiques volatils halogénés, précaution d'emploi (interrompre le traitement quelques jours avant une intervention programmée).
 
 Antitussifs :
 
-- Codéine (mesures ANSM d'avril 2013, RCP) : contre-indiquée avant 12 ans, pendant l'allaitement, chez les métaboliseurs CYP2D6 ultra-rapides connus et, avant 18 ans, après amygdalectomie ou adénoïdectomie.
-- Codéine, dextrométhorphane, éthylmorphine, noscapine : prescription obligatoire depuis l'arrêté du 12 juillet 2017 (sirops codéinés en liste II, dextrométhorphane en liste I), en raison de détournements chez les adolescents et jeunes adultes.
-- Pholcodine : AMM suspendues et lots retirés le 8 septembre 2022, en raison d'une association entre exposition antérieure et anaphylaxie peranesthésique aux curares. Rechercher une exposition, même ancienne, avant une anesthésie. [à compléter : issue de la réévaluation européenne]
+- Codéine antitussive (réévaluation européenne de 2015, RCP de Paderyl 0,1 % sirop) : contre-indiquée avant 12 ans, pendant l'allaitement, chez les métaboliseurs CYP2D6 ultra-rapides connus, en cas d'insuffisance respiratoire et dans la toux de l'asthmatique ; déconseillée entre 12 et 18 ans en cas d'atteinte de la fonction respiratoire. La contre-indication avant 18 ans après amygdalectomie ou adénoïdectomie vient des mesures de 2013 sur la codéine antalgique. Notice : arrêter et consulter immédiatement un médecin en cas de respiration lente ou superficielle, de confusion, de somnolence ou de myosis.
+- Codéine, dextrométhorphane, éthylmorphine, noscapine : prescription obligatoire depuis l'arrêté du 12 juillet 2017, en raison de détournements chez les adolescents et jeunes adultes (sirops codéinés alors en liste II, dextrométhorphane en liste I). Depuis le 1^er^ mars 2025, la codéine en sirop est en liste I (décision ANSM du 24/09/2024) : Paderyl 0,1 % sirop se prescrit en toutes lettres sur ordonnance sécurisée, pour 12 semaines au plus (RCP).
+- Pholcodine : AMM suspendues et lots retirés le 8 septembre 2022, en raison d'une association entre exposition antérieure et anaphylaxie peranesthésique aux curares ; AMM retirées le 5 avril 2023, après l'avis du PRAC du 1^er^ décembre 2022 et la décision de la Commission européenne du 6 mars 2023, qui retire les AMM dans toute l'Union. Avant une anesthésie avec curare, rechercher une prise de pholcodine : même ancienne selon l'ANSM, dans les 12 mois précédents selon l'EMA.
 
-Mucolytiques : contre-indiqués avant 2 ans (risque de surencombrement bronchique, capacités de drainage limitées chez le nourrisson ; RCP Fluimucil 2 % enfants).
+Mucolytiques : contre-indiqués avant 2 ans depuis le 29 avril 2010 (risque de surencombrement bronchique, capacités de drainage limitées chez le nourrisson ; Afssaps 2010, RCP Fluimucil 2 % enfants). Chez le nourrisson, l'Afssaps (2010) juge qu'il n'y a pas lieu de prescrire d'antitussif.
 
 ### Ce qu'il faut éviter
 

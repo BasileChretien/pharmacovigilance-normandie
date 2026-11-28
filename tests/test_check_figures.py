@@ -11,7 +11,7 @@ TOKENS = {
 }
 
 GOOD = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 120" width="440" height="120"
-  font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="18" fill="#10283a">
+  font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" font-size="18" fill="currentColor">
   <defs><pattern id="essai-1-points" width="8" height="8" patternUnits="userSpaceOnUse">
     <circle cx="4" cy="4" r="2" fill="#19a6e3"/></pattern></defs>
   <rect x="0" y="0" width="440" height="120" fill="#eef6fa" stroke="#0a5c9e"/>
@@ -56,7 +56,7 @@ def test_text_in_a_decorative_colour_is_reported():
 
 
 def test_text_without_a_fill_is_reported():
-    text = GOOD.replace(' font-size="18" fill="#10283a">', ' font-size="18">')
+    text = GOOD.replace(' font-size="18" fill="currentColor">', ' font-size="18">')
     assert any("couleur" in p for p in problems(text))
 
 
@@ -89,6 +89,104 @@ def test_style_attribute_and_opacity_are_reported():
 def test_font_family_must_be_the_site_font():
     text = GOOD.replace("'Atkinson Hyperlegible Next Variable', ", "")
     assert any("police" in p for p in problems(text))
+
+
+# --- Dark Reader and the dark theme (docs/mode-sombre.md) ---------------------
+
+def test_root_fill_must_be_current_color():
+    # Dark Reader darkens a fill set on the <svg> like a background, and the text inherits it.
+    text = GOOD.replace('font-size="18" fill="currentColor">', 'font-size="18" fill="#10283a">')
+    assert any("currentColor" in p for p in problems(text))
+
+
+def test_current_color_is_only_for_the_root():
+    text = GOOD.replace('fill="#eef6fa" stroke', 'fill="currentColor" stroke')
+    assert any("currentColor" in p for p in problems(text))
+
+
+def test_tspan_with_a_fill_is_reported():
+    text = GOOD.replace("<text x=\"20\" y=\"40\">Une étiquette</text>",
+                        '<text x="20" y="40">Une <tspan fill="#0a5c9e">étiquette</tspan></text>')
+    assert any("tspan" in p for p in problems(text))
+
+
+def test_tspan_without_a_fill_passes():
+    text = GOOD.replace("<text x=\"20\" y=\"40\">Une étiquette</text>",
+                        '<text x="20" y="40">Une <tspan font-weight="700">étiquette</tspan></text>')
+    assert problems(text) == []
+
+
+def test_text_coloured_by_its_group_is_reported():
+    text = GOOD.replace('<g font-size="16"><text x="20" y="80" fill="#0a5c9e">',
+                        '<g font-size="16" fill="#0a5c9e"><text x="20" y="80">')
+    assert any("groupe" in p for p in problems(text))
+
+
+def test_group_fill_is_fine_when_its_text_has_its_own():
+    text = GOOD.replace('<g font-size="16">', '<g font-size="16" fill="#eef6fa">')
+    assert problems(text) == []
+
+
+DISC = '<circle cx="60" cy="100" r="14" fill="#10283a"/><text x="60" y="106" text-anchor="middle" fill="#ffffff">1</text>'
+
+
+def test_text_on_a_small_filled_shape_is_reported():
+    # Dark Reader lightens a shape of 32 px or less like a text colour: the number vanishes.
+    text = GOOD.replace("</svg>", DISC + "</svg>")
+    assert any("petite forme" in p for p in problems(text))
+
+
+def test_text_on_a_small_outlined_shape_passes():
+    disc = DISC.replace('fill="#10283a"/>', 'fill="none" stroke="#10283a" stroke-width="2"/>').replace(
+        'fill="#ffffff">1', 'fill="#10283a">1')
+    assert problems(GOOD.replace("</svg>", disc + "</svg>")) == []
+
+
+def test_text_on_a_wide_badge_passes():
+    badge = '<rect x="10" y="90" width="106" height="26" fill="#10283a"/><text x="63" y="108" text-anchor="middle" fill="#ffffff">Interdit</text>'
+    assert problems(GOOD.replace("</svg>", badge + "</svg>")) == []
+
+
+def test_small_shape_is_found_through_a_translated_group():
+    moved = '<g transform="translate(200 0)">' + DISC + "</g>"
+    assert any("petite forme" in p for p in problems(GOOD.replace("</svg>", moved + "</svg>")))
+
+
+def test_small_shape_elsewhere_than_the_text_passes():
+    apart = DISC.replace('<text x="60" y="106"', '<text x="160" y="106"').replace('fill="#ffffff">1', 'fill="#10283a">1')
+    assert problems(GOOD.replace("</svg>", apart + "</svg>")) == []
+
+
+def test_filled_rect_in_a_pattern_is_reported():
+    text = GOOD.replace('<circle cx="4" cy="4" r="2" fill="#19a6e3"/>',
+                        '<rect width="8" height="8" fill="#eef6fa"/><circle cx="4" cy="4" r="2" fill="#19a6e3"/>')
+    assert any("motif" in p for p in problems(text))
+
+
+def test_dark_map_is_parsed():
+    scss = '$pv-figures-sombre: (\n  "#10283a": $pv-ink,\n  "#D3E9F5": #183449,\n);'
+    assert cf.parse_dark_map(scss) == {"#10283a": "$pv-ink", "#d3e9f5": "#183449"}
+
+
+def test_colour_without_a_dark_value_is_reported():
+    failures = cf.check_dark_map({"#10283a": "$pv-ink"}, TOKENS, {"#10283a": ["essai-1"], "#eef6fa": ["essai-1"]})
+    assert len(failures) == 1 and "#eef6fa" in failures[0]
+
+
+def test_token_mapped_to_another_token_is_reported():
+    failures = cf.check_dark_map({"#10283a": "$pv-mist"}, TOKENS, {"#10283a": ["essai-1"]})
+    assert any("pv-ink" in f for f in failures)
+
+
+def test_shared_light_value_may_take_either_token():
+    # pv-ecume (footer text) and pv-eau (water in figures) share their light value only.
+    tokens = {"pv-ecume": "#bfe3ee", "pv-eau": "#bfe3ee"}
+    assert cf.check_dark_map({"#bfe3ee": "$pv-eau"}, tokens, {"#bfe3ee": ["essai-1"]}) == []
+    assert cf.check_dark_map({"#bfe3ee": "$pv-mist"}, tokens, {"#bfe3ee": ["essai-1"]})
+
+
+def test_colours_of_a_drawing_are_collected():
+    assert cf.colours_in('<circle fill="#7F9FB3"/> var INK = "#0a5c9e";') == {"#7f9fb3", "#0a5c9e"}
 
 
 # --- the shortcodes in the pages ---------------------------------------------
