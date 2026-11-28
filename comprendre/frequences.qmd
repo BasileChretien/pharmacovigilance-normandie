@@ -9,13 +9,16 @@ prochaine_relecture: null
 sources:
   - titre: "Commission européenne, Guideline on Summary of Product Characteristics (SmPC), rév. 2, section 4.8"
     url: "https://health.ec.europa.eu/document/download/6a043dea-7d0f-4252-947b-cef58f53d37e_en"
-    consulte_le: 2026-11-25
-  - titre: "EMA, QRD product information annotated template (English), version 10.3"
-    url: "https://www.ema.europa.eu/en/documents/template-form/qrd-product-information-annotated-template-english-version-103_en.pdf"
-    consulte_le: 2026-11-25
-  - titre: "Wood FA et al. N-of-1 trial of a statin, placebo, or no treatment to assess side effects. N Engl J Med. 2020 (essai SAMSON)"
+    consulte_le: 2026-11-28
+  - titre: "EMA, QRD product information annotated template (English), version 10.4, février 2024 (notice, rubrique 4)"
+    url: "https://www.ema.europa.eu/en/documents/template-form/qrd-product-information-annotated-template-english-version-104_en.pdf"
+    consulte_le: 2026-11-28
+  - titre: "Wood FA et al. N-of-1 trial of a statin, placebo, or no treatment to assess side effects. N Engl J Med. 2020;383(22):2182-2184 (essai SAMSON : essais n-of-1 randomisés, statine et placebo en double aveugle, chez des personnes ayant arrêté une statine pour des effets indésirables)"
     url: "https://doi.org/10.1056/NEJMc2031173"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "Cholesterol Treatment Trialists' Collaboration. Effect of statin therapy on muscle symptoms: an individual participant data meta-analysis of large-scale, randomised, double-blind trials. Lancet. 2022;400(10355):832-845 (méta-analyse de 19 essais contre placebo, 123 940 participants)"
+    url: "https://doi.org/10.1016/S0140-6736(22)01545-8"
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Effets indésirables"
     url: "https://pharmacomedicale.org/pharmacologie/risque-des-medicaments/47-effets-indesirables"
@@ -35,7 +38,7 @@ pour_aller_plus_loin:
 
 ### D'où viennent ces mots ?
 
-La notice et le RCP (résumé des caractéristiques du produit, le document de référence des professionnels) utilisent les mêmes six mots. Ils sont définis par une règle européenne. Chaque mot correspond à une tranche de chiffres.
+La notice et le RCP (résumé des caractéristiques du produit, le document de référence des professionnels) utilisent les mêmes six mots. Ils sont fixés au niveau européen. Chaque mot correspond à une tranche de chiffres.
 
 | Mot de la notice | Ce que cela veut dire |
 |---|---|
@@ -85,19 +88,21 @@ Pour le savoir, les essais comparent avec un placebo (un comprimé sans substanc
 </div>
 ```
 
-Pour les statines (médicaments contre le cholestérol), un essai a montré que la plupart des douleurs musculaires revenaient aussi avec un placebo. On appelle cela l'effet nocebo : on ressent un effet parce qu'on s'y attend.
+Pour les statines (médicaments contre le cholestérol), de grands essais ont comparé la statine à un placebo. Les douleurs musculaires y étaient presque aussi fréquentes avec le placebo. Plus de 9 plaintes musculaires sur 10 chez les personnes sous statine n'étaient pas dues à la statine.
+
+Un petit essai a suivi des personnes qui avaient arrêté leur statine à cause d'effets gênants. La plupart de ces effets revenaient aussi avec un placebo. On appelle cela l'effet nocebo : on ressent un effet parce qu'on s'y attend.
 
 ### Un effet listé va-t-il m'arriver ?
 
-Non, pas forcément. Un effet figure dans la notice dès que le lien avec le médicament est possible. Ce n'est pas une preuve. Et même un effet « très fréquent » ne touche pas la plupart des personnes.
+Non, pas forcément. Un effet figure dans la notice dès que le lien avec le médicament est raisonnablement possible, après examen des données. Ce n'est pas une preuve. Et même un effet « très fréquent » ne touche pas la plupart des personnes.
 
 ### « Rare » veut-il dire « jamais vu » ?
 
-Parfois. Un effet peut être découvert après la mise sur le marché, sans avoir été vu dans les essais. On le classe alors grâce à un calcul : s'il n'est jamais apparu chez 3 600 personnes, il touche au plus 1 personne sur 1 200. Il est donc classé « rare ». Le mot donne une limite haute, pas un comptage.
+Parfois. Un effet peut être découvert après la mise sur le marché, sans avoir été vu dans les essais. On le classe alors grâce à un calcul. S'il n'est jamais apparu chez 3 600 personnes, il touche très probablement au plus 1 personne sur 1 200. Il est donc classé « rare ». Le mot donne une limite haute, pas un comptage.
 
 ### Dans quel ordre sont listés les effets ?
 
-Dans la notice, les effets graves viennent en premier, avec ce qu'il faut faire s'ils surviennent. Les autres effets suivent, du plus fréquent au moins fréquent.
+Dans la notice, les effets graves viennent en général en premier, avec ce qu'il faut faire s'ils surviennent. Les autres effets suivent, du plus fréquent au moins fréquent.
 
 Le RCP, destiné aux professionnels, les range autrement : par organe (cœur, peau, estomac…), puis par fréquence. L'effet le plus grave n'y est donc pas forcément en haut du tableau.
 

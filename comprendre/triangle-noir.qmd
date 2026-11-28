@@ -9,22 +9,31 @@ prochaine_relecture: null
 sources:
   - titre: "EMA, Medicines under additional monitoring"
     url: "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/pharmacovigilance-post-authorisation/medicines-under-additional-monitoring"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "EMA, Que signifie le triangle noir ? (fiche d'information en français)"
     url: "https://www.ema.europa.eu/fr/documents/other/what-does-black-triangle-mean_fr.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Médicaments sous surveillance renforcée"
     url: "https://ansm.sante.fr/documents/reference/medicaments-sous-surveillance-renforcee"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, La surveillance renforcée des médicaments"
     url: "https://ansm.sante.fr/page/la-surveillance-renforcee-des-medicaments"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "EMA, modèle QRD de l'information produit, version 10.4, février 2024, version française (mentions standard du RCP et de la notice)"
     url: "https://www.ema.europa.eu/fr/documents/template-form/qrd-product-information-template-version-104-highlighted_fr.pdf"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "ANSM, Réglementation relative à la pharmacovigilance (liste des textes)"
     url: "https://ansm.sante.fr/documents/reference/reglementation-relative-a-la-pharmacovigilance"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
+  - titre: "Règlement (UE) n° 1027/2012 modifiant le règlement (CE) n° 726/2004 en ce qui concerne la pharmacovigilance (article 23 : liste des médicaments faisant l'objet d'une surveillance supplémentaire)"
+    url: "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32012R1027"
+    consulte_le: 2026-11-28
+  - titre: "Règlement d'exécution (UE) n° 198/2013 de la Commission du 7 mars 2013 relatif au choix du symbole désignant les médicaments à usage humain qui font l'objet d'une surveillance supplémentaire"
+    url: "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32013R0198"
+    consulte_le: 2026-11-28
+  - titre: "Directive 2001/83/CE, version consolidée au 1er janvier 2025 (articles 11 et 59 : mention dans le RCP et la notice ; article 102, point e : nom et numéro de lot des médicaments biologiques)"
+    url: "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:02001L0083-20250101"
+    consulte_le: 2026-11-28
 pour_aller_plus_loin:
   - titre: "Suivi après la mise sur le marché : la pharmacoépidémiologie"
     url: "https://pharmacomedicale.org/pharmacologie/developpement-et-suivi-des-medicaments/72-suivi-apres-la-mise-sur-le-marche-la-pharmacoepidemiologie"
@@ -62,7 +71,7 @@ Le triangle concerne par exemple :
 
 ### Combien de temps dure cette surveillance ?
 
-En général cinq ans, ou jusqu'à ce qu'un comité européen d'experts retire le médicament de la liste. Cette liste des médicaments concernés est revue chaque mois.
+Pour un médicament avec une nouvelle substance active, la surveillance dure en général cinq ans. C'est aussi le cas d'un médicament biologique (fabriqué à partir d'un organisme vivant, comme un vaccin) autorisé depuis 2011. Pour les autres, elle dure jusqu'à ce que les études ou les conditions demandées par les autorités soient remplies. La liste des médicaments concernés est revue chaque mois.
 
 ### Qu'est-ce que le triangle ne veut pas dire ?
 
@@ -82,11 +91,11 @@ Prenez-le comme prévu. Si vous remarquez un effet inhabituel, parlez-en à votr
 
 ### Cadre
 
-La surveillance supplémentaire découle de la législation européenne de pharmacovigilance de 2010 (directive 2010/84/UE et règlement (UE) n° 1235/2010 du 15 décembre 2010), entrée en application en juillet 2012. Le triangle noir figure dans les RCP et les notices depuis l'automne 2013. Le symbole a été fixé par un acte d'exécution de la Commission [à compléter : référence du règlement d'exécution fixant le symbole, à vérifier sur EUR-Lex].
+La surveillance supplémentaire découle de la législation européenne de pharmacovigilance de 2010 (directive 2010/84/UE et règlement (UE) n° 1235/2010 du 15 décembre 2010), entrée en application en juillet 2012. Le triangle noir figure dans les RCP et les notices depuis l'automne 2013. La liste et la mention figurent à l'article 23 du règlement (CE) n° 726/2004, dans sa rédaction issue du règlement (UE) n° 1027/2012. Le symbole, un triangle équilatéral noir renversé, a été choisi par la Commission sur recommandation du PRAC : règlement d'exécution (UE) n° 198/2013 de la Commission du 7 mars 2013, qui fixe son modèle et ses dimensions.
 
 ### Critères d'inscription
 
-Sont obligatoirement inscrits sur la liste, d'après l'EMA, les médicaments :
+Sont obligatoirement inscrits sur la liste (article 23, paragraphe 1, du règlement (CE) n° 726/2004 ; formulation de l'EMA) les médicaments :
 
 - contenant une nouvelle substance active autorisée dans l'UE après le 1er janvier 2011 ;
 - biologiques (vaccins, médicaments dérivés du plasma…) autorisés après le 1er janvier 2011 ;
@@ -94,15 +103,15 @@ Sont obligatoirement inscrits sur la liste, d'après l'EMA, les médicaments :
 - soumis à des études complémentaires (usage prolongé, effet indésirable rare observé pendant les essais…) ;
 - autorisés avec des obligations spécifiques d'enregistrement des effets indésirables suspectés.
 
-D'autres médicaments peuvent être inscrits sur décision des autorités [à compléter : source primaire sur l'inscription facultative, après avis du PRAC].
+D'autres médicaments, soumis à d'autres conditions de leur AMM, peuvent aussi être inscrits, après consultation du PRAC : à la demande de la Commission pour une AMM centralisée, à la demande d'une autorité nationale pour une AMM nationale (article 23, paragraphe 1 bis).
 
-Un médicament reste sous surveillance supplémentaire cinq ans, ou jusqu'à ce que le PRAC (Pharmacovigilance Risk Assessment Committee, comité européen d'évaluation des risques en matière de pharmacovigilance) décide de le retirer de la liste. La liste est tenue par l'EMA, revue chaque mois par le PRAC et relayée par l'ANSM.
+Durée (article 23, paragraphe 3) : une nouvelle substance active ou un médicament biologique sort de la liste cinq ans après la date de référence pour l'Union ; les autres médicaments en sortent une fois les conditions remplies. L'EMA résume : cinq ans, ou jusqu'à ce que le PRAC (Pharmacovigilance Risk Assessment Committee, comité européen d'évaluation des risques en matière de pharmacovigilance) décide de retirer le médicament de la liste. La liste est tenue par l'EMA, revue chaque mois par le PRAC et relayée par l'ANSM.
 
 ### Mentions standard
 
-Dans le RCP, en tête : « Ce médicament fait l'objet d'une surveillance supplémentaire qui permettra l'identification rapide de nouvelles informations relatives à la sécurité. Les professionnels de la santé déclarent tout effet indésirable suspecté. »
+Dans le RCP, en tête : « Ce médicament fait l'objet d'une surveillance supplémentaire qui permettra l'identification rapide de nouvelles informations relatives à la sécurité. Les professionnels de la santé déclarent tout effet indésirable suspecté. » Suit un renvoi à la rubrique 4.8 pour les modalités de déclaration.
 
-Dans la notice, la même phrase est suivie de : « Vous pouvez y contribuer en signalant tout effet indésirable que vous observez. »
+Dans la notice, la première phrase est la même ; elle est suivie de : « Vous pouvez y contribuer en signalant tout effet indésirable que vous observez. », puis d'un renvoi à la fin de la rubrique 4.
 
 Le symbole n'apparaît ni sur l'emballage extérieur ni sur l'étiquetage.
 
@@ -113,8 +122,8 @@ Le triangle traduit une incertitude, pas un profil de sécurité défavorable. L
 ### Conséquences pour la pratique
 
 - Déclarer tout effet indésirable suspecté, y compris non grave ou déjà décrit dans le RCP. Ces déclarations précoces alimentent l'évaluation continue du rapport bénéfice/risque.
-- Vérifier le statut sur la liste de l'EMA plutôt que sur la notice de la boîte. Les changements de notice suivent les décisions avec un décalage, le temps d'écouler les stocks.
-- Pour un médicament biologique, indiquer dans la déclaration le nom de spécialité et le numéro de lot.
+- Vérifier le statut sur la liste de l'EMA plutôt que sur la notice de la boîte. Les changements de notice suivent les décisions avec un décalage : la nouvelle notice remplace peu à peu les boîtes déjà sur le marché (EMA).
+- Pour un médicament biologique, indiquer dans la déclaration le nom de spécialité et le numéro de lot (article 102, point e, de la directive 2001/83/CE).
 
 Déclaration : [signalement.social-sante.gouv.fr](https://signalement.social-sante.gouv.fr/) ou directement auprès du CRPV de votre région (voir [Déclarer](../declarer.qmd)).
 

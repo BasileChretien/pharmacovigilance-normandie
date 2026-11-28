@@ -7,9 +7,9 @@ relu_par: null
 relu_le: null
 prochaine_relecture: null
 sources:
-  - titre: "Commission européenne, Guideline on Summary of Product Characteristics (SmPC), rév. 2"
+  - titre: "Commission européenne, Guideline on Summary of Product Characteristics (SmPC), rév. 2, septembre 2009 (sections 4.7 et 4.8)"
     url: "https://health.ec.europa.eu/document/download/6a043dea-7d0f-4252-947b-cef58f53d37e_en"
-    consulte_le: 2026-11-25
+    consulte_le: 2026-11-28
   - titre: "Base de données publique des médicaments"
     url: "https://base-donnees-publique.medicaments.gouv.fr/"
     consulte_le: 2026-11-25
@@ -49,9 +49,9 @@ Les RCP à jour sont sur la [base de données publique des médicaments](https:/
 
 1. **Une fréquence n'est pas un risque attribuable.** Les fréquences tirées des essais sont des taux bruts chez les patients traités, pas des différences avec le placebo ou un comparateur. Quand un effet fréquent survient aussi sous placebo à une fréquence notable, les deux taux peuvent être donnés, souvent en 4.8c.
 2. **Être listé ne prouve pas la causalité.** Un effet figure dans le RCP quand le lien de causalité est au moins une possibilité raisonnable, après évaluation des données disponibles.
-3. **« Fréquence indéterminée » ne veut pas dire « rare ».** La catégorie s'utilise quand les données ne permettent pas d'estimer la fréquence.
-4. **« Rare » peut être une borne haute.** Pour un effet identifié après la commercialisation et jamais observé dans les essais, la borne supérieure de l'intervalle de confiance à 95 % est d'au plus 3/X, X étant le nombre de patients exposés dans les essais (règle de trois). Exemple de la ligne directrice : non observé chez 3 600 patients, la borne est de 1/1 200, et l'effet est classé « rare ».
-5. **Le tableau n'est pas classé par gravité.** L'ordre est : classe de systèmes d'organes (MedDRA), puis fréquence, puis gravité décroissante au sein d'une même fréquence. Les effets graves sont décrits en 4.4 et en 4.8c.
+3. **« Fréquence indéterminée » ne veut pas dire « rare ».** La catégorie s'utilise, à titre exceptionnel selon la ligne directrice, quand les données ne permettent pas d'estimer la fréquence.
+4. **« Rare » peut être une borne haute.** Pour un effet identifié après la commercialisation et jamais observé dans les essais, la borne supérieure de l'intervalle de confiance à 95 % est d'au plus 3/X, X étant le nombre total de sujets exposés dans les essais et études pertinents, c'est-à-dire suivis assez longtemps pour détecter l'effet (règle de trois). Exemple de la ligne directrice : non observé chez 3 600 patients, la borne est de 1/1 200, et l'effet est classé « rare ».
+5. **Le tableau n'est pas classé par gravité.** L'ordre est : classe de systèmes d'organes (MedDRA), puis fréquence, puis gravité décroissante au sein d'une même fréquence. Les effets graves sont caractérisés en 4.8c (délai d'apparition, réversibilité, facteurs de risque…), et les mesures pour les prévenir ou les prendre en charge figurent en 4.4.
 
 ## Les catégories de fréquence
 
