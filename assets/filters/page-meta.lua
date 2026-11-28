@@ -92,7 +92,9 @@ local function sections_from_tabset(el)
     local links = pandoc.Inlines("Aller à la version : ")
     for i, group in ipairs(groups) do
       if i > 1 then
-        links:extend(pandoc.Inlines(" · "))
+        -- A separator for the eye only: hidden from screen readers, and on a phone, where
+        -- each version goes on its own line (theme.scss, .versions).
+        links:insert(pandoc.Span(pandoc.Inlines(" · "), pandoc.Attr("", { "versions-sep" }, { { "aria-hidden", "true" } })))
       end
       links:insert(pandoc.Link(stringify(group.header.content), "#" .. group.header.identifier))
     end
