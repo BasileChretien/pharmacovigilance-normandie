@@ -1252,6 +1252,41 @@ a[href^="tel:"]::after {
 }
 .page-404 li a:hover { border-color: $pv-signal; background: $pv-mist; }
 
+// ---------- Mascot: a Norman with a pill shield sounds the horn ------------
+// assets/img/mascotte.svg (docs/mascotte/README.md). A decorative <img> (alt="", aria-hidden)
+// with its own colours and white edge: neither the dark theme nor Dark Reader changes it.
+// Only on the pages listed in tests/test_mascotte.py; never on medicine, alert or
+// serious-harm pages. It moves only when the reader hovers or focuses "Déclarer", and not
+// with reduced motion.
+.mascotte { display: block; flex: none; height: auto; }
+.hero-actions { align-items: center; }
+// Beside "Déclarer", turned to sound the horn towards it.
+.mascotte-accueil { width: 60px; transform: scaleX(-1); }
+.page-404 .mascotte-404 { float: right; width: 150px; margin: 0 0 1rem 1.5rem; }
+.vigiking-entete, .etat-vide { display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.25rem; }
+.vigiking-entete > p, .etat-vide > p { margin: 0; }
+.vigiking-entete .mascotte { width: 84px; }
+.etat-vide .mascotte { width: 60px; }
+// Quarto's "no results" box is 60 px high: room for the mascot above the words.
+:is(.aa-DetachedOverlay, #quarto-search-results) .aa-SourceNoResults:has(.mascotte) {
+  height: auto;
+  padding: 1rem 0;
+}
+.quarto-search-no-results:has(.mascotte) { text-align: center; }
+.quarto-search-no-results .mascotte { width: 60px; margin: 0 auto 0.5rem; }
+@media (max-width: 575.98px) {
+  .page-404 .mascotte-404 { width: 96px; margin-left: 1rem; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .mascotte-accueil { transform-origin: 50% 100%; transition: transform 0.2s ease-out; }
+  .mascotte-accueil:has(+ .btn-primary:is(:hover, :focus-visible)) {
+    transform: scaleX(-1) rotate(-8deg);
+  }
+}
+@media print {
+  .mascotte { display: none; }
+}
+
 // ---------- Figures (assets/img/figures/, figure-svg shortcode) -----------
 // Hand-authored SVG, inlined so that they use the site's fonts (docs/regles-redaction.md §5).
 // Drawn at 1 unit = 1 px, 440 px wide at most: they shrink on a phone, never grow.

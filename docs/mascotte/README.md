@@ -1,8 +1,9 @@
-# Mascotte : esquisses
+# Mascotte
 
-Trois esquisses d'une mascotte pour le site, à choisir avant toute intégration. Rien ici n'est
-publié : Quarto ne rend pas `docs/` (`_quarto.yml`). Aperçu : ouvrir `apercu.html` dans un
-navigateur ; captures dans `captures/`.
+Le Normand au bouclier-comprimé qui sonne du cor : `assets/img/mascotte.svg`, choisi le
+28/11/2026 parmi trois esquisses. Les deux autres restent ici pour mémoire (`docs/` n'est pas
+publié). Aperçu des trois : ouvrir `apercu.html` dans un navigateur ; captures dans
+`captures/`.
 
 À faire approuver par les équipes des CRPV et les services communication des CHU avant la mise
 en ligne, comme les logos.
@@ -21,7 +22,7 @@ en ligne, comme les logos.
 
 ## Les trois variantes
 
-1. `mascotte-cor.svg` : il sonne du cor, trois ondes en sortent (comme les pulsations de la
+1. Le cor, retenu (`assets/img/mascotte.svg`) : il sonne du cor, trois ondes en sortent (comme les pulsations de la
    carte d'accueil). Dit « la pharmacovigilance veille et donne l'alerte ».
 2. `mascotte-plume.svg` : il lève une plume d'oie. Dit « déclarez un effet indésirable ».
 3. `mascotte-fiole.svg` : il salue avec une longue fiole tenue comme une épée (bouchon en
@@ -44,14 +45,23 @@ Vérifié le 28/11/2026 : thème clair, bandeau `pv-mist`, thème sombre du site
 Les SVG passent aussi les règles de `tools/checks/check_figures.py` (taille, jetons, police,
 `id`).
 
-## Où la placer (après choix)
+## Où elle est
 
-- Oui : accueil (petite, à côté de l'appel « Déclarer »), archives et bandeau de Vigiking,
-  page 404, états vides (aucun résultat de recherche, publications pas encore disponibles).
+- Accueil : petite, à côté du bouton « Déclarer », tournée vers lui ; elle lève son cor quand
+  on survole ou qu'on atteint le bouton au clavier, sauf si le lecteur a demandé moins
+  d'animations (`prefers-reduced-motion`).
+- Vigiking : en tête de la page du bulletin et de celle des anciens numéros.
+- Page 404.
+- États vides : recherche du site sans résultat (`_includes/mascotte-recherche.html`), liste
+  des publications pas encore remplie (`tools/build/make_publications_page.py`).
 - Jamais : fiches médicament, fiches de classe, pages grossesse, alertes de sécurité, pages
-  sur des effets graves.
-- Décorative (`aria-hidden` ou `alt=""`) ; tout mouvement soumis à
-  `prefers-reduced-motion`.
+  sur des effets graves. Sur ces pages (`medicaments/`, `actualites/`, cas marquants, que
+  faire en cas d'effet indésirable), même la recherche sans résultat reste sans mascotte.
+- Toujours décorative (`alt=""` et `aria-hidden`), cachée à l'impression.
+- La liste des pages est fixée par `tests/test_mascotte.py` : une nouvelle place se décide
+  en la changeant.
+- Le bandeau des numéros PDF de Vigiking se fabrique dans un autre dépôt (le gabarit du
+  bulletin) : la mascotte n'y est pas encore.
 
 ## Ce qui existait déjà (Vigiking)
 

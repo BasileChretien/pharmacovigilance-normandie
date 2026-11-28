@@ -360,6 +360,26 @@ def test_the_page_waits_for_member_cards_before_listing_anything():
     assert "carte" in mp.liste(None)
 
 
+def test_an_empty_list_shows_the_decorative_mascot_and_a_filled_one_does_not():
+    mascotte = '<img class="mascotte" src="../assets/img/mascotte.svg" alt="" aria-hidden="true"'
+    lu = {"releve_le": "2026-11-28", "depuis": 2024, "membres": [CARBERRY], "non_lus": []}
+    vides = [
+        None,
+        {"membres": [], "publications": []},
+        {**lu, "releve_le": None, "non_lus": [CARBERRY], "publications": []},
+        {**lu, "publications": []},
+    ]
+    for data in vides:
+        page = mp.liste(data)
+        assert mascotte in page and '<div class="etat-vide">' in page, data
+    oeuvre = {
+        "doi": "10.1000/a", "titre": "Titre", "revue": None, "publie_le": "2026-06-02",
+        "langue": "fr", "acces_libre": None, "retracte": False, "membres": [CARBERRY],
+        "equipes": ["caen"],
+    }  # fmt: skip
+    assert "mascotte" not in mp.liste({**lu, "publications": [oeuvre]})
+
+
 def test_the_page_lists_title_year_journal_team_without_author_names():
     data = {
         "releve_le": "2026-11-28",

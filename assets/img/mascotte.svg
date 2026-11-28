@@ -1,11 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280" width="240" height="280" font-family="'Atkinson Hyperlegible Next Variable', system-ui, sans-serif" fill="currentColor" stroke-linejoin="round" stroke-linecap="round">
-  <!-- Mascot sketch 1: the Norman with the pill shield sounds the horn (raising the alert).
-       Fixed colours (tokens of assets/theme.scss) with a white sticker edge: placed as an <img>,
-       it reads the same on the light page, the dark theme and under Dark Reader (docs/mascotte/README.md). -->
+  <!-- The site's mascot (docs/mascotte/README.md): a Norman with a pill shield sounds the horn.
+       Fixed colours (tokens of assets/theme.scss) with a white sticker edge, placed as a decorative
+       <img> (alt="", aria-hidden): it reads the same on the light page, the dark theme and under
+       Dark Reader. Pages it may appear on: tests/test_mascotte.py. -->
   <defs>
-    <clipPath id="mascotte-cor-tunique"><path d="M92 134 Q120 128 148 134 L156 150 L164 214 Q120 222 76 214 L84 150 Z"/></clipPath>
-    <clipPath id="mascotte-cor-barbe"><path d="M90 104 Q90 134 120 141 Q150 134 150 104 Q147 117 137 120 Q128 115 120 117 Q112 115 103 120 Q93 117 90 104 Z"/></clipPath>
-    <clipPath id="mascotte-cor-corne"><path d="M114 125 C88 132 46 120 34 66 L62 62 C66 108 90 121 114 119 Z"/></clipPath>
+    <clipPath id="mascotte-tunique"><path d="M92 134 Q120 128 148 134 L156 150 L164 214 Q120 222 76 214 L84 150 Z"/></clipPath>
+    <clipPath id="mascotte-barbe"><path d="M90 104 Q90 134 120 141 Q150 134 150 104 Q147 117 137 120 Q128 115 120 117 Q112 115 103 120 Q93 117 90 104 Z"/></clipPath>
+    <clipPath id="mascotte-corne"><path d="M114 125 C88 132 46 120 34 66 L62 62 C66 108 90 121 114 119 Z"/></clipPath>
   </defs>
 
   <!-- Sticker edge: the silhouette, drawn wide in white behind everything -->
@@ -56,7 +57,7 @@
 
   <!-- Tunic: flat colour with laid-work threads, embroidered hem, belt -->
   <path d="M92 134 Q120 128 148 134 L156 150 L164 214 Q120 222 76 214 L84 150 Z" fill="#0a5c9e"/>
-  <path clip-path="url(#mascotte-cor-tunique)" d="M80 128 V224 M87 128 V224 M94 128 V224 M101 128 V224 M108 128 V224 M115 128 V224 M122 128 V224 M129 128 V224 M136 128 V224 M143 128 V224 M150 128 V224 M157 128 V224" fill="none" stroke="#073f6e" stroke-width="1.5"/>
+  <path clip-path="url(#mascotte-tunique)" d="M80 128 V224 M87 128 V224 M94 128 V224 M101 128 V224 M108 128 V224 M115 128 V224 M122 128 V224 M129 128 V224 M136 128 V224 M143 128 V224 M150 128 V224 M157 128 V224" fill="none" stroke="#073f6e" stroke-width="1.5"/>
   <path d="M77.5 202 H162.5 L164 214 Q120 222 76 214 Z" fill="#e7b03b"/>
   <path d="M80 213 L86 204 M88 213 L94 204 M96 213 L102 204 M104 213 L110 204 M112 213 L118 204 M120 213 L126 204 M128 213 L134 204 M136 213 L142 204 M144 213 L150 204 M152 213 L158 204" fill="none" stroke="#7a4f00" stroke-width="2"/>
   <path d="M77.5 202 H162.5" fill="none" stroke="#10283a" stroke-width="2.5"/>
@@ -71,7 +72,7 @@
   </g>
   <path d="M90 88 V104 Q90 130 120 132 Q150 130 150 104 V88 Z" fill="#ffffff" stroke="#10283a" stroke-width="4"/>
   <path d="M90 104 Q90 134 120 141 Q150 134 150 104 Q147 117 137 120 Q128 115 120 117 Q112 115 103 120 Q93 117 90 104 Z" fill="#e7b03b"/>
-  <path clip-path="url(#mascotte-cor-barbe)" d="M98 116 Q102 130 112 138 M108 120 Q111 132 117 140 M132 120 Q129 132 123 140 M142 116 Q138 130 128 138" fill="none" stroke="#7a4f00" stroke-width="1.5"/>
+  <path clip-path="url(#mascotte-barbe)" d="M98 116 Q102 130 112 138 M108 120 Q111 132 117 140 M132 120 Q129 132 123 140 M142 116 Q138 130 128 138" fill="none" stroke="#7a4f00" stroke-width="1.5"/>
   <path d="M90 104 Q90 134 120 141 Q150 134 150 104 Q147 117 137 120 Q128 115 120 117 Q112 115 103 120 Q93 117 90 104 Z" fill="none" stroke="#10283a" stroke-width="3.5"/>
 
   <!-- Norman helmet with nose guard: no horns -->
@@ -103,7 +104,7 @@
   <!-- Arm raised, horn at the lips -->
   <path d="M96.9 138 L80.9 110 A8 8 0 0 0 67.1 118 L83.1 146 A8 8 0 0 0 96.9 138 Z" fill="#0a5c9e" stroke="#10283a" stroke-width="4"/>
   <path d="M114 125 C88 132 46 120 34 66 L62 62 C66 108 90 121 114 119 Z" fill="#fdf1d8"/>
-  <g clip-path="url(#mascotte-cor-corne)" fill="none">
+  <g clip-path="url(#mascotte-corne)" fill="none">
     <path d="M44 107.6 L78 91.5 M99.5 133 L105 112" stroke="#e7b03b" stroke-width="7"/>
     <path d="M45.7 111.2 L79.7 95.1 M42.3 104 L76.3 87.9 M102.4 133.8 L107.9 112.8 M96.6 132.2 L102.1 111.2" stroke="#10283a" stroke-width="2"/>
   </g>

@@ -8,6 +8,8 @@ search: false
 
 ::: {.page-404}
 
+<img class="mascotte mascotte-404" src="assets/img/mascotte.svg" alt="" aria-hidden="true" width="150" height="175">
+
 Même dans le bocage normand, certains chemins mènent à une impasse. Cette page n'existe pas, ou elle a changé d'adresse.
 
 - [Revenir à l'accueil](index.qmd)
