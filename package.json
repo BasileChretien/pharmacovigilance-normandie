@@ -5,6 +5,7 @@
   "scripts": {
     "check:html": "html-validate \"_site/**/*.html\"",
     "check:a11y": "node tools/a11y/run-axe.mjs",
+    "check:mobile": "node tools/checks/check_mobile.mjs",
     "test:js": "node --test \"tests/js/*.test.mjs\""
   },
   "devDependencies": {

@@ -13,6 +13,7 @@ reviews it.
 - `uv run python tools/checks/check_figures.py` — figures: SVG size, colours, font, ids, and their shortcodes.
 - `npm run check:html` — validate rendered HTML (after `quarto render`).
 - `uv run python tools/checks/check_toc.py` — every section heading is in its page's table of contents (after `quarto render`).
+- `npm run check:mobile` — phone layout of every page, WebKit 320/390 px and Chromium 412 px, light and dark (after `quarto render`; needs playwright; docs/mobile.md).
 
 - `uv run python tools/design/make_carte_departements.py` — regenerate the department map of normandie/carte.qmd (`assets/img/figures/carte-1.svg`, data `data/normandie-carte.json`).
 - `uv run python tools/design/make_mascotte.py` — regenerate the mascot's context variants (`assets/img/mascotte/`) after editing the drawing `assets/img/mascotte.svg`; never edit the variants (docs/mascotte/README.md).
@@ -34,6 +35,7 @@ Status and open tasks: `docs/STATUS.md`. Points for medical reviewers: `docs/rel
 - Never write sources, review dates or the draft banner by hand: `assets/filters/page-meta.lua`
   builds them from the front matter.
 - Further reading goes in `pour_aller_plus_loin:` (titre, url, site: rfcrpv | cnpm), 3 links at most, each checked to answer before adding.
+- Every layout change is checked at 320 and 390 px with `npm run check:mobile`; an exception goes in `tools/checks/mobile_allowlist.json` with its reason (rules: docs/mobile.md).
 - Colours live only in `assets/theme.scss`; add every new text/background pair to
   `tools/checks/contrast_pairs.yml`. Dark theme: `assets/theme-sombre.scss` gives the same tokens dark values (pairs checked in both themes); never hard-code a colour in a rule, use `rgba($token, a)` (docs/mode-sombre.md). `pv-cyan`, `pv-green` and `pv-or` (Normandy gold) are decorative, never text; Normandy motifs (colombages, Channel wave) are inline SVG in `theme.scss`.
 - Figures are hand-authored SVG in `assets/img/figures/`, placed with `{{< figure-svg name alt="…" legende="…" >}}` (inlined for the site fonts); style rules in `docs/regles-redaction.md` §5.
