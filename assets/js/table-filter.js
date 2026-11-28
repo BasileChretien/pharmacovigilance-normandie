@@ -1,6 +1,7 @@
 // table-filter.js — a filter field above long tables (user panel, round 2: the
 // interactions table and the cytochrome index were "a long table without a filter").
-// In a page: wrap the table in ::: {.tableau-filtrable} ... ::: and load this script.
+// In a page: wrap the table in ::: {.tableau-filtrable} ... ::: and load this script. A box may
+// hold several tables (the three tables of the cytochrome grid): one field filters them all.
 // Rows that do not hold every typed word are hidden; accents and case are ignored, so
 // "erythromycine" finds "érythromycine". A status line gives the count, announced to
 // screen readers once typing pauses rather than at every key. Without JavaScript the
@@ -36,6 +37,17 @@
     return shown === total ? shown + noun : shown + noun + " sur " + total;
   }
 
+  // Body rows of every table in the box.
+  function bodyRows(box) {
+    var rows = [];
+    Array.prototype.forEach.call(box.querySelectorAll("table"), function (table) {
+      Array.prototype.forEach.call(table.tBodies || [], function (body) {
+        rows = rows.concat(Array.prototype.slice.call(body.rows));
+      });
+    });
+    return rows;
+  }
+
   function element(doc, tag, attributes, text) {
     var node = doc.createElement(tag);
     Object.keys(attributes).forEach(function (name) { node.setAttribute(name, attributes[name]); });
@@ -44,9 +56,8 @@
   }
 
   function enhance(doc, box, index) {
-    var table = box.querySelector("table");
-    if (!table || !table.tBodies.length) return;
-    var rows = Array.prototype.slice.call(table.tBodies[0].rows);
+    var rows = bodyRows(box);
+    if (!rows.length) return;
     var id = "filtre-tableau-" + (index + 1);
     // Each field needs its own label when a page has several tables:
     // ::: {.tableau-filtrable libelle="Filtrer l'index par médicament"}
@@ -86,5 +97,5 @@
     Array.prototype.forEach.call(boxes, function (box, index) { enhance(doc, box, index); });
   }
 
-  return { fold: fold, matches: matches, countLabel: countLabel, init: init };
+  return { fold: fold, matches: matches, countLabel: countLabel, bodyRows: bodyRows, init: init };
 });

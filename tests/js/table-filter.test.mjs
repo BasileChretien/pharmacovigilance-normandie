@@ -28,3 +28,11 @@ test("the status line counts rows in French, singular and plural", () => {
   assert.equal(tf.countLabel(3, 16), "3 lignes sur 16");
   assert.equal(tf.countLabel(0, 16), "Aucune ligne ne correspond (16 au total)");
 });
+
+test("a box with several tables filters the body rows of all of them", () => {
+  const row = (text) => ({ textContent: text, hidden: false });
+  const table = (...texts) => ({ tBodies: [{ rows: texts.map(row) }] });
+  const box = { querySelectorAll: (selector) => (selector === "table" ? [table("Caféine", "Clozapine"), table("Fluvoxamine"), { tBodies: [] }] : []) };
+  assert.deepEqual(tf.bodyRows(box).map((r) => r.textContent), ["Caféine", "Clozapine", "Fluvoxamine"]);
+  assert.deepEqual(tf.bodyRows({ querySelectorAll: () => [] }), []);
+});
