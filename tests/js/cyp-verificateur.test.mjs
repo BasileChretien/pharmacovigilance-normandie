@@ -170,6 +170,16 @@ test("notes flag a minor pathway, an active metabolite and a source other than t
   assert.deepEqual(cv.notes(thesaurus, [thesaurus], FIXTURE), ["Classement de silibinine : liste du Thésaurus de l'ANSM (septembre 2023)."]);
 });
 
+test("a minor pathway that forms a prodrug's active substance is not played down", () => {
+  // codeine + paroxetine, clopidogrel + omeprazole: "association déconseillée" on the page.
+  for (const [s, e] of [["Codéine", "Paroxétine"], ["Clopidogrel", "Oméprazole"], ["Tramadol", "Fluoxétine"]]) {
+    const m = one(s, e, REAL);
+    const notes = cv.notes(m, [m], REAL);
+    assert.ok(!notes.some((n) => /dépend de la part de cette voie/.test(n)), s);
+    assert.ok(notes.includes("Voie mineure de l'élimination " + (s === "Codéine" ? "de codéine" : "de " + s.toLowerCase()) + ", mais c'est elle qui forme son métabolite actif."), s);
+  }
+});
+
 test("summary for the live region, with or without a mechanism", () => {
   const w = byName(FIXTURE, "Warfarine");
   const f = byName(FIXTURE, "Fluconazole");

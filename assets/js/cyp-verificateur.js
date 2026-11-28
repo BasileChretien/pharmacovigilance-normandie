@@ -175,7 +175,11 @@
     var liste = [];
     var defaut = (data && data.defaut) || "hug";
     var sources = (data && data.sources) || {};
-    if (m.voie === "mineure") {
+    // For a prodrug the minor pathway is the one that forms the active substance: its share of
+    // the elimination says nothing about the effect (codeine + paroxetine is "déconseillée").
+    if (m.voie === "mineure" && m.prodrogue) {
+      liste.push("Voie mineure de l'élimination " + deNom(m.substrat.nom) + ", mais c'est elle qui forme son métabolite actif.");
+    } else if (m.voie === "mineure") {
       liste.push("Voie mineure pour " + lowerFirst(m.substrat.nom) + " : l'effet dépend de la part de cette voie dans son élimination.");
     }
     if (m.actif) liste.push(m.substrat.nom + " a un métabolite actif : l'effet dépend aussi de ce métabolite.");
