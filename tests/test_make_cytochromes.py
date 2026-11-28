@@ -14,8 +14,8 @@ import make_cytochromes as mk
 
 YAML = """
 sources:
-  hug: {court: HUG, long: "carte des HUG (mars 2020)"}
-  thesaurus: {court: Thésaurus, long: "liste du Thésaurus de l'ANSM (septembre 2023)"}
+  hug: {court: HUG, long: "la carte des HUG (mars 2020)"}
+  thesaurus: {court: Thésaurus, long: "la liste du Thésaurus de l'ANSM (septembre 2023)"}
 source_par_defaut: hug
 medicaments:
   warfarine:
@@ -95,6 +95,39 @@ def test_invalid_entries_are_refused_with_a_clear_message(bad, message):
         mk.load(YAML + bad)
 
 
+def test_a_drug_written_twice_is_refused_not_silently_dropped():
+    """yaml.safe_load keeps the last of two equal keys: the first entry would vanish."""
+    with pytest.raises(ValueError, match="warfarine"):
+        mk.load(YAML + "  warfarine:\n    inducteur: {CYP2C9: puissant}\n")
+
+
+def test_an_enzyme_written_twice_in_one_role_is_refused():
+    with pytest.raises(ValueError, match=re.escape("CYP2C9")):
+        mk.load(YAML + "  x:\n    substrat: {CYP2C9: majeure, CYP2C9: mineure}\n")
+
+
+def test_names_that_differ_only_by_punctuation_are_duplicates():
+    """The checker's search key (assets/js/cyp-verificateur.js, fold) drops punctuation too."""
+    assert mk.fold("Chardon-Marie") == mk.fold("chardon marie") == "chardon marie"
+    with pytest.raises(ValueError, match="en double"):
+        mk.load(YAML + "  chardon-marie:\n    inhibiteur: {CYP2C8: puissant}\n"
+                       "  chardon marie:\n    inhibiteur: {CYP2C8: puissant}\n")
+
+
+GOOD_DRUG = "medicaments: {a: {substrat: {CYP2D6: majeure}}}\n"
+
+
+@pytest.mark.parametrize("text, message", [
+    ("sources: {hug: {long: x}}\nsource_par_defaut: hug\n" + GOOD_DRUG, "court"),
+    ("sources: {hug: {court: HUG}}\nsource_par_defaut: hug\n" + GOOD_DRUG, "long"),
+    ("sources: [hug]\nsource_par_defaut: hug\n" + GOOD_DRUG, "sources"),
+    ("sources: {hug: {court: HUG, long: x}}\nsource_par_defaut: hug\nmedicaments: [a, b]\n", "medicaments"),
+])
+def test_malformed_sections_give_a_clear_message(text, message):
+    with pytest.raises(ValueError, match=message):
+        mk.load(text)
+
+
 # ---------- Checker data ------------------------------------------------------
 
 
@@ -117,7 +150,7 @@ def test_checker_data_lists_every_enzyme_with_article_and_anchor():
 def test_checker_data_holds_the_same_roles_as_the_grid():
     d = data()
     assert checker(d)["medicaments"] == d["medicaments"]
-    assert checker(d)["sources"]["thesaurus"]["long"].startswith("liste du Thésaurus")
+    assert checker(d)["sources"]["thesaurus"]["long"].startswith("la liste du Thésaurus")
 
 
 def test_checker_data_cannot_close_its_script_element():

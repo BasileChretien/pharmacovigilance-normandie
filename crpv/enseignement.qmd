@@ -16,7 +16,7 @@ pour_aller_plus_loin:
 
 Les équipes enseignent la pharmacologie et la pharmacovigilance aux étudiants en médecine, en pharmacie et en maïeutique des facultés de santé de Caen et de Rouen. [Liste des enseignements et des diplômes à compléter par les centres.]
 
-Pour réviser : [Lire un RCP](../comprendre/lire-un-rcp.qmd), [Que veulent dire « fréquent » et « rare » ?](../comprendre/frequences.qmd), le [tableau des cytochromes](../bon-usage/cytochromes.qmd) et ses index par médicament.
+Pour réviser : [Lire un RCP](../comprendre/lire-un-rcp.qmd), [Que veulent dire « fréquent » et « rare » ?](../comprendre/frequences.qmd) et le [vérificateur des cytochromes](../bon-usage/cytochromes.qmd), avec sa grille des substrats, inhibiteurs et inducteurs.
 
 ## Stages
 

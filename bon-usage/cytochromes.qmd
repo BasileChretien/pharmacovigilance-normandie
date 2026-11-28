@@ -109,7 +109,7 @@ Choisissez deux médicaments. Pour chaque cytochrome de la grille (CYP1A2, 2B6, 
 
 Sur téléphone, faites défiler chaque tableau de côté : la colonne des médicaments reste visible.
 
-::: {.tableau-filtrable libelle="Filtrer la grille par médicament"}
+::: {.tableau-filtrable libelle="Filtrer la grille par médicament" cible="premiere-colonne"}
 {{< include ../_includes/cyp-grille.md >}}
 :::
 

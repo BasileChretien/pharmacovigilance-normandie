@@ -21,7 +21,7 @@ const ENZYMES = [
 const S = (voie, extra) => ({ substrat: Object.assign({ voie: voie, prodrogue: false, actif: false, source: "hug" }, extra) });
 const FIXTURE = cv.prepare({
   enzymes: ENZYMES,
-  sources: { hug: { court: "HUG", long: "carte des HUG (mars 2020)" }, thesaurus: { court: "Thésaurus", long: "liste du Thésaurus de l'ANSM (septembre 2023)" } },
+  sources: { hug: { court: "HUG", long: "carte des HUG (mars 2020)" }, thesaurus: { court: "Thésaurus", long: "la liste du Thésaurus de l'ANSM (septembre 2023)" } },
   medicaments: [
     { nom: "Éfavirenz", precision: "", roles: { CYP2B6: Object.assign(S("majeure"), { inhibiteur: { force: "modéré", source: "hug" }, inducteur: { force: "modéré", source: "hug" } }) } },
     { nom: "Érythromycine", precision: "", roles: { "P-gp": { inhibiteur: { force: "puissant", source: "hug" } } } },
@@ -113,7 +113,7 @@ test("two inhibitors, or two drugs on different enzymes, give nothing", () => {
 test("a drug that both inhibits and induces the enzyme gives two opposite mechanisms", () => {
   const found = cv.mechanisms(byName(FIXTURE, "Sertraline"), byName(FIXTURE, "Éfavirenz"), FIXTURE.enzymes);
   assert.deepEqual(found.map((m) => [m.type, m.sens]), [["inhibiteur", "hausse"], ["inducteur", "baisse"]]);
-  assert.ok(cv.notes(found[0], found).some((n) => /à la fois inhibiteur et inducteur/.test(n)));
+  assert.ok(cv.notes(found[0], found).includes("Éfavirenz : à la fois inhibiteur et inducteur du CYP2B6 ; l'effet global ne se déduit pas du tableau."));
 });
 
 test("real data: warfarin and fluconazole, CYP2C9, warfarin up", () => {
@@ -161,13 +161,48 @@ test("the mechanism line gives both roles and the enzyme with its article", () =
   assert.equal(cv.cause(one("Warfarine", "Érythromycine", FIXTURE)), "Érythromycine : inhibiteur puissant de la P-gp. Warfarine : substrat (voie majeure).");
 });
 
+// Notes start with the drug's name and a colon: French drug names would need an article
+// ("de la codéine"), and the data do not hold their gender.
 test("notes flag a minor pathway, an active metabolite and a source other than the HUG card", () => {
   const minor = one("Sertraline", "Éfavirenz", FIXTURE);
   const notes = cv.notes(minor, [minor]);
-  assert.ok(notes.some((n) => n === "Voie mineure pour sertraline : l'effet dépend de la part de cette voie dans son élimination."));
-  assert.ok(notes.some((n) => n === "Sertraline a un métabolite actif : l'effet dépend aussi de ce métabolite."));
+  assert.deepEqual(notes, [
+    "Sertraline : voie mineure de son élimination ; l'effet dépend de la part de cette voie.",
+    "Sertraline : l'effet dépend aussi de son métabolite actif.",
+  ]);
   const thesaurus = one("Warfarine", "Silibinine", FIXTURE);
-  assert.deepEqual(cv.notes(thesaurus, [thesaurus], FIXTURE), ["Classement de silibinine : liste du Thésaurus de l'ANSM (septembre 2023)."]);
+  assert.deepEqual(cv.notes(thesaurus, [thesaurus], FIXTURE), ["Silibinine : classement d'après la liste du Thésaurus de l'ANSM (septembre 2023)."]);
+});
+
+test("no note needs the drug's gender, nor reads as if the drug were a metabolite", () => {
+  // Silibinine is feminine, éfavirenz masculine: a participle ("classé") would agree with one only.
+  const found = [
+    one("Warfarine", "Silibinine", FIXTURE),
+    ...cv.mechanisms(byName(FIXTURE, "Sertraline"), byName(FIXTURE, "Éfavirenz"), FIXTURE.enzymes),
+  ];
+  for (const m of found) {
+    for (const n of cv.notes(m, found, FIXTURE)) {
+      assert.ok(!n.includes("classé"), n); // "classement" is fine: no participle
+      assert.ok(!/^\S+ : métabolite actif/.test(n), n);
+    }
+  }
+});
+
+test("no note puts a bare preposition before a drug name", () => {
+  const pairs = [["Codéine", "Paroxétine"], ["Clopidogrel", "Oméprazole"], ["Apixaban", "Clarithromycine"], ["Bupropion", "Clopidogrel"], ["Colchicine", "Cobicistat"], ["Sertraline", "Éfavirenz"]];
+  for (const [a, b] of pairs) {
+    const found = cv.mechanisms(byName(REAL, a), byName(REAL, b), REAL.enzymes);
+    assert.ok(found.length, a + " + " + b);
+    for (const m of found) {
+      for (const n of cv.notes(m, found, REAL)) {
+        assert.ok(n.startsWith(m.substrat.nom + " : ") || n.startsWith(m.effecteur.nom + " : "), n);
+        for (const drug of REAL.medicaments) {
+          const name = drug.nom.toLowerCase();
+          assert.ok(!["de " + name, "pour " + name, "d'" + name].some((bare) => n.includes(bare)), n);
+        }
+      }
+    }
+  }
 });
 
 test("a minor pathway that forms a prodrug's active substance is not played down", () => {
@@ -177,7 +212,7 @@ test("a minor pathway that forms a prodrug's active substance is not played down
     const notes = cv.notes(m, [m], REAL);
     assert.ok(!notes.some((n) => /dépend de la part de cette voie/.test(n)), s);
     // "participe à": the enzyme need not be the only route to the active metabolite (clopidogrel).
-    assert.ok(notes.includes("Voie mineure de l'élimination de " + s.toLowerCase() + ", mais elle participe à la formation de son métabolite actif."), s);
+    assert.ok(notes.includes(s + " : voie mineure de son élimination, mais elle participe à la formation de son métabolite actif."), s);
     assert.ok(!notes.some((n) => /c'est elle qui forme/.test(n)), s);
   }
 });
@@ -199,6 +234,24 @@ test("role labels for the enzyme-by-enzyme table", () => {
   assert.equal(cv.roleLabel(byName(REAL, "Codéine").roles.CYP2D6), "Substrat (voie mineure, prodrogue)");
   assert.equal(cv.roleLabel(byName(FIXTURE, "Sertraline").roles.CYP2B6), "Substrat (voie mineure, métabolite actif)");
   assert.equal(cv.roleLabel(undefined), "");
+});
+
+test("the roles table caption needs no article", () => {
+  assert.equal(cv.rolesCaption(byName(FIXTURE, "Éfavirenz"), byName(FIXTURE, "Warfarine")), "Éfavirenz et warfarine : rôles, enzyme par enzyme");
+});
+
+test("both fields are reported when both are wrong, the same drug twice on field B", () => {
+  const meds = FIXTURE.medicaments;
+  const vide = cv.resolve("", meds);
+  const absent = cv.resolve("paracétamol", meds);
+  const warf = cv.resolve("warfarine", meds);
+  assert.deepEqual(cv.problems(vide, absent), {
+    invalides: ["A", "B"],
+    message: "Saisissez le médicament A. « paracétamol » n'est pas dans ce tableau, qui ne cite que des exemples : cela ne veut pas dire qu'il n'interagit pas.",
+  });
+  assert.deepEqual(cv.problems(warf, absent).invalides, ["B"]);
+  assert.deepEqual(cv.problems(warf, cv.resolve("Warfarine", meds)), { invalides: ["B"], message: "Choisissez deux médicaments différents." });
+  assert.deepEqual(cv.problems(warf, cv.resolve("fluconazole", meds)), { invalides: [], message: "" });
 });
 
 test("messages for an empty, unknown, ambiguous or repeated entry", () => {

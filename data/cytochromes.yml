@@ -10,14 +10,17 @@
 #   précision:  shown in brackets beside the name, and searched by the checker.
 # ENZYME: CYP1A2, CYP2B6, CYP2C8, CYP2C9, CYP2C19, CYP2D6, CYP3A4/5, P-gp (the CYP2E1 of the card is
 # not used). SOURCE: a key of `sources`; without one, the entry comes from `source_par_defaut`.
-# "prodrogue": the enzyme forms the active substance; "métabolite-actif": the "!" of the card for a
+# Each source has `court` (shown in a grid cell) and `long` (said by the checker, after
+# "classement d'après": give it its article). Two entries with the same name (accents, case and
+# punctuation aside) stop the build.
+# "prodrogue": the enzyme takes part in forming the active substance; "métabolite-actif": the "!" of the card for a
 # drug that is itself active. Only drugs marketed in France (BDPM file of 20/11/2026), plus some
 # foods, plants and tobacco. Strengths are the HUG ones; the page lists where the FDA disagrees.
 # Reading of the card: 25/11/2026, rechecked cell by cell (colour and position) on 28/11/2026.
 
 sources:
-  hug: {court: HUG, long: "carte « Interactions médicamenteuses, cytochromes P450 et P-glycoprotéine » des HUG (mars 2020)"}
-  thesaurus: {court: Thésaurus, long: "liste des inhibiteurs puissants du CYP3A4 du Thésaurus de l'ANSM (septembre 2023)"}
+  hug: {court: HUG, long: "la carte « Interactions médicamenteuses, cytochromes P450 et P-glycoprotéine » des HUG (mars 2020)"}
+  thesaurus: {court: Thésaurus, long: "la liste des inhibiteurs puissants du CYP3A4 du Thésaurus de l'ANSM (septembre 2023)"}
 source_par_defaut: hug
 
 medicaments:

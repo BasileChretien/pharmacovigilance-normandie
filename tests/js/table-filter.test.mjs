@@ -36,3 +36,10 @@ test("a box with several tables filters the body rows of all of them", () => {
   assert.deepEqual(tf.bodyRows(box).map((r) => r.textContent), ["Caféine", "Clozapine", "Fluvoxamine"]);
   assert.deepEqual(tf.bodyRows({ querySelectorAll: () => [] }), []);
 });
+
+test("a box can filter on the first column only (the drug names of the cytochrome grid)", () => {
+  const row = { textContent: "Modafinil Puissant Modéré", cells: [{ textContent: "Modafinil" }, { textContent: "Puissant" }] };
+  assert.equal(tf.rowText(row, "premiere-colonne"), "Modafinil");
+  assert.equal(tf.rowText(row, null), "Modafinil Puissant Modéré");
+  assert.ok(!tf.matches(tf.rowText({ textContent: "Fluoxétine Modéré", cells: [{ textContent: "Fluoxétine" }] }, "premiere-colonne"), "mod"));
+});
