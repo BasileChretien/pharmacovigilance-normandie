@@ -132,9 +132,12 @@ summary:focus-visible,
 // A thin strip of the logo gradient: the one place the gradient appears in the chrome.
 // Drawn in the padding, not as a border: Quarto sizes the page's top margin from the
 // header's clientHeight, which leaves borders out (the strip hid 4 px of the page).
+// The width cap: when a page is wider than a phone's screen, Chrome widens the box of fixed
+// elements to the page, and the search and the menu went past the screen's edge with it.
 #quarto-header {
   padding-top: 4px;
   background: linear-gradient(90deg, $pv-cyan, $pv-green) top / 100% 4px no-repeat;
+  max-width: 100vw;
 }
 
 .navbar {
