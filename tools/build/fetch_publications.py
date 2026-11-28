@@ -12,8 +12,9 @@ TYPES, are kept; a work two members list appears once, under both teams.
 Writes data/publications.json, with the members whose works could not be read
 ("non_lus"): a member whose ORCID record is missing, locked or deactivated, or whose card
 links to orcid.org without a valid iD (the log names the page). The others are listed.
-When ORCID or OpenAlex does not answer at all, the previous list is kept, without the
-works of members whose card has gone, and a member it never read counts as not read.
+When ORCID (its test record included, see FICHE_ABSENTE) or OpenAlex does not answer
+at all, the previous list is kept, without the works of members whose card has gone,
+and a member it never read counts as not read.
 Either way the script exits with 1, so the build (.github/workflows/pages.yml) shows a
 warning; the page says how many members' works are missing. Standard library only: the
 build runs it with the runner's python3. An OpenAlex API key in the environment variable
@@ -52,9 +53,12 @@ PAR_REQUETE = 50  # DOIs per OpenAlex request
 SELECT = "doi,display_name,publication_date,type,language,primary_location,open_access,is_retracted"
 
 # ORCID answers these for a record that is missing, locked or deactivated: that member is
-# not read, the others are. Any other failure, or one of these for every member (ORCID
-# retiring its API version), is an outage and fails the whole run.
+# not read, the others are. Any other failure is an outage and fails the whole run. When
+# every member answers so, ORCID's own fictional test record (Josiah Carberry) is read:
+# if it answers, the records are really gone; if not, ORCID itself is (an API version
+# retired), and that is an outage too.
 FICHE_ABSENTE = {404, 409, 410}
+TEMOIN = "0000-0002-1825-0097"
 
 # What follows orcid.org/ in a card's link, read loosely so that a mistyped iD is reported
 # rather than skipped; then checked against _ID and the check digit.
@@ -227,8 +231,9 @@ def releve(
     cle: str | None = None,
 ) -> dict:
     """The list read now from ORCID then OpenAlex; a member whose ORCID record is
-    missing, locked or deactivated is not read (non_lus). Raises OSError, ValueError,
-    TypeError, AttributeError or HTTPException when a site does not answer as expected."""
+    missing, locked or deactivated is not read (non_lus), unless ORCID's test record
+    TEMOIN does not answer either. Raises OSError, ValueError, TypeError, AttributeError
+    or HTTPException when a site does not answer as expected."""
     depuis = aujourd_hui.year - ANNEES + 1
     par_doi: dict[str, dict[str, list[str]]] = {}
     non_lus = []
@@ -239,11 +244,11 @@ def releve(
             if exc.code not in FICHE_ABSENTE:
                 raise
             non_lus.append(orcid)
-            if len(non_lus) == len(equipes):
-                raise  # no member read at all: the API, not the records
             continue
         for doi in dois_orcid(reponse, depuis):
             par_doi.setdefault(doi, {})[orcid] = siennes
+    if equipes and len(non_lus) == len(equipes):
+        fetch(ORCID_API.format(TEMOIN))  # raises if ORCID itself is gone
     publications: dict[str, dict] = {}
     dois = sorted(par_doi)
     for i in range(0, len(dois), PAR_REQUETE):

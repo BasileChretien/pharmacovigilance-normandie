@@ -554,3 +554,24 @@ def test_an_orcid_link_followed_by_punctuation_is_read(tmp_path):
         f"(https://orcid.org/{CARBERRY});",
     )
     assert fp.membres(racine) == ({CARBERRY: ["caen"]}, [])
+
+
+def test_a_single_member_whose_record_is_locked_is_not_read_while_orcid_answers(
+    tmp_path, monkeypatch, capsys
+):
+    # One card, its record locked (409); ORCID's own test record still answers.
+    sortie = tmp_path / "publications.json"
+    _ecrire_precedent(sortie, [AUTRE])
+    monkeypatch.setattr(fp, "OUT", sortie)
+    monkeypatch.setattr(fp, "membres", lambda: ({AUTRE: ["rouen"]}, []))
+
+    def fetch(url):
+        if url == fp.ORCID_API.format(fp.TEMOIN):
+            return _orcid(("10.1000/temoin", "2012"))
+        raise urllib.error.HTTPError(url, 409, "Conflict", None, None)
+
+    monkeypatch.setattr(fp, "_fetch", fetch)
+    assert fp.main() == 1
+    data = json.loads(sortie.read_text(encoding="utf-8"))
+    assert data["non_lus"] == [AUTRE] and data["publications"] == []
+    assert AUTRE in capsys.readouterr().err
