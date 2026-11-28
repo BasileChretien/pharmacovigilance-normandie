@@ -45,23 +45,36 @@ Vérifié le 28/11/2026 : thème clair, bandeau `pv-mist`, thème sombre du site
 Les SVG passent aussi les règles de `tools/checks/check_figures.py` (taille, jetons, police,
 `id`).
 
-## Où elle est
+## Où elle est, et ce qu'elle y fait
 
-- Accueil : petite, à côté du bouton « Déclarer », tournée vers lui ; elle lève son cor quand
-  on survole ou qu'on atteint le bouton au clavier, sauf si le lecteur a demandé moins
-  d'animations (`prefers-reduced-motion`).
-- Vigiking : en tête de la page du bulletin et de celle des anciens numéros.
-- Page 404.
-- États vides : recherche du site sans résultat (`_includes/mascotte-recherche.html`), liste
-  des publications pas encore remplie (`tools/build/make_publications_page.py`).
+Une variante par contexte, dans `assets/img/mascotte/`, écrite par
+`tools/design/make_mascotte.py` à partir du dessin `assets/img/mascotte.svg` (on modifie le
+dessin ou le script, puis on le relance ; on ne modifie pas les variantes). Même personnage,
+une pose et une courte animation propres à chaque endroit :
+
+| Contexte | Page | Pose (aussi sans animation) | Animation |
+|---|---|---|---|
+| `accueil` | accueil, à côté de « Déclarer », tournée vers lui | cor aux lèvres, trois ondes | il lève le cor et sonne l'alerte, trois fois |
+| `vigiking` | page du bulletin et anciens numéros | cor aux lèvres, trois ondes | un petit saut, puis le cor annonce le numéro |
+| `404` | page introuvable | cor écarté, bouche en « o », point d'interrogation | il regarde à gauche, à droite, la tête penchée ; le « ? » surgit |
+| `recherche` | recherche du site sans résultat | cor écarté, bouche « hmm » | il cherche des yeux, la tête penchée |
+| `attente` | liste des publications pas encore remplie | cor écarté, sourire, trois points | les points s'allument l'un après l'autre ; il respire, cligne des yeux |
+
+- Les ondes du cor ne sortent que là où il annonce quelque chose (accueil, Vigiking).
+- Chaque animation se joue une fois et s'arrête d'elle-même en 5 secondes au plus : une image
+  ne peut pas être mise en pause depuis la page, et au-delà de 5 secondes il faudrait un bouton
+  pause (WCAG 2.2.2). Aucune ne se joue si le lecteur a demandé moins d'animations
+  (`prefers-reduced-motion`) : il voit la pose. Sur l'accueil, la mascotte bascule aussi quand
+  on survole ou qu'on atteint le bouton « Déclarer » au clavier, sous la même condition.
 - Jamais : fiches médicament, fiches de classe, pages grossesse, alertes de sécurité, pages
   sur des effets graves. Sur ces pages (`medicaments/`, `actualites/`, cas marquants, que
   faire en cas d'effet indésirable), même la recherche sans résultat reste sans mascotte.
 - Toujours décorative (`alt=""` et `aria-hidden`), cachée à l'impression.
-- La liste des pages est fixée par `tests/test_mascotte.py` : une nouvelle place se décide
-  en la changeant.
-- Le bandeau des numéros PDF de Vigiking se fabrique dans un autre dépôt (le gabarit du
-  bulletin) : la mascotte n'y est pas encore.
+- La liste des pages et la variante de chacune sont fixées par `tests/test_mascotte.py` ; les
+  règles des variantes (jetons, durée, mouvement réduit, ondes) par
+  `tests/test_mascotte_animations.py`.
+- Bulletin Vigiking (PDF) : la mascotte, fixe, à gauche du bandeau « VIGIKING NORMAND » de la
+  couverture, tournée vers lui (branche du bulletin, `tools/design/make_bulletin_mascotte.py`).
 
 ## Ce qui existait déjà (Vigiking)
 

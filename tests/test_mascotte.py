@@ -22,12 +22,13 @@ RECHERCHE = ROOT / "_includes" / "mascotte-recherche.html"
 THEME = ROOT / "assets" / "theme.scss"
 
 # The pages that show the mascot, and only these: a new place is a decision taken here.
+# Each takes the variant of its context (tools/design/make_mascotte.py).
 PAGES = {
-    "index.qmd",  # small, beside "Déclarer"
-    "404.qmd",
-    "vigiking/index.qmd",  # the bulletin's masthead
-    "vigiking/archives.qmd",
-    "crpv/recherche.qmd",  # the publications list, while it is empty
+    "index.qmd": "mascotte-accueil",  # small, beside "Déclarer": sounds the alert
+    "404.qmd": "mascotte-404",  # lost
+    "vigiking/index.qmd": "mascotte-vigiking",  # the bulletin's masthead: announces
+    "vigiking/archives.qmd": "mascotte-vigiking",
+    "crpv/recherche.qmd": "mascotte-attente",  # the publications list, while it is empty
 }
 # Shown only by an empty state that may be filled later.
 PAGES_PARFOIS = {"crpv/recherche.qmd"}
@@ -40,8 +41,9 @@ INTERDITS = (
 )
 
 _INCLUDE = re.compile(r"\{\{<\s*include\s+(\S+)\s*>\}\}")
-_IMG_HTML = re.compile(r"<img\b[^>]*mascotte\.svg[^>]*>")
-_IMG_MD = re.compile(r"!\[([^\]]*)\]\([^)]*mascotte\.svg\)(\{[^}]*\})?")
+_SVG = r"mascotte(?:-[\w-]+)?\.svg"
+_IMG_HTML = re.compile(r"<img\b[^>]*" + _SVG + r"[^>]*>")
+_IMG_MD = re.compile(r"!\[([^\]]*)\]\([^)]*" + _SVG + r"\)(\{[^}]*\})?")
 _MOTION_OK = re.compile(r"@media\s*\(prefers-reduced-motion:\s*no-preference\)\s*\{")
 
 
@@ -72,16 +74,25 @@ def pages_with_mascot() -> dict[str, str]:
     found = {}
     for page in site_pages():
         text = with_includes(page)
-        if "mascotte.svg" in text:
+        if re.search(_SVG, text):
             found[page.relative_to(ROOT).as_posix()] = text
     return found
 
 
 def test_the_mascot_is_on_the_chosen_pages_and_nowhere_else():
     found = set(pages_with_mascot())
-    assert found <= PAGES, f"mascotte sur une page non prévue : {sorted(found - PAGES)}"
-    missing = PAGES - PAGES_PARFOIS - found
+    assert found <= set(PAGES), (
+        f"mascotte sur une page non prévue : {sorted(found - set(PAGES))}"
+    )
+    missing = set(PAGES) - PAGES_PARFOIS - found
     assert not missing, f"mascotte absente de : {sorted(missing)}"
+
+
+def test_each_page_shows_the_variant_of_its_context():
+    for page, text in pages_with_mascot().items():
+        noms = set(re.findall(r"(mascotte(?:-[\w-]+)?)\.svg", text))
+        assert noms == {PAGES[page]}, f"{page} : {sorted(noms)}"
+    assert "mascotte/mascotte-recherche.svg" in RECHERCHE.read_text(encoding="utf-8")
 
 
 def test_no_chosen_page_is_a_medicine_alert_or_serious_harm_page():

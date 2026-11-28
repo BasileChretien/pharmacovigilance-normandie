@@ -19,7 +19,7 @@ pour_aller_plus_loin:
 ---
 
 ::: {.vigiking-entete}
-<img class="mascotte" src="../assets/img/mascotte.svg" alt="" aria-hidden="true" width="84" height="98">
+<img class="mascotte" src="../assets/img/mascotte/mascotte-vigiking.svg" alt="" aria-hidden="true" width="84" height="98">
 
 Vigiking est le bulletin des centres régionaux de pharmacovigilance de Caen et de Rouen. Chaque numéro est publié ici, article par article, et envoyé par courriel aux abonnés. Une version PDF reste disponible pour l'affichage dans les services et les officines.
 :::
